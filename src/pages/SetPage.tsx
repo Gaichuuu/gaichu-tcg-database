@@ -1,9 +1,16 @@
-// src/pages/SetPage.jsx
+// src/pages/SetPage.tsx
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Tile from '../components/Tile';
 
-const dummyCards = [
+interface Card {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+}
+
+const dummyCards: Card[] = [
   {
     id: 'card1',
     name: 'Card One',
@@ -19,8 +26,10 @@ const dummyCards = [
   // Add more card objects as needed
 ];
 
-const SetPage = () => {
-  const { seriesId, setId } = useParams();
+type Params = Record<string, string | undefined>;
+
+const SetPage: React.FC = () => {
+  const { seriesId, setId } = useParams<Params>();
   const navigate = useNavigate();
 
   return (

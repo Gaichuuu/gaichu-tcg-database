@@ -1,8 +1,8 @@
-// src/pages/HomePage.jsx
+// src/pages/HomePage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
       <h1 className="text-5xl font-bold mb-4">

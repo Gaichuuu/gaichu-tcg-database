@@ -1,16 +1,25 @@
-// src/pages/SeriesPage.jsx
+// src/pages/SeriesPage.tsx
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Tile from '../components/Tile';
 
-const setsData = [
+interface Params extends Record<string, string | undefined> {
+  seriesId?: string;
+}
+
+interface SetData {
+  id: string;
+  name: string;
+}
+
+const setsData: SetData[] = [
   { id: 'set1', name: 'Set One' },
   { id: 'set2', name: 'Set Two' },
   // Add more sets as needed
 ];
 
-const SeriesPage = () => {
-  const { seriesId } = useParams();
+const SeriesPage: React.FC = () => {
+  const { seriesId } = useParams<Params>();
   const navigate = useNavigate();
 
   return (

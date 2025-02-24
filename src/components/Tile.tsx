@@ -1,7 +1,12 @@
-// src/components/Tile.jsx
+// src/components/Tile.tsx
 import React from 'react';
 
-const Tile = ({ children, onClick }) => {
+interface TileProps {
+  children: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+}
+
+const Tile: React.FC<TileProps> = ({ children, onClick }) => {
   return (
     <div
       onClick={onClick}

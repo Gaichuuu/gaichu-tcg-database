@@ -1,8 +1,21 @@
-// src/pages/CardDetailPage.jsx
+// src/pages/CardDetailPage.tsx
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-const dummyCardData = {
+interface Card {
+  id: string;
+  name: string;
+  illustrator: string;
+  image: string;
+  rarity: string;
+  type: string;
+  setName: string;
+  setLogo: string;
+  description: string;
+  category: string;
+}
+
+const dummyCardData: Record<string, Card> = {
   card1: {
     id: 'card1',
     name: 'Card One',
@@ -29,19 +42,25 @@ const dummyCardData = {
   },
 };
 
-const CardDetailPage = () => {
-  const { seriesId, setId, cardId } = useParams();
+interface Params extends Record<string, string | undefined> {
+  seriesId?: string;
+  setId?: string;
+  cardId?: string;
+}
+
+const CardDetailPage: React.FC = () => {
+  const { cardId } = useParams<Params>();
   const navigate = useNavigate();
 
-  const card = dummyCardData[cardId];
-
-  if (!card) {
+  if (!cardId || !(cardId in dummyCardData)) {
     return (
       <div className="container mx-auto p-4">
         <p className="text-center text-red-600">Card not found.</p>
       </div>
     );
   }
+
+  const card = dummyCardData[cardId];
 
   return (
     <div className="container mx-auto p-4">
