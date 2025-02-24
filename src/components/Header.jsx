@@ -4,18 +4,25 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4 shadow">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div>
-          <Link to="/" className="text-2xl font-bold text-blue-300">
-            TCG Showcase
-          </Link>
-        </div>
+    <header className="bg-gray-800 text-white shadow">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+        {/* Left side: Logo & Title as a single link to home */}
+        <Link to="/" className="flex items-center space-x-2">
+          {/* Replace '/logo.svg' with your actual logo path */}
+          <img
+            src="/logo.svg"
+            alt="Site_LogoGaichu"
+            className="h-8 w-8"
+          />
+          <span className="font-bold text-xl">Gaichu</span>
+        </Link>
+
+        {/* Right side: Navigation Link */}
         <nav>
-          <Link to="/" className="mr-6 hover:text-blue-300 transition duration-200">
-            Home
-          </Link>
-          <Link to="/cards" className="hover:text-blue-300 transition duration-200">
+          <Link
+            to="/cards"
+            className="hover:text-gray-300 transition-colors"
+          >
             Cards
           </Link>
         </nav>

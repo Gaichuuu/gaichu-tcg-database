@@ -5,7 +5,20 @@ const Tile = ({ children, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="bg-white rounded-lg shadow p-4 cursor-pointer hover:shadow-md transition duration-200"
+      className="
+        bg-gray-700
+        rounded-lg
+        shadow
+        cursor-pointer
+        transition
+        duration-200
+        hover:shadow-lg
+        flex
+        items-center
+        justify-center
+        p-4
+      "
+      style={{ minHeight: '150px' }}
     >
       {children}
     </div>
