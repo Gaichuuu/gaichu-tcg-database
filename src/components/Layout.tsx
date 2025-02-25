@@ -1,5 +1,6 @@
 // src/components/Layout.tsx
 import React from 'react';
+import Breadcrumbs from './Breadcrumbs';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -7,10 +8,17 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    // Use w-screen or w-full + min-h-screen to cover the entire viewport
     <div className="min-h-screen w-screen bg-gray-900 text-white">
-      {/* If you want to center your content, do it in a nested div */}
-      {children}
+      {/* Optional: Header goes here */}
+      {/* ... */}
+      
+      <div className="container mx-auto px-4 py-8">
+        {/* Breadcrumbs */}
+        <Breadcrumbs />
+        
+        {/* Main page content */}
+        {children}
+      </div>
     </div>
   );
 };

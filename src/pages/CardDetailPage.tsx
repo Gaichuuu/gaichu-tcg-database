@@ -64,12 +64,14 @@ const CardDetailPage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <button
+
+      {/* <button
         onClick={() => navigate(-1)}
         className="mb-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
       >
         Back
-      </button>
+      </button> */}
+
       <h2 className="text-3xl font-bold mb-4">{card.name}</h2>
       <img
         src={card.image}
