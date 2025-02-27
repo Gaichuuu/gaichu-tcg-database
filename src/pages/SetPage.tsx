@@ -14,19 +14,22 @@ const dummyCards: Card[] = [
   {
     id: 'card1',
     name: 'Card One',
-    image: '/images/card1.jpg',
+    image: '/images/temp-card.jpg',
     description: 'A powerful card with amazing effects.',
   },
   {
     id: 'card2',
     name: 'Card Two',
-    image: '/images/card2.jpg',
+    image: '/images/temp-card.jpg',
     description: 'This card has unique abilities and artwork.',
   },
   // Add more card objects as needed
 ];
 
-type Params = Record<string, string | undefined>;
+interface Params extends Record<string, string | undefined> {
+  seriesId?: string;
+  setId?: string;
+}
 
 const SetPage: React.FC = () => {
   const { seriesId, setId } = useParams<Params>();
@@ -43,13 +46,18 @@ const SetPage: React.FC = () => {
               navigate(`/cards/${seriesId}/sets/${setId}/card/${card.id}`)
             }
           >
-            <img
-              src={card.image}
-              alt={card.name}
-              className="w-full h-auto rounded-md mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2">{card.name}</h3>
-            <p className="text-gray-700">{card.description}</p>
+            <div className="flex flex-col items-center w-full">
+              {/* Image with max height 400px that scales down while maintaining aspect ratio */}
+              <div className="w-full mb-4">
+                <img
+                  src={card.image}
+                  alt={card.name}
+                  className="w-full max-h-[400px] object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{card.name}</h3>
+              <p className="text-white text-center">{card.description}</p>
+            </div>
           </Tile>
         ))}
       </div>

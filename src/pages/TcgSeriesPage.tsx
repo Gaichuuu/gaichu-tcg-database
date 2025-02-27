@@ -13,12 +13,12 @@ const seriesData: SeriesData[] = [
   { 
     id: 'disgruntled', 
     name: 'Disgruntled Games', 
-    logo: '/images/logo.png' 
+    logo: '/images/temp-logo.png' 
   },
   { 
     id: 'brainwash', 
     name: 'Brainwash TCG', 
-    logo: '/images/logo.png' 
+    logo: '/images/temp-logo.png' 
   },
   // add more series as needed
 ];

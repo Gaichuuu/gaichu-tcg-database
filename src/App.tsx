@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import BackgroundContainer from './components/BackgroundContainer';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import TcgSeriesPage from './pages/TcgSeriesPage';
 import SeriesPage from './pages/SeriesPage';
@@ -28,6 +29,9 @@ const App: React.FC = () => {
             {/* Add other routes here */}
             </Routes>
       </Layout>
+
+      {/* Footer appears on every page */}
+      <Footer />
     </BrowserRouter>
   );
 };
