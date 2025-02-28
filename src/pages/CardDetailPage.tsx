@@ -12,33 +12,42 @@ interface Card {
   setName: string;
   setLogo: string;
   description: string;
-  category: string;
+  weakness: string;
+  attack: string;
+  metadata: string;
+  flavor: string;
 }
 
 const dummyCardData: Record<string, Card> = {
   card1: {
     id: 'card1',
     name: 'Card One',
-    illustrator: 'Jane Doe',
+    illustrator: 'Naoyo Kimura',
     image: '/images/temp-card.jpg',
-    rarity: 'Rare',
-    type: 'Spell',
-    setName: 'Set One',
+    rarity: '074/131 / Common',
+    type: 'Colorless / 50 / Basic',
+    setName: 'Set One (2025)',
     setLogo: '/images/temp-set.png',
-    description: 'A powerful card with amazing effects.',
-    category: 'Magic',
+    description: 'Ability: (Boosted Evolution) As long as this Pokemon is in the Active Spot, it can evolve during your first turn or the turn you play it.',
+    weakness: 'Fx2 / / 1',
+    attack: '[CC] Reckless Charge (30) This Pokemon also does 10 damage to itself.',
+    metadata: 'NO. 0133 Evolution Pokemon HT: 1 WT: 14.3 lbs.',
+    flavor: 'Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones.',
   },
   card2: {
-    id: 'card2',
-    name: 'Card Two',
-    illustrator: 'John Smith',
+    id: 'card1',
+    name: 'Card One',
+    illustrator: 'Naoyo Kimura',
     image: '/images/temp-card.jpg',
-    rarity: 'Common',
-    type: 'Creature',
-    setName: 'Set One',
+    rarity: '074/131 / Common',
+    type: 'Colorless / 50 / Basic',
+    setName: 'Set One (2025)',
     setLogo: '/images/temp-set.png',
-    description: 'This card has unique abilities and artwork.',
-    category: 'Fantasy',
+    description: 'Ability: (Boosted Evolution) As long as this Pokemon is in the Active Spot, it can evolve during your first turn or the turn you play it.',
+    weakness: 'Fx2 / / 1',
+    attack: '[CC] Reckless Charge (30) This Pokemon also does 10 damage to itself.',
+    metadata: 'NO. 0133 Evolution Pokemon HT: 1 WT: 14.3 lbs.',
+    flavor: 'Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones.',
   },
 };
 
@@ -75,27 +84,16 @@ const CardDetailPage: React.FC = () => {
         {/* Right column: Card details */}
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">{card.name}</h2>
-          <p className="mb-2">
-            <strong>Illustrator:</strong> {card.illustrator}
-          </p>
-          <p className="mb-2">
-            <strong>Rarity:</strong> {card.rarity}
-          </p>
-          <p className="mb-2">
-            <strong>Type:</strong> {card.type}
-          </p>
-          <p className="mb-2">
-            <strong>Set:</strong> {card.setName}
-          </p>
-          <img
-            src={card.setLogo}
-            alt={card.setName}
-            className="w-24 rounded mb-2"
-          />
-          <p className="mt-4">{card.description}</p>
-          <p className="mt-2">
-            <strong>Category:</strong> {card.category}
-          </p>
+          <p className="mb-2"><strong>Card Number / Rarity:</strong> {card.rarity}</p>
+          <p className="mb-2"><strong>Card Type / HP / Stage:</strong> {card.type}</p>
+          <p className="mb-2"><strong>Metadata:</strong> {card.metadata}</p>
+          <p className="mb-2"><strong>Card Text:</strong> {card.description}</p>
+          <p className="mb-2"><strong>Attack:</strong> {card.attack}</p>
+          <p className="mb-2"><strong>Weakness:</strong> {card.weakness}</p>
+          <p className="mb-2"><strong>Illustrator:</strong> {card.illustrator}</p>
+          <p className="mb-2"><strong>Flavor Text:</strong> {card.flavor}</p>
+          <p className="mb-2"><strong>Set:</strong> {card.setName}</p>
+          <img src={card.setLogo} alt={card.setName} className="w-24 rounded mb-2"/>
         </div>
       </div>
     </div>

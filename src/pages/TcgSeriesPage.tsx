@@ -7,18 +7,21 @@ interface SeriesData {
   id: string;
   name: string;
   logo: string;
+  description: string;
 }
 
 const seriesData: SeriesData[] = [
   { 
     id: 'disgruntled', 
     name: 'Disgruntled Games', 
-    logo: '/images/temp-logo.png' 
+    logo: '/images/temp-logo.png',
+    description: '2 releases',
   },
   { 
     id: 'brainwash', 
     name: 'Brainwash TCG', 
-    logo: '/images/temp-logo.png' 
+    logo: '/images/temp-logo.png',
+    description: '1 release',
   },
   // add more series as needed
 ];
@@ -43,9 +46,8 @@ const TcgSeriesPage: React.FC = () => {
                 alt={series.name}
                 className="max-h-20 object-contain mb-4"
               />
-              <h3 className="text-lg font-semibold text-white">
-                {series.name}
-              </h3>
+              <h3 className="text-lg font-semibold text-white">{series.name}</h3>
+              <p className="text-white text-center">{series.description}</p>
             </div>
           </Tile>
         ))}

@@ -11,6 +11,7 @@ interface SetData {
   id: string;
   name: string;
   logo: string;
+  description: string;
 }
 
 const setsData: SetData[] = [
@@ -18,11 +19,13 @@ const setsData: SetData[] = [
     id: 'set1',
     name: 'Set One',
     logo: '/images/temp-set.png', // Replace with the actual image path
+    description: '70 cards',
   },
   {
     id: 'set2',
     name: 'Set Two',
     logo: '/images/temp-set.png', // Replace with the actual image path
+    description: '50 cards',
   },
   // Add more sets as needed
 ];
@@ -48,9 +51,8 @@ const SeriesPage: React.FC = () => {
                 alt={set.name}
                 className="max-h-20 object-contain mb-4"
               />
-              <h3 className="text-lg font-semibold text-white">
-                {set.name}
-              </h3>
+              <h3 className="text-lg font-semibold text-white">{set.name}</h3>
+              <p className="text-white text-center">{set.description}</p>
             </div>
           </Tile>
         ))}

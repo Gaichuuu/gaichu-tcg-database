@@ -15,13 +15,13 @@ const dummyCards: Card[] = [
     id: 'card1',
     name: 'Card One',
     image: '/images/temp-card.jpg',
-    description: 'A powerful card with amazing effects.',
+    description: 'Creature',
   },
   {
     id: 'card2',
     name: 'Card Two',
     image: '/images/temp-card.jpg',
-    description: 'This card has unique abilities and artwork.',
+    description: 'Spell',
   },
   // Add more card objects as needed
 ];
