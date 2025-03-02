@@ -18,13 +18,13 @@ const setsData: SetData[] = [
   {
     id: 'set1',
     name: 'Set One',
-    logo: '/images/temp-set.png', // Replace with the actual image path
+    logo: '/images/wm-set1.jpg', 
     description: '70 cards',
   },
   {
     id: 'set2',
     name: 'Set Two',
-    logo: '/images/temp-set.png', // Replace with the actual image path
+    logo: '/images/wm-set2.jpg', 
     description: '50 cards',
   },
   // Add more sets as needed
@@ -49,7 +49,7 @@ const SeriesPage: React.FC = () => {
               <img
                 src={set.logo}
                 alt={set.name}
-                className="max-h-20 object-contain mb-4"
+                className="max-h-16 object-contain rounded mb-4"
               />
               <h3 className="text-lg font-semibold text-white">{set.name}</h3>
               <p className="text-white text-center">{set.description}</p>

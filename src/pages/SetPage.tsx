@@ -13,15 +13,15 @@ interface Card {
 const dummyCards: Card[] = [
   {
     id: 'card1',
-    name: 'Card One',
-    image: '/images/temp-card.jpg',
-    description: 'Creature',
+    name: 'Croco',
+    image: '/images/17.jpg',
+    description: '17/50',
   },
   {
     id: 'card2',
-    name: 'Card Two',
-    image: '/images/temp-card.jpg',
-    description: 'Spell',
+    name: 'Whammy',
+    image: '/images/20.jpg',
+    description: '20/50',
   },
   // Add more card objects as needed
 ];
@@ -38,7 +38,7 @@ const SetPage: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
       <h2 className="text-2xl font-bold mb-6">Cards in Set: {setId}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8 gap-4">
         {dummyCards.map((card) => (
           <Tile
             key={card.id}
@@ -48,15 +48,18 @@ const SetPage: React.FC = () => {
           >
             <div className="flex flex-col items-center w-full">
               {/* Image with max height 400px that scales down while maintaining aspect ratio */}
-              <div className="w-full mb-4">
+              <div className="w-full mb-2">
                 <img
                   src={card.image}
                   alt={card.name}
-                  className="w-full max-h-[400px] object-contain"
+                  className="w-full max-h-[200px] rounded-lg object-contain"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-2">{card.name}</h3>
-              <p className="text-white text-center">{card.description}</p>
+              {/* Flex row for card name and description */}
+              <div className="flex items-center justify-center space-x-2">
+                <h3 className="text-xl font-semibold">{card.name}</h3>
+                <p className="text-white">{card.description}</p>
+              </div>
             </div>
           </Tile>
         ))}
