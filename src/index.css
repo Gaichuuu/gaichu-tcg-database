@@ -3,6 +3,7 @@
 @import "tailwindcss";
 /* @tailwind components; */
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -29,6 +30,7 @@ a:hover {
 }
 
 body {
+  font-family: 'Share Tech Mono', monospace;
   margin: 0;
   display: flex;
   place-items: center;
