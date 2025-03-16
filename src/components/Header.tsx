@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             alt="Site_LogoGaichu"
             className="h-8 w-8"
           />
-          <span className="font-bold text-xl">Gaichu</span>
+          <span className="font-bold text-xl hover:text-gray-300 transition-colors">Gaichu</span>
         </Link>
 
         {/* Right side: Navigation Link */}

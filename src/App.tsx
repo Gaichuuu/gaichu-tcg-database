@@ -1,7 +1,6 @@
-// src/App.tsx (example)
+// src/App.tsx 
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import BackgroundContainer from './components/BackgroundContainer';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -10,15 +9,19 @@ import SeriesPage from './pages/SeriesPage';
 import SetPage from './pages/SetPage';
 import CardDetailPage from './pages/CardDetailPage';
 import Layout from './components/Layout';
+import AboutPage from './pages/AboutPage';
 // ...other imports
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      {/* Header can be full width on its own if needed */}
-      <Header />
+      {/* Outer flex container: ensures the entire viewport is used */}
+      <div className="min-h-screen w-screen flex flex-col  bg-gray-900">
+        {/* Header stays at the top */}
+        <Header />
       
-      {/* Layout wraps the page content */}
+        {/* Main content grows to fill remaining space */}
+        <main className="flex-grow">
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -26,12 +29,15 @@ const App: React.FC = () => {
           <Route path="/cards/:seriesId" element={<SeriesPage />} />
           <Route path="/cards/:seriesId/sets/:setId" element={<SetPage />} />
           <Route path="/cards/:seriesId/sets/:setId/card/:cardId" element={<CardDetailPage />} />
+          <Route path="/about" element={<AboutPage />} /> 
             {/* Add other routes here */}
             </Routes>
       </Layout>
-
-      {/* Footer appears on every page */}
-      <Footer />
+        </main>
+        
+        {/* Footer remains at the bottom */}
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 };

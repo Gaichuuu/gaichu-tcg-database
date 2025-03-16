@@ -32,7 +32,7 @@ const Breadcrumbs: React.FC = () => {
       <ol className="list-reset flex items-center">
         {/* Always start with Home */}
         <li>
-          <Link to="/" className="hover:underline">
+          <Link to="/" className="hover:text-gray-300 transition-colors">
             Home
           </Link>
         </li>
@@ -49,7 +49,7 @@ const Breadcrumbs: React.FC = () => {
                   <span className="text-gray-300">{item.label}</span>
                 ) : (
                   // Not last: clickable link
-                  <Link to={routeTo} className="hover:underline">
+                  <Link to={routeTo} className="hover:text-gray-300 transition-colors">
                     {item.label}
                   </Link>
                 )}
