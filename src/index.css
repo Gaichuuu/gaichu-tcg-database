@@ -1,12 +1,10 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 @import "tailwindcss";
-/* @tailwind components; */
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@layer utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, 'Share Tech Mono', monospace;
   line-height: 1.5;
   font-weight: 400;
 

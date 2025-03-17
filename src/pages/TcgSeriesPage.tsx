@@ -30,9 +30,9 @@ const TcgSeriesPage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-8 text-center">
-        TCG Series
+    <div className="container mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-6">
+        Series
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {seriesData.map((series) => (
