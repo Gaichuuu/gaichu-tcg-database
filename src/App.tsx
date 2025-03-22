@@ -10,6 +10,7 @@ import SetPage from './pages/SetPage';
 import CardDetailPage from './pages/CardDetailPage';
 import Layout from './components/Layout';
 import AboutPage from './pages/AboutPage';
+import {Cowbell} from "./pages/Cowbell.tsx";
 // ...other imports
 
 const App: React.FC = () => {
@@ -29,7 +30,8 @@ const App: React.FC = () => {
           <Route path="/cards/:seriesId" element={<SeriesPage />} />
           <Route path="/cards/:seriesId/sets/:setId" element={<SetPage />} />
           <Route path="/cards/:seriesId/sets/:setId/card/:cardId" element={<CardDetailPage />} />
-          <Route path="/about" element={<AboutPage />} /> 
+          <Route path="/about" element={<AboutPage />} />
+          <Route path='/cowbell' element={<Cowbell />} />
             {/* Add other routes here */}
             </Routes>
       </Layout>
