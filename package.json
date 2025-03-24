@@ -2,6 +2,10 @@
   "name": "gaichu",
   "private": true,
   "version": "0.1.0",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
