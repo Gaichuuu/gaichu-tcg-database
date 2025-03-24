@@ -1,5 +1,5 @@
 // src/components/Tile.tsx
-import React from 'react';
+import React from "react";
 
 interface TileProps {
   children: React.ReactNode;
@@ -10,7 +10,7 @@ const Tile: React.FC<TileProps> = ({ children, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="bg-gray-700 border border-[#646cff] rounded-lg shadow-lg cursor-pointer hover:border-gray-300 transition-colors flex items-center justify-center p-4"
+      className="bg-tileBg border-primaryBorder hover:border-hoverBorder flex cursor-pointer items-center justify-center rounded-lg border p-4 shadow-lg transition-colors"
     >
       {children}
     </div>
