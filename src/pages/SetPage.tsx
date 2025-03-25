@@ -14,13 +14,13 @@ const dummyCards: Card[] = [
   {
     id: "card1",
     name: "Croco",
-    image: "/images/17.jpg",
+    image: "/src/assets/17.jpg",
     description: "17/50",
   },
   {
     id: "card2",
     name: "Whammy",
-    image: "/images/20.jpg",
+    image: "/src/assets/20.jpg",
     description: "20/50",
   },
   // Add more card objects as needed

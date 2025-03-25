@@ -18,13 +18,13 @@ const setsData: SetData[] = [
   {
     id: "set1",
     name: "Set One",
-    logo: "/images/wm-set1.jpg",
+    logo: "/src/assets/wmSet1.jpg",
     description: "70 cards",
   },
   {
     id: "set2",
     name: "Set Two",
-    logo: "/images/wm-set2.jpg",
+    logo: "/src/assets/wmSet2.jpg",
     description: "50 cards",
   },
   // Add more sets as needed

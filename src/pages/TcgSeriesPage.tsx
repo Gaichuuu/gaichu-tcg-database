@@ -14,13 +14,13 @@ const seriesData: SeriesData[] = [
   {
     id: "wm",
     name: "WrennyMoo",
-    logo: "/images/wm-logo.png",
+    logo: "/src/assets/wmLogo.png",
     description: "2 releases",
   },
   {
     id: "brainwash",
     name: "Brainwash TCG",
-    logo: "/images/temp-logo.png",
+    logo: "/src/assets/tempLogo.png",
     description: "1 release",
   },
   // add more series as needed
