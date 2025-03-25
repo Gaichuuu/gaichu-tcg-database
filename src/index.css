@@ -2,14 +2,15 @@
 
 /* Theme colors */
 @theme {
-  --color-mainBg: #101828;
-  --color-navBg: #1e2939;
+  --color-mainBg: #0d0614;
+  --color-navBg: #171721;
   --color-tileBg: #364153;
   --color-primaryBorder: #646cff;
-  --color-hoverBorder: #d1d5dc;
+  --color-secondaryBorder: #202039;
+  --color-hoverBorder: #dadada;
   --color-interactiveText: #646cff;
-  --color-hoverText: #d1d5dc;
-  --color-primaryText: #ffffff;
+  --color-hoverText: #dadada;
+  --color-primaryText: #dadada;
   --color-secondaryText: #99a1af;
   --color-errorText: #ff0000;
   --color-primaryButton: #1a1a1a;
