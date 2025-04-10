@@ -1,6 +1,6 @@
 export interface CollectionSet {
     id: string;
-    custom_id: string;
+    short_name: string;
     series_id: string;
     logo: string;
     name: string;

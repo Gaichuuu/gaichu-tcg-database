@@ -10,7 +10,7 @@ const seriesList = () => {
     return (
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {collectionSeries?.map((collection) => (
-          <Tile key={collection.series.id} onClick={() => navigate(`/cards/${collection.series.custom_id}`)}>
+          <Tile key={collection.series.id} onClick={() => navigate(`/cards/${collection.series.short_name}`)}>
             <div className="flex h-full flex-col items-center justify-center">
               <img
                 src={collection.series.logo}

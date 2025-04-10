@@ -1,6 +1,6 @@
 export interface CollectionSeries {
     id: string;
-    custom_id: string;
+    short_name: string;
     name: string;
     logo: string;
 }
