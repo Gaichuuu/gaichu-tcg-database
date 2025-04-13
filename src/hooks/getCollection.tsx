@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import { fetchSeries } from '../services/CollectionSeriesService';
-import { MergedCollectionSeries } from '../types/MergedCollectionSeries';
+import { SeriesAndSet } from '../types/MergedCollection';
 
 export const getSeries = () => {
-    return useQuery<MergedCollectionSeries[]>({
+    return useQuery<SeriesAndSet[]>({
         queryKey: ['SeriesList'],
         queryFn: fetchSeries,
         staleTime: 1000 * 60 * 5,

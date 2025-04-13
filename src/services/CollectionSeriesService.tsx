@@ -2,9 +2,9 @@ import { collection, getDocs } from 'firebase/firestore';
 import { database } from '../config/FirebaseConfig';
 import { CollectionSeries } from '../types/CollectionSeries';
 import { CollectionSet } from '../types/CollectionSet';
-import { MergedCollectionSeries } from '../types/MergedCollectionSeries';
+import { SeriesAndSet } from '../types/MergedCollection';
 
-export const fetchSeries = async (): Promise<MergedCollectionSeries[]> => {
+export const fetchSeries = async (): Promise<SeriesAndSet[]> => {
     const seriesSnapshot = await getDocs(collection(database, "series"));
     const series = seriesSnapshot.docs.map((doc) => ({
         id: doc.id,
@@ -20,7 +20,7 @@ export const fetchSeries = async (): Promise<MergedCollectionSeries[]> => {
     return mergeWithSeriesId(series, sets);
 }
 
-const mergeWithSeriesId = (series: CollectionSeries[], sets: CollectionSet[]): MergedCollectionSeries[] => {
+const mergeWithSeriesId = (series: CollectionSeries[], sets: CollectionSet[]): SeriesAndSet[] => {
     return series.map(seriesItem => ({
         series: seriesItem,
         sets: sets.filter(setItem => setItem.series_id === seriesItem.id)
