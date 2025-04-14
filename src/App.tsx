@@ -1,16 +1,16 @@
 // src/App.tsx
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
-import TcgSeriesPage from "./pages/TcgSeriesPage";
-import SeriesPage from "./pages/SeriesPage";
-import SetPage from "./pages/SetPage";
-import CardDetailPage from "./pages/CardDetailPage";
+import Header from "./components/Header";
 import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
+import CardDetailPage from "./pages/CardDetailPage";
 import { Cowbell } from "./pages/Cowbell.tsx";
+import HomePage from "./pages/HomePage";
+import SeriesPage from "./pages/SeriesPage";
+import SetPage from "./pages/SetPage";
+import TcgSeriesPage from "./pages/TcgSeriesPage";
 // ...other imports
 
 const App: React.FC = () => {
@@ -27,13 +27,13 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/cards" element={<TcgSeriesPage />} />
-              <Route path="/cards/:seriesId" element={<SeriesPage />} />
+              <Route path="/cards/:shortName" element={<SeriesPage />} />
               <Route
-                path="/cards/:seriesId/sets/:setId"
+                path="/cards/:shortName/sets/:setId"
                 element={<SetPage />}
               />
               <Route
-                path="/cards/:seriesId/sets/:setId/card/:cardId"
+                path="/cards/:shortName/sets/:setId/card/:cardId"
                 element={<CardDetailPage />}
               />
               <Route path="/about" element={<AboutPage />} />

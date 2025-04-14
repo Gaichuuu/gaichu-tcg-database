@@ -1,16 +1,19 @@
 import { useNavigate } from 'react-router-dom';
 import { getSeries } from '../hooks/getCollection';
+import { CollectionSeries } from '../types/CollectionSeries';
 import Tile from './Tile';
 
 const seriesList = () => {
     const { data: collectionSeries, error } = getSeries();
     const navigate = useNavigate();
-  
+    const handleClick = (series: CollectionSeries) => {
+      navigate(`/cards/${series.short_name}`);
+    };
     if (error) return <p>Something went wrong...</p>;
     return (
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {collectionSeries?.map((collection) => (
-          <Tile key={collection.series.id} onClick={() => navigate(`/cards/${collection.series.short_name}`)}>
+          <Tile key={collection.series.id} onClick={() => handleClick(collection.series)}>
             <div className="flex h-full flex-col items-center justify-center">
               <img
                 src={collection.series.logo}
