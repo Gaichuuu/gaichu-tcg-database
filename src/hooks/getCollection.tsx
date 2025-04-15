@@ -11,11 +11,11 @@ export const getSeries = () => {
       });
 }
 
-export const getSets = (shortName?: string) => {
+export const getSets = (seriesShortName?: string) => {
   return useQuery<SetAndCard[]>({
       queryKey: ['SetsList'],
-      enabled: !!shortName,
-      queryFn: () => fetchSets(shortName!),
+      enabled: !!seriesShortName,
+      queryFn: () => fetchSets(seriesShortName!),
       staleTime: 1000 * 60 * 5,
     });
 }

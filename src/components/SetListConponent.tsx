@@ -4,8 +4,8 @@ import Tile from './Tile';
 
 const setsList = () => {
     const navigate = useNavigate();
-    const { shortName } = useParams();
-    const { data: collectionSet, error } = getSets(shortName);
+    const { seriesShortName } = useParams();
+    const { data: collectionSet, error } = getSets(seriesShortName);
 
     if (error) return <p>Something went wrong...</p>;
     return (
@@ -13,7 +13,7 @@ const setsList = () => {
         {collectionSet?.map((set) => (
           <Tile
             key={set.set.short_name}
-            onClick={() => navigate(`/cards/${shortName}/sets/${set.set.short_name}`)}
+            onClick={() => navigate(`/cards/${seriesShortName}/sets/${set.set.short_name}`)}
           >
             <div className="flex h-full flex-col items-center justify-center">
               <img

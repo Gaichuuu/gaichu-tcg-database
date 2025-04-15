@@ -27,13 +27,13 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/cards" element={<TcgSeriesPage />} />
-              <Route path="/cards/:shortName" element={<SeriesPage />} />
+              <Route path="/cards/:seriesShortName" element={<SeriesPage />} />
               <Route
-                path="/cards/:shortName/sets/:setId"
+                path="/cards/:seriesShortName/sets/:setId"
                 element={<SetPage />}
               />
               <Route
-                path="/cards/:shortName/sets/:setId/card/:cardId"
+                path="/cards/:seriesShortName/sets/:setId/card/:cardId"
                 element={<CardDetailPage />}
               />
               <Route path="/about" element={<AboutPage />} />
