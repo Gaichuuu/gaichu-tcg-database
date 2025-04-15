@@ -5,9 +5,9 @@ import { CollectionSet } from '../types/CollectionSet';
 import { SetAndCard } from "../types/MergedCollection";
 
 export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
-    const setsRefarence = collection(database, "sets");
+    const setsReference = collection(database, "sets");
     const setsQuery = query(
-        setsRefarence,
+        setsReference,
         where('series_short_name', "==" ,shortName)
     );
     const setsSnapshot = await getDocs(setsQuery);
