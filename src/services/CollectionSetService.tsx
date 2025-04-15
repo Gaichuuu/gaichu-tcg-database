@@ -21,7 +21,6 @@ export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
             id: doc.id,
             ...doc.data(),
         })) as CollectionCard[];
-        console.log(cards);
         return mergeWithSetsId(sets, cards);
 }
 

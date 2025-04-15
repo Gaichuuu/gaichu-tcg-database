@@ -14,6 +14,5 @@ export const fetchCards = async (setShortName: string): Promise <CollectionCard[
             id: doc.id,
             ...doc.data()
     })) as CollectionCard[];
-    
     return cards
 }

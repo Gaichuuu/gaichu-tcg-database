@@ -15,7 +15,7 @@ export const getSeries = () => {
 
 export const getSets = (seriesShortName?: string) => {
   return useQuery<SetAndCard[]>({
-      queryKey: ['SetsList'],
+      queryKey: [`SetsList_${seriesShortName}`],
       enabled: !!seriesShortName,
       queryFn: () => fetchSets(seriesShortName!),
       staleTime: 1000 * 60 * 5,
@@ -24,7 +24,7 @@ export const getSets = (seriesShortName?: string) => {
 
 export const getCards = (setShortName?: string) => {
   return useQuery<CollectionCard[]>({
-      queryKey: ['SetsList'],
+      queryKey: [`CardsList_${setShortName}`],
       enabled: !!setShortName,
       queryFn: () => fetchCards(setShortName!),
       staleTime: 1000 * 60 * 5,

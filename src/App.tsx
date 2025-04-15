@@ -29,11 +29,11 @@ const App: React.FC = () => {
               <Route path="/cards" element={<TcgSeriesPage />} />
               <Route path="/cards/:seriesShortName" element={<SeriesPage />} />
               <Route
-                path="/cards/:seriesShortName/sets/:setId"
+                path="/cards/:seriesShortName/sets/:setShortName"
                 element={<SetPage />}
               />
               <Route
-                path="/cards/:seriesShortName/sets/:setId/card/:cardId"
+                path="/cards/:seriesShortName/sets/:setShortName/card/:cardId"
                 element={<CardDetailPage />}
               />
               <Route path="/about" element={<AboutPage />} />
@@ -42,7 +42,6 @@ const App: React.FC = () => {
             </Routes>
           </Layout>
         </main>
-
         {/* Footer remains at the bottom */}
         <Footer />
       </div>
