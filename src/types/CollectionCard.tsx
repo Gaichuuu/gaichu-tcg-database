@@ -7,14 +7,27 @@ export interface CollectionCard {
     description: string;
     hp: number;
     image: string;
-    set_ids:[string];
-    illustrator_ids:[string];
+    rarity: string;
+    illustrators:[string];
     attacks: [Attack];
+    measurement: Measurement;
+    sets: [Set];
+    set_ids: [string];
+}
+
+interface Set {
+    name: string;
+    image: string;
+}
+
+interface Measurement {
+    height: string;
+    weight: string;
 }
 
 interface Attack {
     name: string;
-    cost_ids: [string];
     effect: string;
     damage: number;
+    costs: [string];
 }
