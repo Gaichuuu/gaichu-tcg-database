@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchCards } from '../services/CollectionCardService';
+import { fetchCardDetail, fetchCards } from '../services/CollectionCardService';
 import { fetchSeries } from '../services/CollectionSeriesService';
 import { fetchSets } from '../services/CollectionSetService';
 import { CollectionCard } from '../types/CollectionCard';
@@ -29,4 +29,13 @@ export const getCards = (setShortName?: string) => {
       queryFn: () => fetchCards(setShortName!),
       staleTime: 1000 * 60 * 5,
     });
+}
+
+export const getCardDetail = (cardName?: string) => {
+  return useQuery<CollectionCard | null>({
+    queryKey: [`CardDetail_${cardName}`],
+    enabled: !!cardName,
+    queryFn: () => fetchCardDetail(cardName!),
+    staleTime: 1000 * 60 * 5,
+  });
 }

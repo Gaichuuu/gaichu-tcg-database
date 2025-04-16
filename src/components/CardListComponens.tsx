@@ -3,7 +3,7 @@ import { getCards } from '../hooks/getCollection';
 import Tile from './Tile';
 
 const CardList = () => {
-    const { seriesId, setShortName } = useParams<Params>();
+    const { seriesShortName, setShortName } = useParams<Params>();
     const { data: collectionCards, error } = getCards(setShortName);
     const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ const CardList = () => {
           <Tile
             key={card.id}
             onClick={() =>
-              navigate(`/cards/${seriesId}/sets/${setShortName}/card/${card.id}`)
+              navigate(`/cards/${seriesShortName}/sets/${setShortName}/card/${card.name}`)
             }
           >
             <div className="flex w-full flex-col items-center">
