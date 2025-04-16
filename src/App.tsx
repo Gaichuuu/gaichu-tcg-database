@@ -33,7 +33,7 @@ const App: React.FC = () => {
                 element={<SetPage />}
               />
               <Route
-                path="/cards/:seriesShortName/sets/:setShortName/card/:cardId"
+                path="/cards/:seriesShortName/sets/:setShortName/card/:cardName"
                 element={<CardDetailPage />}
               />
               <Route path="/about" element={<AboutPage />} />
