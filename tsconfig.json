@@ -8,6 +8,5 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "jsx": "react-jsx"
-    // ...other options
   }
 }

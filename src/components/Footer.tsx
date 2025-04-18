@@ -9,9 +9,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col items-center justify-between px-4 md:flex-row">
         <p className="text-sm">&copy; {new Date().getFullYear()} Gaichu</p>
         <div className="mt-2 flex items-center space-x-4 md:mt-0">
-          {/* About link */}
           <Link to="/about">About</Link>
-          {/* Social media icon links */}
+
           <a href="https://github.com/CamelJR/gaichu" target="_blank">
             <FaGithub size={20} />
           </a>

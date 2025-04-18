@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Theme colors */
 @theme {
   --color-mainBg: #0d0614;
   --color-navBg: #171721;
@@ -13,8 +12,14 @@
   --color-primaryText: #dadada;
   --color-secondaryText: #99a1af;
   --color-errorText: #ff0000;
-  --color-primaryButton: #1a1a1a;
-  --color-hoverButton: #646cff;
+  --color-primaryButton: #646cff;
+  --color-hoverButton: #dadada;
+}
+
+@layer components {
+  .button {
+    @apply bg-primaryButton !text-mainBg hover:bg-hoverButton rounded px-6 py-3 text-lg transition;
+  }
 }
 
 :root {
@@ -51,23 +56,4 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  color: var(--color-primaryButton);
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  color: var(--color-hoverButton);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }

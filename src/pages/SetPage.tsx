@@ -8,8 +8,8 @@ const SetPage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="mb-6 text-2xl font-bold">{setShortName} cards</h2>
-      <CardList/>
+      <h2 className="mb-6 text-2xl">{setShortName} cards</h2>
+      <CardList />
     </div>
   );
 };
