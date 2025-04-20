@@ -1,7 +1,7 @@
 // src/pages/SetPage.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
-import CardList from "../components/CardListComponens";
+import CardList from "../components/ListComponens/CardListComponent";
 
 const SetPage: React.FC = () => {
   const { setShortName } = useParams();

@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { getSets } from "../hooks/getCollection";
-import Tile from "./TileComponents/Tile";
+import { getSets } from "../../hooks/getCollection";
+import Tile from "../TileComponents/Tile";
 
 const setsList = () => {
   const navigate = useNavigate();

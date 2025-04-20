@@ -1,7 +1,7 @@
 // src/pages/SeriesPage.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
-import SetsList from "../components/SetListConponent";
+import SetsList from "../components/ListComponens/SetListConponent";
 
 const SeriesPage: React.FC = () => {
   const { seriesShortName } = useParams();
