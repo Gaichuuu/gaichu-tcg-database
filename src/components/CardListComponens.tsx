@@ -1,6 +1,6 @@
 import { Params, useNavigate, useParams } from "react-router-dom";
 import { getCards } from "../hooks/getCollection";
-import Tile from "./Tile";
+import Tile from "./TileComponents/Tile";
 
 const CardList = () => {
   const { seriesShortName, setShortName } = useParams<Params>();
