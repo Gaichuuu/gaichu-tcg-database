@@ -10,7 +10,7 @@ const CardList = () => {
   if (error) return <p>Something went wrong...</p>;
 
   return (
-    <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 md:grid-cols-10">
+    <div className="grid grid-cols-2 gap-0 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
       {collectionCards?.map((card) => (
         <CardsListTile
           key={card.id}
@@ -25,12 +25,12 @@ const CardList = () => {
               <img
                 src={card.image}
                 alt={card.name}
-                className="max-h-[200px] w-full rounded-lg object-contain border-4 border-mainBg hover:border-primaryBorder "
+                className="hover:ring-primaryBorder block max-h-[200px] w-full rounded-lg border-2 border-transparent object-contain ring-2 ring-transparent transition-shadow duration-200"
               />
             </div>
 
             <div className="flex items-center justify-center space-x-2">
-              <h3 className="text-sm mb-2">{card.name}</h3>
+              <h3 className="mb-2 text-sm">{card.name}</h3>
             </div>
           </div>
         </CardsListTile>

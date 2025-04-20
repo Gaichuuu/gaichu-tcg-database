@@ -7,8 +7,8 @@ const SeriesPage: React.FC = () => {
   const { seriesShortName } = useParams();
 
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="mb-6 text-2xl">{seriesShortName} sets</h2>
+    <div className="container mx-auto p-2">
+      <h2 className="mb-2 text-xl">{seriesShortName} sets</h2>
       <SetsList />
     </div>
   );
