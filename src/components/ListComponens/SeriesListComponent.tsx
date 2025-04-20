@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { getSeries } from "../hooks/getCollection";
-import { CollectionSeries } from "../types/CollectionSeries";
-import Tile from "./Tile";
+import { getSeries } from "../../hooks/getCollection";
+import { CollectionSeries } from "../../types/CollectionSeries";
+import Tile from "../TileComponents/Tile";
 
 const seriesList = () => {
   const { data: collectionSeries, error } = getSeries();

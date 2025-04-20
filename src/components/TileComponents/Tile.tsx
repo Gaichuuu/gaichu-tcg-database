@@ -1,12 +1,8 @@
 // src/components/Tile.tsx
 import React from "react";
+import { TileModel } from "./TileModel";
 
-interface TileProps {
-  children: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLDivElement>;
-}
-
-const Tile: React.FC<TileProps> = ({ children, onClick }) => {
+const Tile: React.FC<TileModel> = ({ children, onClick }) => {
   return (
     <div
       onClick={onClick}

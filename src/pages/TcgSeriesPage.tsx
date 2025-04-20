@@ -1,6 +1,6 @@
 // src/pages/TcgSeriesPage.tsx
 import React from "react";
-import SeriesList from "../components/SeriesListComponent";
+import SeriesList from "../components/ListComponens/SeriesListComponent";
 
 const TcgSeriesPage: React.FC = () => {
   return (
