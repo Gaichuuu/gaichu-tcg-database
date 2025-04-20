@@ -7,8 +7,8 @@ const SetPage: React.FC = () => {
   const { setShortName } = useParams();
 
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="mb-6 text-2xl">{setShortName} cards</h2>
+    <div className="container mx-auto p-2">
+      <h2 className="mb-2 text-xl">{setShortName} cards</h2>
       <CardList />
     </div>
   );
