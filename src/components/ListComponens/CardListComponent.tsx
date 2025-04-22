@@ -25,7 +25,7 @@ const CardList = () => {
               <img
                 src={card.image}
                 alt={card.name}
-                className="hover:ring-primaryBorder block max-h-[200px] w-full rounded-lg border-2 border-transparent object-contain ring-2 ring-transparent transition-shadow duration-200"
+                className="hover:ring-primaryBorder block max-h-[260px] w-full rounded-xl border-2 border-transparent object-contain ring-2 ring-transparent transition-shadow duration-200"
               />
             </div>
 
