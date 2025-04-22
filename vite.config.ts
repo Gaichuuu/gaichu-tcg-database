@@ -5,12 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
+    sourcemap: true,
+
     chunkSizeWarningLimit: 1000,
 
     rollupOptions: {
       onwarn(warning, defaultHandler) {
         if (warning.code === "MODULE_LEVEL_DIRECTIVE") return;
-
         defaultHandler(warning);
       },
     },
