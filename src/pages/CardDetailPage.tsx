@@ -21,6 +21,10 @@ const CardDetailPage: React.FC = () => {
     );
   }
 
+  if (!card) {
+    return <div>Loading…</div>;
+  }
+
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col gap-6 md:flex-row">
@@ -48,12 +52,13 @@ const CardDetailPage: React.FC = () => {
                   {card?.measurement.weight}
                 </td>
               </tr>
-              {card?.attacks.map((attack) => (
-                <tr>
+              {card.attacks.map((attack, aIndex) => (
+                <tr key={attack.name ?? aIndex}>
                   <th className="py-2 pr-4 text-left">{attack.name}</th>
                   <td className="py-2">
-                    {attack.costs.map((cost) => (
+                    {(attack.costs ?? []).map((cost, cIndex) => (
                       <img
+                        key={`${attack.name}-cost-${cIndex}`}
                         src={`https://gaichu.b-cdn.net/wm/icon${cost}.jpg`}
                         alt={`${cost} Icon`}
                         className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
