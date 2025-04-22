@@ -29,7 +29,7 @@
     "@tailwindcss/postcss": "^4.0.15",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react": "^1.3.2",
+    "@vitejs/plugin-react": "^4.4.1",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.0.0",
