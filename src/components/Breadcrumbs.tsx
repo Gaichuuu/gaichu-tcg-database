@@ -22,7 +22,8 @@ const Breadcrumbs: React.FC = () => {
       if (segment === "sets" || segment === "card") {
         return null;
       }
-      return { label: segment, originalIndex: index };
+      const label = decodeURIComponent(segment);
+      return { label, originalIndex: index };
     })
     .filter((item): item is BreadcrumbItem => item !== null);
 
