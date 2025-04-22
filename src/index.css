@@ -25,7 +25,12 @@
 @layer base {
   html,
   body {
-    overscroll-behavior-y: none; /* or `none` to fully disable */
+    @apply bg-black;
+    overscroll-behavior-y: none;
+  }
+  main,
+  footer {
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
