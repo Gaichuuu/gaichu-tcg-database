@@ -1,0 +1,52 @@
+[
+  {
+    "id": "025c4839-ebc7-4bc3-a714-05aac3c9c27d",
+    "name": "Fire",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "0928f8b2-dd69-4e05-9801-4c2044776ebf",
+    "name": "Fighting",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "178d7079-3110-4c54-b49a-b3aec0c7932b",
+    "name": "Psychic",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "2cd727bb-6f92-42a4-a339-2e0baba14bb7",
+    "name": "Electric",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "6cf4812c-a3a8-44de-a845-352fe2e77bcb",
+    "name": "Dark",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "86e80216-dc79-4e3e-bf61-018c32a95f8a",
+    "name": "Dragon",
+    "image": "https://gaichu.b-cdn.net/wm/iconDragon.jpg"
+  },
+  {
+    "id": "a88ae29e-a173-4898-a9fe-4cef9405f649",
+    "name": "Steel",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "ad5fe20d-8f15-4733-9d35-0d9413dabede",
+    "name": "Water",
+    "image": "https://gaichu.b-cdn.net/wm/iconWater.jpg"
+  },
+  {
+    "id": "e35c34a8-ee33-401c-a01c-83031c734086",
+    "name": "Grass",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  },
+  {
+    "id": "ea3c2755-b2d3-4928-ba34-b98f431f914d",
+    "name": "Normal",
+    "image": "https://gaichu.b-cdn.net/wm/iconNormal.jpg"
+  }
+]
