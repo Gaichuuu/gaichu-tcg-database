@@ -1,0 +1,29 @@
+[
+  {
+    "id": "13c9cae0-290f-4f9d-8006-8bb7be104f1b",
+    "series_short_name": "wm",
+    "series_id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
+    "short_name": "set1",
+    "number": 2,
+    "name": "Set One (reprint)",
+    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+  },
+  {
+    "id": "7bef5aa0-487d-4456-8fb4-2d26c6003f4e",
+    "series_short_name": "wm",
+    "series_id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
+    "short_name": "set2",
+    "number": 3,
+    "name": "Set Two",
+    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+  },
+  {
+    "id": "cfcac0b5-738e-46de-9386-f3b42010c722",
+    "series_short_name": "wm",
+    "series_id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
+    "short_name": "og",
+    "number": 1,
+    "name": "Set One",
+    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
+  }
+]

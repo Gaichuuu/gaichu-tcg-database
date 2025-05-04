@@ -12,7 +12,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "tailwind": "tailwindcss"
+    "tailwind": "tailwindcss",
+    "export-data": "node scripts/exportCollections.cjs"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.15",
@@ -34,6 +35,7 @@
     "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "firebase-admin": "^13.3.0",
     "globals": "^15.14.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",

@@ -1,0 +1,1904 @@
+[
+  {
+    "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
+    "number": 23,
+    "name": "Water Horse",
+    "parody": "Horsea",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "description": "This Pokémon can escape from its opponents in a variety of ways",
+    "measurement": {
+      "height": ".4m",
+      "weight": "8kg"
+    },
+    "attacks": [
+      {
+        "name": "Smoke Splat",
+        "effect": "Creates a cloud of black smoke. This is a move that the Pokémon learned by observing the ninjas.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
+    "number": 45,
+    "name": "Alola Pachu",
+    "parody": "Alolan Raichu",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "description": "This form only occurs in the Alola region, and according to Ken Kanyou, this adaptation is likely due to its diet.",
+    "measurement": {
+      "height": "7m",
+      "weight": "21kg"
+    },
+    "attacks": [
+      {
+        "name": "Psychic",
+        "effect": "Uses tarot cards to predict the future. Also, can channel your dead grandma.",
+        "damage": "$100",
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "123ab3a2-529d-47b4-9a4d-390178d8399d",
+    "number": 30,
+    "name": "Balloon",
+    "parody": "Drifloon",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set1/30.jpg",
+    "description": "There are also stories of it grabbing young children by the hand and dragging them to the afterlife.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "1.2kg"
+    },
+    "attacks": [
+      {
+        "name": "Selfdestruct",
+        "effect": "The bomb user may explode and injure themselves or others. I'm afraid the balloon will pop.",
+        "damage": 100,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "12d9770e-32e2-4766-ab24-a43f86dccc42",
+    "number": 34,
+    "name": "Beaver",
+    "parody": "Bidoof",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/34.jpg",
+    "description": "This Pokémon knows no fear. It is strong, fast, and cunning. Its daily routine is gnawing at logs.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "20kg"
+    },
+    "attacks": [
+      {
+        "name": "Taunt",
+        "effect": "To mentally and psychologically torment someone until they feel uncomfortable.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
+    "number": 16,
+    "name": "Pidgey",
+    "parody": "Pidgey",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
+    "description": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "1.8kg"
+    },
+    "attacks": [
+      {
+        "name": "Sand-attack",
+        "effect": "Kick sand into the opponent's eyes and run away. A truly cowardly move.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
+    "number": 2,
+    "name": "Ducky",
+    "parody": "Psyduck",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
+    "description": "Possesses powerful psychic abilities, but they only come into play when he has a chronic headache.",
+    "measurement": {
+      "height": ".8m",
+      "weight": "19.6kg"
+    },
+    "attacks": [
+      {
+        "name": "Amnesia",
+        "effect": "Forget everything that is happening right now. This somehow increases special defense. Editor's note: I do this all the time, but my special defense never goes up.",
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
+    "number": 1,
+    "name": "Mud Creef",
+    "parody": "Mudkip",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/01.jpg",
+    "description": "Its strength is so great that it can destroy mountains with a single blow, and even legends dare not challenge this creature.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "7.6kg"
+    },
+    "attacks": [
+      {
+        "name": "Punch",
+        "effect": "Throws a punch at the opponent.",
+        "damage": 20,
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
+    "number": 40,
+    "name": "Light Boy",
+    "parody": "Espeon",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
+    "description": "This Pokémon is extremely loyal to those who are favorable to it.",
+    "measurement": {
+      "height": "1m",
+      "weight": "27kg"
+    },
+    "attacks": [
+      {
+        "name": "Psychic",
+        "effect": "An experiment using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience, also known as a bad trip.",
+        "damage": 90,
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
+    "number": 42,
+    "name": "Trump Tea",
+    "parody": "Charizard",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
+    "description": "Able to melt giant scum with a fire press.",
+    "measurement": {
+      "height": "1.7m",
+      "weight": "90kg"
+    },
+    "attacks": [
+      {
+        "name": "Fire Blast",
+        "effect": "A powerful character that can deal a lot of damage, but can also be used to make s'mores.",
+        "damage": 150,
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
+    "number": 32,
+    "name": "Sukawai",
+    "parody": "Mimikyu",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/32.jpg",
+    "description": "Its exact appearance is unknown. A scholar who saw what was underneath the rag was overcome with fear and died of shock.",
+    "measurement": {
+      "height": ".2m",
+      "weight": ".7kg"
+    },
+    "attacks": [
+      {
+        "name": "Copycat",
+        "effect": "Copy the other person.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
+    "number": 48,
+    "name": "Gau",
+    "parody": "Mew",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/48.jpg",
+    "description": "This Pokémon has always been rare, and is believed to be the ancestor of all Pokémon.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "4kg"
+    },
+    "attacks": [
+      {
+        "name": "Transform",
+        "effect": "The user can take on the exact same appearance as the other person and use their techniques. If this technique is used on a doujin, it will result in a long night.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
+    "number": 28,
+    "name": "Champy",
+    "parody": "Abra",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/28.jpg",
+    "description": "If it senses danger it will immediately teleport away.",
+    "measurement": {
+      "height": ".9m",
+      "weight": "19.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Teleport",
+        "effect": "To instantly teleport to another location. Also known as teleportation.",
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
+    "number": 18,
+    "name": "Nugget",
+    "parody": "Torchic",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
+    "description": "He has a flame inside him that never goes out.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "2.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Flamethrower",
+        "effect": "An extremely powerful flame attack, only the most powerful and experienced Pokémon can pull off this move. ",
+        "damage": 100,
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "27d41ee8-e9af-440b-b633-551140734996",
+    "number": 9,
+    "name": "Meow",
+    "parody": "Meowth",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set2/09.jpg",
+    "description": "This creature is cute and fluffy, but highly intelligent and devious! I have a kind heart and like to spend my days sleeping.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "4.2kg"
+    },
+    "attacks": [
+      {
+        "name": "Yawn",
+        "effect": "I yawn and then I go to sleep. It's a cute trick, but it doesn't work.",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Payday",
+        "effect": "Attack to make your opponent drop money.",
+        "damage": 20,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
+    "number": 44,
+    "name": "Then",
+    "parody": "Dragonite",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "description": "It can fly slower than any other Pokémon, circling the Earth in just 16 hours.",
+    "measurement": {
+      "height": "2.2m",
+      "weight": "210kg"
+    },
+    "attacks": [
+      {
+        "name": "Dragon Dance",
+        "effect": "The user will perform a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
+        "costs": ["Dragon"]
+      }
+    ]
+  },
+  {
+    "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
+    "number": 5,
+    "name": "Piccolo",
+    "parody": "Metapod",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/05.jpg",
+    "description": "The shell becomes as hard as iron.",
+    "measurement": {
+      "height": ".7m",
+      "weight": "9.9kg"
+    },
+    "attacks": [
+      {
+        "name": "Harden",
+        "effect": "To become hard.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "31ea2242-1638-4040-ab15-6c7587da4397",
+    "number": 13,
+    "name": "Egg Boy",
+    "parody": "Chansey",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
+    "description": "This Pokémon is very rare. It is very fast even when picked.",
+    "measurement": {
+      "height": "1.1m",
+      "weight": "34.6kg"
+    },
+    "attacks": [
+      {
+        "name": "Softboiled",
+        "effect": "Lay and eat boiled eggs. To be honest, it's very unpleasant.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
+    "number": 5,
+    "name": "Nidonido",
+    "parody": "Nidoran♂",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set2/05.jpg",
+    "description": "This sign is very aggressive and rebellious. It even has a desire to protect its home.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "1kg"
+    },
+    "attacks": [
+      {
+        "name": "Cut",
+        "effect": "Cut whatever is in front of you.",
+        "damage": 15,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
+    "number": 9,
+    "name": "Green Boy",
+    "parody": "Bulbasaur",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/09.jpg",
+    "description": "This Pokémon is born with a seed on its back. They grow at the same rate and eventually become part of the body.",
+    "measurement": {
+      "height": ".7m",
+      "weight": "6.9kg"
+    },
+    "attacks": [
+      {
+        "name": "Leech Seed",
+        "effect": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse. ",
+        "damage": 10,
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
+    "number": 2,
+    "name": "Furphy",
+    "parody": "Farfetch'd",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set2/02.jpg",
+    "description": "This creature is capable of solving difficult puzzles and has an extremely high IQ.",
+    "measurement": {
+      "height": ".8m",
+      "weight": "15kg"
+    },
+    "attacks": [
+      {
+        "name": "Stick Slap",
+        "effect": "Hitting the opponent with a stick, leaving a lump on the opponent's head.",
+        "damage": 30,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
+    "number": 41,
+    "name": "Hanbot",
+    "parody": "Blastoise",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
+    "description": "The water dragon that shoots out from the shell's rocket is so hot it has the power to pierce even the hottest parts of the sky.",
+    "measurement": {
+      "height": "1.6m",
+      "weight": "85kg"
+    },
+    "attacks": [
+      {
+        "name": "Hydro Pump",
+        "effect": "Shoots a powerful jet of water at opponents, also effective at cleaning cars and trucks.",
+        "damage": 150,
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "4441cd5c-4b23-4341-9f7c-8e39281f7b0b",
+    "number": 24,
+    "name": "Brown Rod",
+    "parody": "Diglett",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
+    "description": "This Pokémon is extremely vulnerable to sunlight and spends almost its entire life underground.",
+    "measurement": {
+      "height": ".2m",
+      "weight": ".8kg"
+    },
+    "attacks": [
+      {
+        "name": "Dig",
+        "effect": "Dig a hole.",
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
+    "number": 46,
+    "name": "Gontar",
+    "parody": "Gengar",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/wm/set1/46.jpg",
+    "description": "It absorbs heat from anything around it. If you suddenly feel a chill, it's a sign that Gengar is nearby.",
+    "measurement": {
+      "height": "1.5m",
+      "weight": "40kg"
+    },
+    "attacks": [
+      {
+        "name": "Curse",
+        "effect": "This technique inflicts injustice on the opponent. There are various types of luck involved, such as being hit by lightning or being stuck in traffic.",
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
+    "number": 50,
+    "name": "Shiny Fish",
+    "parody": "Magikarp",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
+    "description": "This Pokémon is nearly useless in battle, but it tastes delicious when roasted and de-boned.",
+    "measurement": {
+      "height": ".9m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": "Splash",
+        "effect": "In most cases, it does no damage. (Roll the dice 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
+        "damage": 0,
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
+    "number": 4,
+    "name": "Pink Boy",
+    "parody": "Jigglypuff",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set1/04.jpg",
+    "description": "The frequency of the singing voice perfectly match the brain waves of a person in deep sleep.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "5.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Sing",
+        "effect": "It sings a variety of songs that are popular among young people today.",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Doubleslap",
+        "effect": "Slapping the opponent with your small pink hand. ",
+        "damage": 20,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
+    "number": 17,
+    "name": "Croco",
+    "parody": "Totodile",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
+    "description": "This Pokémon has a very strong forehead.",
+    "measurement": {
+      "height": ".6m",
+      "weight": "9.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Bite",
+        "effect": "Biting someone. ",
+        "damage": 30,
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Water Gun",
+        "effect": "Take out the water gun you bought at the toy store and spray it at the other person. ",
+        "damage": 40,
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
+    "number": 8,
+    "name": "Eevee",
+    "parody": "Eevee",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "description": "This Pokémon is a big foodie. It only eats French fries and Hot Pockets.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "6.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Scratch",
+        "effect": "It drags its opponents along with its long, clawed fingers.",
+        "damage": 30,
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Leech Seed",
+        "effect": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "593a874f-f584-4127-a813-240fbd0953c9",
+    "number": 10,
+    "name": "Turtle Chips",
+    "parody": "Squirtle",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
+    "description": "When it's dangerous, he stays shut up.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "9kg"
+    },
+    "attacks": [
+      {
+        "name": "Bubble",
+        "effect": "I love blowing bubbles. So cute! ",
+        "damage": 20,
+        "costs": ["Water"]
+      },
+      {
+        "name": "Rapid Spin",
+        "effect": "It spins in a circle. This is also very cute.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
+    "number": 8,
+    "name": "Gegedu",
+    "parody": "Geodude",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set2/08.jpg",
+    "description": "This organism is actually just a rock, and has baffled scientists and biologists since its discovery.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "20kg"
+    },
+    "attacks": [
+      {
+        "name": "Earthquake",
+        "effect": "Shakes the ground and attacks the opponent. It can cause great damage to cities.",
+        "damage": 25,
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "6e145bfb-dde8-4836-9e48-7204bdf09a29",
+    "number": 3,
+    "name": "Togouchi",
+    "parody": "Togetic",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/03.jpg",
+    "description": "This creature can taste sound with its eyes.",
+    "measurement": {
+      "height": ".6m",
+      "weight": "3.2kg"
+    },
+    "attacks": [
+      {
+        "name": "Energy Ball",
+        "effect": "When it touches other creatures, nothing happens.",
+        "damage": 20,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "73dbce8e-1088-4a8b-a07c-fa03aacdac68",
+    "number": 10,
+    "name": "Blissui",
+    "parody": "Blissey",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/wm/set2/10.jpg",
+    "description": "This creature loves to protect and heal others. Therefore, it will not be used in combat and will not carry on the fight.",
+    "measurement": {
+      "height": "1.5m",
+      "weight": "46kg"
+    },
+    "attacks": [
+      {
+        "name": "Egg Bomb",
+        "effect": "Throws explosive eggs at opponents. Make it green and explode.",
+        "damage": 30,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
+    "number": 39,
+    "name": "Dark Boy",
+    "parody": "Umbreon",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
+    "description": "The light emitted from the ring can be dimmed so that it can become completely invisible in the dark of night.",
+    "measurement": {
+      "height": "1m",
+      "weight": "27kg"
+    },
+    "attacks": [
+      {
+        "name": "Confuse Ray",
+        "effect": "This attack makes the target question reality, making them ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
+    "number": 22,
+    "name": "Robot",
+    "parody": "Porygon",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
+    "description": "The first Pokémon created by humans. A Pokémon that came into being after many years of scientific research and experimentation.",
+    "measurement": {
+      "height": ".8m",
+      "weight": "36.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Tri Attack",
+        "effect": "Fires a beam made up of multiple elements. ",
+        "damage": 80,
+        "costs": ["Fire", "Water", "Electric"]
+      }
+    ]
+  },
+  {
+    "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
+    "number": 43,
+    "name": "Veronica",
+    "parody": "Venusaur",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
+    "description": "The scent of the flower on its back increases when it hits high above the ground. Pokémon gather there, drawn by the scent.",
+    "measurement": {
+      "height": "2m",
+      "weight": "100kg"
+    },
+    "attacks": [
+      {
+        "name": "Solarbeam",
+        "effect": "Attacks opponents with energy collected from the sun. Gives them Vitamin D and causes a sunburn.",
+        "damage": 150,
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
+    "number": 27,
+    "name": "Boat",
+    "parody": "Lapras",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
+    "description": "A peaceful Pokémon that will be happy if you let it ride on your back.",
+    "measurement": {
+      "height": "2.5m",
+      "weight": "220kg"
+    },
+    "attacks": [
+      {
+        "name": "Surf",
+        "effect": "He is skilled at surfing and impresses his friends with his skills.",
+        "damage": 90,
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
+    "number": 6,
+    "name": "Heavy Boy",
+    "parody": "Magnemite",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
+    "description": "He is able to levitate thanks to the magnetic field he generates within his body.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "6kg"
+    },
+    "attacks": [
+      {
+        "name": "Thunder Wave",
+        "effect": "An attack that paralyzes the target with a wave of electricity.",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
+    "number": 29,
+    "name": "Sleepy Boy",
+    "parody": "Snorlax",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
+    "description": "A fat, lazy, and always hungry Pokémon that will eat anything, even if it's poisonous.",
+    "measurement": {
+      "height": "2.1m",
+      "weight": "460kg"
+    },
+    "attacks": [
+      {
+        "name": "Rest",
+        "effect": "Falls asleep. Snorlax is good at this move.",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Snore",
+        "effect": "Attack while asleep.",
+        "damage": 60,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "929c4924-4617-4c0c-b3a0-1b08d9597f02",
+    "number": 1,
+    "name": "Skipper",
+    "parody": "Mudkip",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set1/01.jpg",
+    "description": "This Pokémon spends most of its time hiding in the mud.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "7.6kg"
+    },
+    "attacks": [
+      {
+        "name": "Growl",
+        "effect": "It growls at the opponent. It's meant to scare them, but also pretty cute."
+      },
+      {
+        "name": "Water Gun",
+        "effect": "Spits water at the opponent.",
+        "damage": 20,
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
+    "number": 4,
+    "name": "Slow Mo",
+    "parody": "Slowbro",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set2/04.jpg",
+    "description": "This creature uses a sixth sense to see into the future.",
+    "measurement": {
+      "height": "1.6m",
+      "weight": "78kg"
+    },
+    "attacks": [
+      {
+        "name": "Hypnotist",
+        "effect": "Uses telekinesis to enter the mind of his victim and tells him to do 50 embarrassing things in front of his friends.",
+        "damage": 50,
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
+    "number": 7,
+    "name": "Cutiepie",
+    "parody": "Raichu",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set1/07.jpg",
+    "description": "Items can be recharged when placed on the head.",
+    "measurement": {
+      "height": ".8m",
+      "weight": "30kg"
+    },
+    "attacks": [
+      {
+        "name": "Thunderpunch",
+        "effect": "Uses electricity to punch the enemy. Since his arms are small, this attack often misses.",
+        "damage": 50,
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
+    "number": 20,
+    "name": "Whammy",
+    "parody": "Dratini",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
+    "description": "This Pokémon was considered a legendary Pokémon until a small colony was discovered under water.",
+    "measurement": {
+      "height": "1.8m",
+      "weight": "3.3kg"
+    },
+    "attacks": [
+      {
+        "name": "Dragon Tail",
+        "effect": "Attacks opponent with its tail. ",
+        "damage": 40,
+        "costs": ["Dragon"]
+      },
+      {
+        "name": "Leer",
+        "effect": "Stare at someone who is staring at you.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
+    "number": 3,
+    "name": "Lavatar",
+    "parody": "Larvitar",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/03.jpg",
+    "description": "This Pokémon was born under a large mountain. It takes years to eat up all of its food, and after it does, it takes a long nap.",
+    "measurement": {
+      "height": ".6m",
+      "weight": "72kg"
+    },
+    "attacks": [
+      {
+        "name": "Rock Throw",
+        "effect": "Picking up a rock and throwing it at the opponent. This was a technique often used in high school. ",
+        "damage": 20,
+        "costs": ["Fighting", "Normal"]
+      }
+    ]
+  },
+  {
+    "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
+    "number": 35,
+    "name": "Kitty",
+    "parody": "Litten",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
+    "description": "She hates the affection of anyone she can trust, and twice a year she sets herself on fire to burn off her old fur.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "4.3kg"
+    },
+    "attacks": [
+      {
+        "name": "Double Kick",
+        "effect": "This skill is difficult to master, as it will not only destroy your opponent once, but twice.",
+        "damage": 20,
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "b7e60ae3-6fdf-4b69-a5b5-18f6e0d70676",
+    "number": 7,
+    "name": "Pidgeotto",
+    "parody": "Pidgeotto",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/07.jpg",
+    "description": "This creature was once abundant on Earth, but now only a handful remain.",
+    "measurement": {
+      "height": "1.5m",
+      "weight": "39kg"
+    },
+    "attacks": [
+      {
+        "name": "Stomp",
+        "effect": "Trample and forcefully attack your opponent.",
+        "damage": 35,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
+    "number": 15,
+    "name": "Buggy",
+    "parody": "Butterfree",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set1/15.jpg",
+    "description": "A Pokémon that spends all day collecting nectar from flowers.",
+    "measurement": {
+      "height": "1.1m",
+      "weight": "32kg"
+    },
+    "attacks": [
+      {
+        "name": "Poisonpowder",
+        "effect": "Causes a status effect on the opponent.",
+        "costs": ["Grass"]
+      },
+      {
+        "name": "Stun Spore",
+        "effect": "Paralyze the opponent.",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
+    "number": 47,
+    "name": "Dakarei",
+    "parody": "Mewtwo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "description": "A Pokémon created in a laboratory through gene splicing. It has a muscular body that is slow to develop during war, but lacks a compassionate heart.",
+    "measurement": {
+      "height": "2m",
+      "weight": "122kg"
+    },
+    "attacks": [
+      {
+        "name": "Future Sight",
+        "effect": "Attacks opponents in the future with psychic powers. Pray that it's not when you're on the toilet.",
+        "costs": ["Psychic", "Psychic", "Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
+    "number": 49,
+    "name": "Are You Who",
+    "parody": "Arceus",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "∞",
+    "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
+    "description": "It is said that the egg that was there at the time emerged from the ground and created the world.",
+    "measurement": {
+      "height": "3.2m",
+      "weight": "320kg"
+    },
+    "attacks": [
+      {
+        "name": "Judgment",
+        "effect": "Arceus looks at you with judgment, and as a god, he knows every detail of your town and everything.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c60bb931-586b-4078-8aea-5e0edda8e49e",
+    "number": 6,
+    "name": "Nidanida",
+    "parody": "Nidoran♀",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "set2",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set2/06.jpg",
+    "description": "This creature has magical powers that can be used to contact its body.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "1kg"
+    },
+    "attacks": [
+      {
+        "name": "Tummy Kick",
+        "effect": "Kicks the opponent in the stomach, causing hours of pain.",
+        "damage": 15,
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
+    "number": 12,
+    "name": "Wamp",
+    "parody": "Wurmple",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
+    "description": "This Pokémon spends its time eating leaves and running away from Starlies.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "3.6kg"
+    },
+    "attacks": [
+      {
+        "name": "String Shot",
+        "effect": "Fires silk threads around the opponent, lowering their speed.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c82550d0-3092-4480-b60b-283a3dbab478",
+    "number": 26,
+    "name": "Firefox",
+    "parody": "Vulpix",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
+    "description": "This Pokémon is born with one tail, which splits into six as it grows.",
+    "measurement": {
+      "height": ".6m",
+      "weight": "9.9kg"
+    },
+    "attacks": [
+      {
+        "name": "Will-o-wisp",
+        "effect": "Attacks the opponent and burns them.",
+        "costs": ["Fire"]
+      },
+      {
+        "name": "Grudge",
+        "effect": "I'm resentful of the person who didn't send me a happy birthday email.",
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
+    "number": 36,
+    "name": "Motherless Boy",
+    "parody": "Cubone",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
+    "description": "He wears the skull of his deceased mother, and it is said that he evolves when he endures the pain of his mother's death.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "6.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Bone Rush",
+        "effect": "Rush towards the opponent and attack with bones.",
+        "damage": 50,
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
+    "number": 33,
+    "name": "Big Butt",
+    "parody": "Golbat",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
+    "description": "They love to drink blood, and once they sink their teeth into their prey, they can instantly suck out 10 ounces or more of blood.",
+    "measurement": {
+      "height": "1.6m",
+      "weight": "55kg"
+    },
+    "attacks": [
+      {
+        "name": "Screech",
+        "effect": "The user produces a very annoying noise.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
+    "number": 38,
+    "name": "Clompy",
+    "parody": "Pikachu",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
+    "description": "Pikachu is by far the most famous Pokémon. Its personality has changed with the games and attention it has received.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "6kg"
+    },
+    "attacks": [
+      {
+        "name": "Shock",
+        "effect": "Pikachu gives opponents an electric shock as strong as a toaster.",
+        "damage": 30,
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "ea8ebf7e-780c-4ea1-b4ba-e82b3970383e",
+    "number": 25,
+    "name": "Plant Boy",
+    "parody": "Oddish",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/25.jpg",
+    "description": "This Pokémon plants during the day and wakes up at dusk to roam and spread seeds.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "5.4kg"
+    },
+    "attacks": [
+      {
+        "name": "Growth",
+        "effect": "Who needs protein powder? It's not crazy.",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
+    "number": 21,
+    "name": "Long Worm",
+    "parody": "Dragonair",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
+    "description": "A Pokémon that emits a mysterious aura and can change the weather with its emotions.",
+    "measurement": {
+      "height": "4m",
+      "weight": "16.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Rain Dance",
+        "effect": "Performs a dance that changes the weather.",
+        "costs": ["Water"]
+      },
+      {
+        "name": "Dragon Rush",
+        "effect": "Charges at the opponent with dragon-like movements.",
+        "damage": 90,
+        "costs": ["Dragon"]
+      }
+    ]
+  },
+  {
+    "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
+    "number": 14,
+    "name": "Pointy",
+    "parody": "Scizor",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/wm/set1/14.jpg",
+    "description": "Its claws can crush anything.",
+    "measurement": {
+      "height": "1.8m",
+      "weight": "118kg"
+    },
+    "attacks": [
+      {
+        "name": "Swords Dance",
+        "effect": "Dance with swords. Do not use at home.",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Iron Head",
+        "effect": "Attack the opponent with your head.",
+        "damage": 90,
+        "costs": ["Steel"]
+      }
+    ]
+  },
+  {
+    "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
+    "number": 11,
+    "name": "Fire Boy",
+    "parody": "Charmander",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
+    "description": "If the fire goes out, you die.",
+    "measurement": {
+      "height": "6m",
+      "weight": "8.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Mean Look",
+        "effect": "Disrespecting the other person.",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Ember",
+        "effect": "Weak fire attack. ",
+        "damage": 20,
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
+    "number": 31,
+    "name": "Egg Bath",
+    "parody": "Togepi",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "2",
+    "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
+    "description": "A Pokémon that seals happiness in its shell and gives it to people. It is said that brings good luck.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "1.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Yawn",
+        "effect": "If you yawn, the other person will yawn too.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
+    "number": 37,
+    "name": "Blob",
+    "parody": "Ditto",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
+    "description": "Not only can you take on the appearance and skills of Pokémon, but you can also mate and breed with them, which is why many trainers use them for breeding purposes.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "4kg"
+    },
+    "attacks": [
+      {
+        "name": "Transform",
+        "effect": "Transform into the opponent.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "fc749318-113e-4087-9c80-b87d5c66b907",
+    "number": 19,
+    "name": "Ghost Boy",
+    "parody": "Gastly",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "set1",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
+    "description": "A Pokémon made mostly of gas.",
+    "measurement": {
+      "height": "1.3m",
+      "weight": "1kg"
+    },
+    "attacks": [
+      {
+        "name": "Lick",
+        "effect": "Lick the opponent. Some Pokémon enjoy this, so be careful. ",
+        "damage": 20,
+        "costs": ["Normal"]
+      }
+    ]
+  }
+]
