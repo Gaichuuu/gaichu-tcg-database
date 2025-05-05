@@ -1,0 +1,23 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "short_name", "name", "logo"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "short_name": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "logo": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  }
+}
