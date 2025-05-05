@@ -1,5 +1,5 @@
 {
-  "type": "object",
+  "type": "array",
   "items": {
     "type": "object",
     "required": [
@@ -34,7 +34,11 @@
       },
       "illustrators": {
         "type": "array",
-        "enum": ["Alex Roh"]
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "enum": ["Alex Roh"]
+        }
       },
       "rarity": {
         "type": "string",
@@ -107,8 +111,7 @@
               "type": "string"
             },
             "damage": {
-              "type": "number",
-              "description": "Damage amount"
+              "type": ["number", "string"]
             },
             "costs": {
               "type": "array",

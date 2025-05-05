@@ -1,0 +1,41 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "series_short_name",
+      "series_id",
+      "short_name",
+      "number",
+      "name",
+      "logo"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "series_short_name": {
+        "type": "string"
+      },
+      "series_id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "short_name": {
+        "type": "string"
+      },
+      "number": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "logo": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  }
+}
