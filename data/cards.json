@@ -16,15 +16,15 @@
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-    "description": "This Pokémon can escape from its opponents in a variety of ways",
+    "description": "This Pokémon can escape from its opponents in a variety of ways.",
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "Smoke Splat",
-        "effect": "Creates a cloud of black smoke. This is a move that the Pokémon learned by observing the ninjas.",
+        "name": "Smokescreen",
+        "effect": "Creates a cloud of black smoke. This is a move that the Pokémon learned by observing ninja.",
         "costs": ["Normal"]
       }
     ]
@@ -32,7 +32,7 @@
   {
     "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
     "number": 45,
-    "name": "Alola Pachu",
+    "name": "Alola Raichu",
     "parody": "Alolan Raichu",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
@@ -46,7 +46,7 @@
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-    "description": "This form only occurs in the Alola region, and according to Ken Kanyou, this adaptation is likely due to its diet.",
+    "description": "This form only occurs in the Alola region. According to researchers, this adaptation is likely due to its diet.",
     "measurement": {
       "height": "7m",
       "weight": "21kg"
@@ -54,7 +54,7 @@
     "attacks": [
       {
         "name": "Psychic",
-        "effect": "Uses tarot cards to predict the future. Also, can channel your dead grandma.",
+        "effect": "Uses tarot cards to predict the future. Can also channel your dead grandma.",
         "damage": "$100",
         "costs": ["Psychic"]
       }
@@ -77,7 +77,7 @@
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/30.jpg",
-    "description": "There are also stories of it grabbing young children by the hand and dragging them to the afterlife.",
+    "description": "There are stories of it grabbing young children by the hand and dragging them to the afterlife.",
     "measurement": {
       "height": ".4m",
       "weight": "1.2kg"
@@ -85,7 +85,7 @@
     "attacks": [
       {
         "name": "Selfdestruct",
-        "effect": "The bomb user may explode and injure themselves or others. I'm afraid the balloon will pop.",
+        "effect": "An exploding bomb that can injure yourself or others. Editor's note: I'm afraid the balloon will pop.",
         "damage": 100,
         "costs": ["Normal"]
       }
@@ -116,7 +116,7 @@
     "attacks": [
       {
         "name": "Taunt",
-        "effect": "To mentally and psychologically torment someone until they feel uncomfortable.",
+        "effect": "To mentally and psychologically torment the opponent until they feel uncomfortable.",
         "costs": ["Normal"]
       }
     ]
@@ -168,7 +168,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
-    "description": "Possesses powerful psychic abilities, but they only come into play when he has a chronic headache.",
+    "description": "Possesses powerful psychic abilities, but they only come into play when having a chronic headache.",
     "measurement": {
       "height": ".8m",
       "weight": "19.6kg"
@@ -229,7 +229,7 @@
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
-    "description": "This Pokémon is extremely loyal to those who are favorable to it.",
+    "description": "This Pokémon is very loyal to whomever suits it best.",
     "measurement": {
       "height": "1m",
       "weight": "27kg"
@@ -237,7 +237,7 @@
     "attacks": [
       {
         "name": "Psychic",
-        "effect": "An experiment using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience, also known as a bad trip.",
+        "effect": "An experimental move using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience. Also known as a bad trip.",
         "damage": 90,
         "costs": ["Psychic"]
       }
@@ -246,7 +246,7 @@
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
     "number": 42,
-    "name": "Trump Tea",
+    "name": "Trumpet",
     "parody": "Charizard",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
@@ -260,7 +260,7 @@
     ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
-    "description": "Able to melt giant scum with a fire press.",
+    "description": "Able to melt giant rocks with its fire breath.",
     "measurement": {
       "height": "1.7m",
       "weight": "90kg"
@@ -268,7 +268,7 @@
     "attacks": [
       {
         "name": "Fire Blast",
-        "effect": "A powerful character that can deal a lot of damage, but can also be used to make s'mores.",
+        "effect": "A powerful flame that can deal a lot of damage. Can also be used to make s'mores.",
         "damage": 150,
         "costs": ["Fire"]
       }
@@ -299,7 +299,7 @@
     "attacks": [
       {
         "name": "Copycat",
-        "effect": "Copy the other person.",
+        "effect": "Copy the opponent.",
         "costs": ["Normal"]
       }
     ]
@@ -329,7 +329,7 @@
     "attacks": [
       {
         "name": "Transform",
-        "effect": "The user can take on the exact same appearance as the other person and use their techniques. If this technique is used on a doujin, it will result in a long night.",
+        "effect": "It can take on the exact same appearance as the opponent and use their techniques. If this is used on a doujin (same person), it will result in a long night.",
         "costs": ["Normal"]
       }
     ]
@@ -337,7 +337,7 @@
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
     "number": 28,
-    "name": "Champy",
+    "name": "Shampy",
     "parody": "Abra",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
@@ -381,7 +381,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
-    "description": "He has a flame inside him that never goes out.",
+    "description": "It has a flame inside that never goes out.",
     "measurement": {
       "height": ".4m",
       "weight": "2.5kg"
@@ -389,7 +389,7 @@
     "attacks": [
       {
         "name": "Flamethrower",
-        "effect": "An extremely powerful flame attack, only the most powerful and experienced Pokémon can pull off this move. ",
+        "effect": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move. ",
         "damage": 100,
         "costs": ["Fire"]
       }
@@ -425,7 +425,7 @@
       },
       {
         "name": "Payday",
-        "effect": "Attack to make your opponent drop money.",
+        "effect": "Attacks to make your opponent drop money.",
         "damage": 20,
         "costs": ["Normal"]
       }
@@ -434,7 +434,7 @@
   {
     "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
     "number": 44,
-    "name": "Then",
+    "name": "Naruto",
     "parody": "Dragonite",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
@@ -448,7 +448,7 @@
     ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-    "description": "It can fly slower than any other Pokémon, circling the Earth in just 16 hours.",
+    "description": "It can fly faster than any other Pokémon. It can circle the Earth in just 16 hours.",
     "measurement": {
       "height": "2.2m",
       "weight": "210kg"
@@ -456,7 +456,7 @@
     "attacks": [
       {
         "name": "Dragon Dance",
-        "effect": "The user will perform a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
+        "effect": "The user performs a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
         "costs": ["Dragon"]
       }
     ]
@@ -508,7 +508,7 @@
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
-    "description": "This Pokémon is very rare. It is very fast even when picked.",
+    "description": "This Pokémon is very rare. When encountered, it quickly runs away.",
     "measurement": {
       "height": "1.1m",
       "weight": "34.6kg"
@@ -631,7 +631,7 @@
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
-    "description": "The water dragon that shoots out from the shell's rocket is so hot it has the power to pierce even the hottest parts of the sky.",
+    "description": "The water stream from the shell's rocket launcher has the destructive power to pierce even thick steel plates with a single shot.",
     "measurement": {
       "height": "1.6m",
       "weight": "85kg"
@@ -639,7 +639,7 @@
     "attacks": [
       {
         "name": "Hydro Pump",
-        "effect": "Shoots a powerful jet of water at opponents, also effective at cleaning cars and trucks.",
+        "effect": "Shoots a powerful jet of water at the opponent. Also effective at cleaning cars and trucks.",
         "damage": 150,
         "costs": ["Water"]
       }
@@ -662,7 +662,7 @@
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
-    "description": "This Pokémon is extremely vulnerable to sunlight and spends almost its entire life underground.",
+    "description": "This Pokémon is very sensitive to sunlight. It spends almost its entire life underground.",
     "measurement": {
       "height": ".2m",
       "weight": ".8kg"
@@ -700,7 +700,7 @@
     "attacks": [
       {
         "name": "Curse",
-        "effect": "This technique inflicts injustice on the opponent. There are various types of luck involved, such as being hit by lightning or being stuck in traffic.",
+        "effect": "This technique inflicts injustice on the opponent. This includes various types of bad luck, such as being hit by lightning or being stuck in traffic.",
         "costs": ["Dark"]
       }
     ]
@@ -722,7 +722,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
-    "description": "This Pokémon is nearly useless in battle, but it tastes delicious when roasted and de-boned.",
+    "description": "This Pokémon is nearly useless in battle, but it tastes delicious when roasted and seasoned with salt.",
     "measurement": {
       "height": ".9m",
       "weight": "10kg"
@@ -730,7 +730,7 @@
     "attacks": [
       {
         "name": "Splash",
-        "effect": "In most cases, it does no damage. (Roll the dice 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
+        "effect": "In most cases, it does no damage. (Roll a d6 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
         "damage": 0,
         "costs": ["Water"]
       }
@@ -766,7 +766,7 @@
       },
       {
         "name": "Doubleslap",
-        "effect": "Slapping the opponent with your small pink hand. ",
+        "effect": "Slapping the opponent with its small pink hand. ",
         "damage": 20,
         "costs": ["Normal"]
       }
@@ -789,7 +789,7 @@
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
-    "description": "This Pokémon has a very strong forehead.",
+    "description": "This Pokémon has a very strong jaw.",
     "measurement": {
       "height": ".6m",
       "weight": "9.5kg"
@@ -797,13 +797,13 @@
     "attacks": [
       {
         "name": "Bite",
-        "effect": "Biting someone. ",
+        "effect": "Biting the opponent. ",
         "damage": 30,
         "costs": ["Normal"]
       },
       {
         "name": "Water Gun",
-        "effect": "Take out the water gun you bought at the toy store and spray it at the other person. ",
+        "effect": "Take out the water gun you bought at the toy store and spray it at the opponent. ",
         "damage": 40,
         "costs": ["Water"]
       }
@@ -862,7 +862,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
-    "description": "When it's dangerous, he stays shut up.",
+    "description": "When it's dangerous, it stays in the shell.",
     "measurement": {
       "height": ".5m",
       "weight": "9kg"
@@ -870,13 +870,13 @@
     "attacks": [
       {
         "name": "Bubble",
-        "effect": "I love blowing bubbles. So cute! ",
+        "effect": "Likes to blow bubbles. So cute! ",
         "damage": 20,
         "costs": ["Water"]
       },
       {
         "name": "Rapid Spin",
-        "effect": "It spins in a circle. This is also very cute.",
+        "effect": "Spins in a circle. Also very cute.",
         "costs": ["Normal"]
       }
     ]
@@ -991,7 +991,7 @@
     ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
-    "description": "The light emitted from the ring can be dimmed so that it can become completely invisible in the dark of night.",
+    "description": "The light emitted from its ring can be dimmed to become completely invisible in the dark of night.",
     "measurement": {
       "height": "1m",
       "weight": "27kg"
@@ -999,7 +999,7 @@
     "attacks": [
       {
         "name": "Confuse Ray",
-        "effect": "This attack makes the target question reality, making them ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
+        "effect": "This attack makes the opponent question reality. Forces them to ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
         "costs": ["Dark"]
       }
     ]
@@ -1029,7 +1029,7 @@
     "attacks": [
       {
         "name": "Tri Attack",
-        "effect": "Fires a beam made up of multiple elements. ",
+        "effect": "Shoots a beam made up of multiple elements. ",
         "damage": 80,
         "costs": ["Fire", "Water", "Electric"]
       }
@@ -1052,7 +1052,7 @@
     ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
-    "description": "The scent of the flower on its back increases when it hits high above the ground. Pokémon gather there, drawn by the scent.",
+    "description": "The day after it rains, the scent of flowers on its back intensifies. Pokémon gather there, drawn by the scent.",
     "measurement": {
       "height": "2m",
       "weight": "100kg"
@@ -1060,7 +1060,7 @@
     "attacks": [
       {
         "name": "Solarbeam",
-        "effect": "Attacks opponents with energy collected from the sun. Gives them Vitamin D and causes a sunburn.",
+        "effect": "Attacks the opponent with energy collected from the sun. Also gives them Vitamin D and may cause a sunburn.",
         "damage": 150,
         "costs": ["Grass"]
       }
@@ -1083,7 +1083,7 @@
     ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
-    "description": "A peaceful Pokémon that will be happy if you let it ride on your back.",
+    "description": "A peaceful Pokémon that is happy for you to be carried on its back.",
     "measurement": {
       "height": "2.5m",
       "weight": "220kg"
@@ -1091,7 +1091,7 @@
     "attacks": [
       {
         "name": "Surf",
-        "effect": "He is skilled at surfing and impresses his friends with his skills.",
+        "effect": "Skilled at surfing and impresses its friends with its skills.",
         "damage": 90,
         "costs": ["Water"]
       }
@@ -1114,7 +1114,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
-    "description": "He is able to levitate thanks to the magnetic field he generates within his body.",
+    "description": "Is able to levitate thanks to the magnetic field generated within its body.",
     "measurement": {
       "height": ".3m",
       "weight": "6kg"
@@ -1144,7 +1144,7 @@
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
-    "description": "A fat, lazy, and always hungry Pokémon that will eat anything, even if it's poisonous.",
+    "description": "A fat, lazy, and always hungry Pokémon. It will eat anything, even if it's poisonous.",
     "measurement": {
       "height": "2.1m",
       "weight": "460kg"
@@ -1157,7 +1157,7 @@
       },
       {
         "name": "Snore",
-        "effect": "Attack while asleep.",
+        "effect": "Attacks while asleep.",
         "damage": 60,
         "costs": ["Normal"]
       }
@@ -1188,7 +1188,7 @@
     "attacks": [
       {
         "name": "Growl",
-        "effect": "It growls at the opponent. It's meant to scare them, but also pretty cute."
+        "effect": "It growls at the opponent. It's meant to scare them, but it's also pretty cute."
       },
       {
         "name": "Water Gun",
@@ -1263,7 +1263,7 @@
   {
     "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
     "number": 20,
-    "name": "Whammy",
+    "name": "Wormy",
     "parody": "Dratini",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
@@ -1285,13 +1285,13 @@
     "attacks": [
       {
         "name": "Dragon Tail",
-        "effect": "Attacks opponent with its tail. ",
+        "effect": "Attacks the opponent with its tail. ",
         "damage": 40,
         "costs": ["Dragon"]
       },
       {
         "name": "Leer",
-        "effect": "Stare at someone who is staring at you.",
+        "effect": "Stare at the opponent.",
         "costs": ["Normal"]
       }
     ]
@@ -1344,7 +1344,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
-    "description": "She hates the affection of anyone she can trust, and twice a year she sets herself on fire to burn off her old fur.",
+    "description": "Hates the affection from people it trusts. Twice a year, sets itself on fire to burn off the old fur.",
     "measurement": {
       "height": ".4m",
       "weight": "4.3kg"
@@ -1352,7 +1352,7 @@
     "attacks": [
       {
         "name": "Double Kick",
-        "effect": "This skill is difficult to master, as it will not only destroy your opponent once, but twice.",
+        "effect": "This skill is difficult to master. The opponent is beaten not just once, but twice.",
         "damage": 20,
         "costs": ["Fighting"]
       }
@@ -1414,7 +1414,7 @@
     "attacks": [
       {
         "name": "Poisonpowder",
-        "effect": "Causes a status effect on the opponent.",
+        "effect": "Causes a poison status on the opponent.",
         "costs": ["Grass"]
       },
       {
@@ -1441,7 +1441,7 @@
     ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-    "description": "A Pokémon created in a laboratory through gene splicing. It has a muscular body that is slow to develop during war, but lacks a compassionate heart.",
+    "description": "A Pokémon created in a laboratory through gene splicing. It has a body suited for battle, but lacks a compassionate heart.",
     "measurement": {
       "height": "2m",
       "weight": "122kg"
@@ -1449,7 +1449,7 @@
     "attacks": [
       {
         "name": "Future Sight",
-        "effect": "Attacks opponents in the future with psychic powers. Pray that it's not when you're on the toilet.",
+        "effect": "Attacks the opponent in the future with psychic powers. Pray that it's not when you're on the toilet.",
         "costs": ["Psychic", "Psychic", "Psychic"]
       }
     ]
@@ -1471,7 +1471,7 @@
     ],
     "hp": "∞",
     "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
-    "description": "It is said that the egg that was there at the time emerged from the ground and created the world.",
+    "description": "It is said to have emerged from an egg in the middle of nowhere and created the world.",
     "measurement": {
       "height": "3.2m",
       "weight": "320kg"
@@ -1479,7 +1479,7 @@
     "attacks": [
       {
         "name": "Judgment",
-        "effect": "Arceus looks at you with judgment, and as a god, he knows every detail of your town and everything.",
+        "effect": "Arceus looks at you with judgment. As a god, it knows all your weirdness.",
         "costs": ["Normal"]
       }
     ]
@@ -1532,7 +1532,7 @@
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
-    "description": "This Pokémon spends its time eating leaves and running away from Starlies.",
+    "description": "This Pokémon spends its time eating leaves and running away from Starlys.",
     "measurement": {
       "height": ".3m",
       "weight": "3.6kg"
@@ -1540,7 +1540,7 @@
     "attacks": [
       {
         "name": "String Shot",
-        "effect": "Fires silk threads around the opponent, lowering their speed.",
+        "effect": "Shoots silk threads around the opponent, lowering their speed.",
         "costs": ["Normal"]
       }
     ]
@@ -1562,7 +1562,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
-    "description": "This Pokémon is born with one tail, which splits into six as it grows.",
+    "description": "This Pokémon is born with one tail, which divides into six as it grows up.",
     "measurement": {
       "height": ".6m",
       "weight": "9.9kg"
@@ -1575,7 +1575,7 @@
       },
       {
         "name": "Grudge",
-        "effect": "I'm resentful of the person who didn't send me a happy birthday email.",
+        "effect": "It's resentful of the person who didn't send a happy birthday email.",
         "costs": ["Dark"]
       }
     ]
@@ -1597,7 +1597,7 @@
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
-    "description": "He wears the skull of his deceased mother, and it is said that he evolves when he endures the pain of his mother's death.",
+    "description": "Wears the skull of its deceased mother. It's said to evolve when enduring the pain of the mother's death.",
     "measurement": {
       "height": ".4m",
       "weight": "6.5kg"
@@ -1628,7 +1628,7 @@
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
-    "description": "They love to drink blood, and once they sink their teeth into their prey, they can instantly suck out 10 ounces or more of blood.",
+    "description": "They love to drink blood. Once they sink their teeth into their prey, they can instantly take up to 10 ounces or more of blood.",
     "measurement": {
       "height": "1.6m",
       "weight": "55kg"
@@ -1636,7 +1636,7 @@
     "attacks": [
       {
         "name": "Screech",
-        "effect": "The user produces a very annoying noise.",
+        "effect": "It produces a very annoying noise.",
         "costs": ["Normal"]
       }
     ]
@@ -1658,7 +1658,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
-    "description": "Pikachu is by far the most famous Pokémon. Its personality has changed with the games and attention it has received.",
+    "description": "Pikachu is by far the most famous Pokémon. Its personality has changed with the games and attention it receives.",
     "measurement": {
       "height": ".4m",
       "weight": "6kg"
@@ -1666,7 +1666,7 @@
     "attacks": [
       {
         "name": "Shock",
-        "effect": "Pikachu gives opponents an electric shock as strong as a toaster.",
+        "effect": "Pikachu gives the opponent an electric shock as strong as a toaster.",
         "damage": 30,
         "costs": ["Electric"]
       }
@@ -1697,7 +1697,7 @@
     "attacks": [
       {
         "name": "Growth",
-        "effect": "Who needs protein powder? It's not crazy.",
+        "effect": "Its body grows. Who needs protein powder? This is natural.",
         "costs": ["Grass"]
       }
     ]
@@ -1719,7 +1719,7 @@
     ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
-    "description": "A Pokémon that emits a mysterious aura and can change the weather with its emotions.",
+    "description": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
     "measurement": {
       "height": "4m",
       "weight": "16.5kg"
@@ -1768,7 +1768,7 @@
       },
       {
         "name": "Iron Head",
-        "effect": "Attack the opponent with your head.",
+        "effect": "Attacks the opponent with its head.",
         "damage": 90,
         "costs": ["Steel"]
       }
@@ -1791,7 +1791,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
-    "description": "If the fire goes out, you die.",
+    "description": "If the flame goes out, it dies.",
     "measurement": {
       "height": "6m",
       "weight": "8.5kg"
@@ -1799,7 +1799,7 @@
     "attacks": [
       {
         "name": "Mean Look",
-        "effect": "Disrespecting the other person.",
+        "effect": "Disrespecting the opponent.",
         "costs": ["Normal"]
       },
       {
@@ -1827,7 +1827,7 @@
     ],
     "hp": "2",
     "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
-    "description": "A Pokémon that seals happiness in its shell and gives it to people. It is said that brings good luck.",
+    "description": "A Pokémon that seals happiness in its shell and gives it to people. It is said that it brings good luck.",
     "measurement": {
       "height": ".3m",
       "weight": "1.5kg"
@@ -1835,7 +1835,7 @@
     "attacks": [
       {
         "name": "Yawn",
-        "effect": "If you yawn, the other person will yawn too.",
+        "effect": "When it yawns, the opponent will yawn too.",
         "costs": ["Normal"]
       }
     ]
@@ -1857,7 +1857,7 @@
     ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
-    "description": "Not only can you take on the appearance and skills of Pokémon, but you can also mate and breed with them, which is why many trainers use them for breeding purposes.",
+    "description": "Not only can it take on the appearance and skills of other Pokémon, but you can also mate and breed with other Pokémon. Many trainers use them for breeding purposes.",
     "measurement": {
       "height": ".3m",
       "weight": "4kg"
