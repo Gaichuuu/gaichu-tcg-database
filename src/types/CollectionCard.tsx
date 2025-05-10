@@ -1,33 +1,33 @@
 export interface CollectionCard {
-    id: string;
-    name: string;
-    number: number;
-    parody: string;
-    rarity_id: string;
-    description: string;
-    hp: number;
-    image: string;
-    rarity: string;
-    illustrators:[string];
-    attacks: [Attack];
-    measurement: Measurement;
-    sets: [Set];
-    set_ids: [string];
+  id: string;
+  name: string;
+  number: number;
+  set_short_name: string;
+  parody: string;
+  description: string;
+  hp: string;
+  image: string;
+  rarity: string;
+  illustrators: string[];
+  attacks: Attack[];
+  measurement: Measurement;
+  sets: Set[];
+  set_ids: string[];
 }
 
 interface Set {
-    name: string;
-    image: string;
+  name: string;
+  image: string;
 }
 
 interface Measurement {
-    height: string;
-    weight: string;
+  height: string;
+  weight: string;
 }
 
 interface Attack {
-    name: string;
-    effect: string;
-    damage: number;
-    costs: [string];
+  name: string;
+  effect: string;
+  damage: string | undefined;
+  costs: string[] | undefined;
 }
