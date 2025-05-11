@@ -4,15 +4,15 @@ import { CollectionSeries } from "../../types/CollectionSeries";
 import Tile from "../TileComponents/Tile";
 
 const seriesList = () => {
-  const { data: collectionSeries, error } = getSeries();
+  const result = getSeries();
   const navigate = useNavigate();
   const handleClick = (series: CollectionSeries) => {
     navigate(`/cards/${series.short_name}`);
   };
-  if (error) return <p>Something went wrong...</p>;
+  if (result.error) return <p>Something went wrong...</p>;
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {collectionSeries?.map((collection) => (
+      {result.data?.map((collection) => (
         <Tile
           key={collection.series.id}
           onClick={() => handleClick(collection.series)}

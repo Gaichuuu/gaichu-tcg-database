@@ -86,7 +86,7 @@
       {
         "name": "Selfdestruct",
         "effect": "An exploding bomb that can injure yourself or others. Editor's note: I'm afraid the balloon will pop.",
-        "damage": 100,
+        "damage": "100",
         "costs": ["Normal"]
       }
     ]
@@ -207,7 +207,7 @@
       {
         "name": "Punch",
         "effect": "Throws a punch at the opponent.",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Water"]
       }
     ]
@@ -238,7 +238,7 @@
       {
         "name": "Psychic",
         "effect": "An experimental move using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience. Also known as a bad trip.",
-        "damage": 90,
+        "damage": "90",
         "costs": ["Psychic"]
       }
     ]
@@ -269,7 +269,7 @@
       {
         "name": "Fire Blast",
         "effect": "A powerful flame that can deal a lot of damage. Can also be used to make s'mores.",
-        "damage": 150,
+        "damage": "150",
         "costs": ["Fire"]
       }
     ]
@@ -390,7 +390,7 @@
       {
         "name": "Flamethrower",
         "effect": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move. ",
-        "damage": 100,
+        "damage": "100",
         "costs": ["Fire"]
       }
     ]
@@ -426,7 +426,7 @@
       {
         "name": "Payday",
         "effect": "Attacks to make your opponent drop money.",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Normal"]
       }
     ]
@@ -547,7 +547,7 @@
       {
         "name": "Cut",
         "effect": "Cut whatever is in front of you.",
-        "damage": 15,
+        "damage": "15",
         "costs": ["Normal"]
       }
     ]
@@ -578,7 +578,7 @@
       {
         "name": "Leech Seed",
         "effect": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse. ",
-        "damage": 10,
+        "damage": "10",
         "costs": ["Grass"]
       }
     ]
@@ -609,7 +609,7 @@
       {
         "name": "Stick Slap",
         "effect": "Hitting the opponent with a stick, leaving a lump on the opponent's head.",
-        "damage": 30,
+        "damage": "30",
         "costs": ["Normal"]
       }
     ]
@@ -640,7 +640,7 @@
       {
         "name": "Hydro Pump",
         "effect": "Shoots a powerful jet of water at the opponent. Also effective at cleaning cars and trucks.",
-        "damage": 150,
+        "damage": "150",
         "costs": ["Water"]
       }
     ]
@@ -731,7 +731,7 @@
       {
         "name": "Splash",
         "effect": "In most cases, it does no damage. (Roll a d6 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
-        "damage": 0,
+        "damage": "0",
         "costs": ["Water"]
       }
     ]
@@ -767,7 +767,7 @@
       {
         "name": "Doubleslap",
         "effect": "Slapping the opponent with its small pink hand. ",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Normal"]
       }
     ]
@@ -798,13 +798,13 @@
       {
         "name": "Bite",
         "effect": "Biting the opponent. ",
-        "damage": 30,
+        "damage": "30",
         "costs": ["Normal"]
       },
       {
         "name": "Water Gun",
         "effect": "Take out the water gun you bought at the toy store and spray it at the opponent. ",
-        "damage": 40,
+        "damage": "40",
         "costs": ["Water"]
       }
     ]
@@ -835,7 +835,7 @@
       {
         "name": "Scratch",
         "effect": "It drags its opponents along with its long, clawed fingers.",
-        "damage": 30,
+        "damage": "30",
         "costs": ["Normal"]
       },
       {
@@ -871,7 +871,7 @@
       {
         "name": "Bubble",
         "effect": "Likes to blow bubbles. So cute! ",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Water"]
       },
       {
@@ -907,7 +907,7 @@
       {
         "name": "Earthquake",
         "effect": "Shakes the ground and attacks the opponent. It can cause great damage to cities.",
-        "damage": 25,
+        "damage": "25",
         "costs": ["Fighting"]
       }
     ]
@@ -938,7 +938,7 @@
       {
         "name": "Energy Ball",
         "effect": "When it touches other creatures, nothing happens.",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Normal"]
       }
     ]
@@ -969,7 +969,7 @@
       {
         "name": "Egg Bomb",
         "effect": "Throws explosive eggs at opponents. Make it green and explode.",
-        "damage": 30,
+        "damage": "30",
         "costs": ["Normal"]
       }
     ]
@@ -1030,7 +1030,7 @@
       {
         "name": "Tri Attack",
         "effect": "Shoots a beam made up of multiple elements. ",
-        "damage": 80,
+        "damage": "80",
         "costs": ["Fire", "Water", "Electric"]
       }
     ]
@@ -1061,7 +1061,7 @@
       {
         "name": "Solarbeam",
         "effect": "Attacks the opponent with energy collected from the sun. Also gives them Vitamin D and may cause a sunburn.",
-        "damage": 150,
+        "damage": "150",
         "costs": ["Grass"]
       }
     ]
@@ -1092,7 +1092,7 @@
       {
         "name": "Surf",
         "effect": "Skilled at surfing and impresses its friends with its skills.",
-        "damage": 90,
+        "damage": "90",
         "costs": ["Water"]
       }
     ]
@@ -1158,7 +1158,7 @@
       {
         "name": "Snore",
         "effect": "Attacks while asleep.",
-        "damage": 60,
+        "damage": "60",
         "costs": ["Normal"]
       }
     ]
@@ -1193,7 +1193,7 @@
       {
         "name": "Water Gun",
         "effect": "Spits water at the opponent.",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Water"]
       }
     ]
@@ -1224,7 +1224,7 @@
       {
         "name": "Hypnotist",
         "effect": "Uses telekinesis to enter the mind of his victim and tells him to do 50 embarrassing things in front of his friends.",
-        "damage": 50,
+        "damage": "50",
         "costs": ["Psychic"]
       }
     ]
@@ -1255,7 +1255,7 @@
       {
         "name": "Thunderpunch",
         "effect": "Uses electricity to punch the enemy. Since his arms are small, this attack often misses.",
-        "damage": 50,
+        "damage": "50",
         "costs": ["Electric"]
       }
     ]
@@ -1286,7 +1286,7 @@
       {
         "name": "Dragon Tail",
         "effect": "Attacks the opponent with its tail. ",
-        "damage": 40,
+        "damage": "40",
         "costs": ["Dragon"]
       },
       {
@@ -1322,7 +1322,7 @@
       {
         "name": "Rock Throw",
         "effect": "Picking up a rock and throwing it at the opponent. This was a technique often used in high school. ",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Fighting", "Normal"]
       }
     ]
@@ -1353,7 +1353,7 @@
       {
         "name": "Double Kick",
         "effect": "This skill is difficult to master. The opponent is beaten not just once, but twice.",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Fighting"]
       }
     ]
@@ -1384,7 +1384,7 @@
       {
         "name": "Stomp",
         "effect": "Trample and forcefully attack your opponent.",
-        "damage": 35,
+        "damage": "35",
         "costs": ["Normal"]
       }
     ]
@@ -1510,7 +1510,7 @@
       {
         "name": "Tummy Kick",
         "effect": "Kicks the opponent in the stomach, causing hours of pain.",
-        "damage": 15,
+        "damage": "15",
         "costs": ["Normal"]
       }
     ]
@@ -1606,7 +1606,7 @@
       {
         "name": "Bone Rush",
         "effect": "Rush towards the opponent and attack with bones.",
-        "damage": 50,
+        "damage": "50",
         "costs": ["Fighting"]
       }
     ]
@@ -1667,7 +1667,7 @@
       {
         "name": "Shock",
         "effect": "Pikachu gives the opponent an electric shock as strong as a toaster.",
-        "damage": 30,
+        "damage": "30",
         "costs": ["Electric"]
       }
     ]
@@ -1733,7 +1733,7 @@
       {
         "name": "Dragon Rush",
         "effect": "Charges at the opponent with dragon-like movements.",
-        "damage": 90,
+        "damage": "90",
         "costs": ["Dragon"]
       }
     ]
@@ -1769,7 +1769,7 @@
       {
         "name": "Iron Head",
         "effect": "Attacks the opponent with its head.",
-        "damage": 90,
+        "damage": "90",
         "costs": ["Steel"]
       }
     ]
@@ -1805,7 +1805,7 @@
       {
         "name": "Ember",
         "effect": "Weak fire attack. ",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Fire"]
       }
     ]
@@ -1896,7 +1896,7 @@
       {
         "name": "Lick",
         "effect": "Lick the opponent. Some Pokémon enjoy this, so be careful. ",
-        "damage": 20,
+        "damage": "20",
         "costs": ["Normal"]
       }
     ]

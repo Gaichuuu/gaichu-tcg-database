@@ -111,7 +111,7 @@
               "type": "string"
             },
             "damage": {
-              "type": ["number", "string"]
+              "type": ["string"]
             },
             "costs": {
               "type": "array",
