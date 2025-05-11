@@ -3,7 +3,10 @@ import { fetchCardDetail, fetchCards } from "../services/CollectionCardService";
 import { fetchSeries } from "../services/CollectionSeriesService";
 import { fetchSets } from "../services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "../services/Constants";
-import { getJsonCardList } from "../services/JsonCollectionCardService";
+import {
+  getJsonCardDetail,
+  getJsonCardList,
+} from "../services/JsonCollectionCardService";
 import { getJsonSeries } from "../services/JsonCollectionSeriesService";
 import { getJsonSet } from "../services/JsonCollectionSetService";
 import { Result } from "../services/Result";
@@ -97,6 +100,22 @@ export const getCards = (
 };
 
 export const getCardDetail = (cardName?: string) => {
+  if (!cardName) {
+    return {
+      data: null,
+      error: undefined,
+      isLoading: false,
+    };
+  }
+
+  if (IS_USE_LOCAL_DATA) {
+    return {
+      data: getJsonCardDetail(cardName!),
+      error: undefined,
+      isLoading: false,
+    };
+  }
+
   const queryResult = useQuery<CollectionCard | null>({
     queryKey: [`CardDetail_${cardName}`],
     enabled: !!cardName,
