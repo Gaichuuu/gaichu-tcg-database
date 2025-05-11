@@ -15,6 +15,7 @@ export const getJsonSeries = (): SeriesAndSet[] => {
           short_name: series.short_name,
           logo: series.logo,
           name: series.name,
+          number: series.number,
         },
         sets: matchingSets.map((set) => ({
           id: set.id,
@@ -22,10 +23,11 @@ export const getJsonSeries = (): SeriesAndSet[] => {
           series_id: set.series_id,
           logo: set.logo,
           name: set.name,
+          number: set.number,
         })),
       },
     ];
   });
 
-  return result;
+  return result.sort((a, b) => a.series.number - b.series.number);
 };

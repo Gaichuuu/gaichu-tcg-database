@@ -21,7 +21,10 @@ export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
     id: doc.id,
     ...doc.data(),
   })) as CollectionCard[];
-  return mergeWithSetsId(sets, cards);
+
+  return mergeWithSetsId(sets, cards).sort(
+    (a, b) => a.set.number - b.set.number,
+  );
 };
 
 const mergeWithSetsId = (

@@ -18,6 +18,7 @@ export const getJsonSet = (shortName: string): SetAndCard[] => {
             series_id: set.series_id,
             logo: set.logo,
             name: set.name,
+            number: set.number,
           },
           cards: matchingCards.map((card) => ({
             id: card.id,
@@ -50,5 +51,5 @@ export const getJsonSet = (shortName: string): SetAndCard[] => {
       ];
     });
 
-  return result;
+  return result.sort((a, b) => a.set.number - b.set.number);
 };
