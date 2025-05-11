@@ -4,6 +4,7 @@ import { fetchSeries } from "../services/CollectionSeriesService";
 import { fetchSets } from "../services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "../services/Constants";
 import { getJsonSeries } from "../services/JsonCollectionSeriesService";
+import { getJsonSet } from "../services/JsonCollectionSetService";
 import { Result } from "../services/Result";
 import { CollectionCard } from "../types/CollectionCard";
 import { SeriesAndSet, SetAndCard } from "../types/MergedCollection";
@@ -30,13 +31,36 @@ export const getSeries = (): Result<SeriesAndSet[], Error> => {
   };
 };
 
-export const getSets = (seriesShortName?: string) => {
-  return useQuery<SetAndCard[]>({
+export const getSets = (
+  seriesShortName?: string,
+): Result<SetAndCard[], Error> => {
+  if (!seriesShortName) {
+    return {
+      data: [],
+      error: undefined,
+      isLoading: false,
+    };
+  }
+  if (IS_USE_LOCAL_DATA) {
+    return {
+      data: getJsonSet(seriesShortName!),
+      error: undefined,
+      isLoading: false,
+    };
+  }
+
+  const queryResult = useQuery<SetAndCard[]>({
     queryKey: [`SetsList_${seriesShortName}`],
     enabled: !!seriesShortName,
     queryFn: () => fetchSets(seriesShortName!),
     staleTime: 1000 * 60 * 5,
   });
+
+  return {
+    data: queryResult.data,
+    error: queryResult.error || undefined,
+    isLoading: queryResult.isLoading,
+  };
 };
 
 export const getCards = (setShortName?: string) => {
