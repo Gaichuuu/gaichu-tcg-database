@@ -13,7 +13,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "tailwind": "tailwindcss",
-    "export-data": "node scripts/exportCollections.cjs"
+    "export-data": "node scripts/exportCollections.cjs",
+    "import-data": "node scripts/importCollections.cjs"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
