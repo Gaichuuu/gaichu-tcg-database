@@ -1,5 +1,5 @@
 import { collection, getDocs } from "firebase/firestore";
-import { database } from "../config/FirebaseConfig";
+import { database } from "../../config/FirebaseConfig";
 import { CollectionSeries } from "../types/CollectionSeries";
 import { CollectionSet } from "../types/CollectionSet";
 import { SeriesAndSet } from "../types/MergedCollection";
