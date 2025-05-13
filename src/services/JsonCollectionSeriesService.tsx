@@ -3,31 +3,29 @@ import setsList from "../../data/sets.json";
 import { SeriesAndSet } from "../types/MergedCollection";
 
 export const getJsonSeries = (): SeriesAndSet[] => {
-  const result = seriesList.flatMap((series) => {
-    // Filter sets that belong to the current series
-    const matchingSets = setsList.filter((set) => set.series_id === series.id);
-
-    // Create the SeriesAndSet object
-    return [
-      {
-        series: {
-          id: series.id,
-          short_name: series.short_name,
-          logo: series.logo,
-          name: series.name,
-          number: series.number,
-        },
-        sets: matchingSets.map((set) => ({
-          id: set.id,
-          short_name: set.short_name,
-          series_id: set.series_id,
-          logo: set.logo,
-          name: set.name,
-          number: set.number,
-        })),
-      },
-    ];
-  });
-
-  return result.sort((a, b) => a.series.number - b.series.number);
+  const result = seriesList
+    .flatMap((series) => {
+      return convertToSeriesAndSet(series);
+    })
+    .sort((a, b) => a.series.number - b.series.number);
+  return result;
 };
+const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
+  series: {
+    id: series.id,
+    short_name: series.short_name,
+    logo: series.logo,
+    name: series.name,
+    number: series.number,
+  },
+  sets: setsList
+    .filter((set) => set.series_id === series.id)
+    .map((set) => ({
+      id: set.id,
+      short_name: set.short_name,
+      series_id: set.series_id,
+      logo: set.logo,
+      name: set.name,
+      number: set.number,
+    })),
+});
