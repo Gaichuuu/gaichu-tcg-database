@@ -2,24 +2,8 @@
 const fs = require("fs");
 const path = require("path");
 const admin = require("firebase-admin");
-
-const serviceAccount = require(
-  path.join(__dirname, "../config/serviceAccountKey.json"),
-);
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
-
-const db = admin.firestore();
-
-const collections = [
-  "cards",
-  "illustrators",
-  "rarity",
-  "series",
-  "sets",
-  "type",
-];
+const { db } = require("./scriptDatabase.cjs");
+const { allCollections } = require("./databaseConstants.cjs");
 
 async function importCollection(name) {
   const filePath = path.join(__dirname, `../data/${name}.json`);
@@ -44,7 +28,7 @@ async function importCollection(name) {
 }
 
 async function main() {
-  for (const col of collections) {
+  for (const col of allCollections) {
     await importCollection(col);
   }
   console.log("All collections imported!");

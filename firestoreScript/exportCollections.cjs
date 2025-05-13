@@ -2,24 +2,8 @@
 const fs = require("fs");
 const path = require("path");
 const admin = require("firebase-admin");
-
-const serviceAccount = require(
-  path.join(__dirname, "../config/serviceAccountKey.json"),
-);
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
-
-const db = admin.firestore();
-
-const collections = [
-  "cards",
-  "illustrators",
-  "rarity",
-  "series",
-  "sets",
-  "type",
-];
+const { db } = require("./scriptDatabase.cjs");
+const { allCollections } = require("./databaseConstants.cjs");
 
 async function exportCollection(name) {
   const snapshot = await db.collection(name).get();
@@ -34,7 +18,7 @@ async function exportCollection(name) {
 async function main() {
   fs.mkdirSync(path.join(__dirname, "../data"), { recursive: true });
 
-  for (const col of collections) {
+  for (const col of allCollections) {
     await exportCollection(col);
   }
   console.log("All collections exported!");
