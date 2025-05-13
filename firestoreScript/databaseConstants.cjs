@@ -1,3 +1,5 @@
+const path = require("path");
+
 const allCollections = [
   "cards",
   "illustrators",
@@ -6,4 +8,6 @@ const allCollections = [
   "sets",
   "type",
 ];
-module.exports = { allCollections };
+
+const jsonFilePath = path.join(__dirname, "../data");
+module.exports = { allCollections, jsonFilePath };

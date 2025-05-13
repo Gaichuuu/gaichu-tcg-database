@@ -3,10 +3,10 @@ const fs = require("fs");
 const path = require("path");
 const admin = require("firebase-admin");
 const { db } = require("./scriptDatabase.cjs");
-const { allCollections } = require("./databaseConstants.cjs");
+const { allCollections, jsonFilePath } = require("./databaseConstants.cjs");
 
 async function importCollection(name) {
-  const filePath = path.join(__dirname, `../data/${name}.json`);
+  const filePath = path.join(jsonFilePath, `/${name}.json`);
   if (!fs.existsSync(filePath)) {
     console.warn(`No data file found for collection "${name}"`);
     return;
