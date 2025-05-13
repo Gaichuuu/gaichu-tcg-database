@@ -2,11 +2,11 @@ import {
   collection,
   getDocs,
   limit,
+  orderBy,
   query,
   where,
-  orderBy,
 } from "firebase/firestore";
-import { database } from "../config/FirebaseConfig";
+import { database } from "../../config/FirebaseConfig";
 import { CollectionCard } from "../types/CollectionCard";
 const collectionName = "cards";
 
