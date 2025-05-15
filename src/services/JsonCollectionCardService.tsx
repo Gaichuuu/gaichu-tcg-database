@@ -19,6 +19,14 @@ export const getJsonCardDetail = (cardName: string): CollectionCard | null => {
 
   return convertToCollectionCard(card);
 };
+export const getJsonCardDetailByNumber = (
+  number: number,
+): CollectionCard | null => {
+  const card = cardList.find((card) => card.number === number);
+  if (!card) return null;
+
+  return convertToCollectionCard(card);
+};
 
 const convertToCollectionCard = (card: any): CollectionCard => ({
   id: card.id,

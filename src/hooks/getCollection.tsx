@@ -129,3 +129,36 @@ export const getCardDetail = (cardName?: string) => {
     isLoading: queryResult.isLoading,
   };
 };
+
+export const getCardDetailByNumber = (
+  number?: number,
+): Result<CollectionCard | null, Error> => {
+  if (!number) {
+    return {
+      data: null,
+      error: undefined,
+      isLoading: false,
+    };
+  }
+
+  if (IS_USE_LOCAL_DATA) {
+    return {
+      data: getJsonCardDetail(number.toString()),
+      error: undefined,
+      isLoading: false,
+    };
+  }
+
+  const queryResult = useQuery<CollectionCard | null>({
+    queryKey: [`CardDetail_${number}`],
+    enabled: !!number,
+    queryFn: () => fetchCardDetail(number.toString()),
+    staleTime: 1000 * 60 * 5,
+  });
+
+  return {
+    data: queryResult.data,
+    error: queryResult.error || undefined,
+    isLoading: queryResult.isLoading,
+  };
+};
