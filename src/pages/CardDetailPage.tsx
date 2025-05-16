@@ -1,6 +1,7 @@
 // src/pages/CardDetailPage.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
+import CardDetailPagingButton from "../components/ButtonComponents/cardDetailPagingButton";
 import { getCardDetail } from "../hooks/getCollection";
 
 interface Params extends Record<string, string | undefined> {
@@ -98,6 +99,12 @@ const CardDetailPage: React.FC = () => {
           </table>
         </div>
       </div>
+      {card && (
+        <div className="flex flex-col gap-6 md:flex-row">
+          <CardDetailPagingButton label="previous" onClick={() => {}} />
+          <CardDetailPagingButton label="next" onClick={() => {}} />
+        </div>
+      )}
     </div>
   );
 };
