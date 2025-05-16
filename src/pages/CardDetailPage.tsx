@@ -1,17 +1,12 @@
 // src/pages/CardDetailPage.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
+import { CollectionParams } from "../App";
 import CardDetailPagingButton from "../components/ButtonComponents/cardDetailPagingButton";
 import { getCardDetail } from "../hooks/getCollection";
 
-interface Params extends Record<string, string | undefined> {
-  seriesId?: string;
-  setShortName?: string;
-  cardName?: string;
-}
-
 const CardDetailPage: React.FC = () => {
-  const { cardName } = useParams<Params>();
+  const { cardName } = useParams<CollectionParams>();
   const { data: card, error } = getCardDetail(cardName);
 
   if (cardName == null || error != null) {
