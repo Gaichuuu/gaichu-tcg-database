@@ -1,13 +1,48 @@
 // src/pages/CardDetailPage.tsx
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { CollectionParams } from "../App";
-import CardDetailPagingButton from "../components/ButtonComponents/cardDetailPagingButton";
-import { getCardDetail } from "../hooks/getCollection";
+import CardDetailPagingButton, {
+  PagingType,
+} from "../components/ButtonComponents/CardDetailPagingButton";
+import { getCardDetail, getCardDetailByNumber } from "../hooks/getCollection";
+import { CollectionCard } from "../types/CollectionCard";
 
 const CardDetailPage: React.FC = () => {
-  const { cardName } = useParams<CollectionParams>();
-  const { data: card, error } = getCardDetail(cardName);
+  const [card, setCard] = useState<CollectionCard | undefined>(undefined);
+  const [nextCard, setNextCard] = useState<CollectionCard | undefined>(
+    undefined,
+  );
+  const [previousCard, setPreviousCard] = useState<CollectionCard | undefined>(
+    undefined,
+  );
+  const [error, setError] = useState<Error | undefined>(undefined);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { seriesShortName, setShortName, cardName } =
+    useParams<CollectionParams>();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const result = getCardDetail(cardName);
+    setIsLoading(result.isLoading);
+    setError(result.error);
+    setCard(result.data ?? undefined);
+
+    if (result.data) {
+      setPreviousCard(
+        getCardDetailByNumber(result.data.number - 1).data ?? undefined,
+      );
+
+      setNextCard(
+        getCardDetailByNumber(result.data.number + 1).data ?? undefined,
+      );
+    }
+  }, [cardName]);
+
+  if (isLoading) {
+    return <div>Loading…</div>;
+  }
 
   if (cardName == null || error != null) {
     return (
@@ -15,10 +50,6 @@ const CardDetailPage: React.FC = () => {
         <p className="text-errorText text-center">Card not found.</p>
       </div>
     );
-  }
-
-  if (!card) {
-    return <div>Loading…</div>;
   }
 
   return (
@@ -48,7 +79,7 @@ const CardDetailPage: React.FC = () => {
                   {card?.measurement.weight}
                 </td>
               </tr>
-              {card.attacks.map((attack, aIndex) => (
+              {card?.attacks.map((attack, aIndex) => (
                 <tr key={attack.name ?? aIndex}>
                   <th className="py-2 pr-4 text-left">{attack.name}</th>
                   <td className="py-2">
@@ -94,12 +125,36 @@ const CardDetailPage: React.FC = () => {
           </table>
         </div>
       </div>
-      {card && (
-        <div className="flex flex-col gap-6 md:flex-row">
-          <CardDetailPagingButton label="previous" onClick={() => {}} />
-          <CardDetailPagingButton label="next" onClick={() => {}} />
-        </div>
-      )}
+      <div className="mt-6 flex flex-col gap-6 md:flex-row">
+        {previousCard && (
+          <div className="flex flex-col gap-6 md:flex-row">
+            {/* Previous button */}
+            <CardDetailPagingButton
+              pagingType={PagingType.Previous}
+              card={previousCard}
+              onClick={() => {
+                navigate(
+                  `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard.name}`,
+                );
+              }}
+            />
+          </div>
+        )}
+        {nextCard && (
+          <div className="flex flex-col gap-6 md:flex-row">
+            {/* next button */}
+            <CardDetailPagingButton
+              pagingType={PagingType.Next}
+              card={nextCard}
+              onClick={() => {
+                navigate(
+                  `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard.name}`,
+                );
+              }}
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

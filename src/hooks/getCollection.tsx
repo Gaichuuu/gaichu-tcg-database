@@ -6,6 +6,7 @@ import { fetchSets } from "../services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "../services/Constants";
 import {
   getJsonCardDetail,
+  getJsonCardDetailByNumber,
   getJsonCardList,
 } from "../services/JsonCollectionCardService";
 import { getJsonSeries } from "../services/JsonCollectionSeriesService";
@@ -143,7 +144,7 @@ export const getCardDetailByNumber = (
 
   if (IS_USE_LOCAL_DATA) {
     return {
-      data: getJsonCardDetail(number.toString()),
+      data: getJsonCardDetailByNumber(number),
       error: undefined,
       isLoading: false,
     };
