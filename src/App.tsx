@@ -12,7 +12,7 @@ import SetPage from "./pages/SetPage";
 import TcgSeriesPage from "./pages/TcgSeriesPage";
 
 export interface CollectionParams extends Record<string, string | undefined> {
-  seriesId?: string;
+  seriesShortName?: string;
   setShortName?: string;
   cardName?: string;
 }

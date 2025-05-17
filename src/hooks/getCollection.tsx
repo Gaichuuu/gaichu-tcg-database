@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { AppResult } from "../services/AppResult";
 import { fetchCardDetail, fetchCards } from "../services/CollectionCardService";
 import { fetchSeries } from "../services/CollectionSeriesService";
 import { fetchSets } from "../services/CollectionSetService";
@@ -9,11 +10,10 @@ import {
 } from "../services/JsonCollectionCardService";
 import { getJsonSeries } from "../services/JsonCollectionSeriesService";
 import { getJsonSet } from "../services/JsonCollectionSetService";
-import { Result } from "../services/Result";
 import { CollectionCard } from "../types/CollectionCard";
 import { SeriesAndSet, SetAndCard } from "../types/MergedCollection";
 
-export const getSeries = (): Result<SeriesAndSet[], Error> => {
+export const getSeries = (): AppResult<SeriesAndSet[], Error> => {
   if (IS_USE_LOCAL_DATA) {
     return {
       data: getJsonSeries(),
@@ -37,7 +37,7 @@ export const getSeries = (): Result<SeriesAndSet[], Error> => {
 
 export const getSets = (
   seriesShortName?: string,
-): Result<SetAndCard[], Error> => {
+): AppResult<SetAndCard[], Error> => {
   if (!seriesShortName) {
     return {
       data: [],
@@ -69,7 +69,7 @@ export const getSets = (
 
 export const getCards = (
   setShortName?: string,
-): Result<CollectionCard[], Error> => {
+): AppResult<CollectionCard[], Error> => {
   if (!setShortName) {
     return {
       data: [],
@@ -132,7 +132,7 @@ export const getCardDetail = (cardName?: string) => {
 
 export const getCardDetailByNumber = (
   number?: number,
-): Result<CollectionCard | null, Error> => {
+): AppResult<CollectionCard | null, Error> => {
   if (!number) {
     return {
       data: null,
