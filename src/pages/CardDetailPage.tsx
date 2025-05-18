@@ -55,14 +55,37 @@ const CardDetailPage: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col gap-6 md:flex-row">
-        <div className="flex justify-center md:w-1/3">
+        <div className="flex flex-col items-center md:w-1/3">
           <img
             src={card?.image}
             alt={card?.name}
             className="mb-4 block max-h-[600px] rounded-3xl object-contain shadow"
           />
+          <div className="mt-0 flex w-full max-w-xs gap-4">
+            {previousCard && (
+              <CardDetailPagingButton
+                pagingType={PagingType.Previous}
+                card={previousCard}
+                onClick={() => {
+                  navigate(
+                    `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard.name}`,
+                  );
+                }}
+              />
+            )}
+            {nextCard && (
+              <CardDetailPagingButton
+                pagingType={PagingType.Next}
+                card={nextCard}
+                onClick={() => {
+                  navigate(
+                    `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard.name}`,
+                  );
+                }}
+              />
+            )}
+          </div>
         </div>
-
         <div className="md:w-2/3">
           <h2 className="mb-4 text-3xl">{card?.name}</h2>
 
@@ -124,36 +147,6 @@ const CardDetailPage: React.FC = () => {
             </tbody>
           </table>
         </div>
-      </div>
-      <div className="mt-6 flex flex-col gap-6 md:flex-row">
-        {previousCard && (
-          <div className="flex flex-col gap-6 md:flex-row">
-            {/* Previous button */}
-            <CardDetailPagingButton
-              pagingType={PagingType.Previous}
-              card={previousCard}
-              onClick={() => {
-                navigate(
-                  `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard.name}`,
-                );
-              }}
-            />
-          </div>
-        )}
-        {nextCard && (
-          <div className="flex flex-col gap-6 md:flex-row">
-            {/* next button */}
-            <CardDetailPagingButton
-              pagingType={PagingType.Next}
-              card={nextCard}
-              onClick={() => {
-                navigate(
-                  `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard.name}`,
-                );
-              }}
-            />
-          </div>
-        )}
       </div>
     </div>
   );

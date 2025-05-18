@@ -1,40 +1,44 @@
 import React from "react";
 import { CollectionCard } from "../../types/CollectionCard";
+import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 
 type ButtonAction = {
   pagingType: PagingType;
   card: CollectionCard;
   onClick: () => void;
+  className?: string;
 };
 
 export enum PagingType {
   Previous = "Previous",
   Next = "Next",
 }
-const PagingTitle: Record<PagingType, string> = {
-  [PagingType.Previous]: "<",
-  [PagingType.Next]: ">",
-};
 
 const CardDetailPagingButton: React.FC<ButtonAction> = ({
   pagingType,
   card,
   onClick,
+  className = "",
 }) => {
+  const isPrev = pagingType === PagingType.Previous;
+
   return (
     <button
       onClick={onClick}
-      className="rounded bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+      className={` ${className} /* allows parent to do */ inline-flex flex-1 cursor-pointer flex-col items-center bg-transparent p-0 transition-transform duration-200 hover:scale-110`}
     >
-      {pagingType === PagingType.Previous
-        ? `${PagingTitle[pagingType]} ${card.name}`
-        : `${card.name} ${PagingTitle[pagingType]}`}
-
-      <img
-        src={card?.image}
-        alt={card?.name}
-        className="mb-4 block max-h-[100px] rounded-3xl object-contain shadow"
-      />
+      <span className="text-primaryText hover:text-hoverText inline-flex items-center space-x-1">
+        {isPrev && <RiArrowDropLeftLine size={20} />}
+        <span className="truncate">{card.name}</span>
+        {!isPrev && <RiArrowDropRightLine size={20} />}
+      </span>
+      {card.thumb && (
+        <img
+          src={card.thumb}
+          alt={card.name}
+          className="mt-1 max-h-[32px] rounded-full object-contain"
+        />
+      )}
     </button>
   );
 };

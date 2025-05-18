@@ -7,6 +7,7 @@ export interface CollectionCard {
   description: string;
   hp: string;
   image: string;
+  thumb: string;
   rarity: string;
   illustrators: string[];
   attacks: Attack[];

@@ -36,6 +36,7 @@ const convertToCollectionCard = (card: any): CollectionCard => ({
   rarity: card.rarity,
   set_short_name: card.set_short_name,
   image: card.image,
+  thumb: card.thumb,
   hp: card.hp,
   description: card.description,
   illustrators: [...card.illustrators],
