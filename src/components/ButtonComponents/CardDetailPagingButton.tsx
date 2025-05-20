@@ -1,10 +1,10 @@
 import React from "react";
-import { CollectionCard } from "../../types/CollectionCard";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
+import { CollectionCard } from "../../types/CollectionCard";
 
 type ButtonAction = {
   pagingType: PagingType;
-  card: CollectionCard;
+  card?: CollectionCard;
   onClick: () => void;
   className?: string;
 };
@@ -29,10 +29,10 @@ const CardDetailPagingButton: React.FC<ButtonAction> = ({
     >
       <span className="text-primaryText hover:text-hoverText inline-flex items-center space-x-1">
         {isPrev && <RiArrowDropLeftLine size={20} />}
-        <span className="truncate">{card.name}</span>
+        <span className="truncate">{card?.name}</span>
         {!isPrev && <RiArrowDropRightLine size={20} />}
       </span>
-      {card.thumb && (
+      {card?.thumb && (
         <img
           src={card.thumb}
           alt={card.name}

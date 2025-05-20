@@ -19,13 +19,21 @@ export const getJsonCardDetail = (cardName: string): CollectionCard | null => {
 
   return convertToCollectionCard(card);
 };
-export const getJsonCardDetailByNumber = (
-  number: number,
-): CollectionCard | null => {
-  const card = cardList.find((card) => card.number === number);
-  if (!card) return null;
 
-  return convertToCollectionCard(card);
+export const getAdjacentCards = (
+  setShortName: string,
+  previousNumber?: number,
+  nextNumber?: number,
+): CollectionCard[] => {
+  const cards = cardList.filter((card) => card.set_short_name === setShortName);
+
+  return cards
+    .filter((card) => {
+      if (previousNumber && card.number === previousNumber) return true;
+      if (nextNumber && card.number === nextNumber) return true;
+      return false;
+    })
+    .map((card) => convertToCollectionCard(card));
 };
 
 const convertToCollectionCard = (card: any): CollectionCard => ({

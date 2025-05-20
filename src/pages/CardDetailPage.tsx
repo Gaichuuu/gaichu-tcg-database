@@ -1,56 +1,30 @@
 // src/pages/CardDetailPage.tsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { CollectionParams } from "../App";
 import CardDetailPagingButton, {
   PagingType,
 } from "../components/ButtonComponents/CardDetailPagingButton";
-import { getCardDetail, getCardDetailByNumber } from "../hooks/getCollection";
-import { CollectionCard } from "../types/CollectionCard";
+import { useCurrentAndAdjacentCards } from "../hooks/useCollectionCard";
 
 const CardDetailPage: React.FC = () => {
-  const [card, setCard] = useState<CollectionCard | undefined>(undefined);
-  const [nextCard, setNextCard] = useState<CollectionCard | undefined>(
-    undefined,
-  );
-  const [previousCard, setPreviousCard] = useState<CollectionCard | undefined>(
-    undefined,
-  );
-  const [error, setError] = useState<Error | undefined>(undefined);
-  const [isLoading, setIsLoading] = useState(false);
-
   const { seriesShortName, setShortName, cardName } =
     useParams<CollectionParams>();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const result = getCardDetail(cardName);
-    setIsLoading(result.isLoading);
-    setError(result.error);
-    setCard(result.data ?? undefined);
+  const { card, previousCard, nextCard, isLoading, error } =
+    useCurrentAndAdjacentCards(
+      seriesShortName ?? "",
+      setShortName ?? "",
+      cardName ?? "",
+    );
 
-    if (result.data) {
-      setPreviousCard(
-        getCardDetailByNumber(result.data.number - 1).data ?? undefined,
-      );
-
-      setNextCard(
-        getCardDetailByNumber(result.data.number + 1).data ?? undefined,
-      );
-    }
-  }, [cardName]);
-
-  if (isLoading) {
-    return <div>Loading…</div>;
-  }
-
-  if (cardName == null || error != null) {
+  if (error && isLoading === false)
     return (
       <div className="container mx-auto p-4">
         <p className="text-errorText text-center">Card not found.</p>
       </div>
     );
-  }
 
   return (
     <div className="container mx-auto p-4">
@@ -65,10 +39,10 @@ const CardDetailPage: React.FC = () => {
             {previousCard && (
               <CardDetailPagingButton
                 pagingType={PagingType.Previous}
-                card={previousCard}
+                card={previousCard ? previousCard : undefined}
                 onClick={() => {
                   navigate(
-                    `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard.name}`,
+                    `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard?.name}`,
                   );
                 }}
               />
@@ -76,10 +50,10 @@ const CardDetailPage: React.FC = () => {
             {nextCard && (
               <CardDetailPagingButton
                 pagingType={PagingType.Next}
-                card={nextCard}
+                card={nextCard ? nextCard : undefined}
                 onClick={() => {
                   navigate(
-                    `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard.name}`,
+                    `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard?.name}`,
                   );
                 }}
               />

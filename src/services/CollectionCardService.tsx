@@ -44,3 +44,24 @@ export const fetchCardDetail = async (
   const doc = cardsSnapshot.docs[0];
   return { id: doc.id, ...doc.data() } as CollectionCard;
 };
+
+export const fetchAdjacentCards = async (
+  setShortName: string,
+  previousNumber?: number,
+  nextNumber?: number,
+): Promise<CollectionCard[]> => {
+  const cardsReference = collection(database, collectionName);
+  const cardsQuery = query(
+    cardsReference,
+    where("set_short_name", "==", setShortName),
+    where("number", "in", [previousNumber, nextNumber]),
+  );
+
+  const cardsSnapshot = await getDocs(cardsQuery);
+  const cards = cardsSnapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  })) as CollectionCard[];
+
+  return cards;
+};
