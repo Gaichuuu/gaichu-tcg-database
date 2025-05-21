@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { getSeries } from "../../hooks/getCollection";
+import { getSeries } from "../../hooks/useCollection";
 import { CollectionSeries } from "../../types/CollectionSeries";
 import Tile from "../TileComponents/Tile";
 

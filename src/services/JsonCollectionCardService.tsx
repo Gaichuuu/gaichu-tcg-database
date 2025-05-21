@@ -13,19 +13,32 @@ export const getJsonCardList = (setShortName: string): CollectionCard[] => {
     .sort((a, b) => a.number - b.number);
 };
 
-export const getJsonCardDetail = (cardName: string): CollectionCard | null => {
-  const card = cardList.find((card) => card.name === cardName);
-  if (!card) return null;
+export const getJsonCardDetail = (
+  seriesShortName: string,
+  setShortName: string,
+  cardName: string,
+): CollectionCard | null => {
+  const card = cardList
+    .filter(
+      (card) =>
+        card.set_short_name === setShortName &&
+        card.series_short_name === seriesShortName,
+    )
+    .find((card) => card.name === cardName);
 
+  if (!card) return null;
   return convertToCollectionCard(card);
 };
 
 export const getAdjacentCards = (
+  seriesShortName: string,
   setShortName: string,
   previousNumber?: number,
   nextNumber?: number,
 ): CollectionCard[] => {
-  const cards = cardList.filter((card) => card.set_short_name === setShortName);
+  const cards = cardList
+    .filter((card) => card.series_short_name === seriesShortName)
+    .filter((card) => card.set_short_name === setShortName);
 
   return cards
     .filter((card) => {

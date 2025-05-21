@@ -65,12 +65,13 @@ export const useSets = (
 };
 
 export const useCards = (
-  setShortName?: string,
+  seriesShortName: string,
+  setShortName: string,
 ): AppResult<CollectionCard[], Error> => {
   const queryResult = useQuery<CollectionCard[]>({
     queryKey: [`CardsList_${setShortName}`],
     enabled: !!setShortName,
-    queryFn: () => fetchCards(setShortName!),
+    queryFn: () => fetchCards(seriesShortName, setShortName),
     staleTime: 1000 * 60 * 5,
   });
 

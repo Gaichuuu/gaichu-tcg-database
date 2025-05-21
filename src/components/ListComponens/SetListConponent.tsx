@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useSets } from "../../hooks/getCollection";
+import { useSets } from "../../hooks/useCollection";
 import Tile from "../TileComponents/Tile";
 
 const setsList = () => {
