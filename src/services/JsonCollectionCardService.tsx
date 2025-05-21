@@ -43,6 +43,7 @@ const convertToCollectionCard = (card: any): CollectionCard => ({
   parody: card.parody,
   rarity: card.rarity,
   set_short_name: card.set_short_name,
+  series_short_name: card.series_short_name,
   image: card.image,
   thumb: card.thumb,
   hp: card.hp,
