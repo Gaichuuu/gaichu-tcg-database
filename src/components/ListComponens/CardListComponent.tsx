@@ -1,12 +1,12 @@
 // src/components/CardListComponent.tsx
 import { useNavigate, useParams } from "react-router-dom";
-import { getCards } from "../../hooks/getCollection";
+import { useCards } from "../../hooks/getCollection";
 import CardsListTile from "../TileComponents/CardsListTile";
 import HoverTooltip from "../TileComponents/HoverTooltip";
 
 const CardList = () => {
   const { seriesShortName, setShortName } = useParams();
-  const { data: collectionCards, error } = getCards(setShortName);
+  const { data: collectionCards, error } = useCards(setShortName);
   const navigate = useNavigate();
 
   if (error) return <p>Something went wrong...</p>;

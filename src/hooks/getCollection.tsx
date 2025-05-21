@@ -1,19 +1,22 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchCardDetail, fetchCards } from "../services/CollectionCardService";
+import { AppResult } from "../services/AppResult";
+import { fetchCards } from "../services/CollectionCardService";
 import { fetchSeries } from "../services/CollectionSeriesService";
 import { fetchSets } from "../services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "../services/Constants";
-import {
-  getJsonCardDetail,
-  getJsonCardList,
-} from "../services/JsonCollectionCardService";
+import { getJsonCardList } from "../services/JsonCollectionCardService";
 import { getJsonSeries } from "../services/JsonCollectionSeriesService";
 import { getJsonSet } from "../services/JsonCollectionSetService";
-import { Result } from "../services/Result";
 import { CollectionCard } from "../types/CollectionCard";
 import { SeriesAndSet, SetAndCard } from "../types/MergedCollection";
 
-export const getSeries = (): Result<SeriesAndSet[], Error> => {
+export const getSeries = (): AppResult<SeriesAndSet[], Error> => {
+  const queryResult = useQuery<SeriesAndSet[]>({
+    queryKey: ["SeriesList"],
+    queryFn: fetchSeries,
+    staleTime: 1000 * 60 * 5,
+  });
+
   if (IS_USE_LOCAL_DATA) {
     return {
       data: getJsonSeries(),
@@ -22,12 +25,6 @@ export const getSeries = (): Result<SeriesAndSet[], Error> => {
     };
   }
 
-  const queryResult = useQuery<SeriesAndSet[]>({
-    queryKey: ["SeriesList"],
-    queryFn: fetchSeries,
-    staleTime: 1000 * 60 * 5,
-  });
-
   return {
     data: queryResult.data,
     error: queryResult.error || undefined,
@@ -35,24 +32,9 @@ export const getSeries = (): Result<SeriesAndSet[], Error> => {
   };
 };
 
-export const getSets = (
+export const useSets = (
   seriesShortName?: string,
-): Result<SetAndCard[], Error> => {
-  if (!seriesShortName) {
-    return {
-      data: [],
-      error: undefined,
-      isLoading: false,
-    };
-  }
-  if (IS_USE_LOCAL_DATA) {
-    return {
-      data: getJsonSet(seriesShortName!),
-      error: undefined,
-      isLoading: false,
-    };
-  }
-
+): AppResult<SetAndCard[] | null, Error> => {
   const queryResult = useQuery<SetAndCard[]>({
     queryKey: [`SetsList_${seriesShortName}`],
     enabled: !!seriesShortName,
@@ -60,6 +42,21 @@ export const getSets = (
     staleTime: 1000 * 60 * 5,
   });
 
+  if (!seriesShortName) {
+    return {
+      data: null,
+      error: new Error("not found"),
+      isLoading: false,
+    };
+  }
+
+  if (IS_USE_LOCAL_DATA) {
+    return {
+      data: getJsonSet(seriesShortName!),
+      error: undefined,
+      isLoading: false,
+    };
+  }
   return {
     data: queryResult.data,
     error: queryResult.error || undefined,
@@ -67,24 +64,9 @@ export const getSets = (
   };
 };
 
-export const getCards = (
+export const useCards = (
   setShortName?: string,
-): Result<CollectionCard[], Error> => {
-  if (!setShortName) {
-    return {
-      data: [],
-      error: undefined,
-      isLoading: false,
-    };
-  }
-  if (IS_USE_LOCAL_DATA) {
-    return {
-      data: getJsonCardList(setShortName!),
-      error: undefined,
-      isLoading: false,
-    };
-  }
-
+): AppResult<CollectionCard[], Error> => {
   const queryResult = useQuery<CollectionCard[]>({
     queryKey: [`CardsList_${setShortName}`],
     enabled: !!setShortName,
@@ -92,36 +74,21 @@ export const getCards = (
     staleTime: 1000 * 60 * 5,
   });
 
-  return {
-    data: queryResult.data,
-    error: queryResult.error || undefined,
-    isLoading: queryResult.isLoading,
-  };
-};
-
-export const getCardDetail = (cardName?: string) => {
-  if (!cardName) {
+  if (!setShortName) {
     return {
-      data: null,
-      error: undefined,
+      data: [],
+      error: Error("not found"),
       isLoading: false,
     };
   }
 
   if (IS_USE_LOCAL_DATA) {
     return {
-      data: getJsonCardDetail(cardName!),
+      data: getJsonCardList(setShortName!),
       error: undefined,
       isLoading: false,
     };
   }
-
-  const queryResult = useQuery<CollectionCard | null>({
-    queryKey: [`CardDetail_${cardName}`],
-    enabled: !!cardName,
-    queryFn: () => fetchCardDetail(cardName!),
-    staleTime: 1000 * 60 * 5,
-  });
 
   return {
     data: queryResult.data,

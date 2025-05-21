@@ -11,6 +11,12 @@ import SeriesPage from "./pages/SeriesPage";
 import SetPage from "./pages/SetPage";
 import TcgSeriesPage from "./pages/TcgSeriesPage";
 
+export interface CollectionParams extends Record<string, string | undefined> {
+  seriesShortName?: string;
+  setShortName?: string;
+  cardName?: string;
+}
+
 const App: React.FC = () => {
   return (
     <BrowserRouter>

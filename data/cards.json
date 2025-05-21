@@ -15,7 +15,8 @@
       }
     ],
     "hp": "15",
-    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set1/23.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/23-thumb.jpg",
     "description": "This Pokémon can escape from its opponents in a variety of ways.",
     "measurement": {
       "height": ".4m",
@@ -45,7 +46,8 @@
       }
     ],
     "hp": "60",
-    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set1/45.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/45-thumb.jpg",
     "description": "This form only occurs in the Alola region. According to researchers, this adaptation is likely due to its diet.",
     "measurement": {
       "height": "7m",
@@ -77,6 +79,7 @@
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/30.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/30-thumb.jpg",
     "description": "There are stories of it grabbing young children by the hand and dragging them to the afterlife.",
     "measurement": {
       "height": ".4m",
@@ -108,6 +111,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/34.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/34-thumb.jpg",
     "description": "This Pokémon knows no fear. It is strong, fast, and cunning. Its daily routine is gnawing at logs.",
     "measurement": {
       "height": ".5m",
@@ -138,6 +142,7 @@
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/16-thumb.jpg",
     "description": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
     "measurement": {
       "height": ".3m",
@@ -168,6 +173,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/02-thumb.jpg",
     "description": "Possesses powerful psychic abilities, but they only come into play when having a chronic headache.",
     "measurement": {
       "height": ".8m",
@@ -198,6 +204,7 @@
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/01-thumb.jpg",
     "description": "Its strength is so great that it can destroy mountains with a single blow, and even legends dare not challenge this creature.",
     "measurement": {
       "height": ".4m",
@@ -229,6 +236,7 @@
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/40-thumb.jpg",
     "description": "This Pokémon is very loyal to whomever suits it best.",
     "measurement": {
       "height": "1m",
@@ -246,7 +254,7 @@
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
     "number": 42,
-    "name": "Trumpet",
+    "name": "Trumpety",
     "parody": "Charizard",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
@@ -260,6 +268,7 @@
     ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/42-thumb.jpg",
     "description": "Able to melt giant rocks with its fire breath.",
     "measurement": {
       "height": "1.7m",
@@ -291,6 +300,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/32.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/32-thumb.jpg",
     "description": "Its exact appearance is unknown. A scholar who saw what was underneath the rag was overcome with fear and died of shock.",
     "measurement": {
       "height": ".2m",
@@ -321,6 +331,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/48.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/48-thumb.jpg",
     "description": "This Pokémon has always been rare, and is believed to be the ancestor of all Pokémon.",
     "measurement": {
       "height": ".4m",
@@ -337,7 +348,7 @@
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
     "number": 28,
-    "name": "Shampy",
+    "name": "Shanpe",
     "parody": "Abra",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
@@ -351,6 +362,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/28.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/28-thumb.jpg",
     "description": "If it senses danger it will immediately teleport away.",
     "measurement": {
       "height": ".9m",
@@ -381,6 +393,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/18-thumb.jpg",
     "description": "It has a flame inside that never goes out.",
     "measurement": {
       "height": ".4m",
@@ -412,6 +425,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/09.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/09-thumb.jpg",
     "description": "This creature is cute and fluffy, but highly intelligent and devious! I have a kind heart and like to spend my days sleeping.",
     "measurement": {
       "height": ".4m",
@@ -447,7 +461,8 @@
       }
     ],
     "hp": "120",
-    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set1/44.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/44-thumb.jpg",
     "description": "It can fly faster than any other Pokémon. It can circle the Earth in just 16 hours.",
     "measurement": {
       "height": "2.2m",
@@ -478,6 +493,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/05.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/05-thumb.jpg",
     "description": "The shell becomes as hard as iron.",
     "measurement": {
       "height": ".7m",
@@ -508,6 +524,7 @@
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/13-thumb.jpg",
     "description": "This Pokémon is very rare. When encountered, it quickly runs away.",
     "measurement": {
       "height": "1.1m",
@@ -538,6 +555,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/05.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/05-thumb.jpg",
     "description": "This sign is very aggressive and rebellious. It even has a desire to protect its home.",
     "measurement": {
       "height": ".5m",
@@ -569,6 +587,7 @@
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/09.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/09-thumb.jpg",
     "description": "This Pokémon is born with a seed on its back. They grow at the same rate and eventually become part of the body.",
     "measurement": {
       "height": ".7m",
@@ -600,6 +619,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/02-thumb.jpg",
     "description": "This creature is capable of solving difficult puzzles and has an extremely high IQ.",
     "measurement": {
       "height": ".8m",
@@ -631,6 +651,7 @@
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/41-thumb.jpg",
     "description": "The water stream from the shell's rocket launcher has the destructive power to pierce even thick steel plates with a single shot.",
     "measurement": {
       "height": "1.6m",
@@ -662,6 +683,7 @@
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/24-thumb.jpg",
     "description": "This Pokémon is very sensitive to sunlight. It spends almost its entire life underground.",
     "measurement": {
       "height": ".2m",
@@ -692,6 +714,7 @@
     ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set1/46.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/46-thumb.jpg",
     "description": "It absorbs heat from anything around it. If you suddenly feel a chill, it's a sign that Gengar is nearby.",
     "measurement": {
       "height": "1.5m",
@@ -722,6 +745,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/50-thumb.jpg",
     "description": "This Pokémon is nearly useless in battle, but it tastes delicious when roasted and seasoned with salt.",
     "measurement": {
       "height": ".9m",
@@ -753,6 +777,7 @@
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set1/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/04-thumb.jpg",
     "description": "The frequency of the singing voice perfectly match the brain waves of a person in deep sleep.",
     "measurement": {
       "height": ".5m",
@@ -789,6 +814,7 @@
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/17-thumb.jpg",
     "description": "This Pokémon has a very strong jaw.",
     "measurement": {
       "height": ".6m",
@@ -825,7 +851,8 @@
       }
     ],
     "hp": "10",
-    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set1/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/08-thumb.jpg",
     "description": "This Pokémon is a big foodie. It only eats French fries and Hot Pockets.",
     "measurement": {
       "height": ".3m",
@@ -862,6 +889,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/10-thumb.jpg",
     "description": "When it's dangerous, it stays in the shell.",
     "measurement": {
       "height": ".5m",
@@ -898,6 +926,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/08-thumb.jpg",
     "description": "This organism is actually just a rock, and has baffled scientists and biologists since its discovery.",
     "measurement": {
       "height": ".4m",
@@ -929,6 +958,7 @@
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/03-thumb.jpg",
     "description": "This creature can taste sound with its eyes.",
     "measurement": {
       "height": ".6m",
@@ -960,6 +990,7 @@
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/10.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/10-thumb.jpg",
     "description": "This creature loves to protect and heal others. Therefore, it will not be used in combat and will not carry on the fight.",
     "measurement": {
       "height": "1.5m",
@@ -991,6 +1022,7 @@
     ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/39-thumb.jpg",
     "description": "The light emitted from its ring can be dimmed to become completely invisible in the dark of night.",
     "measurement": {
       "height": "1m",
@@ -1021,6 +1053,7 @@
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/22-thumb.jpg",
     "description": "The first Pokémon created by humans. A Pokémon that came into being after many years of scientific research and experimentation.",
     "measurement": {
       "height": ".8m",
@@ -1052,6 +1085,7 @@
     ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/43-thumb.jpg",
     "description": "The day after it rains, the scent of flowers on its back intensifies. Pokémon gather there, drawn by the scent.",
     "measurement": {
       "height": "2m",
@@ -1083,6 +1117,7 @@
     ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/27-thumb.jpg",
     "description": "A peaceful Pokémon that is happy for you to be carried on its back.",
     "measurement": {
       "height": "2.5m",
@@ -1114,6 +1149,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/06-thumb.jpg",
     "description": "Is able to levitate thanks to the magnetic field generated within its body.",
     "measurement": {
       "height": ".3m",
@@ -1144,6 +1180,7 @@
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/29-thumb.jpg",
     "description": "A fat, lazy, and always hungry Pokémon. It will eat anything, even if it's poisonous.",
     "measurement": {
       "height": "2.1m",
@@ -1180,6 +1217,7 @@
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/01-thumb.jpg",
     "description": "This Pokémon spends most of its time hiding in the mud.",
     "measurement": {
       "height": ".4m",
@@ -1215,6 +1253,7 @@
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set2/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/04-thumb.jpg",
     "description": "This creature uses a sixth sense to see into the future.",
     "measurement": {
       "height": "1.6m",
@@ -1246,6 +1285,7 @@
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set1/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/07-thumb.jpg",
     "description": "Items can be recharged when placed on the head.",
     "measurement": {
       "height": ".8m",
@@ -1277,6 +1317,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/20-thumb.jpg",
     "description": "This Pokémon was considered a legendary Pokémon until a small colony was discovered under water.",
     "measurement": {
       "height": "1.8m",
@@ -1313,6 +1354,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/03-thumb.jpg",
     "description": "This Pokémon was born under a large mountain. It takes years to eat up all of its food, and after it does, it takes a long nap.",
     "measurement": {
       "height": ".6m",
@@ -1344,6 +1386,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/35-thumb.jpg",
     "description": "Hates the affection from people it trusts. Twice a year, sets itself on fire to burn off the old fur.",
     "measurement": {
       "height": ".4m",
@@ -1375,6 +1418,7 @@
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/07-thumb.jpg",
     "description": "This creature was once abundant on Earth, but now only a handful remain.",
     "measurement": {
       "height": "1.5m",
@@ -1406,6 +1450,7 @@
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set1/15.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/15-thumb.jpg",
     "description": "A Pokémon that spends all day collecting nectar from flowers.",
     "measurement": {
       "height": "1.1m",
@@ -1441,6 +1486,7 @@
     ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/00-thumb.jpg",
     "description": "A Pokémon created in a laboratory through gene splicing. It has a body suited for battle, but lacks a compassionate heart.",
     "measurement": {
       "height": "2m",
@@ -1471,6 +1517,7 @@
     ],
     "hp": "∞",
     "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/49-thumb.jpg",
     "description": "It is said to have emerged from an egg in the middle of nowhere and created the world.",
     "measurement": {
       "height": "3.2m",
@@ -1501,6 +1548,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/06-thumb.jpg",
     "description": "This creature has magical powers that can be used to contact its body.",
     "measurement": {
       "height": ".5m",
@@ -1532,6 +1580,7 @@
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/12-thumb.jpg",
     "description": "This Pokémon spends its time eating leaves and running away from Starlys.",
     "measurement": {
       "height": ".3m",
@@ -1562,6 +1611,7 @@
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/26-thumb.jpg",
     "description": "This Pokémon is born with one tail, which divides into six as it grows up.",
     "measurement": {
       "height": ".6m",
@@ -1597,6 +1647,7 @@
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/36-thumb.jpg",
     "description": "Wears the skull of its deceased mother. It's said to evolve when enduring the pain of the mother's death.",
     "measurement": {
       "height": ".4m",
@@ -1614,7 +1665,7 @@
   {
     "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
     "number": 33,
-    "name": "Big Butt",
+    "name": "Big Bat",
     "parody": "Golbat",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
@@ -1628,6 +1679,7 @@
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/33-thumb.jpg",
     "description": "They love to drink blood. Once they sink their teeth into their prey, they can instantly take up to 10 ounces or more of blood.",
     "measurement": {
       "height": "1.6m",
@@ -1658,6 +1710,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/38-thumb.jpg",
     "description": "Pikachu is by far the most famous Pokémon. Its personality has changed with the games and attention it receives.",
     "measurement": {
       "height": ".4m",
@@ -1689,6 +1742,7 @@
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/25.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/25-thumb.jpg",
     "description": "This Pokémon plants during the day and wakes up at dusk to roam and spread seeds.",
     "measurement": {
       "height": ".5m",
@@ -1719,6 +1773,7 @@
     ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/21-thumb.jpg",
     "description": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
     "measurement": {
       "height": "4m",
@@ -1755,6 +1810,7 @@
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/14.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/14-thumb.jpg",
     "description": "Its claws can crush anything.",
     "measurement": {
       "height": "1.8m",
@@ -1791,6 +1847,7 @@
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/11-thumb.jpg",
     "description": "If the flame goes out, it dies.",
     "measurement": {
       "height": "6m",
@@ -1827,6 +1884,7 @@
     ],
     "hp": "2",
     "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/31-thumb.jpg",
     "description": "A Pokémon that seals happiness in its shell and gives it to people. It is said that it brings good luck.",
     "measurement": {
       "height": ".3m",
@@ -1857,6 +1915,7 @@
     ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/37-thumb.jpg",
     "description": "Not only can it take on the appearance and skills of other Pokémon, but you can also mate and breed with other Pokémon. Many trainers use them for breeding purposes.",
     "measurement": {
       "height": ".3m",
@@ -1887,6 +1946,7 @@
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/19-thumb.jpg",
     "description": "A Pokémon made mostly of gas.",
     "measurement": {
       "height": "1.3m",

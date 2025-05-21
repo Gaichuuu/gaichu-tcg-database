@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { getSets } from "../../hooks/getCollection";
+import { useSets } from "../../hooks/getCollection";
 import Tile from "../TileComponents/Tile";
 
 const setsList = () => {
   const navigate = useNavigate();
   const { seriesShortName } = useParams();
-  const { data: collectionSet, error } = getSets(seriesShortName);
+  const { data: collectionSet, error } = useSets(seriesShortName);
 
   if (error) return <p>Something went wrong...</p>;
   return (

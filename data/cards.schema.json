@@ -14,6 +14,7 @@
       "sets",
       "hp",
       "image",
+      "thumb",
       "description",
       "measurement",
       "attacks"
@@ -79,6 +80,10 @@
         "type": "string"
       },
       "image": {
+        "type": "string",
+        "format": "uri"
+      },
+      "thumb": {
         "type": "string",
         "format": "uri"
       },
