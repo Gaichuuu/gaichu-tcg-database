@@ -10,6 +10,7 @@
       "illustrators",
       "rarity",
       "set_short_name",
+      "series_short_name",
       "set_ids",
       "sets",
       "hp",
@@ -48,6 +49,10 @@
       "set_short_name": {
         "type": "string",
         "enum": ["set1", "set2", "og"]
+      },
+      "series_short_name": {
+        "type": "string",
+        "enum": ["wm"]
       },
       "set_ids": {
         "type": "array",

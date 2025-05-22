@@ -3,6 +3,7 @@ export interface CollectionCard {
   name: string;
   number: number;
   set_short_name: string;
+  series_short_name: string;
   parody: string;
   description: string;
   hp: string;

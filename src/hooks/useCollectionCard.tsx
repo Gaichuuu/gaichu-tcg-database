@@ -11,21 +11,24 @@ import {
 } from "../services/JsonCollectionCardService";
 import { CollectionCard } from "../types/CollectionCard";
 
-// TODO: setShortName and seriesShortName
 export const useCardDetail = (
-  cardName?: string,
+  seriesShortName: string,
+  setShortName: string,
+  cardName: string,
 ): AppResult<CollectionCard | null, Error> => {
   const queryResult = useQuery<CollectionCard | null>({
-    queryKey: [`CardDetail_${cardName}`],
-    enabled: !!cardName,
-    queryFn: () => fetchCardDetail(cardName!),
+    queryKey: [`CardDetail_${seriesShortName}_${setShortName}_${cardName}`],
+    enabled: !!seriesShortName && !!setShortName && !!cardName,
+    queryFn: () => fetchCardDetail(seriesShortName, setShortName, cardName),
     staleTime: 1000 * 60 * 5,
   });
 
   if (IS_USE_LOCAL_DATA) {
+    const card = getJsonCardDetail(seriesShortName, setShortName, cardName);
+
     return {
-      data: getJsonCardDetail(cardName!),
-      error: undefined,
+      data: card,
+      error: card ? undefined : Error("Card not found"),
       isLoading: false,
     };
   }
@@ -47,17 +50,22 @@ export interface UseCurrentAndAdjacentCardsResult {
 export const useCurrentAndAdjacentCards = (
   seriesShortName: string,
   setShortName: string,
-  cardName?: string,
+  cardName: string,
 ): UseCurrentAndAdjacentCardsResult => {
   // current card
-  const { data: card, isLoading, error } = useCardDetail(cardName);
+  const {
+    data: card,
+    isLoading,
+    error,
+  } = useCardDetail(seriesShortName, setShortName, cardName);
 
   // adjacent cards
   const prevNumber = card?.number ? card.number - 1 : undefined;
   const nextNumber = card?.number ? card.number + 1 : undefined;
 
   const queryResult = useQuery<CollectionCard[]>({
-    queryFn: () => fetchAdjacentCards(setShortName, prevNumber, nextNumber),
+    queryFn: () =>
+      fetchAdjacentCards(seriesShortName, setShortName, prevNumber, nextNumber),
     queryKey: [
       `AdjacentCards_${seriesShortName}_${setShortName}_cardNumber_${card?.number}`,
     ],
@@ -67,6 +75,7 @@ export const useCurrentAndAdjacentCards = (
 
   if (IS_USE_LOCAL_DATA) {
     const adjacentCards = getAdjacentCards(
+      seriesShortName,
       setShortName,
       prevNumber,
       nextNumber,
@@ -76,7 +85,7 @@ export const useCurrentAndAdjacentCards = (
       previousCard:
         adjacentCards.find((c) => c.number === prevNumber) ?? undefined,
       nextCard: adjacentCards.find((c) => c.number === nextNumber) ?? undefined,
-      error: undefined,
+      error: error || undefined,
       isLoading: false,
     };
   }
