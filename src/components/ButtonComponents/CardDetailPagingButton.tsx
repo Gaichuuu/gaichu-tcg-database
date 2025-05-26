@@ -29,7 +29,7 @@ const CardDetailPagingButton: React.FC<ButtonAction> = ({
     >
       <span className="text-primaryText hover:text-hoverText inline-flex items-center space-x-1">
         {isPrev && <RiArrowDropLeftLine size={20} />}
-        <span className="truncate">{card?.name}</span>
+        <span className="max-w-30 truncate">{card?.name}</span>
         {!isPrev && <RiArrowDropRightLine size={20} />}
       </span>
       {card?.thumb && (
