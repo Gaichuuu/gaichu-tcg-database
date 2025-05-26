@@ -62,7 +62,7 @@ const CardList = () => {
                 alt={card.name}
                 className="block max-h-[260px] w-full rounded-xl object-contain transition-transform duration-200"
               />
-              <h3 className="mt-0 text-sm">{card.name}</h3>
+              <h3 className="mt-0 max-w-30 truncate text-sm">{card.name}</h3>
             </div>
           </HoverTooltip>
         </CardsListTile>
