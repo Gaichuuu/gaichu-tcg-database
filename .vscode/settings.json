@@ -4,8 +4,19 @@
   "editor.formatOnSave": true,
   "json.schemas": [
     {
-      "fileMatch": ["data/cards.json"],
-      "url": "./data/cards.schema.json"
+      "fileMatch": [
+        "**/data/cards.schema.base.json",
+        "**/data/*/cards.schema.json"
+      ],
+      "url": "http://json-schema.org/draft-07/schema#"
+    },
+    {
+      "fileMatch": ["**/data/wm/cards.json"],
+      "url": "./data/wm/cards.schema.json"
+    },
+    {
+      "fileMatch": ["**/data/mz/cards.json"],
+      "url": "./data/mz/cards.schema.json"
     },
     {
       "fileMatch": ["data/illustrators.json"],
