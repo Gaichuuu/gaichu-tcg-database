@@ -4,6 +4,13 @@
     "short_name": "wm",
     "name": "WrennyMoo",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
+    "number": 2
+  },
+  {
+    "id": "8ece2d2a-33c0-45c2-b6b3-6fad225c1314",
+    "short_name": "mz",
+    "name": "MetaZoo",
+    "logo": "https://gaichu.b-cdn.net/mz/mzLogo.png",
     "number": 1
   }
 ]

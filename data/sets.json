@@ -25,5 +25,14 @@
     "number": 1,
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
+  },
+  {
+    "id": "679fc82a-ac5d-46dc-8cb3-7b8f6227f237",
+    "series_short_name": "mz",
+    "series_id": "8ece2d2a-33c0-45c2-b6b3-6fad225c1314",
+    "short_name": "promo",
+    "number": 1,
+    "name": "Promo Cards",
+    "logo": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
   }
 ]
