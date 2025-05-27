@@ -2,7 +2,7 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "short_name", "name", "logo"],
+    "required": ["id", "short_name", "name", "logo", "number"],
     "properties": {
       "id": {
         "type": "string",
@@ -17,6 +17,9 @@
       "logo": {
         "type": "string",
         "format": "uri"
+      },
+      "number": {
+        "type": "integer"
       }
     }
   }

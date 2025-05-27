@@ -2,13 +2,16 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "name", "image"],
+    "required": ["id", "name", "series_short_name", "image"],
     "properties": {
       "id": {
         "type": "string",
         "format": "uuid"
       },
       "name": {
+        "type": "string"
+      },
+      "series_short_name": {
         "type": "string"
       },
       "image": {
