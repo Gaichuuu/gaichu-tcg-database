@@ -6,7 +6,7 @@
       { "$ref": "../cards.schema.base.json" },
       {
         "type": "object",
-        "required": ["description"],
+        "required": ["description", "type", "limit", "cost"],
         "properties": {
           "illustrators": {
             "type": "array",
@@ -46,63 +46,43 @@
               "additionalProperties": false
             }
           },
-          "hp": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
-          "measurement": {
-            "type": "object",
-            "required": ["height", "weight"],
-            "properties": {
-              "height": {
-                "type": "string"
-              },
-              "weight": {
-                "type": "string"
-              }
-            },
-            "additionalProperties": false
+          "type": {
+            "type": "string",
+            "enum": ["Spell"]
           },
-          "attacks": {
+          "limit": {
+            "type": "number"
+          },
+          "cost": {
             "type": "array",
+            "minItems": 1,
             "items": {
               "type": "object",
-              "required": ["name", "effect"],
+              "required": ["total", "aura"],
               "properties": {
-                "name": {
+                "total": {
                   "type": "string"
                 },
-                "effect": {
-                  "type": "string"
-                },
-                "damage": {
-                  "type": ["string"]
-                },
-                "costs": {
+                "aura": {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "type": "string",
-                    "enum": [
-                      "Fire",
-                      "Fighting",
-                      "Psychic",
-                      "Electric",
-                      "Dark",
-                      "Dragon",
-                      "Steel",
-                      "Water",
-                      "Grass",
-                      "Normal"
-                    ]
-                  },
-                  "minItems": 1
+                    "enum": ["Forest", "Neutral"]
+                  }
                 }
               },
               "additionalProperties": false
-            },
-            "minItems": 1
+            }
+          },
+          "effect": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
           }
         }
       }
