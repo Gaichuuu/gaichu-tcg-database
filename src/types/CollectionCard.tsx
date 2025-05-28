@@ -18,7 +18,7 @@ export interface CollectionCard {
   measurement?: Measurement;
   parody?: string;
   hp?: string;
-  type?: string[];
+  type?: string;
   limit?: number;
   cost?: Cost[];
   effect?: string;
