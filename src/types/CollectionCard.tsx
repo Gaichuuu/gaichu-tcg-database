@@ -1,20 +1,28 @@
 export interface CollectionCard {
+  // basic properties
   id: string;
-  name: string;
   number: number;
+  name: string;
+  image: string;
+  rarity: string;
   set_short_name: string;
   series_short_name: string;
-  parody: string;
-  description: string;
-  hp: string;
-  image: string;
-  thumb: string;
-  rarity: string;
   illustrators: string[];
-  attacks: Attack[];
-  measurement: Measurement;
-  sets: Set[];
   set_ids: string[];
+  sets: Set[];
+  thumb: string;
+
+  // optional properties
+  description?: string;
+  attacks?: Attack[];
+  measurement?: Measurement;
+  parody?: string;
+  hp?: string;
+  type?: string[];
+  limit?: number;
+  cost?: Cost[];
+  effect?: string;
+  note?: string;
 }
 
 interface Set {
@@ -32,4 +40,8 @@ interface Attack {
   effect: string;
   damage: string | undefined;
   costs: string[] | undefined;
+}
+interface Cost {
+  total: string;
+  aura: string[];
 }

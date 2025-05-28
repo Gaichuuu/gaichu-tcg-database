@@ -50,31 +50,42 @@ export const getAdjacentCards = (
 };
 
 const convertToCollectionCard = (card: any): CollectionCard => ({
+  // basic properties
   id: card.id,
   number: card.number!,
   name: card.name,
-  parody: card.parody,
+  image: card.image,
   rarity: card.rarity,
   set_short_name: card.set_short_name,
   series_short_name: card.series_short_name,
-  image: card.image,
-  thumb: card.thumb,
-  hp: card.hp,
-  description: card.description,
   illustrators: [...card.illustrators],
-  attacks: card.attacks.map((attack: any) => ({
+  set_ids: [...card.set_ids],
+  sets: card.sets.map((set: any) => ({
+    name: set.name,
+    image: set.image,
+  })),
+  thumb: card.thumb,
+
+  // optional properties
+  description: card.description,
+  attacks: card.attacks?.map((attack: any) => ({
     name: attack.name,
     effect: attack.effect,
     damage: attack.damage,
     costs: attack.costs?.map((cost: any) => cost),
   })),
   measurement: {
-    height: card.measurement.height,
-    weight: card.measurement.weight,
+    height: card.measurement?.height,
+    weight: card.measurement?.weight,
   },
-  sets: card.sets.map((set: any) => ({
-    name: set.name,
-    image: set.image,
+  parody: card.parody,
+  hp: card.hp,
+  type: card.type ? [...card.type] : undefined,
+  limit: card.limit,
+  cost: card.cost?.map((cost: any) => ({
+    total: cost.total,
+    aura: [...cost.aura],
   })),
-  set_ids: [...card.set_ids],
+  effect: card.effect,
+  note: card.note,
 });
