@@ -65,18 +65,21 @@ const CardDetailPage: React.FC = () => {
 
           <table className="w-full border-collapse">
             <tbody>
-              <tr>
-                <th className="py-2 pr-4 text-left">HP</th>
-                <td className="py-2">{card?.hp}</td>
-              </tr>
+              {/* HP optional */}
+              {card?.hp && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">HP</th>
+                  <td className="py-2">{card?.hp}</td>
+                </tr>
+              )}
               <tr>
                 <th className="py-2 pr-4 text-left">Measurements</th>
                 <td className="py-2">
-                  Height {card?.measurement.height}, Weight{" "}
-                  {card?.measurement.weight}
+                  Height {card?.measurement?.height}, Weight{" "}
+                  {card?.measurement?.weight}
                 </td>
               </tr>
-              {card?.attacks.map((attack, aIndex) => (
+              {card?.attacks?.map((attack, aIndex) => (
                 <tr key={attack.name ?? aIndex}>
                   <th className="py-2 pr-4 text-left">{attack.name}</th>
                   <td className="py-2">

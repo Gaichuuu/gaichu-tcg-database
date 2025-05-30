@@ -85,7 +85,7 @@ export const useCards = (
 
   if (IS_USE_LOCAL_DATA) {
     return {
-      data: getJsonCardList(setShortName!),
+      data: getJsonCardList(seriesShortName, setShortName!),
       error: undefined,
       isLoading: false,
     };
