@@ -1,16 +1,18 @@
 [
   {
-    "id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
-    "short_name": "wm",
-    "name": "WrennyMoo",
-    "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
-    "number": 2
-  },
-  {
     "id": "8ece2d2a-33c0-45c2-b6b3-6fad225c1314",
     "short_name": "mz",
     "name": "MetaZoo",
     "logo": "https://gaichu.b-cdn.net/mz/mzLogo.png",
-    "number": 1
+    "number": 1,
+    "sortBy": 1
+  },
+  {
+    "id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
+    "short_name": "wm",
+    "name": "WrennyMoo",
+    "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
+    "number": 2,
+    "sortBy": 2
   }
 ]

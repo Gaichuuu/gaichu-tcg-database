@@ -4,6 +4,7 @@
   "required": [
     "id",
     "number",
+    "sortBy",
     "name",
     "image",
     "rarity",
@@ -21,6 +22,9 @@
       "format": "uuid"
     },
     "number": {
+      "type": "number"
+    },
+    "sortBy": {
       "type": "number"
     },
     "name": {

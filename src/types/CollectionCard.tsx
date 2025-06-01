@@ -2,6 +2,7 @@ export interface CollectionCard {
   // basic properties
   id: string;
   number: number;
+  sortBy: number;
   name: string;
   image: string;
   rarity: string;

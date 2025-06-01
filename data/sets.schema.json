@@ -9,6 +9,7 @@
       "series_id",
       "short_name",
       "number",
+      "sortBy",
       "name",
       "logo"
     ],
@@ -28,6 +29,9 @@
         "type": "string"
       },
       "number": {
+        "type": "number"
+      },
+      "sortBy": {
         "type": "number"
       },
       "name": {
