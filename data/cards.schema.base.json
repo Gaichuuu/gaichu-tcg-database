@@ -12,7 +12,8 @@
     "illustrators",
     "set_ids",
     "sets",
-    "thumb"
+    "thumb",
+    "variant"
   ],
   "properties": {
     "id": {
@@ -74,6 +75,9 @@
     "thumb": {
       "type": "string",
       "format": "uri"
+    },
+    "variant": {
+      "type": "string"
     }
   },
   "additionalProperties": true
