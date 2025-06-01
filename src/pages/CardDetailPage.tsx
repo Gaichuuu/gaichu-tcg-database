@@ -72,13 +72,17 @@ const CardDetailPage: React.FC = () => {
                   <td className="py-2">{card?.hp}</td>
                 </tr>
               )}
-              <tr>
-                <th className="py-2 pr-4 text-left">Measurements</th>
-                <td className="py-2">
-                  Height {card?.measurement?.height}, Weight{" "}
-                  {card?.measurement?.weight}
-                </td>
-              </tr>
+              {/* measurement optional */}
+              {card?.measurement && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Measurements</th>
+                  <td className="py-2">
+                    Height {card?.measurement?.height}, Weight{" "}
+                    {card?.measurement?.weight}
+                  </td>
+                </tr>
+              )}
+              {/* attacks optional */}
               {card?.attacks?.map((attack, aIndex) => (
                 <tr key={attack.name ?? aIndex}>
                   <th className="py-2 pr-4 text-left">{attack.name}</th>
