@@ -11,6 +11,7 @@ export interface CollectionCard {
   set_ids: string[];
   sets: Set[];
   thumb: string;
+  variant: string;
 
   // optional properties
   description?: string;

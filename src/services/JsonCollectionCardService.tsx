@@ -77,6 +77,7 @@ const CardSchema = z.object({
   id: z.string(),
   number: z.number().optional(),
   name: z.string(),
+  variant: z.string().optional(),
   image: z.string(),
   rarity: z.string(),
   set_short_name: z.string(),
