@@ -3,6 +3,7 @@
     "id": "4a1411ad-50f6-4c46-b360-757125396ce1",
     "number": 1,
     "name": "Bask In The Sunlight",
+    "variant": "Silver Stamp",
     "illustrators": ["Afton"],
     "rarity": "Silver",
     "set_short_name": "promo",
@@ -10,7 +11,7 @@
     "set_ids": ["679fc82a-ac5d-46dc-8cb3-7b8f6227f237"],
     "sets": [
       {
-        "name": "promo",
+        "name": "Promo Cards",
         "image": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
       }
     ],
@@ -35,7 +36,8 @@
   {
     "id": "ba1401bd-7c4c-4371-bf59-a382eadd37d1",
     "number": 2,
-    "name": "Bask In The Sunlight(2)",
+    "name": "Bask In The Sunlight",
+    "variant": "Gold Stamp",
     "illustrators": ["Afton"],
     "rarity": "Silver",
     "set_short_name": "promo",
@@ -43,7 +45,7 @@
     "set_ids": ["679fc82a-ac5d-46dc-8cb3-7b8f6227f237"],
     "sets": [
       {
-        "name": "promo",
+        "name": "Promo Cards",
         "image": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
       }
     ],
@@ -68,7 +70,8 @@
   {
     "id": "c7fadf9f-c377-4c84-950d-e655b39b6230",
     "number": 3,
-    "name": "Bask In The Sunlight(3)",
+    "name": "Bask In The Sunlight",
+    "variant": "Auto Stamp",
     "illustrators": ["Afton"],
     "rarity": "Silver",
     "set_short_name": "promo",
@@ -76,7 +79,7 @@
     "set_ids": ["679fc82a-ac5d-46dc-8cb3-7b8f6227f237"],
     "sets": [
       {
-        "name": "promo",
+        "name": "Promo Cards",
         "image": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
       }
     ],
