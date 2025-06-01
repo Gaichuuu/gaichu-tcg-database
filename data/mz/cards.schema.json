@@ -36,7 +36,7 @@
               "properties": {
                 "name": {
                   "type": "string",
-                  "enum": ["promo"]
+                  "enum": ["Promo Cards"]
                 },
                 "image": {
                   "type": "string",

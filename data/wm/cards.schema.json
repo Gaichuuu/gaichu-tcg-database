@@ -22,6 +22,10 @@
             "type": "string",
             "enum": ["Common", "Rare"]
           },
+          "variant": {
+            "type": "string",
+            "enum": ["Normal", "Holo"]
+          },
           "set_short_name": {
             "type": "string",
             "enum": ["set1", "set2", "og"]
@@ -39,7 +43,7 @@
               "properties": {
                 "name": {
                   "type": "string",
-                  "enum": ["set1", "set2", "og"]
+                  "enum": ["Set One", "Set One (reprint)", "Set Two"]
                 },
                 "image": {
                   "type": "string",
