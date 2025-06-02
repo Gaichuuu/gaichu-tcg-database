@@ -7,7 +7,7 @@ export const getJsonSeries = (): SeriesAndSet[] => {
     .flatMap((series) => {
       return convertToSeriesAndSet(series);
     })
-    .sort((a, b) => a.series.number - b.series.number);
+    .sort((a, b) => a.series.sortBy - b.series.sortBy);
   return result;
 };
 const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
@@ -16,7 +16,7 @@ const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
     short_name: series.short_name,
     logo: series.logo,
     name: series.name,
-    number: series.number,
+    sortBy: series.sortBy,
   },
   sets: setsList
     .filter((set) => set.series_id === series.id)
@@ -26,6 +26,6 @@ const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
       series_id: set.series_id,
       logo: set.logo,
       name: set.name,
-      number: set.number,
+      sortBy: set.sortBy,
     })),
 });

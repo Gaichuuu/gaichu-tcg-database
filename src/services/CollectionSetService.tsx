@@ -23,7 +23,7 @@ export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
   })) as CollectionCard[];
 
   return mergeWithSetsId(sets, cards).sort(
-    (a, b) => a.set.number - b.set.number,
+    (a, b) => a.set.sortBy - b.set.sortBy,
   );
 };
 

@@ -1,6 +1,6 @@
 export interface CollectionSeries {
   id: string;
-  number: number;
+  sortBy: number;
   short_name: string;
   name: string;
   logo: string;

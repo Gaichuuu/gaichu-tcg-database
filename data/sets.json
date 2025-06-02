@@ -4,7 +4,6 @@
     "series_short_name": "wm",
     "series_id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
     "short_name": "set1",
-    "number": 2,
     "sortBy": 2,
     "name": "Set One (reprint)",
     "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
@@ -14,7 +13,6 @@
     "series_short_name": "mz",
     "series_id": "8ece2d2a-33c0-45c2-b6b3-6fad225c1314",
     "short_name": "promo",
-    "number": 1,
     "sortBy": 1,
     "name": "Promo Cards",
     "logo": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
@@ -24,7 +22,6 @@
     "series_short_name": "wm",
     "series_id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
     "short_name": "set2",
-    "number": 3,
     "sortBy": 3,
     "name": "Set Two",
     "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
@@ -34,7 +31,6 @@
     "series_short_name": "wm",
     "series_id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
     "short_name": "og",
-    "number": 1,
     "sortBy": 1,
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
