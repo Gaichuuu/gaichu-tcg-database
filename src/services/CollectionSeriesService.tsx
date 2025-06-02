@@ -4,6 +4,11 @@ import { CollectionSeries } from "../types/CollectionSeries";
 import { CollectionSet } from "../types/CollectionSet";
 import { SeriesAndSet } from "../types/MergedCollection";
 
+export enum SeriesShortName {
+  wm = "wm",
+  mz = "mz",
+}
+
 export const fetchSeries = async (): Promise<SeriesAndSet[]> => {
   const seriesSnapshot = await getDocs(collection(database, "series"));
   const series = seriesSnapshot.docs.map((doc) => ({
@@ -18,7 +23,7 @@ export const fetchSeries = async (): Promise<SeriesAndSet[]> => {
   })) as CollectionSet[];
 
   return mergeWithSeriesId(series, sets).sort(
-    (a, b) => a.series.number - b.series.number,
+    (a, b) => a.series.sortBy - b.series.sortBy,
   );
 };
 

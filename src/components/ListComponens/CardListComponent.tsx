@@ -31,7 +31,7 @@ const CardList = () => {
             content={
               <table className="w-full border-collapse text-sm">
                 <tbody>
-                  {card.attacks.map((attack, aIndex) => (
+                  {card.attacks?.map((attack, aIndex) => (
                     <tr key={attack.name ?? aIndex}>
                       <th className="py-2 pr-4 text-left">{attack.name}</th>
                       <td className="py-2">

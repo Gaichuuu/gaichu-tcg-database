@@ -19,7 +19,7 @@ export const fetchCards = async (
     cardsReference,
     where("series_short_name", "==", seriesShortName),
     where("set_short_name", "==", setShortName),
-    orderBy("number", "asc"),
+    orderBy("sortBy", "asc"),
   );
 
   const cardsSnapshot = await getDocs(cardsQuery);
@@ -54,15 +54,23 @@ export const fetchCardDetail = async (
 export const fetchAdjacentCards = async (
   seriesShortName: string,
   setShortName: string,
-  previousNumber?: number,
-  nextNumber?: number,
-): Promise<CollectionCard[]> => {
+  currentCardSortBy?: number,
+): Promise<{
+  previousCard: CollectionCard | null;
+  nextCard: CollectionCard | null;
+}> => {
+  if (currentCardSortBy === undefined) {
+    return { previousCard: null, nextCard: null };
+  }
+
   const cardsReference = collection(database, collectionName);
   const cardsQuery = query(
     cardsReference,
     where("series_short_name", "==", seriesShortName),
     where("set_short_name", "==", setShortName),
-    where("number", "in", [previousNumber, nextNumber]),
+    where("sortBy", ">=", currentCardSortBy - 1),
+    where("sortBy", "<=", currentCardSortBy + 1),
+    orderBy("sortBy", "asc"),
   );
 
   const cardsSnapshot = await getDocs(cardsQuery);
@@ -71,5 +79,13 @@ export const fetchAdjacentCards = async (
     ...doc.data(),
   })) as CollectionCard[];
 
-  return cards;
+  const previousCard =
+    cards.filter((card) => card.sortBy < currentCardSortBy).at(-1) || null;
+  const nextCard =
+    cards.filter((card) => card.sortBy > currentCardSortBy).at(0) || null;
+
+  return {
+    previousCard: previousCard ?? null,
+    nextCard: nextCard ?? null,
+  };
 };

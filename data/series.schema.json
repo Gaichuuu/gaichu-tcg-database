@@ -1,8 +1,9 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "short_name", "name", "logo"],
+    "required": ["id", "short_name", "name", "logo", "sortBy"],
     "properties": {
       "id": {
         "type": "string",
@@ -17,6 +18,9 @@
       "logo": {
         "type": "string",
         "format": "uri"
+      },
+      "sortBy": {
+        "type": "number"
       }
     }
   }

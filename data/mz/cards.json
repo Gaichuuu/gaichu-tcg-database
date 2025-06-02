@@ -1,0 +1,107 @@
+[
+  {
+    "id": "4a1411ad-50f6-4c46-b360-757125396ce1",
+    "number": 99,
+    "sortBy": 99.1,
+    "name": "Bask In The Sunlight",
+    "variant": "Silver Stamp",
+    "illustrators": ["Afton"],
+    "rarity": "Silver",
+    "set_short_name": "promo",
+    "series_short_name": "mz",
+    "set_ids": ["679fc82a-ac5d-46dc-8cb3-7b8f6227f237"],
+    "sets": [
+      {
+        "name": "Promo Cards",
+        "image": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
+      }
+    ],
+    "type": "Spell",
+    "limit": 3,
+    "cost": [
+      {
+        "total": "1",
+        "aura": ["Forest"]
+      },
+      {
+        "total": "1",
+        "aura": ["Neutral"]
+      }
+    ],
+    "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
+    "image": "https://gaichu.b-cdn.net/mz/promo/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/mz/promo/01-thumb.jpg",
+    "description": "Free to be one with the Wilderness. Time to soak up the sun.",
+    "note": "Silver COLLECTOR stamp limited to 20. Given away to fans at Dallas Collect-a-con 2025. Bask in the Sunlight is said to be Charlie Hurlocker's favorite MetaZoo card. This promo is a nod to when Charlie himself released an unofficial COLLECTOR stamp Dragon Majesty Charizard card in 2018."
+  },
+  {
+    "id": "ba1401bd-7c4c-4371-bf59-a382eadd37d1",
+    "number": 99,
+    "sortBy": 99.2,
+    "name": "Bask In The Sunlight",
+    "variant": "Gold Stamp",
+    "illustrators": ["Afton"],
+    "rarity": "Silver",
+    "set_short_name": "promo",
+    "series_short_name": "mz",
+    "set_ids": ["679fc82a-ac5d-46dc-8cb3-7b8f6227f237"],
+    "sets": [
+      {
+        "name": "Promo Cards",
+        "image": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
+      }
+    ],
+    "type": "Spell",
+    "limit": 3,
+    "cost": [
+      {
+        "total": "1",
+        "aura": ["Forest"]
+      },
+      {
+        "total": "1",
+        "aura": ["Neutral"]
+      }
+    ],
+    "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
+    "image": "https://gaichu.b-cdn.net/mz/promo/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/mz/promo/02-thumb.jpg",
+    "description": "Free to be one with the Wilderness. Time to soak up the sun.",
+    "note": "Silver COLLECTOR stamp limited to 20. Given away to fans at Dallas Collect-a-con 2025. Bask in the Sunlight is said to be Charlie Hurlocker's favorite MetaZoo card. This promo is a nod to when Charlie himself released an unofficial COLLECTOR stamp Dragon Majesty Charizard card in 2018."
+  },
+  {
+    "id": "c7fadf9f-c377-4c84-950d-e655b39b6230",
+    "number": 99,
+    "sortBy": 99.3,
+    "name": "Bask In The Sunlight",
+    "variant": "Auto Stamp",
+    "illustrators": ["Afton"],
+    "rarity": "Silver",
+    "set_short_name": "promo",
+    "series_short_name": "mz",
+    "set_ids": ["679fc82a-ac5d-46dc-8cb3-7b8f6227f237"],
+    "sets": [
+      {
+        "name": "Promo Cards",
+        "image": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
+      }
+    ],
+    "type": "Spell",
+    "limit": 3,
+    "cost": [
+      {
+        "total": "1",
+        "aura": ["Forest"]
+      },
+      {
+        "total": "1",
+        "aura": ["Neutral"]
+      }
+    ],
+    "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
+    "image": "https://gaichu.b-cdn.net/mz/promo/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/mz/promo/03-thumb.jpg",
+    "description": "Free to be one with the Wilderness. Time to soak up the sun.",
+    "note": "Silver COLLECTOR stamp limited to 20. Given away to fans at Dallas Collect-a-con 2025. Bask in the Sunlight is said to be Charlie Hurlocker's favorite MetaZoo card. This promo is a nod to when Charlie himself released an unofficial COLLECTOR stamp Dragon Majesty Charizard card in 2018."
+  }
+]

@@ -60,14 +60,14 @@ export const useCurrentAndAdjacentCards = (
   } = useCardDetail(seriesShortName, setShortName, cardName);
 
   // adjacent cards
-  const prevNumber = card?.number ? card.number - 1 : undefined;
-  const nextNumber = card?.number ? card.number + 1 : undefined;
-
-  const queryResult = useQuery<CollectionCard[]>({
+  const queryResult = useQuery<{
+    previousCard: CollectionCard | null;
+    nextCard: CollectionCard | null;
+  }>({
     queryFn: () =>
-      fetchAdjacentCards(seriesShortName, setShortName, prevNumber, nextNumber),
+      fetchAdjacentCards(seriesShortName, setShortName, card?.sortBy),
     queryKey: [
-      `AdjacentCards_${seriesShortName}_${setShortName}_cardNumber_${card?.number}`,
+      `AdjacentCards_${seriesShortName}_${setShortName}_sortBy_${card?.sortBy}`,
     ],
     enabled: !!seriesShortName && !!setShortName,
     staleTime: 1000 * 60 * 5,
@@ -77,14 +77,12 @@ export const useCurrentAndAdjacentCards = (
     const adjacentCards = getAdjacentCards(
       seriesShortName,
       setShortName,
-      prevNumber,
-      nextNumber,
+      card?.sortBy,
     );
     return {
       card: card ?? undefined,
-      previousCard:
-        adjacentCards.find((c) => c.number === prevNumber) ?? undefined,
-      nextCard: adjacentCards.find((c) => c.number === nextNumber) ?? undefined,
+      previousCard: adjacentCards.previousCard ?? undefined,
+      nextCard: adjacentCards.nextCard ?? undefined,
       error: error || undefined,
       isLoading: false,
     };
@@ -92,10 +90,8 @@ export const useCurrentAndAdjacentCards = (
 
   return {
     card: card ?? undefined,
-    previousCard:
-      queryResult.data?.find((c) => c.number === prevNumber) ?? undefined,
-    nextCard:
-      queryResult.data?.find((c) => c.number === nextNumber) ?? undefined,
+    previousCard: queryResult.data?.previousCard ?? undefined,
+    nextCard: queryResult.data?.nextCard ?? undefined,
     isLoading: isLoading || queryResult.isLoading,
     error: error || queryResult.error || undefined,
   };

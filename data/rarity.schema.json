@@ -1,8 +1,9 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "name"],
+    "required": ["id", "name", "series_short_name"],
     "properties": {
       "id": {
         "type": "string",

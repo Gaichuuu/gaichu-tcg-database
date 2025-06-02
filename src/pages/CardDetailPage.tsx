@@ -65,18 +65,22 @@ const CardDetailPage: React.FC = () => {
 
           <table className="w-full border-collapse">
             <tbody>
-              <tr>
-                <th className="py-2 pr-4 text-left">HP</th>
-                <td className="py-2">{card?.hp}</td>
-              </tr>
-              <tr>
-                <th className="py-2 pr-4 text-left">Measurements</th>
-                <td className="py-2">
-                  Height {card?.measurement.height}, Weight{" "}
-                  {card?.measurement.weight}
-                </td>
-              </tr>
-              {card?.attacks.map((attack, aIndex) => (
+              {card?.hp && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">HP</th>
+                  <td className="py-2">{card?.hp}</td>
+                </tr>
+              )}
+              {card?.measurement && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Measurements</th>
+                  <td className="py-2">
+                    Height {card?.measurement?.height}, Weight{" "}
+                    {card?.measurement?.weight}
+                  </td>
+                </tr>
+              )}
+              {card?.attacks?.map((attack, aIndex) => (
                 <tr key={attack.name ?? aIndex}>
                   <th className="py-2 pr-4 text-left">{attack.name}</th>
                   <td className="py-2">
@@ -114,7 +118,8 @@ const CardDetailPage: React.FC = () => {
                   />
                 </th>
                 <td className="py-2">
-                  {card?.sets[0].name}
+                  {card?.sets[0].name} • {card?.number}/50 • {card?.variant}
+                  {/* I need help */}
                   <div className="mt-2"></div>
                 </td>
               </tr>

@@ -2,8 +2,10 @@
   {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
     "number": 23,
+    "sortBy": 23,
     "name": "Water Horse",
     "parody": "Horsea",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -11,7 +13,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -34,8 +36,10 @@
   {
     "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
     "number": 45,
+    "sortBy": 45,
     "name": "Alola Raichu",
     "parody": "Alolan Raichu",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -43,7 +47,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -67,8 +71,10 @@
   {
     "id": "123ab3a2-529d-47b4-9a4d-390178d8399d",
     "number": 30,
+    "sortBy": 30,
     "name": "Balloon",
     "parody": "Drifloon",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -76,7 +82,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -100,8 +106,10 @@
   {
     "id": "12d9770e-32e2-4766-ab24-a43f86dccc42",
     "number": 34,
+    "sortBy": 34,
     "name": "Beaver",
     "parody": "Bidoof",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -109,7 +117,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -132,8 +140,10 @@
   {
     "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
     "number": 16,
+    "sortBy": 16,
     "name": "Pidgey",
     "parody": "Pidgey",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -141,7 +151,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -164,8 +174,10 @@
   {
     "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
     "number": 2,
+    "sortBy": 2,
     "name": "Ducky",
     "parody": "Psyduck",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -173,7 +185,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -196,8 +208,10 @@
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
     "number": 1,
+    "sortBy": 1,
     "name": "Mud Creef",
     "parody": "Mudkip",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -205,7 +219,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -229,8 +243,10 @@
   {
     "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
     "number": 40,
+    "sortBy": 40,
     "name": "Light Boy",
     "parody": "Espeon",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -238,7 +254,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -262,8 +278,10 @@
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
     "number": 42,
+    "sortBy": 42,
     "name": "Trumpety",
     "parody": "Charizard",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -271,7 +289,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -295,8 +313,10 @@
   {
     "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
     "number": 32,
+    "sortBy": 32,
     "name": "Sukawai",
     "parody": "Mimikyu",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -304,7 +324,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -327,8 +347,10 @@
   {
     "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
     "number": 48,
+    "sortBy": 48,
     "name": "Gau",
     "parody": "Mew",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -336,7 +358,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -359,8 +381,10 @@
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
     "number": 28,
+    "sortBy": 28,
     "name": "Shanpe",
     "parody": "Abra",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -368,7 +392,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -391,8 +415,10 @@
   {
     "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
     "number": 18,
+    "sortBy": 18,
     "name": "Nugget",
     "parody": "Torchic",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -400,7 +426,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -424,8 +450,10 @@
   {
     "id": "27d41ee8-e9af-440b-b633-551140734996",
     "number": 9,
+    "sortBy": 9,
     "name": "Meow",
     "parody": "Meowth",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -433,7 +461,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -462,8 +490,10 @@
   {
     "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
     "number": 44,
+    "sortBy": 44,
     "name": "Naruto",
     "parody": "Dragonite",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -471,7 +501,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -494,8 +524,10 @@
   {
     "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
     "number": 5,
+    "sortBy": 5,
     "name": "Piccolo",
     "parody": "Metapod",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -503,7 +535,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -526,8 +558,10 @@
   {
     "id": "31ea2242-1638-4040-ab15-6c7587da4397",
     "number": 13,
+    "sortBy": 13,
     "name": "Egg Boy",
     "parody": "Chansey",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -535,7 +569,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -558,8 +592,10 @@
   {
     "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
     "number": 5,
+    "sortBy": 5,
     "name": "Nidonido",
     "parody": "Nidoran♂",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -567,7 +603,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -591,8 +627,10 @@
   {
     "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
     "number": 9,
+    "sortBy": 9,
     "name": "Green Boy",
     "parody": "Bulbasaur",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -600,7 +638,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -624,8 +662,10 @@
   {
     "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
     "number": 2,
+    "sortBy": 2,
     "name": "Furphy",
     "parody": "Farfetch'd",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -633,7 +673,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -657,8 +697,10 @@
   {
     "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
     "number": 41,
+    "sortBy": 41,
     "name": "Hanbot",
     "parody": "Blastoise",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -666,7 +708,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -690,8 +732,10 @@
   {
     "id": "4441cd5c-4b23-4341-9f7c-8e39281f7b0b",
     "number": 24,
+    "sortBy": 24,
     "name": "Brown Rod",
     "parody": "Diglett",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -699,7 +743,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -722,8 +766,10 @@
   {
     "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
     "number": 46,
+    "sortBy": 46,
     "name": "Gontar",
     "parody": "Gengar",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -731,7 +777,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -754,8 +800,10 @@
   {
     "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
     "number": 50,
+    "sortBy": 50,
     "name": "Shiny Fish",
     "parody": "Magikarp",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -763,7 +811,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -787,8 +835,10 @@
   {
     "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
     "number": 4,
+    "sortBy": 4,
     "name": "Pink Boy",
     "parody": "Jigglypuff",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -796,7 +846,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -825,8 +875,10 @@
   {
     "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
     "number": 17,
+    "sortBy": 17,
     "name": "Croco",
     "parody": "Totodile",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -834,7 +886,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -864,8 +916,10 @@
   {
     "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
     "number": 8,
+    "sortBy": 8,
     "name": "Eevee",
     "parody": "Eevee",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -873,7 +927,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -902,8 +956,10 @@
   {
     "id": "593a874f-f584-4127-a813-240fbd0953c9",
     "number": 10,
+    "sortBy": 10,
     "name": "Turtle Chips",
     "parody": "Squirtle",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -911,7 +967,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -940,8 +996,10 @@
   {
     "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
     "number": 8,
+    "sortBy": 8,
     "name": "Gegedu",
     "parody": "Geodude",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -949,7 +1007,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -973,8 +1031,10 @@
   {
     "id": "6e145bfb-dde8-4836-9e48-7204bdf09a29",
     "number": 3,
+    "sortBy": 3,
     "name": "Togouchi",
     "parody": "Togetic",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -982,7 +1042,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -1006,8 +1066,10 @@
   {
     "id": "73dbce8e-1088-4a8b-a07c-fa03aacdac68",
     "number": 10,
+    "sortBy": 10,
     "name": "Blissui",
     "parody": "Blissey",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -1015,7 +1077,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -1039,8 +1101,10 @@
   {
     "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
     "number": 39,
+    "sortBy": 39,
     "name": "Dark Boy",
     "parody": "Umbreon",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -1048,7 +1112,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1071,8 +1135,10 @@
   {
     "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
     "number": 22,
+    "sortBy": 22,
     "name": "Robot",
     "parody": "Porygon",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1080,7 +1146,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1104,8 +1170,10 @@
   {
     "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
     "number": 43,
+    "sortBy": 43,
     "name": "Veronica",
     "parody": "Venusaur",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -1113,7 +1181,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1137,8 +1205,10 @@
   {
     "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
     "number": 27,
+    "sortBy": 27,
     "name": "Boat",
     "parody": "Lapras",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1146,7 +1216,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1170,8 +1240,10 @@
   {
     "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
     "number": 6,
+    "sortBy": 6,
     "name": "Heavy Boy",
     "parody": "Magnemite",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1179,7 +1251,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1202,8 +1274,10 @@
   {
     "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
     "number": 29,
+    "sortBy": 29,
     "name": "Sleepy Boy",
     "parody": "Snorlax",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1211,7 +1285,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1240,8 +1314,10 @@
   {
     "id": "929c4924-4617-4c0c-b3a0-1b08d9597f02",
     "number": 1,
+    "sortBy": 1,
     "name": "Skipper",
     "parody": "Mudkip",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1249,7 +1325,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1277,8 +1353,10 @@
   {
     "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
     "number": 4,
+    "sortBy": 4,
     "name": "Slow Mo",
     "parody": "Slowbro",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -1286,7 +1364,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -1310,8 +1388,10 @@
   {
     "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
     "number": 7,
+    "sortBy": 7,
     "name": "Cutiepie",
     "parody": "Raichu",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1319,7 +1399,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1343,8 +1423,10 @@
   {
     "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
     "number": 20,
+    "sortBy": 20,
     "name": "Wormy",
     "parody": "Dratini",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1352,7 +1434,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1381,8 +1463,10 @@
   {
     "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
     "number": 3,
+    "sortBy": 3,
     "name": "Lavatar",
     "parody": "Larvitar",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1390,7 +1474,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1414,8 +1498,10 @@
   {
     "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
     "number": 35,
+    "sortBy": 35,
     "name": "Kitty",
     "parody": "Litten",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1423,7 +1509,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1447,8 +1533,10 @@
   {
     "id": "b7e60ae3-6fdf-4b69-a5b5-18f6e0d70676",
     "number": 7,
+    "sortBy": 7,
     "name": "Pidgeotto",
     "parody": "Pidgeotto",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -1456,7 +1544,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -1480,8 +1568,10 @@
   {
     "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
     "number": 15,
+    "sortBy": 15,
     "name": "Buggy",
     "parody": "Butterfree",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1489,7 +1579,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1517,8 +1607,10 @@
   {
     "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
     "number": 47,
+    "sortBy": 47,
     "name": "Dakarei",
     "parody": "Mewtwo",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -1526,7 +1618,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1549,8 +1641,10 @@
   {
     "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
     "number": 49,
+    "sortBy": 49,
     "name": "Are You Who",
     "parody": "Arceus",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -1558,7 +1652,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1581,8 +1675,10 @@
   {
     "id": "c60bb931-586b-4078-8aea-5e0edda8e49e",
     "number": 6,
+    "sortBy": 6,
     "name": "Nidanida",
     "parody": "Nidoran♀",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set2",
@@ -1590,7 +1686,7 @@
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "sets": [
       {
-        "name": "set2",
+        "name": "Set Two",
         "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
       }
     ],
@@ -1614,8 +1710,10 @@
   {
     "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
     "number": 12,
+    "sortBy": 12,
     "name": "Wamp",
     "parody": "Wurmple",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1623,7 +1721,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1646,8 +1744,10 @@
   {
     "id": "c82550d0-3092-4480-b60b-283a3dbab478",
     "number": 26,
+    "sortBy": 26,
     "name": "Firefox",
     "parody": "Vulpix",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1655,7 +1755,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1683,8 +1783,10 @@
   {
     "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
     "number": 36,
+    "sortBy": 36,
     "name": "Motherless Boy",
     "parody": "Cubone",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1692,7 +1794,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1716,8 +1818,10 @@
   {
     "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
     "number": 33,
+    "sortBy": 33,
     "name": "Big Bat",
     "parody": "Golbat",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1725,7 +1829,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1748,8 +1852,10 @@
   {
     "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
     "number": 38,
+    "sortBy": 38,
     "name": "Clompy",
     "parody": "Pikachu",
+    "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_short_name": "set1",
@@ -1757,7 +1863,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1781,8 +1887,10 @@
   {
     "id": "ea8ebf7e-780c-4ea1-b4ba-e82b3970383e",
     "number": 25,
+    "sortBy": 25,
     "name": "Plant Boy",
     "parody": "Oddish",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1790,7 +1898,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1813,8 +1921,10 @@
   {
     "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
     "number": 21,
+    "sortBy": 21,
     "name": "Long Worm",
     "parody": "Dragonair",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1822,7 +1932,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1851,8 +1961,10 @@
   {
     "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
     "number": 14,
+    "sortBy": 14,
     "name": "Pointy",
     "parody": "Scizor",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1860,7 +1972,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1889,8 +2001,10 @@
   {
     "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
     "number": 11,
+    "sortBy": 11,
     "name": "Fire Boy",
     "parody": "Charmander",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1898,7 +2012,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1927,8 +2041,10 @@
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
     "number": 31,
+    "sortBy": 31,
     "name": "Egg Bath",
     "parody": "Togepi",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1936,7 +2052,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1959,8 +2075,10 @@
   {
     "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
     "number": 37,
+    "sortBy": 37,
     "name": "Blob",
     "parody": "Ditto",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -1968,7 +2086,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
@@ -1991,8 +2109,10 @@
   {
     "id": "fc749318-113e-4087-9c80-b87d5c66b907",
     "number": 19,
+    "sortBy": 19,
     "name": "Ghost Boy",
     "parody": "Gastly",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_short_name": "set1",
@@ -2000,7 +2120,7 @@
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "sets": [
       {
-        "name": "set1",
+        "name": "Set One (reprint)",
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],

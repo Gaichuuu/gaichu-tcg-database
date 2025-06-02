@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "allOf": [
+      { "$ref": "../cards.schema.base.json" },
+      {
+        "type": "object",
+        "required": ["description", "type", "limit", "cost"],
+        "properties": {
+          "illustrators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["Afton"]
+            }
+          },
+          "rarity": {
+            "type": "string",
+            "enum": ["Silver"]
+          },
+          "set_short_name": {
+            "type": "string",
+            "enum": ["promo"]
+          },
+          "series_short_name": {
+            "type": "string",
+            "enum": ["mz"]
+          },
+          "sets": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["name", "image"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": ["Promo Cards"]
+                },
+                "image": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["Spell"]
+          },
+          "limit": {
+            "type": "number"
+          },
+          "cost": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["total", "aura"],
+              "properties": {
+                "total": {
+                  "type": "string"
+                },
+                "aura": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "enum": ["Forest", "Neutral"]
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "effect": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    ]
+  }
+}

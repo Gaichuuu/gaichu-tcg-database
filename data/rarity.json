@@ -1,10 +1,17 @@
 [
   {
     "id": "62cb9f65-8350-4f32-9355-6f7102b0c86f",
-    "name": "Common"
+    "name": "Common",
+    "series_short_name": "wm"
   },
   {
     "id": "997f35ef-2d82-4870-b124-9bda620be88a",
-    "name": "Rare"
+    "name": "Rare",
+    "series_short_name": "wm"
+  },
+  {
+    "id": "a9437c52-f52e-43de-9474-6c8b13488755",
+    "name": "Silver",
+    "series_short_name": "mz"
   }
 ]

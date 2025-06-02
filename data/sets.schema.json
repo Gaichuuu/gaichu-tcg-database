@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
   "items": {
     "type": "object",
@@ -7,7 +8,7 @@
       "series_short_name",
       "series_id",
       "short_name",
-      "number",
+      "sortBy",
       "name",
       "logo"
     ],
@@ -26,7 +27,7 @@
       "short_name": {
         "type": "string"
       },
-      "number": {
+      "sortBy": {
         "type": "number"
       },
       "name": {
