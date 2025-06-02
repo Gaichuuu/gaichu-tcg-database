@@ -2032,7 +2032,7 @@
       },
       {
         "name": "Ember",
-        "effect": "Weak fire attack. ",
+        "effect": "Weak fire attack.",
         "damage": "20",
         "costs": ["Fire"]
       }
@@ -2137,6 +2137,117 @@
         "name": "Lick",
         "effect": "Lick the opponent. Some Pokémon enjoy this, so be careful. ",
         "damage": "20",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
+    "number": 11,
+    "sortBy": 11,
+    "name": "Siechacha",
+    "parody": "Scyther",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/11.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/11-thumb.jpg",
+    "description": "This creature loves to fight, and will take on anything while spending its entire life communicating.",
+    "measurement": {
+      "height": "1.5m",
+      "weight": "56kg"
+    },
+    "attacks": [
+      {
+        "name": "Hyper Cut",
+        "effect": "Slice the opponent into pieces with a devastating blow.",
+        "damage": "60",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Bug's Gaze",
+        "effect": "Stare at the opponent, causing extreme discomfort.",
+        "damage": "20",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "f48bdb77-5685-4bf7-954c-a15ad3970ab7",
+    "number": 12,
+    "sortBy": 12,
+    "name": "Ghost Boy",
+    "parody": "Haunter",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/12.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/12-thumb.jpg",
+    "description": "They are extremely mischievous creatures, and their daily routine is to scare and play pranks on others.",
+    "measurement": {
+      "height": "1.6m",
+      "weight": "0kg"
+    },
+    "attacks": [
+      {
+        "name": "Scare",
+        "effect": "Deform its body and face to scare the opponent. This reduces the opponent's attack power.",
+        "damage": "40",
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "8384f45d-4c02-4abd-97ad-dcb9d75b5197",
+    "number": 13,
+    "sortBy": 13,
+    "name": "Bonzie",
+    "parody": "Bonsly",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/13.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/13-thumb.jpg",
+    "description": "Known for burying its lower body in the ground as a defense, and will continue in this state until it's strong enough to defend itself properly.",
+    "measurement": {
+      "height": ".5m",
+      "weight": "15kg"
+    },
+    "attacks": [
+      {
+        "name": "Kick",
+        "effect": "Kicks the opponent with the small leg. It's not very effective.",
+        "damage": "10",
         "costs": ["Normal"]
       }
     ]
