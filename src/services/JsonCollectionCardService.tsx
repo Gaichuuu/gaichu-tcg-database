@@ -42,19 +42,29 @@ export const getJsonCardDetail = (
 export const getAdjacentCards = (
   seriesShortName: string,
   setShortName: string,
-  previousNumber?: number,
-  nextNumber?: number,
-): CollectionCard[] => {
+  currentCardSortBy?: number,
+): {
+  previousCard: CollectionCard | null;
+  nextCard: CollectionCard | null;
+} => {
+  if (currentCardSortBy === undefined) {
+    return { previousCard: null, nextCard: null };
+  }
   const cardList = jsonCardList(seriesShortName);
   const cards = cardList
     .filter((card) => card.series_short_name === seriesShortName)
-    .filter((card) => card.set_short_name === setShortName);
+    .filter((card) => card.set_short_name === setShortName)
+    .sort((a, b) => a.sortBy - b.sortBy);
 
-  return cards.filter((card) => {
-    if (previousNumber && card.number === previousNumber) return true;
-    if (nextNumber && card.number === nextNumber) return true;
-    return false;
-  });
+  const previousCard =
+    cards.filter((card) => card.sortBy < currentCardSortBy).at(-1) || null;
+  const nextCard =
+    cards.filter((card) => card.sortBy > currentCardSortBy).at(0) || null;
+
+  return {
+    previousCard: previousCard,
+    nextCard: nextCard,
+  };
 };
 
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
