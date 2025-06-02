@@ -24,3 +24,4 @@ dist-ssr
 
 # Firebase service account
 serviceAccountKey.json
+stageServiceAccountKey.json
