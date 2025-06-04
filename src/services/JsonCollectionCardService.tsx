@@ -25,16 +25,18 @@ export const getJsonCardDetail = (
   seriesShortName: string,
   setShortName: string,
   cardName: string,
+  variant: string,
 ): CollectionCard | null => {
   const cardList = jsonCardList(seriesShortName);
   const card = cardList
     .filter(
       (card) =>
         card.set_short_name === setShortName &&
-        card.series_short_name === seriesShortName,
+        card.series_short_name === seriesShortName &&
+        card.name === cardName &&
+        card.variant === variant,
     )
-    .find((card) => card.name === cardName);
-
+    .at(-1);
   if (!card) return null;
   return card;
 };

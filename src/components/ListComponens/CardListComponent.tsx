@@ -1,6 +1,7 @@
 // src/components/CardListComponent.tsx
 import { useNavigate, useParams } from "react-router-dom";
 import { useCards } from "../../hooks/useCollection";
+import { getCardDetailPath } from "../../utils/RoutePathBuildUtils";
 import CardsListTile from "../TileComponents/CardsListTile";
 import HoverTooltip from "../TileComponents/HoverTooltip";
 
@@ -19,13 +20,7 @@ const CardList = () => {
       {collectionCards?.map((card) => (
         <CardsListTile
           key={card.id}
-          onClick={() =>
-            navigate(
-              `/cards/${seriesShortName}/sets/${setShortName}/card/${encodeURIComponent(
-                card.name,
-              )}`,
-            )
-          }
+          onClick={() => navigate(getCardDetailPath(card))}
         >
           <HoverTooltip
             content={

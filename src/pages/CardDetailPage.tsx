@@ -1,22 +1,26 @@
 // src/pages/CardDetailPage.tsx
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { CollectionParams } from "../App";
 import CardDetailPagingButton, {
   PagingType,
 } from "../components/ButtonComponents/CardDetailPagingButton";
 import { useCurrentAndAdjacentCards } from "../hooks/useCollectionCard";
+import { getCardDetailPath } from "../utils/RoutePathBuildUtils";
 
 const CardDetailPage: React.FC = () => {
   const { seriesShortName, setShortName, cardName } =
     useParams<CollectionParams>();
   const navigate = useNavigate();
 
+  const [searchParams] = useSearchParams();
+
   const { card, previousCard, nextCard, isLoading, error } =
     useCurrentAndAdjacentCards(
       seriesShortName ?? "",
       setShortName ?? "",
       cardName ?? "",
+      decodeURIComponent(searchParams.get("variant") ?? ""),
     );
 
   if (error && isLoading === false)
@@ -41,9 +45,7 @@ const CardDetailPage: React.FC = () => {
                 pagingType={PagingType.Previous}
                 card={previousCard ? previousCard : undefined}
                 onClick={() => {
-                  navigate(
-                    `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard?.name}`,
-                  );
+                  navigate(getCardDetailPath(previousCard));
                 }}
               />
             )}
@@ -52,9 +54,7 @@ const CardDetailPage: React.FC = () => {
                 pagingType={PagingType.Next}
                 card={nextCard ? nextCard : undefined}
                 onClick={() => {
-                  navigate(
-                    `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard?.name}`,
-                  );
+                  navigate(getCardDetailPath(nextCard));
                 }}
               />
             )}

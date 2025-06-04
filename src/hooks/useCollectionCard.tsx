@@ -15,16 +15,25 @@ export const useCardDetail = (
   seriesShortName: string,
   setShortName: string,
   cardName: string,
+  variant: string,
 ): AppResult<CollectionCard | null, Error> => {
   const queryResult = useQuery<CollectionCard | null>({
-    queryKey: [`CardDetail_${seriesShortName}_${setShortName}_${cardName}`],
+    queryKey: [
+      `CardDetail_${seriesShortName}_${setShortName}_${cardName}_${variant}`,
+    ],
     enabled: !!seriesShortName && !!setShortName && !!cardName,
-    queryFn: () => fetchCardDetail(seriesShortName, setShortName, cardName),
+    queryFn: () =>
+      fetchCardDetail(seriesShortName, setShortName, cardName, variant),
     staleTime: 1000 * 60 * 5,
   });
 
   if (IS_USE_LOCAL_DATA) {
-    const card = getJsonCardDetail(seriesShortName, setShortName, cardName);
+    const card = getJsonCardDetail(
+      seriesShortName,
+      setShortName,
+      cardName,
+      variant,
+    );
 
     return {
       data: card,
@@ -51,13 +60,14 @@ export const useCurrentAndAdjacentCards = (
   seriesShortName: string,
   setShortName: string,
   cardName: string,
+  variant: string,
 ): UseCurrentAndAdjacentCardsResult => {
   // current card
   const {
     data: card,
     isLoading,
     error,
-  } = useCardDetail(seriesShortName, setShortName, cardName);
+  } = useCardDetail(seriesShortName, setShortName, cardName, variant);
 
   // adjacent cards
   const queryResult = useQuery<{

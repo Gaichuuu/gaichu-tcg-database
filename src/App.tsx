@@ -10,11 +10,13 @@ import HomePage from "./pages/HomePage";
 import SeriesPage from "./pages/SeriesPage";
 import SetPage from "./pages/SetPage";
 import TcgSeriesPage from "./pages/TcgSeriesPage";
+import { CardDetailPath } from "./utils/RoutePathBuildUtils";
 
 export interface CollectionParams extends Record<string, string | undefined> {
   seriesShortName?: string;
   setShortName?: string;
   cardName?: string;
+  variant?: string;
 }
 
 const App: React.FC = () => {
@@ -33,10 +35,7 @@ const App: React.FC = () => {
                 path="/cards/:seriesShortName/sets/:setShortName"
                 element={<SetPage />}
               />
-              <Route
-                path="/cards/:seriesShortName/sets/:setShortName/card/:cardName"
-                element={<CardDetailPage />}
-              />
+              <Route path={CardDetailPath} element={<CardDetailPage />} />
               <Route path="/about" element={<AboutPage />} />
             </Routes>
           </Layout>
