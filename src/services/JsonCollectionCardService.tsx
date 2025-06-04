@@ -85,8 +85,9 @@ export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
 
 const CardSchema = z.object({
   id: z.string(),
-  number: z.number().optional(),
-  sortBy: z.number().optional(),
+  total_cards_count: z.number(),
+  number: z.number(),
+  sortBy: z.number(),
   name: z.string(),
   variant: z.string().optional(),
   image: z.string(),

@@ -118,8 +118,8 @@ const CardDetailPage: React.FC = () => {
                   />
                 </th>
                 <td className="py-2">
-                  {card?.sets[0].name} • {card?.number}/50 • {card?.variant}
-                  {/* I need help */}
+                  {card?.sets[0].name} • {card?.number}/
+                  {card?.total_cards_count} • {card?.variant}
                   <div className="mt-2"></div>
                 </td>
               </tr>
