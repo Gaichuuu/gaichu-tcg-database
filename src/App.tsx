@@ -10,7 +10,14 @@ import HomePage from "./pages/HomePage";
 import SeriesPage from "./pages/SeriesPage";
 import SetPage from "./pages/SetPage";
 import TcgSeriesPage from "./pages/TcgSeriesPage";
-import { CardDetailPath } from "./utils/RoutePathBuildUtils";
+import {
+  AboutPagePath,
+  CardDetailPath,
+  CardListPath,
+  HomePagePath,
+  SeriesListPath,
+  SetListPath,
+} from "./utils/RoutePathBuildUtils";
 
 export interface CollectionParams extends Record<string, string | undefined> {
   seriesShortName?: string;
@@ -28,15 +35,12 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Layout>
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/cards" element={<TcgSeriesPage />} />
-              <Route path="/cards/:seriesShortName" element={<SeriesPage />} />
-              <Route
-                path="/cards/:seriesShortName/sets/:setShortName"
-                element={<SetPage />}
-              />
+              <Route path={HomePagePath} element={<HomePage />} />
+              <Route path={SeriesListPath} element={<TcgSeriesPage />} />
+              <Route path={SetListPath} element={<SeriesPage />} />
+              <Route path={CardListPath} element={<SetPage />} />
               <Route path={CardDetailPath} element={<CardDetailPage />} />
-              <Route path="/about" element={<AboutPage />} />
+              <Route path={AboutPagePath} element={<AboutPage />} />
             </Routes>
           </Layout>
         </main>
