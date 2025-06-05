@@ -25,6 +25,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
     .filter((card) => card.set_ids[0] === set.id)
     .map((card) => ({
       id: card.id,
+      total_cards_count: card.total_cards_count,
       number: card.number!,
       sortBy: card.sortBy,
       name: card.name,

@@ -1,6 +1,7 @@
 export interface CollectionCard {
   // basic properties
   id: string;
+  total_cards_count: number;
   number: number;
   sortBy: number;
   name: string;
