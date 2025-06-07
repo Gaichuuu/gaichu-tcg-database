@@ -22,11 +22,11 @@
     "cost": [
       {
         "total": "1",
-        "aura": ["Forest"]
+        "aura": "Forest"
       },
       {
         "total": "1",
-        "aura": ["Neutral"]
+        "aura": "Neutral"
       }
     ],
     "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
@@ -58,11 +58,11 @@
     "cost": [
       {
         "total": "1",
-        "aura": ["Forest"]
+        "aura": "Forest"
       },
       {
         "total": "1",
-        "aura": ["Neutral"]
+        "aura": "Neutral"
       }
     ],
     "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
@@ -94,11 +94,11 @@
     "cost": [
       {
         "total": "1",
-        "aura": ["Forest"]
+        "aura": "Forest"
       },
       {
         "total": "1",
-        "aura": ["Neutral"]
+        "aura": "Neutral"
       }
     ],
     "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",

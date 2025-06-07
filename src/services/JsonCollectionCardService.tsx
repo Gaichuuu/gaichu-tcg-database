@@ -132,7 +132,7 @@ const CardSchema = z.object({
     .array(
       z.object({
         total: z.string(),
-        aura: z.array(z.string()),
+        aura: z.string(),
       }),
     )
     .optional(),
