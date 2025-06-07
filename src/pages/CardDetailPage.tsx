@@ -96,11 +96,46 @@ const CardDetailPage: React.FC = () => {
                   </td>
                 </tr>
               ))}
+              {card?.type && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Type</th>
+                  <td className="py-2">{card?.type}</td>
+                </tr>
+              )}
+              {card?.limit && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Per Spellbook</th>
+                  <td className="py-2">{card?.limit}</td>
+                </tr>
+              )}
+              {card?.cost && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Cost</th>
+                  <td className="py-2">
+                    {card?.cost?.map((cost) => (
+                      <span key={cost.aura} className="mr-2">
+                        {cost.total}{" "}
+                        <img
+                          src={`https://gaichu.b-cdn.net/mz/icon${cost.aura}.jpg`}
+                          alt={`${cost.aura} Icon`}
+                          className="inline-block h-5 w-5 align-middle"
+                        />
+                        {"   "}
+                      </span>
+                    ))}
+                  </td>
+                </tr>
+              )}
+              {card?.effect && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Effect</th>
+                  <td className="py-2">{card?.effect}</td>
+                </tr>
+              )}
               <tr>
                 <th className="py-2 pr-4 text-left">Flavor Text</th>
                 <td className="py-2">{card?.description}</td>
               </tr>
-
               <tr>
                 <th className="py-2 pr-4 text-left">Illustrator</th>
                 <td className="py-2">{card?.illustrators[0]}</td>
@@ -123,6 +158,12 @@ const CardDetailPage: React.FC = () => {
                   <div className="mt-2"></div>
                 </td>
               </tr>
+              {card?.note && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Note</th>
+                  <td className="py-2">{card?.note}</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
