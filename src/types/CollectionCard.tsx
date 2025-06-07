@@ -46,5 +46,5 @@ interface Attack {
 }
 interface Cost {
   total: string;
-  aura: string[];
+  aura: string;
 }
