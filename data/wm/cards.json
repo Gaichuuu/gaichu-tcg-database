@@ -2203,6 +2203,7 @@
   },
   {
     "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
+    "total_cards_count": 50,
     "number": 11,
     "sortBy": 11,
     "name": "Siechacha",
@@ -2244,6 +2245,7 @@
   },
   {
     "id": "f48bdb77-5685-4bf7-954c-a15ad3970ab7",
+    "total_cards_count": 50,
     "number": 12,
     "sortBy": 12,
     "name": "Ghost Boy",
@@ -2279,6 +2281,7 @@
   },
   {
     "id": "8384f45d-4c02-4abd-97ad-dcb9d75b5197",
+    "total_cards_count": 50,
     "number": 13,
     "sortBy": 13,
     "name": "Bonzie",
