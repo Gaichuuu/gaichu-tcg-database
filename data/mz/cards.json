@@ -1,6 +1,7 @@
 [
   {
     "id": "4a1411ad-50f6-4c46-b360-757125396ce1",
+    "total_cards_count": 165,
     "number": 99,
     "sortBy": 99.1,
     "name": "Bask In The Sunlight",
@@ -21,11 +22,11 @@
     "cost": [
       {
         "total": "1",
-        "aura": ["Forest"]
+        "aura": "Forest"
       },
       {
         "total": "1",
-        "aura": ["Neutral"]
+        "aura": "Neutral"
       }
     ],
     "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
@@ -36,6 +37,7 @@
   },
   {
     "id": "ba1401bd-7c4c-4371-bf59-a382eadd37d1",
+    "total_cards_count": 165,
     "number": 99,
     "sortBy": 99.2,
     "name": "Bask In The Sunlight",
@@ -56,11 +58,11 @@
     "cost": [
       {
         "total": "1",
-        "aura": ["Forest"]
+        "aura": "Forest"
       },
       {
         "total": "1",
-        "aura": ["Neutral"]
+        "aura": "Neutral"
       }
     ],
     "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
@@ -71,6 +73,7 @@
   },
   {
     "id": "c7fadf9f-c377-4c84-950d-e655b39b6230",
+    "total_cards_count": 165,
     "number": 99,
     "sortBy": 99.3,
     "name": "Bask In The Sunlight",
@@ -91,11 +94,11 @@
     "cost": [
       {
         "total": "1",
-        "aura": ["Forest"]
+        "aura": "Forest"
       },
       {
         "total": "1",
-        "aura": ["Neutral"]
+        "aura": "Neutral"
       }
     ],
     "effect": "Awaken up to two Beasties you control that have a [\"Woodlands\"] or [\"Daytime\"] Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",

@@ -1,6 +1,7 @@
 export interface CollectionCard {
   // basic properties
   id: string;
+  total_cards_count: number;
   number: number;
   sortBy: number;
   name: string;
@@ -45,5 +46,5 @@ interface Attack {
 }
 interface Cost {
   total: string;
-  aura: string[];
+  aura: string;
 }

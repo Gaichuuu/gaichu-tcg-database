@@ -25,16 +25,18 @@ export const getJsonCardDetail = (
   seriesShortName: string,
   setShortName: string,
   cardName: string,
+  variant: string,
 ): CollectionCard | null => {
   const cardList = jsonCardList(seriesShortName);
   const card = cardList
     .filter(
       (card) =>
         card.set_short_name === setShortName &&
-        card.series_short_name === seriesShortName,
+        card.series_short_name === seriesShortName &&
+        card.name === cardName &&
+        card.variant === variant,
     )
-    .find((card) => card.name === cardName);
-
+    .at(-1);
   if (!card) return null;
   return card;
 };
@@ -85,8 +87,9 @@ export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
 
 const CardSchema = z.object({
   id: z.string(),
-  number: z.number().optional(),
-  sortBy: z.number().optional(),
+  total_cards_count: z.number(),
+  number: z.number(),
+  sortBy: z.number(),
   name: z.string(),
   variant: z.string().optional(),
   image: z.string(),
@@ -129,7 +132,7 @@ const CardSchema = z.object({
     .array(
       z.object({
         total: z.string(),
-        aura: z.array(z.string()),
+        aura: z.string(),
       }),
     )
     .optional(),

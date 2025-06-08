@@ -1,22 +1,26 @@
 // src/pages/CardDetailPage.tsx
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { CollectionParams } from "../App";
 import CardDetailPagingButton, {
   PagingType,
 } from "../components/ButtonComponents/CardDetailPagingButton";
 import { useCurrentAndAdjacentCards } from "../hooks/useCollectionCard";
+import { getCardDetailPath } from "../utils/RoutePathBuildUtils";
 
 const CardDetailPage: React.FC = () => {
   const { seriesShortName, setShortName, cardName } =
     useParams<CollectionParams>();
   const navigate = useNavigate();
 
+  const [searchParams] = useSearchParams();
+
   const { card, previousCard, nextCard, isLoading, error } =
     useCurrentAndAdjacentCards(
       seriesShortName ?? "",
       setShortName ?? "",
       cardName ?? "",
+      decodeURIComponent(searchParams.get("variant") ?? ""),
     );
 
   if (error && isLoading === false)
@@ -41,9 +45,7 @@ const CardDetailPage: React.FC = () => {
                 pagingType={PagingType.Previous}
                 card={previousCard ? previousCard : undefined}
                 onClick={() => {
-                  navigate(
-                    `/cards/${seriesShortName}/sets/${setShortName}/card/${previousCard?.name}`,
-                  );
+                  navigate(getCardDetailPath(previousCard));
                 }}
               />
             )}
@@ -52,9 +54,7 @@ const CardDetailPage: React.FC = () => {
                 pagingType={PagingType.Next}
                 card={nextCard ? nextCard : undefined}
                 onClick={() => {
-                  navigate(
-                    `/cards/${seriesShortName}/sets/${setShortName}/card/${nextCard?.name}`,
-                  );
+                  navigate(getCardDetailPath(nextCard));
                 }}
               />
             )}
@@ -96,11 +96,46 @@ const CardDetailPage: React.FC = () => {
                   </td>
                 </tr>
               ))}
+              {card?.type && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Type</th>
+                  <td className="py-2">{card?.type}</td>
+                </tr>
+              )}
+              {card?.limit && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Per Spellbook</th>
+                  <td className="py-2">{card?.limit}</td>
+                </tr>
+              )}
+              {card?.cost && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Cost</th>
+                  <td className="py-2">
+                    {card?.cost?.map((cost) => (
+                      <span key={cost.aura} className="mr-2">
+                        {cost.total}{" "}
+                        <img
+                          src={`https://gaichu.b-cdn.net/mz/icon${cost.aura}.jpg`}
+                          alt={`${cost.aura} Icon`}
+                          className="inline-block h-5 w-5 align-middle"
+                        />
+                        {"   "}
+                      </span>
+                    ))}
+                  </td>
+                </tr>
+              )}
+              {card?.effect && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Effect</th>
+                  <td className="py-2">{card?.effect}</td>
+                </tr>
+              )}
               <tr>
                 <th className="py-2 pr-4 text-left">Flavor Text</th>
                 <td className="py-2">{card?.description}</td>
               </tr>
-
               <tr>
                 <th className="py-2 pr-4 text-left">Illustrator</th>
                 <td className="py-2">{card?.illustrators[0]}</td>
@@ -118,11 +153,17 @@ const CardDetailPage: React.FC = () => {
                   />
                 </th>
                 <td className="py-2">
-                  {card?.sets[0].name} • {card?.number}/50 • {card?.variant}
-                  {/* I need help */}
+                  {card?.sets[0].name} • {card?.number}/
+                  {card?.total_cards_count} • {card?.variant}
                   <div className="mt-2"></div>
                 </td>
               </tr>
+              {card?.note && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Note</th>
+                  <td className="py-2">{card?.note}</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
