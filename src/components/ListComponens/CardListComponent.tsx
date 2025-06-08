@@ -47,6 +47,10 @@ const CardList = () => {
                     <th className="py-2 pr-4 text-left">Flavor Text</th>
                     <td className="py-2">{card?.description}</td>
                   </tr>
+                  <tr>
+                    <th className="py-2 pr-4 text-left">Note</th>
+                    <td className="py-2">{card?.note}</td>
+                  </tr>
                 </tbody>
               </table>
             }
@@ -55,7 +59,7 @@ const CardList = () => {
               <img
                 src={card.image}
                 alt={card.name}
-                className="block max-h-[260px] w-full rounded-xl object-contain transition-transform duration-200"
+                className="border-secondaryBorder block max-h-[260px] w-full rounded-xl border-1 object-contain transition-transform duration-200"
               />
               <h3 className="mt-0 max-w-30 truncate text-sm">{card.name}</h3>
             </div>

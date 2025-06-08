@@ -1,4 +1,5 @@
 // src/pages/CardDetailPage.tsx
+import DOMPurify from "dompurify";
 import React from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { CollectionParams } from "../App";
@@ -37,7 +38,7 @@ const CardDetailPage: React.FC = () => {
           <img
             src={card?.image}
             alt={card?.name}
-            className="mb-4 block max-h-[600px] rounded-3xl object-contain shadow"
+            className="border-secondaryBorder mb-4 block max-h-[600px] rounded-3xl border-1 object-contain shadow"
           />
           <div className="mt-0 flex w-full max-w-xs gap-4">
             {previousCard && (
@@ -104,7 +105,7 @@ const CardDetailPage: React.FC = () => {
               )}
               {card?.limit && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Per Spellbook</th>
+                  <th className="py-2 pr-4 text-left">Limit</th>
                   <td className="py-2">{card?.limit}</td>
                 </tr>
               )}
@@ -129,7 +130,7 @@ const CardDetailPage: React.FC = () => {
               {card?.effect && (
                 <tr>
                   <th className="py-2 pr-4 text-left">Effect</th>
-                  <td className="py-2">{card?.effect}</td>
+                  <EffectCell html={card?.effect} />
                 </tr>
               )}
               <tr>
@@ -171,5 +172,11 @@ const CardDetailPage: React.FC = () => {
     </div>
   );
 };
-
+function EffectCell({ html }: { html: string }) {
+  const clean = DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: ["img", "b", "i", "em", "strong", "u", "br"],
+    ALLOWED_ATTR: ["src", "alt", "title", "width", "height", "style"],
+  });
+  return <td className="py-2" dangerouslySetInnerHTML={{ __html: clean }} />;
+}
 export default CardDetailPage;
