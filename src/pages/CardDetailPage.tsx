@@ -1,4 +1,5 @@
 // src/pages/CardDetailPage.tsx
+import DOMPurify from "dompurify";
 import React from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { CollectionParams } from "../App";
@@ -96,6 +97,10 @@ const CardDetailPage: React.FC = () => {
                   </td>
                 </tr>
               ))}
+              <tr>
+                <th className="py-2 pr-4 text-left">Flavor Text</th>
+                <td className="py-2">{card?.description}</td>
+              </tr>
               {card?.type && (
                 <tr>
                   <th className="py-2 pr-4 text-left">Type</th>
@@ -129,13 +134,9 @@ const CardDetailPage: React.FC = () => {
               {card?.effect && (
                 <tr>
                   <th className="py-2 pr-4 text-left">Effect</th>
-                  <td className="py-2">{card?.effect}</td>
+                  <EffectCell html={card?.effect} />
                 </tr>
               )}
-              <tr>
-                <th className="py-2 pr-4 text-left">Flavor Text</th>
-                <td className="py-2">{card?.description}</td>
-              </tr>
               <tr>
                 <th className="py-2 pr-4 text-left">Illustrator</th>
                 <td className="py-2">{card?.illustrators[0]}</td>
@@ -172,4 +173,13 @@ const CardDetailPage: React.FC = () => {
   );
 };
 
+function EffectCell({ html }: { html: string }) {
+  // Only allow <img> plus basic formatting:
+  const clean = DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: ["img", "b", "i", "em", "strong", "u", "br"],
+    ALLOWED_ATTR: ["src", "alt", "title", "width", "height"],
+  });
+
+  return <td className="py-2" dangerouslySetInnerHTML={{ __html: clean }} />;
+}
 export default CardDetailPage;
