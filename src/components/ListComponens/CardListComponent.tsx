@@ -47,10 +47,12 @@ const CardList = () => {
                     <th className="py-2 pr-4 text-left">Flavor Text</th>
                     <td className="py-2">{card?.description}</td>
                   </tr>
-                  <tr>
-                    <th className="py-2 pr-4 text-left">Note</th>
-                    <td className="py-2">{card?.note}</td>
-                  </tr>
+                  {card?.note && (
+                    <tr>
+                      <th className="py-2 pr-4 text-left">Note</th>
+                      <td className="py-2">{card?.note}</td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             }

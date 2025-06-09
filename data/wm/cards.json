@@ -216,7 +216,7 @@
     "total_cards_count": 50,
     "number": 1,
     "sortBy": 1,
-    "name": "Mud Creef",
+    "name": "Mudcreef",
     "parody": "Mudkip",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -1393,7 +1393,7 @@
     "total_cards_count": 50,
     "number": 4,
     "sortBy": 4,
-    "name": "Slow Mo",
+    "name": "Slow Mobi",
     "parody": "Slowbro",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2312,6 +2312,1358 @@
         "effect": "Kicks the opponent with the small leg. It's not very effective.",
         "damage": "10",
         "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c4ee4c46-e14a-4124-aa2a-023e64662f5c",
+    "total_cards_count": 50,
+    "number": 14,
+    "sortBy": 14,
+    "name": "Woopa",
+    "parody": "Wooper",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/14.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/14-thumb.jpg",
+    "description": "This creature can store water in its stomach and release it when needed.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "8kg"
+    },
+    "attacks": [
+      {
+        "name": "Water Spray",
+        "effect": "Spray water on the opponent, causing confusion and then escaping.",
+        "damage": "15",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "71d0b53d-8441-45d8-ae17-16b188652307",
+    "total_cards_count": 50,
+    "number": 15,
+    "sortBy": 15,
+    "name": "Chachi",
+    "parody": "Rowlet",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set2/15.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/15-thumb.jpg",
+    "description": "This creature is nocturnal. It has excellent night vision and can fly very silently.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": "Peck",
+        "effect": "Pecks the opponent with its sharp beak. Very effective against insect-type creatures.",
+        "damage": "10",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "31c69bc1-8aa2-4b42-b7f3-22727c9ff208",
+    "total_cards_count": 50,
+    "number": 16,
+    "sortBy": 16,
+    "name": "Growly",
+    "parody": "Growlithe",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set2/16.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/16-thumb.jpg",
+    "description": "This creature is nocturnal. It has excellent night vision and can fly very silently.",
+    "measurement": {
+      "height": ".7m",
+      "weight": "19kg"
+    },
+    "attacks": [
+      {
+        "name": "Growl",
+        "effect": "Shout abusive language at the other person, making them run away.",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Fireball",
+        "effect": "Throw a fireball at the opponent.",
+        "damage": "25",
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "1944e6c4-c24c-4204-baaa-69c2bbc68586",
+    "total_cards_count": 50,
+    "number": 17,
+    "sortBy": 17,
+    "name": "Pantomime Man",
+    "parody": "Mr. Mine",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/17.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/17-thumb.jpg",
+    "description": "This creature is believed to have once been human.",
+    "measurement": {
+      "height": "1.3m",
+      "weight": "59kg"
+    },
+    "attacks": [
+      {
+        "name": "Mine",
+        "effect": "Creates a protective barrier against psychic energy.",
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "240b6653-26aa-496a-a004-8113134a102b",
+    "total_cards_count": 50,
+    "number": 18,
+    "sortBy": 18,
+    "name": "Jinx",
+    "parody": "Jynx",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/18.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/18-thumb.jpg",
+    "description": "The creature disguises itself as a human female, for unknown reasons.",
+    "measurement": {
+      "height": "1m",
+      "weight": "40kg"
+    },
+    "attacks": [
+      {
+        "name": "Ice Kiss",
+        "effect": "Kisses the opponent, freezing them for 2 turns.",
+        "damage": "25",
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "daa74bfb-22b4-4a45-a890-5229e4ed508c",
+    "total_cards_count": 50,
+    "number": 19,
+    "sortBy": 19,
+    "name": "Peep",
+    "parody": "Piplup",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/19.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/19-thumb.jpg",
+    "description": "This creature can destroy objects with just a gaze and can also create black holes with a thought.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "5kg"
+    },
+    "attacks": [
+      {
+        "name": "Flipper Smack",
+        "effect": "Uses its flippers to hit the opponent hard. It deals a lot of damage and is also a very cute move.",
+        "damage": "100",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "a981c478-222a-4e6e-9944-4cf4477460ab",
+    "total_cards_count": 50,
+    "number": 20,
+    "sortBy": 20,
+    "name": "Tight",
+    "parody": "Shellder",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set2/20.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/20-thumb.jpg",
+    "description": "The shells are as hard as iron and highly poisonous, so they cannot be eaten.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "4kg"
+    },
+    "attacks": [
+      {
+        "name": "Close",
+        "effect": "Close its shell, becoming invincible to most physical attacks.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "9cb24990-f8c0-4c14-941b-dc7134b0b5ee",
+    "total_cards_count": 50,
+    "number": 21,
+    "sortBy": 21,
+    "name": "Snow Boy",
+    "parody": "Alolan Vulpix",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set2/21.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/21-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".6m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "5",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "461a5ae6-d58b-4f49-b370-1b636272bcf7",
+    "total_cards_count": 50,
+    "number": 22,
+    "sortBy": 22,
+    "name": "Ratatou",
+    "parody": "Ratatta",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/22.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/22-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".2m",
+      "weight": "2kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "10",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c1914b5c-6dbd-4817-a613-41175b5017f3",
+    "total_cards_count": 50,
+    "number": 23,
+    "sortBy": 23,
+    "name": "Ratacape",
+    "parody": "Raticate",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/23.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/23-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".7m",
+      "weight": "20kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "45",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "1f972c13-70f4-40cc-8df9-ae00ac524d01",
+    "total_cards_count": 50,
+    "number": 24,
+    "sortBy": 24,
+    "name": "Sanchi",
+    "parody": "Sandshrew",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set2/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/24-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".5m",
+      "weight": "25kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "9273f742-5c04-4877-82fb-1528c112b22e",
+    "total_cards_count": 50,
+    "number": 25,
+    "sortBy": 25,
+    "name": "Catapy",
+    "parody": "Caterpie",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/25.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/25-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".3m",
+      "weight": "3kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "e37f524c-3dee-4346-b465-a99e5b85f0aa",
+    "total_cards_count": 50,
+    "number": 26,
+    "sortBy": 26,
+    "name": "Sticky",
+    "parody": "Lickilicky",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/wm/set2/26.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/26-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1.7m",
+      "weight": "140kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "30",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "30",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "d29f94ee-3dc6-4bee-a0b5-b453c3933bc0",
+    "total_cards_count": 50,
+    "number": 27,
+    "sortBy": 27,
+    "name": "Pachisui",
+    "parody": "Pachurisu",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set2/27.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/27-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".5m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "25",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "6b9d86c3-b0ed-4934-be6d-92ba9c2f4080",
+    "total_cards_count": 50,
+    "number": 28,
+    "sortBy": 28,
+    "name": "Onyx",
+    "parody": "Onix",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/wm/set2/28.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/28-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "8.8m",
+      "weight": "210kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "40",
+        "costs": ["Fighting"]
+      },
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "15",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "f5306450-5340-4b06-aa86-0c328571eed0",
+    "total_cards_count": 50,
+    "number": 29,
+    "sortBy": 29,
+    "name": "Kakuma",
+    "parody": "Kakuna",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/29.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/29-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".3m",
+      "weight": "3kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "40efda17-7356-492d-bfd7-e256c8a0d0e3",
+    "total_cards_count": 50,
+    "number": 30,
+    "sortBy": 30,
+    "name": "Pony Pony",
+    "parody": "Ponyta",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set2/30.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/30-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "30kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "35",
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "a6602cc5-77db-44c3-affd-dac464dfc56f",
+    "total_cards_count": 50,
+    "number": 31,
+    "sortBy": 31,
+    "name": "Pink Boy",
+    "parody": "Clefairy",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set2/31.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/31-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".5m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "?",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c0a67fb1-2c93-4483-b233-4c3cbbc345f5",
+    "total_cards_count": 50,
+    "number": 32,
+    "sortBy": 32,
+    "name": "Magic Mike",
+    "parody": "Hitmonlee",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/32.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/32-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "20kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "60",
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "ec6bd531-ba02-4fd4-9a70-3cf17804021e",
+    "total_cards_count": 50,
+    "number": 33,
+    "sortBy": 33,
+    "name": "Steve",
+    "parody": "Hitmonchan",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "15kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "30",
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "de9f22b4-2442-4e7e-a0b9-86782267068a",
+    "total_cards_count": 50,
+    "number": 34,
+    "sortBy": 34,
+    "name": "Magnemi",
+    "parody": "Magneton",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "45",
+    "image": "https://gaichu.b-cdn.net/wm/set2/34.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/34-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "60kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "30",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "a6587285-00e7-4e86-8179-25f36e2fb041",
+    "total_cards_count": 50,
+    "number": 35,
+    "sortBy": 35,
+    "name": "Watobatto",
+    "parody": "Wartortle",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set2/35.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/35-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "22kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "30",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "e433ff5d-c206-4f65-a2cf-2a663ba79465",
+    "total_cards_count": 50,
+    "number": 36,
+    "sortBy": 36,
+    "name": "Ivysor",
+    "parody": "Ivysaur",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set2/36.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/36-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".7m",
+      "weight": "20kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "35",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "45555f96-c9aa-454f-b43d-d7fcd85c13c9",
+    "total_cards_count": 50,
+    "number": 37,
+    "sortBy": 37,
+    "name": "Charmi",
+    "parody": "Charmeleon",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set2/37.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/37-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "20kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "40",
+        "costs": ["Fire"]
+      },
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "20",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "edd88d82-d627-4bd3-b5eb-a6a738e0c721",
+    "total_cards_count": 50,
+    "number": 38,
+    "sortBy": 38,
+    "name": "Champuru",
+    "parody": "Flying Pikachu",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".4m",
+      "weight": "6kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "dc57bb94-44e2-4289-8924-79a446d73a7e",
+    "total_cards_count": 50,
+    "number": 39,
+    "sortBy": 39,
+    "name": "Snopi",
+    "parody": "Charmander",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set2/39.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/39-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".4m",
+      "weight": "8kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "10",
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "a7e13ccd-96b8-46eb-ae9f-5536b48263fd",
+    "total_cards_count": 50,
+    "number": 40,
+    "sortBy": 40,
+    "name": "Lil Guy",
+    "parody": "Bulbasaur",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set2/40.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/40-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".4m",
+      "weight": "8kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "b6090d5b-3c41-4434-b19c-aa5718c53c96",
+    "total_cards_count": 50,
+    "number": 41,
+    "sortBy": 41,
+    "name": "Champto",
+    "parody": "Squirtle",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".4m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "10",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "68dec82e-45f0-4f10-89f4-984db75598bd",
+    "total_cards_count": 50,
+    "number": 42,
+    "sortBy": 42,
+    "name": "Nanutayo",
+    "parody": "Ninetails",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/42.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/42-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1.5m",
+      "weight": "30kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "cba6f316-a88a-42a4-bf5d-2e38b102b93a",
+    "total_cards_count": 50,
+    "number": 43,
+    "sortBy": 43,
+    "name": "Rai Rai",
+    "parody": "Raichu",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set2/43.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/43-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".9m",
+      "weight": "25kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "40",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "696464c9-9c3c-44a1-88bf-0ba0dc7f2779",
+    "total_cards_count": 50,
+    "number": 44,
+    "sortBy": 44,
+    "name": "Floreomon",
+    "parody": "Flareon",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/44.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/44-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".9m",
+      "weight": "25kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "100",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "4d41c46d-7a80-45c4-abfc-750a89704361",
+    "total_cards_count": 50,
+    "number": 45,
+    "sortBy": 45,
+    "name": "Johnnymon",
+    "parody": "Jolteon",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/45.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/45-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1m",
+      "weight": "25kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "60",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "d53edbd7-066d-49b5-b9fb-5db0a54e887e",
+    "total_cards_count": 50,
+    "number": 46,
+    "sortBy": 46,
+    "name": "Vepenomnom",
+    "parody": "Vaporeon",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set2/46.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/46-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".9m",
+      "weight": "25kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "60",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "f85c3ce4-2faf-4a46-9adb-f76dfcaa59a1",
+    "total_cards_count": 50,
+    "number": 47,
+    "sortBy": 47,
+    "name": "Entomi",
+    "parody": "Entei",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/wm/set2/47.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/47-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "2.1m",
+      "weight": "198kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "100",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "e7c55d0a-1ae9-4f3e-9a99-f08395970d23",
+    "total_cards_count": 50,
+    "number": 48,
+    "sortBy": 48,
+    "name": "Raikomo",
+    "parody": "Raikou",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/wm/set2/48.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/48-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "1.9m",
+      "weight": "178kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "100",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "6dfc5599-ab49-4b5b-af91-fba7c10d68ed",
+    "total_cards_count": 50,
+    "number": 49,
+    "sortBy": 49,
+    "name": "Sukumo",
+    "parody": "Suicune",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/wm/set2/49.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/49-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": "2m",
+      "weight": "187kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "90",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "0b636cc5-ecd5-4346-a9a5-6c1f19c81621",
+    "total_cards_count": 50,
+    "number": 50,
+    "sortBy": 50,
+    "name": "Shiny Ramune",
+    "parody": "Ralts",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set2",
+    "series_short_name": "wm",
+    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "sets": [
+      {
+        "name": "Set Two",
+        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set2/50.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set2/50-thumb.jpg",
+    "description": "害虫",
+    "measurement": {
+      "height": ".4m",
+      "weight": "6kg"
+    },
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "20",
+        "costs": ["Psychic"]
       }
     ]
   }
