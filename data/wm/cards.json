@@ -2309,7 +2309,7 @@
     "attacks": [
       {
         "name": "Kick",
-        "effect": "Kicks the opponent with the small leg. It's not very effective.",
+        "effect": "Kick the opponent with the small leg. It's not very effective.",
         "damage": "10",
         "costs": ["Normal"]
       }
@@ -2381,7 +2381,7 @@
     "attacks": [
       {
         "name": "Peck",
-        "effect": "Pecks the opponent with its sharp beak. Very effective against insect-type creatures.",
+        "effect": "Peck the opponent with its sharp beak. Very effective against insect-type creatures.",
         "damage": "10",
         "costs": ["Normal"]
       }
@@ -2458,7 +2458,7 @@
     "attacks": [
       {
         "name": "Mine",
-        "effect": "Creates a protective barrier against psychic energy.",
+        "effect": "Create a protective barrier against psychic energy.",
         "costs": ["Psychic"]
       }
     ]
@@ -2493,7 +2493,7 @@
     "attacks": [
       {
         "name": "Ice Kiss",
-        "effect": "Kisses the opponent, freezing them for 2 turns.",
+        "effect": "Kiss the opponent, freezing them for 2 turns.",
         "damage": "25",
         "costs": ["Psychic"]
       }
@@ -2529,7 +2529,7 @@
     "attacks": [
       {
         "name": "Flipper Smack",
-        "effect": "Uses its flippers to hit the opponent hard. It deals a lot of damage and is also a very cute move.",
+        "effect": "Use its flippers to hit the opponent hard. It deals a lot of damage and is also a very cute move.",
         "damage": "100",
         "costs": ["Normal"]
       }
@@ -2592,15 +2592,15 @@
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/21-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature is so rare that in the past it was thought to be a mythical entity.",
     "measurement": {
       "height": ".6m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Hail",
+        "effect": "Summon a song from the clouds, dealing base damage to the opponent each turn.",
         "damage": "5",
         "costs": ["Water"]
       }
@@ -2628,15 +2628,15 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/22.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/22-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature can survive in almost any environment, especially where cheese is plentiful.",
     "measurement": {
       "height": ".2m",
       "weight": "2kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Tackle",
+        "effect": "Charge the opponent at full speed, dealing damage.",
         "damage": "10",
         "costs": ["Normal"]
       }
@@ -2664,21 +2664,21 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/23.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/23-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature's teeth never stop growing.",
     "measurement": {
       "height": ".7m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Superbite",
+        "effect": "Bite the opponent in an extremely powerful manner.",
         "damage": "45",
         "costs": ["Normal"]
       },
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Tail Whip",
+        "effect": "Strike opponent with its tail.",
         "costs": ["Normal"]
       }
     ]
@@ -2705,15 +2705,15 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/24.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/24-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature lives in the desert and creates its songs underground.",
     "measurement": {
       "height": ".5m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Sand Ball",
+        "effect": "Throw sand balls at the opponent, lowering their accuracy.",
         "costs": ["Fighting"]
       }
     ]
@@ -2740,15 +2740,15 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/25.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/25-thumb.jpg",
-    "description": "害虫",
+    "description": "Although this creature is small and weak, it is a Lion.",
     "measurement": {
       "height": ".3m",
       "weight": "3kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "String Shot",
+        "effect": "Shoot strings around the opponent, greatly slowing them down.",
         "costs": ["Grass"]
       }
     ]
@@ -2775,21 +2775,21 @@
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set2/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/26-thumb.jpg",
-    "description": "害虫",
+    "description": "The creature's brain is located within the West.",
     "measurement": {
       "height": "1.7m",
       "weight": "140kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Lick",
+        "effect": "Lick the other person.",
         "damage": "30",
         "costs": ["Normal"]
       },
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Sit",
+        "effect": "Sit on top of the other person.",
         "damage": "30",
         "costs": ["Normal"]
       }
@@ -2817,15 +2817,15 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/27.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/27-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature has enough electrical energy to fully charge a smartphone.",
     "measurement": {
       "height": ".5m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Thundercheeks",
+        "effect": "Shock the opponent with your adorable little cheeks.",
         "damage": "25",
         "costs": ["Electric"]
       }
@@ -2853,21 +2853,21 @@
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set2/28.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/28-thumb.jpg",
-    "description": "害虫",
+    "description": "The creature's body appears to be made of rock, but it is just a calcified exoskeleton.",
     "measurement": {
       "height": "8.8m",
       "weight": "210kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Rock Tail",
+        "effect": "Slam the opponent with Rock Tail.",
         "damage": "40",
         "costs": ["Fighting"]
       },
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Headbutt",
+        "effect": "Headbutt the opponent.",
         "damage": "15",
         "costs": ["Normal"]
       }
@@ -2895,15 +2895,15 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/29.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/29-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature is in the process of evolving and is unable to fight. It hides until ready to transform.",
     "measurement": {
       "height": ".3m",
       "weight": "3kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Harden",
+        "effect": "Harden itself to protect from damage.",
         "costs": ["Normal"]
       }
     ]
@@ -2930,15 +2930,15 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/30-thumb.jpg",
-    "description": "害虫",
+    "description": "Depending on whether the creature likes you or not, the fire can either hurt or heal you.",
     "measurement": {
       "height": "1m",
       "weight": "30kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Fire Wheel",
+        "effect": "Create a ring of fire to attack, which can cause burns to the opponent.",
         "damage": "35",
         "costs": ["Fire"]
       }
@@ -2966,15 +2966,15 @@
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/31.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/31-thumb.jpg",
-    "description": "害虫",
+    "description": "This organism is believed to be of extraterrestrial origin and its genes are completely different from any other organism on Earth.",
     "measurement": {
       "height": ".5m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Random Move",
+        "effect": "Connect with a higher dimensional being and learn random moves.",
         "damage": "?",
         "costs": ["Normal"]
       }
@@ -3002,15 +3002,15 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/32-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature has a very powerful kick, but an incredibly weak punch.",
     "measurement": {
       "height": "1m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Leg Kick",
+        "effect": "Kick the opponent's leg to significantly reduce their evasion and speed.",
         "damage": "60",
         "costs": ["Fighting"]
       }
@@ -3038,15 +3038,15 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
-    "description": "害虫",
+    "description": "The creature appears to be wearing boxing shorts and gloves, but these are actual body parts.",
     "measurement": {
       "height": "1m",
       "weight": "15kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Straight Jab",
+        "effect": "Use the lead hand to punch the opponent in the face. All subsequent attacks will be critical hits.",
         "damage": "30",
         "costs": ["Fighting"]
       }
@@ -3074,15 +3074,15 @@
     "hp": "45",
     "image": "https://gaichu.b-cdn.net/wm/set2/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/34-thumb.jpg",
-    "description": "害虫",
+    "description": "It is not yet clear whether this is one organism or three.",
     "measurement": {
       "height": "1m",
       "weight": "60kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Thunder Shock",
+        "effect": "Shock the opponent with an electric shock, which can paralyze them.",
         "damage": "30",
         "costs": ["Electric"]
       }
@@ -3110,15 +3110,15 @@
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/35-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature's shell is as hard as steel.",
     "measurement": {
       "height": "1m",
       "weight": "22kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Wet Slap",
+        "effect": "Spit into its hand and start slapping the opponent. This is not only physically damaging, but is also very rude.",
         "damage": "30",
         "costs": ["Water"]
       }
@@ -3146,15 +3146,15 @@
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/36-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature has a large flower on its back that converts sunlight into energy, so it barely needs to eat.",
     "measurement": {
       "height": ".7m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Sweet Scent",
+        "effect": "Cover itself in expensive body spray, attracting all kinds of creatures.",
         "damage": "35",
         "costs": ["Grass"]
       }
@@ -3182,21 +3182,21 @@
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/37.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/37-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature is very unusual and almost always rebellious.",
     "measurement": {
       "height": "1m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Fire Breath",
+        "effect": "Blow fire into the opponent's face after eating an onion.",
         "damage": "40",
         "costs": ["Fire"]
       },
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Scratch",
+        "effect": "Scratch the opponent.",
         "damage": "20",
         "costs": ["Normal"]
       }
@@ -3224,15 +3224,15 @@
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature is known to take part in many recreational activities and has been spotted surfing on numerous occasions.",
     "measurement": {
       "height": ".4m",
       "weight": "6kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Fly",
+        "effect": "Use balloons from a recent birthday party to levitate off the ground.",
         "costs": ["Normal"]
       }
     ]
@@ -3259,15 +3259,15 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/39-thumb.jpg",
-    "description": "害虫",
+    "description": "This organism is extremely rare and can only be found in active volcanoes.",
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Burn",
+        "effect": "Use fire to destroy everything in its path.",
         "damage": "10",
         "costs": ["Fire"]
       }
@@ -3295,15 +3295,15 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/40.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/40-thumb.jpg",
-    "description": "害虫",
+    "description": "This organism can convert sunlight into food and, if stationary, can survive for years on sunlight and rain alone.",
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Flower Delight",
+        "effect": "Create a scent that evokes someone's most cherished memories.",
         "costs": ["Grass"]
       }
     ]
@@ -3330,15 +3330,15 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
-    "description": "害虫",
+    "description": "The shell of this creature is as hard as iron.",
     "measurement": {
       "height": ".4m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Bubbles",
+        "effect": "Make cute animal shaped bubbles. This is very popular at birthday parties.",
         "damage": "10",
         "costs": ["Water"]
       }
@@ -3366,15 +3366,15 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/42-thumb.jpg",
-    "description": "害虫",
+    "description": "These creatures are very rare and are said to only appear to those with good karma.",
     "measurement": {
       "height": "1.5m",
       "weight": "30kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Seance",
+        "effect": "Communicate with spirits from the afterlife using psychic abilities.",
         "costs": ["Dark"]
       }
     ]
@@ -3401,15 +3401,15 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/43-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature enjoys taking selfies.",
     "measurement": {
       "height": ".9m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Electric Shock",
+        "effect": "Shock the opponent with an electric shock. This can also be used to charge mobile phones and tablets.",
         "damage": "40",
         "costs": ["Electric"]
       }
@@ -3437,15 +3437,15 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/44.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/44-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature's daily routine is to find a sunny spot on the floor and spend the whole day sleeping.",
     "measurement": {
       "height": ".9m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Bread Loaf",
+        "effect": "All limbs retract into the body to take the shape of a loaf of bread.",
         "damage": "100",
         "costs": ["Normal"]
       }
@@ -3473,15 +3473,15 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/45.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/45-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature can summon thunderstorms when provoked or threatened.",
     "measurement": {
       "height": "1m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Revive",
+        "effect": "Use an electric shock to revive a stunned teammate.",
         "damage": "60",
         "costs": ["Electric"]
       }
@@ -3509,15 +3509,15 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/46-thumb.jpg",
-    "description": "害虫",
+    "description": "These creatures love frozen desserts like ice cream and shaved ice.",
     "measurement": {
       "height": ".9m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Aquafresh",
+        "effect": "Produce a mist from its eye socket that kills 99.9% of germs and bacteria, leaving a refreshing scent behind.",
         "damage": "60",
         "costs": ["Water"]
       }
@@ -3545,15 +3545,15 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/47.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/47-thumb.jpg",
-    "description": "害虫",
+    "description": "It is said that this creature was reborn from something that died long ago in the burning tower.",
     "measurement": {
       "height": "2.1m",
       "weight": "198kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Unknown",
+        "effect": "Summon an army of small creatures for help.",
         "damage": "100",
         "costs": ["Normal"]
       }
@@ -3581,15 +3581,15 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/48-thumb.jpg",
-    "description": "害虫",
+    "description": "It is said that this creature was reborn from something that died long ago in the burning tower.",
     "measurement": {
       "height": "1.9m",
       "weight": "178kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Lightning Rain",
+        "effect": "Call down a thunderstorm, striking everything in the area with lightning.",
         "damage": "100",
         "costs": ["Electric"]
       }
@@ -3617,15 +3617,15 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/49.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/49-thumb.jpg",
-    "description": "害虫",
+    "description": "It is said that this creature was reborn from something that died long ago in the burning tower.",
     "measurement": {
       "height": "2m",
       "weight": "187kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Crystal Beam",
+        "effect": "Decorate your room with beautiful stones and crystals.",
         "damage": "90",
         "costs": ["Water"]
       }
@@ -3653,15 +3653,15 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/50-thumb.jpg",
-    "description": "害虫",
+    "description": "This creature can make his emotions felt by those around him.",
     "measurement": {
       "height": ".4m",
       "weight": "6kg"
     },
     "attacks": [
       {
-        "name": "害虫",
-        "effect": "害虫",
+        "name": "Mind Read",
+        "effect": "Use psychic ability to read the opponent's mind. This technique is also effective in poker.",
         "damage": "20",
         "costs": ["Psychic"]
       }
