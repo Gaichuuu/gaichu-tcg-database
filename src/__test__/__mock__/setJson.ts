@@ -1,4 +1,4 @@
-import type { CollectionSet } from "../../types/CollectionSet";
+import type { CollectionSet } from "@/types/CollectionSet";
 
 export const setJsonMock: CollectionSet[] = [
   {

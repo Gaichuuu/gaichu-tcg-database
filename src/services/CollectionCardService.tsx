@@ -1,3 +1,5 @@
+import { CollectionCard } from "@/types/CollectionCard";
+import { database } from "config/FirebaseConfig";
 import {
   collection,
   getDocs,
@@ -6,8 +8,6 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { database } from "../../config/FirebaseConfig";
-import { CollectionCard } from "../types/CollectionCard";
 const collectionName = "cards";
 
 export const fetchCards = async (

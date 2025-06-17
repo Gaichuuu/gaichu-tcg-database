@@ -1,4 +1,4 @@
-import type { CollectionSeries } from "../../types/CollectionSeries";
+import type { CollectionSeries } from "@/types/CollectionSeries";
 
 export const seriesJsonMock: CollectionSeries[] = [
   {

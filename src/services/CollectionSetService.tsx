@@ -1,8 +1,8 @@
+import { CollectionCard } from "@/types/CollectionCard";
+import { CollectionSet } from "@/types/CollectionSet";
+import { SetAndCard } from "@/types/MergedCollection";
+import { database } from "config/FirebaseConfig";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import { database } from "../../config/FirebaseConfig";
-import { CollectionCard } from "../types/CollectionCard";
-import { CollectionSet } from "../types/CollectionSet";
-import { SetAndCard } from "../types/MergedCollection";
 
 export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
   const setsReference = collection(database, "sets");

@@ -1,5 +1,5 @@
-import setsList from "../../data/sets.json";
-import { SetAndCard } from "../types/MergedCollection";
+import { SetAndCard } from "@/types/MergedCollection";
+import setsList from "data/sets.json";
 import { jsonCardList } from "./JsonCollectionCardService";
 
 export const getJsonSet = (seriesShortName: string): SetAndCard[] => {

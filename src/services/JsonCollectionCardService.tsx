@@ -1,8 +1,8 @@
+import { SeriesShortName } from "@/services/CollectionSeriesService";
+import { CollectionCard } from "@/types/CollectionCard";
+import mzCardList from "data/mz/cards.json";
+import wmCardList from "data/wm/cards.json";
 import { z } from "zod";
-import mzCardList from "../../data/mz/cards.json";
-import wmCardList from "../../data/wm/cards.json";
-import { CollectionCard } from "../types/CollectionCard";
-import { SeriesShortName } from "./CollectionSeriesService";
 
 export const SerieCardList: Record<SeriesShortName, any> = {
   [SeriesShortName.wm]: wmCardList,
