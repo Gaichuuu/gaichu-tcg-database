@@ -16,7 +16,8 @@
     "preview": "vite preview",
     "tailwind": "tailwindcss",
     "export-data": "node firestoreScript/exportCollections.cjs",
-    "import-data": "node firestoreScript/importCollections.cjs"
+    "import-data": "NODE_ENV=production node firestoreScript/importCollections.cjs",
+    "import-data:staging": "NODE_ENV=staging node firestoreScript/importCollections.cjs"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
