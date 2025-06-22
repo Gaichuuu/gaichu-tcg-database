@@ -4,13 +4,20 @@
     "short_name": "mz",
     "name": "MetaZoo",
     "logo": "https://gaichu.b-cdn.net/mz/mzLogo.png",
-    "sortBy": 1
+    "sortBy": 2
   },
   {
     "id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
     "short_name": "wm",
     "name": "WrennyMoo",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
-    "sortBy": 2
+    "sortBy": 3
+  },
+  {
+    "id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
+    "short_name": "ash",
+    "name": "After Skool Hobby",
+    "logo": "https://gaichu.b-cdn.net/ash/ashLogo.png",
+    "sortBy": 1
   }
 ]

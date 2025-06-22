@@ -34,5 +34,14 @@
     "sortBy": 1,
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
+  },
+  {
+    "id": "5444924f-490b-465f-8364-66b4e34da7c8",
+    "series_short_name": "ash",
+    "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
+    "short_name": "gen1",
+    "sortBy": 1,
+    "name": "Generation One",
+    "logo": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
   }
 ]

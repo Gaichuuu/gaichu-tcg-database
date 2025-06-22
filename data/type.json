@@ -82,5 +82,65 @@
     "name": "Woodlands",
     "series_short_name": "mz",
     "image": "https://gaichu.b-cdn.net/mz/iconWoodlands.png"
+  },
+  {
+    "id": "35cde067-fa65-48ef-8a8f-10e5a5732719",
+    "name": "Darkness",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconDarkness.jpg"
+  },
+  {
+    "id": "919c1b31-6e29-442c-a385-05fcd8daffc7",
+    "name": "Fairy",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconFairy.jpg"
+  },
+  {
+    "id": "6964a963-d19a-4ef8-b50f-a0897e729ad1",
+    "name": "Fighting",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconFighting.jpg"
+  },
+  {
+    "id": "36de127b-9d24-4065-aee6-c9516a045beb",
+    "name": "Fire",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconFire.jpg"
+  },
+  {
+    "id": "329b0323-e803-495a-91d8-19b5297d64e5",
+    "name": "Grass",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconGrass.jpg"
+  },
+  {
+    "id": "de691681-2c4d-4684-91fb-a96ad5fcab15",
+    "name": "Lightning",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconLightning.jpg"
+  },
+  {
+    "id": "ad28e104-701f-4877-9623-e9dfa3ba68e6",
+    "name": "Colorless",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconColorless.jpg"
+  },
+  {
+    "id": "64c31608-5b3a-406c-beed-6a8e20c381be",
+    "name": "Psychic",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconPsychic.jpg"
+  },
+  {
+    "id": "e24f1c96-9cfd-4801-95de-ca70fbc209d6",
+    "name": "Water",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconWater.jpg"
+  },
+  {
+    "id": "e0db619c-513b-4e06-95a9-8be392761a2d",
+    "name": "Dragon",
+    "series_short_name": "ash",
+    "image": "https://gaichu.b-cdn.net/ash/iconDragon.jpg"
   }
 ]
