@@ -1,0 +1,222 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "allOf": [
+      { "$ref": "../cards.schema.base.json" },
+      {
+        "type": "object",
+        "required": ["type", "color"],
+        "properties": {
+          "illustrators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["Soo Zhi Wei"]
+            }
+          },
+          "rarity": {
+            "type": "string",
+            "enum": ["Rare", "Secret Rare"]
+          },
+          "set_short_name": {
+            "type": "string",
+            "enum": ["gen1"]
+          },
+          "series_short_name": {
+            "type": "string",
+            "enum": ["ash"]
+          },
+          "sets": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["name", "image"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": ["Generation One"]
+                },
+                "image": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["Pokemon", "Trainer"]
+          },
+          "color": {
+            "type": "string",
+            "enum": [
+              "Darkness",
+              "Dragon",
+              "Fairy",
+              "Fighting",
+              "Fire",
+              "Grass",
+              "Lightning",
+              "Colorless",
+              "Psychic",
+              "Water"
+            ]
+          },
+          "stage": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "evolution": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "basic": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "hp": {
+            "type": "string"
+          },
+          "attacks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "effect": {
+                  "type": "string"
+                },
+                "damage": {
+                  "type": ["string"]
+                },
+                "costs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "Darkness",
+                      "Dragon",
+                      "Fairy",
+                      "Fighting",
+                      "Fire",
+                      "Grass",
+                      "Lightning",
+                      "Colorless",
+                      "Psychic",
+                      "Water",
+                      "4",
+                      "+"
+                    ]
+                  },
+                  "minItems": 1
+                }
+              },
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "weakness": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Darkness",
+                    "Dragon",
+                    "Fairy",
+                    "Fighting",
+                    "Fire",
+                    "Grass",
+                    "Lightning",
+                    "Psychic",
+                    "Water"
+                  ]
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "resistance": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Darkness",
+                    "Dragon",
+                    "Fairy",
+                    "Fighting",
+                    "Fire",
+                    "Grass",
+                    "Lightning",
+                    "Psychic",
+                    "Water"
+                  ]
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "retreat": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["Colorless", "3"]
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "variant": {
+            "type": "string",
+            "enum": ["Holo"]
+          },
+          "rule": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}
