@@ -19,6 +19,10 @@
       "url": "./data/mz/cards.schema.json"
     },
     {
+      "fileMatch": ["**/data/ash/cards.json"],
+      "url": "./data/ash/cards.schema.json"
+    },
+    {
       "fileMatch": ["data/illustrators.json"],
       "url": "./data/illustrators.schema.json"
     },
