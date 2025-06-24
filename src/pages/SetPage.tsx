@@ -1,12 +1,18 @@
 // src/pages/SetPage.tsx
-import React from "react";
-import { useParams } from "react-router-dom";
-import CardList from "../components/ListComponens/CardListComponent";
+import CardList from "@/components/ListComponens/CardListComponent";
+import { useCards } from "@/hooks/useCollection";
+import { getCardDetailPath } from "@/utils/RoutePathBuildUtils";
+import { useNavigate, useParams } from "react-router-dom";
 
-const SetPage: React.FC = () => {
-  const { setShortName } = useParams();
+const SetPage = () => {
+  const { seriesShortName, setShortName } = useParams();
+  const { data: collectionCards, error } = useCards(
+    seriesShortName ?? "",
+    setShortName ?? "",
+  );
+  const navigate = useNavigate();
 
-  if (!setShortName) {
+  if (!setShortName || error) {
     return <div className="container mx-auto p-4">Set not found</div>;
   }
 
@@ -56,7 +62,12 @@ const SetPage: React.FC = () => {
         </div>
       </div>
 
-      <CardList />
+      <CardList
+        collectionCards={collectionCards ?? []}
+        onClick={(card) => {
+          navigate(getCardDetailPath(card));
+        }}
+      />
     </div>
   );
 };

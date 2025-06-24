@@ -1,27 +1,19 @@
 // src/components/CardListComponent.tsx
-import { useNavigate, useParams } from "react-router-dom";
-import { useCards } from "../../hooks/useCollection";
-import { getCardDetailPath } from "../../utils/RoutePathBuildUtils";
+import { CollectionCard } from "@/types/CollectionCard";
+import React from "react";
 import CardsListTile from "../TileComponents/CardsListTile";
 import HoverTooltip from "../TileComponents/HoverTooltip";
 
-const CardList = () => {
-  const { seriesShortName, setShortName } = useParams();
-  const { data: collectionCards, error } = useCards(
-    seriesShortName ?? "",
-    setShortName ?? "",
-  );
-  const navigate = useNavigate();
+interface CardListProps {
+  collectionCards: CollectionCard[];
+  onClick: (card: CollectionCard) => void;
+}
 
-  if (error) return <p>Something went wrong...</p>;
-
+const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
   return (
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
-      {collectionCards?.map((card) => (
-        <CardsListTile
-          key={card.id}
-          onClick={() => navigate(getCardDetailPath(card))}
-        >
+      {collectionCards.map((card) => (
+        <CardsListTile key={card.id} onClick={() => onClick(card)}>
           <HoverTooltip
             content={
               <table className="w-full border-collapse text-sm">
