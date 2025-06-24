@@ -1,6 +1,6 @@
-import seriesList from "../../data/series.json";
-import setsList from "../../data/sets.json";
-import { SeriesAndSet } from "../types/MergedCollection";
+import { SeriesAndSet } from "@/types/MergedCollection";
+import seriesList from "data/series.json";
+import setsList from "data/sets.json";
 
 export const getJsonSeries = (): SeriesAndSet[] => {
   const result = seriesList

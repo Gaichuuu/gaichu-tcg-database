@@ -1,8 +1,8 @@
+import { CollectionSeries } from "@/types/CollectionSeries";
+import { CollectionSet } from "@/types/CollectionSet";
+import { SeriesAndSet } from "@/types/MergedCollection";
+import { database } from "config/FirebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
-import { database } from "../../config/FirebaseConfig";
-import { CollectionSeries } from "../types/CollectionSeries";
-import { CollectionSet } from "../types/CollectionSet";
-import { SeriesAndSet } from "../types/MergedCollection";
 
 export enum SeriesShortName {
   wm = "wm",
