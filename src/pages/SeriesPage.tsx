@@ -1,7 +1,7 @@
 // src/pages/SeriesPage.tsx
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import SetsList from "../components/ListComponens/SetListConponent";
+import SetsList from "../components/ListComponent/SetListConponent";
 import { useSets } from "../hooks/useCollection";
 import { getCardListPath } from "../utils/RoutePathBuildUtils";
 

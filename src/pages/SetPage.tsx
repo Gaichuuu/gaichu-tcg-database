@@ -1,5 +1,5 @@
 // src/pages/SetPage.tsx
-import CardList from "@/components/ListComponens/CardListComponent";
+import CardList from "@/components/ListComponent/CardListComponent";
 import { useSet } from "@/hooks/useCollection";
 import { getCardDetailPath } from "@/utils/RoutePathBuildUtils";
 import { useNavigate, useParams } from "react-router-dom";
