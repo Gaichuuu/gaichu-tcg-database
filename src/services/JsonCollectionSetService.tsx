@@ -20,6 +20,11 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
     logo: set.logo,
     name: set.name,
     sortBy: set.sortBy,
+    description: set.description,
+    set_images: set.set_images?.map((image: any) => ({
+      url: image.url,
+      label: image.label,
+    })),
   },
   cards: cardList
     .filter((card) => card.set_ids[0] === set.id)

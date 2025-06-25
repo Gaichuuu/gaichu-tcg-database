@@ -27,5 +27,10 @@ const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
       logo: set.logo,
       name: set.name,
       sortBy: set.sortBy,
+      description: set.description,
+      set_images: set.set_images?.map((image: any) => ({
+        url: image.url,
+        label: image.label,
+      })),
     })),
 });

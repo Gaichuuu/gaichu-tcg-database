@@ -6,7 +6,18 @@
     "short_name": "set1",
     "sortBy": 2,
     "name": "Set One (reprint)",
-    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
+    "description": "This reprint removes Pokémon trademarks from the packaging and official names of the Pokémon changed to parody names. The card back is also changed. However, Pokémon trademarks and official names still remain on many card attacks and descriptions.",
+    "set_images": [
+      {
+        "url": "/images/wm/pack.jpg",
+        "label": "Pack Art"
+      },
+      {
+        "url": "/images/wm/pack.jpg",
+        "label": "Card Back"
+      }
+    ]
   },
   {
     "id": "679fc82a-ac5d-46dc-8cb3-7b8f6227f237",
@@ -24,7 +35,14 @@
     "short_name": "set2",
     "sortBy": 3,
     "name": "Set Two",
-    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
+    "description": "This reprint removes Pokémon trademarks from the packaging and official names of the Pokémon changed to parody names. The card back is also changed. However, Pokémon trademarks and official names still remain on many card attacks and descriptions.",
+    "set_images": [
+      {
+        "url": "/images/wm/pack.jpg",
+        "label": "Pack Art"
+      }
+    ]
   },
   {
     "id": "cfcac0b5-738e-46de-9386-f3b42010c722",
@@ -33,6 +51,13 @@
     "short_name": "og",
     "sortBy": 1,
     "name": "Set One",
-    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
+    "description": "This reprint removes Pokémon trademarks from the packaging and official names of the Pokémon changed to parody names. The card back is also changed. However, Pokémon trademarks and official names still remain on many card attacks and descriptions.",
+    "set_images": [
+      {
+        "url": "/images/wm/pack.jpg",
+        "label": "Pack Art"
+      }
+    ]
   }
 ]

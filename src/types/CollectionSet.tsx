@@ -5,4 +5,9 @@ export interface CollectionSet {
   series_id: string;
   logo: string;
   name: string;
+  description?: string;
+  set_images?: Array<{
+    url: string;
+    label: string;
+  }>;
 }
