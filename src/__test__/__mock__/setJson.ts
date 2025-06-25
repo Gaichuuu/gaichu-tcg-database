@@ -16,6 +16,13 @@ export const setJsonMock: CollectionSet[] = [
     logo: "pkm-test_2.png",
     name: "test_2",
     sortBy: 2,
+    description: "test_2 description",
+    set_images: [
+      {
+        url: "https://example.com/test_2_image_1.png",
+        label: "test_2 image 1",
+      },
+    ],
   },
   {
     id: "30",
