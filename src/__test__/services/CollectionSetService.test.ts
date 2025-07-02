@@ -19,7 +19,6 @@ vi.mock("firebase/firestore", () => ({
 
 let fetchSets: (typeof import("@/services/CollectionSetService"))["fetchSets"];
 let getDocs: (typeof import("firebase/firestore"))["getDocs"];
-let collection: (typeof import("firebase/firestore"))["collection"];
 
 beforeEach(async () => {
   vi.clearAllMocks();
@@ -31,7 +30,6 @@ beforeEach(async () => {
   // import mocks & the functions for TS/runtime
   const fs = await import("firebase/firestore");
   getDocs = fs.getDocs;
-  collection = fs.collection;
 });
 
 describe("fetchSets", () => {
