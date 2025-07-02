@@ -16,6 +16,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
   set: {
     id: set.id,
     short_name: set.short_name,
+    series_short_name: set.series_short_name,
     series_id: set.series_id,
     logo: set.logo,
     name: set.name,
