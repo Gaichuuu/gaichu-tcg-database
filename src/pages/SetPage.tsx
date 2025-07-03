@@ -26,9 +26,9 @@ const SetPage = () => {
               className="flex flex-col items-center p-2 duration-200 hover:scale-110"
             >
               <img
-                src="https://gaichu.b-cdn.net/wm/set1/00.jpg"
+                src={img.url}
                 alt={img.label}
-                className="mb-1 block max-h-[100px] w-full rounded object-contain transition-transform duration-200"
+                className="border-secondaryBorder mb-1 block max-h-[100px] w-full rounded border-1 object-contain transition-transform duration-200"
               />
               <span className="text-primaryText w-full text-center font-mono text-xs">
                 {img.label}

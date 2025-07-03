@@ -7,14 +7,14 @@
     "sortBy": 2,
     "name": "Set One (reprint)",
     "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
-    "description": "This reprint removes Pokémon trademarks from the packaging and official names of the Pokémon changed to parody names. The card back is also changed. However, Pokémon trademarks and official names still remain on many card attacks and descriptions.",
+    "description": "The reprint removes Pokémon trademarks from the packaging and changes the official Pokémon names to parody ones. The card back is also changed. However, Pokémon trademarks and official names still remain on many attacks and descriptions.",
     "set_images": [
       {
-        "url": "/images/wm/pack.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
         "label": "Pack Art"
       },
       {
-        "url": "/images/wm/pack.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
         "label": "Card Back"
       }
     ]
@@ -36,11 +36,15 @@
     "sortBy": 3,
     "name": "Set Two",
     "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
-    "description": "This reprint removes Pokémon trademarks from the packaging and official names of the Pokémon changed to parody names. The card back is also changed. However, Pokémon trademarks and official names still remain on many card attacks and descriptions.",
+    "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
     "set_images": [
       {
-        "url": "/images/wm/pack.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
         "label": "Pack Art"
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+        "label": "Card Back"
       }
     ]
   },
@@ -52,12 +56,6 @@
     "sortBy": 1,
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
-    "description": "This reprint removes Pokémon trademarks from the packaging and official names of the Pokémon changed to parody names. The card back is also changed. However, Pokémon trademarks and official names still remain on many card attacks and descriptions.",
-    "set_images": [
-      {
-        "url": "/images/wm/pack.jpg",
-        "label": "Pack Art"
-      }
-    ]
+    "description": "The first print of Wrenny Moo. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed."
   }
 ]
