@@ -23,9 +23,15 @@ const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
     .map((set) => ({
       id: set.id,
       short_name: set.short_name,
+      series_short_name: set.series_short_name,
       series_id: set.series_id,
       logo: set.logo,
       name: set.name,
       sortBy: set.sortBy,
+      description: set.description,
+      set_images: set.set_images?.map((image: any) => ({
+        url: image.url,
+        label: image.label,
+      })),
     })),
 });

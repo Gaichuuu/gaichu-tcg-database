@@ -14,7 +14,7 @@ import { getJsonSeries } from "@/services/JsonCollectionSeriesService.tsx";
 
 describe("test for getJsonSeries", () => {
   const series = getJsonSeries();
-
+  expect(series.length).toBeGreaterThan(1);
   it("should sort Series by their sortBy value in ascending order", () => {
     // Confirm each series is sorted correctly by sortBy
     expect(

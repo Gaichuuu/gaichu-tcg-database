@@ -1,8 +1,8 @@
-import { SeriesShortName } from "@/services/CollectionSeriesService";
-import { CollectionCard } from "@/types/CollectionCard";
-import mzCardList from "data/mz/cards.json";
-import wmCardList from "data/wm/cards.json";
 import { z } from "zod";
+import mzCardList from "../../data/mz/cards.json";
+import wmCardList from "../../data/wm/cards.json";
+import { CollectionCard } from "../types/CollectionCard";
+import { SeriesShortName } from "./CollectionSeriesService";
 
 export const SerieCardList: Record<SeriesShortName, any> = {
   [SeriesShortName.wm]: wmCardList,
@@ -72,13 +72,15 @@ export const getAdjacentCards = (
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
   switch (seriesShortName) {
     case SeriesShortName.wm:
-      return SerieCardList[SeriesShortName.wm].map((card: any) =>
+      const cards = SerieCardList[SeriesShortName.wm].map((card: any) =>
         CardSchema.parse(card),
-      );
+      ) as CollectionCard[];
+      return cards.sort((a, b) => a.sortBy - b.sortBy);
     case SeriesShortName.mz:
       return SerieCardList[SeriesShortName.mz].map((card: any) =>
         CardSchema.parse(card),
-      );
+      ) as CollectionCard[];
+      return cards.sort((a, b) => a.sortBy - b.sortBy);
 
     default:
       return [];

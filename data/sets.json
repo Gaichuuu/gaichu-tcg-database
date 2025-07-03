@@ -6,7 +6,18 @@
     "short_name": "set1",
     "sortBy": 2,
     "name": "Set One (reprint)",
-    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
+    "description": "The reprint removes Pokémon trademarks from the packaging and changes the official Pokémon names to parody ones. The card back is also changed. However, Pokémon trademarks and official names still remain on many attacks and descriptions.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
+        "label": "Pack Art"
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+        "label": "Card Back"
+      }
+    ]
   },
   {
     "id": "679fc82a-ac5d-46dc-8cb3-7b8f6227f237",
@@ -24,7 +35,18 @@
     "short_name": "set2",
     "sortBy": 3,
     "name": "Set Two",
-    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
+    "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
+        "label": "Pack Art"
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+        "label": "Card Back"
+      }
+    ]
   },
   {
     "id": "cfcac0b5-738e-46de-9386-f3b42010c722",
@@ -33,6 +55,7 @@
     "short_name": "og",
     "sortBy": 1,
     "name": "Set One",
-    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
+    "description": "The first print of Wrenny Moo. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed."
   }
 ]

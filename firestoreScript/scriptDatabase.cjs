@@ -9,12 +9,12 @@ dotenv.config({
   path: path.resolve(__dirname, `../.env.${mode}`),
 });
 const serviceAccountPath =
-  process.env.VITE_USE_STAGING_DATA == true
+  process.env.NODE_ENV == "staging"
     ? path.join(__dirname, "../config/stageServiceAccountKey.json")
     : path.join(__dirname, "../config/serviceAccountKey.json");
 
 const serviceAccount = require(serviceAccountPath);
-
+console.log(`${serviceAccountPath} as service account key.`);
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
