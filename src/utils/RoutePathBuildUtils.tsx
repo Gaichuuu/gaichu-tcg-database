@@ -7,7 +7,7 @@ export const AboutPagePath = "/about";
 export const SeriesListPath = "/cards";
 export const SetListPath = SeriesListPath + "/:seriesShortName";
 export const CardListPath = SetListPath + "/sets/:setShortName";
-export const CardDetailPath = CardListPath + "/card/:cardName";
+export const CardDetailPath = CardListPath + "/card/:sortByAndCardName";
 
 export function getSetListPath(seriesShortName: string): string {
   const path = generatePath(SetListPath, {
@@ -33,10 +33,21 @@ export function getCardDetailPath(card: CollectionCard): string {
   const path = generatePath(CardDetailPath, {
     seriesShortName: encodeURIComponent(card.series_short_name),
     setShortName: encodeURIComponent(card.set_short_name),
-    cardName: encodeURIComponent(card.name),
+    sortByAndCardName: encodeURIComponent(`${card.sortBy}_${card.name}`),
   });
-  const params = new URLSearchParams({
-    variant: encodeURIComponent(card.variant),
-  });
-  return `${path}?${params.toString()}`;
+
+  return path;
+}
+
+export function parseSortAndNameRegex(input: string): {
+  sortBy: number;
+  cardName: string;
+} {
+  const m = input.match(/^(\d+(?:\.\d+)?)_(.+)$/);
+  if (!m) {
+    throw new Error(`Invalid format: ${input}`);
+  }
+  const [, sortByStr, cardName] = m;
+  const sortBy = parseFloat(sortByStr);
+  return { sortBy, cardName };
 }

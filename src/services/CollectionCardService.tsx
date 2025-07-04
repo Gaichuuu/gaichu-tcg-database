@@ -33,16 +33,16 @@ export const fetchCards = async (
 export const fetchCardDetail = async (
   seriesShortName: string,
   setShortName: string,
+  sortBy: number,
   cardName: string,
-  variant: string,
 ): Promise<CollectionCard | null> => {
   const cardsReference = collection(database, collectionName);
   const cardsQuery = query(
     cardsReference,
     where("series_short_name", "==", seriesShortName),
     where("set_short_name", "==", setShortName),
+    where("sortBy", "==", sortBy),
     where("name", "==", cardName),
-    where("variant", "==", variant),
     limit(1),
   );
 

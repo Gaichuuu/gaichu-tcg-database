@@ -22,8 +22,7 @@ import {
 export interface CollectionParams extends Record<string, string | undefined> {
   seriesShortName?: string;
   setShortName?: string;
-  cardName?: string;
-  variant?: string;
+  sortByAndCardName?: string;
 }
 
 const App: React.FC = () => {
