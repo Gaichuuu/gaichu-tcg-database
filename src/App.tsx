@@ -18,6 +18,8 @@ import {
   SeriesListPath,
   SetListPath,
 } from "./utils/RoutePathBuildUtils";
+import CardBackMock from "./pages/CardBackMock";
+import PackArtMock from "./pages/PackArtMock";
 
 export interface CollectionParams extends Record<string, string | undefined> {
   seriesShortName?: string;
@@ -40,6 +42,8 @@ const App: React.FC = () => {
               <Route path={CardListPath} element={<SetPage />} />
               <Route path={CardDetailPath} element={<CardDetailPage />} />
               <Route path={AboutPagePath} element={<AboutPage />} />
+              <Route path="/mock/card-back" element={<CardBackMock />} />
+              <Route path="/mock/pack-art" element={<PackArtMock />} />
             </Routes>
           </Layout>
         </main>
