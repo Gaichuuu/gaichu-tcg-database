@@ -1,5 +1,9 @@
-import { parseSortAndNameRegex } from "@/utils/RoutePathBuildUtils";
-import { describe, expect, it } from "vitest";
+import {
+  CardDetailPath,
+  getCardDetailPath,
+  parseSortAndNameRegex,
+} from "@/utils/RoutePathBuildUtils";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 describe("parseSortAndNameRegex", () => {
   it("parses a decimal sortBy and simple name", () => {
@@ -35,6 +39,54 @@ describe("parseSortAndNameRegex", () => {
   it("throws when name part is empty", () => {
     expect(() => parseSortAndNameRegex("12_")).toThrowError(
       /Invalid format: 12_/,
+    );
+  });
+});
+
+vi.mock("react-router-dom", async () => {
+  // grab the real module so we don’t break other exports
+  const actual =
+    await vi.importActual<typeof import("react-router-dom")>(
+      "react-router-dom",
+    );
+  return {
+    ...actual,
+    // replace generatePath with a vi.fn
+    generatePath: vi.fn(
+      (pattern: string, params: Record<string, string>) =>
+        `${pattern}/${params.seriesShortName}/${params.setShortName}/${params.sortByAndCardName}`,
+    ),
+  };
+});
+
+import { generatePath } from "react-router-dom";
+
+describe("getCardDetailPath", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it("encodes params and calls generatePath correctly", () => {
+    const card = {
+      series_short_name: "My Series test",
+      set_short_name: "Set/One",
+      sortBy: 10,
+      name: "Card Name",
+    } as any;
+
+    const expectedParams = {
+      seriesShortName: encodeURIComponent(card.series_short_name),
+      setShortName: encodeURIComponent(card.set_short_name),
+      sortByAndCardName: encodeURIComponent(`${card.sortBy}_${card.name}`),
+    };
+
+    const path = getCardDetailPath(card);
+
+    expect(generatePath).toHaveBeenCalledOnce();
+    expect(generatePath).toHaveBeenCalledWith(CardDetailPath, expectedParams);
+
+    expect(path).toBe(
+      `${CardDetailPath}/${expectedParams.seriesShortName}/${expectedParams.setShortName}/${expectedParams.sortByAndCardName}`,
     );
   });
 });
