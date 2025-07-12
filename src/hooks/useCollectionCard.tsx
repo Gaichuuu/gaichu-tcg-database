@@ -14,16 +14,16 @@ import { CollectionCard } from "../types/CollectionCard";
 export const useCardDetail = (
   seriesShortName: string,
   setShortName: string,
+  sortBy: number,
   cardName: string,
-  variant: string,
 ): AppResult<CollectionCard | null, Error> => {
   const queryResult = useQuery<CollectionCard | null>({
     queryKey: [
-      `CardDetail_${seriesShortName}_${setShortName}_${cardName}_${variant}`,
+      `CardDetail_${seriesShortName}_${setShortName}_${sortBy}_${cardName}`,
     ],
     enabled: !!seriesShortName && !!setShortName && !!cardName,
     queryFn: () =>
-      fetchCardDetail(seriesShortName, setShortName, cardName, variant),
+      fetchCardDetail(seriesShortName, setShortName, sortBy, cardName),
     staleTime: 1000 * 60 * 5,
   });
 
@@ -31,8 +31,8 @@ export const useCardDetail = (
     const card = getJsonCardDetail(
       seriesShortName,
       setShortName,
+      sortBy,
       cardName,
-      variant,
     );
 
     return {
@@ -59,15 +59,15 @@ export interface UseCurrentAndAdjacentCardsResult {
 export const useCurrentAndAdjacentCards = (
   seriesShortName: string,
   setShortName: string,
+  sortBy: number,
   cardName: string,
-  variant: string,
 ): UseCurrentAndAdjacentCardsResult => {
   // current card
   const {
     data: card,
     isLoading,
     error,
-  } = useCardDetail(seriesShortName, setShortName, cardName, variant);
+  } = useCardDetail(seriesShortName, setShortName, sortBy, cardName);
 
   // adjacent cards
   const queryResult = useQuery<{

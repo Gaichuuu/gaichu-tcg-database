@@ -1,12 +1,8 @@
 // src/components/Breadcrumbs.tsx
+import { getBreadcrumbItems } from "@/utils/RoutePathBuildUtils";
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import { FaBug } from "react-icons/fa";
-
-interface BreadcrumbItem {
-  label: string;
-  originalIndex: number;
-}
+import { Link, useLocation } from "react-router-dom";
 
 const Breadcrumbs: React.FC = () => {
   const location = useLocation();
@@ -15,17 +11,7 @@ const Breadcrumbs: React.FC = () => {
     return null;
   }
 
-  const originalSegments = location.pathname.split("/").filter(Boolean);
-
-  const breadcrumbItems: BreadcrumbItem[] = originalSegments
-    .map((segment, index) => {
-      if (segment === "sets" || segment === "card") {
-        return null;
-      }
-      const label = decodeURIComponent(segment);
-      return { label, originalIndex: index };
-    })
-    .filter((item): item is BreadcrumbItem => item !== null);
+  const breadcrumbItems = getBreadcrumbItems(location.pathname);
 
   return (
     <nav className="my-2 text-sm">
@@ -35,19 +21,15 @@ const Breadcrumbs: React.FC = () => {
             <FaBug size={16} className="mb-1 inline-block" />
           </Link>
         </li>
-        {breadcrumbItems.map((item, idx) => {
-          const isLast = idx === breadcrumbItems.length - 1;
-
-          const routeTo =
-            "/" + originalSegments.slice(0, item.originalIndex + 1).join("/");
+        {breadcrumbItems.map((item) => {
           return (
-            <React.Fragment key={routeTo}>
+            <React.Fragment key={item.label}>
               <span className="mx-2">/</span>
               <li>
-                {isLast ? (
-                  <span>{item.label}</span>
+                {item.routeTo ? (
+                  <Link to={item.routeTo!}>{item.label}</Link>
                 ) : (
-                  <Link to={routeTo}>{item.label}</Link>
+                  <span>{item.label}</span>
                 )}
               </li>
             </React.Fragment>

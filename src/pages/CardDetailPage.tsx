@@ -1,27 +1,29 @@
 // src/pages/CardDetailPage.tsx
 import DOMPurify from "dompurify";
 import React from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { CollectionParams } from "../App";
 import CardDetailPagingButton, {
   PagingType,
 } from "../components/ButtonComponents/CardDetailPagingButton";
 import { useCurrentAndAdjacentCards } from "../hooks/useCollectionCard";
-import { getCardDetailPath } from "../utils/RoutePathBuildUtils";
+import {
+  getCardDetailPath,
+  parseSortAndNameRegex,
+} from "../utils/RoutePathBuildUtils";
 
 const CardDetailPage: React.FC = () => {
-  const { seriesShortName, setShortName, cardName } =
+  const { seriesShortName, setShortName, sortByAndCardName } =
     useParams<CollectionParams>();
   const navigate = useNavigate();
 
-  const [searchParams] = useSearchParams();
-
+  const { sortBy, cardName } = parseSortAndNameRegex(sortByAndCardName ?? "");
   const { card, previousCard, nextCard, isLoading, error } =
     useCurrentAndAdjacentCards(
       seriesShortName ?? "",
       setShortName ?? "",
+      sortBy ?? "",
       cardName ?? "",
-      decodeURIComponent(searchParams.get("variant") ?? ""),
     );
 
   if (error && isLoading === false)

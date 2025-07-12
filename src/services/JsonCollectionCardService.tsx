@@ -24,8 +24,8 @@ export const getJsonCardList = (
 export const getJsonCardDetail = (
   seriesShortName: string,
   setShortName: string,
+  sortBy: number,
   cardName: string,
-  variant: string,
 ): CollectionCard | null => {
   const cardList = jsonCardList(seriesShortName);
   const card = cardList
@@ -33,8 +33,8 @@ export const getJsonCardDetail = (
       (card) =>
         card.set_short_name === setShortName &&
         card.series_short_name === seriesShortName &&
-        card.name === cardName &&
-        card.variant === variant,
+        card.sortBy === sortBy &&
+        card.name === cardName,
     )
     .at(-1);
   if (!card) return null;
