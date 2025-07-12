@@ -5,6 +5,45 @@ import {
 } from "@/utils/RoutePathBuildUtils";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import { getBreadcrumbItems } from "@/utils/RoutePathBuildUtils";
+
+describe("getBreadcrumbItems", () => {
+  it("returns breadcrumbs for a simple set path", () => {
+    const items = getBreadcrumbItems("/cards/mz/sets/promo");
+    expect(items).toEqual([
+      { label: "cards", routeTo: "/cards" },
+      { label: "mz", routeTo: "/cards/mz" },
+      { label: "promo", routeTo: "/cards/mz/sets/promo" },
+    ]);
+  });
+
+  it('includes decoded segments and filters out "sets" & "card"', () => {
+    const path = "/cards/my%20series/sets/my%20set/card/1.5_My%20Card";
+    const items = getBreadcrumbItems(path);
+    expect(items).toEqual([
+      { label: "cards", routeTo: "/cards" },
+      { label: "my series", routeTo: "/cards/my%20series" },
+      { label: "my set", routeTo: "/cards/my%20series/sets/my%20set" },
+      { label: "My Card", routeTo: undefined },
+    ]);
+  });
+
+  it("handles trailing slash without producing empty items", () => {
+    const items = getBreadcrumbItems("/cards/mz/sets/promo/");
+    expect(items).toEqual([
+      { label: "cards", routeTo: "/cards" },
+      { label: "mz", routeTo: "/cards/mz" },
+      { label: "promo", routeTo: "/cards/mz/sets/promo" },
+    ]);
+  });
+
+  it("throws if the last segment is not in the expected format", () => {
+    expect(() =>
+      getBreadcrumbItems("/cards/mz/sets/promo/card/invalidFormat"),
+    ).toThrowError(/Invalid format: invalidFormat/);
+  });
+});
+
 describe("parseSortAndNameRegex", () => {
   it("parses a decimal sortBy and simple name", () => {
     const { sortBy, cardName } = parseSortAndNameRegex("99.1_testname");
