@@ -38,6 +38,13 @@ export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
           // routeTo: No need to link to this segment
           return { label: cardName, routeTo: undefined };
         }
+
+        if (originalSegments.length - 1 === index) {
+          // If this is the last segment, we don't create a routeTo
+          return { label: decodeURIComponent(segment), routeTo: undefined };
+        }
+
+        // For other segments, create a label and routeTo
         const label = decodeURIComponent(segment);
         const routeTo = "/" + originalSegments.slice(0, index + 1).join("/");
         return { label, routeTo: routeTo };

@@ -13,7 +13,7 @@ describe("getBreadcrumbItems", () => {
     expect(items).toEqual([
       { label: "cards", routeTo: "/cards" },
       { label: "mz", routeTo: "/cards/mz" },
-      { label: "promo", routeTo: "/cards/mz/sets/promo" },
+      { label: "promo", routeTo: undefined },
     ]);
   });
 
@@ -33,7 +33,7 @@ describe("getBreadcrumbItems", () => {
     expect(items).toEqual([
       { label: "cards", routeTo: "/cards" },
       { label: "mz", routeTo: "/cards/mz" },
-      { label: "promo", routeTo: "/cards/mz/sets/promo" },
+      { label: "promo", routeTo: undefined },
     ]);
   });
 
