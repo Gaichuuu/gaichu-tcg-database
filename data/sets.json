@@ -11,11 +11,26 @@
     "set_images": [
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
-        "label": "Pack Art"
+        "pathType": "pack-art",
+        "frontDescription": "Mojiri Card Trading Cards. A rare holographic card has been released. If no one buys this card, I'll be in big trouble. I borrowed money from some shady people to make this card. I'm scared.",
+        "backDescription": "Each of these? Amazing. 7 Trading cards.",
+        "note": "Many things were changed on this pack art.",
+        "packs": [
+          {
+            "label": "Front of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
+          },
+          {
+            "label": "Back of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+          }
+        ]
       },
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-        "label": "Card Back"
+        "pathType": "card-back",
+        "text": "Parody",
+        "note": "The illustration on the back was changed."
       }
     ]
   },
@@ -39,12 +54,27 @@
     "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
     "set_images": [
       {
-        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
-        "label": "Pack Art"
+        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
+        "pathType": "pack-art",
+        "frontDescription": "set2 frontDescription",
+        "backDescription": "set2 backDescription",
+        "note": "set2 note",
+        "packs": [
+          {
+            "label": "Front of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
+          },
+          {
+            "label": "Back of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+          }
+        ]
       },
       {
-        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
-        "label": "Card Back"
+        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+        "pathType": "card-back",
+        "text": "set2 text",
+        "note": "set2 note"
       }
     ]
   },
