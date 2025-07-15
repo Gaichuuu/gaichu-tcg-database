@@ -7,7 +7,9 @@ export const AboutPagePath = "/about";
 export const SeriesListPath = "/cards";
 export const SetListPath = SeriesListPath + "/:seriesShortName";
 export const CardListPath = SetListPath + "/sets/:setShortName";
-export const CardDetailPath = CardListPath + "/card/:sortByAndCardName";
+export const CardDetailPath = CardListPath + "/card/:sortByAndCardName"; // TODO - sao: direct access to cardListPath if sortByAndCardName is not provided
+export const PackArtPath = CardListPath + "/pack-art";
+export const CardBackPath = CardListPath + "/card-back";
 
 export enum PathSegments {
   Cards = 0,
@@ -24,6 +26,23 @@ export interface BreadcrumbItem {
   routeTo?: string | undefined;
 }
 
+export enum SetImagePathType {
+  PackArt = "pack-art",
+  CardBack = "card-back",
+}
+export const getTitleSetImagePathType = (
+  pathType: SetImagePathType | undefined,
+): string => {
+  switch (pathType) {
+    case SetImagePathType.PackArt:
+      return "Pack Art";
+    case SetImagePathType.CardBack:
+      return "Card Back";
+    case undefined:
+    default:
+      return "";
+  }
+};
 export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
   const originalSegments = locationPathname.split("/").filter(Boolean);
   return (
@@ -74,6 +93,31 @@ export function getCardListPath(
   return path;
 }
 
+export function getArtPath(
+  set: CollectionSet | undefined,
+  pathType: SetImagePathType | undefined,
+): string {
+  if (!set) {
+    return "";
+  }
+  switch (pathType) {
+    case SetImagePathType.PackArt:
+      const path = generatePath(PackArtPath, {
+        seriesShortName: encodeURIComponent(set.series_short_name),
+        setShortName: encodeURIComponent(set.short_name),
+      });
+      return path;
+    case SetImagePathType.CardBack:
+      const cardBackPath = generatePath(CardBackPath, {
+        seriesShortName: encodeURIComponent(set.series_short_name),
+        setShortName: encodeURIComponent(set.short_name),
+      });
+      return cardBackPath;
+    case undefined:
+    default:
+      return "";
+  }
+}
 export function getCardDetailPath(card: CollectionCard): string {
   const path = generatePath(CardDetailPath, {
     seriesShortName: encodeURIComponent(card.series_short_name),
