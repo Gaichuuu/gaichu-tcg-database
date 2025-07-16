@@ -17,6 +17,8 @@ export enum PathSegments {
   Sets = 2,
   SetName = 3,
   Card = 4,
+  SetImagePath = 4, // This is used for PackArt or CardBack
+  // Example: /cards/wm/sets/set1/pack-art or /cards/wm/sets/set1/card-back
   SortByAndCardName = 5,
   // Example: /cards/mz/sets/promo/card/99.3_Sunlight
 }
@@ -45,28 +47,48 @@ export const getTitleSetImagePathType = (
 };
 export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
   const originalSegments = locationPathname.split("/").filter(Boolean);
+
   return (
     originalSegments
       .map((segment, index) => {
-        if (index === PathSegments.SortByAndCardName) {
+        // Handle for card name segment
+        if (
+          originalSegments[PathSegments.Card] == "card" &&
+          index === PathSegments.SortByAndCardName
+        ) {
           const { cardName } = parseSortAndNameRegex(
             decodeURIComponent(segment),
           );
-          // Handle for card name segment.
           // label: Use the card name directly without sortBy number
-          // routeTo: No need to link to this segment
+          // No routeTo
           return { label: cardName, routeTo: undefined };
         }
 
+        // Handle for set image path segment (Pack Art or Card Back)
+        if (
+          getTitleSetImagePathType(
+            decodeURIComponent(segment) as SetImagePathType,
+          ) &&
+          index === PathSegments.SetImagePath
+        ) {
+          // label: "Pack Art" or "Card Back"
+          // No ruteTo
+          return {
+            label: getTitleSetImagePathType(
+              decodeURIComponent(segment) as SetImagePathType,
+            ),
+            routeTo: undefined,
+          };
+        }
         if (originalSegments.length - 1 === index) {
           // If this is the last segment, we don't create a routeTo
           return { label: decodeURIComponent(segment), routeTo: undefined };
         }
 
-        // For other segments, create a label and routeTo
-        const label = decodeURIComponent(segment);
+        // Handle for other segments
         const routeTo = "/" + originalSegments.slice(0, index + 1).join("/");
-        return { label, routeTo: routeTo };
+        // label and routeTo
+        return { label: decodeURIComponent(segment), routeTo: routeTo };
       })
       // Filter out unwanted segments "sets" and "card"
       .filter((item) => item.label !== "sets" && item.label !== "card")
