@@ -13,7 +13,7 @@ describe("getBreadcrumbItems", () => {
     expect(items).toEqual([
       { label: "cards", routeTo: "/cards" },
       { label: "mz", routeTo: "/cards/mz" },
-      { label: "promo", routeTo: "/cards/mz/sets/promo" },
+      { label: "promo", routeTo: undefined },
     ]);
   });
 
@@ -33,7 +33,25 @@ describe("getBreadcrumbItems", () => {
     expect(items).toEqual([
       { label: "cards", routeTo: "/cards" },
       { label: "mz", routeTo: "/cards/mz" },
+      { label: "promo", routeTo: undefined },
+    ]);
+  });
+
+  it("handle Pack Art or Card Back page", () => {
+    const packItems = getBreadcrumbItems("/cards/mz/sets/promo/pack-art");
+    expect(packItems).toEqual([
+      { label: "cards", routeTo: "/cards" },
+      { label: "mz", routeTo: "/cards/mz" },
       { label: "promo", routeTo: "/cards/mz/sets/promo" },
+      { label: "Pack Art", routeTo: undefined },
+    ]);
+
+    const backItems = getBreadcrumbItems("/cards/mz/sets/promo/card-back");
+    expect(backItems).toEqual([
+      { label: "cards", routeTo: "/cards" },
+      { label: "mz", routeTo: "/cards/mz" },
+      { label: "promo", routeTo: "/cards/mz/sets/promo" },
+      { label: "Card Back", routeTo: undefined },
     ]);
   });
 

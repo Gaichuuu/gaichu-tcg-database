@@ -22,7 +22,13 @@ export const setJsonMock: CollectionSet[] = [
     set_images: [
       {
         url: "https://example.com/test_2_image_1.png",
-        label: "test_2 image 1",
+        pathType: "pack-art",
+        packs: [
+          {
+            url: "https://example.com/test_2_pack_1.png",
+            label: "Pack 1",
+          },
+        ],
       },
     ],
   },
