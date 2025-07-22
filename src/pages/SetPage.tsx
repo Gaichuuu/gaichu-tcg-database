@@ -28,7 +28,7 @@ const SetPage = () => {
           {setAndCard?.set.set_images?.map((img) => (
             <div
               key={img.url}
-              className="flex flex-col items-center p-2 duration-200 hover:scale-110"
+              className="flex cursor-pointer flex-col items-center p-2 duration-200 hover:scale-110"
               onClick={() => {
                 navigate(
                   getArtPath(setAndCard?.set, img.pathType as SetImagePathType),
