@@ -12,8 +12,8 @@
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
         "pathType": "pack-art",
-        "frontDescription": "Mojiri Card Trading Cards. A rare holographic card has been released. If no one buys this card, I'll be in big trouble. I borrowed money from some shady people to make this card. I'm scared.",
-        "backDescription": "Each of these? Amazing. 7 Trading cards.",
+        "frontDescription": "⭐1\nMojiri Card\nTrading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew)\nWonderful! (Chansey)\nCute (Cubone)\nHE'S A GREY BOY (seal of approval)\n7 TRADING CARDS\nWrenny Moo (logo)",
+        "backDescription": "If you collect all 50 cards, you and your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girls. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7\n742818060342 (barcode)\nWrenny Moo WM 06036\nHE'S A GREY BOY (seal of approval)\nWrenny Moo (logo)\nWrenny Moo's Cost (wizard)",
         "note": "Many things were changed on this pack art.",
         "packs": [
           {
@@ -29,8 +29,8 @@
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
         "pathType": "card-back",
-        "text": "Parody",
-        "note": "The illustration on the back was changed."
+        "text": "Parody Parody",
+        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
     ]
   },
@@ -71,10 +71,10 @@
         ]
       },
       {
-        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
         "pathType": "card-back",
-        "text": "set2 text",
-        "note": "set2 note"
+        "text": "Parody Parody",
+        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
     ]
   },
