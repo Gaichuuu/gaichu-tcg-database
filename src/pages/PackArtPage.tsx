@@ -19,6 +19,7 @@ const PackArtPage: React.FC = () => {
   const pack = setAndCard?.set.set_images?.find(
     (img) => img.pathType === SetImagePathType.PackArt,
   );
+
   const packArts = pack?.packs;
 
   if (setError || !pack) return <p>Not found.</p>;
@@ -62,14 +63,18 @@ const PackArtPage: React.FC = () => {
             <tbody>
               {pack?.frontDescription && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Front</th>
-                  <td className="py-2">{pack!.frontDescription}</td>
+                  <th className="py-2 pr-4 text-left">Front Text</th>
+                  <td className="py-2" style={{ whiteSpace: "pre-wrap" }}>
+                    {pack?.frontDescription}
+                  </td>
                 </tr>
               )}
-              {pack?.frontDescription && (
+              {pack?.backDescription && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Back</th>
-                  <td className="py-2">{pack!.backDescription}</td>
+                  <th className="py-2 pr-4 text-left">Back Text</th>
+                  <td className="py-2" style={{ whiteSpace: "pre-wrap" }}>
+                    {pack?.backDescription}
+                  </td>
                 </tr>
               )}
               {pack?.note && (

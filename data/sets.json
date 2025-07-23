@@ -12,9 +12,9 @@
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
         "pathType": "pack-art",
-        "frontDescription": "Mojiri Card Trading Cards. A rare holographic card has been released. If no one buys this card, I'll be in big trouble. I borrowed money from some shady people to make this card. I'm scared.",
-        "backDescription": "Each of these? Amazing. 7 Trading cards.",
-        "note": "Many things were changed on this pack art.",
+        "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+        "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "note": "",
         "packs": [
           {
             "label": "Front of Pack",
@@ -22,15 +22,15 @@
           },
           {
             "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+            "url": "https://gaichu.b-cdn.net/wm/set1/pack01-back.jpg"
           }
         ]
       },
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
         "pathType": "card-back",
-        "text": "Parody",
-        "note": "The illustration on the back was changed."
+        "text": "Parody Parody",
+        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
     ]
   },
@@ -54,27 +54,27 @@
     "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
     "set_images": [
       {
-        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
         "pathType": "pack-art",
-        "frontDescription": "set2 frontDescription",
-        "backDescription": "set2 backDescription",
-        "note": "set2 note",
+        "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+        "backDescription": "Wrenny Moo's first card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "note": "",
         "packs": [
           {
-            "label": "Front of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
+            "label": "Test",
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
           },
           {
             "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01-back.jpg"
           }
         ]
       },
       {
-        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
         "pathType": "card-back",
-        "text": "set2 text",
-        "note": "set2 note"
+        "text": "Parody Parody",
+        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
     ]
   },
