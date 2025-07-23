@@ -52,6 +52,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       variant: card.variant,
       hp: card.hp,
       description: card.description,
+      note: card.note,
       illustrators: [...card.illustrators],
       attacks: card.attacks?.map((attack: any) => ({
         name: attack.name,
