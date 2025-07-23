@@ -12,9 +12,9 @@
       {
         "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
         "pathType": "pack-art",
-        "frontDescription": "⭐1\nMojiri Card\nTrading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew)\nWonderful! (Chansey)\nCute (Cubone)\nHE'S A GREY BOY (seal of approval)\n7 TRADING CARDS\nWrenny Moo (logo)",
-        "backDescription": "If you collect all 50 cards, you and your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girls. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7\n742818060342 (barcode)\nWrenny Moo WM 06036\nHE'S A GREY BOY (seal of approval)\nWrenny Moo (logo)\nWrenny Moo's Cost (wizard)",
-        "note": "Many things were changed on this pack art.",
+        "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+        "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "note": "",
         "packs": [
           {
             "label": "Front of Pack",
@@ -22,7 +22,7 @@
           },
           {
             "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+            "url": "https://gaichu.b-cdn.net/wm/set1/pack01-back.jpg"
           }
         ]
       },
@@ -54,19 +54,19 @@
     "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
     "set_images": [
       {
-        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
+        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
         "pathType": "pack-art",
-        "frontDescription": "set2 frontDescription",
-        "backDescription": "set2 backDescription",
-        "note": "set2 note",
+        "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+        "backDescription": "Wrenny Moo's first card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "note": "",
         "packs": [
           {
-            "label": "Front of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
+            "label": "Test",
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
           },
           {
             "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01-back.jpg"
           }
         ]
       },

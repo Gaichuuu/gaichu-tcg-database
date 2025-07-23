@@ -63,15 +63,15 @@ const PackArtPage: React.FC = () => {
             <tbody>
               {pack?.frontDescription && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Front</th>
+                  <th className="py-2 pr-4 text-left">Front Text</th>
                   <td className="py-2" style={{ whiteSpace: "pre-wrap" }}>
                     {pack?.frontDescription}
                   </td>
                 </tr>
               )}
-              {pack?.frontDescription && (
+              {pack?.backDescription && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Back</th>
+                  <th className="py-2 pr-4 text-left">Back Text</th>
                   <td className="py-2" style={{ whiteSpace: "pre-wrap" }}>
                     {pack?.backDescription}
                   </td>
