@@ -13,7 +13,10 @@ const Footer: React.FC = () => {
         <div className="mt-2 flex items-center space-x-4 md:mt-0">
           <Link to="/about">About</Link>
 
-          <a href="https://github.com/CamelJR/gaichu" target="_blank">
+          <a
+            href="https://github.com/Gaichuuu/gaichu-tcg-database"
+            target="_blank"
+          >
             <FaGithub size={20} />
           </a>
           <a href="https://www.youtube.com/@gaichuuu" target="_blank">
