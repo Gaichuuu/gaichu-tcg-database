@@ -41,8 +41,6 @@ Run the development build. This uses the local JSON files under ./data for the d
 npm run dev
 ```
 
-  <br/>
-
 ---
 
 ### Contributing
@@ -54,7 +52,6 @@ There are many ways to get involved~
 - Make improvements to the layout and UI
 - Create a [ticket](https://github.com/Gaichuuu/gaichu-tcg-database/issues) for any suggestions or issues
 - Chat with us on [Discord](https://discord.gg/gTW9brGkQw)
-  <br/>
 
 ---
 
@@ -66,7 +63,6 @@ Feel free to use the same apps and plugins as us~
 - Settings for VS Code can by found under ./.vscode/settings.json
 - Prettier code formatter (VS Code plugin)
 - Tailwind CSS IntelliSense (VS Code plugin)
-  <br/>
 
 ---
 
