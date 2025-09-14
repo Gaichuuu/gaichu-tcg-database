@@ -6,7 +6,33 @@
     "short_name": "set1",
     "sortBy": 2,
     "name": "Set One (reprint)",
-    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
+    "description": "The reprint removes Pokémon trademarks from the packaging and changes the official Pokémon names to parody ones. The card back is also changed. However, Pokémon trademarks and official names still remain on many attacks and descriptions.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
+        "pathType": "pack-art",
+        "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+        "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "note": "",
+        "packs": [
+          {
+            "label": "Front of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
+          },
+          {
+            "label": "Back of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set1/pack01-back.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+        "pathType": "card-back",
+        "text": "Parody Parody",
+        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
+      }
+    ]
   },
   {
     "id": "679fc82a-ac5d-46dc-8cb3-7b8f6227f237",
@@ -24,7 +50,33 @@
     "short_name": "set2",
     "sortBy": 3,
     "name": "Set Two",
-    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
+    "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
+        "pathType": "pack-art",
+        "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+        "backDescription": "Wrenny Moo's second card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "note": "",
+        "packs": [
+          {
+            "label": "Front of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+          },
+          {
+            "label": "Back of Pack",
+            "url": "https://gaichu.b-cdn.net/wm/set2/pack01-back.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+        "pathType": "card-back",
+        "text": "Parody Parody",
+        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
+      }
+    ]
   },
   {
     "id": "cfcac0b5-738e-46de-9386-f3b42010c722",
@@ -33,15 +85,7 @@
     "short_name": "og",
     "sortBy": 1,
     "name": "Set One",
-    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg"
-  },
-  {
-    "id": "5444924f-490b-465f-8364-66b4e34da7c8",
-    "series_short_name": "ash",
-    "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
-    "short_name": "gen1",
-    "sortBy": 1,
-    "name": "Generation One",
-    "logo": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+    "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
+    "description": "The first print of Wrenny Moo. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed."
   }
 ]

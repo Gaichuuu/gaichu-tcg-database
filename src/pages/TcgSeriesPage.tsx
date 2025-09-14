@@ -1,7 +1,7 @@
 // src/pages/TcgSeriesPage.tsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import SeriesList from "../components/ListComponens/SeriesListComponent";
+import SeriesList from "../components/ListComponent/SeriesListComponent";
 import { getSeries } from "../hooks/useCollection";
 import { getSetListPath } from "../utils/RoutePathBuildUtils";
 

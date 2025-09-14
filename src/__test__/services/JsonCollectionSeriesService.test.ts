@@ -1,20 +1,20 @@
 // src/hooks/__tests__/getJsonSeries.test.ts
+import { seriesJsonMock } from "@/__test__/__mock__/seriesJson.ts";
+import { setJsonMock } from "@/__test__/__mock__/setJson.ts";
 import { describe, expect, it, vi } from "vitest";
-import { seriesJsonMock } from "../__mock__/seriesJson.ts";
-import { setJsonMock } from "../__mock__/setJson.ts";
 
-vi.mock("../../../data/series.json", () => ({
+vi.mock("data/series.json", () => ({
   default: seriesJsonMock,
 }));
-vi.mock("../../../data/sets.json", () => ({
+vi.mock("data/sets.json", () => ({
   default: setJsonMock,
 }));
 
-import { getJsonSeries } from "../../services/JsonCollectionSeriesService.tsx";
+import { getJsonSeries } from "@/services/JsonCollectionSeriesService.tsx";
 
 describe("test for getJsonSeries", () => {
   const series = getJsonSeries();
-
+  expect(series.length).toBeGreaterThan(1);
   it("should sort Series by their sortBy value in ascending order", () => {
     // Confirm each series is sorted correctly by sortBy
     expect(

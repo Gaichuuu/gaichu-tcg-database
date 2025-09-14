@@ -24,8 +24,8 @@ export const getJsonCardList = (
 export const getJsonCardDetail = (
   seriesShortName: string,
   setShortName: string,
+  sortBy: number,
   cardName: string,
-  variant: string,
 ): CollectionCard | null => {
   const cardList = jsonCardList(seriesShortName);
   const card = cardList
@@ -33,8 +33,8 @@ export const getJsonCardDetail = (
       (card) =>
         card.set_short_name === setShortName &&
         card.series_short_name === seriesShortName &&
-        card.name === cardName &&
-        card.variant === variant,
+        card.sortBy === sortBy &&
+        card.name === cardName,
     )
     .at(-1);
   if (!card) return null;
@@ -72,13 +72,15 @@ export const getAdjacentCards = (
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
   switch (seriesShortName) {
     case SeriesShortName.wm:
-      return SerieCardList[SeriesShortName.wm].map((card: any) =>
+      const cards = SerieCardList[SeriesShortName.wm].map((card: any) =>
         CardSchema.parse(card),
-      );
+      ) as CollectionCard[];
+      return cards.sort((a, b) => a.sortBy - b.sortBy);
     case SeriesShortName.mz:
       return SerieCardList[SeriesShortName.mz].map((card: any) =>
         CardSchema.parse(card),
-      );
+      ) as CollectionCard[];
+      return cards.sort((a, b) => a.sortBy - b.sortBy);
 
     default:
       return [];

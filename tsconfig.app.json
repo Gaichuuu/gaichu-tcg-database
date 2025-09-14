@@ -20,7 +20,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "data/*": ["data/*"],
+      "@/*": ["src/*"],
+      "config/*": ["config/*"]
+    }
   },
-  "include": ["src", "config"]
+  "include": ["src", "config", "data", "config"]
 }

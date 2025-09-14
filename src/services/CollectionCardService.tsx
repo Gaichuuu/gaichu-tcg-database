@@ -1,3 +1,5 @@
+import { CollectionCard } from "@/types/CollectionCard";
+import { database } from "config/FirebaseConfig";
 import {
   collection,
   getDocs,
@@ -6,8 +8,6 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { database } from "../../config/FirebaseConfig";
-import { CollectionCard } from "../types/CollectionCard";
 const collectionName = "cards";
 
 export const fetchCards = async (
@@ -33,16 +33,16 @@ export const fetchCards = async (
 export const fetchCardDetail = async (
   seriesShortName: string,
   setShortName: string,
+  sortBy: number,
   cardName: string,
-  variant: string,
 ): Promise<CollectionCard | null> => {
   const cardsReference = collection(database, collectionName);
   const cardsQuery = query(
     cardsReference,
     where("series_short_name", "==", seriesShortName),
     where("set_short_name", "==", setShortName),
+    where("sortBy", "==", sortBy),
     where("name", "==", cardName),
-    where("variant", "==", variant),
     limit(1),
   );
 

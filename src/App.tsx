@@ -5,16 +5,20 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
+import CardBackPage from "./pages/CardBackPage";
 import CardDetailPage from "./pages/CardDetailPage";
 import HomePage from "./pages/HomePage";
+import PackArtPage from "./pages/PackArtPage";
 import SeriesPage from "./pages/SeriesPage";
 import SetPage from "./pages/SetPage";
 import TcgSeriesPage from "./pages/TcgSeriesPage";
 import {
   AboutPagePath,
+  CardBackPath,
   CardDetailPath,
   CardListPath,
   HomePagePath,
+  PackArtPath,
   SeriesListPath,
   SetListPath,
 } from "./utils/RoutePathBuildUtils";
@@ -22,8 +26,13 @@ import {
 export interface CollectionParams extends Record<string, string | undefined> {
   seriesShortName?: string;
   setShortName?: string;
-  cardName?: string;
-  variant?: string;
+  sortByAndCardName?: string;
+}
+
+export interface ArtParams extends Record<string, string | undefined> {
+  seriesShortName?: string;
+  setShortName?: string;
+  pathType?: string; // e.g., "pack-art" or "card-back"
 }
 
 const App: React.FC = () => {
@@ -41,6 +50,8 @@ const App: React.FC = () => {
               <Route path={CardListPath} element={<SetPage />} />
               <Route path={CardDetailPath} element={<CardDetailPage />} />
               <Route path={AboutPagePath} element={<AboutPage />} />
+              <Route path={CardBackPath} element={<CardBackPage />} />
+              <Route path={PackArtPath} element={<PackArtPage />} />
             </Routes>
           </Layout>
         </main>

@@ -21,7 +21,7 @@ const setsList: React.FC<SetListComponent> = ({
             <img
               src={collection.set.logo}
               alt={collection.set.short_name}
-              className="mb-4 max-h-16 rounded object-contain"
+              className="border-secondaryBorder mb-2 rounded border-1 object-contain"
             />
             <h3 className="text-lg">{collection.set.name}</h3>
             <p className="text-secondaryText text-center">

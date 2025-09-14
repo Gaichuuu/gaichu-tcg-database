@@ -1,14 +1,14 @@
-import { collection, getDocs, query, where } from "firebase/firestore";
-import { database } from "../../config/FirebaseConfig";
-import { CollectionCard } from "../types/CollectionCard";
-import { CollectionSet } from "../types/CollectionSet";
-import { SetAndCard } from "../types/MergedCollection";
+import { CollectionCard } from "@/types/CollectionCard";
+import { CollectionSet } from "@/types/CollectionSet";
+import { SetAndCard } from "@/types/MergedCollection";
+import { database } from "config/FirebaseConfig";
+import { collection, getDocs, orderBy, query, where } from "firebase/firestore";
 
 export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
-  const setsReference = collection(database, "sets");
   const setsQuery = query(
-    setsReference,
+    collection(database, "sets"),
     where("series_short_name", "==", shortName),
+    orderBy("sortBy", "asc"),
   );
   const setsSnapshot = await getDocs(setsQuery);
   const sets = setsSnapshot.docs.map((doc) => ({
@@ -16,15 +16,18 @@ export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
     ...doc.data(),
   })) as CollectionSet[];
 
-  const cardsSnapshot = await getDocs(collection(database, "cards"));
+  const cardsQuery = query(
+    collection(database, "cards"),
+    where("series_short_name", "==", shortName),
+    orderBy("sortBy", "asc"),
+  );
+  const cardsSnapshot = await getDocs(cardsQuery);
   const cards = cardsSnapshot.docs.map((doc) => ({
     id: doc.id,
     ...doc.data(),
   })) as CollectionCard[];
 
-  return mergeWithSetsId(sets, cards).sort(
-    (a, b) => a.set.sortBy - b.set.sortBy,
-  );
+  return mergeWithSetsId(sets, cards);
 };
 
 const mergeWithSetsId = (

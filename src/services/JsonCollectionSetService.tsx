@@ -1,5 +1,5 @@
-import setsList from "../../data/sets.json";
-import { SetAndCard } from "../types/MergedCollection";
+import { SetAndCard } from "@/types/MergedCollection";
+import setsList from "data/sets.json";
 import { jsonCardList } from "./JsonCollectionCardService";
 
 export const getJsonSet = (seriesShortName: string): SetAndCard[] => {
@@ -16,10 +16,24 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
   set: {
     id: set.id,
     short_name: set.short_name,
+    series_short_name: set.series_short_name,
     series_id: set.series_id,
     logo: set.logo,
     name: set.name,
     sortBy: set.sortBy,
+    description: set.description,
+    set_images: set.set_images?.map((image: any) => ({
+      url: image.url,
+      pathType: image.pathType,
+      frontDescription: image.frontDescription,
+      backDescription: image.backDescription,
+      note: image.note,
+      text: image.text,
+      packs: image.packs?.map((pack: any) => ({
+        url: pack.url,
+        label: pack.label,
+      })),
+    })),
   },
   cards: cardList
     .filter((card) => card.set_ids[0] === set.id)
@@ -38,6 +52,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       variant: card.variant,
       hp: card.hp,
       description: card.description,
+      note: card.note,
       illustrators: [...card.illustrators],
       attacks: card.attacks?.map((attack: any) => ({
         name: attack.name,
