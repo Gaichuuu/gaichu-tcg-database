@@ -1,12 +1,17 @@
 import { z } from "zod";
 import mzCardList from "../../data/mz/cards.json";
 import wmCardList from "../../data/wm/cards.json";
+import ashCardList from "../../data/ash/cards.json";
+import ozCardList from "../../data/oz/cards.json";
 import { CollectionCard } from "../types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
 
+// FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
 export const SerieCardList: Record<SeriesShortName, any> = {
   [SeriesShortName.wm]: wmCardList,
   [SeriesShortName.mz]: mzCardList,
+  [SeriesShortName.ash]: ashCardList,
+  [SeriesShortName.oz]: ozCardList,
 };
 
 export const getJsonCardList = (
@@ -70,21 +75,10 @@ export const getAdjacentCards = (
 };
 
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
-  switch (seriesShortName) {
-    case SeriesShortName.wm:
-      const cards = SerieCardList[SeriesShortName.wm].map((card: any) =>
-        CardSchema.parse(card),
-      ) as CollectionCard[];
-      return cards.sort((a, b) => a.sortBy - b.sortBy);
-    case SeriesShortName.mz:
-      return SerieCardList[SeriesShortName.mz].map((card: any) =>
-        CardSchema.parse(card),
-      ) as CollectionCard[];
-      return cards.sort((a, b) => a.sortBy - b.sortBy);
-
-    default:
-      return [];
-  }
+  const cards = SerieCardList[seriesShortName as SeriesShortName].map(
+    (card: any) => CardSchema.parse(card),
+  ) as CollectionCard[];
+  return cards.sort((a, b) => a.sortBy - b.sortBy);
 };
 
 const CardSchema = z.object({

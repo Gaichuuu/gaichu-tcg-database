@@ -7,6 +7,8 @@ import { collection, getDocs } from "firebase/firestore";
 export enum SeriesShortName {
   wm = "wm",
   mz = "mz",
+  ash = "ash",
+  oz = "oz",
 }
 
 export const fetchSeries = async (): Promise<SeriesAndSet[]> => {
