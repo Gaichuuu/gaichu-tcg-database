@@ -3,6 +3,7 @@ import { CollectionCard } from "@/types/CollectionCard";
 import React from "react";
 import CardsListTile from "../TileComponents/CardsListTile";
 import HoverTooltip from "../TileComponents/HoverTooltip";
+import { useParams } from "react-router-dom";
 
 interface CardListProps {
   collectionCards: CollectionCard[];
@@ -10,6 +11,8 @@ interface CardListProps {
 }
 
 const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
+  const { seriesShortName } = useParams();
+
   if (!collectionCards || collectionCards.length === 0) {
     return <div className="text-primaryText text-center">No cards found.</div>;
   }
@@ -29,7 +32,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                         {(attack.costs ?? []).map((cost, cIndex) => (
                           <img
                             key={`${attack.name}-cost-${cIndex}`}
-                            src={`https://gaichu.b-cdn.net/wm/icon${cost}.jpg`}
+                            src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${cost}.jpg`}
                             alt={`${cost} Icon`}
                             className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
                           />
