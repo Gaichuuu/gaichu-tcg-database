@@ -1,0 +1,457 @@
+[
+  {
+    "id": "f92c4031-672a-435a-95c7-e0fc1bc2f649",
+    "total_cards_count": 50,
+    "number": 0,
+    "sortBy": 0.1,
+    "name": "Charizard",
+    "parody": "Charizard",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Fire",
+    "stage": [
+      {
+        "evolution": "Evolves from CHarmeleon",
+        "description": "Put the Charizard on the Stage 1 card"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Secret Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/*.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/*-thumb.jpg",
+    "attacks": [
+      {
+        "name": "PKM POWER ~ Energy Burn",
+        "effect": "All energys becomes [Fire]."
+      },
+      {
+        "name": "",
+        "effect": "throw two fire from this zard",
+        "damage": "100 dmg",
+        "costs": ["Fire", "Fire", "Fire", "Fire"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Water"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "retreat": [
+      {
+        "type": "3"
+      }
+    ]
+  },
+  {
+    "id": "064099c6-eb7d-4c5b-a9e0-a089d80ddc38",
+    "total_cards_count": 50,
+    "number": 1,
+    "sortBy": 1,
+    "name": "Umbreon VMAX",
+    "parody": "Umbreon",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Psychic",
+    "stage": [
+      {
+        "evolution": "害虫",
+        "description": "害虫"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "害虫",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/00-thumb.jpg",
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫"
+      },
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "害虫"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Grass",
+        "value": "x2"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ]
+  },
+  {
+    "id": "5b29fed5-4552-4877-9d3a-054d715a5471",
+    "total_cards_count": 50,
+    "number": 2,
+    "sortBy": 2,
+    "name": "Charizard",
+    "parody": "Charizard",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Fire",
+    "stage": [
+      {
+        "evolution": "害虫",
+        "description": "害虫"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/00-thumb.jpg",
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫"
+      },
+      {
+        "name": "Fire Spin",
+        "effect": "害虫",
+        "damage": "100",
+        "costs": ["Fire", "Fire", "Fire", "Fire"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Water",
+        "value": "x2"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ]
+  },
+  {
+    "id": "95ca47e0-7803-47f9-9f3a-216b2d04f5fb",
+    "total_cards_count": 50,
+    "number": 3,
+    "sortBy": 3,
+    "name": "______'s Pikachu",
+    "parody": "Pikachu",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Lightning",
+    "stage": [
+      {
+        "basic": "Basic Pokemon"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "害虫",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/00-thumb.jpg",
+    "attacks": [
+      {
+        "name": "害虫",
+        "effect": "害虫"
+      },
+      {
+        "name": "害虫",
+        "effect": "害虫",
+        "damage": "害虫"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
+  },
+  {
+    "id": "d2a2b24b-54df-4699-ac72-3c739953954a",
+    "total_cards_count": 50,
+    "number": 4,
+    "sortBy": 4,
+    "name": "Blastoise",
+    "parody": "Blastoise",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Water",
+    "stage": [
+      {
+        "evolution": "Evolves from Wartortle",
+        "description": "Put the Blastoise on the Stage 1 card"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/04-thumb.jpg",
+    "metadata": {
+      "type": "Shellfish Pokemon.",
+      "measurement": "Legnth: 5'3\", Weight: 189 lbs."
+    },
+    "attacks": [
+      {
+        "name": "Pokemon Power: Rain Dance",
+        "effect": "As often as you like during your turn (before your attack), you may attach 1W Energy Card to 1 of your W Pokemon. (This doesn't use up your 1 Energy card attachment for the turn). This power can't be used if Blastoise is Asleep, Confused, or Paralyzed."
+      },
+      {
+        "name": "Hydro Pump",
+        "effect": "Does 40 damage plus 10 more damage for each W Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra W Energy after the 2nd doesn't count.",
+        "damage": "40+",
+        "costs": ["Water", "Water", "Water", "Water"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Lightning"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ]
+  },
+  {
+    "id": "50ee2a9d-73ae-4f32-9271-0850212a24c6",
+    "total_cards_count": 50,
+    "number": 6,
+    "sortBy": 6,
+    "name": "Lugia",
+    "parody": "Lugia",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "stage": [
+      {
+        "basic": "Basic Pokemon"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/06-thumb.jpg",
+    "metadata": {
+      "type": "Diving Pokemon.",
+      "measurement": "Legnth: 17'1\", Weight: 476 lbs."
+    },
+    "attacks": [
+      {
+        "name": "Elemental Blast",
+        "effect": "Discard a F Energy card, a W Energy card, and a L Energy card attached to Lugia in order to use this attack.",
+        "damage": "90",
+        "costs": ["Fire", "Water", "Lightning"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Psychic"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ]
+  },
+  {
+    "id": "e061beb3-523e-4876-9989-3d71e86ea223",
+    "total_cards_count": 50,
+    "number": 7,
+    "sortBy": 7,
+    "name": "Mew",
+    "parody": "Mew",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Psychic",
+    "stage": [
+      {
+        "basic": "BASIC"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/07-thumb.jpg",
+    "description": "Its DNA is said to contain the genetic codes of all Pokemon, so it can use all kinds of techniques.",
+    "attacks": [
+      {
+        "name": "Ability — Mysterious Tail",
+        "effect": "Once during your turn, if this Pokémon is in the Active Spot, you may look at the top 6 cards of your deck, reveal an Item card you find there, and put it into your hand. Shuffle the other cards back into your deck."
+      },
+      {
+        "name": "Psyshot",
+        "effect": "",
+        "damage": "30",
+        "costs": ["Psychic", "Colorless"]
+      }
+    ],
+    "weakness": [],
+    "resistance": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
+  },
+  {
+    "id": "c682a2d9-bdbc-488b-a644-1e4ec5b0aa24",
+    "total_cards_count": 50,
+    "number": 8,
+    "sortBy": 8,
+    "name": "Latias & Latios GX",
+    "parody": "Latias & Latios",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Dragon",
+    "stage": [
+      {
+        "basic": "BASIC"
+      }
+    ],
+    "rule": [
+      {
+        "name": "TAG TEAM",
+        "description": "When your TAG TEAM Pokemon is Knocked Out, your opponent takes 3 Prize cards."
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_short_name": "gen1",
+    "series_short_name": "ash",
+    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "sets": [
+      {
+        "name": "Generation One",
+        "image": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+      }
+    ],
+    "hp": "250",
+    "image": "https://gaichu.b-cdn.net/ash/gen1/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/gen1/08-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Buster Purge",
+        "effect": "Discard 3 Energy from this Pokemon.",
+        "damage": "240",
+        "costs": ["Water", "Psychic", "Psychic", "Colorless"]
+      },
+      {
+        "name": "Aero Unit GX",
+        "effect": "Attach 5 basic Energy cards from your discard pile to your Pokemon in any way you like. If this Pokemon has at least 1 extra Energy attached to it (in addition to this attack's cost), prevent all effects of attacks, including damage, done to it during your opponent's next turn. (You can't use more than 1 GX attack in a game.)",
+        "costs": ["Psychic"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fairy",
+        "value": "x2"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
+  }
+]

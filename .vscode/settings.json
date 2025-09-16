@@ -19,6 +19,14 @@
       "url": "./data/mz/cards.schema.json"
     },
     {
+      "fileMatch": ["**/data/ash/cards.json"],
+      "url": "./data/ash/cards.schema.json"
+    },
+    {
+      "fileMatch": ["**/data/oz/cards.json"],
+      "url": "./data/oz/cards.schema.json"
+    },
+    {
       "fileMatch": ["data/illustrators.json"],
       "url": "./data/illustrators.schema.json"
     },
@@ -33,10 +41,6 @@
     {
       "fileMatch": ["data/sets.json"],
       "url": "./data/sets.schema.json"
-    },
-    {
-      "fileMatch": ["data/type.json"],
-      "url": "./data/type.schema.json"
     }
   ]
 }

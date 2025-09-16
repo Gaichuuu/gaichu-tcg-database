@@ -18,9 +18,14 @@ export interface CollectionCard {
   // optional properties
   description?: string;
   attacks?: Attack[];
+  zoo_attack?: Zoo_Attack[];
   measurement?: Measurement;
+  metadata?: Metadata;
   parody?: string;
   hp?: string;
+  lp?: string;
+  traits?: string[];
+  terra?: Terra[];
   type?: string;
   limit?: number;
   cost?: Cost[];
@@ -33,17 +38,41 @@ interface Set {
   image: string;
 }
 
+interface Terra {
+  attack: string;
+  icon: string;
+  lp: string;
+}
+
 interface Measurement {
-  height: string;
+  height?: string;
   weight: string;
+}
+
+interface Metadata {
+  height?: string;
+  weight: string;
+  gps: string;
+  discovered: string;
+  length?: string;
 }
 
 interface Attack {
   name: string;
-  effect: string;
+  effect?: string;
   damage: string | undefined;
   costs: string[] | undefined;
 }
+
+interface Zoo_Attack {
+  name: string;
+  effect?: string;
+  damage: string;
+  status?: string[];
+  multiplier?: string;
+  bonus?: string;
+}
+
 interface Cost {
   total: string;
   aura: string;

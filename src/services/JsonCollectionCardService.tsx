@@ -1,12 +1,17 @@
 import { z } from "zod";
 import mzCardList from "../../data/mz/cards.json";
 import wmCardList from "../../data/wm/cards.json";
+import ashCardList from "../../data/ash/cards.json";
+import ozCardList from "../../data/oz/cards.json";
 import { CollectionCard } from "../types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
 
+// FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
 export const SerieCardList: Record<SeriesShortName, any> = {
   [SeriesShortName.wm]: wmCardList,
   [SeriesShortName.mz]: mzCardList,
+  [SeriesShortName.ash]: ashCardList,
+  [SeriesShortName.oz]: ozCardList,
 };
 
 export const getJsonCardList = (
@@ -70,21 +75,10 @@ export const getAdjacentCards = (
 };
 
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
-  switch (seriesShortName) {
-    case SeriesShortName.wm:
-      const cards = SerieCardList[SeriesShortName.wm].map((card: any) =>
-        CardSchema.parse(card),
-      ) as CollectionCard[];
-      return cards.sort((a, b) => a.sortBy - b.sortBy);
-    case SeriesShortName.mz:
-      return SerieCardList[SeriesShortName.mz].map((card: any) =>
-        CardSchema.parse(card),
-      ) as CollectionCard[];
-      return cards.sort((a, b) => a.sortBy - b.sortBy);
-
-    default:
-      return [];
-  }
+  const cards = SerieCardList[seriesShortName as SeriesShortName].map(
+    (card: any) => CardSchema.parse(card),
+  ) as CollectionCard[];
+  return cards.sort((a, b) => a.sortBy - b.sortBy);
 };
 
 const CardSchema = z.object({
@@ -120,6 +114,18 @@ const CardSchema = z.object({
       }),
     )
     .optional(),
+  zoo_attack: z
+    .array(
+      z.object({
+        name: z.string(),
+        effect: z.string().optional(),
+        damage: z.string(),
+        status: z.array(z.string()).optional(),
+        multiplier: z.string().optional(),
+        bonus: z.string().optional(),
+      }),
+    )
+    .optional(),
   measurement: z
     .object({
       height: z.string().optional(),
@@ -128,6 +134,26 @@ const CardSchema = z.object({
     .optional(),
   parody: z.string().optional(),
   hp: z.string().optional(),
+  lp: z.string().optional(),
+  traits: z.array(z.string()).optional(),
+  terra: z
+    .array(
+      z.object({
+        attack: z.string(),
+        icon: z.string(),
+        lp: z.string(),
+      }),
+    )
+    .optional(),
+  metadata: z
+    .object({
+      height: z.string().optional(),
+      weight: z.string(),
+      gps: z.string(),
+      discovered: z.string(),
+      length: z.string().optional(),
+    })
+    .optional(),
   type: z.string().optional(),
   limit: z.number().optional(),
   cost: z

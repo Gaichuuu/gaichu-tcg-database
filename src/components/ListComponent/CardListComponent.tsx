@@ -3,6 +3,7 @@ import { CollectionCard } from "@/types/CollectionCard";
 import React from "react";
 import CardsListTile from "../TileComponents/CardsListTile";
 import HoverTooltip from "../TileComponents/HoverTooltip";
+import { useParams } from "react-router-dom";
 
 interface CardListProps {
   collectionCards: CollectionCard[];
@@ -10,6 +11,8 @@ interface CardListProps {
 }
 
 const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
+  const { seriesShortName } = useParams();
+
   if (!collectionCards || collectionCards.length === 0) {
     return <div className="text-primaryText text-center">No cards found.</div>;
   }
@@ -22,6 +25,12 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
             content={
               <table className="w-full border-collapse text-sm">
                 <tbody>
+                  {card?.effect && (
+                    <tr>
+                      <th className="py-2 pr-4 text-left">Effect</th>
+                      <td className="py-2">{card?.effect}</td>
+                    </tr>
+                  )}
                   {card.attacks?.map((attack, aIndex) => (
                     <tr key={attack.name ?? aIndex}>
                       <th className="py-2 pr-4 text-left">{attack.name}</th>
@@ -29,7 +38,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                         {(attack.costs ?? []).map((cost, cIndex) => (
                           <img
                             key={`${attack.name}-cost-${cIndex}`}
-                            src={`https://gaichu.b-cdn.net/wm/icon${cost}.jpg`}
+                            src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${cost}.jpg`}
                             alt={`${cost} Icon`}
                             className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
                           />
@@ -39,10 +48,12 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                       </td>
                     </tr>
                   ))}
-                  <tr>
-                    <th className="py-2 pr-4 text-left">Flavor Text</th>
-                    <td className="py-2">{card?.description}</td>
-                  </tr>
+                  {card?.description && (
+                    <tr>
+                      <th className="py-2 pr-4 text-left">Flavor Text</th>
+                      <td className="py-2">{card?.description}</td>
+                    </tr>
+                  )}
                   {card?.note && (
                     <tr>
                       <th className="py-2 pr-4 text-left">Note</th>

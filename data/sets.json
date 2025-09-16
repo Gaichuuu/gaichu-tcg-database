@@ -87,5 +87,24 @@
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
     "description": "The first print of Wrenny Moo. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed."
+  },
+  {
+    "id": "5444924f-490b-465f-8364-66b4e34da7c8",
+    "series_short_name": "ash",
+    "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
+    "short_name": "gen1",
+    "sortBy": 1,
+    "name": "Generation One",
+    "logo": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+  },
+  {
+    "id": "0cd30841-399e-4043-ac72-bdf4d268d4b3",
+    "series_short_name": "oz",
+    "series_id": "32b8b500-9985-4bbe-a494-05a47d009a48",
+    "short_name": "legacy",
+    "sortBy": 1,
+    "name": "Legacy",
+    "logo": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg",
+    "description": "LEGACY has arrived! This unreleased set was completed by fans for fans, based on publicly available information. See the full OpenZoo copyright and attributions here: https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342"
   }
 ]
