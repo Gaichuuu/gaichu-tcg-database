@@ -90,7 +90,7 @@ const CardDetailPage: React.FC = () => {
                     {(attack.costs ?? []).map((cost, cIndex) => (
                       <img
                         key={`${attack.name}-cost-${cIndex}`}
-                        src={`https://gaichu.b-cdn.net/wm/icon${cost}.jpg`}
+                        src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${cost}.jpg`}
                         alt={`${cost} Icon`}
                         className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
                       />
@@ -119,13 +119,69 @@ const CardDetailPage: React.FC = () => {
                       <span key={cost.aura} className="mr-2">
                         {cost.total}{" "}
                         <img
-                          src={`https://gaichu.b-cdn.net/mz/icon${cost.aura}.jpg`}
+                          src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${cost.aura}.jpg`}
                           alt={`${cost.aura} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
                         {"   "}
                       </span>
                     ))}
+                    {card?.lp && <span>LP {card.lp}</span>}
+                  </td>
+                </tr>
+              )}
+              {card?.traits && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Traits</th>
+                  <td className="py-2">
+                    {card?.traits?.map((traits) => (
+                      <span className="mr-2">
+                        <img
+                          src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${traits}.png`}
+                          alt={`${traits} Icon`}
+                          className="inline-block h-5 w-5 align-middle"
+                        />
+                        {"   "}
+                      </span>
+                    ))}
+                  </td>
+                </tr>
+              )}
+              {card?.terra && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Terra</th>
+                  <td className="py-2">
+                    {card?.terra?.map((terra) => (
+                      <span className="mr-2">
+                        ({terra.attack && <>{terra.attack} </>}
+                        <img
+                          src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${terra.icon}.png`}
+                          alt={`${terra.icon} Icon`}
+                          className="inline-block h-5 w-5 align-middle"
+                        />
+                        {terra.lp}){"   "}
+                      </span>
+                    ))}
+                  </td>
+                </tr>
+              )}
+              {card?.metadata && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Metadata</th>
+                  <td className="py-2">
+                    {card?.metadata?.discovered && (
+                      <>Discovered {card.metadata.discovered}, </>
+                    )}
+                    {card?.metadata?.gps && <>GPS {card.metadata.gps}, </>}
+                    {card?.metadata?.weight && (
+                      <>Weight {card.metadata.weight}, </>
+                    )}
+                    {card?.metadata?.height && (
+                      <>Height {card.metadata.height}</>
+                    )}
+                    {card?.metadata?.length && (
+                      <>Length {card.metadata.length}</>
+                    )}
                   </td>
                 </tr>
               )}
@@ -135,10 +191,60 @@ const CardDetailPage: React.FC = () => {
                   <EffectCell html={card?.effect} />
                 </tr>
               )}
-              <tr>
-                <th className="py-2 pr-4 text-left">Flavor Text</th>
-                <td className="py-2">{card?.description}</td>
-              </tr>
+              {Array.isArray(card?.zoo_attack) &&
+                card!.zoo_attack!.map((atk, idx) => {
+                  const statuses = Array.isArray(atk.status)
+                    ? atk.status
+                    : atk.status
+                      ? [atk.status]
+                      : [];
+
+                  return (
+                    <React.Fragment key={`${atk.name ?? "atk"}-${idx}`}>
+                      <tr>
+                        <th className="py-2 pr-4 text-left align-top">
+                          {atk.name}
+                        </th>
+                        <td className="py-2">
+                          {statuses.length > 0 && (
+                            <span className="mr-2 inline-flex items-center gap-1 align-middle">
+                              {statuses.map((s, sIdx) => (
+                                <img
+                                  key={`status-${s}-${sIdx}`}
+                                  src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${s}.png`}
+                                  alt={`${s} Icon`}
+                                  className="inline-block h-5 w-5 align-middle"
+                                />
+                              ))}
+                            </span>
+                          )}
+                          {atk.multiplier && (
+                            <span className="mr-2 align-middle">
+                              ({atk.multiplier})
+                            </span>
+                          )}
+                          <span className="mr-2 align-middle font-medium">
+                            {atk.damage}
+                          </span>
+                          {atk.bonus && (
+                            <img
+                              src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${atk.bonus}.png`}
+                              alt={`${atk.bonus} Icon`}
+                              className="inline-block h-5 w-5 align-middle"
+                            />
+                          )}
+                          {atk.effect && <EffectCell html={atk.effect ?? ""} />}
+                        </td>
+                      </tr>
+                    </React.Fragment>
+                  );
+                })}
+              {card?.description && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Flavor Text</th>
+                  <td className="py-2">{card.description}</td>
+                </tr>
+              )}
               <tr>
                 <th className="py-2 pr-4 text-left">Illustrator</th>
                 <td className="py-2">{card?.illustrators[0]}</td>
@@ -175,9 +281,20 @@ const CardDetailPage: React.FC = () => {
   );
 };
 function EffectCell({ html }: { html: string }) {
-  const clean = DOMPurify.sanitize(html, {
-    ALLOWED_TAGS: ["img", "b", "i", "em", "strong", "u", "br"],
-    ALLOWED_ATTR: ["src", "alt", "title", "width", "height", "style"],
+  const clean = DOMPurify.sanitize(html.replace(/\n/g, "<br/>"), {
+    ALLOWED_TAGS: ["img", "a", "b", "i", "em", "strong", "u", "br", "span"],
+    ALLOWED_ATTR: [
+      "src",
+      "alt",
+      "title",
+      "width",
+      "height",
+      "style",
+      "class",
+      "href",
+      "target",
+      "rel",
+    ],
   });
   return <td className="py-2" dangerouslySetInnerHTML={{ __html: clean }} />;
 }

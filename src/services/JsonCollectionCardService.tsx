@@ -114,6 +114,18 @@ const CardSchema = z.object({
       }),
     )
     .optional(),
+  zoo_attack: z
+    .array(
+      z.object({
+        name: z.string(),
+        effect: z.string().optional(),
+        damage: z.string(),
+        status: z.array(z.string()).optional(),
+        multiplier: z.string().optional(),
+        bonus: z.string().optional(),
+      }),
+    )
+    .optional(),
   measurement: z
     .object({
       height: z.string().optional(),
@@ -122,6 +134,26 @@ const CardSchema = z.object({
     .optional(),
   parody: z.string().optional(),
   hp: z.string().optional(),
+  lp: z.string().optional(),
+  traits: z.array(z.string()).optional(),
+  terra: z
+    .array(
+      z.object({
+        attack: z.string(),
+        icon: z.string(),
+        lp: z.string(),
+      }),
+    )
+    .optional(),
+  metadata: z
+    .object({
+      height: z.string().optional(),
+      weight: z.string(),
+      gps: z.string(),
+      discovered: z.string(),
+      length: z.string().optional(),
+    })
+    .optional(),
   type: z.string().optional(),
   limit: z.number().optional(),
   cost: z
