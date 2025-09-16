@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "allOf": [
+      { "$ref": "../cards.schema.base.json" },
+      {
+        "type": "object",
+        "required": ["description", "type", "limit", "cost"],
+        "properties": {
+          "illustrators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["Corey Lewis"]
+            }
+          },
+          "rarity": {
+            "type": "string",
+            "enum": ["Gold"]
+          },
+          "set_short_name": {
+            "type": "string",
+            "enum": ["legacy"]
+          },
+          "series_short_name": {
+            "type": "string",
+            "enum": ["oz"]
+          },
+          "sets": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["name", "image"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": ["Legacy"]
+                },
+                "image": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "number"
+          },
+          "cost": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["total", "aura"],
+              "properties": {
+                "total": {
+                  "type": "string"
+                },
+                "aura": {
+                  "type": "string",
+                  "items": {
+                    "type": "string",
+                    "enum": ["Forest", "Neutral"]
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "effect": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    ]
+  }
+}

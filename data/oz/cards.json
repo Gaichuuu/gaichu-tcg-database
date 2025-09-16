@@ -1,0 +1,1321 @@
+[
+  {
+    "id": "3d42b7dd-b86d-459f-9f3c-fab96f841d79",
+    "number": 1,
+    "total_cards_count": 25,
+    "sortBy": 1,
+    "name": "Rainbow Wizard's Gargoyle",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Dark"
+      }
+    ],
+    "lp": "50",
+    "traits": ["Flight", "Stoneskin"],
+    "terra": [
+      {
+        "attack": "+20 ATK",
+        "icon": "City",
+        "lp": ""
+      },
+      {
+        "attack": "",
+        "icon": "Nighttime",
+        "lp": "+30 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1990s",
+      "gps": "Midwest USA",
+      "weight": "180kg",
+      "height": "2m",
+      "legnth": ""
+    },
+    "effect": "If this Page is Discarded, you may pay 1<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDark.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> to place it in the Arena Awakened instead.\nARENA: If you control an Artifact with \"Tower\" in its name, this Beastie has <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
+    "zoo_attack": [
+      {
+        "name": "Sky Dive",
+        "status": [],
+        "multiplier": "",
+        "damage": "30",
+        "bonus": "",
+        "effect": "If the Primary Defender does not have <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFlight.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">, Inflict it with <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconParalyze.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">."
+      }
+    ],
+    "description": "While these Beasties usually stay near their posts, if the very caster that animated them asks for a favor, it's rather unlikely they would refuse.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/01-thumb.jpg",
+    "limit": 7
+  },
+  {
+    "id": "df343bb1-fed4-4e46-868a-62052ae542c2",
+    "number": 2,
+    "total_cards_count": 25,
+    "sortBy": 2,
+    "name": "Indrid Cold",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Caster",
+    "cost": [
+      {
+        "total": "4",
+        "aura": "Dark"
+      }
+    ],
+    "lp": "100",
+    "traits": ["Fear", "Fear", "Immortal"],
+    "terra": [
+      {
+        "attack": "+50 ATK",
+        "icon": "Nighttime",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "8/16/1996",
+      "gps": "Point Pleasant, WV",
+      "weight": "103kg",
+      "height": "2m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 2px;\">ARENA: If you are wearing a black blazer and a tie, once per turn when an opposing Beastie is Destroyed or Discarded into Limbo, you may place it into the Arena Fatigued under your control until this Beastie leaves the Arena.\nENTER: Destroy a Beastie you control to place any Page from your Spellbook into your Chapter.",
+    "zoo_attack": [
+      {
+        "name": "Indrid's Laugh",
+        "status": ["Paralyze", "Confused"],
+        "multiplier": "",
+        "damage": "60",
+        "bonus": "",
+        "effect": ""
+      }
+    ],
+    "description": "\"Smile your way through the pain. Smile so they leave you alone. Smile to ignore your suffering. Smile as flesh melts from bone.\" -Survivor of the Veil’s shattering",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/02-thumb.jpg",
+    "limit": 1
+  },
+  {
+    "id": "826cf975-a400-4d83-8d69-243130865203",
+    "number": 3,
+    "total_cards_count": 25,
+    "sortBy": 3,
+    "name": "Skinwalker",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Witch",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Dark"
+      },
+      {
+        "total": "2",
+        "aura": "Spirit"
+      }
+    ],
+
+    "lp": "95",
+    "traits": ["Fear", "Fleet"],
+    "terra": [
+      {
+        "attack": "",
+        "icon": "Fog",
+        "lp": "+40 LP"
+      },
+      {
+        "attack": "+40 ATK",
+        "icon": "Nighttime",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "???",
+      "gps": "Four Corners, USA",
+      "weight": "65kg",
+      "height": "1.75m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNighttime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active this Page has <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconMagiproof.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: You may Contract non-Aura Pages placed under this Beastie by the Attack \"Remove Skin\" using Aura of any type.",
+    "zoo_attack": [
+      {
+        "name": "Remove Skin",
+        "status": ["Paralyze", "Burn"],
+        "multiplier": "2",
+        "damage": "60",
+        "bonus": "",
+        "effect": "If this Attack Damaged a Caster, Discard a Page at Random from their Chapter or place the top Page of their Spellbook under this Beastie."
+      }
+    ],
+    "description": "These beings are rumored to be able to change their forms using powerful dark magic. Be careful, though! You never know when once could be watching...",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/03-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "b3fabc62-157d-44f7-838f-e769c1adc23f",
+    "number": 4,
+    "total_cards_count": 25,
+    "sortBy": 4,
+    "name": "Jersey Devil",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Demon",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Neutral"
+      },
+      {
+        "total": "2",
+        "aura": "Dark"
+      }
+    ],
+
+    "lp": "60",
+    "traits": ["Fear", "Flight"],
+    "terra": [
+      {
+        "attack": "+40 ATK",
+        "icon": "Dusk",
+        "lp": ""
+      },
+      {
+        "attack": "",
+        "icon": "Nighttime",
+        "lp": "+40 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1735",
+      "gps": "Leeds Point, NJ",
+      "weight": "63kg",
+      "height": "1.3m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: You may produce a blood-curdling scream to look at an opposing Casters Chapter and discard a non-Aura Page.\n<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If you are wearing wings, <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDark.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> and <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconSpirit.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties you control with an Aura Cost of 1 cannot be the target of declared Attacks.",
+    "zoo_attack": [
+      {
+        "name": "Bloody Hooves",
+        "status": ["Burn"],
+        "multiplier": "2",
+        "damage": "50",
+        "bonus": "",
+        "effect": "If an opposing Caster discarded a Page this turn, Bookmark 1."
+      }
+    ],
+    "description": "High above the Pine Barrens flies the Jersey Devil. Seldom seen, it mostly feeds on cattle. Occasionally, though, it finds a traveler wandering alone...",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/04-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "36268e29-5a47-496e-9060-8c5512c96058",
+    "number": 5,
+    "total_cards_count": 25,
+    "sortBy": 5,
+    "name": "Beast of Bladenboro",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Bloodsucker Cat",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      }
+    ],
+
+    "lp": "50",
+    "traits": ["Trap"],
+    "terra": [
+      {
+        "attack": "",
+        "icon": "Farm",
+        "lp": "+30 LP"
+      },
+      {
+        "attack": "+20 ATK",
+        "icon": "Nighttime",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "12/29/1953",
+      "gps": "Bladenboro, NC",
+      "weight": "8kg",
+      "height": "1m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNighttime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, this Beastie has <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\n<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: You may meow to place up to 2 target opposing Beasties with an Aura Cost of 1 into their owner's Chapter.\n<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWinter.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, this Beastie has <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFirstStrike.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
+    "zoo_attack": [
+      {
+        "name": "Mysterious Bite",
+        "status": [],
+        "multiplier": "",
+        "damage": "30",
+        "bonus": "",
+        "effect": ""
+      }
+    ],
+    "description": "This Beastie particularly despises canine-kind, but it isn't particularly picky about which faces it tears off their skulls.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/05.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/05-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "003f3eed-4557-4881-acda-cfe360a98919",
+    "number": 6,
+    "total_cards_count": 25,
+    "sortBy": 6,
+    "name": "Size Up",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Spell",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Lightning"
+      }
+    ],
+    "effect": "You may Contract this Page at any time. Double the number of Spark Counters on target Beastie.",
+    "description": "Its power keeps going up! And up, and up, and up...",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/06-thumb.jpg",
+    "limit": 5
+  },
+  {
+    "id": "d97fcb2b-3048-4ea3-8272-ccb74b256d99",
+    "number": 7,
+    "total_cards_count": 25,
+    "sortBy": 7,
+    "name": "Dancing in the Rain",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Spell",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Water"
+      }
+    ],
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconRaining.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, you may Contract this Page at any time.\n<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Place target Beastie into its owner's Chapter. If the weather forecast predicts a 75% or higher chance of rain for your current location, all Casters Bookmark 2.",
+    "description": "In some parts of the Cryptid Nation, it only rains once a year. Their inhabitants learn to make the most of what they get.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/07-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "a2b57c35-bdfd-40bc-9579-b1c6d577e800",
+    "number": 8,
+    "total_cards_count": 25,
+    "sortBy": 8,
+    "name": "Fire Shield",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Artifact",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Flame"
+      }
+    ],
+    "lp": "50",
+    "traits": ["Defender", "Defender"],
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If it is above 100°F at your current location, <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFlame.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties have <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">. All Beasties you control that are inflicted with <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconBurn.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot be inflicted with other Status Effects and cannot receive Combat Damage.",
+    "description": "\"A shield that's on fire? What purpose could this possibly ser- WHOA! You should've led with that!\" -JP",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/08-thumb.jpg",
+    "limit": 4
+  },
+  {
+    "id": "253f6cb9-5508-4ad3-ac61-00610f8ffa01",
+    "number": 9,
+    "total_cards_count": 25,
+    "sortBy": 9,
+    "name": "Nuke from Orbit",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Spell",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      },
+      {
+        "total": "5",
+        "aura": "Cosmic"
+      }
+    ],
+    "effect": "All Pages with \"UFO\" in their name are not Affected by this Spell. Destroy all Beasties in the Arena. All Casters reveal their Chapters and Discard all Beastie Pages. Until the end of your next turn, Actions cannot be taken with Beastie Pages. Reveal all Pages that would be placed in or Bookmarked to any Caster’s Chapter. Discard any Beastie Page revealed by this Effect.",
+    "description": "The Manhattan Project introduced a grave threat to humanity. How did they obtain such a powerful technology? Was there influence, perhaps, from above?",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/09.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/09-thumb.jpg",
+    "limit": 1
+  },
+  {
+    "id": "9af238b1-9f92-492e-be9a-81b6f78f3400",
+    "number": 10,
+    "total_cards_count": 25,
+    "sortBy": 10,
+    "name": "Flossie",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Dinosaur",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      },
+      {
+        "total": "2",
+        "aura": "Water"
+      }
+    ],
+
+    "lp": "90",
+    "traits": ["Trap"],
+    "terra": [
+      {
+        "attack": "+30 ATK",
+        "icon": "Lake",
+        "lp": ""
+      },
+      {
+        "attack": "",
+        "icon": "River",
+        "lp": "+30 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1800s",
+      "gps": "Evansville, IN",
+      "weight": "700kg",
+      "height": "7.5m",
+      "length": ""
+    },
+    "effect": "ARENA: Artifacts lose all Effect Text.\nDESTROYED: Place a Beastie Dinosaur from your Chapter into the Arena Fatigued.",
+    "zoo_attack": [
+      {
+        "name": "Rushing Waters",
+        "status": [],
+        "multiplier": "",
+        "damage": "50",
+        "bonus": "",
+        "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLake.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, all non-<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties lose 30 LP until the end of this turn."
+      }
+    ],
+    "description": "\"Some believe it's serpentine in nature. Some think it's reptilian. All I know is that it's a real sweetheart!\" -Avid Water fan",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/10.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/10-thumb.jpg",
+    "limit": 1
+  },
+  {
+    "id": "ec19e917-6bda-4151-98c1-affb575dc833",
+    "number": 11,
+    "total_cards_count": 25,
+    "sortBy": 11,
+    "name": "Plague Doctor",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Spirit",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      },
+      {
+        "total": "2",
+        "aura": "Spirit"
+      }
+    ],
+    "lp": "80",
+    "traits": ["Immortal", "Spectral"],
+    "terra": [
+      {
+        "attack": "+25 ATK",
+        "icon": "Dusk",
+        "lp": ""
+      },
+      {
+        "attack": "+25 ATK",
+        "icon": "Nighttime",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "1619",
+      "gps": "Paris, France",
+      "weight": "60kg",
+      "height": "1.6m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">Failed Oath: Choose a tribe. If you are wearing a plague doctor mask, Destroy all Beasties with the chosen tribe and this Beastie.",
+    "zoo_attack": [
+      {
+        "name": "Unlikely Cure",
+        "status": [],
+        "multiplier": "",
+        "damage": "30",
+        "bonus": "",
+        "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: You may ring a Bell to target another Beastie and flip a coin. If heads, remove all Damage and Status Effect Indicators on that Beastie. If tails, the targeted Beastie and this Beastie are removed from the game."
+      }
+    ],
+    "description": "Thinking themselves protected from the plague, these poor souls doomed just as many as they saved, if not more. They still hear the screams in their dreams.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/11.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/11-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "ee029d43-bb8a-4ca2-823b-f3dbd367998d",
+    "number": 12,
+    "total_cards_count": 25,
+    "sortBy": 12,
+    "name": "Aura Battery",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Artifact",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      },
+      {
+        "total": "1",
+        "aura": "Lightning"
+      }
+    ],
+    "lp": "90",
+    "effect": "ARENA: When your Aura would dissolve, it becomes <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNeutral.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> instead.",
+    "description": "\"AN ABNORMALLY LARGE AMOUNT OF POWER!!\"",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/12.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/12-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "7bf7ba01-98c1-44f7-8e0b-4cb5c350325e",
+    "number": 13,
+    "total_cards_count": 25,
+    "sortBy": 13,
+    "name": "Aura Generator",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Artifact",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      },
+      {
+        "total": "2",
+        "aura": "Lightning"
+      }
+    ],
+    "lp": "120",
+    "effect": "ARENA: Aura Effects generate twice the amount of Aura.\nSparks!: Double the amount of Spark Counters on all Beasties named \"Dingbelle\". Destroy this Artifact.",
+    "description": "\"One of these is enough to power Point Pleasant for a lifetime! ... Or, it would be if those blasted Dingbelle would share the thing!\" -Sam Sinclair",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/13.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/13-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "19ed2e06-ef68-4a9b-a4ca-c820ff28cafd",
+    "number": 14,
+    "total_cards_count": 25,
+    "sortBy": 14,
+    "name": "Nain Rouge",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Dark"
+      }
+    ],
+    "lp": "40",
+    "traits": ["Spectral"],
+    "terra": [
+      {
+        "attack": "",
+        "icon": "City",
+        "lp": "+20 LP"
+      },
+      {
+        "attack": "",
+        "icon": "Nighttime",
+        "lp": "+20 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1701",
+      "gps": "Detroit, MI",
+      "weight": "30kg",
+      "height": "1.1m",
+      "length": ""
+    },
+    "effect": "ARENA: Whenever an opposing Caster flips a coin or rolls a die, you may pay 1<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDark.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> to choose the result instead.",
+    "zoo_attack": [
+      {
+        "name": "Dance Among the Dead",
+        "status": [],
+        "multiplier": "",
+        "damage": "20",
+        "bonus": "",
+        "effect": "If a Beastie was Destroyed this turn, Bookmark 2."
+      }
+    ],
+    "description": "Also known as \"the Demon of the Strait\", this Beastie is more than glad to cause suffering for its own amusement.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/14.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/14-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "cc4b1715-a13c-4486-bb7d-ddce5fa0a145",
+    "number": 15,
+    "total_cards_count": 25,
+    "sortBy": 15,
+    "name": "Exorcist's Nail",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Artifact",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Light"
+      }
+    ],
+    "lp": "25",
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: Place a nail on target Beastie.\n<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: Beasties with a nail on them have all ARENA Effects and Powers nullified. Nullify all <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconImmortal.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> and <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconSpectral.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
+    "description": "Until rather recently, the church had stepped back from performing true exorcisms. Now, though? Good luck finding a priest without a nail.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/15.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/15-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "d5bfc0a3-70cb-42e9-aa7d-3fb9bb0e079c",
+    "number": 16,
+    "total_cards_count": 25,
+    "sortBy": 16,
+    "name": "Potion Aura",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Special Aura",
+    "cost": [
+      {
+        "total": "",
+        "aura": "Special"
+      }
+    ],
+    "effect": "Shatter: Destroy this Page to place 1 Aura Page from your Spellbook into the Arena Awakened.",
+    "description": "",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/16.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/16-thumb.jpg",
+    "limit": 1
+  },
+  {
+    "id": "0e9cbc1f-8e1b-4fe6-9d31-b2c43f97b652",
+    "number": 17,
+    "total_cards_count": 25,
+    "sortBy": 17,
+    "name": "Sam's Cumberland Dragon",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Dragon",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Neutral"
+      },
+      {
+        "total": "3",
+        "aura": "Forest"
+      }
+    ],
+    "lp": "80",
+    "traits": ["Flight", "Magiproof", "Stoneskin"],
+    "terra": [
+      {
+        "attack": "+40 ATK",
+        "icon": "Woodlands",
+        "lp": "+40 LP"
+      },
+      {
+        "attack": "",
+        "icon": "FullMoon",
+        "lp": "+20 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "12/4/1974",
+      "gps": "Appalachia, USA",
+      "weight": "300kg",
+      "height": "4.2m",
+      "length": ""
+    },
+    "effect": "Aura Boost: Forest +10 ATK/+10 LP\n<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If flowers are within eyesight, other Beasties you control cannot be the target of Page Effects.",
+    "zoo_attack": [
+      {
+        "name": "Moonlight Bloom",
+        "status": [],
+        "multiplier": "",
+        "damage": "40",
+        "bonus": "",
+        "effect": "<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> generates 2 Aura instead of 1, until the end of this turn."
+      }
+    ],
+    "description": "This Beastie might look menacing during combat, but other than that? It's a big ol' softy!",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/17.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/17-thumb.jpg",
+    "limit": 1
+  },
+  {
+    "id": "f0ab08cb-72af-4b4d-b1c2-53578fd0e354",
+    "number": 18,
+    "total_cards_count": 25,
+    "sortBy": 18,
+    "name": "Ben's Slide-Rock Bolter",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      },
+      {
+        "total": "5",
+        "aura": "Earth"
+      }
+    ],
+    "lp": "250",
+    "traits": ["Burrow", "Defender", "Stoneskin"],
+    "terra": [
+      {
+        "attack": "+50 ATK",
+        "icon": "City",
+        "lp": ""
+      },
+      {
+        "attack": "+50 ATK",
+        "icon": "Mountain",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "1910",
+      "gps": "Colorado Mountains",
+      "weight": "32.4 tons",
+      "height": "",
+      "length": "1.1km"
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: If you slap your hands on the table, Aura Pages controlled by opposing Casters are Fatigued and do not Awaken at the start of their next turn.\nRock Tomb: Target Aura Page is Considered a Basic <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconEarth.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Aura Page and can only produce <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconEarth.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> as long as this Beastie stays in the Arena.",
+    "zoo_attack": [
+      {
+        "name": "Rock Slide",
+        "status": [],
+        "multiplier": "",
+        "damage": "100",
+        "bonus": "",
+        "effect": "You may Destroy a Basic <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconEarth.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Aura Page."
+      }
+    ],
+    "description": "You might not expect it, but this Beastie is a carnivore. Luckily, Ben is there to keep it from devouring civilians.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/18.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/18-thumb.jpg",
+    "limit": 1
+  },
+  {
+    "id": "1679c965-dfba-4022-8ba5-6e42d3de7fd3",
+    "number": 19,
+    "total_cards_count": 25,
+    "sortBy": 19,
+    "name": "Ben's Babe the Blue Ox",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Frost"
+      },
+      {
+        "total": "2",
+        "aura": "Earth"
+      }
+    ],
+    "lp": "100",
+    "traits": ["Defender"],
+    "terra": [
+      {
+        "attack": "+20 ATK",
+        "icon": "Mountain",
+        "lp": "+20 LP"
+      },
+      {
+        "attack": "+75 ATK",
+        "icon": "Snowing",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "1/14/1937",
+      "gps": "Bemidji, MN",
+      "weight": "12.1 tons",
+      "height": "93 hands",
+      "length": ""
+    },
+    "effect": "If you are wearing a plaid flannel shirt, this Beastie has <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: Beasties you control with <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> double their Life Points and <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot activate.\nDynamic Duo: Fatigue a Beastie with \"Bunyan\" in its name to Destroy target Beastie.",
+    "zoo_attack": [
+      {
+        "name": "Vigilant Stampede",
+        "status": ["Frozen"],
+        "multiplier": "4",
+        "damage": "25",
+        "bonus": "",
+        "effect": "Awaken this Beastie at the end of this turn."
+      }
+    ],
+    "description": "Not often does Babe leave Paul's side. For Ben, though? She'll make an exception, just this once.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/19.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/19-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "aa2c93a2-4451-4a8e-a8ce-e6d4f4f1e60f",
+    "number": 20,
+    "total_cards_count": 25,
+    "sortBy": 20,
+    "name": "Adam's Thunderbird",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Bird",
+    "cost": [
+      {
+        "total": "5",
+        "aura": "Lightning"
+      }
+    ],
+    "lp": "80",
+    "traits": ["Flight"],
+    "terra": [
+      {
+        "attack": "+30 ATK",
+        "icon": "LightningStorm",
+        "lp": ""
+      },
+      {
+        "attack": "+10 ATK",
+        "icon": "Raining",
+        "lp": "+10 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "???",
+      "gps": "North America",
+      "weight": "136kg",
+      "height": "",
+      "length": "10m"
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, this Page has <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nYou may Contract this Page for 1<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> to treat this Page as a <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Special Terra Page with the Effect \"ARENA: Beasties with <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> or <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconRaining.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonuses have +20ATK/+20 LP\".",
+    "zoo_attack": [
+      {
+        "name": "Original Lightning",
+        "status": [],
+        "multiplier": "",
+        "damage": "40",
+        "bonus": "",
+        "effect": "<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonuses of other <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties are doubled until the end of this turn."
+      }
+    ],
+    "description": "Adam has a 7th sense for Beasties with potential. It's no wonder he ends up with such powerful companions.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/20.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/20-thumb.jpg",
+    "limit": 2
+  },
+  {
+    "id": "aaac4e63-7e49-427a-a573-21cbd6160289",
+    "number": 21,
+    "total_cards_count": 25,
+    "sortBy": 21,
+    "name": "Sam's Dingbelle",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Lightning"
+      }
+    ],
+    "lp": "20",
+    "traits": ["Fleet"],
+    "terra": [
+      {
+        "attack": "",
+        "icon": "City",
+        "lp": "+10 LP"
+      },
+      {
+        "attack": "+20 ATK",
+        "icon": "LightningStorm",
+        "lp": ""
+      }
+    ],
+    "metadata": {
+      "discovered": "1939",
+      "gps": "USA",
+      "weight": "5kg",
+      "height": "0.25m",
+      "length": ""
+    },
+    "effect": "ARENA: Beasties with \"Dingbelle\" in their name or Tokens created by Beasties with \"Dingbelle\" in their name enter the Arena Awakened.\nDESTROYED: You may activate a Power named \"Mini Sun\" regardless of your LP total until the end of the next turn.",
+    "zoo_attack": [
+      {
+        "name": "Sparks",
+        "status": [],
+        "multiplier": "",
+        "damage": "20",
+        "bonus": "",
+        "effect": "Place 1 Spark Counter on target Beastie."
+      }
+    ],
+    "description": "These little critters usually don't play well with others. For one reason or another, Sam was an exception.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/21.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/21-thumb.jpg",
+    "limit": 4
+  },
+  {
+    "id": "8c3868ee-d095-4f72-a778-6c467678a55b",
+    "number": 22,
+    "total_cards_count": 25,
+    "sortBy": 22,
+    "name": "Dark Caster's Walking Sam",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Demon",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Spirit"
+      }
+    ],
+    "lp": "50",
+    "traits": ["Spectral"],
+    "terra": [
+      {
+        "attack": "",
+        "icon": "Fog",
+        "lp": "+20 LP"
+      },
+      {
+        "attack": "+20 ATK",
+        "icon": "Nighttime",
+        "lp": "+20 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "???",
+      "gps": "Pine Ridge, ND",
+      "weight": "34.5kg",
+      "height": "2.7m",
+      "length": ""
+    },
+    "effect": "DESTROYED: You may Contract an Artifact with an Aura Cost of 0 from your Limbo into the Arena Awakened. Bookmark 1.\nExtract Soul: Destroy a Beastie you Control but do not own to Bookmark 2.",
+    "zoo_attack": [
+      {
+        "name": "Attach Strings",
+        "status": ["Scared", "Paralyze"],
+        "multiplier": "",
+        "damage": "30",
+        "bonus": "",
+        "effect": ""
+      }
+    ],
+    "description": "In the darkest of nights, you can see a faint, glimmering string pulling this caster along...",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/22.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/22-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "054e4d9e-ce10-4de5-bcc9-62e2541bd7e8",
+    "number": 23,
+    "total_cards_count": 25,
+    "sortBy": 23,
+    "name": "Paul's Squonk",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie Fearsome-Critter",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Forest"
+      }
+    ],
+    "lp": "10",
+    "traits": ["Immortal"],
+    "terra": [
+      {
+        "attack": "+10 ATK",
+        "icon": "Woodlands",
+        "lp": "+10 LP"
+      },
+      {
+        "attack": "-10 ATK",
+        "icon": "Nighttime",
+        "lp": "-10 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1910",
+      "gps": "PA, USA",
+      "weight": "32.6kg",
+      "height": "1.2m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">Survival Tears: At any time, you may show a \"Pocket Squonk\" to target opposing Caster to have target Beastie gain <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconImmortal.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> until the end of this turn.",
+    "zoo_attack": [
+      {
+        "name": "Pocket Tears",
+        "status": [],
+        "multiplier": "",
+        "damage": "10",
+        "bonus": "",
+        "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: You may make crying sounds and shed a tear to Inflict the Primary Defender with <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconParalyze.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">."
+      }
+    ],
+    "description": "Paul thought taking this poor creature along would help it cheer up! It didn't work. At least it saved its friends!",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/23.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/23-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "7ade655e-2584-44c4-8060-62bef384a4f2",
+    "number": 24,
+    "total_cards_count": 25,
+    "sortBy": 24,
+    "name": "Rose's Gee-Gee Bird",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Beastie",
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Neutral"
+      },
+      {
+        "total": "1",
+        "aura": "Frost"
+      }
+    ],
+    "lp": "50",
+    "traits": ["Flight"],
+    "terra": [
+      {
+        "attack": "+20 ATK",
+        "icon": "Snowing",
+        "lp": "+30 LP"
+      },
+      {
+        "attack": "",
+        "icon": "Winter",
+        "lp": "+20 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1942",
+      "gps": "Alaska, USA",
+      "weight": "5kg",
+      "height": "0.25m",
+      "length": ""
+    },
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If you say \"Gee-geeze that's cold!\", you may Contract this Page at any time.\nARENA: Whenever a Caster searches their Spellbook for a Page, they search the top Page of their Spellbook instead.",
+    "zoo_attack": [
+      {
+        "name": "Gee-Gee Icicle",
+        "status": [],
+        "multiplier": "",
+        "damage": "30",
+        "bonus": "",
+        "effect": "Inflict Target Beastie with <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFrozen.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> (2)."
+      }
+    ],
+    "description": "Not all Frost Beasties have cold hearts! The Gee-Gee Bird, for example, is actually a really goofy bird, making it a great fit for a caster like Rose.",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/24-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "6f304082-d46b-47ef-9b6f-b2310feda278",
+    "number": 25,
+    "total_cards_count": 25,
+    "sortBy": 25,
+    "name": "OpenZoo LEGACY!",
+    "variant": "Normal",
+    "illustrators": ["Corey Lewis"],
+    "rarity": "Gold",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+      }
+    ],
+    "type": "Spell",
+    "cost": [
+      {
+        "total": "2",
+        "aura": "Neutral"
+      }
+    ],
+    "effect": "<img alt=\"Dark Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Open a booster pack from the Cryptid Nation block and reveal all opened Pages to all Casters. Choose one of those Pages and place it into your Chapter. When the chosen Page enters a Discard Zone it's removed from the game. Remove the chosen Page from your Spellbook at the end of this game.",
+    "description": "It might not quite be the \"real thing\", but I'm glad you're here playing with us at OpenZoo all the same. To the future!",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/25.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/25-thumb.jpg",
+    "limit": 3
+  }
+]
