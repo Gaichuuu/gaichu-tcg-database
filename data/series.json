@@ -11,7 +11,7 @@
     "short_name": "wm",
     "name": "WrennyMoo",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
-    "sortBy": 3
+    "sortBy": 4
   },
   {
     "id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
@@ -19,5 +19,12 @@
     "name": "After Skool Hobby",
     "logo": "https://gaichu.b-cdn.net/ash/ashLogo.png",
     "sortBy": 1
+  },
+  {
+    "id": "32b8b500-9985-4bbe-a494-05a47d009a48",
+    "short_name": "oz",
+    "name": "OpenZoo",
+    "logo": "https://gaichu.b-cdn.net/oz/ozLogo.png",
+    "sortBy": 3
   }
 ]
