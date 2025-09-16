@@ -2,7 +2,7 @@
   {
     "id": "f92c4031-672a-435a-95c7-e0fc1bc2f649",
     "total_cards_count": 50,
-    "number": "*",
+    "number": 0,
     "sortBy": 0.1,
     "name": "Charizard",
     "parody": "Charizard",
@@ -32,13 +32,13 @@
     "attacks": [
       {
         "name": "PKM POWER ~ Energy Burn",
-        "effect": "All energys becomes <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">"
+        "effect": "All energys becomes [Fire]."
       },
       {
         "name": "",
         "effect": "throw two fire from this zard",
         "damage": "100 dmg",
-        "costs": ["4", "Fire"]
+        "costs": ["Fire", "Fire", "Fire", "Fire"]
       }
     ],
     "weakness": [
@@ -376,6 +376,7 @@
       },
       {
         "name": "Psyshot",
+        "effect": "",
         "damage": "30",
         "costs": ["Psychic", "Colorless"]
       }
@@ -437,7 +438,7 @@
       {
         "name": "Aero Unit GX",
         "effect": "Attach 5 basic Energy cards from your discard pile to your Pokemon in any way you like. If this Pokemon has at least 1 extra Energy attached to it (in addition to this attack's cost), prevent all effects of attacks, including damage, done to it during your opponent's next turn. (You can't use more than 1 GX attack in a game.)",
-        "costs": ["Psychic", "+"]
+        "costs": ["Psychic"]
       }
     ],
     "weakness": [
