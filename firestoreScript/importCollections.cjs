@@ -4,13 +4,8 @@ const path = require("path");
 const { db } = require("./scriptDatabase.cjs");
 const { allCollections, jsonFilePath } = require("./databaseConstants.cjs");
 
-/**
- * Import ONLY the "cards" collection by reading two separate JSON files:
- *   - data/mz/cards.json
- *   - data/wm/cards.json
- */
 async function importCardCollection() {
-  const subFolders = ["mz", "wm"];
+  const subFolders = ["ash", "mz", "oz", "wm"];
   let totalCount = 0;
   const batch = db.batch();
 
@@ -32,8 +27,6 @@ async function importCardCollection() {
 
     documents.forEach((doc) => {
       const { id, ...data } = doc;
-      // If you need to avoid ID collisions between mz/ and wm/, consider prefixing:
-      // const docRef = db.collection("cards").doc(`${folder}_${id}`);
       const docRef = db.collection("cards").doc(id);
       batch.set(docRef, data);
     });
@@ -52,13 +45,8 @@ async function importCardCollection() {
   }
 }
 
-/**
- * Import any collection EXCEPT "cards".
- * Reads from data/[name].json and writes into the Firestore collection [name].
- */
 async function importOtherCollection(name) {
   if (name === "cards") {
-    // Skip here, since we handle cards separately in importCardCollection()
     return;
   }
 
@@ -88,11 +76,6 @@ async function importOtherCollection(name) {
   console.log(`Imported ${documents.length} documents into "${name}"`);
 }
 
-/**
- * Main execution:
- *   1. importCardCollection()
- *   2. import every other collection (skipping "cards")
- */
 async function main() {
   try {
     console.log(">>> Starting import data to DB...");
