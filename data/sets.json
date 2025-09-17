@@ -14,6 +14,7 @@
         "pathType": "pack-art",
         "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
         "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "illustrator": "Alex Roh",
         "note": "",
         "packs": [
           {
@@ -30,6 +31,7 @@
         "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
         "pathType": "card-back",
         "text": "Parody Parody",
+        "illustrator": "Alex Roh",
         "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
     ]
@@ -58,6 +60,7 @@
         "pathType": "pack-art",
         "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
         "backDescription": "Wrenny Moo's second card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+        "illustrator": "Alex Roh",
         "note": "",
         "packs": [
           {
@@ -74,6 +77,7 @@
         "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
         "pathType": "card-back",
         "text": "Parody Parody",
+        "illustrator": "Alex Roh",
         "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
     ]
@@ -105,6 +109,14 @@
     "sortBy": 1,
     "name": "Legacy",
     "logo": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg",
-    "description": "LEGACY has arrived! This unreleased set was completed by fans for fans, based on publicly available information. See the full OpenZoo copyright and attributions here: https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342"
+    "description": "LEGACY has arrived! This was created by fans based on publicly available information.\nSee the full OpenZoo <a href='https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342' target='_blank'>attributions sheet</a>.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/oz/legacy/00.jpg",
+        "pathType": "card-back",
+        "text": "OpenZoo",
+        "illustrator": "mistletoe"
+      }
+    ]
   }
 ]
