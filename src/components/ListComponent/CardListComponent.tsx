@@ -1,6 +1,7 @@
 // src/components/CardListComponent.tsx
 import { CollectionCard } from "@/types/CollectionCard";
 import React from "react";
+import HtmlCell from "../HtmlCell";
 import CardsListTile from "../TileComponents/CardsListTile";
 import HoverTooltip from "../TileComponents/HoverTooltip";
 import { useParams } from "react-router-dom";
@@ -13,6 +14,12 @@ interface CardListProps {
 const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
   const { seriesShortName } = useParams();
 
+  const tooltipWidth: Record<string, string> = {
+    oz: "w-[26rem]",
+    mz: "w-[30rem]",
+    ash: "w-[24rem]",
+  };
+
   if (!collectionCards || collectionCards.length === 0) {
     return <div className="text-primaryText text-center">No cards found.</div>;
   }
@@ -22,13 +29,14 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
       {collectionCards.map((card) => (
         <CardsListTile key={card.id} onClick={() => onClick(card)}>
           <HoverTooltip
+            widthClass={tooltipWidth[seriesShortName ?? ""] || "w-80"}
             content={
               <table className="w-full border-collapse text-sm">
                 <tbody>
                   {card?.effect && (
                     <tr>
                       <th className="py-2 pr-4 text-left">Effect</th>
-                      <td className="py-2">{card?.effect}</td>
+                      <HtmlCell html={card?.effect} />
                     </tr>
                   )}
                   {card.attacks?.map((attack, aIndex) => (
@@ -48,12 +56,64 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                       </td>
                     </tr>
                   ))}
-                  {card?.description && (
-                    <tr>
-                      <th className="py-2 pr-4 text-left">Flavor Text</th>
-                      <td className="py-2">{card?.description}</td>
-                    </tr>
-                  )}
+                  {Array.isArray(card?.zoo_attack) &&
+                    card!.zoo_attack!.map((atk, idx) => {
+                      const statuses = Array.isArray(atk.status)
+                        ? atk.status
+                        : atk.status
+                          ? [atk.status]
+                          : [];
+
+                      return (
+                        <React.Fragment key={`${atk.name ?? "atk"}-${idx}`}>
+                          <tr>
+                            <th className="py-2 pr-4 text-left align-top">
+                              {atk.name}
+                            </th>
+                            <td className="py-2">
+                              {statuses.length > 0 && (
+                                <span className="mr-2 inline-flex items-center gap-1 align-middle">
+                                  {statuses.map((s, sIdx) => (
+                                    <img
+                                      key={`status-${s}-${sIdx}`}
+                                      src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${s}.png`}
+                                      alt={`${s} Icon`}
+                                      className="inline-block h-5 w-5 align-middle"
+                                    />
+                                  ))}
+                                </span>
+                              )}
+                              {atk.multiplier && (
+                                <span className="mr-2 align-middle">
+                                  ({atk.multiplier})
+                                </span>
+                              )}
+                              <span className="mr-2 align-middle font-medium">
+                                {atk.damage}
+                              </span>
+                              {atk.bonus && (
+                                <img
+                                  src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${atk.bonus}.png`}
+                                  alt={`${atk.bonus} Icon`}
+                                  className="inline-block h-5 w-5 align-middle"
+                                />
+                              )}
+                              {atk.effect && (
+                                <HtmlCell html={atk.effect ?? ""} />
+                              )}
+                            </td>
+                          </tr>
+                        </React.Fragment>
+                      );
+                    })}
+                  {seriesShortName !== "oz" &&
+                    seriesShortName !== "mz" &&
+                    card?.description && (
+                      <tr>
+                        <th className="py-2 pr-4 text-left">Flavor Text</th>
+                        <td className="py-2">{card?.description}</td>
+                      </tr>
+                    )}
                   {card?.note && (
                     <tr>
                       <th className="py-2 pr-4 text-left">Note</th>
