@@ -14,6 +14,7 @@ export interface CollectionSet {
     backDescription?: string;
     note?: string;
     text?: string;
+    illustrator?: string;
     packs?: Array<{
       url: string;
       label: string;

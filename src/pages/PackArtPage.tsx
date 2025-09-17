@@ -77,6 +77,12 @@ const PackArtPage: React.FC = () => {
                   </td>
                 </tr>
               )}
+              {pack?.illustrator && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Illustrator</th>
+                  <td className="py-2">{pack!.illustrator}</td>
+                </tr>
+              )}
               {pack?.note && (
                 <tr>
                   <th className="py-2 pr-4 text-left">Note</th>

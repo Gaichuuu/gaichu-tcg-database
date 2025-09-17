@@ -36,6 +36,7 @@ const convertToSeriesAndSet = (series: any): SeriesAndSet => ({
         backDescription: image.backDescription,
         note: image.note,
         text: image.text,
+        illustrator: image.illustrator,
         packs: image.packs?.map((pack: any) => ({
           url: pack.url,
           label: pack.label,

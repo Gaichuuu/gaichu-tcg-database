@@ -8,6 +8,7 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import { useNavigate, useParams } from "react-router-dom";
+import HtmlCell from "../components/HtmlCell";
 
 const SetPage = () => {
   const { seriesShortName, setShortName } = useParams();
@@ -52,7 +53,7 @@ const SetPage = () => {
             {setAndCard?.set.name}
           </h2>
           <p className="text-primaryText max-w-2xl font-mono text-xs whitespace-pre-line">
-            {setAndCard?.set.description}
+            <HtmlCell html={setAndCard?.set.description} />
           </p>
         </div>
       </div>
