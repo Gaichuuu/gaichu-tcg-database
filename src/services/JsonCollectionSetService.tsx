@@ -29,6 +29,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       backDescription: image.backDescription,
       note: image.note,
       text: image.text,
+      illustrator: image.illustrator,
       packs: image.packs?.map((pack: any) => ({
         url: pack.url,
         label: pack.label,
@@ -52,8 +53,10 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       variant: card.variant,
       hp: card.hp,
       description: card.description,
+      effect: card.effect,
       note: card.note,
       illustrators: [...card.illustrators],
+      zoo_attack: card.zoo_attack,
       attacks: card.attacks?.map((attack: any) => ({
         name: attack.name,
         effect: attack.effect,

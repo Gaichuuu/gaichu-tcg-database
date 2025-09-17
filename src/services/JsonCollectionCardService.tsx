@@ -148,9 +148,9 @@ const CardSchema = z.object({
   metadata: z
     .object({
       height: z.string().optional(),
-      weight: z.string(),
-      gps: z.string(),
-      discovered: z.string(),
+      weight: z.string().optional(),
+      gps: z.string().optional(),
+      discovered: z.string().optional(),
       length: z.string().optional(),
     })
     .optional(),

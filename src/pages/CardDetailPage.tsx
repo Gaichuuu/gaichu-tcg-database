@@ -1,6 +1,6 @@
 // src/pages/CardDetailPage.tsx
-import DOMPurify from "dompurify";
 import React from "react";
+import HtmlCell from "../components/HtmlCell";
 import { useNavigate, useParams } from "react-router-dom";
 import { CollectionParams } from "../App";
 import CardDetailPagingButton, {
@@ -188,7 +188,7 @@ const CardDetailPage: React.FC = () => {
               {card?.effect && (
                 <tr>
                   <th className="py-2 pr-4 text-left">Effect</th>
-                  <EffectCell html={card?.effect} />
+                  <HtmlCell html={card?.effect} />
                 </tr>
               )}
               {Array.isArray(card?.zoo_attack) &&
@@ -233,7 +233,7 @@ const CardDetailPage: React.FC = () => {
                               className="inline-block h-5 w-5 align-middle"
                             />
                           )}
-                          {atk.effect && <EffectCell html={atk.effect ?? ""} />}
+                          {atk.effect && <HtmlCell html={atk.effect ?? ""} />}
                         </td>
                       </tr>
                     </React.Fragment>
@@ -280,22 +280,5 @@ const CardDetailPage: React.FC = () => {
     </div>
   );
 };
-function EffectCell({ html }: { html: string }) {
-  const clean = DOMPurify.sanitize(html.replace(/\n/g, "<br/>"), {
-    ALLOWED_TAGS: ["img", "a", "b", "i", "em", "strong", "u", "br", "span"],
-    ALLOWED_ATTR: [
-      "src",
-      "alt",
-      "title",
-      "width",
-      "height",
-      "style",
-      "class",
-      "href",
-      "target",
-      "rel",
-    ],
-  });
-  return <td className="py-2" dangerouslySetInnerHTML={{ __html: clean }} />;
-}
+
 export default CardDetailPage;
