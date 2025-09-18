@@ -1,0 +1,33 @@
+[
+  {
+    "title": "OpenZoo: Legacy — Set Page Is Live",
+    "subtitle": "Browse every card, filter quickly, and share deep links",
+    "author": "gaichu",
+    "tags": [
+      "release",
+      "openzoo",
+      "sets"
+    ],
+    "heroUrl": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg",
+    "excerpt": "The OpenZoo Legacy set page just dropped. It’s fast, linkable, and ready for your lore dives.",
+    "bodyHtml": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
+    "createdAt": 1758078600000,
+    "slug": "openzoo-legacy-set-page-is-live",
+    "id": "openzoo-legacy-set-page-is-live"
+  },
+  {
+    "title": "We’re Posting News on Gaichu!",
+    "subtitle": "Housekeeping + what to expect",
+    "author": "gaichu",
+    "tags": [
+      "site-update",
+      "news"
+    ],
+    "heroUrl": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg",
+    "excerpt": "New section, who dis? You’ll now see short updates on releases, site improvements, and spicy TCG takes right here.",
+    "bodyHtml": "<p>Welcome to the Gaichu news feed. I’ll use this space for quick posts: release notes, feature previews, and highlights from the parody & indie TCG world. Expect a few blurbs a week—short, readable, and linkable.</p><p>Want more signal? Hit the <em>News</em> tab or follow the social links in the footer. Let’s make the homepage feel alive.</p>",
+    "createdAt": 1758076800000,
+    "slug": "were-posting-news-on-gaichu",
+    "id": "were-posting-news-on-gaichu"
+  }
+]
