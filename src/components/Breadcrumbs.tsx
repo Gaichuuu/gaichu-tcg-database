@@ -11,7 +11,9 @@ const Breadcrumbs: React.FC = () => {
     return null;
   }
 
-  const breadcrumbItems = getBreadcrumbItems(location.pathname);
+  const breadcrumbItems = getBreadcrumbItems(location.pathname, {
+    strict: false,
+  });
 
   return (
     <nav className="my-2 text-sm">

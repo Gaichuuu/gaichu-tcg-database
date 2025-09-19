@@ -23,7 +23,7 @@ const CardDetailPage: React.FC = () => {
 
   // existing decode/parse of the last segment
   const decoded = decodeURIComponent(sortByAndCardName ?? "");
-  const parsed = parseSortAndNameRegex(decoded);
+  const parsed = parseSortAndNameRegex(decoded, { strict: false });
   const sortByNum = Number(parsed.sortBy);
   const sortBy = Number.isFinite(sortByNum) ? sortByNum : undefined;
   const cardName = (parsed.cardName ?? decoded).trim();

@@ -45,56 +45,59 @@ export const getTitleSetImagePathType = (
       return "";
   }
 };
-// src/utils/RoutePathBuildUtils.tsx
-export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
+
+export function getBreadcrumbItems(
+  locationPathname: string,
+  opts?: { strict?: boolean },
+): BreadcrumbItem[] {
+  const strict = opts?.strict ?? true;
   const segments = locationPathname.split("/").filter(Boolean);
   const items: BreadcrumbItem[] = [];
 
-  // Decodes 1–3 times to handle double-encoded segments like "%2520" -> "%20" -> " "
   const decodeMulti = (s: string) => {
     let out = s;
     for (let i = 0; i < 3; i++) {
       try {
         const next = decodeURIComponent(out);
-        if (next === out) break; // no more to decode
+        if (next === out) break;
         out = next;
       } catch {
-        break; // stop if malformed
+        break;
       }
     }
-    // final guard just in case a lone "%20" slipped through
     return out.replace(/%20/g, " ");
   };
 
   for (let index = 0; index < segments.length; index++) {
     const segment = segments[index];
 
-    // skip scaffolding segments
     if (segment === "sets" || segment === "card") continue;
 
-    // pack-art / card-back title
     if (index === PathSegments.SetImagePath) {
       const title = getTitleSetImagePathType(
         decodeMulti(segment) as SetImagePathType,
       );
       if (title) {
-        items.push({ label: title }); // routeTo omitted (optional)
+        items.push({ label: title });
         continue;
       }
     }
 
-    // card detail last segment → show only the card name (strip sort)
     if (
       segments[PathSegments.Card] === "card" &&
       index === PathSegments.SortByAndCardName
     ) {
       const decoded = decodeMulti(segment);
-      const { cardName } = parseSortAndNameRegex(decoded);
-      items.push({ label: cardName }); // no routeTo on the last crumb
+      try {
+        const { cardName } = parseSortAndNameRegex(decoded, { strict });
+        items.push({ label: decodeMulti(cardName) });
+      } catch (e) {
+        if (strict) throw e;
+        items.push({ label: decoded });
+      }
       continue;
     }
 
-    // all other segments
     const label = decodeMulti(segment);
     const isLast = index === segments.length - 1;
     const routeTo = isLast
@@ -102,7 +105,7 @@ export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
       : "/" + segments.slice(0, index + 1).join("/");
     items.push({ label, routeTo });
   }
-  console.log("[breadcrumbs]", { segments, items });
+
   return items;
 }
 
@@ -161,25 +164,29 @@ export function getCardDetailPath(card: CollectionCard): string {
   return path;
 }
 
-export function parseSortAndNameRegex(input: string): {
-  sortBy?: number; // now optional
-  cardName: string;
-} {
+export function parseSortAndNameRegex(
+  input: string,
+  opts?: { strict?: boolean },
+): { sortBy?: number; cardName: string } {
+  const strict = opts?.strict ?? true;
   const s = (input ?? "").trim();
-  if (!s) return { cardName: "" };
 
-  // Accept "<sort>_<name>" (your current format),
-  // and be tolerant to "<sort>--<name>" or "<sort>-<name>" just in case.
-  const m = s.match(/^(?<sort>\d+(?:\.\d+)?)(?:[_-]{1,2})(?<name>.+)$/);
-  if (m?.groups) {
-    const n = Number(m.groups.sort);
-    return {
-      sortBy: Number.isFinite(n) ? n : undefined,
-      cardName: m.groups.name,
-    };
-    // e.g., "99.3_Sunlight" → { sortBy: 99.3, cardName: "Sunlight" }
+  // Only the canonical "<number>_<name>" is considered a match.
+  const m = s.match(/^(\d+(?:\.\d+)?)_(.+)$/);
+  if (m) {
+    const sortBy = Number(m[1]);
+    const cardName = m[2];
+    if (!Number.isFinite(sortBy) || !cardName) {
+      if (strict) throw new Error(`Invalid format: ${input}`);
+      return { cardName: s };
+    }
+    return { sortBy, cardName };
   }
 
-  // Fallback: treat entire segment as the name (handles "Heavy Boy")
-  return { cardName: s };
+  if (strict) {
+    throw new Error(`Invalid format: ${input}`);
+  } else {
+    // lax mode: treat whole segment as the name
+    return { cardName: s };
+  }
 }
