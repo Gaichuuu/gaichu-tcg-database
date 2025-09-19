@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
         <div className="mb-4 flex items-baseline justify-between">
           <h2 className="text-2xl font-semibold tracking-wide">Latest News</h2>
           <Link to="/news" className="text-indigo-400 hover:underline">
-            All news →
+            See all
           </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-3">

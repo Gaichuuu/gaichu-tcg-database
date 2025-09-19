@@ -25,13 +25,13 @@ export function NewsSearch() {
   useEffect(() => setLocal(q), [q]);
 
   return (
-    <div className="sticky top-14 z-10 border-b border-zinc-800 bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/40">
+    <div className="bg-mainBg sticky top-14 z-10">
       <div className="mx-auto max-w-6xl px-4 py-3">
         <input
           value={local}
           onChange={(e) => setLocal(e.target.value)}
-          placeholder="Search news…"
-          className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          placeholder="Filter…"
+          className="bg-mainBg border-secondaryBorder w-full rounded-xl border px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
         />
       </div>
     </div>
