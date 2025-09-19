@@ -1,5 +1,5 @@
 // src/components/Breadcrumbs.tsx
-import { getBreadcrumbItems } from "@/utils/RoutePathBuildUtils";
+import { getBreadcrumbItems } from "../utils/RoutePathBuildUtils";
 import React from "react";
 import { FaBug } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
@@ -21,20 +21,18 @@ const Breadcrumbs: React.FC = () => {
             <FaBug size={16} className="mb-1 inline-block" />
           </Link>
         </li>
-        {breadcrumbItems.map((item) => {
-          return (
-            <React.Fragment key={item.label}>
-              <span className="mx-2">/</span>
-              <li>
-                {item.routeTo ? (
-                  <Link to={item.routeTo!}>{item.label}</Link>
-                ) : (
-                  <span>{item.label}</span>
-                )}
-              </li>
-            </React.Fragment>
-          );
-        })}
+        {breadcrumbItems.map((item, idx) => (
+          <React.Fragment key={item.routeTo ?? `${idx}-${item.label}`}>
+            <span className="mx-2">/</span>
+            <li>
+              {item.routeTo ? (
+                <Link to={item.routeTo}>{item.label}</Link>
+              ) : (
+                <span>{item.label}</span>
+              )}
+            </li>
+          </React.Fragment>
+        ))}
       </ol>
     </nav>
   );

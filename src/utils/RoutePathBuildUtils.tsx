@@ -45,54 +45,65 @@ export const getTitleSetImagePathType = (
       return "";
   }
 };
+// src/utils/RoutePathBuildUtils.tsx
 export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
-  const originalSegments = locationPathname.split("/").filter(Boolean);
+  const segments = locationPathname.split("/").filter(Boolean);
+  const items: BreadcrumbItem[] = [];
 
-  return (
-    originalSegments
-      .map((segment, index) => {
-        // Handle for card name segment
-        if (
-          originalSegments[PathSegments.Card] == "card" &&
-          index === PathSegments.SortByAndCardName
-        ) {
-          const { cardName } = parseSortAndNameRegex(
-            decodeURIComponent(segment),
-          );
-          // label: Use the card name directly without sortBy number
-          // No routeTo
-          return { label: cardName, routeTo: undefined };
-        }
+  // Decodes 1–3 times to handle double-encoded segments like "%2520" -> "%20" -> " "
+  const decodeMulti = (s: string) => {
+    let out = s;
+    for (let i = 0; i < 3; i++) {
+      try {
+        const next = decodeURIComponent(out);
+        if (next === out) break; // no more to decode
+        out = next;
+      } catch {
+        break; // stop if malformed
+      }
+    }
+    // final guard just in case a lone "%20" slipped through
+    return out.replace(/%20/g, " ");
+  };
 
-        // Handle for set image path segment (Pack Art or Card Back)
-        if (
-          getTitleSetImagePathType(
-            decodeURIComponent(segment) as SetImagePathType,
-          ) &&
-          index === PathSegments.SetImagePath
-        ) {
-          // label: "Pack Art" or "Card Back"
-          // No ruteTo
-          return {
-            label: getTitleSetImagePathType(
-              decodeURIComponent(segment) as SetImagePathType,
-            ),
-            routeTo: undefined,
-          };
-        }
-        if (originalSegments.length - 1 === index) {
-          // If this is the last segment, we don't create a routeTo
-          return { label: decodeURIComponent(segment), routeTo: undefined };
-        }
+  for (let index = 0; index < segments.length; index++) {
+    const segment = segments[index];
 
-        // Handle for other segments
-        const routeTo = "/" + originalSegments.slice(0, index + 1).join("/");
-        // label and routeTo
-        return { label: decodeURIComponent(segment), routeTo: routeTo };
-      })
-      // Filter out unwanted segments "sets" and "card"
-      .filter((item) => item.label !== "sets" && item.label !== "card")
-  );
+    // skip scaffolding segments
+    if (segment === "sets" || segment === "card") continue;
+
+    // pack-art / card-back title
+    if (index === PathSegments.SetImagePath) {
+      const title = getTitleSetImagePathType(
+        decodeMulti(segment) as SetImagePathType,
+      );
+      if (title) {
+        items.push({ label: title }); // routeTo omitted (optional)
+        continue;
+      }
+    }
+
+    // card detail last segment → show only the card name (strip sort)
+    if (
+      segments[PathSegments.Card] === "card" &&
+      index === PathSegments.SortByAndCardName
+    ) {
+      const decoded = decodeMulti(segment);
+      const { cardName } = parseSortAndNameRegex(decoded);
+      items.push({ label: cardName }); // no routeTo on the last crumb
+      continue;
+    }
+
+    // all other segments
+    const label = decodeMulti(segment);
+    const isLast = index === segments.length - 1;
+    const routeTo = isLast
+      ? undefined
+      : "/" + segments.slice(0, index + 1).join("/");
+    items.push({ label, routeTo });
+  }
+  console.log("[breadcrumbs]", { segments, items });
+  return items;
 }
 
 export function getSetListPath(seriesShortName: string): string {
