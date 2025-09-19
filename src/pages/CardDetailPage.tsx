@@ -17,21 +17,35 @@ const CardDetailPage: React.FC = () => {
     useParams<CollectionParams>();
   const navigate = useNavigate();
 
-  const { sortBy, cardName } = parseSortAndNameRegex(sortByAndCardName ?? "");
-  const { card, previousCard, nextCard, isLoading, error } =
-    useCurrentAndAdjacentCards(
-      seriesShortName ?? "",
-      setShortName ?? "",
-      sortBy ?? "",
-      cardName ?? "",
-    );
+  // ✅ decode series/set too (not just the last segment)
+  const seriesKey = decodeURIComponent(seriesShortName ?? "");
+  const setKey = decodeURIComponent(setShortName ?? "");
 
-  if (error && isLoading === false)
+  // existing decode/parse of the last segment
+  const decoded = decodeURIComponent(sortByAndCardName ?? "");
+  const parsed = parseSortAndNameRegex(decoded);
+  const sortByNum = Number(parsed.sortBy);
+  const sortBy = Number.isFinite(sortByNum) ? sortByNum : undefined;
+  const cardName = (parsed.cardName ?? decoded).trim();
+
+  // put this here ⬇️
+  console.log("[CardDetail params]", { seriesKey, setKey, sortBy, cardName });
+
+  // ✅ pass decoded series/set to the hook
+  const { card, previousCard, nextCard, isLoading, error } =
+    useCurrentAndAdjacentCards(seriesKey, setKey, sortBy, cardName);
+
+  // 4) Friendly states
+  if (isLoading) {
+    return <div className="container mx-auto p-4 text-zinc-400">Loading…</div>;
+  }
+  if (error || !card) {
     return (
       <div className="container mx-auto p-4">
         <p className="text-errorText text-center">Card not found.</p>
       </div>
     );
+  }
 
   return (
     <div className="container mx-auto p-4">
@@ -90,7 +104,7 @@ const CardDetailPage: React.FC = () => {
                     {(attack.costs ?? []).map((cost, cIndex) => (
                       <img
                         key={`${attack.name}-cost-${cIndex}`}
-                        src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${cost}.jpg`}
+                        src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
                         alt={`${cost} Icon`}
                         className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
                       />
@@ -119,7 +133,7 @@ const CardDetailPage: React.FC = () => {
                       <span key={cost.aura} className="mr-2">
                         {cost.total}{" "}
                         <img
-                          src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${cost.aura}.jpg`}
+                          src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost.aura}.jpg`}
                           alt={`${cost.aura} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
@@ -137,7 +151,7 @@ const CardDetailPage: React.FC = () => {
                     {card?.traits?.map((traits) => (
                       <span className="mr-2">
                         <img
-                          src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${traits}.png`}
+                          src={`https://gaichu.b-cdn.net/${seriesKey}/icon${traits}.png`}
                           alt={`${traits} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
@@ -155,7 +169,7 @@ const CardDetailPage: React.FC = () => {
                       <span className="mr-2">
                         ({terra.attack && <>{terra.attack} </>}
                         <img
-                          src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${terra.icon}.png`}
+                          src={`https://gaichu.b-cdn.net/${seriesKey}/icon${terra.icon}.png`}
                           alt={`${terra.icon} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
@@ -211,7 +225,7 @@ const CardDetailPage: React.FC = () => {
                               {statuses.map((s, sIdx) => (
                                 <img
                                   key={`status-${s}-${sIdx}`}
-                                  src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${s}.png`}
+                                  src={`https://gaichu.b-cdn.net/${seriesKey}/icon${s}.png`}
                                   alt={`${s} Icon`}
                                   className="inline-block h-5 w-5 align-middle"
                                 />
@@ -228,7 +242,7 @@ const CardDetailPage: React.FC = () => {
                           </span>
                           {atk.bonus && (
                             <img
-                              src={`https://gaichu.b-cdn.net/${seriesShortName}/icon${atk.bonus}.png`}
+                              src={`https://gaichu.b-cdn.net/${seriesKey}/icon${atk.bonus}.png`}
                               alt={`${atk.bonus} Icon`}
                               className="inline-block h-5 w-5 align-middle"
                             />
@@ -245,28 +259,35 @@ const CardDetailPage: React.FC = () => {
                   <td className="py-2">{card.description}</td>
                 </tr>
               )}
-              <tr>
-                <th className="py-2 pr-4 text-left">Illustrator</th>
-                <td className="py-2">{card?.illustrators[0]}</td>
-              </tr>
-              <tr>
-                <th className="py-2 pr-4 text-left">Rarity</th>
-                <td className="py-2">{card?.rarity}</td>
-              </tr>
-              <tr>
-                <th className="py-2 pr-4 text-left">
-                  <img
-                    src={card?.sets[0].image}
-                    alt={card?.sets[0].name}
-                    className="w-24 rounded shadow"
-                  />
-                </th>
-                <td className="py-2">
-                  {card?.sets[0].name} • {card?.number}/
-                  {card?.total_cards_count} • {card?.variant}
-                  <div className="mt-2"></div>
-                </td>
-              </tr>
+              {card?.illustrators && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Illustrator</th>
+                  <td className="py-2">{card?.illustrators[0]}</td>
+                </tr>
+              )}
+              {card?.rarity && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">Rarity</th>
+                  <td className="py-2">{card?.rarity}</td>
+                </tr>
+              )}
+              {card?.sets && (
+                <tr>
+                  <th className="py-2 pr-4 text-left">
+                    <img
+                      src={card?.sets[0].image}
+                      alt={card?.sets[0].name}
+                      className="w-24 rounded shadow"
+                    />
+                  </th>
+
+                  <td className="py-2">
+                    {card?.sets[0].name} • {card?.number}/
+                    {card?.total_cards_count} • {card?.variant}
+                    <div className="mt-2"></div>
+                  </td>
+                </tr>
+              )}
               {card?.note && (
                 <tr>
                   <th className="py-2 pr-4 text-left">Note</th>

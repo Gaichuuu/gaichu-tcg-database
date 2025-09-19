@@ -151,14 +151,24 @@ export function getCardDetailPath(card: CollectionCard): string {
 }
 
 export function parseSortAndNameRegex(input: string): {
-  sortBy: number;
+  sortBy?: number; // now optional
   cardName: string;
 } {
-  const m = input.match(/^(\d+(?:\.\d+)?)_(.+)$/);
-  if (!m) {
-    throw new Error(`Invalid format: ${input}`);
+  const s = (input ?? "").trim();
+  if (!s) return { cardName: "" };
+
+  // Accept "<sort>_<name>" (your current format),
+  // and be tolerant to "<sort>--<name>" or "<sort>-<name>" just in case.
+  const m = s.match(/^(?<sort>\d+(?:\.\d+)?)(?:[_-]{1,2})(?<name>.+)$/);
+  if (m?.groups) {
+    const n = Number(m.groups.sort);
+    return {
+      sortBy: Number.isFinite(n) ? n : undefined,
+      cardName: m.groups.name,
+    };
+    // e.g., "99.3_Sunlight" → { sortBy: 99.3, cardName: "Sunlight" }
   }
-  const [, sortByStr, cardName] = m;
-  const sortBy = parseFloat(sortByStr);
-  return { sortBy, cardName };
+
+  // Fallback: treat entire segment as the name (handles "Heavy Boy")
+  return { cardName: s };
 }
