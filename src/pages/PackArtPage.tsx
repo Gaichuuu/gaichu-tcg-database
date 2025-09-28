@@ -33,7 +33,7 @@ const PackArtPage: React.FC = () => {
             alt={getTitleSetImagePathType(SetImagePathType.PackArt)}
             className="border-secondaryBorder mb-4 block max-h-[600px] border-1 object-contain shadow"
           />
-          {/* Thumbnails */}
+
           <div className="mt-2 flex gap-2">
             {packArts?.map((img, idx) => (
               <button

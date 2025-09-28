@@ -16,7 +16,6 @@ const SeriesPage: React.FC = () => {
       <SetsList
         collectionSet={collectionSet ?? []}
         onClickSet={(set) => {
-          // Navigate to the set page or perform any action with the set
           navigate(getCardListPath(seriesShortName ?? "", set));
         }}
       />

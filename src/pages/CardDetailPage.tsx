@@ -17,25 +17,20 @@ const CardDetailPage: React.FC = () => {
     useParams<CollectionParams>();
   const navigate = useNavigate();
 
-  // ✅ decode series/set too (not just the last segment)
   const seriesKey = decodeURIComponent(seriesShortName ?? "");
   const setKey = decodeURIComponent(setShortName ?? "");
 
-  // existing decode/parse of the last segment
   const decoded = decodeURIComponent(sortByAndCardName ?? "");
   const parsed = parseSortAndNameRegex(decoded, { strict: false });
   const sortByNum = Number(parsed.sortBy);
   const sortBy = Number.isFinite(sortByNum) ? sortByNum : undefined;
   const cardName = (parsed.cardName ?? decoded).trim();
 
-  // put this here ⬇️
   console.log("[CardDetail params]", { seriesKey, setKey, sortBy, cardName });
 
-  // ✅ pass decoded series/set to the hook
   const { card, previousCard, nextCard, isLoading, error } =
     useCurrentAndAdjacentCards(seriesKey, setKey, sortBy, cardName);
 
-  // 4) Friendly states
   if (isLoading) {
     return <div className="container mx-auto p-4 text-zinc-400">Loading…</div>;
   }

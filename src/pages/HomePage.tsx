@@ -10,23 +10,23 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <h1 className="mb-4 text-5xl">Welcome</h1>
+      <h1 className="mb-4 text-5xl tracking-wide">Welcome</h1>
       <p className="mb-8 max-w-xl text-lg">
         Your #2 source for parody and homemade card games.
       </p>
       <Link to="/cards" className="button">
         Browse Cards
       </Link>
-      <section className="mx-auto mt-16 max-w-6xl px-4">
-        <div className="mb-4 flex items-baseline justify-between">
-          <h2 className="text-2xl font-semibold tracking-wide">Latest News</h2>
-          <Link to="/news" className="text-indigo-400 hover:underline">
+      <section className="mx-auto mt-8 max-w-6xl px-4">
+        <div className="mb-2 flex items-baseline justify-between">
+          <h2 className="text-2xl tracking-wide">Latest News</h2>
+          <Link to="/news" className="text-interactiveText hover:underline">
             See all
           </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           {latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />) ?? (
-            <div className="text-zinc-500">No posts yet.</div>
+            <div className="text-secondaryText">No posts yet.</div>
           )}
         </div>
       </section>

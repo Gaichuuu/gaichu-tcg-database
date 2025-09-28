@@ -21,9 +21,9 @@ export function NewsGrid({ q }: { q: string }) {
   }, [hasNextPage, fetchNextPage]);
 
   if (status === "pending")
-    return <p className="px-4 py-10 text-zinc-400">Loading…</p>;
+    return <p className="text-secondaryText px-4 py-10">Loading…</p>;
   if (status === "error")
-    return <p className="px-4 py-10 text-red-400">Couldn’t load news.</p>;
+    return <p className="text-errorText px-4 py-10">Couldn’t load news.</p>;
 
   const posts = data?.pages.flatMap((p) => p.items) ?? [];
 
@@ -36,9 +36,9 @@ export function NewsGrid({ q }: { q: string }) {
       </div>
       <div ref={sentinel} className="flex h-24 items-center justify-center">
         {isFetchingNextPage ? (
-          <span className="text-zinc-500">Loading more…</span>
+          <span className="text-secondaryText">Loading more…</span>
         ) : hasNextPage ? null : (
-          <span className="text-zinc-500">No more posts.</span>
+          <span className="text-secondaryText">No more posts.</span>
         )}
       </div>
     </>
