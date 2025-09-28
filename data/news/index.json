@@ -1,14 +1,46 @@
 [
   {
+    "title": "News test 3",
+    "subtitle": "Testing news item",
+    "author": "gaichu",
+    "tags": ["test", "openzoo", "sets"],
+    "heroUrl": "https://gaichu.b-cdn.net/news/waddle-test-5.png",
+    "excerpt": "Testing excerpt for news item",
+    "bodyHtml": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
+    "createdAt": 1758400000000,
+    "slug": "news-test-3",
+    "id": "news-test-3"
+  },
+  {
+    "title": "News test 2",
+    "subtitle": "Testing news item",
+    "author": "gaichu",
+    "tags": ["test", "openzoo", "sets"],
+    "heroUrl": "https://gaichu.b-cdn.net/news/waddle-test-4.png",
+    "excerpt": "Testing excerpt for news item",
+    "bodyHtml": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
+    "createdAt": 1758200000000,
+    "slug": "news-test-2",
+    "id": "news-test-2"
+  },
+  {
+    "title": "News test 1",
+    "subtitle": "Testing news item",
+    "author": "gaichu",
+    "tags": ["test", "openzoo", "sets"],
+    "heroUrl": "https://gaichu.b-cdn.net/news/waddle-test-3.png",
+    "excerpt": "Testing excerpt for news item",
+    "bodyHtml": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
+    "createdAt": 1758100000000,
+    "slug": "news-test-1",
+    "id": "news-test-1"
+  },
+  {
     "title": "OpenZoo: Legacy — Set Page Is Live",
     "subtitle": "Browse every card, filter quickly, and share deep links",
     "author": "gaichu",
-    "tags": [
-      "release",
-      "openzoo",
-      "sets"
-    ],
-    "heroUrl": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg",
+    "tags": ["release", "openzoo", "sets"],
+    "heroUrl": "https://gaichu.b-cdn.net/news/waddle-test-2.png",
     "excerpt": "The OpenZoo Legacy set page just dropped. It’s fast, linkable, and ready for your lore dives.",
     "bodyHtml": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
     "createdAt": 1758078600000,
@@ -19,11 +51,8 @@
     "title": "We’re Posting News on Gaichu!",
     "subtitle": "Housekeeping + what to expect",
     "author": "gaichu",
-    "tags": [
-      "site-update",
-      "news"
-    ],
-    "heroUrl": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg",
+    "tags": ["site-update", "news"],
+    "heroUrl": "https://gaichu.b-cdn.net/news/waddle-test-1.png",
     "excerpt": "New section, who dis? You’ll now see short updates on releases, site improvements, and spicy TCG takes right here.",
     "bodyHtml": "<p>Welcome to the Gaichu news feed. I’ll use this space for quick posts: release notes, feature previews, and highlights from the parody & indie TCG world. Expect a few blurbs a week—short, readable, and linkable.</p><p>Want more signal? Hit the <em>News</em> tab or follow the social links in the footer. Let’s make the homepage feel alive.</p>",
     "createdAt": 1758076800000,
