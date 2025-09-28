@@ -21,9 +21,9 @@ const SeriesList: React.FC<SeriesListComponent> = ({
             <img
               src={collection.series.logo}
               alt={collection.series.name}
-              className="mb-4 max-h-20 object-contain"
+              className="max-h-20 w-full object-contain transition group-hover:scale-[1.05]"
             />
-            <h3 className="text-lg">{collection.series.name}</h3>
+            <h3 className="mt-4 text-lg">{collection.series.name}</h3>
             <p className="text-secondaryText text-center">
               {collection.sets.length} releases
             </p>
