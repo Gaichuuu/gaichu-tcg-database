@@ -1,7 +1,7 @@
 // scripts/exportCollections.cjs
 const fs = require("fs");
 const path = require("path");
-const { db } = require("./scriptDatabase.cjs");
+const { database } = require("./scriptDatabase.cjs");
 const { allCollections, jsonFilePath } = require("./databaseConstants.cjs");
 
 /**
@@ -23,7 +23,7 @@ async function exportCardCollection() {
 
   for (const folder of subFolders) {
     // Query Firestore for cards where `game == folder`
-    const snapshot = await db
+    const snapshot = await database
       .collection("cards")
       .where("series_short_name", "==", folder)
       .orderBy("sortBy", "asc")
@@ -54,7 +54,7 @@ async function exportOtherCollection(name) {
   // Make sure the top‐level data folder exists
   fs.mkdirSync(jsonFilePath, { recursive: true });
 
-  const snapshot = await db.collection(name).get();
+  const snapshot = await database.collection(name).get();
   const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
   // Write out to data/[name].json

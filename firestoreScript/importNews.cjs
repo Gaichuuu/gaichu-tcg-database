@@ -1,7 +1,7 @@
 // firestoreScript/importNews.cjs
 const fs = require("fs");
 const path = require("path");
-const { db } = require("./scriptDatabase.cjs");
+const { database } = require("./scriptDatabase.cjs");
 
 function slugify(title) {
   return String(title || "")
@@ -37,7 +37,7 @@ async function main() {
 
   const CHUNK = 400; // batch safety
   for (let i = 0; i < posts.length; i += CHUNK) {
-    const batch = db.batch();
+    const batch = database.batch();
     for (const p of posts.slice(i, i + CHUNK)) {
       const slug = p.slug || slugify(p.title);
       const createdAt = Number(p.createdAt ?? Date.now());
@@ -53,7 +53,7 @@ async function main() {
           ),
         ),
       };
-      batch.set(db.collection("news").doc(slug), doc, { merge: true });
+      batch.set(database.collection("news").doc(slug), doc, { merge: true });
       console.log(` → news/${slug}`);
     }
     await batch.commit();

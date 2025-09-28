@@ -1,4 +1,4 @@
-import { db } from "../lib/firebase";
+import { database } from "../lib/firebase";
 import {
   collection,
   query,
@@ -9,7 +9,7 @@ import {
 } from "firebase/firestore";
 import type { CollectionCard } from "../types/CollectionCard";
 
-const cardsRef = collection(db, "cards");
+const cardsRef = collection(database, "cards");
 
 const normalize = (s: string) =>
   (s ?? "")

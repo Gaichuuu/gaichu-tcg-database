@@ -1,6 +1,6 @@
 // src/api/news.tsx
 import type { NewsPost } from "../types/news";
-import { db } from "../lib/firebase";
+import { database } from "@/lib/firebase";
 import {
   collection,
   query,
@@ -39,7 +39,7 @@ const textHaystack = (p: any) =>
 
 // ---- API ----
 export async function fetchLatestNews(limit = 3): Promise<NewsPost[]> {
-  const col = collection(db, "news");
+  const col = collection(database, "news");
   const snap = await getDocs(
     query(col, orderBy("createdAt", "desc"), ql(limit)),
   );
@@ -54,7 +54,7 @@ export async function fetchNewsPage(opts: {
   cursor?: any; // QueryDocumentSnapshot | undefined
   q: string;
 }): Promise<NewsPage> {
-  const col = collection(db, "news");
+  const col = collection(database, "news");
   const tokens = toTokens(opts.q);
 
   // primary query using searchPrefixes (fast path)
@@ -111,7 +111,7 @@ export async function fetchNewsPage(opts: {
 
 export async function fetchNewsBySlug(slug: string): Promise<NewsPost | null> {
   if (!slug) return null;
-  const ref = doc(db, "news", slug);
+  const ref = doc(database, "news", slug);
   const snap = await getDoc(ref);
   return snap.exists()
     ? ({ id: snap.id, ...(snap.data() as any) } as NewsPost)
