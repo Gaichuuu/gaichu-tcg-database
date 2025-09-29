@@ -8,7 +8,7 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import { useNavigate, useParams } from "react-router-dom";
-import HtmlCell from "../components/HtmlCell";
+import HtmlCell from "@/components/HtmlCell";
 
 const SetPage = () => {
   const { seriesShortName, setShortName } = useParams();

@@ -1,16 +1,16 @@
 // src/hooks/useCollectionCard.tsx
 import { useQuery } from "@tanstack/react-query";
-import { AppResult } from "../services/AppResult";
+import { AppResult } from "@/services/AppResult";
 import {
   fetchAdjacentCards,
   fetchCardDetail,
-} from "../services/CollectionCardService";
-import { IS_USE_LOCAL_DATA } from "../services/Constants";
+} from "@/services/CollectionCardService";
+import { IS_USE_LOCAL_DATA } from "@/services/Constants";
 import {
   getAdjacentCards,
   getJsonCardDetail,
-} from "../services/JsonCollectionCardService";
-import { CollectionCard } from "../types/CollectionCard";
+} from "@/services/JsonCollectionCardService";
+import { CollectionCard } from "@/types/CollectionCard";
 
 const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID || "dev";
 
@@ -20,7 +20,7 @@ export const useCardDetail = (
   sortBy: number | undefined,
   cardName: string,
 ): AppResult<CollectionCard | null, Error> => {
-  const sortKey = Number.isFinite(sortBy as number) ? String(sortBy) : "nosort";
+  const sortKey = Number.isFinite(sortBy as number) ? String(sortBy) : "";
   const enabled = Boolean(seriesShortName && setShortName && cardName.trim());
 
   const queryResult = useQuery<CollectionCard | null>({
@@ -29,6 +29,7 @@ export const useCardDetail = (
       projectId,
       seriesShortName,
       setShortName,
+      "sortBy",
       sortKey,
       cardName,
     ],
@@ -37,7 +38,7 @@ export const useCardDetail = (
       fetchCardDetail(seriesShortName, setShortName, sortBy, cardName),
     staleTime: 5 * 60 * 1000,
     refetchOnWindowFocus: false,
-    retry: false, // avoid retry loops for legit 404s
+    retry: false,
   });
 
   if (IS_USE_LOCAL_DATA) {
@@ -49,7 +50,7 @@ export const useCardDetail = (
     );
     return {
       data: card,
-      error: card ? undefined : Error("Card not found"),
+      error: card ? undefined : Error("Card not found."),
       isLoading: false,
     };
   }
@@ -91,11 +92,11 @@ export const useCurrentAndAdjacentCards = (
       seriesShortName,
       setShortName,
       "sortBy",
-      card?.sortBy ?? "nosort",
+      card?.sortBy ?? "",
     ],
     queryFn: () =>
       fetchAdjacentCards(seriesShortName, setShortName, card?.sortBy),
-    enabled: Boolean(seriesShortName && setShortName && card), // wait for current card
+    enabled: Boolean(seriesShortName && setShortName && card),
     staleTime: 5 * 60 * 1000,
     refetchOnWindowFocus: false,
     retry: false,

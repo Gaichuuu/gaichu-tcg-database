@@ -1,6 +1,7 @@
-import { CollectionSeries } from "../../types/CollectionSeries";
-import { SeriesAndSet } from "../../types/MergedCollection";
-import Tile from "../TileComponents/Tile";
+// src/components/ListComponent/SeriesListComponent.tsx
+import { CollectionSeries } from "@/types/CollectionSeries";
+import { SeriesAndSet } from "@/types/MergedCollection";
+import Tile from "@/components/TileComponents/Tile";
 
 type SeriesListComponent = {
   series: SeriesAndSet[];

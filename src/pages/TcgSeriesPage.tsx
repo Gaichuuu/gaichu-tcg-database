@@ -1,9 +1,9 @@
 // src/pages/TcgSeriesPage.tsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import SeriesList from "../components/ListComponent/SeriesListComponent";
-import { getSeries } from "../hooks/useCollection";
-import { getSetListPath } from "../utils/RoutePathBuildUtils";
+import SeriesList from "@/components/ListComponent/SeriesListComponent";
+import { getSeries } from "@/hooks/useCollection";
+import { getSetListPath } from "@/utils/RoutePathBuildUtils";
 
 const TcgSeriesPage: React.FC = () => {
   const result = getSeries();

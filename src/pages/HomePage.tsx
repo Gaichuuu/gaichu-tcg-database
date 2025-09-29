@@ -1,9 +1,9 @@
 // src/pages/HomePage.tsx
 import React from "react";
-import { useLatestNews } from "../hooks/useNews";
-import { NewsCard } from "../components/news/NewsCard";
+import { useLatestNews } from "@/hooks/useNews";
+import { NewsCard } from "@/components/news/NewsCard";
 import { Link } from "react-router-dom";
-import type { NewsPost } from "../types/news";
+import type { NewsPost } from "@/types/news";
 
 const HomePage: React.FC = () => {
   const { data: latest } = useLatestNews(3);

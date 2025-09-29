@@ -1,4 +1,4 @@
-// scripts/importCollections.cjs
+// firestoreScript/importCollections.cjs
 const fs = require("fs");
 const path = require("path");
 const { database } = require("./scriptDatabase.cjs");

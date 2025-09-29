@@ -2,8 +2,8 @@
 import React from "react";
 import { FaBug } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-import { getBreadcrumbItems } from "../utils/RoutePathBuildUtils";
-import { useNewsBySlug } from "../hooks/useNews";
+import { getBreadcrumbItems } from "@/utils/RoutePathBuildUtils";
+import { useNewsBySlug } from "@/hooks/useNews";
 
 const Breadcrumbs: React.FC = () => {
   const location = useLocation();

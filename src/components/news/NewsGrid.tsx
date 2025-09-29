@@ -1,6 +1,6 @@
 // src/components/news/NewsGrid.tsx
 import { useEffect, useRef } from "react";
-import { useInfiniteNews } from "../../hooks/useNews";
+import { useInfiniteNews } from "@/hooks/useNews";
 import { NewsCard } from "./NewsCard";
 
 export function NewsGrid({ q }: { q: string }) {

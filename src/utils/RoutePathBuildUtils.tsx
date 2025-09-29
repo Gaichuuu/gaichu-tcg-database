@@ -1,6 +1,6 @@
 import { generatePath } from "react-router-dom";
-import { CollectionCard } from "../types/CollectionCard";
-import { CollectionSet } from "../types/CollectionSet";
+import { CollectionCard } from "@/types/CollectionCard";
+import { CollectionSet } from "@/types/CollectionSet";
 
 export const HomePagePath = "/";
 export const AboutPagePath = "/about";
@@ -17,7 +17,7 @@ export enum PathSegments {
   Sets = 2,
   SetName = 3,
   Card = 4,
-  SetImagePath = 4, // This is used for PackArt or CardBack
+  SetImagePath = 4,
   // Example: /cards/wm/sets/set1/pack-art or /cards/wm/sets/set1/card-back
   SortByAndCardName = 5,
   // Example: /cards/mz/sets/promo/card/99.3_Sunlight
@@ -171,7 +171,6 @@ export function parseSortAndNameRegex(
   const strict = opts?.strict ?? true;
   const s = (input ?? "").trim();
 
-  // Only the canonical "<number>_<name>" is considered a match.
   const m = s.match(/^(\d+(?:\.\d+)?)_(.+)$/);
   if (m) {
     const sortBy = Number(m[1]);
@@ -186,7 +185,6 @@ export function parseSortAndNameRegex(
   if (strict) {
     throw new Error(`Invalid format: ${input}`);
   } else {
-    // lax mode: treat whole segment as the name
     return { cardName: s };
   }
 }

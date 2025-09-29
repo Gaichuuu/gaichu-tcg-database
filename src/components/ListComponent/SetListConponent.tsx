@@ -1,6 +1,7 @@
-import { CollectionSet } from "../../types/CollectionSet";
-import { SetAndCard } from "../../types/MergedCollection";
-import Tile from "../TileComponents/Tile";
+// src/components/ListComponent/SetListComponent.tsx
+import { CollectionSet } from "@/types/CollectionSet";
+import { SetAndCard } from "@/types/MergedCollection";
+import Tile from "@/components/TileComponents/Tile";
 
 type SetListComponent = {
   collectionSet: SetAndCard[];

@@ -1,6 +1,6 @@
 // src/components/news/NewsCard.tsx
 import { Link } from "react-router-dom";
-import type { NewsPost } from "../../types/news";
+import type { NewsPost } from "@/types/news";
 
 export function NewsCard({ post }: { post: NewsPost }) {
   return (

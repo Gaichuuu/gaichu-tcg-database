@@ -1,6 +1,6 @@
 import React from "react";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
-import { CollectionCard } from "../../types/CollectionCard";
+import { CollectionCard } from "@/types/CollectionCard";
 
 type ButtonAction = {
   pagingType: PagingType;

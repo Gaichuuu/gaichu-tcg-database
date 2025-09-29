@@ -1,9 +1,9 @@
-// src/components/CardListComponent.tsx
+// src/components/ListComponent/CardListComponent.tsx
 import { CollectionCard } from "@/types/CollectionCard";
 import React from "react";
-import HtmlCell from "../HtmlCell";
-import CardsListTile from "../TileComponents/CardsListTile";
-import HoverTooltip from "../TileComponents/HoverTooltip";
+import HtmlCell from "@/components/HtmlCell";
+import CardsListTile from "@/components/TileComponents/CardsListTile";
+import HoverTooltip from "@/components/TileComponents/HoverTooltip";
 import { useParams } from "react-router-dom";
 
 interface CardListProps {
@@ -14,10 +14,17 @@ interface CardListProps {
 const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
   const { seriesShortName } = useParams();
 
-  const tooltipWidth: Record<string, string> = {
-    oz: "w-[26rem]",
-    mz: "w-[30rem]",
-    ash: "w-[24rem]",
+  const tooltipWidth = function (seriesShortName: string) {
+    switch (seriesShortName) {
+      case "oz":
+        return "w-[26rem]";
+      case "mz":
+        return "w-[30rem]";
+      case "ash":
+        return "w-[24rem]";
+      default:
+        return "w-80";
+    }
   };
 
   if (!collectionCards || collectionCards.length === 0) {
@@ -29,7 +36,9 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
       {collectionCards.map((card) => (
         <CardsListTile key={card.id} onClick={() => onClick(card)}>
           <HoverTooltip
-            widthClass={tooltipWidth[seriesShortName ?? ""] || "w-80"}
+            widthClass={
+              seriesShortName ? tooltipWidth(seriesShortName) : "w-80"
+            }
             content={
               <table className="w-full border-collapse text-sm">
                 <tbody>

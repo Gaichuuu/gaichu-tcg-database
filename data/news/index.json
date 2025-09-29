@@ -5,7 +5,7 @@
     "author": "gaichu",
     "tags": ["test", "openzoo", "sets"],
     "heroUrl": "https://gaichu.b-cdn.net/news/waddle-test-5.png",
-    "excerpt": "Testing excerpt for news item",
+    "excerpt": "Making sure the importer is working...",
     "bodyHtml": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
     "createdAt": 1758400000000,
     "slug": "news-test-3",

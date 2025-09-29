@@ -5,7 +5,7 @@ import {
   fetchNewsPage,
   fetchNewsBySlug,
   type NewsPage,
-} from "../api/news";
+} from "@/api/news";
 
 export const useLatestNews = (count = 3) =>
   useQuery({

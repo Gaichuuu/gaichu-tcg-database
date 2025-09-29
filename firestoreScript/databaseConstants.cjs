@@ -1,3 +1,4 @@
+// firestoreScript/databaseConstants.cjs
 const path = require("path");
 
 const allCollections = [

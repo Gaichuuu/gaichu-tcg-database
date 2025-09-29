@@ -1,4 +1,4 @@
-import { database } from "../lib/firebase";
+import { database } from "@/lib/firebase";
 import {
   collection,
   query,
@@ -7,7 +7,7 @@ import {
   getDocs,
   orderBy,
 } from "firebase/firestore";
-import type { CollectionCard } from "../types/CollectionCard";
+import type { CollectionCard } from "@/types/CollectionCard";
 
 const cardsRef = collection(database, "cards");
 
@@ -18,7 +18,6 @@ const normalize = (s: string) =>
     .replace(/\s+/g, " ")
     .trim();
 
-/** Ensure returned objects always expose snake_case keys we use elsewhere. */
 function coerceCard(raw: any): CollectionCard {
   return {
     ...raw,
@@ -27,7 +26,7 @@ function coerceCard(raw: any): CollectionCard {
   } as CollectionCard;
 }
 
-/** Run a query scoping series/set; first try snake_case, then camelCase. */
+// TODO: Remove all camelCase functions?
 async function getDocsWithSeriesSet(
   seriesShortName: string,
   setShortName: string,
@@ -48,7 +47,7 @@ async function getDocsWithSeriesSet(
     console.warn("[cards] snake_case series/set query threw (index?):", e);
   }
 
-  // camelCase fallback
+  // camelCase
   try {
     const snap = await getDocs(
       query(
@@ -65,7 +64,6 @@ async function getDocsWithSeriesSet(
   }
 }
 
-/** Find a card by sort index when present, otherwise by exact name (with robust fallbacks). */
 export async function fetchCardDetail(
   seriesShortName: string,
   setShortName: string,
@@ -79,7 +77,6 @@ export async function fetchCardDetail(
     cardName,
   });
 
-  // 1) Prefer precise lookup by sortBy
   if (Number.isFinite(sortBy as number)) {
     try {
       const snap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
@@ -103,7 +100,6 @@ export async function fetchCardDetail(
     }
   }
 
-  // 2) Name-only query (single eq) then filter by series/set client-side
   try {
     const byName = await getDocs(
       query(cardsRef, where("name", "==", cardName)),
@@ -129,7 +125,6 @@ export async function fetchCardDetail(
     console.warn("[cards] name-only query failed:", e);
   }
 
-  // 3) Set-scan (two eq). If this throws (index), fall back to series-only.
   try {
     const withinSet = await getDocsWithSeriesSet(
       seriesShortName,
@@ -154,7 +149,6 @@ export async function fetchCardDetail(
       e,
     );
     try {
-      // series-only scan (no composite index) then filter in memory
       // snake_case
       let bySeries = await getDocs(
         query(
@@ -164,7 +158,7 @@ export async function fetchCardDetail(
         ),
       );
       if (bySeries.empty) {
-        // camelCase fallback
+        // camelCase
         bySeries = await getDocs(
           query(
             cardsRef,
@@ -213,7 +207,6 @@ export async function fetchAdjacentCards(
   }
 
   try {
-    // uses the helper from earlier; if you don't have it, see note below
     const prevSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
       where("sortBy", "<", sortBy),
       orderBy("sortBy", "desc"),
@@ -232,7 +225,7 @@ export async function fetchAdjacentCards(
     };
   } catch (e) {
     console.warn("[cards] adjacent query failed (likely missing index):", e);
-    // Don’t fail the whole page if prev/next can’t load
+
     return { previousCard: null, nextCard: null };
   }
 }

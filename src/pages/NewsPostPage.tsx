@@ -1,7 +1,7 @@
 // src/pages/NewsPostPage.tsx
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { useNewsBySlug } from "../hooks/useNews";
+import { useNewsBySlug } from "@/hooks/useNews";
 
 export default function NewsPostPage() {
   const { slug = "" } = useParams();

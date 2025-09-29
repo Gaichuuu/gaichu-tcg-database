@@ -1,4 +1,4 @@
-// src/components/Tile.tsx
+// src/components/TileComponents/Tile.tsx
 import React from "react";
 import { TileModel } from "./TileModel";
 

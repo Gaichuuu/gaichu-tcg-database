@@ -1,4 +1,3 @@
-// src/types/news.tsx
 export type NewsPost = {
   id: string;
   slug: string;

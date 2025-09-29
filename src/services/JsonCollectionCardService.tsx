@@ -3,7 +3,7 @@ import mzCardList from "../../data/mz/cards.json";
 import wmCardList from "../../data/wm/cards.json";
 import ashCardList from "../../data/ash/cards.json";
 import ozCardList from "../../data/oz/cards.json";
-import { CollectionCard } from "../types/CollectionCard";
+import { CollectionCard } from "@/types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
 
 // FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
@@ -102,7 +102,6 @@ const CardSchema = z.object({
   ),
   thumb: z.string(),
 
-  // optional properties
   description: z.string().optional(),
   attacks: z
     .array(

@@ -1,5 +1,5 @@
 // src/api/news.tsx
-import type { NewsPost } from "../types/news";
+import type { NewsPost } from "@/types/news";
 import { database } from "@/lib/firebase";
 import {
   collection,
@@ -15,7 +15,6 @@ import {
 
 export type NewsPage = { items: NewsPost[]; nextCursor?: any };
 
-// ---- helpers (single copy) ----
 const toTokens = (s: string) =>
   Array.from(
     new Set(
@@ -37,7 +36,6 @@ const textHaystack = (p: any) =>
     .join(" ")
     .toLowerCase();
 
-// ---- API ----
 export async function fetchLatestNews(limit = 3): Promise<NewsPost[]> {
   const col = collection(database, "news");
   const snap = await getDocs(
@@ -51,13 +49,12 @@ export async function fetchLatestNews(limit = 3): Promise<NewsPost[]> {
 
 export async function fetchNewsPage(opts: {
   limit: number;
-  cursor?: any; // QueryDocumentSnapshot | undefined
+  cursor?: any;
   q: string;
 }): Promise<NewsPage> {
   const col = collection(database, "news");
   const tokens = toTokens(opts.q);
 
-  // primary query using searchPrefixes (fast path)
   const parts: any[] = [];
   if (tokens.length === 1) {
     parts.push(where("searchPrefixes", "array-contains", tokens[0]));
@@ -75,7 +72,6 @@ export async function fetchNewsPage(opts: {
       ...(d.data() as any),
     })) as NewsPost[];
 
-    // AND-filter multi-token matches in memory
     if (tokens.length > 1) {
       items = items.filter((p) =>
         tokens.every((t) => textHaystack(p).includes(t)),
@@ -89,7 +85,6 @@ export async function fetchNewsPage(opts: {
       err,
     );
 
-    // fallback: grab recent N and filter in memory (no index needed)
     const fallbackFetch = Math.max(opts.limit * 5, 50);
     const snap = await getDocs(
       query(col, orderBy("createdAt", "desc"), ql(fallbackFetch)),

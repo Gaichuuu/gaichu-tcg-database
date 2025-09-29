@@ -1,16 +1,16 @@
 // src/pages/CardDetailPage.tsx
 import React from "react";
-import HtmlCell from "../components/HtmlCell";
+import HtmlCell from "@/components/HtmlCell";
 import { useNavigate, useParams } from "react-router-dom";
 import { CollectionParams } from "../App";
 import CardDetailPagingButton, {
   PagingType,
-} from "../components/ButtonComponents/CardDetailPagingButton";
-import { useCurrentAndAdjacentCards } from "../hooks/useCollectionCard";
+} from "@/components/ButtonComponents/CardDetailPagingButton";
+import { useCurrentAndAdjacentCards } from "@/hooks/useCollectionCard";
 import {
   getCardDetailPath,
   parseSortAndNameRegex,
-} from "../utils/RoutePathBuildUtils";
+} from "@/utils/RoutePathBuildUtils";
 
 const CardDetailPage: React.FC = () => {
   const { seriesShortName, setShortName, sortByAndCardName } =

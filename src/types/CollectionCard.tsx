@@ -1,5 +1,4 @@
 export interface CollectionCard {
-  // basic properties
   id: string;
   total_cards_count: number;
   number: number;
@@ -15,7 +14,6 @@ export interface CollectionCard {
   thumb: string;
   variant: string;
 
-  // optional properties
   description?: string;
   attacks?: Attack[];
   zoo_attack?: Zoo_Attack[];
