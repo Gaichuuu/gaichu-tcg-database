@@ -5,13 +5,13 @@ import type { NewsPost } from "@/types/news";
 export function NewsCard({ post }: { post: NewsPost }) {
   return (
     <article className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder flex flex-col gap-3 rounded-2xl border-1 p-4 transition">
-      {post.heroUrl && (
+      {post.hero_url && (
         <Link
           to={`/news/${post.slug}`}
           className="block overflow-hidden rounded-xl"
         >
           <img
-            src={post.heroUrl}
+            src={post.hero_url}
             alt={post.title}
             loading="lazy"
             className="aspect-[16/9] w-full object-cover transition group-hover:scale-[1.05]"
@@ -30,7 +30,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
         <p className="text-secondaryText mt-2 line-clamp-3">{post.excerpt}</p>
       </div>
       <div className="text-secondaryText flex items-center justify-between text-xs">
-        <span>{new Date(post.createdAt).toLocaleDateString()}</span>
+        <span>{new Date(post.created_at).toLocaleDateString()}</span>
         {post.tags && (
           <div className="flex flex-wrap gap-1">
             {post.tags.slice(0, 3).map((t) => (

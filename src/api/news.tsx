@@ -39,7 +39,7 @@ const textHaystack = (p: any) =>
 export async function fetchLatestNews(limit = 3): Promise<NewsPost[]> {
   const col = collection(database, "news");
   const snap = await getDocs(
-    query(col, orderBy("createdAt", "desc"), ql(limit)),
+    query(col, orderBy("created_at", "desc"), ql(limit)),
   );
   return snap.docs.map((d) => ({
     id: d.id,
@@ -61,7 +61,7 @@ export async function fetchNewsPage(opts: {
   } else if (tokens.length > 1) {
     parts.push(where("searchPrefixes", "array-contains-any", tokens));
   }
-  parts.push(orderBy("createdAt", "desc"));
+  parts.push(orderBy("created_at", "desc"));
   if (opts.cursor) parts.push(startAfter(opts.cursor));
   parts.push(ql(opts.limit));
 
@@ -87,7 +87,7 @@ export async function fetchNewsPage(opts: {
 
     const fallbackFetch = Math.max(opts.limit * 5, 50);
     const snap = await getDocs(
-      query(col, orderBy("createdAt", "desc"), ql(fallbackFetch)),
+      query(col, orderBy("created_at", "desc"), ql(fallbackFetch)),
     );
     let items = snap.docs.map((d) => ({
       id: d.id,

@@ -68,14 +68,13 @@ async function main() {
 
       const slug = validateSlug(p.slug, p.title, idx, seen);
 
-      const createdAt = toMillis(p.createdAt);
+      const created_at = toMillis(p.created_at);
 
       const doc = {
         ...p,
         id: slug,
         slug,
-        createdAt,
-        updatedAt: Date.now(),
+        created_at,
         searchPrefixes: prefixes(
           [p.title, p.subtitle, (p.tags || []).join(" "), p.author || ""].join(
             " ",

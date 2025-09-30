@@ -5,10 +5,9 @@ export type NewsPost = {
   subtitle?: string;
   author?: string;
   tags?: string[];
-  heroUrl?: string;
+  hero_url?: string;
   excerpt: string;
-  bodyHtml?: string;
-  createdAt: number;
-  updatedAt?: number;
+  body_html?: string;
+  created_at: number;
   searchPrefixes?: string[];
 };

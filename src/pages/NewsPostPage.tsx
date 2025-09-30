@@ -49,24 +49,24 @@ export default function NewsPostPage() {
       <h2 className="text-2xl tracking-wide">{post.title}</h2>
       {post.subtitle && (
         <p className="text-secondaryText mt-1">
-          {new Date(post.createdAt).toLocaleDateString()}
+          {new Date(post.created_at).toLocaleDateString()}
           {" • "}
           {post.subtitle}
         </p>
       )}
 
-      {post.heroUrl && (
+      {post.hero_url && (
         <img
-          src={post.heroUrl}
+          src={post.hero_url}
           alt=""
           className="mt-4 w-full rounded-xl object-cover"
         />
       )}
 
-      {post.bodyHtml ? (
+      {post.body_html ? (
         <div
           className="text-primaryText prose prose-invert mt-4 max-w-none"
-          dangerouslySetInnerHTML={{ __html: post.bodyHtml }}
+          dangerouslySetInnerHTML={{ __html: post.body_html }}
         />
       ) : (
         <p className="text-secondaryText mt-6">No content yet.</p>
