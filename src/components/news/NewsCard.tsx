@@ -1,37 +1,51 @@
 // src/components/news/NewsCard.tsx
 import { Link } from "react-router-dom";
 import type { NewsPost } from "@/types/news";
+import Scale from "@/components/news/Scale";
 
 export function NewsCard({ post }: { post: NewsPost }) {
+  const dateMs =
+    typeof post.created_at === "number"
+      ? post.created_at
+      : (post as any)?.created_at?.seconds
+        ? (post as any).created_at.seconds * 1000
+        : Date.now();
+
   return (
-    <article className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder flex flex-col gap-3 rounded-2xl border-1 p-4 transition">
+    <Link
+      to={`/news/${post.slug}`}
+      className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder flex h-full flex-col rounded-2xl border-1 p-4 transition focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+      aria-label={post.title}
+    >
       {post.hero_url && (
-        <Link
-          to={`/news/${post.slug}`}
-          className="block overflow-hidden rounded-xl"
-        >
+        <div className="relative overflow-hidden rounded-xl">
+          {typeof post.score === "number" && (
+            <Scale
+              score={post.score}
+              className="bg-mainBg text-primaryText pointer-events-none absolute bottom-2 left-2 z-10 rounded px-2 py-0.5 text-[11px] leading-none font-medium"
+            />
+          )}
           <img
             src={post.hero_url}
             alt={post.title}
             loading="lazy"
-            className="aspect-[16/9] w-full object-cover transition group-hover:scale-[1.05]"
+            className="block aspect-[16/9] w-full object-cover transition-transform duration-300 group-hover:scale-[1.05]"
           />
-        </Link>
+        </div>
       )}
-      <div className="flex-1">
-        <Link to={`/news/${post.slug}`} className="no-underline">
-          <h3 className="text-primaryText text-lg font-semibold tracking-wide">
-            {post.title}
-          </h3>
-        </Link>
-        {post.subtitle && (
-          <p className="text-secondaryText mt-1">{post.subtitle}</p>
+
+      <div className="mt-2 mb-4 flex-1">
+        <h3 className="text-primaryText line-clamp-2 text-lg tracking-wide">
+          {post.title}
+        </h3>
+        {post.excerpt && (
+          <p className="text-secondaryText mt-2 line-clamp-3">{post.excerpt}</p>
         )}
-        <p className="text-secondaryText mt-2 line-clamp-3">{post.excerpt}</p>
       </div>
-      <div className="text-secondaryText flex items-center justify-between text-xs">
-        <span>{new Date(post.created_at).toLocaleDateString()}</span>
-        {post.tags && (
+
+      <div className="text-secondaryText mt-auto flex items-center justify-between text-xs">
+        <span>{new Date(dateMs).toLocaleDateString()}</span>
+        {post.tags && post.tags.length > 0 && (
           <div className="flex flex-wrap gap-1">
             {post.tags.slice(0, 3).map((t) => (
               <span
@@ -44,6 +58,6 @@ export function NewsCard({ post }: { post: NewsPost }) {
           </div>
         )}
       </div>
-    </article>
+    </Link>
   );
 }
