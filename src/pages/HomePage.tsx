@@ -20,9 +20,9 @@ const HomePage: React.FC = () => {
       <section className="mx-auto mt-8 max-w-6xl px-4">
         <div className="mb-2 flex items-baseline justify-between">
           <h2 className="text-2xl tracking-wide">Latest News</h2>
-          <Link to="/news" className="text-interactiveText hover:underline">
-            See all
-          </Link>
+          {/* <Link to="/news" className="text-interactiveText hover:underline">
+            See all //disabled until 3+ posts
+          </Link> */}
         </div>
         <div className="grid gap-4 md:grid-cols-3">
           {latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />) ?? (
