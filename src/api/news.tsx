@@ -26,11 +26,13 @@ const toTokens = (s: string) =>
     ),
   ).slice(0, 10);
 
+const stripHtml = (s: string) => String(s || "").replace(/<[^>]+>/g, " ");
 const textHaystack = (p: any) =>
   [
     p.title ?? "",
-    p.subtitle ?? "",
-    Array.isArray(p.tags) ? p.tags.join(" ") : "",
+    p.excerpt ?? "",
+    stripHtml(p.body_html ?? "").slice(0, 200),
+    (p.tags ?? []).join(" "),
     p.author ?? "",
   ]
     .join(" ")
