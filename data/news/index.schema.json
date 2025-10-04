@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": { "$ref": "#/definitions/NewsPost" },
+  "definitions": {
+    "Slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "NewsPost": {
+      "type": "object",
+      "required": ["title", "slug"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "slug": { "$ref": "#/definitions/Slug" },
+        "title": { "type": "string", "minLength": 1 },
+        "author": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "default": []
+        },
+        "hero_url": { "type": "string", "format": "uri" },
+        "excerpt": { "type": "string" },
+        "body_html": { "type": "string" },
+        "created_at": {
+          "oneOf": [
+            { "type": "number", "minimum": 0 },
+            { "type": "string", "format": "date-time" }
+          ]
+        },
+        "score": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        }
+      }
+    }
+  }
+}
