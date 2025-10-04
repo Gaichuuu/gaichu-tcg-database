@@ -1,62 +1,25 @@
 [
   {
-    "title": "News test 3",
-    "subtitle": "Testing news item",
+    "title": "Gaichu news service is live",
     "author": "gaichu",
-    "tags": ["test", "openzoo", "sets"],
-    "hero_url": "https://gaichu.b-cdn.net/news/waddle-test-5.png",
-    "excerpt": "Making sure the importer is working...",
-    "body_html": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
-    "created_at": 1758400000000,
-    "slug": "news-test-3",
-    "id": "news-test-3"
+    "tags": ["site-updates"],
+    "hero_url": "https://gaichu.b-cdn.net/news/01.png",
+    "excerpt": "We’ve created a safe space right here for your trusted Gaichu news.",
+    "body_html": "<p>We’ve heard you. You’re tired of digging through discord servers for scraps of gossip. Fun sometimes, like watching Canadian men rambling on in the wee hours of the night. Not the best way to get the facts. So we’ve created a safe space right here for your trusted Gaichu news.</p><p>Look forward to updates on various series in the TCG database. And also plenty of investigative reporting. For this, we’ll use the scam-o-meter:</p><dl><dt>Sus 🚩🚩</dt><dd>Typical grifter grifting.</dd><br><dt>Sus 🚩🚩🚩🚩🚩</dt><dd>Probably serious, with rule or law violations.</dd><br><dt>Sus 🚩🚩🚩🚩🚩🚩🚩🚩🚩🚩</dt><dd>Millions of dollars missing.</dd></dl><p>Have a tip? Email <a href=\"mailto:salt@gaichu.com\">salt@gaichu.com</a>. We’ll post if it’s actually good.</p>",
+    "created_at": 1759604400000,
+    "slug": "gaichu-news-service-is-live",
+    "id": "gaichu-news-service-is-live"
   },
   {
-    "title": "News test 2",
-    "subtitle": "Testing news item",
+    "title": "Excerpt search test",
     "author": "gaichu",
-    "tags": ["test", "openzoo", "sets"],
-    "hero_url": "https://gaichu.b-cdn.net/news/waddle-test-4.png",
-    "excerpt": "Testing excerpt for news item",
-    "body_html": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
-    "created_at": 1758200000000,
-    "slug": "news-test-2",
-    "id": "news-test-2"
-  },
-  {
-    "title": "News test 1",
-    "subtitle": "Testing news item",
-    "author": "gaichu",
-    "tags": ["test", "openzoo", "sets"],
-    "hero_url": "https://gaichu.b-cdn.net/news/waddle-test-3.png",
-    "excerpt": "Testing excerpt for news item",
-    "body_html": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
-    "created_at": 1758100000000,
-    "slug": "news-test-1",
-    "id": "news-test-1"
-  },
-  {
-    "title": "OpenZoo: Legacy — Set Page Is Live",
-    "subtitle": "Browse every card, filter quickly, and share deep links",
-    "author": "gaichu",
-    "tags": ["release", "openzoo", "sets"],
-    "hero_url": "https://gaichu.b-cdn.net/news/waddle-test-2.png",
-    "excerpt": "The OpenZoo Legacy set page just dropped. It’s fast, linkable, and ready for your lore dives.",
-    "body_html": "<p>OpenZoo: Legacy is now live on Gaichu. You can browse the full set, search by name, and link directly to any card.</p><ul><li>Lightning-fast filters</li><li>OG tags for clean previews when you share</li><li>Mobile layout tweaks for smoother swiping</li></ul><p>Got feedback or a favorite pull? Drop it in Discord—always building in public.</p>",
-    "created_at": 1758078600000,
-    "slug": "openzoo-legacy-set-page-is-live",
-    "id": "openzoo-legacy-set-page-is-live"
-  },
-  {
-    "title": "We’re Posting News on Gaichu!",
-    "subtitle": "Housekeeping + what to expect",
-    "author": "gaichu",
-    "tags": ["site-update", "news"],
-    "hero_url": "https://gaichu.b-cdn.net/news/waddle-test-1.png",
-    "excerpt": "New section, who dis? You’ll now see short updates on releases, site improvements, and spicy TCG takes right here.",
-    "body_html": "<p>Welcome to the Gaichu news feed. I’ll use this space for quick posts: release notes, feature previews, and highlights from the parody & indie TCG world. Expect a few blurbs a week—short, readable, and linkable.</p><p>Want more signal? Hit the <em>News</em> tab or follow the social links in the footer. Let’s make the homepage feel alive.</p>",
-    "created_at": 1758076800000,
-    "slug": "were-posting-news-on-gaichu",
-    "id": "were-posting-news-on-gaichu"
+    "score": 4,
+    "tags": ["zed"],
+    "hero_url": "https://gaichu.b-cdn.net/news/01.png",
+    "excerpt": "ALIENS We’ve created a safe space right here for your trusted Gaichu news.",
+    "body_html": "<p>HATERS We’ve heard you. You’re tired of digging through Discord servers for scraps of gossip. Fun sometimes, like watching Canadian men rambling on in the wee hours of the night. Not the best way to get facts. We’ve created a safe space right here for your trusted Gaichu news.</p><p>Look forward to updates on upcoming series in the TCG database, and plenty of investigative reporting. For this, we’ll use the scam-o-meter:</p><dl><dt>Sus 🚩🚩</dt><dd>Typical grifter grifting.</dd><dt>Sus 🚩🚩🚩🚩🚩</dt><dd>Probably serious, with rule or law violations.</dd><dt>Sus 🚩🚩🚩🚩🚩🚩🚩🚩🚩🚩</dt><dd>Millions of dollars missing.</dd></dl><p>Have a tip? Email <a href=\"mailto:salt@gaichu.com\">salt@gaichu.com</a>. We’ll post if it’s actually good…</p>",
+    "created_at": 1759604400000,
+    "slug": "excerpt-search-test",
+    "id": "excerpt-search-test"
   }
 ]
