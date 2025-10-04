@@ -139,7 +139,9 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                 alt={card.name}
                 className="border-secondaryBorder block max-h-[260px] w-full rounded-xl border-1 object-contain transition-transform duration-200"
               />
-              <h3 className="mt-0 max-w-30 truncate text-sm">{card.name}</h3>
+              <h3 className="mt-0 line-clamp-1 text-center text-sm">
+                {card.name}
+              </h3>
             </div>
           </HoverTooltip>
         </CardsListTile>
