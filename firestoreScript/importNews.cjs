@@ -35,11 +35,25 @@ function prefixes(s) {
   return [...out];
 }
 
+function stripHtml(html) {
+  return String(html || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+const MAX_BODY_CHARS = 400; // keep the index compact
+
 function toMillis(v) {
   if (v == null) return Date.now();
   if (typeof v === "number") return v;
   const t = Date.parse(v);
   return Number.isFinite(t) ? t : Date.now();
+}
+
+function clampScore(v) {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return undefined;
+  return Math.max(1, Math.min(10, Math.round(n)));
 }
 
 async function main() {
@@ -67,25 +81,37 @@ async function main() {
       const idx = i + offset;
 
       const slug = validateSlug(p.slug, p.title, idx, seen);
-
       const created_at = toMillis(p.created_at);
+      const score = clampScore(p.score);
+
+      const searchText = [
+        p.title,
+        p.subtitle,
+        stripHtml(p.body_html).slice(0, MAX_BODY_CHARS),
+        (p.tags || []).join(" "),
+        p.author || "",
+      ]
+        .filter(Boolean)
+        .join(" ");
 
       const doc = {
         ...p,
         id: slug,
         slug,
         created_at,
-        searchPrefixes: prefixes(
-          [p.title, p.subtitle, (p.tags || []).join(" "), p.author || ""].join(
-            " ",
-          ),
-        ),
+        search_prefixes: prefixes(searchText),
       };
 
+      if (typeof score === "number") doc.score = score;
+      else delete doc.score;
+
+      delete doc.createdAt;
+      delete doc.bodyHtml;
+      delete doc.heroUrl;
+      delete doc.searchPrefixes;
+
       const ref = db.collection("news").doc(slug);
-
-      batch.set(ref, doc, { merge: true });
-
+      batch.set(ref, doc, { merge: false });
       console.log(` → news/${slug}`);
     });
 
