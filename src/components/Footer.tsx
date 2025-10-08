@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <footer className="bg-navBg border-secondaryBorder text-secondaryText border-t py-4">
       <div className="container mx-auto flex flex-col items-center justify-between px-4 md:flex-row">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Gaichu v1.1.0
+          &copy; {new Date().getFullYear()} Gaichu v1.2.0
         </p>
         <div className="mt-2 flex items-center space-x-4 md:mt-0">
           <Link to="/about">About</Link>
