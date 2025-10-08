@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
           </span>
         </p>
         <div className="mt-2 flex items-center space-x-4 md:mt-0">
-          <Link to="/about">About</Link>
+          <Link to="/about" className="tracking-wider">
+            About
+          </Link>
 
           <a
             href="https://github.com/Gaichuuu/gaichu-tcg-database"
