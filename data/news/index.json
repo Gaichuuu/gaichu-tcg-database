@@ -4,22 +4,10 @@
     "author": "gaichu",
     "tags": ["site-updates"],
     "hero_url": "https://gaichu.b-cdn.net/news/01.png",
-    "excerpt": "We’ve created a safe space right here for your trusted Gaichu news.",
-    "body_html": "<p>We’ve heard you. You’re tired of digging through discord servers for scraps of gossip. Fun sometimes, like watching Canadian men rambling on in the wee hours of the night. Not the best way to get the facts. So we’ve created a safe space right here for your trusted Gaichu news.</p><p>Look forward to updates on various series in the TCG database. And also plenty of investigative reporting. For this, we’ll use the scam-o-meter:</p><dl><dt>Sus 🚩🚩</dt><dd>Typical grifter grifting.</dd><br><dt>Sus 🚩🚩🚩🚩🚩</dt><dd>Probably serious, with rule or law violations.</dd><br><dt>Sus 🚩🚩🚩🚩🚩🚩🚩🚩🚩🚩</dt><dd>Millions of dollars missing.</dd></dl><p>Have a tip? Email <a href=\"mailto:salt@gaichu.com\">salt@gaichu.com</a>. We’ll post if it’s actually good.</p>",
-    "created_at": 1759604400000,
+    "excerpt": "We’ve created a safe space right here for your (probably) trusted news.",
+    "body_html": "<p>We’ve heard you. You’re tired of digging through discord dungeons for salacious scraps of gossip. Fun sometimes, like watching Canadian casters pass gas in the dead of night. Butt not the best way to get facts. So we’ve created a safe space right here for your (probably) trusted Gaichu news.</p><p>Look forward to updates on various bootleg tcgs in our database. And plenty of investigative reporting. For this, we use the scam-o-meter:</p><dl><dt>Sus 🚩🚩</dt><dd>Typical grifter grifting.</dd><br><dt>Sus 🚩🚩🚩🚩🚩</dt><dd>Several rule or law violations.</dd><br><dt>Sus 🚩🚩🚩🚩🚩🚩🚩🚩🚩🚩</dt><dd>Millions of dollars missing.</dd></dl><p>That's all folks. See you in the salt mines.</p>",
+    "created_at": 1759950000000,
     "slug": "gaichu-news-service-is-live",
     "id": "gaichu-news-service-is-live"
-  },
-  {
-    "title": "Excerpt search test",
-    "author": "gaichu",
-    "score": 4,
-    "tags": ["zed"],
-    "hero_url": "https://gaichu.b-cdn.net/news/01.png",
-    "excerpt": "ALIENS We’ve created a safe space right here for your trusted Gaichu news.",
-    "body_html": "<p>HATERS We’ve heard you. You’re tired of digging through Discord servers for scraps of gossip. Fun sometimes, like watching Canadian men rambling on in the wee hours of the night. Not the best way to get facts. We’ve created a safe space right here for your trusted Gaichu news.</p><p>Look forward to updates on upcoming series in the TCG database, and plenty of investigative reporting. For this, we’ll use the scam-o-meter:</p><dl><dt>Sus 🚩🚩</dt><dd>Typical grifter grifting.</dd><dt>Sus 🚩🚩🚩🚩🚩</dt><dd>Probably serious, with rule or law violations.</dd><dt>Sus 🚩🚩🚩🚩🚩🚩🚩🚩🚩🚩</dt><dd>Millions of dollars missing.</dd></dl><p>Have a tip? Email <a href=\"mailto:salt@gaichu.com\">salt@gaichu.com</a>. We’ll post if it’s actually good…</p>",
-    "created_at": 1759604400000,
-    "slug": "excerpt-search-test",
-    "id": "excerpt-search-test"
   }
 ]
