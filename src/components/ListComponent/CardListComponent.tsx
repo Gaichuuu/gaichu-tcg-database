@@ -28,7 +28,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
   };
 
   if (!collectionCards || collectionCards.length === 0) {
-    return <div className="text-primaryText text-center">No cards found.</div>;
+    return <div className="text-errorText text-center">No cards found.</div>;
   }
 
   return (
@@ -139,9 +139,9 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                 alt={card.name}
                 className="border-secondaryBorder block max-h-[260px] w-full rounded-xl border-1 object-contain transition-transform duration-200"
               />
-              <h3 className="mt-0 line-clamp-1 text-center text-sm">
+              <p className="mt-0 line-clamp-1 text-center text-sm">
                 {card.name}
-              </h3>
+              </p>
             </div>
           </HoverTooltip>
         </CardsListTile>

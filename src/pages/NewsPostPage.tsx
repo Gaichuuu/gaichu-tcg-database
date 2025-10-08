@@ -47,7 +47,7 @@ export default function NewsPostPage() {
 
   return (
     <article className="mx-auto mb-2 max-w-4xl px-4 py-2">
-      <h2 className="text-2xl tracking-wide">{post.title}</h2>
+      <h2>{post.title}</h2>
       <p className="text-secondaryText mt-1">
         {new Date(post.created_at).toLocaleDateString()}
         {" • "}
@@ -65,7 +65,7 @@ export default function NewsPostPage() {
           {typeof post.score === "number" && (
             <Scale
               score={Math.max(1, Math.min(10, Math.round(post.score)))}
-              className="bg-navBg text-primaryText pointer-events-none absolute bottom-2 left-2 z-10 rounded px-2 py-0.5 text-[11px] leading-none font-medium"
+              className="bg-navBg text-primaryText pointer-events-none absolute bottom-2 left-2 z-8 rounded px-2 py-0.5 text-xs leading-none"
             />
           )}
         </div>
@@ -73,7 +73,7 @@ export default function NewsPostPage() {
 
       {post.body_html ? (
         <div
-          className="text-primaryText mt-4 max-w-none space-y-4 leading-relaxed [&_dd]:ml-8 [&_dt]:ml-8"
+          className="mt-4 max-w-none space-y-4 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: post.body_html }}
         />
       ) : (

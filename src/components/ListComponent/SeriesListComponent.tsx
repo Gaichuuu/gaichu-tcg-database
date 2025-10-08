@@ -24,7 +24,7 @@ const SeriesList: React.FC<SeriesListComponent> = ({
               alt={collection.series.name}
               className="max-h-20 w-full object-contain transition group-hover:scale-[1.05]"
             />
-            <h3 className="mt-4 text-lg">{collection.series.name}</h3>
+            <h4 className="mt-4 font-bold">{collection.series.name}</h4>
             <p className="text-secondaryText text-center">
               {collection.sets.length} releases
             </p>

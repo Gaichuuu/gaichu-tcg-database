@@ -23,7 +23,7 @@ const SetPage = () => {
   }
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-2">
       <div className="mb-2 flex">
         <div className="flex flex-row">
           {setAndCard?.set.set_images?.map((img) => (
@@ -41,7 +41,7 @@ const SetPage = () => {
                 alt={getTitleSetImagePathType(img.pathType as SetImagePathType)}
                 className="border-secondaryBorder mb-0 block max-h-[100px] w-full rounded border-1 object-contain transition-transform duration-200"
               />
-              <span className="text-primaryText w-full text-center text-sm">
+              <span className="w-full text-center text-sm">
                 {getTitleSetImagePathType(img.pathType as SetImagePathType)}
               </span>
             </div>
@@ -49,10 +49,8 @@ const SetPage = () => {
         </div>
 
         <div className="flex-1 pl-4">
-          <h2 className="text-primaryText mb-2 text-2xl">
-            {setAndCard?.set.name}
-          </h2>
-          <p className="text-primaryText max-w-2xl text-sm whitespace-pre-line">
+          <h3 className="mb-2 font-bold">{setAndCard?.set.name}</h3>
+          <p className="max-w-2xl text-sm whitespace-pre-line">
             <HtmlCell html={setAndCard?.set.description} />
           </p>
         </div>

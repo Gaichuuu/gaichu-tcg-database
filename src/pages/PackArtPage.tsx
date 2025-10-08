@@ -56,9 +56,9 @@ const PackArtPage: React.FC = () => {
           </div>
         </div>
         <div className="md:w-2/3">
-          <h2 className="mb-4 text-3xl">
+          <h1 className="mb-4">
             {getTitleSetImagePathType(SetImagePathType.PackArt)}
-          </h2>
+          </h1>
           <table className="w-full border-collapse">
             <tbody>
               {pack?.frontDescription && (

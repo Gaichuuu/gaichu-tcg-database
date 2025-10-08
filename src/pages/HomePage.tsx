@@ -10,8 +10,8 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <h1 className="mb-4 text-5xl tracking-wide">Welcome</h1>
-      <p className="mb-8 max-w-xl text-lg">
+      <p className="mb-4 text-5xl tracking-wide">Welcome</p>
+      <p className="mb-4 max-w-xl text-lg">
         Your #2 source for parody and homemade card games.
       </p>
       <Link to="/cards" className="button">
@@ -19,9 +19,9 @@ const HomePage: React.FC = () => {
       </Link>
       <section className="mx-auto mt-8 max-w-6xl px-4">
         <div className="mb-2 flex items-baseline justify-between">
-          <h2 className="text-2xl tracking-wide">Latest News</h2>
-          {/* <Link to="/news" className="text-interactiveText hover:underline">
-            See all //disabled until 3+ posts
+          <h3>Latest News</h3>
+          {/* <Link to="/news" className="text-interactiveText">
+            See all //disabled until more posts
           </Link> */}
         </div>
         <div className="grid gap-4 md:grid-cols-3">

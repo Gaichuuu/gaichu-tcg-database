@@ -12,7 +12,7 @@ const SeriesPage: React.FC = () => {
   if (error) return <p>Something went wrong...</p>;
   return (
     <div className="container mx-auto p-2">
-      <h2 className="mb-2 text-xl">{seriesShortName} sets</h2>
+      <h3 className="mb-2">{seriesShortName} sets</h3>
       <SetsList
         collectionSet={collectionSet ?? []}
         onClickSet={(set) => {

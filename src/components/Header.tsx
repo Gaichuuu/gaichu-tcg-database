@@ -12,7 +12,7 @@ const Header: React.FC = () => {
             alt="Logo"
             className="h-8 w-9"
           />
-          <span className="text-xl">Gaichu</span>
+          <span className="text-lg font-medium">Gaichu</span>
         </Link>
 
         <nav>

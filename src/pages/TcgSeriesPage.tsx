@@ -11,7 +11,7 @@ const TcgSeriesPage: React.FC = () => {
   const navigate = useNavigate();
   return (
     <div className="container mx-auto p-2">
-      <h2 className="mb-2 text-xl">Series</h2>
+      <h3 className="mb-2">Series</h3>
       <SeriesList
         series={result?.data ?? []}
         onClickSeries={(series) => {
