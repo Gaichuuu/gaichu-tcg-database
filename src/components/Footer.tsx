@@ -7,8 +7,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-navBg border-secondaryBorder text-secondaryText border-t py-4">
       <div className="container mx-auto flex flex-col items-center justify-between px-4 md:flex-row">
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} Gaichu v1.2.0
+        <p>
+          &copy;{" "}
+          <span className="text-sm">
+            {new Date().getFullYear()} Gaichu v1.2.0
+          </span>
         </p>
         <div className="mt-2 flex items-center space-x-4 md:mt-0">
           <Link to="/about">About</Link>
