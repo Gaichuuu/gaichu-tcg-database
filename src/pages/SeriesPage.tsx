@@ -11,7 +11,7 @@ const SeriesPage: React.FC = () => {
   const navigate = useNavigate();
   if (error) return <p>Something went wrong...</p>;
   return (
-    <div className="container mx-auto p-2">
+    <div className="container mx-auto p-0">
       <h3 className="mb-2">{seriesShortName} sets</h3>
       <SetsList
         collectionSet={collectionSet ?? []}

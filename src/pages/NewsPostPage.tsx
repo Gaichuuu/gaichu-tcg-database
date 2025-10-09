@@ -39,7 +39,7 @@ export default function NewsPostPage() {
 
   if (!post) {
     return (
-      <div className="text-secondaryText mx-auto max-w-4xl px-4 py-2">
+      <div className="text-errorText mx-auto max-w-4xl px-4 py-2">
         Post not found for slug: <code>{slug}</code>
       </div>
     );
@@ -77,7 +77,7 @@ export default function NewsPostPage() {
           dangerouslySetInnerHTML={{ __html: post.body_html }}
         />
       ) : (
-        <p className="text-secondaryText mt-6">No content yet.</p>
+        <p className="text-errorText mt-6">No content yet.</p>
       )}
     </article>
   );
