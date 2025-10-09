@@ -25,9 +25,7 @@ const HomePage: React.FC = () => {
           </Link> */}
         </div>
         <div className="grid gap-4 md:grid-cols-3">
-          {latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />) ?? (
-            <div className="text-secondaryText">No posts yet.</div>
-          )}
+          {latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />)}
         </div>
       </section>
     </div>
