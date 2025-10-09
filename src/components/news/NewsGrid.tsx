@@ -38,7 +38,7 @@ export function NewsGrid({ q }: { q: string }) {
         {isFetchingNextPage ? (
           <span className="text-secondaryText">Loading more…</span>
         ) : hasNextPage ? null : (
-          <span className="text-secondaryText">No more posts.</span>
+          <span className="text-secondaryText">You’ve reached the end.</span>
         )}
       </div>
     </>
