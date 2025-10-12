@@ -60,7 +60,10 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                             className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
                           />
                         ))}
-                        {attack.effect}{" "}
+                        <HtmlCell
+                          html={attack.effect}
+                          className="html-cell mx-1"
+                        />{" "}
                         {attack.damage ? `(${attack.damage})` : ""}
                       </td>
                     </tr>
