@@ -24,7 +24,9 @@ const setsList: React.FC<SetListComponent> = ({
               alt={collection.set.short_name}
               className="w-full object-contain transition group-hover:scale-[1.05]"
             />
-            <h4 className="mt-2 font-bold">{collection.set.name}</h4>
+            <h4 className="mt-2 line-clamp-1 text-center font-bold text-clip">
+              {collection.set.name}
+            </h4>
             <p className="text-secondaryText text-center">
               {collection.cards.length}
             </p>

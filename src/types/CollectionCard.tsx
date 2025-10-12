@@ -14,11 +14,17 @@ export interface CollectionCard {
   thumb: string;
   variant: string;
 
+  color?: string;
   description?: string;
   attacks?: Attack[];
   zoo_attack?: Zoo_Attack[];
   measurement?: Measurement;
+  stage?: Stage[];
+  rule?: Rule[];
   metadata?: Metadata;
+  weakness?: WeaknessEntry[];
+  resistance?: ResistanceEntry[];
+  retreat?: RetreatEntry[];
   parody?: string;
   hp?: string;
   lp?: string;
@@ -47,12 +53,25 @@ interface Measurement {
   weight: string;
 }
 
+interface Stage {
+  basic?: string;
+  evolution?: string;
+  description?: string;
+}
+
+interface Rule {
+  name?: string;
+  description?: string;
+}
+
 interface Metadata {
   height?: string;
   weight: string;
   gps: string;
   discovered: string;
   length?: string;
+  type?: string;
+  measurement?: string;
 }
 
 interface Attack {
@@ -74,4 +93,18 @@ interface Zoo_Attack {
 interface Cost {
   total: string;
   aura: string;
+}
+
+interface WeaknessEntry {
+  type?: string;
+  value?: string;
+}
+
+interface ResistanceEntry {
+  type?: string;
+  value?: string;
+}
+
+interface RetreatEntry {
+  costs?: string[];
 }

@@ -77,16 +77,44 @@ const CardDetailPage: React.FC = () => {
 
           <table className="w-full border-collapse">
             <tbody>
+              {card?.type && (
+                <tr>
+                  <th>Type</th>
+                  <td>
+                    {card?.color && (
+                      <img
+                        src={`https://gaichu.b-cdn.net/${seriesKey}/icon${card.color}.jpg`}
+                        alt={`${card.color} Icon`}
+                        className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
+                      />
+                    )}
+                    {card?.type}
+                  </td>
+                </tr>
+              )}
+              {card?.stage?.map((s, i) => {
+                const text = [s.basic, s.evolution, s.description]
+                  .filter(Boolean)
+                  .join("\n");
+                if (!text) return null;
+
+                return (
+                  <tr key={i}>
+                    <th>Stage</th>
+                    <td>{text}</td>
+                  </tr>
+                );
+              })}
               {card?.hp && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">HP</th>
-                  <td className="py-2">{card?.hp}</td>
+                  <th>HP</th>
+                  <td>{card?.hp}</td>
                 </tr>
               )}
               {card?.measurement && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Measurements</th>
-                  <td className="py-2">
+                  <th>Measurements</th>
+                  <td>
                     Height {card?.measurement?.height}, Weight{" "}
                     {card?.measurement?.weight}
                   </td>
@@ -94,36 +122,31 @@ const CardDetailPage: React.FC = () => {
               )}
               {card?.attacks?.map((attack, aIndex) => (
                 <tr key={attack.name ?? aIndex}>
-                  <th className="py-2 pr-4 text-left">{attack.name}</th>
-                  <td className="py-2">
+                  <th>{attack.name}</th>
+                  <td>
                     {(attack.costs ?? []).map((cost, cIndex) => (
                       <img
                         key={`${attack.name}-cost-${cIndex}`}
                         src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
                         alt={`${cost} Icon`}
-                        className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
+                        className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
                       />
                     ))}
-                    {attack.effect} {attack.damage ? `(${attack.damage})` : ""}
+                    <HtmlCell html={attack.effect} className="html-cell mx-1" />{" "}
+                    {attack.damage ? `(${attack.damage})` : ""}
                   </td>
                 </tr>
               ))}
-              {card?.type && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Type</th>
-                  <td className="py-2">{card?.type}</td>
-                </tr>
-              )}
               {card?.limit && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Limit</th>
-                  <td className="py-2">{card?.limit}</td>
+                  <th>Limit</th>
+                  <td>{card?.limit}</td>
                 </tr>
               )}
               {card?.cost && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Cost</th>
-                  <td className="py-2">
+                  <th>Cost</th>
+                  <td>
                     {card?.cost?.map((cost) => (
                       <span key={cost.aura} className="mr-2">
                         {cost.total}{" "}
@@ -132,7 +155,7 @@ const CardDetailPage: React.FC = () => {
                           alt={`${cost.aura} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
-                        {"   "}
+                        {"  "}
                       </span>
                     ))}
                     {card?.lp && <span>LP {card.lp}</span>}
@@ -141,8 +164,8 @@ const CardDetailPage: React.FC = () => {
               )}
               {card?.traits && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Traits</th>
-                  <td className="py-2">
+                  <th>Traits</th>
+                  <td>
                     {card?.traits?.map((traits) => (
                       <span className="mr-2">
                         <img
@@ -150,7 +173,7 @@ const CardDetailPage: React.FC = () => {
                           alt={`${traits} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
-                        {"   "}
+                        {"  "}
                       </span>
                     ))}
                   </td>
@@ -158,8 +181,8 @@ const CardDetailPage: React.FC = () => {
               )}
               {card?.terra && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Terra</th>
-                  <td className="py-2">
+                  <th>Terra</th>
+                  <td>
                     {card?.terra?.map((terra) => (
                       <span className="mr-2">
                         ({terra.attack && <>{terra.attack} </>}
@@ -168,7 +191,7 @@ const CardDetailPage: React.FC = () => {
                           alt={`${terra.icon} Icon`}
                           className="inline-block h-5 w-5 align-middle"
                         />
-                        {terra.lp}){"   "}
+                        {terra.lp}){"  "}
                       </span>
                     ))}
                   </td>
@@ -176,8 +199,8 @@ const CardDetailPage: React.FC = () => {
               )}
               {card?.metadata && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Metadata</th>
-                  <td className="py-2">
+                  <th>Metadata</th>
+                  <td>
                     {card?.metadata?.discovered && (
                       <>Discovered {card.metadata.discovered}, </>
                     )}
@@ -191,12 +214,17 @@ const CardDetailPage: React.FC = () => {
                     {card?.metadata?.length && (
                       <>Length {card.metadata.length}</>
                     )}
+                    {card?.metadata?.type && (
+                      <>
+                        {card.metadata.type} {card.metadata.measurement}
+                      </>
+                    )}
                   </td>
                 </tr>
               )}
               {card?.effect && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Effect</th>
+                  <th>Effect</th>
                   <HtmlCell html={card?.effect} />
                 </tr>
               )}
@@ -211,10 +239,8 @@ const CardDetailPage: React.FC = () => {
                   return (
                     <React.Fragment key={`${atk.name ?? "atk"}-${idx}`}>
                       <tr>
-                        <th className="py-2 pr-4 text-left align-top">
-                          {atk.name}
-                        </th>
-                        <td className="py-2">
+                        <th>{atk.name}</th>
+                        <td>
                           {statuses.length > 0 && (
                             <span className="mr-2 inline-flex items-center gap-1 align-middle">
                               {statuses.map((s, sIdx) => (
@@ -248,35 +274,123 @@ const CardDetailPage: React.FC = () => {
                     </React.Fragment>
                   );
                 })}
-              {card?.description && (
+
+              {(card?.weakness?.length ||
+                card?.resistance?.length ||
+                card?.retreat?.some((r) => r?.costs?.length)) && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Flavor Text</th>
-                  <td className="py-2">{card.description}</td>
+                  <th>Attributes</th>
+                  <td>
+                    {card?.weakness?.length ? (
+                      <div>
+                        <span>Weakness</span>{" "}
+                        <span className="mb-1 inline-flex flex-wrap items-center gap-2 align-middle">
+                          {card.weakness.map((w, i) => (
+                            <span
+                              key={`w-${i}`}
+                              className="inline-flex items-center gap-1"
+                            >
+                              {w?.type && (
+                                <img
+                                  src={`https://gaichu.b-cdn.net/${seriesKey}/icon${w.type}.jpg`}
+                                  alt={`${w.type} Icon`}
+                                  className="inline-block h-5 w-5 align-middle"
+                                />
+                              )}
+                              {w?.value && (
+                                <span className="align-middle">{w.value}</span>
+                              )}
+                            </span>
+                          ))}
+                        </span>
+                      </div>
+                    ) : null}
+
+                    {card?.resistance?.length ? (
+                      <div>
+                        <span>Resistance</span>{" "}
+                        <span className="mb-1 inline-flex flex-wrap items-center gap-2 align-middle">
+                          {card.resistance.map((r, i) => (
+                            <span
+                              key={`r-${i}`}
+                              className="inline-flex items-center gap-1"
+                            >
+                              {r?.type && (
+                                <img
+                                  src={`https://gaichu.b-cdn.net/${seriesKey}/icon${r.type}.jpg`}
+                                  alt={`${r.type} Icon`}
+                                  className="inline-block h-5 w-5 align-middle"
+                                />
+                              )}
+                              {r?.value && (
+                                <span className="align-middle">{r.value}</span>
+                              )}
+                            </span>
+                          ))}
+                        </span>
+                      </div>
+                    ) : null}
+
+                    {card?.retreat?.some((rr) => rr?.costs?.length) ? (
+                      <div>
+                        <span>Retreat</span>{" "}
+                        <span className="inline-flex flex-wrap items-center gap-2 align-middle">
+                          {(card.retreat ?? [])
+                            .flatMap((rr) => rr?.costs ?? [])
+                            .map((cost, i) => (
+                              <img
+                                key={`c-${i}`}
+                                src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
+                                alt={`${cost} Icon`}
+                                className="inline-block h-5 w-5 align-middle"
+                              />
+                            ))}
+                        </span>
+                      </div>
+                    ) : null}
+                  </td>
                 </tr>
               )}
+
+              {card?.description && (
+                <tr>
+                  <th>Flavor Text</th>
+                  <td>{card.description}</td>
+                </tr>
+              )}
+              {card?.rule?.map((s, i) => {
+                const text = [s.name, s.description].filter(Boolean).join("\n");
+                if (!text) return null;
+
+                return (
+                  <tr key={i}>
+                    <th>Rule</th>
+                    <td>{text}</td>
+                  </tr>
+                );
+              })}
               {card?.illustrators && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Illustrator</th>
-                  <td className="py-2">{card?.illustrators[0]}</td>
+                  <th>Illustrator</th>
+                  <td>{card?.illustrators[0]}</td>
                 </tr>
               )}
               {card?.rarity && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Rarity</th>
-                  <td className="py-2">{card?.rarity}</td>
+                  <th>Rarity</th>
+                  <td>{card?.rarity}</td>
                 </tr>
               )}
               {card?.sets && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">
+                  <th>
                     <img
                       src={card?.sets[0].image}
                       alt={card?.sets[0].name}
                       className="w-24 rounded shadow"
                     />
                   </th>
-
-                  <td className="py-2">
+                  <td>
                     {card?.sets[0].name} • {card?.number}/
                     {card?.total_cards_count} • {card?.variant}
                     <div className="mt-2"></div>
@@ -285,8 +399,8 @@ const CardDetailPage: React.FC = () => {
               )}
               {card?.note && (
                 <tr>
-                  <th className="py-2 pr-4 text-left">Note</th>
-                  <td className="py-2">{card?.note}</td>
+                  <th>Note</th>
+                  <td>{card?.note}</td>
                 </tr>
               )}
             </tbody>

@@ -115,4 +115,20 @@ h4 {
 
 th {
   font-weight: 500;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.375;
+  white-space: pre-wrap;
+}
+
+.html-cell {
+  display: inline;
 }
