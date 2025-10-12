@@ -6,7 +6,7 @@
       { "$ref": "../cards.schema.base.json" },
       {
         "type": "object",
-        "required": ["type", "color"],
+        "required": ["type"],
         "properties": {
           "illustrators": {
             "type": "array",
@@ -21,7 +21,7 @@
           },
           "set_short_name": {
             "type": "string",
-            "enum": ["gen1"]
+            "enum": ["sticker", "og", "series1", "series2"]
           },
           "series_short_name": {
             "type": "string",
@@ -36,7 +36,12 @@
               "properties": {
                 "name": {
                   "type": "string",
-                  "enum": ["Generation One"]
+                  "enum": [
+                    "Sticker Art",
+                    "Series 1",
+                    "Series 1 (reprint)",
+                    "Series 2"
+                  ]
                 },
                 "image": {
                   "type": "string",
@@ -65,7 +70,8 @@
               "Lightning",
               "Colorless",
               "Psychic",
-              "Water"
+              "Water",
+              "Metal"
             ]
           },
           "stage": {
@@ -120,8 +126,8 @@
                       "Colorless",
                       "Psychic",
                       "Water",
-                      "4",
-                      "+"
+                      "Metal",
+                      "Plus"
                     ]
                   },
                   "minItems": 1
@@ -147,7 +153,8 @@
                     "Grass",
                     "Lightning",
                     "Psychic",
-                    "Water"
+                    "Water",
+                    "Metal"
                   ]
                 },
                 "value": {
@@ -173,7 +180,8 @@
                     "Grass",
                     "Lightning",
                     "Psychic",
-                    "Water"
+                    "Water",
+                    "Metal"
                   ]
                 },
                 "value": {
@@ -190,7 +198,7 @@
               "properties": {
                 "type": {
                   "type": "string",
-                  "enum": ["Colorless", "3"]
+                  "enum": ["Colorless"]
                 }
               }
             },
