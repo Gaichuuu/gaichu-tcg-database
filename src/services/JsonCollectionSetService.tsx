@@ -46,6 +46,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       name: card.name,
       parody: card.parody,
       rarity: card.rarity,
+      color: card.color,
       set_short_name: card.set_short_name,
       series_short_name: card.series_short_name,
       image: card.image,
@@ -63,10 +64,32 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
         damage: attack.damage,
         costs: attack.costs?.map((cost: any) => cost),
       })),
+
+      weakness: card.weakness?.map((weakness: any) => ({
+        type: weakness.type,
+        value: weakness.value,
+      })),
+      resistance: card.resistance?.map((resistance: any) => ({
+        type: resistance.type,
+        value: resistance.value,
+      })),
+      retreat: card.retreat?.map((retreat: any) => ({
+        costs: retreat.costs?.map((cost: any) => cost),
+      })),
+
       measurement: {
         height: card.measurement?.height,
         weight: card.measurement?.weight,
       },
+      stage: card.stage?.map((stage: any) => ({
+        basic: stage.basic,
+        evolution: stage.evolution,
+        description: stage.description,
+      })),
+      rule: card.rule?.map((rule: any) => ({
+        title: rule.title,
+        description: rule.description,
+      })),
       sets: card.sets.map((set: any) => ({
         name: set.name,
         image: set.image,

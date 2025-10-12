@@ -90,6 +90,31 @@ const CardSchema = z.object({
   variant: z.string().optional(),
   image: z.string(),
   rarity: z.string(),
+  color: z.string().optional(),
+  weakness: z
+    .array(
+      z.object({
+        type: z.string(),
+        value: z.string().optional(),
+      }),
+    )
+    .optional(),
+  resistance: z
+    .array(
+      z.object({
+        type: z.string(),
+        value: z.string().optional(),
+      }),
+    )
+    .optional(),
+  retreat: z
+    .array(
+      z.object({
+        costs: z.array(z.string()).optional(),
+      }),
+    )
+    .optional(),
+
   set_short_name: z.string(),
   series_short_name: z.string(),
   illustrators: z.array(z.string()),
@@ -131,6 +156,23 @@ const CardSchema = z.object({
       weight: z.string().optional(),
     })
     .optional(),
+  stage: z
+    .array(
+      z.object({
+        basic: z.string().optional(),
+        evolution: z.string().optional(),
+        description: z.string().optional(),
+      }),
+    )
+    .optional(),
+  rule: z
+    .array(
+      z.object({
+        name: z.string().optional(),
+        description: z.string().optional(),
+      }),
+    )
+    .optional(),
   parody: z.string().optional(),
   hp: z.string().optional(),
   lp: z.string().optional(),
@@ -151,6 +193,8 @@ const CardSchema = z.object({
       gps: z.string().optional(),
       discovered: z.string().optional(),
       length: z.string().optional(),
+      type: z.string().optional(),
+      measurement: z.string().optional(),
     })
     .optional(),
   type: z.string().optional(),
