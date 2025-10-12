@@ -33,7 +33,7 @@ const PackArtPage: React.FC = () => {
             alt={getTitleSetImagePathType(SetImagePathType.PackArt)}
             className="border-secondaryBorder mb-4 block max-h-[600px] border-1 object-contain shadow"
           />
-          {/* Thumbnails */}
+
           <div className="mt-2 flex gap-2">
             {packArts?.map((img, idx) => (
               <button
@@ -56,9 +56,9 @@ const PackArtPage: React.FC = () => {
           </div>
         </div>
         <div className="md:w-2/3">
-          <h2 className="mb-4 text-3xl">
+          <h1 className="mb-4">
             {getTitleSetImagePathType(SetImagePathType.PackArt)}
-          </h2>
+          </h1>
           <table className="w-full border-collapse">
             <tbody>
               {pack?.frontDescription && (

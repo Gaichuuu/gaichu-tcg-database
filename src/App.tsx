@@ -12,6 +12,8 @@ import PackArtPage from "./pages/PackArtPage";
 import SeriesPage from "./pages/SeriesPage";
 import SetPage from "./pages/SetPage";
 import TcgSeriesPage from "./pages/TcgSeriesPage";
+import NewsIndex from "./pages/NewsIndex";
+import NewsPostPage from "./pages/NewsPostPage";
 import {
   AboutPagePath,
   CardBackPath,
@@ -52,6 +54,10 @@ const App: React.FC = () => {
               <Route path={AboutPagePath} element={<AboutPage />} />
               <Route path={CardBackPath} element={<CardBackPage />} />
               <Route path={PackArtPath} element={<PackArtPage />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="news" element={<NewsIndex />} />
+              <Route path="news/:slug" element={<NewsPostPage />} />
+              <Route path="*" element={<div>Not found</div>} />
             </Routes>
           </Layout>
         </main>

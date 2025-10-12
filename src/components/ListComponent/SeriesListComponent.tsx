@@ -1,6 +1,7 @@
-import { CollectionSeries } from "../../types/CollectionSeries";
-import { SeriesAndSet } from "../../types/MergedCollection";
-import Tile from "../TileComponents/Tile";
+// src/components/ListComponent/SeriesListComponent.tsx
+import { CollectionSeries } from "@/types/CollectionSeries";
+import { SeriesAndSet } from "@/types/MergedCollection";
+import Tile from "@/components/TileComponents/Tile";
 
 type SeriesListComponent = {
   series: SeriesAndSet[];
@@ -21,9 +22,9 @@ const SeriesList: React.FC<SeriesListComponent> = ({
             <img
               src={collection.series.logo}
               alt={collection.series.name}
-              className="mb-4 max-h-20 object-contain"
+              className="max-h-20 w-full object-contain transition group-hover:scale-[1.05]"
             />
-            <h3 className="text-lg">{collection.series.name}</h3>
+            <h4 className="mt-4 font-bold">{collection.series.name}</h4>
             <p className="text-secondaryText text-center">
               {collection.sets.length} releases
             </p>

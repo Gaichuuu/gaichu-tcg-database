@@ -27,20 +27,15 @@
       "url": "./data/oz/cards.schema.json"
     },
     {
+      "fileMatch": ["**/data/news/index.json", "data/news/index.json"],
+      "url": "./data/news/index.schema.json"
+    },
+    {
       "fileMatch": ["data/illustrators.json"],
       "url": "./data/illustrators.schema.json"
     },
-    {
-      "fileMatch": ["data/rarity.json"],
-      "url": "./data/rarity.schema.json"
-    },
-    {
-      "fileMatch": ["data/series.json"],
-      "url": "./data/series.schema.json"
-    },
-    {
-      "fileMatch": ["data/sets.json"],
-      "url": "./data/sets.schema.json"
-    }
+    { "fileMatch": ["data/rarity.json"], "url": "./data/rarity.schema.json" },
+    { "fileMatch": ["data/series.json"], "url": "./data/series.schema.json" },
+    { "fileMatch": ["data/sets.json"], "url": "./data/sets.schema.json" }
   ]
 }

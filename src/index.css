@@ -18,7 +18,7 @@
 
 @layer components {
   .button {
-    @apply bg-primaryButton !text-mainBg hover:bg-hoverButton rounded px-6 py-3 text-lg transition;
+    @apply bg-primaryButton !text-mainBg hover:bg-hoverButton rounded px-6 py-3 text-lg tracking-widest transition;
   }
 }
 
@@ -35,9 +35,7 @@
 }
 
 :root {
-  font-family:
-    Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, "Share Tech Mono",
-    monospace;
+  font-family: system-ui, monospace, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -47,7 +45,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-interactiveText);
   text-decoration: inherit;
 }
@@ -56,16 +54,65 @@ a:hover {
 }
 
 body {
-  font-family: "Share Tech Mono", monospace;
+  font-family: monospace;
+  font-synthesis: none;
   color: var(--color-primaryText);
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+dd,
+dt {
+  margin-left: 1.5em;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  font-style: italic;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.025em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.025em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+th {
+  font-weight: 500;
 }

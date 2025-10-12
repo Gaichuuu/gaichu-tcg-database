@@ -1,93 +1,142 @@
-import { CollectionCard } from "@/types/CollectionCard";
-import { database } from "config/FirebaseConfig";
+// src/services/CollectionCardService.tsx
+import { database } from "@/lib/firebase";
 import {
   collection,
-  getDocs,
-  limit,
-  orderBy,
   query,
   where,
+  limit as ql,
+  getDocs,
+  orderBy,
 } from "firebase/firestore";
-const collectionName = "cards";
+import type { CollectionCard } from "@/types/CollectionCard";
 
-export const fetchCards = async (
+const cardsRef = collection(database, "cards");
+const __DEV__ = import.meta.env.DEV;
+
+const normalize = (s: string) =>
+  (s ?? "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+function warnIfCamel(raw: any, id?: string) {
+  if (!__DEV__) return;
+  if (raw?.seriesShortName || raw?.setShortName) {
+    console.warn(
+      `[cards] camelCase field(s) found in doc ${id ?? "(unknown)"}; ` +
+        `please fix the data to use snake_case (ex: series_short_name).`,
+    );
+  }
+}
+
+function asCard(raw: any, id?: string): CollectionCard {
+  warnIfCamel(raw, id);
+  return raw as CollectionCard;
+}
+
+async function getDocsWithSeriesSet(
   seriesShortName: string,
   setShortName: string,
-): Promise<CollectionCard[]> => {
-  const cardsReference = collection(database, collectionName);
-  const cardsQuery = query(
-    cardsReference,
-    where("series_short_name", "==", seriesShortName),
-    where("set_short_name", "==", setShortName),
-    orderBy("sortBy", "asc"),
+  extra: any[] = [],
+) {
+  return getDocs(
+    query(
+      cardsRef,
+      where("series_short_name", "==", seriesShortName),
+      where("set_short_name", "==", setShortName),
+      ...extra,
+    ),
   );
+}
 
-  const cardsSnapshot = await getDocs(cardsQuery);
-  const cards = cardsSnapshot.docs.map((doc) => ({
-    id: doc.id,
-    ...doc.data(),
-  })) as CollectionCard[];
-  return cards;
-};
-
-export const fetchCardDetail = async (
+export async function fetchCardDetail(
   seriesShortName: string,
   setShortName: string,
-  sortBy: number,
+  sortBy: number | undefined,
   cardName: string,
-): Promise<CollectionCard | null> => {
-  const cardsReference = collection(database, collectionName);
-  const cardsQuery = query(
-    cardsReference,
-    where("series_short_name", "==", seriesShortName),
-    where("set_short_name", "==", setShortName),
-    where("sortBy", "==", sortBy),
-    where("name", "==", cardName),
-    limit(1),
-  );
+): Promise<CollectionCard | null> {
+  if (Number.isFinite(sortBy as number)) {
+    try {
+      const snap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
+        where("sortBy", "==", sortBy),
+        ql(1),
+      ]);
+      if (!snap.empty) return asCard(snap.docs[0].data(), snap.docs[0].id);
+    } catch (e) {
+      console.warn("[cards] sortBy query failed (index?):", e);
+    }
+  }
 
-  const cardsSnapshot = await getDocs(cardsQuery);
-  if (cardsSnapshot.empty) return null;
+  try {
+    const byName = await getDocs(
+      query(cardsRef, where("name", "==", cardName)),
+    );
+    if (!byName.empty) {
+      const match = byName.docs
+        .map((d) => asCard(d.data(), d.id))
+        .find(
+          (d) =>
+            d.series_short_name === seriesShortName &&
+            d.set_short_name === setShortName,
+        );
+      if (match) return match;
+    }
+  } catch (e) {
+    console.warn("[cards] name-only query failed:", e);
+  }
 
-  const doc = cardsSnapshot.docs[0];
-  return { id: doc.id, ...doc.data() } as CollectionCard;
-};
+  try {
+    const withinSet = await getDocsWithSeriesSet(
+      seriesShortName,
+      setShortName,
+      [ql(1000)],
+    );
+    const wanted = normalize(cardName);
+    const match = withinSet.docs
+      .map((d) => asCard(d.data(), d.id))
+      .find((d) => normalize(d.name) === wanted);
+    if (match) return match;
+  } catch (e) {
+    console.warn("[cards] set-scan failed:", e);
+  }
 
-export const fetchAdjacentCards = async (
+  return null;
+}
+
+export async function fetchAdjacentCards(
   seriesShortName: string,
   setShortName: string,
-  currentCardSortBy?: number,
+  sortBy: number | undefined,
 ): Promise<{
   previousCard: CollectionCard | null;
   nextCard: CollectionCard | null;
-}> => {
-  if (currentCardSortBy === undefined) {
+}> {
+  if (!Number.isFinite(sortBy as number))
+    return { previousCard: null, nextCard: null };
+
+  try {
+    const prevSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
+      where("sortBy", "<", sortBy),
+      orderBy("sortBy", "desc"),
+      ql(1),
+    ]);
+    const nextSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
+      where("sortBy", ">", sortBy),
+      orderBy("sortBy", "asc"),
+      ql(1),
+    ]);
+
+    return {
+      previousCard: prevSnap.empty
+        ? null
+        : asCard(prevSnap.docs[0].data(), prevSnap.docs[0].id),
+      nextCard: nextSnap.empty
+        ? null
+        : asCard(nextSnap.docs[0].data(), nextSnap.docs[0].id),
+    };
+  } catch (e) {
+    console.warn("[cards] adjacent query failed (likely missing index):", e);
     return { previousCard: null, nextCard: null };
   }
-
-  const cardsReference = collection(database, collectionName);
-  const cardsQuery = query(
-    cardsReference,
-    where("series_short_name", "==", seriesShortName),
-    where("set_short_name", "==", setShortName),
-    where("sortBy", ">=", currentCardSortBy - 1),
-    where("sortBy", "<=", currentCardSortBy + 1),
-    orderBy("sortBy", "asc"),
-  );
-
-  const cardsSnapshot = await getDocs(cardsQuery);
-  const cards = cardsSnapshot.docs.map((doc) => ({
-    id: doc.id,
-    ...doc.data(),
-  })) as CollectionCard[];
-
-  const previousCard =
-    cards.filter((card) => card.sortBy < currentCardSortBy).at(-1) || null;
-  const nextCard =
-    cards.filter((card) => card.sortBy > currentCardSortBy).at(0) || null;
-
-  return {
-    previousCard: previousCard ?? null,
-    nextCard: nextCard ?? null,
-  };
-};
+}

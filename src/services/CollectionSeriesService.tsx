@@ -1,7 +1,7 @@
 import { CollectionSeries } from "@/types/CollectionSeries";
 import { CollectionSet } from "@/types/CollectionSet";
 import { SeriesAndSet } from "@/types/MergedCollection";
-import { database } from "config/FirebaseConfig";
+import { database } from "@/lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 export enum SeriesShortName {

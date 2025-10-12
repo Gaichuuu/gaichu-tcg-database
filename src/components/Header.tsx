@@ -12,11 +12,13 @@ const Header: React.FC = () => {
             alt="Logo"
             className="h-8 w-9"
           />
-          <span className="text-xl">Gaichu</span>
+          <span className="text-lg tracking-wider">Gaichu</span>
         </Link>
 
         <nav>
-          <Link to="/cards">Cards</Link>
+          <Link to="/cards" className="tracking-wider">
+            Cards
+          </Link>
         </nav>
       </div>
     </header>

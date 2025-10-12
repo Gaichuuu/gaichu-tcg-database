@@ -6,27 +6,49 @@
       { "$ref": "../cards.schema.base.json" },
       {
         "type": "object",
-        "required": ["description", "type", "limit", "cost"],
+        "required": [
+          "id",
+          "number",
+          "name",
+          "variant",
+          "illustrators",
+          "rarity",
+          "set_short_name",
+          "series_short_name",
+          "sets",
+          "type",
+          "cost",
+          "limit",
+          "image",
+          "thumb"
+        ],
         "properties": {
+          "id": { "type": "string" },
+          "number": { "type": "integer", "minimum": 1 },
+          "total_cards_count": { "type": "integer", "minimum": 1 },
+          "sortBy": { "type": "integer" },
+          "name": { "type": "string", "minLength": 1 },
+          "variant": {
+            "type": "string",
+            "enum": ["Normal"]
+          },
+
           "illustrators": {
             "type": "array",
-            "items": {
-              "type": "string",
-              "enum": ["Corey Lewis"]
-            }
+            "minItems": 1,
+            "items": { "type": "string", "enum": ["Corey Lewis"] }
           },
-          "rarity": {
-            "type": "string",
-            "enum": ["Gold"]
+
+          "rarity": { "type": "string", "enum": ["Gold"] },
+
+          "set_short_name": { "type": "string", "enum": ["legacy"] },
+          "series_short_name": { "type": "string", "enum": ["oz"] },
+
+          "set_ids": {
+            "type": "array",
+            "items": { "type": "string" }
           },
-          "set_short_name": {
-            "type": "string",
-            "enum": ["legacy"]
-          },
-          "series_short_name": {
-            "type": "string",
-            "enum": ["oz"]
-          },
+
           "sets": {
             "type": "array",
             "minItems": 1,
@@ -34,27 +56,32 @@
               "type": "object",
               "required": ["name", "image"],
               "properties": {
-                "name": {
-                  "type": "string",
-                  "enum": ["Legacy"]
-                },
-                "image": {
-                  "type": "string",
-                  "format": "uri"
-                }
+                "name": { "type": "string", "enum": ["Legacy"] },
+                "image": { "type": "string", "format": "uri" }
               },
               "additionalProperties": false
             }
           },
-          "description": {
-            "type": "string"
-          },
+
           "type": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "Beastie",
+              "Beastie Caster",
+              "Beastie Witch",
+              "Beastie Demon",
+              "Beastie Bloodsucker Cat",
+              "Spell",
+              "Artifact",
+              "Beastie Dinosaur",
+              "Beastie Spirit",
+              "Special Aura",
+              "Beastie Dragon",
+              "Beastie Bird",
+              "Beastie Fearsome-Critter"
+            ]
           },
-          "limit": {
-            "type": "number"
-          },
+
           "cost": {
             "type": "array",
             "minItems": 1,
@@ -62,26 +89,127 @@
               "type": "object",
               "required": ["total", "aura"],
               "properties": {
-                "total": {
-                  "type": "string"
-                },
+                "total": { "type": "string" },
                 "aura": {
                   "type": "string",
-                  "items": {
-                    "type": "string",
-                    "enum": ["Forest", "Neutral"]
-                  }
+                  "enum": [
+                    "Dark",
+                    "Spirit",
+                    "Neutral",
+                    "Lightning",
+                    "Water",
+                    "Flame",
+                    "Cosmic",
+                    "Forest",
+                    "Light",
+                    "Frost",
+                    "Earth",
+                    "Special"
+                  ]
                 }
               },
               "additionalProperties": false
             }
           },
-          "effect": {
-            "type": "string"
+
+          "lp": { "type": "string" },
+
+          "traits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Flight",
+                "Stoneskin",
+                "Fear",
+                "Immortal",
+                "Fleet",
+                "Trap",
+                "Defender",
+                "Spectral",
+                "Burrow",
+                "Magiproof",
+                "First Strike"
+              ]
+            }
           },
-          "note": {
-            "type": "string"
-          }
+
+          "terra": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "attack": { "type": "string" },
+                "icon": {
+                  "type": "string",
+                  "enum": [
+                    "City",
+                    "Nighttime",
+                    "Fog",
+                    "Dusk",
+                    "Farm",
+                    "Lake",
+                    "River",
+                    "Winter",
+                    "Mountain",
+                    "Snowing",
+                    "LightningStorm",
+                    "Raining",
+                    "Woodlands",
+                    "FullMoon"
+                  ]
+                },
+                "lp": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "discovered": { "type": "string" },
+              "gps": { "type": "string" },
+              "weight": { "type": "string" },
+              "height": { "type": "string" },
+              "length": { "type": "string" },
+              "legnth": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+
+          "effect": { "type": "string" },
+          "description": { "type": "string" },
+
+          "zoo_attack": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "damage"],
+              "properties": {
+                "name": { "type": "string" },
+                "status": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["Paralyze", "Confused", "Burn", "Frozen", "Scared"]
+                  }
+                },
+                "multiplier": { "type": "string" },
+                "damage": { "type": "string" },
+                "bonus": { "type": "string" },
+                "effect": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+
+          "image": { "type": "string", "format": "uri" },
+          "thumb": { "type": "string", "format": "uri" },
+
+          "limit": { "type": "integer", "minimum": 0 },
+
+          "note": { "type": "string" }
         }
       }
     ]

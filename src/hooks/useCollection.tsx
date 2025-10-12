@@ -1,12 +1,13 @@
+// src/hooks/useCollection.tsx
 import { THIRTY_MINUTES } from "@/utils/TimeUtils";
 import { useQuery } from "@tanstack/react-query";
-import { AppResult } from "../services/AppResult";
-import { fetchSeries } from "../services/CollectionSeriesService";
-import { fetchSets } from "../services/CollectionSetService";
-import { IS_USE_LOCAL_DATA } from "../services/Constants";
-import { getJsonSeries } from "../services/JsonCollectionSeriesService";
-import { getJsonSet } from "../services/JsonCollectionSetService";
-import { SeriesAndSet, SetAndCard } from "../types/MergedCollection";
+import { AppResult } from "@/services/AppResult";
+import { fetchSeries } from "@/services/CollectionSeriesService";
+import { fetchSets } from "@/services/CollectionSetService";
+import { IS_USE_LOCAL_DATA } from "@/services/Constants";
+import { getJsonSeries } from "@/services/JsonCollectionSeriesService";
+import { getJsonSet } from "@/services/JsonCollectionSetService";
+import { SeriesAndSet, SetAndCard } from "@/types/MergedCollection";
 export const getSeries = (): AppResult<SeriesAndSet[], Error> => {
   const queryResult = useQuery<SeriesAndSet[]>({
     queryKey: ["SeriesList"],

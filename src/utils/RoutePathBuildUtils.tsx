@@ -1,6 +1,6 @@
 import { generatePath } from "react-router-dom";
-import { CollectionCard } from "../types/CollectionCard";
-import { CollectionSet } from "../types/CollectionSet";
+import { CollectionCard } from "@/types/CollectionCard";
+import { CollectionSet } from "@/types/CollectionSet";
 
 export const HomePagePath = "/";
 export const AboutPagePath = "/about";
@@ -17,7 +17,7 @@ export enum PathSegments {
   Sets = 2,
   SetName = 3,
   Card = 4,
-  SetImagePath = 4, // This is used for PackArt or CardBack
+  SetImagePath = 4,
   // Example: /cards/wm/sets/set1/pack-art or /cards/wm/sets/set1/card-back
   SortByAndCardName = 5,
   // Example: /cards/mz/sets/promo/card/99.3_Sunlight
@@ -45,54 +45,68 @@ export const getTitleSetImagePathType = (
       return "";
   }
 };
-export function getBreadcrumbItems(locationPathname: string): BreadcrumbItem[] {
-  const originalSegments = locationPathname.split("/").filter(Boolean);
 
-  return (
-    originalSegments
-      .map((segment, index) => {
-        // Handle for card name segment
-        if (
-          originalSegments[PathSegments.Card] == "card" &&
-          index === PathSegments.SortByAndCardName
-        ) {
-          const { cardName } = parseSortAndNameRegex(
-            decodeURIComponent(segment),
-          );
-          // label: Use the card name directly without sortBy number
-          // No routeTo
-          return { label: cardName, routeTo: undefined };
-        }
+export function getBreadcrumbItems(
+  locationPathname: string,
+  opts?: { strict?: boolean },
+): BreadcrumbItem[] {
+  const strict = opts?.strict ?? true;
+  const segments = locationPathname.split("/").filter(Boolean);
+  const items: BreadcrumbItem[] = [];
 
-        // Handle for set image path segment (Pack Art or Card Back)
-        if (
-          getTitleSetImagePathType(
-            decodeURIComponent(segment) as SetImagePathType,
-          ) &&
-          index === PathSegments.SetImagePath
-        ) {
-          // label: "Pack Art" or "Card Back"
-          // No ruteTo
-          return {
-            label: getTitleSetImagePathType(
-              decodeURIComponent(segment) as SetImagePathType,
-            ),
-            routeTo: undefined,
-          };
-        }
-        if (originalSegments.length - 1 === index) {
-          // If this is the last segment, we don't create a routeTo
-          return { label: decodeURIComponent(segment), routeTo: undefined };
-        }
+  const decodeMulti = (s: string) => {
+    let out = s;
+    for (let i = 0; i < 3; i++) {
+      try {
+        const next = decodeURIComponent(out);
+        if (next === out) break;
+        out = next;
+      } catch {
+        break;
+      }
+    }
+    return out.replace(/%20/g, " ");
+  };
 
-        // Handle for other segments
-        const routeTo = "/" + originalSegments.slice(0, index + 1).join("/");
-        // label and routeTo
-        return { label: decodeURIComponent(segment), routeTo: routeTo };
-      })
-      // Filter out unwanted segments "sets" and "card"
-      .filter((item) => item.label !== "sets" && item.label !== "card")
-  );
+  for (let index = 0; index < segments.length; index++) {
+    const segment = segments[index];
+
+    if (segment === "sets" || segment === "card") continue;
+
+    if (index === PathSegments.SetImagePath) {
+      const title = getTitleSetImagePathType(
+        decodeMulti(segment) as SetImagePathType,
+      );
+      if (title) {
+        items.push({ label: title });
+        continue;
+      }
+    }
+
+    if (
+      segments[PathSegments.Card] === "card" &&
+      index === PathSegments.SortByAndCardName
+    ) {
+      const decoded = decodeMulti(segment);
+      try {
+        const { cardName } = parseSortAndNameRegex(decoded, { strict });
+        items.push({ label: decodeMulti(cardName) });
+      } catch (e) {
+        if (strict) throw e;
+        items.push({ label: decoded });
+      }
+      continue;
+    }
+
+    const label = decodeMulti(segment);
+    const isLast = index === segments.length - 1;
+    const routeTo = isLast
+      ? undefined
+      : "/" + segments.slice(0, index + 1).join("/");
+    items.push({ label, routeTo });
+  }
+
+  return items;
 }
 
 export function getSetListPath(seriesShortName: string): string {
@@ -150,15 +164,27 @@ export function getCardDetailPath(card: CollectionCard): string {
   return path;
 }
 
-export function parseSortAndNameRegex(input: string): {
-  sortBy: number;
-  cardName: string;
-} {
-  const m = input.match(/^(\d+(?:\.\d+)?)_(.+)$/);
-  if (!m) {
-    throw new Error(`Invalid format: ${input}`);
+export function parseSortAndNameRegex(
+  input: string,
+  opts?: { strict?: boolean },
+): { sortBy?: number; cardName: string } {
+  const strict = opts?.strict ?? true;
+  const s = (input ?? "").trim();
+
+  const m = s.match(/^(\d+(?:\.\d+)?)_(.+)$/);
+  if (m) {
+    const sortBy = Number(m[1]);
+    const cardName = m[2];
+    if (!Number.isFinite(sortBy) || !cardName) {
+      if (strict) throw new Error(`Invalid format: ${input}`);
+      return { cardName: s };
+    }
+    return { sortBy, cardName };
   }
-  const [, sortByStr, cardName] = m;
-  const sortBy = parseFloat(sortByStr);
-  return { sortBy, cardName };
+
+  if (strict) {
+    throw new Error(`Invalid format: ${input}`);
+  } else {
+    return { cardName: s };
+  }
 }

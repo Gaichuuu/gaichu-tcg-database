@@ -4,7 +4,7 @@ import { setJsonMock } from "@/__test__/__mock__/setJson";
 import { beforeEach, describe, expect, it, vi, type Mock } from "vitest";
 
 const fakeDb = {} as any;
-vi.mock("config/FirebaseConfig", () => ({
+vi.mock("src/lib/firebase", () => ({
   database: fakeDb,
 }));
 

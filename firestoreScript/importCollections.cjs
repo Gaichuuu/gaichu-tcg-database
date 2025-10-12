@@ -1,13 +1,13 @@
-// scripts/importCollections.cjs
+// firestoreScript/importCollections.cjs
 const fs = require("fs");
 const path = require("path");
-const { db } = require("./scriptDatabase.cjs");
+const { database } = require("./scriptDatabase.cjs");
 const { allCollections, jsonFilePath } = require("./databaseConstants.cjs");
 
 async function importCardCollection() {
   const subFolders = ["ash", "mz", "oz", "wm"];
   let totalCount = 0;
-  const batch = db.batch();
+  const batch = database.batch();
 
   for (const folder of subFolders) {
     const filePath = path.join(jsonFilePath, folder, "cards.json");
@@ -27,7 +27,7 @@ async function importCardCollection() {
 
     documents.forEach((doc) => {
       const { id, ...data } = doc;
-      const docRef = db.collection("cards").doc(id);
+      const docRef = database.collection("cards").doc(id);
       batch.set(docRef, data);
     });
 
@@ -65,10 +65,10 @@ async function importOtherCollection(name) {
     return;
   }
 
-  const batch = db.batch();
+  const batch = database.batch();
   documents.forEach((doc) => {
     const { id, ...data } = doc;
-    const docRef = db.collection(name).doc(id);
+    const docRef = database.collection(name).doc(id);
     batch.set(docRef, data);
   });
 
@@ -78,7 +78,7 @@ async function importOtherCollection(name) {
 
 async function main() {
   try {
-    console.log(">>> Starting import data to DB...");
+    console.log(">>> Starting import data to database...");
     await importCardCollection();
 
     for (const col of allCollections) {
