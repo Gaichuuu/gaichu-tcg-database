@@ -93,13 +93,96 @@
     "description": "The first print of Wrenny Moo. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed."
   },
   {
+    "id": "b9a8c0f0-1ca0-4354-b683-22797d8c2e92",
+    "series_short_name": "ash",
+    "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
+    "short_name": "sticker",
+    "sortBy": 1,
+    "name": "Sticker Art",
+    "logo": "https://gaichu.b-cdn.net/ash/sticker/ashStickerArt.jpg"
+  },
+  {
+    "id": "4ff11bae-2f96-4aaa-b2e8-178167504f5f",
+    "series_short_name": "ash",
+    "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
+    "short_name": "og",
+    "sortBy": 2,
+    "name": "Series 1",
+    "logo": "https://gaichu.b-cdn.net/ash/og/ashOriginalSet.jpg"
+  },
+  {
     "id": "5444924f-490b-465f-8364-66b4e34da7c8",
     "series_short_name": "ash",
     "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
-    "short_name": "gen1",
-    "sortBy": 1,
-    "name": "Generation One",
-    "logo": "https://gaichu.b-cdn.net/ash/gen1/ashGen1.jpg"
+    "short_name": "series1",
+    "sortBy": 3,
+    "name": "Series 1 (reprint)",
+    "logo": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg",
+    "description": "Generation One booster packs were reprinted in 2024 to meet the growing international demand outside of Singapore.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg",
+        "pathType": "pack-art",
+        "frontDescription": "GENERATION ONE BOOSTER PACK\nAfter Skool Hobby ~ Series 1\n2 ADDITIONAL COLLECTIBLE CARDS",
+        "backDescription": "THIS IS NOT AN OFFICIAL MERCH.\nAll art are recreated & drawn by afterskoolhobby. This booster pack contains 2 holofoil collectible cards based on the poplular TCG. 50 different cards for you to discover and add to your collection including Base set Zard, Moonbreon & Poncho Pika!\n@afterskoolhobby ~ collect'em all la!\nThis is NOT an official Merch. The cards are NOT tournament legal. Do NOT send this pack or the cards inside for grading. All characters, items, symbols and names depicted belongs to the BIG P company.\nAfter Skool Hobby ~ 2023/2024\nAll cards are designed in SG by After Skool Hobby.\n50 cards in total ~ 7 Trainers ~ 6 Ditto variants ~ 4 Poncho Pikas ~ 1 Sketch card",
+        "illustrator": "Soo Zhi Wei",
+        "note": "",
+        "packs": [
+          {
+            "label": "Front of Pack",
+            "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg"
+          },
+          {
+            "label": "Back of Pack",
+            "url": "https://gaichu.b-cdn.net/ash/series1/pack01-back.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
+        "pathType": "card-back",
+        "text": "After Skool Hobby",
+        "illustrator": "Soo Zhi Wei",
+        "note": "The reprinted set has \"2024\" at the bottom."
+      }
+    ]
+  },
+  {
+    "id": "c505fdeb-0d9e-4025-82d4-cf2a05a40a51",
+    "series_short_name": "ash",
+    "series_id": "2f18d5da-11a6-41a9-8461-26080a0f182f",
+    "short_name": "series2",
+    "sortBy": 4,
+    "name": "Series 2",
+    "logo": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg",
+    "description": "Genetic Mystery is a fatter booster pack with 4 holofoil cards inside, all based on the fan-favorite purple blob.",
+    "set_images": [
+      {
+        "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg",
+        "pathType": "pack-art",
+        "frontDescription": "GENETIC MYSTERY 1ST PRINT\nAfter Skool Hobby ~ Series 2\n4 ADDITIONAL COLLECTIBLE CARDS",
+        "backDescription": "THIS IS NOT AN OFFICIAL MERCH.\nAll art is created & illustrated by AfterSkoolHobby. This booster pack includes 4 holofoil collectible cards inspired by the fan-favorite purple blob. Discover and collect all 80 unique cards including 3 secret rares!\n@afterskoolhobby ~ collect'em all la!\nThis is NOT an official Merch. The cards are NOT tournament legal. Do NOT send this pack or the cards inside for grading. All characters, items, symbols and names depicted belongs to the BIG P company.\nAfter Skool Hobby ~ 2025\n80 cards in total ~ 72 Rare ~ 5 Super Rare ~ 3 Secret Rare",
+        "illustrator": "Soo Zhi Wei",
+        "note": "",
+        "packs": [
+          {
+            "label": "Front of Pack",
+            "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg"
+          },
+          {
+            "label": "Back of Pack",
+            "url": "https://gaichu.b-cdn.net/ash/series2/pack01-back.jpg"
+          }
+        ]
+      },
+      {
+        "url": "https://gaichu.b-cdn.net/ash/series2/00.jpg",
+        "pathType": "card-back",
+        "text": "After Skool Hobby\n1ST PRINT",
+        "illustrator": "Soo Zhi Wei",
+        "note": "Series 2 has \"2025\" at the bottom."
+      }
+    ]
   },
   {
     "id": "0cd30841-399e-4043-ac72-bdf4d268d4b3",
