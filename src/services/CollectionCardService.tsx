@@ -9,16 +9,14 @@ import {
   orderBy,
 } from "firebase/firestore";
 import type { CollectionCard } from "@/types/CollectionCard";
+import { t } from "@/i18n/locale";
+import { slugify } from "@/utils/RoutePathBuildUtils";
 
 const cardsRef = collection(database, "cards");
 const __DEV__ = import.meta.env.DEV;
 
-const normalize = (s: string) =>
-  (s ?? "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+const toSlug = (v: unknown) =>
+  slugify(typeof v === "string" ? v : t(v as any, "en"));
 
 function warnIfCamel(raw: any, id?: string) {
   if (!__DEV__) return;
@@ -54,8 +52,10 @@ export async function fetchCardDetail(
   seriesShortName: string,
   setShortName: string,
   sortBy: number | undefined,
-  cardName: string,
+  cardNameFromUrl: string,
 ): Promise<CollectionCard | null> {
+  const targetSlug = slugify(cardNameFromUrl);
+
   if (Number.isFinite(sortBy as number)) {
     try {
       const snap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
@@ -69,33 +69,16 @@ export async function fetchCardDetail(
   }
 
   try {
-    const byName = await getDocs(
-      query(cardsRef, where("name", "==", cardName)),
-    );
-    if (!byName.empty) {
-      const match = byName.docs
-        .map((d) => asCard(d.data(), d.id))
-        .find(
-          (d) =>
-            d.series_short_name === seriesShortName &&
-            d.set_short_name === setShortName,
-        );
-      if (match) return match;
-    }
-  } catch (e) {
-    console.warn("[cards] name-only query failed:", e);
-  }
-
-  try {
     const withinSet = await getDocsWithSeriesSet(
       seriesShortName,
       setShortName,
       [ql(1000)],
     );
-    const wanted = normalize(cardName);
-    const match = withinSet.docs
-      .map((d) => asCard(d.data(), d.id))
-      .find((d) => normalize(d.name) === wanted);
+    const match =
+      withinSet.docs
+        .map((d) => asCard(d.data(), d.id))
+        .find((d) => toSlug((d as any).name) === targetSlug) ?? null;
+
     if (match) return match;
   } catch (e) {
     console.warn("[cards] set-scan failed:", e);
