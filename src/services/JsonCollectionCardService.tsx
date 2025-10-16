@@ -1,4 +1,18 @@
 import { z } from "zod";
+import { t } from "@/i18n/locale";
+import { slugify } from "@/utils/RoutePathBuildUtils";
+
+const localeEnum = z.enum(["en", "ja"]);
+
+const I18nValue = z.union([z.string(), z.record(localeEnum, z.string())]);
+
+type LocaleKey = z.infer<typeof localeEnum>;
+
+function toI18nMap(v: unknown): Partial<Record<LocaleKey, string>> {
+  if (v == null) return {};
+  return typeof v === "string" ? { en: v } : (v as any);
+}
+
 import mzCardList from "../../data/mz/cards.json";
 import wmCardList from "../../data/wm/cards.json";
 import ashCardList from "../../data/ash/cards.json";
@@ -30,19 +44,20 @@ export const getJsonCardDetail = (
   seriesShortName: string,
   setShortName: string,
   sortBy: number,
-  cardName: string,
+  cardNameFromUrl: string,
 ): CollectionCard | null => {
-  const cardList = jsonCardList(seriesShortName);
-  const card = cardList
-    .filter(
-      (card) =>
-        card.set_short_name === setShortName &&
-        card.series_short_name === seriesShortName &&
-        card.sortBy === sortBy &&
-        card.name === cardName,
-    )
-    .at(-1);
-  if (!card) return null;
+  const targetSlug = slugify(cardNameFromUrl);
+
+  const card =
+    jsonCardList(seriesShortName)
+      .filter(
+        (c) =>
+          c.set_short_name === setShortName &&
+          c.series_short_name === seriesShortName &&
+          c.sortBy === sortBy,
+      )
+      .find((c) => slugify(t(c.name, "en")) === targetSlug) ?? null;
+
   return card;
 };
 
@@ -81,38 +96,33 @@ export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
   return cards.sort((a, b) => a.sortBy - b.sortBy);
 };
 
-const CardSchema = z.object({
+const AttackSchemaRaw = z.object({
+  name: I18nValue,
+  effect: I18nValue,
+  damage: z.string().optional(),
+  costs: z.array(z.string()).optional(),
+});
+
+const CardSchemaRaw = z.object({
   id: z.string(),
   total_cards_count: z.number(),
   number: z.number(),
   sortBy: z.number(),
-  name: z.string(),
+
+  name: I18nValue,
   variant: z.string().optional(),
   image: z.string(),
   rarity: z.string(),
   color: z.string().optional(),
+
   weakness: z
-    .array(
-      z.object({
-        type: z.string(),
-        value: z.string().optional(),
-      }),
-    )
+    .array(z.object({ type: z.string(), value: z.string().optional() }))
     .optional(),
   resistance: z
-    .array(
-      z.object({
-        type: z.string(),
-        value: z.string().optional(),
-      }),
-    )
+    .array(z.object({ type: z.string(), value: z.string().optional() }))
     .optional(),
   retreat: z
-    .array(
-      z.object({
-        costs: z.array(z.string()).optional(),
-      }),
-    )
+    .array(z.object({ costs: z.array(z.string()).optional() }))
     .optional(),
 
   set_short_name: z.string(),
@@ -127,17 +137,9 @@ const CardSchema = z.object({
   ),
   thumb: z.string(),
 
-  description: z.string().optional(),
-  attacks: z
-    .array(
-      z.object({
-        name: z.string(),
-        effect: z.string(),
-        damage: z.string().optional(),
-        costs: z.array(z.string()).optional(),
-      }),
-    )
-    .optional(),
+  description: I18nValue.optional(),
+
+  attacks: z.array(AttackSchemaRaw).optional().default([]),
   zoo_attack: z
     .array(
       z.object({
@@ -150,12 +152,14 @@ const CardSchema = z.object({
       }),
     )
     .optional(),
+
   measurement: z
     .object({
       height: z.string().optional(),
       weight: z.string().optional(),
     })
     .optional(),
+
   stage: z
     .array(
       z.object({
@@ -165,6 +169,7 @@ const CardSchema = z.object({
       }),
     )
     .optional(),
+
   rule: z
     .array(
       z.object({
@@ -173,18 +178,13 @@ const CardSchema = z.object({
       }),
     )
     .optional(),
+
   parody: z.string().optional(),
   hp: z.string().optional(),
   lp: z.string().optional(),
   traits: z.array(z.string()).optional(),
   terra: z
-    .array(
-      z.object({
-        attack: z.string(),
-        icon: z.string(),
-        lp: z.string(),
-      }),
-    )
+    .array(z.object({ attack: z.string(), icon: z.string(), lp: z.string() }))
     .optional(),
   metadata: z
     .object({
@@ -199,14 +199,20 @@ const CardSchema = z.object({
     .optional(),
   type: z.string().optional(),
   limit: z.number().optional(),
-  cost: z
-    .array(
-      z.object({
-        total: z.string(),
-        aura: z.string(),
-      }),
-    )
-    .optional(),
+  cost: z.array(z.object({ total: z.string(), aura: z.string() })).optional(),
   effect: z.string().optional(),
   note: z.string().optional(),
 });
+
+const CardSchema = CardSchemaRaw.transform((c) => ({
+  ...c,
+  name: toI18nMap(c.name),
+  description: toI18nMap(c.description),
+
+  attacks: (c.attacks ?? []).map((a) => ({
+    ...a,
+    name: toI18nMap(a.name),
+    effect: toI18nMap(a.effect),
+    costs: a.costs ?? [],
+  })),
+}));
