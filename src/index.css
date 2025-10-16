@@ -35,7 +35,14 @@
 }
 
 :root {
-  font-family: system-ui, monospace, Helvetica, Arial, sans-serif;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono:
+    Menlo, Consolas, Monaco, "Cascadia Mono", "Segoe UI Mono", SFMono-Regular,
+    ui-monospace, "Liberation Mono", "DejaVu Sans Mono", monospace;
+
+  font-family: var(--font-sans);
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -54,7 +61,7 @@ a:hover {
 }
 
 body {
-  font-family: monospace;
+  font-family: var(--font-mono);
   font-synthesis: none;
   color: var(--color-primaryText);
   margin: 0;
@@ -131,4 +138,11 @@ td {
 
 .html-cell {
   display: inline;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-mono);
 }
