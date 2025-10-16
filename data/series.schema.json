@@ -3,7 +3,7 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "short_name", "name", "logo", "sortBy"],
+    "required": ["id", "short_name", "name", "logo", "sort_by"],
     "properties": {
       "id": {
         "type": "string",
@@ -19,7 +19,7 @@
         "type": "string",
         "format": "uri"
       },
-      "sortBy": {
+      "sort_by": {
         "type": "number"
       }
     }

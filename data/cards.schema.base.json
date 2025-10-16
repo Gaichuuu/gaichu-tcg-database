@@ -5,7 +5,7 @@
     "id",
     "total_cards_count",
     "number",
-    "sortBy",
+    "sort_by",
     "name",
     "image",
     "rarity",
@@ -25,7 +25,7 @@
     "number": {
       "type": "number"
     },
-    "sortBy": {
+    "sort_by": {
       "type": "number"
     },
     "name": {
