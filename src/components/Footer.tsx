@@ -5,7 +5,7 @@ import { FaGithub, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-navBg border-secondaryBorder text-secondaryText border-t py-4">
+    <footer className="bg-navBg border-secondaryBorder/40 text-secondaryText border-t-2 py-2.5">
       <div className="container mx-auto flex flex-col items-center justify-between px-4 md:flex-row">
         <p>
           &copy;{" "}
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             {new Date().getFullYear()} Gaichu v1.2.0
           </span>
         </p>
-        <div className="mt-2 flex items-center space-x-4 md:mt-0">
+        <div className="mt-2 flex items-center space-x-5 md:mt-0">
           <Link to="/about" className="tracking-wider">
             About
           </Link>
