@@ -19,7 +19,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
     <article
       onClick={go}
       aria-label={post.title}
-      className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder flex h-full cursor-pointer flex-col rounded-2xl border-1 p-4 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+      className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder focus-visible:ring-primaryBorder flex h-full cursor-pointer flex-col rounded-2xl border-1 p-4 transition focus:outline-none focus-visible:ring-2"
     >
       {post.hero_url && (
         <div className="relative overflow-hidden rounded-xl">
