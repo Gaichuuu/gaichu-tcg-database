@@ -1,6 +1,6 @@
 <?php
 $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
-$isBot = preg_match(
+$isBot = (bool) preg_match(
   '/facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|SkypeUriPreview|redditbot|Meta-ExternalAgent/i',
   $ua
 );
@@ -9,13 +9,14 @@ $path = $_SERVER['REQUEST_URI'] ?? '';
 $slug = (preg_match('#^/news/([^/?#]+)#', $path, $m)) ? urldecode($m[1]) : '';
 
 $host = $_SERVER['HTTP_HOST'] ?? '';
-$projectId = (strpos($host, 'stage') !== false || strpos($host, 'dev') !== false)
+$projectId = (stripos($host, 'stage') !== false || stripos($host, 'dev') !== false)
   ? 'gaichu-stage'
   : 'gaichu-fe55f';
 
 function fetch_news($projectId, $slug) {
   if (!$slug) return null;
   $url = "https://firestore.googleapis.com/v1/projects/$projectId/databases/(default)/documents/news/" . rawurlencode($slug);
+
   $ch = curl_init($url);
   curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
@@ -24,8 +25,12 @@ function fetch_news($projectId, $slug) {
   ]);
   $res = curl_exec($ch);
   $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  $cerr = curl_error($ch);
   curl_close($ch);
-  if ($status !== 200 || !$res) return null;
+
+  if ($status !== 200 || !$res) {
+    return null;
+  }
 
   $json = json_decode($res, true);
   if (!isset($json['fields'])) return null;
@@ -39,9 +44,9 @@ function fetch_news($projectId, $slug) {
   };
 
   return [
-    'title' => $str('title') ?: 'Gaichu News',
-    'excerpt' => $str('excerpt') ?: '',
-    'hero_url' => $str('hero_url') ?: '',
+    'title' => $str('title'),
+    'excerpt' => $str('excerpt'),
+    'hero_url' => $str('hero_url'),
     'slug' => $slug,
     'created_at' => $num('created_at'),
   ];
@@ -80,14 +85,16 @@ function render_og($host, $slug, $title, $desc, $image) {
 
 if ($isBot) {
   $doc = fetch_news($projectId, $slug);
-  $title = $doc['title'] ?? 'Gaichu';
-  $desc = $doc['excerpt'] ?? 'Your #2 source for parody and bootleg card games.';
-  $img = ($doc['hero_url'] ?? '') ?: 'https://gaichu.b-cdn.net/assets/default.jpg';
+
+  $title = (is_array($doc) && !empty($doc['title'])) ? $doc['title'] : 'Gaichu';
+  $desc = (is_array($doc) && !empty($doc['excerpt'])) ? $doc['excerpt'] : 'Your #2 source for parody and bootleg card games.';
+  $img = (is_array($doc) && !empty($doc['hero_url'])) ? $doc['hero_url'] : 'https://gaichu.b-cdn.net/assets/default.jpg';
+
   render_og($host, $slug ?: 'news', $title, $desc, $img);
   exit;
 }
 
-$indexPath = dirname(__DIR__) . '/index.html';
+$indexPath = dirname(__DIR__) . '/index.html'; 
 if (is_file($indexPath)) {
   header('Content-Type: text/html; charset=utf-8');
   readfile($indexPath);
