@@ -1,5 +1,23 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "$defs": {
+    "i18nString": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "ja": { "type": "string", "minLength": 1 }
+          },
+          "minProperties": 1,
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+
   "type": "object",
   "required": [
     "id",
@@ -18,72 +36,49 @@
     "variant"
   ],
   "properties": {
-    "id": {
-      "type": "string",
-      "format": "uuid"
-    },
-    "number": {
-      "type": "number"
-    },
-    "sortBy": {
-      "type": "number"
-    },
-    "name": {
-      "type": "string"
-    },
-    "image": {
-      "type": "string",
-      "format": "uri"
-    },
-    "rarity": {
-      "type": "string"
-    },
-    "set_short_name": {
-      "type": "string"
-    },
-    "series_short_name": {
-      "type": "string"
-    },
+    "id": { "type": "string", "format": "uuid" },
+
+    "total_cards_count": { "type": "number" },
+
+    "number": { "type": "number" },
+    "sortBy": { "type": "number" },
+
+    "name": { "$ref": "#/$defs/i18nString" },
+
+    "image": { "type": "string", "format": "uri" },
+    "rarity": { "type": "string" },
+    "set_short_name": { "type": "string" },
+    "series_short_name": { "type": "string" },
+
     "illustrators": {
       "type": "array",
       "minItems": 1,
-      "items": {
-        "type": "string"
-      }
+      "items": { "type": "string" }
     },
+
     "set_ids": {
       "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uuid"
-      },
+      "items": { "type": "string", "format": "uuid" },
       "minItems": 1
     },
+
     "sets": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["name", "image"],
         "properties": {
-          "name": {
-            "type": "string"
-          },
-          "image": {
-            "type": "string",
-            "format": "uri"
-          }
+          "name": { "type": "string" },
+          "image": { "type": "string", "format": "uri" }
         },
         "additionalProperties": false
       },
       "minItems": 1
     },
-    "thumb": {
-      "type": "string",
-      "format": "uri"
-    },
-    "variant": {
-      "type": "string"
-    }
+
+    "thumb": { "type": "string", "format": "uri" },
+    "variant": { "type": "string" }
   },
+
   "additionalProperties": true
 }
