@@ -1,9 +1,9 @@
-import { z } from "zod";
-import mzCardList from "../../data/mz/cards.json";
-import wmCardList from "../../data/wm/cards.json";
-import ashCardList from "../../data/ash/cards.json";
-import ozCardList from "../../data/oz/cards.json";
 import { CollectionCard } from "@/types/CollectionCard";
+import { z } from "zod";
+import ashCardList from "../../data/ash/cards.json";
+import mzCardList from "../../data/mz/cards.json";
+import ozCardList from "../../data/oz/cards.json";
+import wmCardList from "../../data/wm/cards.json";
 import { SeriesShortName } from "./CollectionSeriesService";
 
 // FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
@@ -38,7 +38,7 @@ export const getJsonCardDetail = (
       (card) =>
         card.set_short_name === setShortName &&
         card.series_short_name === seriesShortName &&
-        card.sortBy === sortBy &&
+        card.sort_by === sortBy &&
         card.name === cardName,
     )
     .at(-1);
@@ -49,24 +49,24 @@ export const getJsonCardDetail = (
 export const getAdjacentCards = (
   seriesShortName: string,
   setShortName: string,
-  currentCardSortBy?: number,
+  currentCardsort_by?: number,
 ): {
   previousCard: CollectionCard | null;
   nextCard: CollectionCard | null;
 } => {
-  if (currentCardSortBy === undefined) {
+  if (currentCardsort_by === undefined) {
     return { previousCard: null, nextCard: null };
   }
   const cardList = jsonCardList(seriesShortName);
   const cards = cardList
     .filter((card) => card.series_short_name === seriesShortName)
     .filter((card) => card.set_short_name === setShortName)
-    .sort((a, b) => a.sortBy - b.sortBy);
+    .sort((a, b) => a.sort_by - b.sort_by);
 
   const previousCard =
-    cards.filter((card) => card.sortBy < currentCardSortBy).at(-1) || null;
+    cards.filter((card) => card.sort_by < currentCardsort_by).at(-1) || null;
   const nextCard =
-    cards.filter((card) => card.sortBy > currentCardSortBy).at(0) || null;
+    cards.filter((card) => card.sort_by > currentCardsort_by).at(0) || null;
 
   return {
     previousCard: previousCard,
@@ -78,14 +78,14 @@ export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
   const cards = SerieCardList[seriesShortName as SeriesShortName].map(
     (card: any) => CardSchema.parse(card),
   ) as CollectionCard[];
-  return cards.sort((a, b) => a.sortBy - b.sortBy);
+  return cards.sort((a, b) => a.sort_by - b.sort_by);
 };
 
 const CardSchema = z.object({
   id: z.string(),
   total_cards_count: z.number(),
   number: z.number(),
-  sortBy: z.number(),
+  sort_by: z.number(),
   name: z.string(),
   variant: z.string().optional(),
   image: z.string(),

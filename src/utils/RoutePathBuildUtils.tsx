@@ -1,6 +1,6 @@
-import { generatePath } from "react-router-dom";
 import { CollectionCard } from "@/types/CollectionCard";
 import { CollectionSet } from "@/types/CollectionSet";
+import { generatePath } from "react-router-dom";
 
 export const HomePagePath = "/";
 export const AboutPagePath = "/about";
@@ -158,7 +158,7 @@ export function getCardDetailPath(card: CollectionCard): string {
   const path = generatePath(CardDetailPath, {
     seriesShortName: encodeURIComponent(card.series_short_name),
     setShortName: encodeURIComponent(card.set_short_name),
-    sortByAndCardName: encodeURIComponent(`${card.sortBy}_${card.name}`),
+    sortByAndCardName: encodeURIComponent(`${card.sort_by}_${card.name}`),
   });
 
   return path;
