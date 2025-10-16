@@ -92,7 +92,7 @@ if ($isBot) {
   exit;
 }
 
-$indexPath = dirname(__DIR__) . 'index.html';
+$indexPath = dirname(__DIR__, 2) . 'index.html';
 if (is_file($indexPath)) {
   header('Content-Type: text/html; charset=utf-8');
   readfile($indexPath);
