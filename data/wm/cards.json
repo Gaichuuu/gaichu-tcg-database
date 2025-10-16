@@ -1,10 +1,487 @@
 [
   {
+    "id": "929c4924-4617-4c0c-b3a0-1b08d9597f02",
+    "total_cards_count": 50,
+    "number": 1,
+    "sortBy": 1,
+    "name": { "en": "Skipper", "ja": "スキッパー" },
+    "parody": "Mudkip",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set1/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/01-thumb.jpg",
+    "description": {
+      "en": "This Pokémon spends most of its time hiding in the mud.",
+      "ja": "このポケモンは、ほとんどの時間を泥の中に隠れて過ごしています。"
+    },
+    "measurement": {
+      "height": ".4m",
+      "weight": "7.6kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Growl", "ja": "なきごえ" },
+        "effect": {
+          "en": "Lets out a low growl at the opponent. It's meant to intimidate them, but it's pretty cute.",
+          "ja": "相手に向かってうなり声を出す。恐怖を与えるためのものだが、なかなかかわいい。"
+        }
+      },
+      {
+        "name": { "en": "Water Gun", "ja": "みずでっぽう" },
+        "effect": {
+          "en": "Spits water at the opponent.",
+          "ja": "相手に水を吐きかける。"
+        },
+        "damage": "20",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
+    "total_cards_count": 50,
+    "number": 2,
+    "sortBy": 2,
+    "name": { "en": "Ducky", "ja": "ダッキー" },
+    "parody": "Psyduck",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/02-thumb.jpg",
+    "description": {
+      "en": "Possesses powerful psychic abilities, but they only come into play when having a chronic headache.",
+      "ja": "強力な超能力を持っているが、慢性的な頭痛に襲われたときだけ発揮される。"
+    },
+    "measurement": {
+      "height": ".8m",
+      "weight": "19.6kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Amnesia", "ja": "ドわすれ" },
+        "effect": {
+          "en": "Forget everything that is happening right now. This somehow increases special defense. Editor's note: I do this all the time, but my special defense never goes up.",
+          "ja": "今起きていることをすべて忘れてしまう。これにより、なぜか特防が上がる。私はいつもこれをやっていますが、特防が上がることはありません。"
+        },
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
+    "total_cards_count": 50,
+    "number": 3,
+    "sortBy": 3,
+    "name": { "en": "Lavatar", "ja": "ラーバター" },
+    "parody": "Larvitar",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/03-thumb.jpg",
+    "description": {
+      "en": "This Pokémon was born under a large mountain. It takes years to eat up all of its food, and after it does, it takes a long nap.",
+      "ja": "大きな山の下で生まれたポケモン。何年もかけて食べ尽くし、食べ尽くした後は長い昼寝をする。"
+    },
+    "measurement": {
+      "height": ".6m",
+      "weight": "72kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Rock Throw", "ja": "いわおとし" },
+        "effect": {
+          "en": "Picks up a rock and throws it at the opponent. A technique often used in high school.",
+          "ja": "岩石を拾って相手に投げつける。高校時代によく使われた技だ。"
+        },
+        "damage": "20",
+        "costs": ["Fighting", "Normal"]
+      }
+    ]
+  },
+  {
+    "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
+    "total_cards_count": 50,
+    "number": 4,
+    "sortBy": 4,
+    "name": { "en": "Pink Boy", "ja": "ピンクボーイ" },
+    "parody": "Jigglypuff",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set1/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/04-thumb.jpg",
+    "description": {
+      "en": "The frequency of the singing voice perfectly matches the brain waves of a person in deep sleep.",
+      "ja": "歌声の波動は、深い眠りの人の脳波と完全に一致する。"
+    },
+    "measurement": { "height": ".5m", "weight": "5.5kg" },
+    "attacks": [
+      {
+        "name": { "en": "Sing", "ja": "うたう" },
+        "effect": {
+          "en": "It sings a variety of songs that are popular among young people today.",
+          "ja": "今、若者に人気のある様々な歌を歌う。"
+        },
+        "costs": ["Normal"]
+      },
+      {
+        "name": { "en": "Doubleslap", "ja": "おうふくビンタ" },
+        "effect": {
+          "en": "Slaps the opponent with its small pink hands.",
+          "ja": "ピンクの小さな手で相手をひっぱたく。"
+        },
+        "damage": "20",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
+    "total_cards_count": 50,
+    "number": 5,
+    "sortBy": 5,
+    "name": { "en": "Piccolo", "ja": "ピッコロ" },
+    "parody": "Metapod",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/05.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/05-thumb.jpg",
+    "description": {
+      "en": "The shell becomes as hard as iron.",
+      "ja": "甲羅が鉄のように硬くなる。"
+    },
+    "measurement": { "height": ".7m", "weight": "9.9kg" },
+    "attacks": [
+      {
+        "name": { "en": "Harden", "ja": "かたくなる" },
+        "effect": {
+          "en": "Becomes hard.",
+          "ja": "硬くなる。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
+    "total_cards_count": 50,
+    "number": 6,
+    "sortBy": 6,
+    "name": { "en": "Heavy Boy", "ja": "ヘビーボーイ" },
+    "parody": "Magnemite",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/06-thumb.jpg",
+    "description": {
+      "en": "It can levitate thanks to the magnetic field generated within its body.",
+      "ja": "体内で磁場を発生させるため、浮遊することができる。"
+    },
+    "measurement": { "height": ".3m", "weight": "6kg" },
+    "attacks": [
+      {
+        "name": { "en": "Thunder Wave", "ja": "でんじは" },
+        "effect": {
+          "en": "An attack that paralyzes the target with a wave of electricity.",
+          "ja": "電気の波動で対象を麻痺させる攻撃。"
+        },
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
+    "total_cards_count": 50,
+    "number": 7,
+    "sortBy": 7,
+    "name": { "en": "Cutiepie", "ja": "かわい子ちゃん" },
+    "parody": "Raichu",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/wm/set1/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/07-thumb.jpg",
+    "description": {
+      "en": "Items can be recharged when placed on the head.",
+      "ja": "頭に乗せると充電できる。"
+    },
+    "measurement": { "height": ".8m", "weight": "30kg" },
+    "attacks": [
+      {
+        "name": { "en": "Thunderpunch", "ja": "かみなりパンチ" },
+        "effect": {
+          "en": "Uses electricity to power up its punch and strike the enemy. Because its arms are small, this attack often misses.",
+          "ja": "電気でパンチをパワーアップさせ、敵を殴る。腕が小さいので、この攻撃はよく外れる。"
+        },
+        "damage": "50",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
+    "total_cards_count": 50,
+    "number": 8,
+    "sortBy": 8,
+    "name": { "en": "Eevee", "ja": "イーブイ" },
+    "parody": "Eevee",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set1/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/08-thumb.jpg",
+    "description": {
+      "en": "This Pokémon is a big foodie. It only eats French fries and Hot Pockets.",
+      "ja": "このポケモンは、とても食いしん坊です。フライドポテトとホットポケットしか食べません。"
+    },
+    "measurement": { "height": ".3m", "weight": "6.5kg" },
+    "attacks": [
+      {
+        "name": { "en": "Scratch", "ja": "ひっかく" },
+        "effect": {
+          "en": "Scratches the opponent with its long clawed fingers.",
+          "ja": "長い爪の指で相手を引っ掻く。"
+        },
+        "damage": "30",
+        "costs": ["Normal"]
+      },
+      {
+        "name": { "en": "Leech Seed", "ja": "やどりぎのタネ" },
+        "effect": {
+          "en": "A terrifying attack that slowly sucks the life from the opponent, eventually leaving them a corpse.",
+          "ja": "相手の命を少しずつ吸い取り、最後は死体になってしまう恐ろしい攻撃。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
+    "total_cards_count": 50,
+    "number": 9,
+    "sortBy": 9,
+    "name": { "en": "Green Boy", "ja": "グリーンボイ" },
+    "parody": "Bulbasaur",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/09.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/09-thumb.jpg",
+    "description": {
+      "en": "This Pokémon is born with a seed on its back. They grow at the same rate and eventually become part of the body.",
+      "ja": "このポケモンは、背中に種を背負って生まれてくる。同じ速度で成長し、やがて体の一部となる。"
+    },
+    "measurement": { "height": ".7m", "weight": "6.9kg" },
+    "attacks": [
+      {
+        "name": { "en": "Leech Seed", "ja": "やどりぎのタネ" },
+        "effect": {
+          "en": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse.",
+          "ja": "相手の命を少しずつ吸い取り、最後は死体になってしまう恐ろしい攻撃。"
+        },
+        "damage": "10",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "593a874f-f584-4127-a813-240fbd0953c9",
+    "total_cards_count": 50,
+    "number": 10,
+    "sortBy": 10,
+    "name": { "en": "Turtle Chips", "ja": "カメチップス" },
+    "parody": "Squirtle",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/10-thumb.jpg",
+    "description": {
+      "en": "When it's dangerous, it stays in the shell.",
+      "ja": "危険なときは殻に閉じこもる。"
+    },
+    "measurement": { "height": ".5m", "weight": "9kg" },
+    "attacks": [
+      {
+        "name": { "en": "Bubble", "ja": "あわ" },
+        "effect": {
+          "en": "Likes to blow bubbles. So cute!",
+          "ja": "泡を吹くのが好き。なかなかかわいい。"
+        },
+        "damage": "20",
+        "costs": ["Water"]
+      },
+      {
+        "name": { "en": "Rapid Spin", "ja": "こうそくスピン" },
+        "effect": {
+          "en": "Spins in a circle. Also very cute.",
+          "ja": "円を描くように回転する。これもとてもかわいい。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
+    "total_cards_count": 50,
+    "number": 11,
+    "sortBy": 11,
+    "name": { "en": "Fire Boy", "ja": "ファイアーボーイ" },
+    "parody": "Charmander",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/11-thumb.jpg",
+    "description": {
+      "en": "If the flame goes out, it dies.",
+      "ja": "炎が消えると死んでしまう。"
+    },
+    "measurement": {
+      "height": ".6m",
+      "weight": "8.5kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Mean Look", "ja": "くろいまなざし" },
+        "effect": {
+          "en": "Stare at the opponent with contempt.",
+          "ja": "相手を軽蔑したような目で見る。"
+        },
+        "costs": ["Normal"]
+      },
+      {
+        "name": { "en": "Ember", "ja": "ひのこ" },
+        "effect": {
+          "en": "Weak fire attack.",
+          "ja": "弱火攻撃。"
+        },
+        "damage": "20",
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
     "total_cards_count": 50,
     "number": 23,
     "sortBy": 23,
-    "name": "Water Horse",
+    "name": { "en": "Water Horse", "ja": "水馬" },
     "parody": "Horsea",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -21,15 +498,21 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/23.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/23-thumb.jpg",
-    "description": "This Pokémon can escape from its opponents in a variety of ways.",
+    "description": {
+      "en": "This Pokémon can escape from its opponents in a variety of ways.",
+      "ja": "このポケモンは、さまざまな方法で敵から逃げることができる。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "Smokescreen",
-        "effect": "Creates a cloud of black smoke. This is a move that the Pokémon learned by observing ninja.",
+        "name": { "en": "Smokescreen", "ja": "えんまく" },
+        "effect": {
+          "en": "It creates a cloud of black smoke. This is a technique that the Pokémon learned by observing the ninja.",
+          "ja": "黒煙のような雲を発生させる。ポケモンが忍者を観察して覚えた技である。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -176,41 +659,7 @@
       }
     ]
   },
-  {
-    "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
-    "total_cards_count": 50,
-    "number": 2,
-    "sortBy": 2,
-    "name": "Ducky",
-    "parody": "Psyduck",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/02-thumb.jpg",
-    "description": "Possesses powerful psychic abilities, but they only come into play when having a chronic headache.",
-    "measurement": {
-      "height": ".8m",
-      "weight": "19.6kg"
-    },
-    "attacks": [
-      {
-        "name": "Amnesia",
-        "effect": "Forget everything that is happening right now. This somehow increases special defense. Editor's note: I do this all the time, but my special defense never goes up.",
-        "costs": ["Psychic"]
-      }
-    ]
-  },
+
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
     "total_cards_count": 50,
@@ -536,41 +985,7 @@
       }
     ]
   },
-  {
-    "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
-    "total_cards_count": 50,
-    "number": 5,
-    "sortBy": 5,
-    "name": "Piccolo",
-    "parody": "Metapod",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/05.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/05-thumb.jpg",
-    "description": "The shell becomes as hard as iron.",
-    "measurement": {
-      "height": ".7m",
-      "weight": "9.9kg"
-    },
-    "attacks": [
-      {
-        "name": "Harden",
-        "effect": "To become hard.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
+
   {
     "id": "31ea2242-1638-4040-ab15-6c7587da4397",
     "total_cards_count": 50,
@@ -642,42 +1057,7 @@
       }
     ]
   },
-  {
-    "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
-    "total_cards_count": 50,
-    "number": 9,
-    "sortBy": 9,
-    "name": "Green Boy",
-    "parody": "Bulbasaur",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "25",
-    "image": "https://gaichu.b-cdn.net/wm/set1/09.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/09-thumb.jpg",
-    "description": "This Pokémon is born with a seed on its back. They grow at the same rate and eventually become part of the body.",
-    "measurement": {
-      "height": ".7m",
-      "weight": "6.9kg"
-    },
-    "attacks": [
-      {
-        "name": "Leech Seed",
-        "effect": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse. ",
-        "damage": "10",
-        "costs": ["Grass"]
-      }
-    ]
-  },
+
   {
     "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
     "total_cards_count": 50,
@@ -856,47 +1236,7 @@
       }
     ]
   },
-  {
-    "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
-    "total_cards_count": 50,
-    "number": 4,
-    "sortBy": 4,
-    "name": "Pink Boy",
-    "parody": "Jigglypuff",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "35",
-    "image": "https://gaichu.b-cdn.net/wm/set1/04.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/04-thumb.jpg",
-    "description": "The frequency of the singing voice perfectly match the brain waves of a person in deep sleep.",
-    "measurement": {
-      "height": ".5m",
-      "weight": "5.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Sing",
-        "effect": "It sings a variety of songs that are popular among young people today.",
-        "costs": ["Normal"]
-      },
-      {
-        "name": "Doubleslap",
-        "effect": "Slapping the opponent with its small pink hand. ",
-        "damage": "20",
-        "costs": ["Normal"]
-      }
-    ]
-  },
+
   {
     "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
     "total_cards_count": 50,
@@ -939,88 +1279,7 @@
       }
     ]
   },
-  {
-    "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
-    "total_cards_count": 50,
-    "number": 8,
-    "sortBy": 8,
-    "name": "Eevee",
-    "parody": "Eevee",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "10",
-    "image": "https://gaichu.b-cdn.net/wm/set1/08.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/08-thumb.jpg",
-    "description": "This Pokémon is a big foodie. It only eats French fries and Hot Pockets.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "6.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Scratch",
-        "effect": "It drags its opponents along with its long, clawed fingers.",
-        "damage": "30",
-        "costs": ["Normal"]
-      },
-      {
-        "name": "Leech Seed",
-        "effect": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "593a874f-f584-4127-a813-240fbd0953c9",
-    "total_cards_count": 50,
-    "number": 10,
-    "sortBy": 10,
-    "name": "Turtle Chips",
-    "parody": "Squirtle",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "30",
-    "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/10-thumb.jpg",
-    "description": "When it's dangerous, it stays in the shell.",
-    "measurement": {
-      "height": ".5m",
-      "weight": "9kg"
-    },
-    "attacks": [
-      {
-        "name": "Bubble",
-        "effect": "Likes to blow bubbles. So cute! ",
-        "damage": "20",
-        "costs": ["Water"]
-      },
-      {
-        "name": "Rapid Spin",
-        "effect": "Spins in a circle. Also very cute.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
+
   {
     "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
     "total_cards_count": 50,
@@ -1169,7 +1428,7 @@
     "total_cards_count": 50,
     "number": 22,
     "sortBy": 22,
-    "name": "Robot",
+    "name": { "en": "Robot", "ja": "ロボット" },
     "parody": "Porygon",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -1186,15 +1445,21 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/22-thumb.jpg",
-    "description": "The first Pokémon created by humans. A Pokémon that came into being after many years of scientific research and experimentation.",
+    "description": {
+      "en": "The first Pokémon created by humans. It was born after many years of scientific research and experimentation.",
+      "ja": "人類が初めて生み出したポケモン。長年の科学の研究・実験の末に誕生したポケモン。"
+    },
     "measurement": {
       "height": ".8m",
       "weight": "36.5kg"
     },
     "attacks": [
       {
-        "name": "Tri Attack",
-        "effect": "Shoots a beam made up of multiple elements. ",
+        "name": { "en": "Tri Attack", "ja": "トライアタック" },
+        "effect": {
+          "en": "It fires a beam made up of multiple elements.",
+          "ja": "複数の元素で構成されたビームを放つ。"
+        },
         "damage": "80",
         "costs": ["Fire", "Water", "Electric"]
       }
@@ -1272,41 +1537,7 @@
       }
     ]
   },
-  {
-    "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
-    "total_cards_count": 50,
-    "number": 6,
-    "sortBy": 6,
-    "name": "Heavy Boy",
-    "parody": "Magnemite",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/06-thumb.jpg",
-    "description": "Is able to levitate thanks to the magnetic field generated within its body.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "6kg"
-    },
-    "attacks": [
-      {
-        "name": "Thunder Wave",
-        "effect": "An attack that paralyzes the target with a wave of electricity.",
-        "costs": ["Electric"]
-      }
-    ]
-  },
+
   {
     "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
     "total_cards_count": 50,
@@ -1348,46 +1579,7 @@
       }
     ]
   },
-  {
-    "id": "929c4924-4617-4c0c-b3a0-1b08d9597f02",
-    "total_cards_count": 50,
-    "number": 1,
-    "sortBy": 1,
-    "name": "Skipper",
-    "parody": "Mudkip",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "10",
-    "image": "https://gaichu.b-cdn.net/wm/set1/01.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/01-thumb.jpg",
-    "description": "This Pokémon spends most of its time hiding in the mud.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "7.6kg"
-    },
-    "attacks": [
-      {
-        "name": "Growl",
-        "effect": "It growls at the opponent. It's meant to scare them, but it's also pretty cute."
-      },
-      {
-        "name": "Water Gun",
-        "effect": "Spits water at the opponent.",
-        "damage": "20",
-        "costs": ["Water"]
-      }
-    ]
-  },
+
   {
     "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
     "total_cards_count": 50,
@@ -1424,42 +1616,7 @@
       }
     ]
   },
-  {
-    "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
-    "total_cards_count": 50,
-    "number": 7,
-    "sortBy": 7,
-    "name": "Cutiepie",
-    "parody": "Raichu",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "50",
-    "image": "https://gaichu.b-cdn.net/wm/set1/07.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/07-thumb.jpg",
-    "description": "Items can be recharged when placed on the head.",
-    "measurement": {
-      "height": ".8m",
-      "weight": "30kg"
-    },
-    "attacks": [
-      {
-        "name": "Thunderpunch",
-        "effect": "Uses electricity to punch the enemy. Since his arms are small, this attack often misses.",
-        "damage": "50",
-        "costs": ["Electric"]
-      }
-    ]
-  },
+
   {
     "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
     "total_cards_count": 50,
@@ -1498,42 +1655,6 @@
         "name": "Leer",
         "effect": "Stare at the opponent.",
         "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
-    "total_cards_count": 50,
-    "number": 3,
-    "sortBy": 3,
-    "name": "Lavatar",
-    "parody": "Larvitar",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "30",
-    "image": "https://gaichu.b-cdn.net/wm/set1/03.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/03-thumb.jpg",
-    "description": "This Pokémon was born under a large mountain. It takes years to eat up all of its food, and after it does, it takes a long nap.",
-    "measurement": {
-      "height": ".6m",
-      "weight": "72kg"
-    },
-    "attacks": [
-      {
-        "name": "Rock Throw",
-        "effect": "Picking up a rock and throwing it at the opponent. This was a technique often used in high school. ",
-        "damage": "20",
-        "costs": ["Fighting", "Normal"]
       }
     ]
   },
@@ -1977,7 +2098,7 @@
     "total_cards_count": 50,
     "number": 21,
     "sortBy": 21,
-    "name": "Long Worm",
+    "name": { "en": "Long Worm", "ja": "ロングワーム" },
     "parody": "Dragonair",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -1994,20 +2115,26 @@
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/21-thumb.jpg",
-    "description": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
-    "measurement": {
-      "height": "4m",
-      "weight": "16.5kg"
+    "description": {
+      "en": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
+      "ja": "神秘的なオーラを放つポケモン。感情で天候を変化させることができる。"
     },
+    "measurement": { "height": "4m", "weight": "16.5kg" },
     "attacks": [
       {
-        "name": "Rain Dance",
-        "effect": "Performs a dance that changes the weather.",
+        "name": { "en": "Rain Dance", "ja": "あまごい" },
+        "effect": {
+          "en": "It performs a dance that changes the weather.",
+          "ja": "天候を変化させるダンスをする。"
+        },
         "costs": ["Water"]
       },
       {
-        "name": "Dragon Rush",
-        "effect": "Charges at the opponent with dragon-like movements.",
+        "name": { "en": "Dragon Rush", "ja": "ドラゴンダイブ" },
+        "effect": {
+          "en": "Charges at the opponent with dragon-like movements.",
+          "ja": "ドラゴンのような動きで相手に突進する。"
+        },
         "damage": "90",
         "costs": ["Dragon"]
       }
@@ -2054,47 +2181,7 @@
       }
     ]
   },
-  {
-    "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
-    "total_cards_count": 50,
-    "number": 11,
-    "sortBy": 11,
-    "name": "Fire Boy",
-    "parody": "Charmander",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/11-thumb.jpg",
-    "description": "If the flame goes out, it dies.",
-    "measurement": {
-      "height": "6m",
-      "weight": "8.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Mean Look",
-        "effect": "Disrespecting the opponent.",
-        "costs": ["Normal"]
-      },
-      {
-        "name": "Ember",
-        "effect": "Weak fire attack.",
-        "damage": "20",
-        "costs": ["Fire"]
-      }
-    ]
-  },
+
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
     "total_cards_count": 50,
