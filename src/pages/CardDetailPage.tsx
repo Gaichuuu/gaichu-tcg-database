@@ -2,7 +2,7 @@
 import React from "react";
 import HtmlCell from "@/components/HtmlCell";
 import { useNavigate, useParams } from "react-router-dom";
-import { CollectionParams } from "../App";
+import type { CollectionParamKeys } from "@/types/routes";
 import CardDetailPagingButton, {
   PagingType,
 } from "@/components/ButtonComponents/CardDetailPagingButton";
@@ -11,11 +11,14 @@ import {
   getCardDetailPath,
   parseSortAndNameRegex,
 } from "@/utils/RoutePathBuildUtils";
+import LocaleToggle from "@/components/LocaleToggle";
+import { useLocale, t } from "@/i18n/locale";
 
 const CardDetailPage: React.FC = () => {
   const { seriesShortName, setShortName, sortByAndCardName } =
-    useParams<CollectionParams>();
+    useParams<CollectionParamKeys>();
   const navigate = useNavigate();
+  const { locale } = useLocale();
 
   const seriesKey = decodeURIComponent(seriesShortName ?? "");
   const setKey = decodeURIComponent(setShortName ?? "");
@@ -26,78 +29,79 @@ const CardDetailPage: React.FC = () => {
   const sortBy = Number.isFinite(sortByNum) ? sortByNum : undefined;
   const cardName = (parsed.cardName ?? decoded).trim();
 
-  console.log("[CardDetail params]", { seriesKey, setKey, sortBy, cardName });
-
   const { card, previousCard, nextCard, isLoading, error } =
     useCurrentAndAdjacentCards(seriesKey, setKey, sortBy, cardName);
 
-  if (isLoading) {
-    return <div className="container mx-auto p-4 text-zinc-400">Loading…</div>;
-  }
+  if (isLoading)
+    return (
+      <div className="text-secondaryText container mx-auto pt-1">Loading…</div>
+    );
   if (error || !card) {
     return (
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto pt-1">
         <p className="text-errorText text-center">Card not found.</p>
       </div>
     );
   }
 
+  const resolvedName = t(card.name as any, locale);
+
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto pt-2">
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col items-center md:w-1/3">
           <img
-            src={card?.image}
-            alt={card?.name}
+            src={card.image}
+            alt={resolvedName}
             className="border-secondaryBorder mb-4 block max-h-[600px] rounded-3xl border-1 object-contain shadow"
           />
           <div className="mt-0 flex w-full max-w-xs gap-4">
             {previousCard && (
               <CardDetailPagingButton
                 pagingType={PagingType.Previous}
-                card={previousCard ? previousCard : undefined}
-                onClick={() => {
-                  navigate(getCardDetailPath(previousCard));
-                }}
+                card={previousCard}
+                onClick={() => navigate(getCardDetailPath(previousCard))}
               />
             )}
             {nextCard && (
               <CardDetailPagingButton
                 pagingType={PagingType.Next}
-                card={nextCard ? nextCard : undefined}
-                onClick={() => {
-                  navigate(getCardDetailPath(nextCard));
-                }}
+                card={nextCard}
+                onClick={() => navigate(getCardDetailPath(nextCard))}
               />
             )}
           </div>
         </div>
+
         <div className="md:w-2/3">
-          <h1 className="mb-4">{card?.name}</h1>
+          <div className="flex items-start justify-between gap-3">
+            <h1 className="mb-4 text-2xl font-semibold">{resolvedName}</h1>
+            <LocaleToggle card={card} />
+          </div>
 
           <table className="w-full border-collapse">
             <tbody>
-              {card?.type && (
+              {card.type && (
                 <tr>
                   <th>Type</th>
                   <td>
-                    {card?.color && (
+                    {card.color && (
                       <img
                         src={`https://gaichu.b-cdn.net/${seriesKey}/icon${card.color}.jpg`}
                         alt={`${card.color} Icon`}
                         className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
                       />
                     )}
-                    {card?.type}
+                    {card.type}
                   </td>
                 </tr>
               )}
-              {card?.stage?.map((s, i) => {
+
+              {card.stage?.map((s, i) => {
                 const text = [s.basic, s.evolution, s.description]
                   .filter(Boolean)
                   .join("\n");
                 if (!text) return null;
-
                 return (
                   <tr key={i}>
                     <th>Stage</th>
@@ -105,49 +109,59 @@ const CardDetailPage: React.FC = () => {
                   </tr>
                 );
               })}
-              {card?.hp && (
+
+              {card.hp && (
                 <tr>
                   <th>HP</th>
-                  <td>{card?.hp}</td>
+                  <td>{card.hp}</td>
                 </tr>
               )}
-              {card?.measurement && (
+
+              {card.measurement && (
                 <tr>
                   <th>Measurements</th>
                   <td>
-                    Height {card?.measurement?.height}, Weight{" "}
-                    {card?.measurement?.weight}
+                    Height {card.measurement.height}, Weight{" "}
+                    {card.measurement.weight}
                   </td>
                 </tr>
               )}
-              {card?.attacks?.map((attack, aIndex) => (
-                <tr key={attack.name ?? aIndex}>
-                  <th>{attack.name}</th>
+
+              {card.attacks?.map((attack: any, aIndex: number) => (
+                <tr key={t(attack.name, "en") || aIndex}>
+                  <th>{t(attack.name, locale)}</th>
                   <td>
-                    {(attack.costs ?? []).map((cost, cIndex) => (
-                      <img
-                        key={`${attack.name}-cost-${cIndex}`}
-                        src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
-                        alt={`${cost} Icon`}
-                        className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
-                      />
-                    ))}
-                    <HtmlCell html={attack.effect} className="html-cell mx-1" />{" "}
+                    {(attack.costs ?? []).map(
+                      (cost: string, cIndex: number) => (
+                        <img
+                          key={`${t(attack.name, "en")}-cost-${cIndex}`}
+                          src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
+                          alt={`${cost} Icon`}
+                          className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
+                        />
+                      ),
+                    )}
+                    <HtmlCell
+                      html={t(attack.effect, locale)}
+                      className="html-cell mx-1"
+                    />
                     {attack.damage ? `(${attack.damage})` : ""}
                   </td>
                 </tr>
               ))}
-              {card?.limit && (
+
+              {card.limit && (
                 <tr>
                   <th>Limit</th>
-                  <td>{card?.limit}</td>
+                  <td>{card.limit}</td>
                 </tr>
               )}
-              {card?.cost && (
+
+              {card.cost && (
                 <tr>
                   <th>Cost</th>
                   <td>
-                    {card?.cost?.map((cost) => (
+                    {card.cost.map((cost) => (
                       <span key={cost.aura} className="mr-2">
                         {cost.total}{" "}
                         <img
@@ -158,16 +172,17 @@ const CardDetailPage: React.FC = () => {
                         {"  "}
                       </span>
                     ))}
-                    {card?.lp && <span>LP {card.lp}</span>}
+                    {card.lp && <span>LP {card.lp}</span>}
                   </td>
                 </tr>
               )}
-              {card?.traits && (
+
+              {card.traits && (
                 <tr>
                   <th>Traits</th>
                   <td>
-                    {card?.traits?.map((traits) => (
-                      <span className="mr-2">
+                    {card.traits.map((traits) => (
+                      <span key={traits} className="mr-2">
                         <img
                           src={`https://gaichu.b-cdn.net/${seriesKey}/icon${traits}.png`}
                           alt={`${traits} Icon`}
@@ -179,12 +194,13 @@ const CardDetailPage: React.FC = () => {
                   </td>
                 </tr>
               )}
-              {card?.terra && (
+
+              {card.terra && (
                 <tr>
                   <th>Terra</th>
                   <td>
-                    {card?.terra?.map((terra) => (
-                      <span className="mr-2">
+                    {card.terra.map((terra, i) => (
+                      <span key={`${terra.icon}-${i}`} className="mr-2">
                         ({terra.attack && <>{terra.attack} </>}
                         <img
                           src={`https://gaichu.b-cdn.net/${seriesKey}/icon${terra.icon}.png`}
@@ -197,24 +213,21 @@ const CardDetailPage: React.FC = () => {
                   </td>
                 </tr>
               )}
-              {card?.metadata && (
+
+              {card.metadata && (
                 <tr>
                   <th>Metadata</th>
                   <td>
-                    {card?.metadata?.discovered && (
+                    {card.metadata.discovered && (
                       <>Discovered {card.metadata.discovered}, </>
                     )}
-                    {card?.metadata?.gps && <>GPS {card.metadata.gps}, </>}
-                    {card?.metadata?.weight && (
+                    {card.metadata.gps && <>GPS {card.metadata.gps}, </>}
+                    {card.metadata.weight && (
                       <>Weight {card.metadata.weight}, </>
                     )}
-                    {card?.metadata?.height && (
-                      <>Height {card.metadata.height}</>
-                    )}
-                    {card?.metadata?.length && (
-                      <>Length {card.metadata.length}</>
-                    )}
-                    {card?.metadata?.type && (
+                    {card.metadata.height && <>Height {card.metadata.height}</>}
+                    {card.metadata.length && <>Length {card.metadata.length}</>}
+                    {card.metadata.type && (
                       <>
                         {card.metadata.type} {card.metadata.measurement}
                       </>
@@ -222,20 +235,21 @@ const CardDetailPage: React.FC = () => {
                   </td>
                 </tr>
               )}
-              {card?.effect && (
+
+              {card.effect && (
                 <tr>
                   <th>Effect</th>
-                  <HtmlCell html={card?.effect} />
+                  <HtmlCell html={card.effect} />
                 </tr>
               )}
-              {Array.isArray(card?.zoo_attack) &&
-                card!.zoo_attack!.map((atk, idx) => {
+
+              {Array.isArray(card.zoo_attack) &&
+                card.zoo_attack.map((atk, idx) => {
                   const statuses = Array.isArray(atk.status)
                     ? atk.status
                     : atk.status
                       ? [atk.status]
                       : [];
-
                   return (
                     <React.Fragment key={`${atk.name ?? "atk"}-${idx}`}>
                       <tr>
@@ -281,7 +295,7 @@ const CardDetailPage: React.FC = () => {
                 <tr>
                   <th>Attributes</th>
                   <td>
-                    {card?.weakness?.length ? (
+                    {card.weakness?.length ? (
                       <div>
                         <span>Weakness</span>{" "}
                         <span className="mb-1 inline-flex flex-wrap items-center gap-2 align-middle">
@@ -290,14 +304,14 @@ const CardDetailPage: React.FC = () => {
                               key={`w-${i}`}
                               className="inline-flex items-center gap-1"
                             >
-                              {w?.type && (
+                              {w.type && (
                                 <img
                                   src={`https://gaichu.b-cdn.net/${seriesKey}/icon${w.type}.jpg`}
                                   alt={`${w.type} Icon`}
                                   className="inline-block h-5 w-5 align-middle"
                                 />
                               )}
-                              {w?.value && (
+                              {w.value && (
                                 <span className="align-middle">{w.value}</span>
                               )}
                             </span>
@@ -306,7 +320,7 @@ const CardDetailPage: React.FC = () => {
                       </div>
                     ) : null}
 
-                    {card?.resistance?.length ? (
+                    {card.resistance?.length ? (
                       <div>
                         <span>Resistance</span>{" "}
                         <span className="mb-1 inline-flex flex-wrap items-center gap-2 align-middle">
@@ -315,14 +329,14 @@ const CardDetailPage: React.FC = () => {
                               key={`r-${i}`}
                               className="inline-flex items-center gap-1"
                             >
-                              {r?.type && (
+                              {r.type && (
                                 <img
                                   src={`https://gaichu.b-cdn.net/${seriesKey}/icon${r.type}.jpg`}
                                   alt={`${r.type} Icon`}
                                   className="inline-block h-5 w-5 align-middle"
                                 />
                               )}
-                              {r?.value && (
+                              {r.value && (
                                 <span className="align-middle">{r.value}</span>
                               )}
                             </span>
@@ -331,7 +345,7 @@ const CardDetailPage: React.FC = () => {
                       </div>
                     ) : null}
 
-                    {card?.retreat?.some((rr) => rr?.costs?.length) ? (
+                    {card.retreat?.some((rr) => rr?.costs?.length) ? (
                       <div>
                         <span>Retreat</span>{" "}
                         <span className="inline-flex flex-wrap items-center gap-2 align-middle">
@@ -352,16 +366,16 @@ const CardDetailPage: React.FC = () => {
                 </tr>
               )}
 
-              {card?.description && (
+              {card.description && (
                 <tr>
                   <th>Flavor Text</th>
-                  <td>{card.description}</td>
+                  <td>{t(card.description as any, locale)}</td>
                 </tr>
               )}
-              {card?.rule?.map((s, i) => {
+
+              {card.rule?.map((s, i) => {
                 const text = [s.name, s.description].filter(Boolean).join("\n");
                 if (!text) return null;
-
                 return (
                   <tr key={i}>
                     <th>Rule</th>
@@ -369,38 +383,42 @@ const CardDetailPage: React.FC = () => {
                   </tr>
                 );
               })}
-              {card?.illustrators && (
+
+              {card.illustrators && (
                 <tr>
                   <th>Illustrator</th>
-                  <td>{card?.illustrators[0]}</td>
+                  <td>{card.illustrators[0]}</td>
                 </tr>
               )}
-              {card?.rarity && (
+
+              {card.rarity && (
                 <tr>
                   <th>Rarity</th>
-                  <td>{card?.rarity}</td>
+                  <td>{card.rarity}</td>
                 </tr>
               )}
-              {card?.sets && (
+
+              {card.sets && (
                 <tr>
                   <th>
                     <img
-                      src={card?.sets[0].image}
-                      alt={card?.sets[0].name}
+                      src={card.sets[0].image}
+                      alt={card.sets[0].name /* plain string */}
                       className="w-24 rounded shadow"
                     />
                   </th>
                   <td>
-                    {card?.sets[0].name} • {card?.number}/
-                    {card?.total_cards_count} • {card?.variant}
+                    {card.sets[0].name} • {card.number}/{card.total_cards_count}{" "}
+                    • {card.variant}
                     <div className="mt-2"></div>
                   </td>
                 </tr>
               )}
-              {card?.note && (
+
+              {card.note && (
                 <tr>
                   <th>Note</th>
-                  <td>{card?.note}</td>
+                  <td>{card.note}</td>
                 </tr>
               )}
             </tbody>
