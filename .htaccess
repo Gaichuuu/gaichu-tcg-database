@@ -6,7 +6,7 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  RewriteRule ^news/.*$ /news/index.php [L,QSA]
+  RewriteRule ^news/.*$ /data/news/index.php [L,QSA]
 
   RewriteRule . index.html [L]
 </IfModule>
