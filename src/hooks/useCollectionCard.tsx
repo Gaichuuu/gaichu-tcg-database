@@ -1,5 +1,4 @@
 // src/hooks/useCollectionCard.tsx
-import { useQuery } from "@tanstack/react-query";
 import { AppResult } from "@/services/AppResult";
 import {
   fetchAdjacentCards,
@@ -11,6 +10,7 @@ import {
   getJsonCardDetail,
 } from "@/services/JsonCollectionCardService";
 import { CollectionCard } from "@/types/CollectionCard";
+import { useQuery } from "@tanstack/react-query";
 
 const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID || "dev";
 
@@ -92,10 +92,10 @@ export const useCurrentAndAdjacentCards = (
       seriesShortName,
       setShortName,
       "sortBy",
-      card?.sortBy ?? "",
+      card?.sort_by ?? "",
     ],
     queryFn: () =>
-      fetchAdjacentCards(seriesShortName, setShortName, card?.sortBy),
+      fetchAdjacentCards(seriesShortName, setShortName, card?.sort_by),
     enabled: Boolean(seriesShortName && setShortName && card),
     staleTime: 5 * 60 * 1000,
     refetchOnWindowFocus: false,
@@ -106,7 +106,7 @@ export const useCurrentAndAdjacentCards = (
     const adjacent = getAdjacentCards(
       seriesShortName,
       setShortName,
-      card?.sortBy,
+      card?.sort_by,
     );
     return {
       card: card ?? undefined,

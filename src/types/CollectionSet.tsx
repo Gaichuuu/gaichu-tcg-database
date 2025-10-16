@@ -1,7 +1,7 @@
 export interface CollectionSet {
   id: string;
   short_name: string;
-  sortBy: number;
+  sort_by: number;
   series_id: string;
   series_short_name: string;
   logo: string;

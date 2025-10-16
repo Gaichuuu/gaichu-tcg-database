@@ -2,7 +2,7 @@ export interface CollectionCard {
   id: string;
   total_cards_count: number;
   number: number;
-  sortBy: number;
+  sort_by: number;
   name: string;
   image: string;
   rarity: string;
