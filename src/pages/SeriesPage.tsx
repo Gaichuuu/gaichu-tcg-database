@@ -9,7 +9,7 @@ const SeriesPage: React.FC = () => {
   const { seriesShortName } = useParams();
   const { data: collectionSet, error } = useSets(seriesShortName);
   const navigate = useNavigate();
-  if (error) return <p>Something went wrong...</p>;
+  if (error) return <p>Something went wrong... {error.message}</p>;
   return (
     <div className="container mx-auto p-0">
       <h3 className="mb-2">{seriesShortName} sets</h3>
