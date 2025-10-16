@@ -8,7 +8,7 @@ export const setJsonMock: CollectionSet[] = [
     series_id: "1",
     logo: "pkm-test_1.png",
     name: "test_1",
-    sortBy: 1,
+    sort_by: 1,
   },
   {
     id: "20",
@@ -17,7 +17,7 @@ export const setJsonMock: CollectionSet[] = [
     series_id: "1",
     logo: "pkm-test_2.png",
     name: "test_2",
-    sortBy: 2,
+    sort_by: 2,
     description: "test_2 description",
     set_images: [
       {
@@ -39,6 +39,6 @@ export const setJsonMock: CollectionSet[] = [
     series_id: "2",
     logo: "mgc-test_1-1.png",
     name: "test_1-1",
-    sortBy: 1,
+    sort_by: 1,
   },
 ];

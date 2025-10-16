@@ -15,25 +15,26 @@ import { getJsonSeries } from "@/services/JsonCollectionSeriesService.tsx";
 describe("test for getJsonSeries", () => {
   const series = getJsonSeries();
   expect(series.length).toBeGreaterThan(1);
-  it("should sort Series by their sortBy value in ascending order", () => {
-    // Confirm each series is sorted correctly by sortBy
+  it("should sort Series by their sort_by value in ascending order", () => {
+    // Confirm each series is sorted correctly by sort_by
     expect(
       series.every(
         (s, index) =>
-          index === 0 || s.series.sortBy > series[index - 1].series.sortBy,
+          index === 0 || s.series.sort_by > series[index - 1].series.sort_by,
       ),
     ).toBe(true);
   });
 
-  it("should connect Sets to the correct series and sort sets by sortBy", () => {
+  it("should connect Sets to the correct series and sort sets by sort_by", () => {
     series.forEach((s) => {
       // Each set should have the correct series_id
       expect(s.sets.every((set) => set.series_id == s.series.id)).toBe(true);
 
-      // Sets should be sorted by sortBy in ascending order
+      // Sets should be sorted by sort_by in ascending order
       expect(
         s.sets.every(
-          (set, index) => index === 0 || set.sortBy > s.sets[index - 1].sortBy,
+          (set, index) =>
+            index === 0 || set.sort_by > s.sets[index - 1].sort_by,
         ),
       ).toBe(true);
     });
