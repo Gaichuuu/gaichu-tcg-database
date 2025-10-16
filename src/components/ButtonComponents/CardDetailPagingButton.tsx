@@ -1,6 +1,8 @@
+// src/components/ButtonComponents/CardDetailPagingButton.tsx
 import React from "react";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 import { CollectionCard } from "@/types/CollectionCard";
+import { useLocale, t } from "@/i18n/locale";
 
 type ButtonAction = {
   pagingType: PagingType;
@@ -21,22 +23,29 @@ const CardDetailPagingButton: React.FC<ButtonAction> = ({
   className = "",
 }) => {
   const isPrev = pagingType === PagingType.Previous;
+  const { locale } = useLocale();
+  const label = card ? t(card.name, locale) : "";
 
   return (
     <button
+      type="button"
       onClick={onClick}
-      className={` ${className} /* allows parent to do */ inline-flex flex-1 cursor-pointer flex-col items-center bg-transparent p-0 transition-transform duration-200 hover:scale-110`}
+      disabled={!card}
+      aria-label={`${pagingType}: ${label}`}
+      title={`${pagingType}: ${label}`}
+      className={`${className} inline-flex flex-1 cursor-pointer flex-col items-center bg-transparent p-0 transition-transform duration-200 hover:scale-110 disabled:cursor-not-allowed disabled:opacity-60`}
     >
-      <span className="text-primaryText hover:text-hoverText inline-flex items-center space-x-1">
+      <span className="inline-flex items-center space-x-1">
         {isPrev && <RiArrowDropLeftLine size={20} />}
-        <span className="max-w-30 truncate">{card?.name}</span>
+        <span className="max-w-30 truncate">{label}</span>
         {!isPrev && <RiArrowDropRightLine size={20} />}
       </span>
+
       {card?.thumb && (
         <img
           src={card.thumb}
-          alt={card.name}
-          className="mt-1 max-h-[32px] rounded-full object-contain"
+          alt={label}
+          className="border-secondaryBorder mt-1 max-h-[32px] rounded-full border object-contain"
         />
       )}
     </button>
