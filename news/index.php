@@ -108,7 +108,7 @@ if ($isBot) {
 
   $title = (is_array($doc) && !empty($doc['title'])) ? $doc['title'] : 'Gaichu';
   $desc = (is_array($doc) && !empty($doc['excerpt'])) ? $doc['excerpt'] : 'Your #2 source for parody and bootleg card games.';
-  $img = (is_array($doc) && !empty($doc['hero_url'])) ? $doc['hero_url'] : 'https://gaichu.b-cdn.net/assets/default.png?v=2';
+  $img = (is_array($doc) && !empty($doc['hero_url'])) ? $doc['hero_url'] : 'https://gaichu.b-cdn.net/assets/default.png?v=3';
 
   render_og($host, $slug ? $slug : 'news', $title, $desc, $img);
   exit;

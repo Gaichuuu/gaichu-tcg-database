@@ -41,7 +41,7 @@ function stripHtml(html) {
     .replace(/\s+/g, " ")
     .trim();
 }
-const MAX_BODY_CHARS = 400;
+const MAX_BODY_CHARS = 400; // keep the index compact
 
 function toMillis(v) {
   if (v == null) return Date.now();

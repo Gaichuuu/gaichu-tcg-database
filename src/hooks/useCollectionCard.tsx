@@ -1,4 +1,5 @@
 // src/hooks/useCollectionCard.tsx
+import { useQuery } from "@tanstack/react-query";
 import { AppResult } from "@/services/AppResult";
 import {
   fetchAdjacentCards,
@@ -10,7 +11,6 @@ import {
   getJsonCardDetail,
 } from "@/services/JsonCollectionCardService";
 import { CollectionCard } from "@/types/CollectionCard";
-import { useQuery } from "@tanstack/react-query";
 
 const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID || "dev";
 

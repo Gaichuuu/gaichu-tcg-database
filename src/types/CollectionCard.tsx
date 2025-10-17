@@ -1,21 +1,80 @@
-export interface CollectionCard {
+type LocaleKey = "en" | "ja";
+
+type I18nInput = string | Partial<Record<LocaleKey, string>>;
+
+export function toI18nMap(
+  v: I18nInput | undefined,
+): Partial<Record<LocaleKey, string>> {
+  if (v == null) return {};
+  return typeof v === "string" ? { en: v } : v;
+}
+
+// ---------- Types ----------
+
+export interface RawCollectionCard {
   id: string;
   total_cards_count: number;
   number: number;
   sort_by: number;
-  name: string;
+
+  name: I18nInput;
   image: string;
   rarity: string;
   set_short_name: string;
   series_short_name: string;
   illustrators: string[];
   set_ids: string[];
-  sets: Set[];
+
+  sets: CardSet[];
   thumb: string;
   variant: string;
 
   color?: string;
-  description?: string;
+  description?: I18nInput;
+  attacks?: Array<{
+    name: I18nInput;
+    effect: I18nInput;
+    damage?: string;
+    costs?: string[];
+  }>;
+  zoo_attack?: Zoo_Attack[];
+  measurement?: Measurement;
+  stage?: Stage[];
+  rule?: Rule[];
+  metadata?: Metadata;
+  weakness?: WeaknessEntry[];
+  resistance?: ResistanceEntry[];
+  retreat?: RetreatEntry[];
+  parody?: string;
+  hp?: string;
+  lp?: string;
+  traits?: string[];
+  terra?: Terra[];
+  type?: string;
+  limit?: number;
+  cost?: Cost[];
+  effect?: string;
+  note?: string;
+}
+
+export interface CollectionCard {
+  id: string;
+  total_cards_count: number;
+  number: number;
+  sort_by: number;
+  name: Partial<Record<LocaleKey, string>>;
+  image: string;
+  rarity: string;
+  set_short_name: string;
+  series_short_name: string;
+  illustrators: string[];
+  set_ids: string[];
+  sets: CardSet[];
+  thumb: string;
+  variant: string;
+
+  color?: string;
+  description?: Partial<Record<LocaleKey, string>>;
   attacks?: Attack[];
   zoo_attack?: Zoo_Attack[];
   measurement?: Measurement;
@@ -37,7 +96,7 @@ export interface CollectionCard {
   note?: string;
 }
 
-interface Set {
+interface CardSet {
   name: string;
   image: string;
 }
@@ -50,7 +109,7 @@ interface Terra {
 
 interface Measurement {
   height?: string;
-  weight: string;
+  weight?: string;
 }
 
 interface Stage {
@@ -66,7 +125,7 @@ interface Rule {
 
 interface Metadata {
   height?: string;
-  weight: string;
+  weight?: string;
   gps: string;
   discovered: string;
   length?: string;
@@ -75,10 +134,10 @@ interface Metadata {
 }
 
 interface Attack {
-  name: string;
-  effect?: string;
-  damage: string | undefined;
-  costs: string[] | undefined;
+  name: Partial<Record<LocaleKey, string>>;
+  effect: Partial<Record<LocaleKey, string>>;
+  damage?: string;
+  costs?: string[];
 }
 
 interface Zoo_Attack {
@@ -107,4 +166,29 @@ interface ResistanceEntry {
 
 interface RetreatEntry {
   costs?: string[];
+}
+
+// ---------- Normalizers ----------
+
+export function normalizeCollectionCard(
+  raw: RawCollectionCard,
+): CollectionCard {
+  return {
+    ...raw,
+    name: toI18nMap(raw.name),
+    description: toI18nMap(raw.description),
+
+    attacks: (raw.attacks ?? []).map((a) => ({
+      name: toI18nMap(a.name),
+      effect: toI18nMap(a.effect),
+      damage: a.damage,
+      costs: a.costs ?? [],
+    })),
+  };
+}
+
+export function normalizeCollectionList(
+  raws: RawCollectionCard[],
+): CollectionCard[] {
+  return raws.map(normalizeCollectionCard);
 }

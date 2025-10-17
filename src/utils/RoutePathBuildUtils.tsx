@@ -1,6 +1,22 @@
+type I18nValue = string | Partial<Record<"en" | "ja", string>>;
+
+export function i18nToEnString(v: I18nValue): string {
+  if (typeof v === "string") return v;
+  return v?.en || Object.values(v || {})[0] || "";
+}
+
+export function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .trim()
+    .replace(/['’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+import { generatePath } from "react-router-dom";
 import { CollectionCard } from "@/types/CollectionCard";
 import { CollectionSet } from "@/types/CollectionSet";
-import { generatePath } from "react-router-dom";
 
 export const HomePagePath = "/";
 export const AboutPagePath = "/about";
@@ -155,13 +171,12 @@ export function getArtPath(
   }
 }
 export function getCardDetailPath(card: CollectionCard): string {
-  const path = generatePath(CardDetailPath, {
+  const nameSlug = slugify(i18nToEnString(card.name as unknown as I18nValue));
+  return generatePath(CardDetailPath, {
     seriesShortName: encodeURIComponent(card.series_short_name),
     setShortName: encodeURIComponent(card.set_short_name),
-    sortByAndCardName: encodeURIComponent(`${card.sort_by}_${card.name}`),
+    sortByAndCardName: encodeURIComponent(`${card.sort_by}_${nameSlug}`),
   });
-
-  return path;
 }
 
 export function parseSortAndNameRegex(

@@ -1,6 +1,22 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
+  "$defs": {
+    "i18nString": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "ja": { "type": "string", "minLength": 1 }
+          },
+          "minProperties": 1,
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
   "items": {
     "allOf": [
       { "$ref": "../cards.schema.base.json" },
@@ -8,32 +24,22 @@
         "type": "object",
         "required": ["parody", "hp", "description", "measurement", "attacks"],
         "properties": {
-          "parody": {
-            "type": "string"
-          },
+          "parody": { "type": "string" },
+
           "illustrators": {
             "type": "array",
-            "items": {
-              "type": "string",
-              "enum": ["Alex Roh"]
-            }
+            "items": { "type": "string", "enum": ["Alex Roh"] }
           },
-          "rarity": {
-            "type": "string",
-            "enum": ["Common", "Rare"]
-          },
-          "variant": {
-            "type": "string",
-            "enum": ["Normal", "Holo"]
-          },
+
+          "rarity": { "type": "string", "enum": ["Common", "Rare"] },
+          "variant": { "type": "string", "enum": ["Normal", "Holo"] },
+
           "set_short_name": {
             "type": "string",
             "enum": ["set1", "set2", "og"]
           },
-          "series_short_name": {
-            "type": "string",
-            "enum": ["wm"]
-          },
+          "series_short_name": { "type": "string", "enum": ["wm"] },
+
           "sets": {
             "type": "array",
             "minItems": 1,
@@ -45,50 +51,39 @@
                   "type": "string",
                   "enum": ["Set One", "Set One (reprint)", "Set Two"]
                 },
-                "image": {
-                  "type": "string",
-                  "format": "uri"
-                }
+                "image": { "type": "string", "format": "uri" }
               },
               "additionalProperties": false
             }
           },
-          "hp": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
+
+          "hp": { "type": "string" },
+
+          "description": { "$ref": "#/$defs/i18nString" },
+
           "measurement": {
             "type": "object",
             "required": ["height", "weight"],
             "properties": {
-              "height": {
-                "type": "string"
-              },
-              "weight": {
-                "type": "string"
-              }
+              "height": { "type": "string" },
+              "weight": { "type": "string" }
             },
             "additionalProperties": false
           },
+
           "attacks": {
             "type": "array",
+            "minItems": 1,
             "items": {
               "type": "object",
               "required": ["name", "effect"],
               "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "effect": {
-                  "type": "string"
-                },
-                "damage": {
-                  "type": ["string"]
-                },
+                "name": { "$ref": "#/$defs/i18nString" },
+                "effect": { "$ref": "#/$defs/i18nString" },
+                "damage": { "type": "string" },
                 "costs": {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "type": "string",
                     "enum": [
@@ -103,13 +98,11 @@
                       "Grass",
                       "Normal"
                     ]
-                  },
-                  "minItems": 1
+                  }
                 }
               },
               "additionalProperties": false
-            },
-            "minItems": 1
+            }
           }
         }
       }

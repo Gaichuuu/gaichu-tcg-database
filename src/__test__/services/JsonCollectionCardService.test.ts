@@ -10,7 +10,7 @@ import { getJsonCardList } from "@/services/JsonCollectionCardService.tsx";
 describe("test for getJsonCardList", () => {
   const cards = getJsonCardList("wm", "set1");
   expect(cards.length).toBeGreaterThan(1);
-  it("should sort Cards by their sort_by value in ascending order", () => {
+  it("should sort Cards by their sortBy value in ascending order", () => {
     expect(
       cards.every(
         (card, index) => index === 0 || card.sort_by > cards[index - 1].sort_by,

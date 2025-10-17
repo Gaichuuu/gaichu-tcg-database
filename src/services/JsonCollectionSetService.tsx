@@ -5,10 +5,8 @@ import { jsonCardList } from "./JsonCollectionCardService";
 export const getJsonSet = (seriesShortName: string): SetAndCard[] => {
   const cardList = jsonCardList(seriesShortName);
   return setsList
-    .filter((set) => set.series_short_name === seriesShortName)
-    .map((set) => {
-      return convertToSetAndCard(set, cardList);
-    })
+    .filter((set: any) => set.series_short_name === seriesShortName)
+    .map((set: any) => convertToSetAndCard(set, cardList))
     .sort((a, b) => a.set.sort_by - b.set.sort_by);
 };
 
@@ -37,13 +35,25 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
     })),
   },
   cards: cardList
-    .filter((card) => card.set_ids[0] === set.id)
+
+    .filter(
+      (card) => Array.isArray(card.set_ids) && card.set_ids.includes(set.id),
+    )
     .map((card) => ({
       id: card.id,
       total_cards_count: card.total_cards_count,
       number: card.number!,
       sort_by: card.sort_by,
+
       name: card.name,
+      description: card.description,
+      attacks: (card.attacks ?? []).map((attack: any) => ({
+        name: attack.name,
+        effect: attack.effect,
+        damage: attack.damage,
+        costs: attack.costs ?? [],
+      })),
+
       parody: card.parody,
       rarity: card.rarity,
       color: card.color,
@@ -53,29 +63,20 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       thumb: card.thumb,
       variant: card.variant,
       hp: card.hp,
-      description: card.description,
       effect: card.effect,
       note: card.note,
       illustrators: [...card.illustrators],
       zoo_attack: card.zoo_attack,
-      attacks: card.attacks?.map((attack: any) => ({
-        name: attack.name,
-        effect: attack.effect,
-        damage: attack.damage,
-        costs: attack.costs?.map((cost: any) => cost),
-      })),
 
-      weakness: card.weakness?.map((weakness: any) => ({
-        type: weakness.type,
-        value: weakness.value,
+      weakness: card.weakness?.map((w: any) => ({
+        type: w.type,
+        value: w.value,
       })),
-      resistance: card.resistance?.map((resistance: any) => ({
-        type: resistance.type,
-        value: resistance.value,
+      resistance: card.resistance?.map((r: any) => ({
+        type: r.type,
+        value: r.value,
       })),
-      retreat: card.retreat?.map((retreat: any) => ({
-        costs: retreat.costs?.map((cost: any) => cost),
-      })),
+      retreat: card.retreat?.map((rt: any) => ({ costs: rt.costs ?? [] })),
 
       measurement: {
         height: card.measurement?.height,
@@ -86,14 +87,22 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
         evolution: stage.evolution,
         description: stage.description,
       })),
+
       rule: card.rule?.map((rule: any) => ({
-        title: rule.title,
+        name: rule.name,
         description: rule.description,
       })),
-      sets: card.sets.map((set: any) => ({
-        name: set.name,
-        image: set.image,
+      sets: card.sets.map((s: any) => ({
+        name: s.name,
+        image: s.image,
       })),
       set_ids: [...card.set_ids],
+      traits: card.traits,
+      terra: card.terra,
+      metadata: card.metadata,
+      type: card.type,
+      limit: card.limit,
+      cost: card.cost,
+      lp: card.lp,
     })),
 });
