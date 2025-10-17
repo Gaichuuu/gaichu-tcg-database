@@ -107,7 +107,7 @@ const CardSchemaRaw = z.object({
   id: z.string(),
   total_cards_count: z.number(),
   number: z.number(),
-  sortBy: z.number(),
+  sort_by: z.number(),
 
   name: I18nValue,
   variant: z.string().optional(),
