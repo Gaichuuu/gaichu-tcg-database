@@ -6,7 +6,8 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  RewriteRule ^news/.*$ /data/news/index.php [L,QSA]
+  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
+  RewriteRule ^news/([^/?#]+)/?$ /news/index.php?slug=$1 [L,QSA]
 
-  RewriteRule . index.html [L]
+  RewriteRule . /index.html [L]
 </IfModule>
