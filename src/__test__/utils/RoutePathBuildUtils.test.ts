@@ -123,7 +123,7 @@ describe("getCardDetailPath", () => {
     vi.clearAllMocks();
   });
 
-  it("encodes params and calls generatePath correctly", () => {
+  it("encodes params and slugifies card name, then calls generatePath correctly", () => {
     const card = {
       series_short_name: "My Series test",
       set_short_name: "Set/One",
@@ -134,7 +134,9 @@ describe("getCardDetailPath", () => {
     const expectedParams = {
       seriesShortName: encodeURIComponent(card.series_short_name),
       setShortName: encodeURIComponent(card.set_short_name),
-      sortByAndCardName: encodeURIComponent(`${card.sort_by}_${card.name}`),
+      sortByAndCardName: `${card.sort_by}_${card.name
+        .toLowerCase()
+        .replace(/\s+/g, "-")}`,
     };
 
     const path = getCardDetailPath(card);
