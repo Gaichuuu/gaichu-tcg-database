@@ -5,7 +5,7 @@ export interface CollectionSet {
   series_id: string;
   logo: string;
   name: string;
-  sortBy: number;
+  sort_by: number;
   description?: string;
   set_images?: Array<{
     url: string;

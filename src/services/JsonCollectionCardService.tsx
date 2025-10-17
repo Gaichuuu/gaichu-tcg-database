@@ -54,7 +54,7 @@ export const getJsonCardDetail = (
         (c) =>
           c.set_short_name === setShortName &&
           c.series_short_name === seriesShortName &&
-          c.sortBy === sortBy,
+          c.sort_by === sortBy,
       )
       .find((c) => slugify(t(c.name, "en")) === targetSlug) ?? null;
 
@@ -76,12 +76,12 @@ export const getAdjacentCards = (
   const cards = cardList
     .filter((card) => card.series_short_name === seriesShortName)
     .filter((card) => card.set_short_name === setShortName)
-    .sort((a, b) => a.sortBy - b.sortBy);
+    .sort((a, b) => a.sort_by - b.sort_by);
 
   const previousCard =
-    cards.filter((card) => card.sortBy < currentCardSortBy).at(-1) || null;
+    cards.filter((card) => card.sort_by < currentCardSortBy).at(-1) || null;
   const nextCard =
-    cards.filter((card) => card.sortBy > currentCardSortBy).at(0) || null;
+    cards.filter((card) => card.sort_by > currentCardSortBy).at(0) || null;
 
   return {
     previousCard: previousCard,
@@ -93,7 +93,7 @@ export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
   const cards = SerieCardList[seriesShortName as SeriesShortName].map(
     (card: any) => CardSchema.parse(card),
   ) as CollectionCard[];
-  return cards.sort((a, b) => a.sortBy - b.sortBy);
+  return cards.sort((a, b) => a.sort_by - b.sort_by);
 };
 
 const AttackSchemaRaw = z.object({

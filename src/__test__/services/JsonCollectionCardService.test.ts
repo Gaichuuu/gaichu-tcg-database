@@ -13,7 +13,7 @@ describe("test for getJsonCardList", () => {
   it("should sort Cards by their sortBy value in ascending order", () => {
     expect(
       cards.every(
-        (card, index) => index === 0 || card.sortBy > cards[index - 1].sortBy,
+        (card, index) => index === 0 || card.sort_by > cards[index - 1].sort_by,
       ),
     ).toBe(true);
   });

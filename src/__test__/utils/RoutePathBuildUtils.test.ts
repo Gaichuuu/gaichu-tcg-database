@@ -127,14 +127,14 @@ describe("getCardDetailPath", () => {
     const card = {
       series_short_name: "My Series test",
       set_short_name: "Set/One",
-      sortBy: 10,
+      sort_by: 10,
       name: "Card Name",
     } as any;
 
     const expectedParams = {
       seriesShortName: encodeURIComponent(card.series_short_name),
       setShortName: encodeURIComponent(card.set_short_name),
-      sortByAndCardName: encodeURIComponent(`${card.sortBy}_${card.name}`),
+      sortByAndCardName: encodeURIComponent(`${card.sort_by}_${card.name}`),
     };
 
     const path = getCardDetailPath(card);

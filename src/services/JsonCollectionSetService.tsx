@@ -7,7 +7,7 @@ export const getJsonSet = (seriesShortName: string): SetAndCard[] => {
   return setsList
     .filter((set: any) => set.series_short_name === seriesShortName)
     .map((set: any) => convertToSetAndCard(set, cardList))
-    .sort((a, b) => a.set.sortBy - b.set.sortBy);
+    .sort((a, b) => a.set.sort_by - b.set.sort_by);
 };
 
 const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
@@ -18,7 +18,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
     series_id: set.series_id,
     logo: set.logo,
     name: set.name,
-    sortBy: set.sortBy,
+    sort_by: set.sort_by,
     description: set.description,
     set_images: set.set_images?.map((image: any) => ({
       url: image.url,
@@ -43,7 +43,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       id: card.id,
       total_cards_count: card.total_cards_count,
       number: card.number!,
-      sortBy: card.sortBy,
+      sort_by: card.sort_by,
 
       name: card.name,
       description: card.description,

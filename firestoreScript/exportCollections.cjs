@@ -15,7 +15,7 @@ async function exportCardCollection() {
     const snapshot = await database
       .collection("cards")
       .where("series_short_name", "==", folder)
-      .orderBy("sortBy", "asc")
+      .orderBy("sort_by", "asc")
       .get();
 
     const data = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));

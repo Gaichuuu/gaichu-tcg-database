@@ -61,12 +61,12 @@ describe("fetchSets", () => {
     expect(query).toHaveBeenCalledWith(
       collection(fakeDb, "sets"),
       where("series_short_name", "==", seriesShortName),
-      orderBy("sortBy", "asc"),
+      orderBy("sort_by", "asc"),
     );
     expect(query).toHaveBeenCalledWith(
       collection(fakeDb, "cards"),
       where("series_short_name", "==", seriesShortName),
-      orderBy("sortBy", "asc"),
+      orderBy("sort_by", "asc"),
     );
 
     // testing that merge logic still works

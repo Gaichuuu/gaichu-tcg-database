@@ -25,7 +25,7 @@ export const fetchSeries = async (): Promise<SeriesAndSet[]> => {
   })) as CollectionSet[];
 
   return mergeWithSeriesId(series, sets).sort(
-    (a, b) => a.series.sortBy - b.series.sortBy,
+    (a, b) => a.series.sort_by - b.series.sort_by,
   );
 };
 

@@ -17,7 +17,7 @@ export interface SetAndCard {
     series_id: string;
     logo: string;
     name: string;
-    sortBy: number;
+    sort_by: number;
     description?: string;
     set_images?: Array<{
       url: string;
@@ -34,7 +34,7 @@ export interface SetAndCard {
     id: string;
     total_cards_count: number;
     number: number;
-    sortBy: number;
+    sort_by: number;
 
     name: Partial<Record<LocaleKey, string>>;
     description?: Partial<Record<LocaleKey, string>>;

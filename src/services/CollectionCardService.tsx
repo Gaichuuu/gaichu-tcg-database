@@ -59,12 +59,12 @@ export async function fetchCardDetail(
   if (Number.isFinite(sortBy as number)) {
     try {
       const snap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
-        where("sortBy", "==", sortBy),
+        where("sort_by", "==", sortBy),
         ql(1),
       ]);
       if (!snap.empty) return asCard(snap.docs[0].data(), snap.docs[0].id);
     } catch (e) {
-      console.warn("[cards] sortBy query failed (index?):", e);
+      console.warn("[cards] sort_by query failed (index?):", e);
     }
   }
 
@@ -100,13 +100,13 @@ export async function fetchAdjacentCards(
 
   try {
     const prevSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
-      where("sortBy", "<", sortBy),
-      orderBy("sortBy", "desc"),
+      where("sort_by", "<", sortBy),
+      orderBy("sort_by", "desc"),
       ql(1),
     ]);
     const nextSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
-      where("sortBy", ">", sortBy),
-      orderBy("sortBy", "asc"),
+      where("sort_by", ">", sortBy),
+      orderBy("sort_by", "asc"),
       ql(1),
     ]);
 

@@ -23,7 +23,7 @@
     "id",
     "total_cards_count",
     "number",
-    "sortBy",
+    "sort_by",
     "name",
     "image",
     "rarity",
@@ -41,7 +41,7 @@
     "total_cards_count": { "type": "number" },
 
     "number": { "type": "number" },
-    "sortBy": { "type": "number" },
+    "sort_by": { "type": "number" },
 
     "name": { "$ref": "#/$defs/i18nString" },
 

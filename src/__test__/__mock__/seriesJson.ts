@@ -6,20 +6,20 @@ export const seriesJsonMock: CollectionSeries[] = [
     short_name: "test_1_short_name",
     logo: "test_1.png",
     name: "test_1",
-    sortBy: 2,
+    sort_by: 2,
   },
   {
     id: "3",
     short_name: "test_3_short_name",
     logo: "mgc-test_3.png",
     name: "test_3",
-    sortBy: 3,
+    sort_by: 3,
   },
   {
     id: "2",
     short_name: "test_2_short_name",
     logo: "mgc-test_2.png",
     name: "test_1",
-    sortBy: 1,
+    sort_by: 1,
   },
 ];

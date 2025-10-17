@@ -175,7 +175,7 @@ export function getCardDetailPath(card: CollectionCard): string {
   return generatePath(CardDetailPath, {
     seriesShortName: encodeURIComponent(card.series_short_name),
     setShortName: encodeURIComponent(card.set_short_name),
-    sortByAndCardName: encodeURIComponent(`${card.sortBy}_${nameSlug}`),
+    sortByAndCardName: encodeURIComponent(`${card.sort_by}_${nameSlug}`),
   });
 }
 

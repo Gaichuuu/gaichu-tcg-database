@@ -15,7 +15,7 @@ export interface RawCollectionCard {
   id: string;
   total_cards_count: number;
   number: number;
-  sortBy: number;
+  sort_by: number;
 
   name: I18nInput;
   image: string;
@@ -61,7 +61,7 @@ export interface CollectionCard {
   id: string;
   total_cards_count: number;
   number: number;
-  sortBy: number;
+  sort_by: number;
   name: Partial<Record<LocaleKey, string>>;
   image: string;
   rarity: string;

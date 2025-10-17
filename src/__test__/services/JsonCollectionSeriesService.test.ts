@@ -20,7 +20,7 @@ describe("test for getJsonSeries", () => {
     expect(
       series.every(
         (s, index) =>
-          index === 0 || s.series.sortBy > series[index - 1].series.sortBy,
+          index === 0 || s.series.sort_by > series[index - 1].series.sort_by,
       ),
     ).toBe(true);
   });
@@ -33,7 +33,8 @@ describe("test for getJsonSeries", () => {
       // Sets should be sorted by sortBy in ascending order
       expect(
         s.sets.every(
-          (set, index) => index === 0 || set.sortBy > s.sets[index - 1].sortBy,
+          (set, index) =>
+            index === 0 || set.sort_by > s.sets[index - 1].sort_by,
         ),
       ).toBe(true);
     });
