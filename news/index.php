@@ -9,7 +9,17 @@ $isBot = (bool) preg_match(
 $debug = isset($_GET['dbg']);
 
 $path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
-$slug = (preg_match('#^/news/([^/?#]+)#', $path, $m)) ? urldecode($m[1]) : '';
+$slug = isset($_GET['slug']) ? $_GET['slug'] : '';
+if ($slug === '') {
+  $path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+  if (preg_match('#^/news/([^/?#]+)#', $path, $m)) {
+    $slug = urldecode($m[1]);
+  }
+}
+
+if ($slug !== '') {
+  header('X-Debug-Slug: ' . $slug);
+}
 
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
 $projectId = (stripos($host, 'stage') !== false || stripos($host, 'dev') !== false)
@@ -98,7 +108,7 @@ if ($isBot) {
 
   $title = (is_array($doc) && !empty($doc['title'])) ? $doc['title'] : 'Gaichu';
   $desc = (is_array($doc) && !empty($doc['excerpt'])) ? $doc['excerpt'] : 'Your #2 source for parody and bootleg card games.';
-  $img = (is_array($doc) && !empty($doc['hero_url'])) ? $doc['hero_url'] : 'https://gaichu.b-cdn.net/assets/default.jpg';
+  $img = (is_array($doc) && !empty($doc['hero_url'])) ? $doc['hero_url'] : 'https://gaichu.b-cdn.net/assets/default.png?v=2';
 
   render_og($host, $slug ? $slug : 'news', $title, $desc, $img);
   exit;
