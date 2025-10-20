@@ -477,6 +477,378 @@
     ]
   },
   {
+    "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
+    "total_cards_count": 50,
+    "number": 12,
+    "sort_by": 12,
+    "name": { "en": "Wamp", "ja": "ワンプ" },
+    "parody": "Wurmple",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/12-thumb.jpg",
+    "description": {
+      "en": "This Pokémon spends its time eating leaves and running away from Starly.",
+      "ja": "葉っぱを食べたり、スターリーから逃げたりして過ごすポケモン。"
+    },
+    "measurement": {
+      "height": ".3m",
+      "weight": "3.6kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "String Shot", "ja": "ストリングショット" },
+        "effect": {
+          "en": "Shoots silk threads around the opponent, lowering their speed.",
+          "ja": "絹でできた糸を相手の周囲に発射し、相手の素早さを下げる。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "31ea2242-1638-4040-ab15-6c7587da4397",
+    "total_cards_count": 50,
+    "number": 13,
+    "sort_by": 13,
+    "name": { "en": "Egg Boy", "ja": "エッグボーイ" },
+    "parody": "Chansey",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/13-thumb.jpg",
+    "description": {
+      "en": "This Pokémon is very rare. When encountered, it quickly runs away.",
+      "ja": "このポケモンは非常にレアです。遭遇しても逃げ足が速い。"
+    },
+    "measurement": {
+      "height": "1.1m",
+      "weight": "34.6kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Softboiled", "ja": "ゆで卵" },
+        "effect": {
+          "en": "Lay and eat boiled eggs. To be honest, it's very unpleasant.",
+          "ja": "卵を産んで食べます。正直なところ、非常に不愉快である。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
+    "total_cards_count": 50,
+    "number": 14,
+    "sort_by": 14,
+    "name": { "en": "Pointy", "ja": "先のとがった" },
+    "parody": "Scizor",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/wm/set1/14.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/14-thumb.jpg",
+    "description": {
+      "en": "Its claws can crush anything.",
+      "ja": "その爪は、どんなものでも砕くことができる。"
+    },
+    "measurement": {
+      "height": "1.6m",
+      "weight": "118kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Swords Dance", "ja": "つるぎのまい" },
+        "effect": {
+          "en": "Dance with swords. Do not use at home.",
+          "ja": "剣を使ってダンスをします。自宅では使わないでください。"
+        },
+        "costs": ["Normal"]
+      },
+      {
+        "name": { "en": "Iron Head", "ja": "アイアンヘッド" },
+        "effect": {
+          "en": "Attacks the opponent with its head.",
+          "ja": "自分の頭で相手を攻撃する。"
+        },
+        "damage": "90",
+        "costs": ["Steel"]
+      }
+    ]
+  },
+  {
+    "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
+    "total_cards_count": 50,
+    "number": 15,
+    "sort_by": 15,
+    "name": { "en": "Buggy", "ja": "バギー" },
+    "parody": "Butterfree",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "35",
+    "image": "https://gaichu.b-cdn.net/wm/set1/15.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/15-thumb.jpg",
+    "description": {
+      "en": "A Pokémon that spends all day collecting nectar from flowers.",
+      "ja": "一日中、花の蜜を集めているポケモン。"
+    },
+    "measurement": {
+      "height": "1.1m",
+      "weight": "32kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Poisonpowder", "ja": "どくのこな" },
+        "effect": {
+          "en": "Causes a poison status on the opponent.",
+          "ja": "相手を毒状態にする。"
+        },
+        "costs": ["Grass"]
+      },
+      {
+        "name": { "en": "Stun Spore", "ja": "しびれごな" },
+        "effect": {
+          "en": "Makes the opponent faint.",
+          "ja": "相手を気絶させる。"
+        },
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
+    "total_cards_count": 50,
+    "number": 16,
+    "sort_by": 16,
+    "name": "Pidgey",
+    "parody": "Pidgey",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/16-thumb.jpg",
+    "description": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
+    "measurement": {
+      "height": ".3m",
+      "weight": "1.8kg"
+    },
+    "attacks": [
+      {
+        "name": "Sand-attack",
+        "effect": "Kick sand into the opponent's eyes and run away. A truly cowardly move.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
+    "total_cards_count": 50,
+    "number": 17,
+    "sort_by": 17,
+    "name": "Croco",
+    "parody": "Totodile",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/17-thumb.jpg",
+    "description": "This Pokémon has a very strong jaw.",
+    "measurement": {
+      "height": ".6m",
+      "weight": "9.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Bite",
+        "effect": "Biting the opponent. ",
+        "damage": "30",
+        "costs": ["Normal"]
+      },
+      {
+        "name": "Water Gun",
+        "effect": "Take out the water gun you bought at the toy store and spray it at the opponent. ",
+        "damage": "40",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
+    "total_cards_count": 50,
+    "number": 18,
+    "sort_by": 18,
+    "name": "Nugget",
+    "parody": "Torchic",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/18-thumb.jpg",
+    "description": "It has a flame inside that never goes out.",
+    "measurement": {
+      "height": ".4m",
+      "weight": "2.5kg"
+    },
+    "attacks": [
+      {
+        "name": "Flamethrower",
+        "effect": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move. ",
+        "damage": "100",
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "fc749318-113e-4087-9c80-b87d5c66b907",
+    "total_cards_count": 50,
+    "number": 19,
+    "sort_by": 19,
+    "name": "Ghost Boy",
+    "parody": "Gastly",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/19-thumb.jpg",
+    "description": "A Pokémon made mostly of gas.",
+    "measurement": {
+      "height": "1.3m",
+      "weight": "1kg"
+    },
+    "attacks": [
+      {
+        "name": "Lick",
+        "effect": "Lick the opponent. Some Pokémon enjoy this, so be careful. ",
+        "damage": "20",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
+    "total_cards_count": 50,
+    "number": 20,
+    "sort_by": 20,
+    "name": "Wormy",
+    "parody": "Dratini",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/20-thumb.jpg",
+    "description": "This Pokémon was considered a legendary Pokémon until a small colony was discovered under water.",
+    "measurement": {
+      "height": "1.8m",
+      "weight": "3.3kg"
+    },
+    "attacks": [
+      {
+        "name": "Dragon Tail",
+        "effect": "Attacks the opponent with its tail. ",
+        "damage": "40",
+        "costs": ["Dragon"]
+      },
+      {
+        "name": "Leer",
+        "effect": "Stare at the opponent.",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+
+  {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
     "total_cards_count": 50,
     "number": 23,
@@ -620,41 +992,6 @@
       {
         "name": "Taunt",
         "effect": "To mentally and psychologically torment the opponent until they feel uncomfortable.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
-    "total_cards_count": 50,
-    "number": 16,
-    "sort_by": 16,
-    "name": "Pidgey",
-    "parody": "Pidgey",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "10",
-    "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/16-thumb.jpg",
-    "description": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "1.8kg"
-    },
-    "attacks": [
-      {
-        "name": "Sand-attack",
-        "effect": "Kick sand into the opponent's eyes and run away. A truly cowardly move.",
         "costs": ["Normal"]
       }
     ]
@@ -873,42 +1210,7 @@
       }
     ]
   },
-  {
-    "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
-    "total_cards_count": 50,
-    "number": 18,
-    "sort_by": 18,
-    "name": "Nugget",
-    "parody": "Torchic",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/18-thumb.jpg",
-    "description": "It has a flame inside that never goes out.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "2.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Flamethrower",
-        "effect": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move. ",
-        "damage": "100",
-        "costs": ["Fire"]
-      }
-    ]
-  },
+
   {
     "id": "27d41ee8-e9af-440b-b633-551140734996",
     "total_cards_count": 50,
@@ -986,41 +1288,6 @@
     ]
   },
 
-  {
-    "id": "31ea2242-1638-4040-ab15-6c7587da4397",
-    "total_cards_count": 50,
-    "number": 13,
-    "sort_by": 13,
-    "name": "Egg Boy",
-    "parody": "Chansey",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "100",
-    "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/13-thumb.jpg",
-    "description": "This Pokémon is very rare. When encountered, it quickly runs away.",
-    "measurement": {
-      "height": "1.1m",
-      "weight": "34.6kg"
-    },
-    "attacks": [
-      {
-        "name": "Softboiled",
-        "effect": "Lay and eat boiled eggs. To be honest, it's very unpleasant.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
   {
     "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
     "total_cards_count": 50,
@@ -1232,49 +1499,6 @@
         "name": "Splash",
         "effect": "In most cases, it does no damage. (Roll a d6 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
         "damage": "0",
-        "costs": ["Water"]
-      }
-    ]
-  },
-
-  {
-    "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
-    "total_cards_count": 50,
-    "number": 17,
-    "sort_by": 17,
-    "name": "Croco",
-    "parody": "Totodile",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "25",
-    "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/17-thumb.jpg",
-    "description": "This Pokémon has a very strong jaw.",
-    "measurement": {
-      "height": ".6m",
-      "weight": "9.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Bite",
-        "effect": "Biting the opponent. ",
-        "damage": "30",
-        "costs": ["Normal"]
-      },
-      {
-        "name": "Water Gun",
-        "effect": "Take out the water gun you bought at the toy store and spray it at the opponent. ",
-        "damage": "40",
         "costs": ["Water"]
       }
     ]
@@ -1618,47 +1842,6 @@
   },
 
   {
-    "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
-    "total_cards_count": 50,
-    "number": 20,
-    "sort_by": 20,
-    "name": "Wormy",
-    "parody": "Dratini",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "30",
-    "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/20-thumb.jpg",
-    "description": "This Pokémon was considered a legendary Pokémon until a small colony was discovered under water.",
-    "measurement": {
-      "height": "1.8m",
-      "weight": "3.3kg"
-    },
-    "attacks": [
-      {
-        "name": "Dragon Tail",
-        "effect": "Attacks the opponent with its tail. ",
-        "damage": "40",
-        "costs": ["Dragon"]
-      },
-      {
-        "name": "Leer",
-        "effect": "Stare at the opponent.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
     "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
     "total_cards_count": 50,
     "number": 35,
@@ -1730,46 +1913,7 @@
       }
     ]
   },
-  {
-    "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
-    "total_cards_count": 50,
-    "number": 15,
-    "sort_by": 15,
-    "name": "Buggy",
-    "parody": "Butterfree",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "35",
-    "image": "https://gaichu.b-cdn.net/wm/set1/15.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/15-thumb.jpg",
-    "description": "A Pokémon that spends all day collecting nectar from flowers.",
-    "measurement": {
-      "height": "1.1m",
-      "weight": "32kg"
-    },
-    "attacks": [
-      {
-        "name": "Poisonpowder",
-        "effect": "Causes a poison status on the opponent.",
-        "costs": ["Grass"]
-      },
-      {
-        "name": "Stun Spore",
-        "effect": "Paralyze the opponent.",
-        "costs": ["Grass"]
-      }
-    ]
-  },
+
   {
     "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
     "total_cards_count": 50,
@@ -1876,41 +2020,7 @@
       }
     ]
   },
-  {
-    "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
-    "total_cards_count": 50,
-    "number": 12,
-    "sort_by": 12,
-    "name": "Wamp",
-    "parody": "Wurmple",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "15",
-    "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/12-thumb.jpg",
-    "description": "This Pokémon spends its time eating leaves and running away from Starlys.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "3.6kg"
-    },
-    "attacks": [
-      {
-        "name": "String Shot",
-        "effect": "Shoots silk threads around the opponent, lowering their speed.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
+
   {
     "id": "c82550d0-3092-4480-b60b-283a3dbab478",
     "total_cards_count": 50,
@@ -2140,47 +2250,6 @@
       }
     ]
   },
-  {
-    "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
-    "total_cards_count": 50,
-    "number": 14,
-    "sort_by": 14,
-    "name": "Pointy",
-    "parody": "Scizor",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "100",
-    "image": "https://gaichu.b-cdn.net/wm/set1/14.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/14-thumb.jpg",
-    "description": "Its claws can crush anything.",
-    "measurement": {
-      "height": "1.8m",
-      "weight": "118kg"
-    },
-    "attacks": [
-      {
-        "name": "Swords Dance",
-        "effect": "Dance with swords. Do not use at home.",
-        "costs": ["Normal"]
-      },
-      {
-        "name": "Iron Head",
-        "effect": "Attacks the opponent with its head.",
-        "damage": "90",
-        "costs": ["Steel"]
-      }
-    ]
-  },
 
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
@@ -2252,42 +2321,7 @@
       }
     ]
   },
-  {
-    "id": "fc749318-113e-4087-9c80-b87d5c66b907",
-    "total_cards_count": 50,
-    "number": 19,
-    "sort_by": 19,
-    "name": "Ghost Boy",
-    "parody": "Gastly",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "25",
-    "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/19-thumb.jpg",
-    "description": "A Pokémon made mostly of gas.",
-    "measurement": {
-      "height": "1.3m",
-      "weight": "1kg"
-    },
-    "attacks": [
-      {
-        "name": "Lick",
-        "effect": "Lick the opponent. Some Pokémon enjoy this, so be careful. ",
-        "damage": "20",
-        "costs": ["Normal"]
-      }
-    ]
-  },
+
   {
     "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
     "total_cards_count": 50,
