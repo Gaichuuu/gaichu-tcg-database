@@ -5,7 +5,7 @@ const { database } = require("./scriptDatabase.cjs");
 const { allCollections, jsonFilePath } = require("./databaseConstants.cjs");
 
 async function exportCardCollection() {
-  const subFolders = ["ash", "mz", "oz", "wm"];
+  const subFolders = ["ash", "mz", "oz", "wm", "disgruntled"];
   for (const folder of subFolders) {
     const dir = path.join(jsonFilePath, folder);
     fs.mkdirSync(dir, { recursive: true });
