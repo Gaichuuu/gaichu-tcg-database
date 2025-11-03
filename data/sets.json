@@ -201,5 +201,14 @@
         "illustrator": "mistletoe"
       }
     ]
+  },
+  {
+    "id": "2375d762-5095-47b3-8538-99b9b47facca",
+    "series_short_name": "disgruntled",
+    "series_id": "bc24ff9c-17a8-47ed-ac18-d202bf32d21c",
+    "short_name": "set1",
+    "sort_by": 1,
+    "name": "Set 1",
+    "logo": "https://gaichu.b-cdn.net/disgruntled/set1/disgruntledSet1.jpg"
   }
 ]
