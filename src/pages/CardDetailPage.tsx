@@ -117,6 +117,13 @@ const CardDetailPage: React.FC = () => {
                 </tr>
               )}
 
+              {card.lp_alt && (
+                <tr>
+                  <th>LP</th>
+                  <td>{card.lp_alt}</td>
+                </tr>
+              )}
+
               {card.measurement && (
                 <tr>
                   <th>Measurements</th>
@@ -366,6 +373,13 @@ const CardDetailPage: React.FC = () => {
                 </tr>
               )}
 
+              {card.strength && (
+                <tr>
+                  <th>Attributes</th>
+                  <td>{card.strength}</td>
+                </tr>
+              )}
+
               {card.description && (
                 <tr>
                   <th>Flavor Text</th>
@@ -403,7 +417,7 @@ const CardDetailPage: React.FC = () => {
                   <th>
                     <img
                       src={card.sets[0].image}
-                      alt={card.sets[0].name /* plain string */}
+                      alt={card.sets[0].name}
                       className="w-24 rounded shadow"
                     />
                   </th>
