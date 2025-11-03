@@ -17,6 +17,7 @@ import mzCardList from "../../data/mz/cards.json";
 import wmCardList from "../../data/wm/cards.json";
 import ashCardList from "../../data/ash/cards.json";
 import ozCardList from "../../data/oz/cards.json";
+import disgruntledCardList from "../../data/disgruntled/cards.json";
 import { CollectionCard } from "@/types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
 
@@ -26,6 +27,7 @@ export const SerieCardList: Record<SeriesShortName, any> = {
   [SeriesShortName.mz]: mzCardList,
   [SeriesShortName.ash]: ashCardList,
   [SeriesShortName.oz]: ozCardList,
+  [SeriesShortName.disgruntled]: disgruntledCardList,
 };
 
 export const getJsonCardList = (
@@ -112,7 +114,7 @@ const CardSchemaRaw = z.object({
   name: I18nValue,
   variant: z.string().optional(),
   image: z.string(),
-  rarity: z.string(),
+  rarity: z.string().optional(),
   color: z.string().optional(),
 
   weakness: z
@@ -124,6 +126,7 @@ const CardSchemaRaw = z.object({
   retreat: z
     .array(z.object({ costs: z.array(z.string()).optional() }))
     .optional(),
+  strength: z.string().optional(),
 
   set_short_name: z.string(),
   series_short_name: z.string(),
@@ -182,6 +185,7 @@ const CardSchemaRaw = z.object({
   parody: z.string().optional(),
   hp: z.string().optional(),
   lp: z.string().optional(),
+  lp_alt: z.string().optional(),
   traits: z.array(z.string()).optional(),
   terra: z
     .array(z.object({ attack: z.string(), icon: z.string(), lp: z.string() }))

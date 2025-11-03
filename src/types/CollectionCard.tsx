@@ -84,9 +84,11 @@ export interface CollectionCard {
   weakness?: WeaknessEntry[];
   resistance?: ResistanceEntry[];
   retreat?: RetreatEntry[];
+  strength?: string;
   parody?: string;
   hp?: string;
   lp?: string;
+  lp_alt?: string;
   traits?: string[];
   terra?: Terra[];
   type?: string;

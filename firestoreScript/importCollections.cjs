@@ -5,7 +5,7 @@ const { database } = require("./scriptDatabase.cjs");
 const { allCollections, jsonFilePath } = require("./databaseConstants.cjs");
 
 async function importCardCollection() {
-  const subFolders = ["ash", "mz", "oz", "wm"];
+  const subFolders = ["ash", "mz", "oz", "wm", "disgruntled"];
   let totalCount = 0;
   const batch = database.batch();
 
