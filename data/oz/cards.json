@@ -2,19 +2,19 @@
   {
     "id": "3d42b7dd-b86d-459f-9f3c-fab96f841d79",
     "number": 1,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 1,
     "name": "Rainbow Wizard's Gargoyle",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Bronze",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie",
@@ -57,14 +57,14 @@
       }
     ],
     "description": "While these Beasties usually stay near their posts, if the very caster that animated them asks for a favor, it's rather unlikely they would refuse.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/01.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/01.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/01-thumb.jpg",
     "limit": 7
   },
   {
     "id": "df343bb1-fed4-4e46-868a-62052ae542c2",
     "number": 2,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 2,
     "name": "Indrid Cold",
     "variant": "Normal",
@@ -76,7 +76,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Caster",
@@ -114,26 +114,26 @@
       }
     ],
     "description": "\"Smile your way through the pain. Smile so they leave you alone. Smile to ignore your suffering. Smile as flesh melts from bone.\" -Survivor of the Veil’s shattering",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/02.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/02.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/02-thumb.jpg",
     "limit": 1
   },
   {
     "id": "826cf975-a400-4d83-8d69-243130865203",
     "number": 3,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 3,
     "name": "Skinwalker",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Witch",
@@ -181,14 +181,14 @@
       }
     ],
     "description": "These beings are rumored to be able to change their forms using powerful dark magic. Be careful, though! You never know when once could be watching...",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/03.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/03.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/03-thumb.jpg",
     "limit": 2
   },
   {
     "id": "b3fabc62-157d-44f7-838f-e769c1adc23f",
     "number": 4,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 4,
     "name": "Jersey Devil",
     "variant": "Normal",
@@ -200,7 +200,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Demon",
@@ -248,26 +248,26 @@
       }
     ],
     "description": "High above the Pine Barrens flies the Jersey Devil. Seldom seen, it mostly feeds on cattle. Occasionally, though, it finds a traveler wandering alone...",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/04.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/04.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/04-thumb.jpg",
     "limit": 2
   },
   {
     "id": "36268e29-5a47-496e-9060-8c5512c96058",
     "number": 5,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 5,
     "name": "Beast of Bladenboro",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Bronze",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Bloodsucker Cat",
@@ -311,26 +311,26 @@
       }
     ],
     "description": "This Beastie particularly despises canine-kind, but it isn't particularly picky about which faces it tears off their skulls.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/05.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/05.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/05-thumb.jpg",
     "limit": 3
   },
   {
     "id": "003f3eed-4557-4881-acda-cfe360a98919",
     "number": 6,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 6,
     "name": "Size Up",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Bronze",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Spell",
@@ -342,26 +342,26 @@
     ],
     "effect": "You may Contract this Page at any time. Double the number of Spark Counters on target Beastie.",
     "description": "Its power keeps going up! And up, and up, and up...",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/06.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/06.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/06-thumb.jpg",
     "limit": 5
   },
   {
     "id": "d97fcb2b-3048-4ea3-8272-ccb74b256d99",
     "number": 7,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 7,
     "name": "Dancing in the Rain",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Spell",
@@ -373,26 +373,26 @@
     ],
     "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Raining Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconRaining.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, you may Contract this Page at any time.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Place target Beastie into its owner's Chapter. If the weather forecast predicts a 75% or higher chance of rain for your current location, all Casters Bookmark 2.",
     "description": "In some parts of the Cryptid Nation, it only rains once a year. Their inhabitants learn to make the most of what they get.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/07.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/07.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/07-thumb.jpg",
     "limit": 3
   },
   {
     "id": "a2b57c35-bdfd-40bc-9579-b1c6d577e800",
     "number": 8,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 8,
     "name": "Fire Shield",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Artifact",
@@ -406,14 +406,14 @@
     "traits": ["Defender", "Defender"],
     "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If it is above 100°F at your current location, <img alt=\"Flame Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFlame.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties have <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">. All Beasties you control that are inflicted with <img alt=\"Burn Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconBurn.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot be inflicted with other Status Effects and cannot receive Combat Damage.",
     "description": "\"A shield that's on fire? What purpose could this possibly ser- WHOA! You should've led with that!\" -JP",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/08.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/08.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/08-thumb.jpg",
     "limit": 4
   },
   {
     "id": "253f6cb9-5508-4ad3-ac61-00610f8ffa01",
     "number": 9,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 9,
     "name": "Nuke from Orbit",
     "variant": "Normal",
@@ -425,7 +425,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Spell",
@@ -441,14 +441,14 @@
     ],
     "effect": "All Pages with \"UFO\" in their name are not Affected by this Spell. Destroy all Beasties in the Arena. All Casters reveal their Chapters and Discard all Beastie Pages. Until the end of your next turn, Actions cannot be taken with Beastie Pages. Reveal all Pages that would be placed in or Bookmarked to any Caster’s Chapter. Discard any Beastie Page revealed by this Effect.",
     "description": "The Manhattan Project introduced a grave threat to humanity. How did they obtain such a powerful technology? Was there influence, perhaps, from above?",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/09.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/09.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/09-thumb.jpg",
     "limit": 1
   },
   {
     "id": "9af238b1-9f92-492e-be9a-81b6f78f3400",
     "number": 10,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 10,
     "name": "Flossie",
     "variant": "Normal",
@@ -460,7 +460,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Dinosaur",
@@ -508,26 +508,26 @@
       }
     ],
     "description": "\"Some believe it's serpentine in nature. Some think it's reptilian. All I know is that it's a real sweetheart!\" -Avid Water fan",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/10.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/10.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/10-thumb.jpg",
     "limit": 1
   },
   {
     "id": "ec19e917-6bda-4151-98c1-affb575dc833",
     "number": 11,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 11,
     "name": "Plague Doctor",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Spirit",
@@ -574,26 +574,26 @@
       }
     ],
     "description": "Thinking themselves protected from the plague, these poor souls doomed just as many as they saved, if not more. They still hear the screams in their dreams.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/11.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/11.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/11-thumb.jpg",
     "limit": 2
   },
   {
     "id": "ee029d43-bb8a-4ca2-823b-f3dbd367998d",
     "number": 12,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 12,
     "name": "Aura Battery",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Artifact",
@@ -610,26 +610,26 @@
     "lp": "90",
     "effect": "ARENA: When your Aura would dissolve, it becomes <img alt=\"Neutral Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNeutral.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> instead.",
     "description": "\"AN ABNORMALLY LARGE AMOUNT OF POWER!!\"",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/12.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/12.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/12-thumb.jpg",
     "limit": 3
   },
   {
     "id": "7bf7ba01-98c1-44f7-8e0b-4cb5c350325e",
     "number": 13,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 13,
     "name": "Aura Generator",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Artifact",
@@ -646,26 +646,26 @@
     "lp": "120",
     "effect": "ARENA: Aura Effects generate twice the amount of Aura.\nSparks!: Double the amount of Spark Counters on all Beasties named \"Dingbelle\". Destroy this Artifact.",
     "description": "\"One of these is enough to power Point Pleasant for a lifetime! ... Or, it would be if those blasted Dingbelle would share the thing!\" -Sam Sinclair",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/13.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/13.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/13-thumb.jpg",
     "limit": 2
   },
   {
     "id": "19ed2e06-ef68-4a9b-a4ca-c820ff28cafd",
     "number": 14,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 14,
     "name": "Nain Rouge",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie",
@@ -708,26 +708,26 @@
       }
     ],
     "description": "Also known as \"the Demon of the Strait\", this Beastie is more than glad to cause suffering for its own amusement.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/14.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/14.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/14-thumb.jpg",
     "limit": 3
   },
   {
     "id": "cc4b1715-a13c-4486-bb7d-ddce5fa0a145",
     "number": 15,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 15,
     "name": "Exorcist's Nail",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "rarity": "Silver",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Artifact",
@@ -740,14 +740,14 @@
     "lp": "25",
     "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: Place a nail on target Beastie.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: Beasties with a nail on them have all ARENA Effects and Powers nullified. Nullify all <img alt=\"Immortal Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconImmortal.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> and <img alt=\"Spectral Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconSpectral.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
     "description": "Until rather recently, the church had stepped back from performing true exorcisms. Now, though? Good luck finding a priest without a nail.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/15.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/15.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/15-thumb.jpg",
     "limit": 2
   },
   {
     "id": "d5bfc0a3-70cb-42e9-aa7d-3fb9bb0e079c",
     "number": 16,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 16,
     "name": "Potion Aura",
     "variant": "Normal",
@@ -759,26 +759,20 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Special Aura",
-    "cost": [
-      {
-        "total": "",
-        "aura": "Special"
-      }
-    ],
     "effect": "Shatter: Destroy this Page to place 1 Aura Page from your Spellbook into the Arena Awakened.",
     "description": "",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/16.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/16.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/16-thumb.jpg",
     "limit": 1
   },
   {
     "id": "0e9cbc1f-8e1b-4fe6-9d31-b2c43f97b652",
     "number": 17,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 17,
     "name": "Sam's Cumberland Dragon",
     "variant": "Normal",
@@ -790,7 +784,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Dragon",
@@ -837,14 +831,14 @@
       }
     ],
     "description": "This Beastie might look menacing during combat, but other than that? It's a big ol' softy!",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/17.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/17.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/17-thumb.jpg",
     "limit": 1
   },
   {
     "id": "f0ab08cb-72af-4b4d-b1c2-53578fd0e354",
     "number": 18,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 18,
     "name": "Ben's Slide-Rock Bolter",
     "variant": "Normal",
@@ -856,7 +850,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie",
@@ -903,14 +897,14 @@
       }
     ],
     "description": "You might not expect it, but this Beastie is a carnivore. Luckily, Ben is there to keep it from devouring civilians.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/18.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/18.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/18-thumb.jpg",
     "limit": 1
   },
   {
     "id": "1679c965-dfba-4022-8ba5-6e42d3de7fd3",
     "number": 19,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 19,
     "name": "Ben's Babe the Blue Ox",
     "variant": "Normal",
@@ -922,7 +916,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie",
@@ -957,7 +951,7 @@
       "height": "93 hands",
       "length": ""
     },
-    "effect": "If you are wearing a plaid flannel shirt, this Beastie has <img alt=\"Fleet Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: Beasties you control with <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> double their Life Points and <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot activate.\nDynamic Duo: Fatigue a Beastie with \"Bunyan\" in its name to Destroy target Beastie.",
+    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If you are wearing a plaid flannel shirt, this Beastie has <img alt=\"Fleet Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: Beasties you control with <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> double their Life Points and <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot activate.\nDynamic Duo: Fatigue a Beastie with \"Bunyan\" in its name to Destroy target Beastie.",
     "zoo_attack": [
       {
         "name": "Vigilant Stampede",
@@ -969,14 +963,14 @@
       }
     ],
     "description": "Not often does Babe leave Paul's side. For Ben, though? She'll make an exception, just this once.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/19.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/19.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/19-thumb.jpg",
     "limit": 2
   },
   {
     "id": "aa2c93a2-4451-4a8e-a8ce-e6d4f4f1e60f",
     "number": 20,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 20,
     "name": "Adam's Thunderbird",
     "variant": "Normal",
@@ -988,7 +982,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Bird",
@@ -1031,14 +1025,14 @@
       }
     ],
     "description": "Adam has a 7th sense for Beasties with potential. It's no wonder he ends up with such powerful companions.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/20.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/20.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/20-thumb.jpg",
     "limit": 2
   },
   {
     "id": "aaac4e63-7e49-427a-a573-21cbd6160289",
     "number": 21,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 21,
     "name": "Sam's Dingbelle",
     "variant": "Normal",
@@ -1050,7 +1044,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie",
@@ -1093,14 +1087,14 @@
       }
     ],
     "description": "These little critters usually don't play well with others. For one reason or another, Sam was an exception.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/21.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/21.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/21-thumb.jpg",
     "limit": 4
   },
   {
     "id": "8c3868ee-d095-4f72-a778-6c467678a55b",
     "number": 22,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 22,
     "name": "Dark Caster's Walking Sam",
     "variant": "Normal",
@@ -1112,7 +1106,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie Demon",
@@ -1155,14 +1149,14 @@
       }
     ],
     "description": "In the darkest of nights, you can see a faint, glimmering string pulling this caster along...",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/22.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/22.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/22-thumb.jpg",
     "limit": 3
   },
   {
     "id": "054e4d9e-ce10-4de5-bcc9-62e2541bd7e8",
     "number": 23,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 23,
     "name": "Paul's Squonk",
     "variant": "Normal",
@@ -1174,10 +1168,10 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
-    "type": "Beastie Fearsome-Critter",
+    "type": "Beastie Fearsome Critter",
     "cost": [
       {
         "total": "1",
@@ -1217,14 +1211,14 @@
       }
     ],
     "description": "Paul thought taking this poor creature along would help it cheer up! It didn't work. At least it saved its friends!",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/23.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/23.jpg?v=3",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/23-thumb.jpg",
     "limit": 3
   },
   {
     "id": "7ade655e-2584-44c4-8060-62bef384a4f2",
     "number": 24,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 24,
     "name": "Rose's Gee-Gee Bird",
     "variant": "Normal",
@@ -1236,7 +1230,7 @@
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Beastie",
@@ -1283,26 +1277,26 @@
       }
     ],
     "description": "Not all Frost Beasties have cold hearts! The Gee-Gee Bird, for example, is actually a really goofy bird, making it a great fit for a caster like Rose.",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/24.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/24.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/24-thumb.jpg",
     "limit": 3
   },
   {
     "id": "6f304082-d46b-47ef-9b6f-b2310feda278",
     "number": 25,
-    "total_cards_count": 25,
+    "total_cards_count": 36,
     "sort_by": 25,
     "name": "OpenZoo LEGACY!",
     "variant": "Normal",
-    "illustrators": ["Corey Lewis"],
-    "rarity": "Gold",
+    "illustrators": ["Jemooshka"],
+    "rarity": "Bronze",
     "set_short_name": "legacy",
     "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
     "sets": [
       {
         "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg"
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
       }
     ],
     "type": "Spell",
@@ -1314,8 +1308,281 @@
     ],
     "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Open a booster pack from the Cryptid Nation block and reveal all opened Pages to all Casters. Choose one of those Pages and place it into your Chapter. When the chosen Page enters a Discard Zone it's removed from the game. Remove the chosen Page from your Spellbook at the end of this game.",
     "description": "It might not quite be the \"real thing\", but I'm glad you're here playing with us at OpenZoo all the same. To the future!",
-    "image": "https://gaichu.b-cdn.net/oz/legacy/25.jpg",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/25.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/25-thumb.jpg",
+    "limit": 3
+  },
+  {
+    "id": "4fb8145e-8654-47a7-b8d5-a562e50e09b9",
+    "number": 26,
+    "total_cards_count": 36,
+    "sort_by": 26,
+    "name": "Pocket Squonk",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "type": "Beastie Fearsome Critter",
+    "image": "https://gaichu.b-cdn.net/oz/legacy/26.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/26-thumb.jpg"
+  },
+  {
+    "id": "c8868db2-c2db-45eb-a5b0-540636c78194",
+    "number": 27,
+    "total_cards_count": 36,
+    "sort_by": 27,
+    "name": "Dark Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/27.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/27-thumb.jpg"
+  },
+  {
+    "id": "3562ac3d-ce5a-4110-a60a-7f036d5ff362",
+    "number": 28,
+    "total_cards_count": 36,
+    "sort_by": 28,
+    "name": "Forest Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/28.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/28-thumb.jpg"
+  },
+  {
+    "id": "240cb2c3-7c80-48ee-a73f-ca573213f112",
+    "number": 29,
+    "total_cards_count": 36,
+    "sort_by": 29,
+    "name": "Cosmic Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/29.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/29-thumb.jpg"
+  },
+  {
+    "id": "cf5ed1c2-c9a8-4f3f-af0c-eb078e762066",
+    "number": 30,
+    "total_cards_count": 36,
+    "sort_by": 30,
+    "name": "Earth Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/30.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/30-thumb.jpg"
+  },
+  {
+    "id": "cd49c313-87fe-43bb-ac02-660d280915de",
+    "number": 31,
+    "total_cards_count": 36,
+    "sort_by": 31,
+    "name": "Flame Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/31.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/31-thumb.jpg"
+  },
+  {
+    "id": "7551ac54-ddc2-46c7-a2fd-71b2fc4695f8",
+    "number": 32,
+    "total_cards_count": 36,
+    "sort_by": 32,
+    "name": "Frost Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/32.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/32-thumb.jpg"
+  },
+  {
+    "id": "2de891c3-145b-4d06-b1b9-0cd73c635bd2",
+    "number": 33,
+    "total_cards_count": 36,
+    "sort_by": 33,
+    "name": "Light Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/33.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/33-thumb.jpg"
+  },
+  {
+    "id": "c1966b39-1aa8-48b8-9d1f-93d95e9cbf57",
+    "number": 34,
+    "total_cards_count": 36,
+    "sort_by": 34,
+    "name": "Lightning Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/34.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/34-thumb.jpg"
+  },
+  {
+    "id": "3fe3026c-a41f-4518-938a-a5b073309c0d",
+    "number": 35,
+    "total_cards_count": 36,
+    "sort_by": 35,
+    "name": "Spirit Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/35.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/35-thumb.jpg"
+  },
+  {
+    "id": "e888f383-95a2-4902-9a40-0a9709d5ca71",
+    "number": 36,
+    "total_cards_count": 36,
+    "sort_by": 36,
+    "name": "Water Aura",
+    "variant": "Normal",
+    "illustrators": ["PMZ"],
+    "rarity": "Bronze",
+    "set_short_name": "legacy",
+    "series_short_name": "oz",
+    "description": "",
+    "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
+    "sets": [
+      {
+        "name": "Legacy",
+        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
+      }
+    ],
+    "image": "https://gaichu.b-cdn.net/oz/legacy/36.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/legacy/36-thumb.jpg"
+  },
+  {
+    "id": "a7a6b0c3-6c7d-4a3b-ae3e-6f6b1d8f2c41",
+    "number": 1,
+    "total_cards_count": 1,
+    "sort_by": 1,
+    "name": "Fresh Cakes",
+    "variant": "Normal",
+    "illustrators": ["taktikal1"],
+    "rarity": "Promo",
+    "set_short_name": "promo25",
+    "series_short_name": "oz",
+    "set_ids": ["a4ad7eb7-9361-44d5-b60a-eac571932d6c"],
+    "sets": [
+      {
+        "name": "Promo Cards (2025)",
+        "image": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
+      }
+    ],
+    "type": "Artifact Hygiene Stone",
+    "cost": [
+      { "total": "1", "aura": "Neutral" },
+      { "total": "2", "aura": "Water" }
+    ],
+    "lp": "65",
+    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Nullify all smell related 4th Wall Effects.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If a hygiene product is within eyesight, this Page's <img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> can produce Aura of any type.\nScrub: Once per turn, you may discard a <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Page from your hand. If you do, this Page's <img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> produces 2 Aura instead of 1. Awaken this Page.",
+    "description": "Discord janitors must pass the Donkey Test. Not fresh enough? You're getting replaced.",
+    "image": "https://gaichu.b-cdn.net/oz/promo25/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/promo25/01-thumb.jpg",
     "limit": 3
   }
 ]

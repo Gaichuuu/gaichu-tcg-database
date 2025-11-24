@@ -16,9 +16,6 @@
           "set_short_name",
           "series_short_name",
           "sets",
-          "type",
-          "cost",
-          "limit",
           "image",
           "thumb"
         ],
@@ -36,12 +33,18 @@
           "illustrators": {
             "type": "array",
             "minItems": 1,
-            "items": { "type": "string", "enum": ["Corey Lewis"] }
+            "items": {
+              "type": "string",
+              "enum": ["Corey Lewis", "Jemooshka", "PMZ", "taktikal1"]
+            }
           },
 
-          "rarity": { "type": "string", "enum": ["Gold"] },
+          "rarity": {
+            "type": "string",
+            "enum": ["Gold", "Silver", "Bronze", "Promo"]
+          },
 
-          "set_short_name": { "type": "string", "enum": ["legacy"] },
+          "set_short_name": { "type": "string", "enum": ["legacy", "promo25"] },
           "series_short_name": { "type": "string", "enum": ["oz"] },
 
           "set_ids": {
@@ -56,7 +59,10 @@
               "type": "object",
               "required": ["name", "image"],
               "properties": {
-                "name": { "type": "string", "enum": ["Legacy"] },
+                "name": {
+                  "type": "string",
+                  "enum": ["Legacy", "Promo Cards (2025)"]
+                },
                 "image": { "type": "string", "format": "uri" }
               },
               "additionalProperties": false
@@ -78,7 +84,8 @@
               "Special Aura",
               "Beastie Dragon",
               "Beastie Bird",
-              "Beastie Fearsome-Critter"
+              "Beastie Fearsome Critter",
+              "Artifact Hygiene Stone"
             ]
           },
 
@@ -207,7 +214,7 @@
           "image": { "type": "string", "format": "uri" },
           "thumb": { "type": "string", "format": "uri" },
 
-          "limit": { "type": "integer", "minimum": 0 },
+          "limit": { "type": "integer" },
 
           "note": { "type": "string" }
         }
