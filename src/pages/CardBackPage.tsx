@@ -25,7 +25,7 @@ const CardBackPage: React.FC = () => {
 
   const backUrl =
     seriesKey && setKey
-      ? `https://gaichu.b-cdn.net/${seriesKey}/${setKey}/00.jpg`
+      ? `https://gaichu.b-cdn.net/${seriesKey}/${setKey}/00.jpg?v=2`
       : "";
 
   if (setError || !cardBack) return <p>Not found.</p>;
