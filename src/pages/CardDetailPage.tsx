@@ -46,6 +46,16 @@ const CardDetailPage: React.FC = () => {
 
   const resolvedName = t(card.name as any, locale);
 
+  const resolveLocaleText = (value: unknown): string => {
+    if (!value) return "";
+    return (t as any)(value as any, locale) ?? "";
+  };
+
+  const hasLocaleText = (value: unknown): boolean => {
+    const text = resolveLocaleText(value);
+    return typeof text === "string" && text.trim().length > 0;
+  };
+
   return (
     <div className="container mx-auto pt-2">
       <div className="flex flex-col gap-6 md:flex-row">
@@ -380,10 +390,10 @@ const CardDetailPage: React.FC = () => {
                 </tr>
               )}
 
-              {card.description && (
+              {hasLocaleText(card.description) && (
                 <tr>
                   <th>Flavor Text</th>
-                  <td>{t(card.description as any, locale)}</td>
+                  <td>{resolveLocaleText(card.description)}</td>
                 </tr>
               )}
 

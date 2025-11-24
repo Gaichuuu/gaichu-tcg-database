@@ -662,7 +662,7 @@
     "total_cards_count": 50,
     "number": 16,
     "sort_by": 16,
-    "name": "Pidgey",
+    "name": { "en": "Pidgey", "ja": "ビジー" },
     "parody": "Pidgey",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -679,15 +679,18 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/16-thumb.jpg",
-    "description": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "1.8kg"
+    "description": {
+      "en": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
+      "ja": "一般的な鳥ポケモン。争いを好まず、戦闘から逃げることが多い。"
     },
+    "measurement": { "height": ".3m", "weight": "1.8kg" },
     "attacks": [
       {
-        "name": "Sand-attack",
-        "effect": "Kick sand into the opponent's eyes and run away. A truly cowardly move.",
+        "name": { "en": "Sand Attack", "ja": "すなかけ" },
+        "effect": {
+          "en": "Kicks sand into the opponent's eyes and runs away. A truly cowardly move.",
+          "ja": "砂を相手の目に蹴りつけて逃走する。まさに卑怯な技。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -697,7 +700,7 @@
     "total_cards_count": 50,
     "number": 17,
     "sort_by": 17,
-    "name": "Croco",
+    "name": { "en": "Croco", "ja": "クロコ" },
     "parody": "Totodile",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -714,21 +717,24 @@
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/17-thumb.jpg",
-    "description": "This Pokémon has a very strong jaw.",
-    "measurement": {
-      "height": ".6m",
-      "weight": "9.5kg"
+    "description": {
+      "en": "This Pokémon has a very strong jaw.",
+      "ja": "非常に強い顎を持つポケモンです。"
     },
+    "measurement": { "height": ".6m", "weight": "9.5kg" },
     "attacks": [
       {
-        "name": "Bite",
-        "effect": "Biting the opponent. ",
+        "name": { "en": "Bite", "ja": "かみつく" },
+        "effect": { "en": "Bites the opponent.", "ja": "相手に噛みつく。" },
         "damage": "30",
         "costs": ["Normal"]
       },
       {
-        "name": "Water Gun",
-        "effect": "Take out the water gun you bought at the toy store and spray it at the opponent. ",
+        "name": { "en": "Water Gun", "ja": "みずでっぽう" },
+        "effect": {
+          "en": "Takes out the water gun you bought at the toy store and sprays the opponent.",
+          "ja": "おもちゃ屋で買った水鉄砲を取り出し、相手に浴びせかける。"
+        },
         "damage": "40",
         "costs": ["Water"]
       }
@@ -739,7 +745,7 @@
     "total_cards_count": 50,
     "number": 18,
     "sort_by": 18,
-    "name": "Nugget",
+    "name": { "en": "Nugget", "ja": "ナゲット" },
     "parody": "Torchic",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -756,15 +762,18 @@
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/18-thumb.jpg",
-    "description": "It has a flame inside that never goes out.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "2.5kg"
+    "description": {
+      "en": "It has a flame inside that never goes out.",
+      "ja": "体内に炎を宿しており、決して消えることはない。"
     },
+    "measurement": { "height": ".4m", "weight": "2.5kg" },
     "attacks": [
       {
-        "name": "Flamethrower",
-        "effect": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move. ",
+        "name": { "en": "Flamethrower", "ja": "かえんほうしゃ" },
+        "effect": {
+          "en": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move.",
+          "ja": "非常に強力な火炎放射攻撃。経験豊富な最強のポケモンのみが繰り出すことができる技。"
+        },
         "damage": "100",
         "costs": ["Fire"]
       }
@@ -775,7 +784,7 @@
     "total_cards_count": 50,
     "number": 19,
     "sort_by": 19,
-    "name": "Ghost Boy",
+    "name": { "en": "Ghost Boy", "ja": "ゴーストボーイ" },
     "parody": "Gastly",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -792,15 +801,18 @@
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/19-thumb.jpg",
-    "description": "A Pokémon made mostly of gas.",
-    "measurement": {
-      "height": "1.3m",
-      "weight": "1kg"
+    "description": {
+      "en": "A Pokémon made mostly of gas.",
+      "ja": "ほとんどが気体でできているポケモン。"
     },
+    "measurement": { "height": "1.3m", "weight": "1kg" },
     "attacks": [
       {
-        "name": "Lick",
-        "effect": "Lick the opponent. Some Pokémon enjoy this, so be careful. ",
+        "name": { "en": "Lick", "ja": "したでなめる" },
+        "effect": {
+          "en": "Licks the opponent. Some Pokémon enjoy this, so be careful.",
+          "ja": "相手をなめる。中にはこれを喜ぶポケモンもいるので注意。"
+        },
         "damage": "20",
         "costs": ["Normal"]
       }
