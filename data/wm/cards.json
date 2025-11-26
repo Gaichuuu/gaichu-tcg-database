@@ -819,11 +819,11 @@
     ]
   },
   {
-    "id": "9d4283a2-967e-4b3a-ae26-3176e30b06f7",
+    "id": "c2b7f774-5c77-4e12-9e16-38479c9d3db6",
     "total_cards_count": 50,
     "number": 20,
     "sort_by": 20,
-    "name": "Wormy",
+    "name": { "en": "Wormy", "ja": "ワーミー" },
     "parody": "Dratini",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -840,26 +840,122 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/20-thumb.jpg",
-    "description": "This Pokémon was considered a legendary Pokémon until a small colony was discovered under water.",
-    "measurement": {
-      "height": "1.8m",
-      "weight": "3.3kg"
+    "description": {
+      "en": "Once considered a legendary Pokémon until small colonies were discovered underwater.",
+      "ja": "水中で小さなコロニーが発見されるまでは、伝説のポケモンとされていたポケモン。"
     },
+    "measurement": { "height": "1.6m", "weight": "3.3kg" },
     "attacks": [
       {
-        "name": "Dragon Tail",
-        "effect": "Attacks the opponent with its tail. ",
+        "name": { "en": "Dragon Tail", "ja": "ドラゴンテール" },
+        "effect": {
+          "en": "Attacks the opponent with its tail.",
+          "ja": "尻尾で相手を攻撃する。"
+        },
         "damage": "40",
-        "costs": ["Dragon"]
+        "costs": ["Water"]
       },
       {
-        "name": "Leer",
-        "effect": "Stare at the opponent.",
+        "name": { "en": "Leer", "ja": "にらみつける" },
+        "effect": {
+          "en": "Stares intently at the opponent.",
+          "ja": "相手をじっと見る。"
+        },
         "costs": ["Normal"]
       }
     ]
   },
 
+  {
+    "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
+    "total_cards_count": 50,
+    "number": 21,
+    "sort_by": 21,
+    "name": { "en": "Long Worm", "ja": "ロングワーム" },
+    "parody": "Dragonair",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/21-thumb.jpg",
+    "description": {
+      "en": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
+      "ja": "神秘的なオーラを放つポケモン。感情で天候を変化させることができる。"
+    },
+    "measurement": { "height": "4m", "weight": "16.5kg" },
+    "attacks": [
+      {
+        "name": { "en": "Rain Dance", "ja": "あまごい" },
+        "effect": {
+          "en": "It performs a dance that changes the weather.",
+          "ja": "天候を変化させるダンスをする。"
+        },
+        "costs": ["Water"]
+      },
+      {
+        "name": { "en": "Dragon Rush", "ja": "ドラゴンダイブ" },
+        "effect": {
+          "en": "Charges at the opponent with dragon-like movements.",
+          "ja": "ドラゴンのような動きで相手に突進する。"
+        },
+        "damage": "90",
+        "costs": ["Dragon"]
+      }
+    ]
+  },
+
+  {
+    "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
+    "total_cards_count": 50,
+    "number": 22,
+    "sort_by": 22,
+    "name": { "en": "Robot", "ja": "ロボット" },
+    "parody": "Porygon",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/22-thumb.jpg",
+    "description": {
+      "en": "The first Pokémon created by humans. It was born after many years of scientific research and experimentation.",
+      "ja": "人類が初めて生み出したポケモン。長年の科学の研究・実験の末に誕生したポケモン。"
+    },
+    "measurement": {
+      "height": ".8m",
+      "weight": "36.5kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Tri Attack", "ja": "トライアタック" },
+        "effect": {
+          "en": "It fires a beam made up of multiple elements.",
+          "ja": "複数の元素で構成されたビームを放つ。"
+        },
+        "damage": "80",
+        "costs": ["Fire", "Water", "Electric"]
+      }
+    ]
+  },
   {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
     "total_cards_count": 50,
@@ -898,6 +994,82 @@
           "ja": "黒煙のような雲を発生させる。ポケモンが忍者を観察して覚えた技である。"
         },
         "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "adf5b6c2-5f0c-44b2-86a3-24c26a030e2b",
+    "total_cards_count": 50,
+    "number": 24,
+    "sort_by": 24,
+    "name": { "en": "Brown Rod", "ja": "ブラウンロッド" },
+    "parody": "Diglett",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/24-thumb.jpg",
+    "description": {
+      "en": "A Pokémon that is extremely weak to sunlight. It spends nearly its entire life underground.",
+      "ja": "日光に非常に弱いポケモン。ほぼ一生を地面の下で過ごす。"
+    },
+    "measurement": { "height": ".2m", "weight": ".8kg" },
+    "attacks": [
+      {
+        "name": { "en": "Dig", "ja": "あなをほる" },
+        "effect": {
+          "en": "Digs a hole.",
+          "ja": "穴を掘る。"
+        },
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "b62e2c35-74db-4c57-9052-3041abcf758a",
+    "total_cards_count": 50,
+    "number": 25,
+    "sort_by": 25,
+    "name": { "en": "Plant Boy", "ja": "プラントボーイ" },
+    "parody": "Oddish",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "15",
+    "image": "https://gaichu.b-cdn.net/wm/set1/25.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/25-thumb.jpg",
+    "description": {
+      "en": "During the day, it plants itself. At dusk, it wakes up and wanders around scattering seeds.",
+      "ja": "日中に植物を植え、夕暮れ時に目覚めて歩き回り、種をまき散らすポケモン。"
+    },
+    "measurement": { "height": ".5m", "weight": "5.4kg" },
+    "attacks": [
+      {
+        "name": { "en": "Growth", "ja": "せいちょう" },
+        "effect": {
+          "en": "Its body grows larger. Who needs protein powder when you’re a plant? Not a bad trick.",
+          "ja": "体が大きくなる。プロテインパウダーが必要なのは誰だ？奇抜ではない。"
+        },
+        "costs": ["Grass"]
       }
     ]
   },
@@ -1410,41 +1582,6 @@
     ]
   },
   {
-    "id": "4441cd5c-4b23-4341-9f7c-8e39281f7b0b",
-    "total_cards_count": 50,
-    "number": 24,
-    "sort_by": 24,
-    "name": "Brown Rod",
-    "parody": "Diglett",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "15",
-    "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/24-thumb.jpg",
-    "description": "This Pokémon is very sensitive to sunlight. It spends almost its entire life underground.",
-    "measurement": {
-      "height": ".2m",
-      "weight": ".8kg"
-    },
-    "attacks": [
-      {
-        "name": "Dig",
-        "effect": "Dig a hole.",
-        "costs": ["Fighting"]
-      }
-    ]
-  },
-  {
     "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
     "total_cards_count": 50,
     "number": 46,
@@ -1656,48 +1793,6 @@
         "name": "Confuse Ray",
         "effect": "This attack makes the opponent question reality. Forces them to ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
         "costs": ["Dark"]
-      }
-    ]
-  },
-  {
-    "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
-    "total_cards_count": 50,
-    "number": 22,
-    "sort_by": 22,
-    "name": { "en": "Robot", "ja": "ロボット" },
-    "parody": "Porygon",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "40",
-    "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/22-thumb.jpg",
-    "description": {
-      "en": "The first Pokémon created by humans. It was born after many years of scientific research and experimentation.",
-      "ja": "人類が初めて生み出したポケモン。長年の科学の研究・実験の末に誕生したポケモン。"
-    },
-    "measurement": {
-      "height": ".8m",
-      "weight": "36.5kg"
-    },
-    "attacks": [
-      {
-        "name": { "en": "Tri Attack", "ja": "トライアタック" },
-        "effect": {
-          "en": "It fires a beam made up of multiple elements.",
-          "ja": "複数の元素で構成されたビームを放つ。"
-        },
-        "damage": "80",
-        "costs": ["Fire", "Water", "Electric"]
       }
     ]
   },
@@ -2180,89 +2275,6 @@
       }
     ]
   },
-  {
-    "id": "ea8ebf7e-780c-4ea1-b4ba-e82b3970383e",
-    "total_cards_count": 50,
-    "number": 25,
-    "sort_by": 25,
-    "name": "Plant Boy",
-    "parody": "Oddish",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "15",
-    "image": "https://gaichu.b-cdn.net/wm/set1/25.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/25-thumb.jpg",
-    "description": "This Pokémon plants during the day and wakes up at dusk to roam and spread seeds.",
-    "measurement": {
-      "height": ".5m",
-      "weight": "5.4kg"
-    },
-    "attacks": [
-      {
-        "name": "Growth",
-        "effect": "Its body grows. Who needs protein powder? This is natural.",
-        "costs": ["Grass"]
-      }
-    ]
-  },
-  {
-    "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
-    "total_cards_count": 50,
-    "number": 21,
-    "sort_by": 21,
-    "name": { "en": "Long Worm", "ja": "ロングワーム" },
-    "parody": "Dragonair",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "70",
-    "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/21-thumb.jpg",
-    "description": {
-      "en": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
-      "ja": "神秘的なオーラを放つポケモン。感情で天候を変化させることができる。"
-    },
-    "measurement": { "height": "4m", "weight": "16.5kg" },
-    "attacks": [
-      {
-        "name": { "en": "Rain Dance", "ja": "あまごい" },
-        "effect": {
-          "en": "It performs a dance that changes the weather.",
-          "ja": "天候を変化させるダンスをする。"
-        },
-        "costs": ["Water"]
-      },
-      {
-        "name": { "en": "Dragon Rush", "ja": "ドラゴンダイブ" },
-        "effect": {
-          "en": "Charges at the opponent with dragon-like movements.",
-          "ja": "ドラゴンのような動きで相手に突進する。"
-        },
-        "damage": "90",
-        "costs": ["Dragon"]
-      }
-    ]
-  },
-
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
     "total_cards_count": 50,

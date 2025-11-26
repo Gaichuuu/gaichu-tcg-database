@@ -1579,6 +1579,7 @@
       { "total": "2", "aura": "Water" }
     ],
     "lp": "65",
+    "traits": ["Convert"],
     "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Nullify all smell related 4th Wall Effects.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If a hygiene product is within eyesight, this Page's <img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> can produce Aura of any type.\nScrub: Once per turn, you may discard a <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Page from your hand. If you do, this Page's <img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> produces 2 Aura instead of 1. Awaken this Page.",
     "description": "Discord janitors must pass the Donkey Test. Not fresh enough? You're getting replaced.",
     "image": "https://gaichu.b-cdn.net/oz/promo25/01.jpg",
