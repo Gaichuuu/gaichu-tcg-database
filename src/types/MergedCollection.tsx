@@ -17,6 +17,7 @@ export interface SetAndCard {
     series_id: string;
     logo: string;
     name: string;
+    printFileUrl?: string;
     sort_by: number;
     description?: string;
     set_images?: Array<{
