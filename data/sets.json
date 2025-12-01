@@ -191,6 +191,7 @@
     "short_name": "legacy",
     "sort_by": 1,
     "name": "Legacy",
+    "printFileUrl": "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf",
     "logo": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2",
     "description": "LEGACY has arrived! This was created by fans based on publicly available information.\nSee the full OpenZoo <a href='https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342' target='_blank'>attributions sheet</a>.",
     "set_images": [
