@@ -35,7 +35,7 @@
             "minItems": 1,
             "items": {
               "type": "string",
-              "enum": ["Corey Lewis", "Jemooshka", "PMZ", "taktikal1"]
+              "enum": ["Corey Lewis", "Jemooshka", "PMZ", "taktikal1", "gaichu"]
             }
           },
 
@@ -79,11 +79,13 @@
               "Beastie Bloodsucker Cat",
               "Spell",
               "Artifact",
+              "Artifact Pumpkin",
               "Beastie Dinosaur",
               "Beastie Spirit",
               "Special Aura",
               "Beastie Dragon",
               "Beastie Bird",
+              "Beastie Wolf",
               "Beastie Fearsome Critter",
               "Artifact Hygiene Stone"
             ]
@@ -164,7 +166,8 @@
                     "LightningStorm",
                     "Raining",
                     "Woodlands",
-                    "FullMoon"
+                    "FullMoon",
+                    "NorthPole"
                   ]
                 },
                 "lp": { "type": "string" }
