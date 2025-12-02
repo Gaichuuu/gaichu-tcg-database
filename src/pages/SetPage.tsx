@@ -23,7 +23,7 @@ const SetPage = () => {
   }
 
   const printFileUrl =
-    setAndCard?.set.printFileUrl ??
+    setAndCard?.set.print_file_url ??
     (seriesShortName === "oz" && setShortName === "legacy"
       ? "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf"
       : undefined);
