@@ -1558,7 +1558,7 @@
   {
     "id": "a7a6b0c3-6c7d-4a3b-ae3e-6f6b1d8f2c41",
     "number": 1,
-    "total_cards_count": 1,
+    "total_cards_count": 3,
     "sort_by": 1,
     "name": "Fresh Cakes",
     "variant": "Normal",
@@ -1585,5 +1585,89 @@
     "image": "https://gaichu.b-cdn.net/oz/promo25/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/promo25/01-thumb.jpg",
     "limit": 3
+  },
+  {
+    "id": "4d8c7b80-2f3a-4a20-97e5-1f2c2b2d7c8e",
+    "number": 2,
+    "total_cards_count": 3,
+    "sort_by": 2,
+    "name": "Jack-o-Lantern",
+    "variant": "Normal",
+    "illustrators": ["gaichu"],
+    "rarity": "Promo",
+    "set_short_name": "promo25",
+    "series_short_name": "oz",
+    "set_ids": ["a4ad7eb7-9361-44d5-b60a-eac571932d6c"],
+    "sets": [
+      {
+        "name": "Promo Cards (2025)",
+        "image": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
+      }
+    ],
+    "type": "Artifact Pumpkin",
+    "cost": [{ "total": "1", "aura": "Forest" }],
+    "lp": "50",
+    "traits": ["Convert"],
+    "effect": "Tricking the Devil: You may activate this Power whenever a die is rolled or a coin flip resolves. Redo the die roll or coin flip.",
+    "description": "You'll need the BIG spoon for this lobotomy!",
+    "image": "https://gaichu.b-cdn.net/oz/promo25/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/promo25/02-thumb.jpg",
+    "limit": 6
+  },
+  {
+    "id": "f6c3c9dd-bf57-4ab1-9f8a-4bb8bb3887af",
+    "number": 3,
+    "total_cards_count": 3,
+    "sort_by": 3,
+    "name": "Christmas Waheela",
+    "variant": "Normal",
+    "illustrators": ["Jemooshka"],
+    "rarity": "Promo",
+    "set_short_name": "promo25",
+    "series_short_name": "oz",
+    "set_ids": ["a4ad7eb7-9361-44d5-b60a-eac571932d6c"],
+    "sets": [
+      {
+        "name": "Promo Cards (2025)",
+        "image": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
+      }
+    ],
+    "type": "Beastie Wolf",
+    "cost": [
+      { "total": "1", "aura": "Neutral" },
+      { "total": "2", "aura": "Frost" }
+    ],
+    "lp": "50",
+    "traits": ["Fleet"],
+    "terra": [
+      {
+        "attack": "+20 ATK",
+        "icon": "Snowing",
+        "lp": "+20 LP"
+      },
+      {
+        "attack": "+20 ATK",
+        "icon": "NorthPole",
+        "lp": "+20 LP"
+      }
+    ],
+    "metadata": {
+      "discovered": "1908",
+      "gps": "Alaska, USA",
+      "weight": "70kg",
+      "height": "1.2m"
+    },
+    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If it is the month of December, this Beastie has <img alt=\"Invisible Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconInvisible.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: This Beastie can attack other Pages you control.",
+    "zoo_attack": [
+      {
+        "name": "Surprise Gift",
+        "damage": "20",
+        "effect": "If this Attack Destroys a Page, you and that Page's controller Bookmark 1."
+      }
+    ],
+    "description": "Dare to disturb his holiday slumber? He promises to only take one bite.",
+    "image": "https://gaichu.b-cdn.net/oz/promo25/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/oz/promo25/03-thumb.jpg",
+    "limit": 2
   }
 ]

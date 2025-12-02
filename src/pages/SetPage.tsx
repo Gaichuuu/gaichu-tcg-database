@@ -22,6 +22,12 @@ const SetPage = () => {
     return <div className="container mx-auto pt-1">Set not found</div>;
   }
 
+  const printFileUrl =
+    setAndCard?.set.print_file_url ??
+    (seriesShortName === "oz" && setShortName === "legacy"
+      ? "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf"
+      : undefined);
+
   return (
     <div className="container mx-auto pt-1 pb-1">
       <div className="mb-2 flex">
@@ -49,7 +55,20 @@ const SetPage = () => {
         </div>
 
         <div className="flex-1 pl-4">
-          <h3 className="font-bold">{setAndCard?.set.name}</h3>
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-bold">{setAndCard?.set.name}</h3>
+
+            {printFileUrl && (
+              <a
+                href={printFileUrl}
+                target="_blank"
+                className="secondary-button"
+              >
+                Print
+              </a>
+            )}
+          </div>
+
           <p className="max-w-2xl text-sm whitespace-pre-line">
             <HtmlCell html={setAndCard?.set.description} />
           </p>

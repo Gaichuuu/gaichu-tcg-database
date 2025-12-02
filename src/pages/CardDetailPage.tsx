@@ -203,7 +203,7 @@ const CardDetailPage: React.FC = () => {
                         <img
                           src={`https://gaichu.b-cdn.net/${seriesKey}/icon${traits}.png`}
                           alt={`${traits} Icon`}
-                          className="inline-block h-5 w-5 align-middle"
+                          className="inline-block h-5 align-middle"
                         />
                         {"  "}
                       </span>
@@ -222,7 +222,7 @@ const CardDetailPage: React.FC = () => {
                         <img
                           src={`https://gaichu.b-cdn.net/${seriesKey}/icon${terra.icon}.png`}
                           alt={`${terra.icon} Icon`}
-                          className="inline-block h-5 w-5 align-middle"
+                          className="inline-block h-5 align-middle"
                         />
                         {terra.lp}){"  "}
                       </span>

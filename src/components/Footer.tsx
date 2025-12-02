@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <p>
           &copy;{" "}
           <span className="text-sm">
-            {new Date().getFullYear()} Gaichu v1.4.1
+            {new Date().getFullYear()} Gaichu v1.5.0
           </span>
         </p>
         <div className="mt-2 flex items-center space-x-5 md:mt-0">
