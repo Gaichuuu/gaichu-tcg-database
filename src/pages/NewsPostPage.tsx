@@ -59,7 +59,7 @@ export default function NewsPostPage() {
           <img
             src={post.hero_url}
             alt=""
-            className="block aspect-[16/9] w-full object-cover"
+            className="block aspect-video w-full object-cover"
           />
 
           {typeof post.score === "number" && (

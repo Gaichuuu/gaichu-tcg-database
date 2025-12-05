@@ -19,7 +19,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
     <article
       onClick={go}
       aria-label={post.title}
-      className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder focus-visible:ring-primaryBorder flex h-full cursor-pointer flex-col rounded-2xl border-1 p-4 transition focus:outline-none focus-visible:ring-2"
+      className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder focus-visible:ring-primaryBorder flex h-full cursor-pointer flex-col rounded-2xl border p-4 transition focus:outline-none focus-visible:ring-2"
     >
       {post.hero_url && (
         <div className="relative overflow-hidden rounded-xl">
@@ -33,7 +33,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
             src={post.hero_url}
             alt=""
             loading="lazy"
-            className="block aspect-[16/9] w-full object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+            className="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.05]"
           />
         </div>
       )}

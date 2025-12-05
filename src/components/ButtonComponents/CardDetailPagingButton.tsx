@@ -45,7 +45,7 @@ const CardDetailPagingButton: React.FC<ButtonAction> = ({
         <img
           src={card.thumb}
           alt={label}
-          className="border-secondaryBorder mt-1 max-h-[32px] rounded-full border object-contain"
+          className="border-secondaryBorder mt-1 max-h-8 rounded-full border object-contain"
         />
       )}
     </button>
