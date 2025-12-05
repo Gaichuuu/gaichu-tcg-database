@@ -63,7 +63,7 @@ const CardDetailPage: React.FC = () => {
           <img
             src={card.image}
             alt={resolvedName}
-            className="border-secondaryBorder mb-4 block max-h-[600px] rounded-3xl border-1 object-contain shadow"
+            className="border-secondaryBorder mb-4 block max-h-[600px] rounded-3xl border object-contain shadow"
           />
           <div className="mt-0 flex w-full max-w-xs gap-4">
             {previousCard && (

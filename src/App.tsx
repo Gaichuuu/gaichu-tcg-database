@@ -32,7 +32,7 @@ const App: React.FC = () => {
       <LocaleProvider>
         <div className="bg-mainBg flex min-h-screen w-screen flex-col">
           <Header />
-          <main className="flex-grow">
+          <main className="grow">
             <Layout>
               <Routes>
                 <Route path={HomePagePath} element={<HomePage />} />
