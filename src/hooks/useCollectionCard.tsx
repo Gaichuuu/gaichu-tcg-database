@@ -1,6 +1,4 @@
 // src/hooks/useCollectionCard.tsx
-import { useQuery } from "@tanstack/react-query";
-import { AppResult } from "@/services/AppResult";
 import {
   fetchAdjacentCards,
   fetchCardDetail,
@@ -11,6 +9,12 @@ import {
   getJsonCardDetail,
 } from "@/services/JsonCollectionCardService";
 import { CollectionCard } from "@/types/CollectionCard";
+import { THIRTY_MINUTES, TWENTY_FOUR_HOURS } from "@/utils/TimeUtils";
+import {
+  keepPreviousData,
+  useQuery,
+  UseQueryResult,
+} from "@tanstack/react-query";
 
 const projectId = import.meta.env.VITE_FIREBASE_PROJECT_ID || "dev";
 
@@ -19,11 +23,34 @@ export const useCardDetail = (
   setShortName: string,
   sortBy: number | undefined,
   cardName: string,
-): AppResult<CollectionCard | null, Error> => {
+): UseQueryResult<CollectionCard | null, Error> => {
   const sortKey = Number.isFinite(sortBy as number) ? String(sortBy) : "";
   const enabled = Boolean(seriesShortName && setShortName && cardName.trim());
 
-  const queryResult = useQuery<CollectionCard | null>({
+  if (IS_USE_LOCAL_DATA) {
+    return useQuery<CollectionCard | null, Error>({
+      queryKey: [
+        "useCardDetailLocal",
+        projectId,
+        seriesShortName,
+        setShortName,
+        "sortBy",
+        sortKey,
+        cardName,
+      ],
+      enabled,
+      queryFn: async () => {
+        return getJsonCardDetail(
+          seriesShortName,
+          setShortName,
+          sortBy as any,
+          cardName,
+        );
+      },
+    });
+  }
+
+  return useQuery<CollectionCard | null>({
     queryKey: [
       "CardDetail",
       projectId,
@@ -36,38 +63,17 @@ export const useCardDetail = (
     enabled,
     queryFn: () =>
       fetchCardDetail(seriesShortName, setShortName, sortBy, cardName),
-    staleTime: 5 * 60 * 1000,
+    staleTime: THIRTY_MINUTES,
+    gcTime: TWENTY_FOUR_HOURS,
     refetchOnWindowFocus: false,
     retry: false,
   });
-
-  if (IS_USE_LOCAL_DATA) {
-    const card = getJsonCardDetail(
-      seriesShortName,
-      setShortName,
-      sortBy as any,
-      cardName,
-    );
-    return {
-      data: card,
-      error: card ? undefined : Error("Card not found."),
-      isLoading: false,
-    };
-  }
-
-  return {
-    data: queryResult.data,
-    error: queryResult.error || undefined,
-    isLoading: queryResult.isLoading,
-  };
 };
 
 export interface UseCurrentAndAdjacentCardsResult {
-  card: CollectionCard | undefined;
-  previousCard: CollectionCard | undefined;
-  nextCard: CollectionCard | undefined;
-  isLoading: boolean;
-  error: Error | undefined;
+  card: CollectionCard | null;
+  previousCard: CollectionCard | null;
+  nextCard: CollectionCard | null;
 }
 
 export const useCurrentAndAdjacentCards = (
@@ -75,53 +81,78 @@ export const useCurrentAndAdjacentCards = (
   setShortName: string,
   sortBy: number | undefined,
   cardName: string,
-): UseCurrentAndAdjacentCardsResult => {
-  const {
-    data: card,
-    isLoading,
-    error,
-  } = useCardDetail(seriesShortName, setShortName, sortBy, cardName);
+): UseQueryResult<UseCurrentAndAdjacentCardsResult | null, Error> => {
+  if (IS_USE_LOCAL_DATA) {
+    return useQuery<UseCurrentAndAdjacentCardsResult | null, Error>({
+      queryKey: [
+        "useCurrentAndAdjacentCardsLocal",
+        projectId,
+        seriesShortName,
+        setShortName,
+        "sortBy",
+        sortBy ?? "",
+        cardName,
+      ],
+      queryFn: async () => {
+        const card = await getJsonCardDetail(
+          seriesShortName,
+          setShortName,
+          sortBy ?? 0,
+          cardName,
+        );
 
-  const queryResult = useQuery<{
-    previousCard: CollectionCard | null;
-    nextCard: CollectionCard | null;
-  }>({
+        const adjacentCards = await getAdjacentCards(
+          seriesShortName,
+          setShortName,
+          sortBy ?? 0,
+        );
+        return {
+          card: card,
+          previousCard: adjacentCards.previousCard,
+          nextCard: adjacentCards.nextCard,
+        };
+      },
+      enabled: Boolean(seriesShortName && setShortName),
+      staleTime: 5 * 60 * 1000,
+      refetchOnWindowFocus: false,
+      retry: false,
+    });
+  }
+  const enabled = Boolean(seriesShortName && setShortName && cardName.trim());
+
+  return useQuery<UseCurrentAndAdjacentCardsResult | null, Error>({
     queryKey: [
-      "AdjacentCards",
+      "useCurrentAndAdjacentCards",
       projectId,
       seriesShortName,
       setShortName,
-      "sortBy",
-      card?.sort_by ?? "",
+      sortBy ?? "",
+      cardName,
     ],
-    queryFn: () =>
-      fetchAdjacentCards(seriesShortName, setShortName, card?.sort_by),
-    enabled: Boolean(seriesShortName && setShortName && card),
+    enabled,
     staleTime: 5 * 60 * 1000,
+    gcTime: 60 * 60 * 1000,
     refetchOnWindowFocus: false,
     retry: false,
+    placeholderData: keepPreviousData,
+
+    queryFn: async () => {
+      const card = await fetchCardDetail(
+        seriesShortName,
+        setShortName,
+        sortBy,
+        cardName,
+      );
+      const adjacentCards = await fetchAdjacentCards(
+        seriesShortName,
+        setShortName,
+        sortBy,
+      );
+      return {
+        card,
+        previousCard: adjacentCards.previousCard,
+        nextCard: adjacentCards.nextCard,
+      };
+    },
   });
-
-  if (IS_USE_LOCAL_DATA) {
-    const adjacent = getAdjacentCards(
-      seriesShortName,
-      setShortName,
-      card?.sort_by,
-    );
-    return {
-      card: card ?? undefined,
-      previousCard: adjacent.previousCard ?? undefined,
-      nextCard: adjacent.nextCard ?? undefined,
-      error: error || undefined,
-      isLoading: false,
-    };
-  }
-
-  return {
-    card: card ?? undefined,
-    previousCard: queryResult.data?.previousCard ?? undefined,
-    nextCard: queryResult.data?.nextCard ?? undefined,
-    isLoading: isLoading || queryResult.isLoading,
-    error: error || undefined,
-  };
 };

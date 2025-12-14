@@ -3,3 +3,4 @@ export type AppResult<T, E> = {
   error: E | undefined;
   isLoading: boolean;
 };
+// TODO: saori - remove it
