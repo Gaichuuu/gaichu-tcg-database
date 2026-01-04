@@ -1,6 +1,4 @@
 // src/hooks/useCollection.tsx
-import { THIRTY_MINUTES } from "@/utils/TimeUtils";
-import { useQuery } from "@tanstack/react-query";
 import { AppResult } from "@/services/AppResult";
 import { fetchSeries } from "@/services/CollectionSeriesService";
 import { fetchSets } from "@/services/CollectionSetService";
@@ -8,6 +6,8 @@ import { IS_USE_LOCAL_DATA } from "@/services/Constants";
 import { getJsonSeries } from "@/services/JsonCollectionSeriesService";
 import { getJsonSet } from "@/services/JsonCollectionSetService";
 import { SeriesAndSet, SetAndCard } from "@/types/MergedCollection";
+import { THIRTY_MINUTES } from "@/utils/TimeUtils";
+import { useQuery, UseQueryResult } from "@tanstack/react-query";
 export const getSeries = (): AppResult<SeriesAndSet[], Error> => {
   const queryResult = useQuery<SeriesAndSet[]>({
     queryKey: ["SeriesList"],
@@ -29,31 +29,19 @@ export const getSeries = (): AppResult<SeriesAndSet[], Error> => {
     isLoading: queryResult.isLoading,
   };
 };
-
 export const useSets = (
-  seriesShortName?: string,
-): AppResult<SetAndCard[] | null, Error> => {
-  if (!seriesShortName) {
-    return {
-      data: null,
-      error: new Error("not found"),
-      isLoading: false,
-    };
-  }
-
+  seriesShortName: string,
+): UseQueryResult<SetAndCard[] | null, Error> => {
   if (IS_USE_LOCAL_DATA) {
-    return {
-      data: getJsonSet(seriesShortName!),
-      error: undefined,
-      isLoading: false,
-    };
+    return useQuery<SetAndCard[] | null>({
+      queryKey: ["useSetsLocal", seriesShortName],
+      enabled: !!seriesShortName,
+      queryFn: async () => {
+        return getJsonSet(seriesShortName);
+      },
+    });
   }
-  const queryResult = useQuery<SetAndCard[]>(makeSetListQuery(seriesShortName));
-  return {
-    data: queryResult.data,
-    error: queryResult.error || undefined,
-    isLoading: queryResult.isLoading,
-  };
+  return useQuery<SetAndCard[]>(makeSetListQuery(seriesShortName));
 };
 
 export const useSet = (
