@@ -18,6 +18,7 @@ export interface SetAndCard {
     logo: string;
     name: string;
     print_file_url?: string;
+    buy_url?: string;
     sort_by: number;
     description?: string;
     set_images?: Array<{
