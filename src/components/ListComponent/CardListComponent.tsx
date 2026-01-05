@@ -156,7 +156,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                 <img
                   src={card.image}
                   alt={name}
-                  className="border-secondaryBorder block max-h-[260px] w-full rounded-xl border-1 object-contain transition-transform duration-200"
+                  className="border-secondaryBorder block max-h-[260px] w-full rounded-xl border object-contain transition-transform duration-200"
                 />
                 <p className="mt-0 line-clamp-1 text-center text-sm">{name}</p>
               </div>
