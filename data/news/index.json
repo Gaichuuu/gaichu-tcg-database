@@ -20,5 +20,16 @@
     "created_at": 1764878400000,
     "slug": "how-to-get-your-openzoo-xmas-promo",
     "id": "how-to-get-your-openzoo-xmas-promo"
+  },
+  {
+    "title": "OpenZoo Legacy is here",
+    "author": "gaichu",
+    "tags": ["card-release"],
+    "hero_url": "https://gaichu.b-cdn.net/news/03.png",
+    "excerpt": "Print at home or order the full playset from Game Crafter.",
+    "body_html": "<p>Casters, the wait is over. Legacy is available now, and you have several options to play <p><strong>Print for free:</strong> Visit the <a href=\"https://gaichu.com/cards/oz/sets/legacy\" target=\"_blank\">Legacy set page</a> and click the “Print” button to open the PDF. You can print the entire set at home.</p><p><strong>Print on demand:</strong> Order a Legacy deck from <a href=\"https://www.thegamecrafter.com/games/openzoo-legacy\" target=\"_blank\">Game Crafter</a> for <strong>$15.99</strong>. The deck includes the full 85-card playset. Production times can vary, so expect it to take a few weeks.</p><img src=\"https://gaichu.b-cdn.net/news/03-1.jpg\"></p><div style=\"display:flex; flex-direction:column; gap:16px; max-width:100%;\"><div style=\"position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;\"><iframe src=\"https://www.youtube.com/embed/wbM2S0FvOKg\" style=\"position: absolute; top:0; left:0; width:100%; height:100%;\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div>",
+    "created_at": 1767556800000,
+    "slug": "openzoo-legacy-is-here",
+    "id": "openzoo-legacy-is-here"
   }
 ]
