@@ -28,6 +28,12 @@ const SetPage = () => {
       ? "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf"
       : undefined);
 
+  const buyUrl =
+    setAndCard?.set.buy_url ??
+    (seriesShortName === "oz" && setShortName === "legacy"
+      ? "https://www.thegamecrafter.com/games/openzoo-legacy"
+      : undefined);
+
   return (
     <div className="container mx-auto pt-1 pb-1">
       <div className="mb-2 flex">
@@ -55,18 +61,26 @@ const SetPage = () => {
         </div>
 
         <div className="flex-1 pl-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center">
             <h3 className="text-lg font-bold">{setAndCard?.set.name}</h3>
 
-            {printFileUrl && (
-              <a
-                href={printFileUrl}
-                target="_blank"
-                className="secondary-button"
-              >
-                Print
-              </a>
-            )}
+            <div className="ml-auto flex items-center gap-2">
+              {buyUrl && (
+                <a href={buyUrl} target="_blank" className="secondary-button">
+                  Buy
+                </a>
+              )}
+
+              {printFileUrl && (
+                <a
+                  href={printFileUrl}
+                  target="_blank"
+                  className="secondary-button"
+                >
+                  Print
+                </a>
+              )}
+            </div>
           </div>
 
           <p className="max-w-2xl text-sm whitespace-pre-line">
