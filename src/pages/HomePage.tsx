@@ -20,12 +20,14 @@ const HomePage: React.FC = () => {
       <section className="mx-auto mt-8 max-w-6xl px-0">
         <div className="mb-2 flex items-baseline justify-between">
           <h3>Latest News</h3>
-          {/* <Link to="/news" className="text-interactiveText">
-            See all //disabled until more posts
-          </Link> */}
+          <Link to="/news" className="text-interactiveText">
+            See all
+          </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
-          {latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />)}
+          {latest?.map((p: NewsPost) => (
+            <NewsCard key={p.id} post={p} />
+          ))}
         </div>
       </section>
     </div>
