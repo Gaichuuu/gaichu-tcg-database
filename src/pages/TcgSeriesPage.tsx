@@ -1,12 +1,12 @@
 // src/pages/TcgSeriesPage.tsx
+import SeriesList from "@/components/ListComponent/SeriesListComponent";
+import { useSeries } from "@/hooks/useCollection";
+import { getSetListPath } from "@/utils/RoutePathBuildUtils";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import SeriesList from "@/components/ListComponent/SeriesListComponent";
-import { getSeries } from "@/hooks/useCollection";
-import { getSetListPath } from "@/utils/RoutePathBuildUtils";
 
 const TcgSeriesPage: React.FC = () => {
-  const result = getSeries();
+  const result = useSeries();
   if (result.error) return <p>Something went wrong...</p>;
   const navigate = useNavigate();
   return (

@@ -6,12 +6,17 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import "./lib/firebase";
+import {
+  ONE_HOUR,
+  TEN_MINUTES,
+  TWENTY_FOUR_HOURS,
+} from "./utils/TimeUtils.tsx";
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 1000 * 60 * 10,
-      gcTime: 1000 * 60 * 60,
+      staleTime: TEN_MINUTES,
+      gcTime: ONE_HOUR,
       refetchOnWindowFocus: false,
       refetchOnMount: false,
       retry: 1,
@@ -23,7 +28,7 @@ persistQueryClient({
   persister: createSyncStoragePersister({
     storage: window.localStorage,
   }),
-  maxAge: 24 * 60 * 60 * 1000, // keep persisted cache 24h
+  maxAge: TWENTY_FOUR_HOURS, // keep persisted cache 24h
 });
 
 createRoot(document.getElementById("root")!).render(

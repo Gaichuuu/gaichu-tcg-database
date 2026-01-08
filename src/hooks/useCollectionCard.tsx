@@ -9,7 +9,6 @@ import {
   getJsonCardDetail,
 } from "@/services/JsonCollectionCardService";
 import { CollectionCard } from "@/types/CollectionCard";
-import { THIRTY_MINUTES, TWENTY_FOUR_HOURS } from "@/utils/TimeUtils";
 import {
   keepPreviousData,
   useQuery,
@@ -63,10 +62,6 @@ export const useCardDetail = (
     enabled,
     queryFn: () =>
       fetchCardDetail(seriesShortName, setShortName, sortBy, cardName),
-    staleTime: THIRTY_MINUTES,
-    gcTime: TWENTY_FOUR_HOURS,
-    refetchOnWindowFocus: false,
-    retry: false,
   });
 };
 
@@ -113,9 +108,6 @@ export const useCurrentAndAdjacentCards = (
         };
       },
       enabled: Boolean(seriesShortName && setShortName),
-      staleTime: 5 * 60 * 1000,
-      refetchOnWindowFocus: false,
-      retry: false,
     });
   }
   const enabled = Boolean(seriesShortName && setShortName && cardName.trim());
@@ -130,10 +122,6 @@ export const useCurrentAndAdjacentCards = (
       cardName,
     ],
     enabled,
-    staleTime: 5 * 60 * 1000,
-    gcTime: 60 * 60 * 1000,
-    refetchOnWindowFocus: false,
-    retry: false,
     placeholderData: keepPreviousData,
 
     queryFn: async () => {
