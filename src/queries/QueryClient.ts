@@ -5,7 +5,7 @@ import { persistQueryClient } from "@tanstack/react-query-persist-client";
 
 const PERSIST_VERSION = "v2"; // update this to invalidate old caches
 const PERSIST_KEY = `gaichu-query-cache-${PERSIST_VERSION}`;
-const queryClient = new QueryClient({
+export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: TEN_MINUTES,
