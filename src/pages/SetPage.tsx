@@ -1,4 +1,5 @@
 // src/pages/SetPage.tsx
+import HtmlCell from "@/components/HtmlCell";
 import CardList from "@/components/ListComponent/CardListComponent";
 import { useSet } from "@/hooks/useCollection";
 import {
@@ -8,13 +9,12 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import { useNavigate, useParams } from "react-router-dom";
-import HtmlCell from "@/components/HtmlCell";
 
 const SetPage = () => {
   const { seriesShortName, setShortName } = useParams();
   const { data: setAndCard, error: setError } = useSet(
-    seriesShortName,
-    setShortName,
+    seriesShortName ?? "",
+    setShortName ?? "",
   );
   const navigate = useNavigate();
 
