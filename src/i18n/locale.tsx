@@ -1,40 +1,13 @@
 // src/i18n/locale.tsx
-import React, {
-  createContext,
-  useContext,
-  useMemo,
-  useState,
-  useCallback,
-} from "react";
+import React, { useMemo, useState, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
-
-export type Locale = "en" | "ja";
-const DEFAULT_LOCALE: Locale = "en";
-
-export type I18nValue = string | Partial<Record<Locale, string>>;
-
-export function t(value: I18nValue | undefined, locale: Locale): string {
-  if (value == null) return "";
-  if (typeof value === "string") return value;
-  return (
-    value[locale] ?? value[DEFAULT_LOCALE] ?? Object.values(value)[0] ?? ""
-  );
-}
+import { type Locale, DEFAULT_LOCALE } from "./t";
+import { LocaleContext } from "./useLocale";
 
 function parseUrlLocale(sp: URLSearchParams): Locale | undefined {
   const v = sp.get("lang");
   return v === "en" || v === "ja" ? v : undefined;
 }
-
-const LocaleContext = createContext<{
-  locale: Locale;
-  setLocale: (l: Locale) => void;
-}>({
-  locale: DEFAULT_LOCALE,
-  setLocale: () => {},
-});
-
-export const useLocale = () => useContext(LocaleContext);
 
 export const LocaleProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
