@@ -128,8 +128,8 @@ interface Rule {
 interface Metadata {
   height?: string;
   weight?: string;
-  gps: string;
-  discovered: string;
+  gps?: string;
+  discovered?: string;
   length?: string;
   type?: string;
   measurement?: string;
