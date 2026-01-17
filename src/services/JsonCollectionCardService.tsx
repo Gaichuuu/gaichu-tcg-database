@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { t } from "@/i18n/locale";
+import { t } from "@/i18n";
 import { slugify } from "@/utils/RoutePathBuildUtils";
 
 const localeEnum = z.enum(["en", "ja"]);
@@ -10,7 +10,9 @@ type LocaleKey = z.infer<typeof localeEnum>;
 
 function toI18nMap(v: unknown): Partial<Record<LocaleKey, string>> {
   if (v == null) return {};
-  return typeof v === "string" ? { en: v } : (v as any);
+  return typeof v === "string"
+    ? { en: v }
+    : (v as Partial<Record<LocaleKey, string>>);
 }
 
 import mzCardList from "../../data/mz/cards.json";
@@ -22,7 +24,7 @@ import { CollectionCard } from "@/types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
 
 // FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
-export const SerieCardList: Record<SeriesShortName, any> = {
+export const SerieCardList: Record<SeriesShortName, unknown[]> = {
   [SeriesShortName.wm]: wmCardList,
   [SeriesShortName.mz]: mzCardList,
   [SeriesShortName.ash]: ashCardList,
@@ -92,8 +94,8 @@ export const getAdjacentCards = (
 };
 
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
-  const cards = SerieCardList[seriesShortName as SeriesShortName].map(
-    (card: any) => CardSchema.parse(card),
+  const cards = SerieCardList[seriesShortName as SeriesShortName].map((card) =>
+    CardSchema.parse(card),
   ) as CollectionCard[];
   return cards.sort((a, b) => a.sort_by - b.sort_by);
 };

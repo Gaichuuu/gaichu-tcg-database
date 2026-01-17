@@ -7,18 +7,20 @@ import {
   limit as ql,
   getDocs,
   orderBy,
+  QueryConstraint,
+  DocumentData,
 } from "firebase/firestore";
 import type { CollectionCard } from "@/types/CollectionCard";
-import { t } from "@/i18n/locale";
+import { I18nValue, t } from "@/i18n";
 import { slugify } from "@/utils/RoutePathBuildUtils";
 
 const cardsRef = collection(database, "cards");
 const __DEV__ = import.meta.env.DEV;
 
-const toSlug = (v: unknown) =>
-  slugify(typeof v === "string" ? v : t(v as any, "en"));
+const toSlug = (v: unknown): string =>
+  slugify(typeof v === "string" ? v : t(v as I18nValue, "en"));
 
-function warnIfCamel(raw: any, id?: string) {
+function warnIfCamel(raw: DocumentData, id?: string) {
   if (!__DEV__) return;
   if (raw?.seriesShortName || raw?.setShortName) {
     console.warn(
@@ -28,7 +30,7 @@ function warnIfCamel(raw: any, id?: string) {
   }
 }
 
-function asCard(raw: any, id?: string): CollectionCard {
+function asCard(raw: DocumentData, id?: string): CollectionCard {
   warnIfCamel(raw, id);
   return raw as CollectionCard;
 }
@@ -36,7 +38,7 @@ function asCard(raw: any, id?: string): CollectionCard {
 async function getDocsWithSeriesSet(
   seriesShortName: string,
   setShortName: string,
-  extra: any[] = [],
+  extra: QueryConstraint[] = [],
 ) {
   return getDocs(
     query(
@@ -77,7 +79,7 @@ export async function fetchCardDetail(
     const match =
       withinSet.docs
         .map((d) => asCard(d.data(), d.id))
-        .find((d) => toSlug((d as any).name) === targetSlug) ?? null;
+        .find((d) => toSlug(d.name) === targetSlug) ?? null;
 
     if (match) return match;
   } catch (e) {

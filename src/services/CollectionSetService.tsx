@@ -36,6 +36,6 @@ const mergeWithSetsId = (
 ): SetAndCard[] => {
   return sets.map((setItem) => ({
     set: setItem,
-    cards: cards.filter((cardItem) => cardItem.set_ids[0] == setItem.id),
+    cards: cards.filter((cardItem) => cardItem.set_ids[0] === setItem.id),
   }));
 };

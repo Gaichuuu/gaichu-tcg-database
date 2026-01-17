@@ -1,17 +1,6 @@
 // src/components/news/NewsSearch.tsx
 import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-
-export function useQueryParam(key: string, fallback = "") {
-  const [sp, setSp] = useSearchParams();
-  const value = sp.get(key) ?? fallback;
-  const setValue = (v: string) => {
-    const next = new URLSearchParams(sp);
-    v ? next.set(key, v) : next.delete(key);
-    setSp(next, { replace: true });
-  };
-  return [value, setValue] as const;
-}
+import { useQueryParam } from "@/hooks/useQueryParam";
 
 export function NewsSearch() {
   const [q, setQ] = useQueryParam("q", "");
@@ -20,9 +9,11 @@ export function NewsSearch() {
   useEffect(() => {
     const t = setTimeout(() => setQ(local), 300);
     return () => clearTimeout(t);
-  }, [local]);
+  }, [local, setQ]);
 
-  useEffect(() => setLocal(q), [q]);
+  useEffect(() => {
+    setLocal(q);
+  }, [q]);
 
   return (
     <div className="bg-mainBg/60 supports-backdrop-filter:bg-mainBg/40 sticky top-0 z-10 backdrop-blur-sm">

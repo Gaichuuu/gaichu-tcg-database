@@ -1,20 +1,25 @@
 // src/components/LocaleToggle.tsx
 import React, { useMemo } from "react";
-import { useLocale } from "@/i18n/locale";
+import { useLocale, I18nValue } from "@/i18n";
+import type { CollectionCard } from "@/types/CollectionCard";
 
-type Props = { card?: any };
+type Props = { card?: CollectionCard };
 
-function hasJA(card?: any): boolean {
-  if (!card) return false;
-  const isJa = (v: any) =>
-    v &&
+function isJaAvailable(v: I18nValue | undefined): boolean {
+  return (
+    v != null &&
     typeof v === "object" &&
     typeof v.ja === "string" &&
-    v.ja.trim() !== "";
-  if (isJa(card.name) || isJa(card.description)) return true;
+    v.ja.trim() !== ""
+  );
+}
+
+function hasJA(card?: CollectionCard): boolean {
+  if (!card) return false;
+  if (isJaAvailable(card.name) || isJaAvailable(card.description)) return true;
   if (
     Array.isArray(card.attacks) &&
-    card.attacks.some((a: any) => isJa(a?.name) || isJa(a?.effect))
+    card.attacks.some((a) => isJaAvailable(a?.name) || isJaAvailable(a?.effect))
   )
     return true;
   return false;

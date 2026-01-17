@@ -6,9 +6,9 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    sourcemap: true,
+    sourcemap: process.env.NODE_ENV !== "production",
 
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
 
     rollupOptions: {
       onwarn(warning, defaultHandler) {

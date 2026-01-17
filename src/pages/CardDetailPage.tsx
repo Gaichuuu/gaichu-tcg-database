@@ -4,8 +4,9 @@ import CardDetailPagingButton, {
 } from "@/components/ButtonComponents/CardDetailPagingButton";
 import HtmlCell from "@/components/HtmlCell";
 import LocaleToggle from "@/components/LocaleToggle";
+import { PageLoading, PageError, PageNotFound } from "@/components/PageStates";
 import { useCurrentAndAdjacentCards } from "@/hooks/useCollectionCard";
-import { t, useLocale } from "@/i18n/locale";
+import { t, useLocale } from "@/i18n";
 import type { CollectionParamKeys } from "@/types/routes";
 import {
   getCardDetailPath,
@@ -36,26 +37,22 @@ const CardDetailPage: React.FC = () => {
     cardName,
   );
 
-  if (isFetching)
-    return (
-      <div className="text-secondaryText container mx-auto pt-1">Loading… </div>
-    );
-  if (error || !data?.card) {
-    return (
-      <div className="container mx-auto pt-1">
-        <p className="text-errorText text-center">Card not found.</p>
-      </div>
-    );
-  }
+  if (isFetching) return <PageLoading />;
+  if (error) return <PageError message="Failed to load card." />;
+  if (!data?.card) return <PageNotFound message="Card not found." />;
 
-  const resolvedName = t(data.card.name as any, locale);
+  const resolvedName = t(data.card.name, locale);
 
-  const resolveLocaleText = (value: unknown): string => {
+  const resolveLocaleText = (
+    value: Partial<Record<"en" | "ja", string>> | undefined,
+  ): string => {
     if (!value) return "";
-    return (t as any)(value as any, locale) ?? "";
+    return t(value, locale) ?? "";
   };
 
-  const hasLocaleText = (value: unknown): boolean => {
+  const hasLocaleText = (
+    value: Partial<Record<"en" | "ja", string>> | undefined,
+  ): boolean => {
     const text = resolveLocaleText(value);
     return typeof text === "string" && text.trim().length > 0;
   };
@@ -67,7 +64,7 @@ const CardDetailPage: React.FC = () => {
           <img
             src={data.card.image}
             alt={resolvedName}
-            className="border-secondaryBorder mb-4 block max-h-[600px] rounded-3xl border object-contain shadow"
+            className="border-secondaryBorder mb-4 block max-h-150 rounded-3xl border object-contain shadow"
           />
           <div className="mt-0 flex w-full max-w-xs gap-4">
             {data.previousCard && (
@@ -148,20 +145,18 @@ const CardDetailPage: React.FC = () => {
                 </tr>
               )}
 
-              {data.card.attacks?.map((attack: any, aIndex: number) => (
+              {data.card.attacks?.map((attack, aIndex) => (
                 <tr key={t(attack.name, "en") || aIndex}>
                   <th>{t(attack.name, locale)}</th>
                   <td>
-                    {(attack.costs ?? []).map(
-                      (cost: string, cIndex: number) => (
-                        <img
-                          key={`${t(attack.name, "en")}-cost-${cIndex}`}
-                          src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
-                          alt={`${cost} Icon`}
-                          className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
-                        />
-                      ),
-                    )}
+                    {(attack.costs ?? []).map((cost, cIndex) => (
+                      <img
+                        key={`${t(attack.name, "en")}-cost-${cIndex}`}
+                        src={`https://gaichu.b-cdn.net/${seriesKey}/icon${cost}.jpg`}
+                        alt={`${cost} Icon`}
+                        className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
+                      />
+                    ))}
                     <HtmlCell
                       html={t(attack.effect, locale)}
                       className="html-cell mx-1"

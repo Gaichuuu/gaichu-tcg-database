@@ -1,5 +1,6 @@
 // src/pages/NewsIndex.tsx
-import { NewsSearch, useQueryParam } from "@/components/news/NewsSearch";
+import { NewsSearch } from "@/components/news/NewsSearch";
+import { useQueryParam } from "@/hooks/useQueryParam";
 import { NewsGrid } from "@/components/news/NewsGrid";
 
 export default function NewsIndex() {

@@ -45,7 +45,7 @@ const PackArtPage: React.FC = () => {
             <img
               src={current.url}
               alt={getTitleSetImagePathType(SetImagePathType.PackArt)}
-              className="border-secondaryBorder mb-4 block max-h-[600px] border object-contain shadow"
+              className="border-secondaryBorder mb-4 block max-h-150 border object-contain shadow"
             />
           )}
 

@@ -32,9 +32,9 @@ export enum PathSegments {
   CardName = 1,
   Sets = 2,
   SetName = 3,
-  Card = 4,
-  SetImagePath = 4,
+  CardOrSetImagePath = 4,
   // Example: /cards/wm/sets/set1/pack-art or /cards/wm/sets/set1/card-back
+  // Also used for: /cards/mz/sets/promo/card (where "card" is at index 4)
   SortByAndCardName = 5,
   // Example: /cards/mz/sets/promo/card/99.3_Sunlight
 }
@@ -89,7 +89,7 @@ export function getBreadcrumbItems(
 
     if (segment === "sets" || segment === "card") continue;
 
-    if (index === PathSegments.SetImagePath) {
+    if (index === PathSegments.CardOrSetImagePath) {
       const title = getTitleSetImagePathType(
         decodeMulti(segment) as SetImagePathType,
       );
@@ -100,7 +100,7 @@ export function getBreadcrumbItems(
     }
 
     if (
-      segments[PathSegments.Card] === "card" &&
+      segments[PathSegments.CardOrSetImagePath] === "card" &&
       index === PathSegments.SortByAndCardName
     ) {
       const decoded = decodeMulti(segment);
@@ -153,18 +153,20 @@ export function getArtPath(
     return "";
   }
   switch (pathType) {
-    case SetImagePathType.PackArt:
+    case SetImagePathType.PackArt: {
       const path = generatePath(PackArtPath, {
         seriesShortName: encodeURIComponent(set.series_short_name),
         setShortName: encodeURIComponent(set.short_name),
       });
       return path;
-    case SetImagePathType.CardBack:
+    }
+    case SetImagePathType.CardBack: {
       const cardBackPath = generatePath(CardBackPath, {
         seriesShortName: encodeURIComponent(set.series_short_name),
         setShortName: encodeURIComponent(set.short_name),
       });
       return cardBackPath;
+    }
     case undefined:
     default:
       return "";
