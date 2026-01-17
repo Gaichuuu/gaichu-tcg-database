@@ -26,32 +26,9 @@ export const useCardDetail = (
   const sortKey = Number.isFinite(sortBy as number) ? String(sortBy) : "";
   const enabled = Boolean(seriesShortName && setShortName && cardName.trim());
 
-  if (IS_USE_LOCAL_DATA) {
-    return useQuery<CollectionCard | null, Error>({
-      queryKey: [
-        "useCardDetailLocal",
-        projectId,
-        seriesShortName,
-        setShortName,
-        "sortBy",
-        sortKey,
-        cardName,
-      ],
-      enabled,
-      queryFn: async () => {
-        return getJsonCardDetail(
-          seriesShortName,
-          setShortName,
-          sortBy as any,
-          cardName,
-        );
-      },
-    });
-  }
-
-  return useQuery<CollectionCard | null>({
+  return useQuery<CollectionCard | null, Error>({
     queryKey: [
-      "CardDetail",
+      IS_USE_LOCAL_DATA ? "useCardDetailLocal" : "CardDetail",
       projectId,
       seriesShortName,
       setShortName,
@@ -60,8 +37,16 @@ export const useCardDetail = (
       cardName,
     ],
     enabled,
-    queryFn: () =>
-      fetchCardDetail(seriesShortName, setShortName, sortBy, cardName),
+    queryFn: async () => {
+      return IS_USE_LOCAL_DATA
+        ? getJsonCardDetail(
+            seriesShortName,
+            setShortName,
+            sortBy ?? 0,
+            cardName,
+          )
+        : fetchCardDetail(seriesShortName, setShortName, sortBy, cardName);
+    },
   });
 };
 
@@ -77,25 +62,32 @@ export const useCurrentAndAdjacentCards = (
   sortBy: number | undefined,
   cardName: string,
 ): UseQueryResult<UseCurrentAndAdjacentCardsResult | null, Error> => {
-  if (IS_USE_LOCAL_DATA) {
-    return useQuery<UseCurrentAndAdjacentCardsResult | null, Error>({
-      queryKey: [
-        "useCurrentAndAdjacentCardsLocal",
-        projectId,
-        seriesShortName,
-        setShortName,
-        "sortBy",
-        sortBy ?? "",
-        cardName,
-      ],
-      queryFn: async () => {
+  const enabled = IS_USE_LOCAL_DATA
+    ? Boolean(seriesShortName && setShortName)
+    : Boolean(seriesShortName && setShortName && cardName.trim());
+
+  return useQuery<UseCurrentAndAdjacentCardsResult | null, Error>({
+    queryKey: [
+      IS_USE_LOCAL_DATA
+        ? "useCurrentAndAdjacentCardsLocal"
+        : "useCurrentAndAdjacentCards",
+      projectId,
+      seriesShortName,
+      setShortName,
+      IS_USE_LOCAL_DATA ? "sortBy" : undefined,
+      sortBy ?? "",
+      cardName,
+    ].filter((k) => k !== undefined),
+    enabled,
+    placeholderData: IS_USE_LOCAL_DATA ? undefined : keepPreviousData,
+    queryFn: async () => {
+      if (IS_USE_LOCAL_DATA) {
         const card = await getJsonCardDetail(
           seriesShortName,
           setShortName,
           sortBy ?? 0,
           cardName,
         );
-
         const adjacentCards = await getAdjacentCards(
           seriesShortName,
           setShortName,
@@ -106,25 +98,8 @@ export const useCurrentAndAdjacentCards = (
           previousCard: adjacentCards.previousCard,
           nextCard: adjacentCards.nextCard,
         };
-      },
-      enabled: Boolean(seriesShortName && setShortName),
-    });
-  }
-  const enabled = Boolean(seriesShortName && setShortName && cardName.trim());
+      }
 
-  return useQuery<UseCurrentAndAdjacentCardsResult | null, Error>({
-    queryKey: [
-      "useCurrentAndAdjacentCards",
-      projectId,
-      seriesShortName,
-      setShortName,
-      sortBy ?? "",
-      cardName,
-    ],
-    enabled,
-    placeholderData: keepPreviousData,
-
-    queryFn: async () => {
       const card = await fetchCardDetail(
         seriesShortName,
         setShortName,
