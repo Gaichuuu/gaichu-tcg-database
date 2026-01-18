@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa";
+import packageJson from "../../package.json";
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Footer: React.FC = () => {
         <p>
           &copy;{" "}
           <span className="text-sm">
-            {new Date().getFullYear()} Gaichu v1.5.0
+            {new Date().getFullYear()} Gaichu v{packageJson.version}
           </span>
         </p>
         <div className="mt-2 flex items-center space-x-5 md:mt-0">
