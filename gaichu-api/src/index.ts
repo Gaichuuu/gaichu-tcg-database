@@ -1,14 +1,16 @@
 import { onRequest } from "firebase-functions/v2/https";
 import express from "express";
 import { corsMiddleware } from "./config/index.js";
-import { errorHandler, notFoundHandler } from "./middleware/index.js";
+import { errorHandler, notFoundHandler, rateLimiter, cacheHeaders } from "./middleware/index.js";
 import routes from "./routes/index.js";
 
 const app = express();
 
 // Middleware
 app.use(corsMiddleware);
-app.use(express.json());
+app.use(rateLimiter);
+app.use(express.json({ limit: "10kb" }));
+app.use(cacheHeaders);
 
 // Health check
 app.get("/", (_req, res) => {
@@ -40,6 +42,7 @@ export const api = onRequest(
     region: "us-central1",
     memory: "256MiB",
     timeoutSeconds: 60,
+    maxInstances: 10,
   },
   app,
 );
