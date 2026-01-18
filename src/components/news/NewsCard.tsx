@@ -7,11 +7,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
   const navigate = useNavigate();
 
   const dateMs =
-    typeof post.created_at === "number"
-      ? post.created_at
-      : (post as any)?.created_at?.seconds
-        ? (post as any).created_at.seconds * 1000
-        : Date.now();
+    typeof post.created_at === "number" ? post.created_at : Date.now();
 
   const go = () => navigate(`/news/${post.slug}`);
 

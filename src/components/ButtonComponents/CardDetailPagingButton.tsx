@@ -2,7 +2,8 @@
 import React from "react";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 import { CollectionCard } from "@/types/CollectionCard";
-import { useLocale, t } from "@/i18n/locale";
+import { useLocale, t } from "@/i18n";
+import { PagingType } from "./PagingType";
 
 type ButtonAction = {
   pagingType: PagingType;
@@ -10,11 +11,6 @@ type ButtonAction = {
   onClick: () => void;
   className?: string;
 };
-
-export enum PagingType {
-  Previous = "Previous",
-  Next = "Next",
-}
 
 const CardDetailPagingButton: React.FC<ButtonAction> = ({
   pagingType,
@@ -53,3 +49,4 @@ const CardDetailPagingButton: React.FC<ButtonAction> = ({
 };
 
 export default CardDetailPagingButton;
+export { PagingType } from "./PagingType";

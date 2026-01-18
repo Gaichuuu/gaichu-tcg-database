@@ -15,14 +15,14 @@ function prettifyBreadcrumbLabel(label: string): string {
 
 const Breadcrumbs: React.FC = () => {
   const location = useLocation();
-  if (location.pathname === "/") return null;
-
   const isNewsPost = /^\/news\/[^/]+$/.test(location.pathname);
   const slug = isNewsPost
     ? decodeURIComponent(location.pathname.split("/")[2] || "")
     : "";
 
   const { data: post } = useNewsBySlug(isNewsPost ? slug : "");
+
+  if (location.pathname === "/") return null;
 
   const rawItems = getBreadcrumbItems(location.pathname, { strict: false });
   const items = rawItems.map((it) => ({

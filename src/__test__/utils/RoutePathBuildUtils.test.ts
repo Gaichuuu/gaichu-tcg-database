@@ -129,6 +129,7 @@ describe("getCardDetailPath", () => {
       set_short_name: "Set/One",
       sort_by: 10,
       name: "Card Name",
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any;
 
     const expectedParams = {

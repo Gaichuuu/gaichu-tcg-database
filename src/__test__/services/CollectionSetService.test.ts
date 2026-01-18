@@ -3,6 +3,7 @@ import { cardListMock } from "@/__test__/__mock__/cardJson";
 import { setJsonMock } from "@/__test__/__mock__/setJson";
 import { beforeEach, describe, expect, it, vi, type Mock } from "vitest";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const fakeDb = {} as any;
 vi.mock("src/lib/firebase", () => ({
   database: fakeDb,

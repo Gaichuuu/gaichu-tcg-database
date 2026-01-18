@@ -1,5 +1,6 @@
 // src/components/news/NewsGrid.tsx
 import { useEffect, useRef } from "react";
+import { PageLoading, PageError } from "@/components/PageStates";
 import { useInfiniteNews } from "@/hooks/useNews";
 import { NewsCard } from "./NewsCard";
 
@@ -20,10 +21,8 @@ export function NewsGrid({ q }: { q: string }) {
     return () => io.disconnect();
   }, [hasNextPage, fetchNextPage]);
 
-  if (status === "pending")
-    return <p className="text-secondaryText px-4 py-10">Loading…</p>;
-  if (status === "error")
-    return <p className="text-errorText px-4 py-10">Couldn’t load news.</p>;
+  if (status === "pending") return <PageLoading />;
+  if (status === "error") return <PageError message="Failed to load news." />;
 
   const posts = data?.pages.flatMap((p) => p.items) ?? [];
 

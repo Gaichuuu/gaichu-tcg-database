@@ -17,9 +17,13 @@ export const useLatestNews = (count = 3) =>
 export const useInfiniteNews = (q: string, pageSize = 12) =>
   useInfiniteQuery<NewsPage>({
     queryKey: ["news", "infinite", q, pageSize],
-    initialPageParam: undefined as any,
+    initialPageParam: undefined,
     queryFn: ({ pageParam }) =>
-      fetchNewsPage({ limit: pageSize, cursor: pageParam, q }),
+      fetchNewsPage({
+        limit: pageSize,
+        cursor: pageParam as NewsPage["nextCursor"],
+        q,
+      }),
     getNextPageParam: (last) => last.nextCursor ?? undefined,
     staleTime: 60_000,
   });

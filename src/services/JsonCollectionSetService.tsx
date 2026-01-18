@@ -1,16 +1,45 @@
+import { CollectionCard } from "@/types/CollectionCard";
 import { SetAndCard } from "@/types/MergedCollection";
 import setsList from "data/sets.json";
 import { jsonCardList } from "./JsonCollectionCardService";
 
+interface JsonSetImage {
+  url: string;
+  pathType?: string;
+  frontDescription?: string;
+  backDescription?: string;
+  note?: string;
+  text?: string;
+  illustrator?: string;
+  packs?: Array<{ url: string; label: string }>;
+}
+
+interface JsonSet {
+  id: string;
+  short_name: string;
+  series_short_name: string;
+  series_id: string;
+  logo: string;
+  name: string;
+  sort_by: number;
+  description?: string;
+  set_images?: JsonSetImage[];
+  print_file_url?: string;
+  buy_url?: string;
+}
+
 export const getJsonSet = (seriesShortName: string): SetAndCard[] => {
   const cardList = jsonCardList(seriesShortName);
-  return setsList
-    .filter((set: any) => set.series_short_name === seriesShortName)
-    .map((set: any) => convertToSetAndCard(set, cardList))
+  return (setsList as JsonSet[])
+    .filter((set) => set.series_short_name === seriesShortName)
+    .map((set) => convertToSetAndCard(set, cardList))
     .sort((a, b) => a.set.sort_by - b.set.sort_by);
 };
 
-const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
+const convertToSetAndCard = (
+  set: JsonSet,
+  cardList: CollectionCard[],
+): SetAndCard => ({
   set: {
     id: set.id,
     short_name: set.short_name,
@@ -20,7 +49,7 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
     name: set.name,
     sort_by: set.sort_by,
     description: set.description,
-    set_images: set.set_images?.map((image: any) => ({
+    set_images: set.set_images?.map((image) => ({
       url: image.url,
       pathType: image.pathType,
       frontDescription: image.frontDescription,
@@ -28,26 +57,25 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       note: image.note,
       text: image.text,
       illustrator: image.illustrator,
-      packs: image.packs?.map((pack: any) => ({
+      packs: image.packs?.map((pack) => ({
         url: pack.url,
         label: pack.label,
       })),
     })),
   },
   cards: cardList
-
     .filter(
       (card) => Array.isArray(card.set_ids) && card.set_ids.includes(set.id),
     )
     .map((card) => ({
       id: card.id,
       total_cards_count: card.total_cards_count,
-      number: card.number!,
+      number: card.number,
       sort_by: card.sort_by,
 
       name: card.name,
       description: card.description,
-      attacks: (card.attacks ?? []).map((attack: any) => ({
+      attacks: (card.attacks ?? []).map((attack) => ({
         name: attack.name,
         effect: attack.effect,
         damage: attack.damage,
@@ -68,31 +96,31 @@ const convertToSetAndCard = (set: any, cardList: any[]): SetAndCard => ({
       illustrators: [...card.illustrators],
       zoo_attack: card.zoo_attack,
 
-      weakness: card.weakness?.map((w: any) => ({
+      weakness: card.weakness?.map((w) => ({
         type: w.type,
         value: w.value,
       })),
-      resistance: card.resistance?.map((r: any) => ({
+      resistance: card.resistance?.map((r) => ({
         type: r.type,
         value: r.value,
       })),
-      retreat: card.retreat?.map((rt: any) => ({ costs: rt.costs ?? [] })),
+      retreat: card.retreat?.map((rt) => ({ costs: rt.costs ?? [] })),
 
       measurement: {
         height: card.measurement?.height,
         weight: card.measurement?.weight,
       },
-      stage: card.stage?.map((stage: any) => ({
+      stage: card.stage?.map((stage) => ({
         basic: stage.basic,
         evolution: stage.evolution,
         description: stage.description,
       })),
 
-      rule: card.rule?.map((rule: any) => ({
+      rule: card.rule?.map((rule) => ({
         name: rule.name,
         description: rule.description,
       })),
-      sets: card.sets.map((s: any) => ({
+      sets: card.sets.map((s) => ({
         name: s.name,
         image: s.image,
       })),

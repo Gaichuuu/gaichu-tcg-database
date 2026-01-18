@@ -11,9 +11,12 @@ import {
   getDocs,
   doc,
   getDoc,
+  QueryConstraint,
+  DocumentSnapshot,
+  DocumentData,
 } from "firebase/firestore";
 
-export type NewsPage = { items: NewsPost[]; nextCursor?: any };
+export type NewsPage = { items: NewsPost[]; nextCursor?: DocumentSnapshot };
 
 const toTokens = (s: string) =>
   Array.from(
@@ -27,7 +30,7 @@ const toTokens = (s: string) =>
   ).slice(0, 10);
 
 const stripHtml = (s: string) => String(s || "").replace(/<[^>]+>/g, " ");
-const textHaystack = (p: any) =>
+const textHaystack = (p: NewsPost) =>
   [
     p.title ?? "",
     p.excerpt ?? "",
@@ -38,26 +41,28 @@ const textHaystack = (p: any) =>
     .join(" ")
     .toLowerCase();
 
+function docToNewsPost(d: DocumentSnapshot<DocumentData>): NewsPost {
+  const data = d.data() as Omit<NewsPost, "id">;
+  return { id: d.id, ...data };
+}
+
 export async function fetchLatestNews(limit = 3): Promise<NewsPost[]> {
   const col = collection(database, "news");
   const snap = await getDocs(
     query(col, orderBy("created_at", "desc"), ql(limit)),
   );
-  return snap.docs.map((d) => ({
-    id: d.id,
-    ...(d.data() as any),
-  })) as NewsPost[];
+  return snap.docs.map(docToNewsPost);
 }
 
 export async function fetchNewsPage(opts: {
   limit: number;
-  cursor?: any;
+  cursor?: DocumentSnapshot;
   q: string;
 }): Promise<NewsPage> {
   const col = collection(database, "news");
   const tokens = toTokens(opts.q);
 
-  const parts: any[] = [];
+  const parts: QueryConstraint[] = [];
   if (tokens.length === 1) {
     parts.push(where("searchPrefixes", "array-contains", tokens[0]));
   } else if (tokens.length > 1) {
@@ -69,10 +74,7 @@ export async function fetchNewsPage(opts: {
 
   try {
     const snap = await getDocs(query(col, ...parts));
-    let items = snap.docs.map((d) => ({
-      id: d.id,
-      ...(d.data() as any),
-    })) as NewsPost[];
+    let items = snap.docs.map(docToNewsPost);
 
     if (tokens.length > 1) {
       items = items.filter((p) =>
@@ -91,10 +93,7 @@ export async function fetchNewsPage(opts: {
     const snap = await getDocs(
       query(col, orderBy("created_at", "desc"), ql(fallbackFetch)),
     );
-    let items = snap.docs.map((d) => ({
-      id: d.id,
-      ...(d.data() as any),
-    })) as NewsPost[];
+    let items = snap.docs.map(docToNewsPost);
 
     if (tokens.length > 0) {
       items = items.filter((p) =>
@@ -110,7 +109,5 @@ export async function fetchNewsBySlug(slug: string): Promise<NewsPost | null> {
   if (!slug) return null;
   const ref = doc(database, "news", slug);
   const snap = await getDoc(ref);
-  return snap.exists()
-    ? ({ id: snap.id, ...(snap.data() as any) } as NewsPost)
-    : null;
+  return snap.exists() ? docToNewsPost(snap) : null;
 }

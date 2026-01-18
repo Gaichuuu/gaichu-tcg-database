@@ -1,49 +1,23 @@
 // src/pages/NewsPostPage.tsx
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import DOMPurify from "dompurify";
+import { PageLoading, PageError, PageNotFound } from "@/components/PageStates";
 import { useNewsBySlug } from "@/hooks/useNews";
 import Scale from "@/components/news/Scale";
 
 export default function NewsPostPage() {
   const { slug = "" } = useParams();
-  const { data: post, status, error } = useNewsBySlug(slug);
+  const { data: post, status } = useNewsBySlug(slug);
 
-  useEffect(() => {
-    console.log(
-      "[NewsPostPage] slug:",
-      slug,
-      "status:",
-      status,
-      "error:",
-      error,
-      "post:",
-      post,
-    );
-  }, [slug, status, error, post]);
+  const sanitizedHtml = useMemo(() => {
+    if (!post?.body_html) return "";
+    return DOMPurify.sanitize(post.body_html);
+  }, [post?.body_html]);
 
-  if (status === "pending") {
-    return (
-      <div className="text-secondaryText mx-auto max-w-4xl px-4 py-2">
-        Loading…
-      </div>
-    );
-  }
-
-  if (status === "error") {
-    return (
-      <div className="text-errorText mx-auto max-w-4xl px-4 py-2">
-        Failed to load post. Check console for details.
-      </div>
-    );
-  }
-
-  if (!post) {
-    return (
-      <div className="text-errorText mx-auto max-w-4xl px-4 py-2">
-        Post not found for slug: <code>{slug}</code>
-      </div>
-    );
-  }
+  if (status === "pending") return <PageLoading />;
+  if (status === "error") return <PageError message="Failed to load post." />;
+  if (!post) return <PageNotFound message={`Post not found: ${slug}`} />;
 
   return (
     <article className="mx-auto mb-2 max-w-4xl px-4 py-2">
@@ -71,10 +45,10 @@ export default function NewsPostPage() {
         </div>
       )}
 
-      {post.body_html ? (
+      {sanitizedHtml ? (
         <div
           className="mt-4 max-w-none space-y-4 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: post.body_html }}
+          dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
         />
       ) : (
         <p className="text-errorText mt-6">No content yet.</p>

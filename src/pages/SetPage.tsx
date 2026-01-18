@@ -51,7 +51,7 @@ const SetPage = () => {
               <img
                 src={img.url}
                 alt={getTitleSetImagePathType(img.pathType as SetImagePathType)}
-                className="border-secondaryBorder mb-0 block max-h-[100px] w-full rounded border object-contain transition-transform duration-200"
+                className="border-secondaryBorder mb-0 block max-h-25 w-full rounded border object-contain transition-transform duration-200"
               />
               <span className="mt-0.5 w-full text-center text-xs">
                 {getTitleSetImagePathType(img.pathType as SetImagePathType)}

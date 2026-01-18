@@ -24,7 +24,7 @@ import {
   SeriesListPath,
   SetListPath,
 } from "./utils/RoutePathBuildUtils";
-import { LocaleProvider } from "@/i18n/locale";
+import { LocaleProvider } from "@/i18n";
 
 const App: React.FC = () => {
   return (
