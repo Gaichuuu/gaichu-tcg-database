@@ -2,6 +2,7 @@
   "name": "gaichu",
   "private": true,
   "version": "1.6.0",
+  "description": "Gaichu TCG Database - Your #2 source for booleg card games!",
   "engines": {
     "node": ">=16.0.0"
   },
