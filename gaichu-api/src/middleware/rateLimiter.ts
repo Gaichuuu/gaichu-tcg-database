@@ -8,17 +8,22 @@ export const rateLimiter = rateLimit({
   standardHeaders: true, // Return rate limit info in headers
   legacyHeaders: false,
   handler: (_req, res) => {
-    res.status(429).json(
-      createErrorResponse(
-        ErrorCodes.RATE_LIMIT_EXCEEDED,
-        "Too many requests, please try again later",
-      ),
-    );
+    res
+      .status(429)
+      .json(
+        createErrorResponse(
+          ErrorCodes.RATE_LIMIT_EXCEEDED,
+          "Too many requests, please try again later",
+        ),
+      );
   },
+  // Use X-Forwarded-For header (set by Firebase/Cloud Run)
   keyGenerator: (req) => {
-    // Use X-Forwarded-For header (set by Firebase/Cloud Run) or fallback to IP
-    return (req.headers["x-forwarded-for"] as string)?.split(",")[0]?.trim()
-      || req.ip
-      || "unknown";
+    const forwarded = req.headers["x-forwarded-for"];
+    if (typeof forwarded === "string") {
+      return forwarded.split(",")[0]?.trim() || "unknown";
+    }
+    return "unknown";
   },
+  validate: { xForwardedForHeader: false },
 });
