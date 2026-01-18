@@ -31,5 +31,5 @@ stageServiceAccountKey.json
 CLAUDE.md
 
 # Build artifacts
-functions/lib
-functions/data
+gaichu-api/lib
+gaichu-api/data
