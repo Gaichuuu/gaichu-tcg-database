@@ -24,6 +24,10 @@
       "url": "./data/ash/cards.schema.json"
     },
     {
+      "fileMatch": ["**/data/disgruntled/cards.json"],
+      "url": "./data/disgruntled/cards.schema.json"
+    },
+    {
       "fileMatch": ["**/data/oz/cards.json"],
       "url": "./data/oz/cards.schema.json"
     },
