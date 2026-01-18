@@ -1074,15 +1074,15 @@
     ]
   },
   {
-    "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
+    "id": "c82550d0-3092-4480-b60b-283a3dbab478",
     "total_cards_count": 50,
-    "number": 45,
-    "sort_by": 45,
-    "name": "Alola Raichu",
-    "parody": "Alolan Raichu",
-    "variant": "Holo",
+    "number": 26,
+    "sort_by": 26,
+    "name": { "en": "Firefox", "ja": "ファイアフォックス" },
+    "parody": "Vulpix",
+    "variant": "Normal",
     "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
+    "rarity": "Common",
     "set_short_name": "set1",
     "series_short_name": "wm",
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
@@ -1092,20 +1092,166 @@
         "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
       }
     ],
-    "hp": "60",
-    "image": "https://gaichu.b-cdn.net/wm/set1/45.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/45-thumb.jpg",
-    "description": "This form only occurs in the Alola region. According to researchers, this adaptation is likely due to its diet.",
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/26-thumb.jpg",
+    "description": {
+      "en": "This Pokémon is born with one tail, which divides into six as it grows up.",
+      "ja": "しっぽが1本で生まれて、大きくなると6本に分かれるポケモン。"
+    },
     "measurement": {
-      "height": "7m",
-      "weight": "21kg"
+      "height": ".6m",
+      "weight": "9.9kg"
     },
     "attacks": [
       {
-        "name": "Psychic",
-        "effect": "Uses tarot cards to predict the future. Can also channel your dead grandma.",
-        "damage": "$100",
+        "name": { "en": "Will-o-wisp", "ja": "おにび" },
+        "effect": {
+          "en": "Attacks the opponent and burns them.",
+          "ja": "相手を攻撃し、火傷を負わせる。"
+        },
+        "costs": ["Fire"]
+      },
+      {
+        "name": { "en": "Grudge", "ja": "おんねん" },
+        "effect": {
+          "en": "It's resentful of the person who didn't send a happy birthday email.",
+          "ja": "誕生日おめでとうメールを送らなかった相手を恨んでいる。"
+        },
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
+    "total_cards_count": 50,
+    "number": 27,
+    "sort_by": 27,
+    "name": { "en": "Boat", "ja": "ボート" },
+    "parody": "Lapras",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/27-thumb.jpg",
+    "description": {
+      "en": "A peaceful Pokémon that is happy for you to be carried on its back.",
+      "ja": "背中に乗せてあげると喜ぶ、平和なポケモン。"
+    },
+    "measurement": {
+      "height": "2.5m",
+      "weight": "220kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Surf", "ja": "なみのり" },
+        "effect": {
+          "en": "Skilled at surfing and impresses its friends with its skills.",
+          "ja": "波乗りを得意とし、その技で仲間を感動させる。"
+        },
+        "damage": "90",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
+    "total_cards_count": 50,
+    "number": 28,
+    "sort_by": 28,
+    "name": { "en": "Shanpe", "ja": "シャンピー" },
+    "parody": "Abra",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/28.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/28-thumb.jpg",
+    "description": {
+      "en": "If it senses danger it will immediately teleport away.",
+      "ja": "危険を察知するとすぐにテレポートする。"
+    },
+    "measurement": {
+      "height": ".9m",
+      "weight": "19.5kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Teleport", "ja": "テレポート" },
+        "effect": {
+          "en": "To instantly teleport to another location. Also known as teleportation.",
+          "ja": "瞬時に別の場所にテレポートする。瞬間移動とも呼ばれる。"
+        },
         "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
+    "total_cards_count": 50,
+    "number": 29,
+    "sort_by": 29,
+    "name": { "en": "Sleepy Boy", "ja": "シュリーピーボーイ" },
+    "parody": "Snorlax",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/29-thumb.jpg",
+    "description": {
+      "en": "A fat, lazy, and always hungry Pokémon. It will eat anything, even if it's poisonous.",
+      "ja": "太っていて、怠け者で、いつもお腹をすかせているポケモン。毒があっても何でも食べてしまう。"
+    },
+    "measurement": {
+      "height": "2.1m",
+      "weight": "460kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Rest", "ja": "ねむる" },
+        "effect": {
+          "en": "Falls asleep. Snorlax is good at this move.",
+          "ja": "眠りについてしまう。カビゴンはこの技を得意としています。"
+        },
+        "costs": ["Normal"]
+      },
+      {
+        "name": { "en": "Snore", "ja": "いびき" },
+        "effect": {
+          "en": "Attacks while asleep.",
+          "ja": "眠っている間に攻撃する。"
+        },
+        "damage": "60",
+        "costs": ["Normal"]
       }
     ]
   },
@@ -1114,7 +1260,7 @@
     "total_cards_count": 50,
     "number": 30,
     "sort_by": 30,
-    "name": "Balloon",
+    "name": { "en": "Balloon", "ja": "バルーン" },
     "parody": "Drifloon",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -1131,16 +1277,145 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/30-thumb.jpg",
-    "description": "There are stories of it grabbing young children by the hand and dragging them to the afterlife.",
+    "description": {
+      "en": "There are stories of it grabbing young children by the hand and dragging them to the afterlife.",
+      "ja": "幼い子供の手を掴み、あの世に引きずり込むという話もある。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "1.2kg"
     },
     "attacks": [
       {
-        "name": "Selfdestruct",
-        "effect": "An exploding bomb that can injure yourself or others. Editor's note: I'm afraid the balloon will pop.",
+        "name": { "en": "Selfdestruct", "ja": "じばく" },
+        "effect": {
+          "en": "An exploding bomb that can injure yourself or others. Editor's note: I'm afraid the balloon will pop.",
+          "ja": "ユーザーが爆発し、自分や他人を傷つける。風船が割れるのが怖い。"
+        },
         "damage": "100",
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
+    "total_cards_count": 50,
+    "number": 31,
+    "sort_by": 31,
+    "name": { "en": "Egg Bath", "ja": "エッグバス" },
+    "parody": "Togepi",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "2",
+    "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/31-thumb.jpg",
+    "description": {
+      "en": "A Pokémon that seals happiness in its shell and gives it to people. It is said that it brings good luck.",
+      "ja": "幸福を殻に閉じ込め、人に贈るポケモン。幸運を呼ぶと言われている。"
+    },
+    "measurement": {
+      "height": ".3m",
+      "weight": "1.5kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Yawn", "ja": "あくび" },
+        "effect": {
+          "en": "When it yawns, the opponent will yawn too.",
+          "ja": "あくびをすると相手もあくびをする。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
+    "total_cards_count": 50,
+    "number": 32,
+    "sort_by": 32,
+    "name": { "en": "Sukawai", "ja": "スカワイ" },
+    "parody": "Mimikyu",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/32.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/32-thumb.jpg",
+    "description": {
+      "en": "Its exact appearance is unknown. A scholar who saw what was underneath the rag was overcome with fear and died of shock.",
+      "ja": "実際の姿は不明。ボロ布の下を見た学者が恐怖に圧倒され、ショック死した。"
+    },
+    "measurement": {
+      "height": ".2m",
+      "weight": ".7kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Copycat", "ja": "まねっこ" },
+        "effect": {
+          "en": "Copy the opponent.",
+          "ja": "相手をコピーする。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
+    "total_cards_count": 50,
+    "number": 33,
+    "sort_by": 33,
+    "name": { "en": "Big Bat", "ja": "ビッグバット" },
+    "parody": "Golbat",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/33-thumb.jpg",
+    "description": {
+      "en": "They love to drink blood. Once they sink their teeth into their prey, they can instantly take up to 10 ounces or more of blood.",
+      "ja": "血を飲むのが大好き。一度獲物に歯を立てると、瞬時に10オンス以上の血を吸う。"
+    },
+    "measurement": {
+      "height": "1.6m",
+      "weight": "55kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Screech", "ja": "いやなおと" },
+        "effect": {
+          "en": "It produces a very annoying noise.",
+          "ja": "使用者はひどく迷惑な音を出す。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -1150,7 +1425,7 @@
     "total_cards_count": 50,
     "number": 34,
     "sort_by": 34,
-    "name": "Beaver",
+    "name": { "en": "Beaver", "ja": "ビーバー" },
     "parody": "Bidoof",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -1167,20 +1442,689 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/34-thumb.jpg",
-    "description": "This Pokémon knows no fear. It is strong, fast, and cunning. Its daily routine is gnawing at logs.",
+    "description": {
+      "en": "This Pokémon knows no fear. It is strong, fast, and cunning. Its daily routine is gnawing at logs.",
+      "ja": "このポケモンは恐れを知らない。強く、速く、狡猾である。丸太をかじるのが日課。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "Taunt",
-        "effect": "To mentally and psychologically torment the opponent until they feel uncomfortable.",
+        "name": { "en": "Taunt", "ja": "ちょうはつ" },
+        "effect": {
+          "en": "To mentally and psychologically torment the opponent until they feel uncomfortable.",
+          "ja": "相手が嫌な思いをするまで精神的、心理的に苛める。"
+        },
         "costs": ["Normal"]
       }
     ]
   },
-
+  {
+    "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
+    "total_cards_count": 50,
+    "number": 35,
+    "sort_by": 35,
+    "name": { "en": "Kitty", "ja": "キティ" },
+    "parody": "Litten",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/35-thumb.jpg",
+    "description": {
+      "en": "Hates the affection from people it trusts. Twice a year, sets itself on fire to burn off the old fur.",
+      "ja": "信頼できる相手からの愛情も嫌う。年に2回、自分の体に火をつけ、古い毛皮を焼き払う。"
+    },
+    "measurement": {
+      "height": ".4m",
+      "weight": "4.3kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Double Kick", "ja": "にどげり" },
+        "effect": {
+          "en": "This skill is difficult to master. The opponent is beaten not just once, but twice.",
+          "ja": "相手を一度だけでなく、二度蹴る。使いこなすのが難しい技。"
+        },
+        "damage": "20",
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
+    "total_cards_count": 50,
+    "number": 36,
+    "sort_by": 36,
+    "name": { "en": "Motherless Boy", "ja": "マザーレスボーイ" },
+    "parody": "Cubone",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "25",
+    "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/36-thumb.jpg",
+    "description": {
+      "en": "Wears the skull of its deceased mother. It's said to evolve when enduring the pain of the mother's death.",
+      "ja": "亡き母の頭蓋骨を身に着けている。母の死の痛みに耐えたとき、進化するとも言われている。"
+    },
+    "measurement": {
+      "height": ".4m",
+      "weight": "6.5kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Bone Rush", "ja": "ボーンラッシュ" },
+        "effect": {
+          "en": "Rush towards the opponent and attack with bones.",
+          "ja": "相手に突進し、骨で攻撃する。"
+        },
+        "damage": "50",
+        "costs": ["Fighting"]
+      }
+    ]
+  },
+  {
+    "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
+    "total_cards_count": 50,
+    "number": 37,
+    "sort_by": 37,
+    "name": { "en": "Blob", "ja": "ブロブ" },
+    "parody": "Ditto",
+    "variant": "Normal",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Common",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/37-thumb.jpg",
+    "description": {
+      "en": "Not only can it take on the appearance and skills of other Pokémon, but you can also mate and breed with other Pokémon. Many trainers use them for breeding purposes.",
+      "ja": "ポケモンの姿や技になりきれるだけでなく、交尾や繁殖も可能。そのため、繁殖のために使うトレーナーも多い。"
+    },
+    "measurement": {
+      "height": ".3m",
+      "weight": "4kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Transform", "ja": "へんしん" },
+        "effect": {
+          "en": "Transform into the opponent.",
+          "ja": "相手に変身する。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
+    "total_cards_count": 50,
+    "number": 38,
+    "sort_by": 38,
+    "name": { "en": "Clompy", "ja": "クロンピー" },
+    "parody": "Pikachu",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/38-thumb.jpg",
+    "description": {
+      "en": "Pikachu is by far the most famous Pokémon. Its personality has changed with the games and attention it receives.",
+      "ja": "ピカチュウは、圧倒的に有名なポケモンです。ゲームと注目によってその性格が変わりました"
+    },
+    "measurement": {
+      "height": ".4m",
+      "weight": "6kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Shock", "ja": "ショック" },
+        "effect": {
+          "en": "Pikachu gives the opponent an electric shock as strong as a toaster.",
+          "ja": "ピカチュウが相手に与える電気ショックは、トースター並みの強さ"
+        },
+        "damage": "30",
+        "costs": ["Electric"]
+      }
+    ]
+  },
+  {
+    "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
+    "total_cards_count": 50,
+    "number": 39,
+    "sort_by": 39,
+    "name": { "en": "Dark Boy", "ja": "ダークボーイ" },
+    "parody": "Umbreon",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/39-thumb.jpg",
+    "description": {
+      "en": "The light emitted from its ring can be dimmed to become completely invisible in the dark of night.",
+      "ja": "リングから放たれる光を弱めることができるので、夜の暗闇の中では完全に見えなくなることもある。"
+    },
+    "measurement": {
+      "height": "1m",
+      "weight": "27kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Confuse Ray", "ja": "あやしいひかり" },
+        "effect": {
+          "en": "This attack makes the opponent question reality. Forces them to ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
+          "ja": "この攻撃は、ターゲットに現実を疑わせます。相手は、映画館でどの肘掛が自分のものなのか、といった哲学的な深い問いかけを考えてしまいます。"
+        },
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
+    "total_cards_count": 50,
+    "number": 40,
+    "sort_by": 40,
+    "name": { "en": "Light Boy", "ja": "ライトボイ" },
+    "parody": "Espeon",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/40-thumb.jpg",
+    "description": {
+      "en": "This Pokémon is very loyal to whomever suits it best.",
+      "ja": "このポケモンは、自分に都合の良い相手には非常に忠実である。"
+    },
+    "measurement": {
+      "height": "1m",
+      "weight": "27kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Psychic", "ja": "サイコキネシス" },
+        "effect": {
+          "en": "An experimental move using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience. Also known as a bad trip.",
+          "ja": "サイキックエネルギーによる攻撃で、相手に強烈で不快なサイケデリックな体験をさせる。バッドトリップとも呼ばれる。"
+        },
+        "damage": "90",
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
+    "total_cards_count": 50,
+    "number": 41,
+    "sort_by": 41,
+    "name": { "en": "Hanbot", "ja": "ハンボット" },
+    "parody": "Blastoise",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/41-thumb.jpg",
+    "description": {
+      "en": "The water stream from the shell's rocket launcher has the destructive power to pierce even thick steel plates with a single shot.",
+      "ja": "こうらの ロケットほうから ふきだすすいりゅうは ぶあつい てっぱんもいっぱつで つらぬく はかいりょく。"
+    },
+    "measurement": {
+      "height": "1.6m",
+      "weight": "85kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Hydro Pump", "ja": "ハイドロポンプ" },
+        "effect": {
+          "en": "Shoots a powerful jet of water at the opponent. Also effective at cleaning cars and trucks.",
+          "ja": "強力な水流を相手に浴びせる。車やトラックの清掃にも有効。"
+        },
+        "damage": "150",
+        "costs": ["Water"]
+      }
+    ]
+  },
+  {
+    "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
+    "total_cards_count": 50,
+    "number": 42,
+    "sort_by": 42,
+    "name": { "en": "Trumpety", "ja": "トランプティ" },
+    "parody": "Charizard",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/42-thumb.jpg",
+    "description": {
+      "en": "Able to melt giant rocks with its fire breath.",
+      "ja": "炎のブレスで巨大な岩を溶かすことができる。"
+    },
+    "measurement": {
+      "height": "1.7m",
+      "weight": "90kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Fire Blast", "ja": "だいもんじ" },
+        "effect": {
+          "en": "A powerful flame that can deal a lot of damage. Can also be used to make s'mores.",
+          "ja": "強力な炎を放つ。大ダメージを与えることができるが、スモアの材料にもなる。"
+        },
+        "damage": "150",
+        "costs": ["Fire"]
+      }
+    ]
+  },
+  {
+    "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
+    "total_cards_count": 50,
+    "number": 43,
+    "sort_by": 43,
+    "name": { "en": "Veronica", "ja": "ベロニカ" },
+    "parody": "Venusaur",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/43-thumb.jpg",
+    "description": {
+      "en": "The day after it rains, the scent of flowers on its back intensifies. Pokémon gather there, drawn by the scent.",
+      "ja": "あめの ふった よくじつは せなかの はなの かおりが つよまる。かおりに さそわれ ポケモンが あつまる。"
+    },
+    "measurement": {
+      "height": "2m",
+      "weight": "100kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Solarbeam", "ja": "ソーラービーム" },
+        "effect": {
+          "en": "Attacks the opponent with energy collected from the sun. Also gives them Vitamin D and may cause a sunburn.",
+          "ja": "太陽から集めたエネルギーで相手を攻撃する。ビタミンDを浴びせ、日焼けさせる。"
+        },
+        "damage": "150",
+        "costs": ["Grass"]
+      }
+    ]
+  },
+  {
+    "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
+    "total_cards_count": 50,
+    "number": 44,
+    "sort_by": 44,
+    "name": { "en": "Naruto", "ja": "なると" },
+    "parody": "Dragonite",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/wm/set1/44.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/44-thumb.jpg",
+    "description": {
+      "en": "It can fly faster than any other Pokémon. It can circle the Earth in just 16 hours.",
+      "ja": "他のどのポケモンよりも速く飛ぶことができる。わずか16時間で地球を一周することができる。"
+    },
+    "measurement": {
+      "height": "2.2m",
+      "weight": "210kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Dragon Dance", "ja": "りゅうのまい" },
+        "effect": {
+          "en": "The user performs a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
+          "ja": "使用者は攻撃力とスピードが上がる舞をする。最大で30分の効果があり、何度も衣装替えをする必要がある。"
+        },
+        "costs": ["Dragon"]
+      }
+    ]
+  },
+  {
+    "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
+    "total_cards_count": 50,
+    "number": 45,
+    "sort_by": 45,
+    "name": { "en": "Alola Pachu", "ja": "アローラ パチュー" },
+    "parody": "Alolan Raichu",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/wm/set1/45.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/45-thumb.jpg",
+    "description": {
+      "en": "This form only occurs in the Alola region. According to researchers, this adaptation is likely due to its diet.",
+      "ja": "この形態に進化するのはアローラ地方だけである。研究者によると、この進化は食事が原因らしい。"
+    },
+    "measurement": {
+      "height": ".7m",
+      "weight": "21kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Psychic", "ja": "サイコキネシス" },
+        "effect": {
+          "en": "Uses tarot cards to predict the future. Can also channel your dead grandma ($100).",
+          "ja": "タロットカードを使って、相手の未来を予言します。また、死んだおばあちゃんとチャネリングすることもできる（100ドル）。"
+        },
+        "costs": ["Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
+    "total_cards_count": 50,
+    "number": 46,
+    "sort_by": 46,
+    "name": { "en": "Gontar", "ja": "ゴンター" },
+    "parody": "Gengar",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/wm/set1/46.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/46-thumb.jpg",
+    "description": {
+      "en": "It absorbs heat from anything around it. If you suddenly feel a chill, it's a sign that Gengar is nearby.",
+      "ja": "周囲に居るものから熱を吸収する。突然の寒気を感じたら、ゲンガーが近くにいる証拠です。"
+    },
+    "measurement": {
+      "height": "1.5m",
+      "weight": "40kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Curse", "ja": "のろい" },
+        "effect": {
+          "en": "This technique inflicts bad luck on the opponent. This includes various types of misfortune, such as being hit by lightning or being stuck in traffic.",
+          "ja": "この技は相手に不運を与えます。雷に打たれる、渋滞に巻き込まれるなど、さまざまな運があります。"
+        },
+        "costs": ["Dark"]
+      }
+    ]
+  },
+  {
+    "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
+    "total_cards_count": 50,
+    "number": 47,
+    "sort_by": 47,
+    "name": { "en": "Dakarei", "ja": "だかれい" },
+    "parody": "Mewtwo",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/wm/set1/47.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/47-thumb.jpg",
+    "description": {
+      "en": "A Pokémon created in a laboratory through gene splicing. It has a body suited for battle, but lacks a compassionate heart.",
+      "ja": "研究所で遺伝子スプライシングによって作られたポケモン。戦闘に適した体つきをしているが、思いやりの心は持ち合わせていない。"
+    },
+    "measurement": {
+      "height": "2m",
+      "weight": "122kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Future Sight", "ja": "みらいよち" },
+        "effect": {
+          "en": "Attacks the opponent in the future with psychic powers. Pray that it's not when you're on the toilet.",
+          "ja": "超能力で未来の相手を攻撃する。トイレの時でないことを祈る。"
+        },
+        "costs": ["Psychic", "Psychic", "Psychic"]
+      }
+    ]
+  },
+  {
+    "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
+    "total_cards_count": 50,
+    "number": 48,
+    "sort_by": 48,
+    "name": { "en": "Gau", "ja": "ガウ" },
+    "parody": "Mew",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/wm/set1/48.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/48-thumb.jpg",
+    "description": {
+      "en": "This Pokémon has always been rare, and is believed to be the ancestor of all Pokémon.",
+      "ja": "このポケモンは非常に珍しい。全ポケモンの祖先であるとの説が有力である。"
+    },
+    "measurement": {
+      "height": ".4m",
+      "weight": "4kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Transform", "ja": "へんしん" },
+        "effect": {
+          "en": "It can take on the exact same appearance as the opponent and use their techniques. If this technique is used on one of its own kind, it will result in a long night.",
+          "ja": "相手と全く同じ姿になり、その技を使うことができる。この技を同人に使うと、長い夜を過ごすことになる。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
+    "total_cards_count": 50,
+    "number": 49,
+    "sort_by": 49,
+    "name": { "en": "Are You Who", "ja": "アーフーユー" },
+    "parody": "Arceus",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "∞",
+    "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/49-thumb.jpg",
+    "description": {
+      "en": "It is said to have emerged from an egg in the middle of nowhere and created the world.",
+      "ja": "何もない所に出現した卵から生まれ、世界を創造したと言われている。"
+    },
+    "measurement": {
+      "height": "3.2m",
+      "weight": "320kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Judgment", "ja": "さばき" },
+        "effect": {
+          "en": "Arceus looks at you with judgment. As a god, it knows all your weirdness.",
+          "ja": "アルセウスは裁きの目であなたを見つめる。神様なので、あなたの全ての変態的な部分を知っている。"
+        },
+        "costs": ["Normal"]
+      }
+    ]
+  },
+  {
+    "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
+    "total_cards_count": 50,
+    "number": 50,
+    "sort_by": 50,
+    "name": { "en": "Shiny Fish", "ja": "ぴかぴかする フィッシュウ" },
+    "parody": "Magikarp",
+    "variant": "Holo",
+    "illustrators": ["Alex Roh"],
+    "rarity": "Rare",
+    "set_short_name": "set1",
+    "series_short_name": "wm",
+    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "sets": [
+      {
+        "name": "Set One (reprint)",
+        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
+      }
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
+    "thumb": "https://gaichu.b-cdn.net/wm/set1/50-thumb.jpg",
+    "description": {
+      "en": "This Pokémon is nearly useless in battle, but it tastes delicious when roasted and seasoned with salt.",
+      "ja": "このポケモンは戦闘にはほとんど役立たないが、塩を付けて焼くと美味しい。"
+    },
+    "measurement": {
+      "height": ".9m",
+      "weight": "10kg"
+    },
+    "attacks": [
+      {
+        "name": { "en": "Splash", "ja": "はねる" },
+        "effect": {
+          "en": "In most cases, it does no damage. (Roll a d6 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
+          "ja": "ほとんどの場合、ダメージを与えない。(サイコロを5回振って、全て同じ目が出たら一撃KO)"
+        },
+        "damage": "0",
+        "costs": ["Water"]
+      }
+    ]
+  },
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
     "total_cards_count": 50,
@@ -1217,184 +2161,6 @@
       }
     ]
   },
-  {
-    "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
-    "total_cards_count": 50,
-    "number": 40,
-    "sort_by": 40,
-    "name": "Light Boy",
-    "parody": "Espeon",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "60",
-    "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/40-thumb.jpg",
-    "description": "This Pokémon is very loyal to whomever suits it best.",
-    "measurement": {
-      "height": "1m",
-      "weight": "27kg"
-    },
-    "attacks": [
-      {
-        "name": "Psychic",
-        "effect": "An experimental move using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience. Also known as a bad trip.",
-        "damage": "90",
-        "costs": ["Psychic"]
-      }
-    ]
-  },
-  {
-    "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
-    "total_cards_count": 50,
-    "number": 42,
-    "sort_by": 42,
-    "name": "Trumpety",
-    "parody": "Charizard",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "120",
-    "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/42-thumb.jpg",
-    "description": "Able to melt giant rocks with its fire breath.",
-    "measurement": {
-      "height": "1.7m",
-      "weight": "90kg"
-    },
-    "attacks": [
-      {
-        "name": "Fire Blast",
-        "effect": "A powerful flame that can deal a lot of damage. Can also be used to make s'mores.",
-        "damage": "150",
-        "costs": ["Fire"]
-      }
-    ]
-  },
-  {
-    "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
-    "total_cards_count": 50,
-    "number": 32,
-    "sort_by": 32,
-    "name": "Sukawai",
-    "parody": "Mimikyu",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "30",
-    "image": "https://gaichu.b-cdn.net/wm/set1/32.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/32-thumb.jpg",
-    "description": "Its exact appearance is unknown. A scholar who saw what was underneath the rag was overcome with fear and died of shock.",
-    "measurement": {
-      "height": ".2m",
-      "weight": ".7kg"
-    },
-    "attacks": [
-      {
-        "name": "Copycat",
-        "effect": "Copy the opponent.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
-    "total_cards_count": 50,
-    "number": 48,
-    "sort_by": 48,
-    "name": "Gau",
-    "parody": "Mew",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "30",
-    "image": "https://gaichu.b-cdn.net/wm/set1/48.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/48-thumb.jpg",
-    "description": "This Pokémon has always been rare, and is believed to be the ancestor of all Pokémon.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "4kg"
-    },
-    "attacks": [
-      {
-        "name": "Transform",
-        "effect": "It can take on the exact same appearance as the opponent and use their techniques. If this is used on a doujin (same person), it will result in a long night.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
-    "total_cards_count": 50,
-    "number": 28,
-    "sort_by": 28,
-    "name": "Shanpe",
-    "parody": "Abra",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/28.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/28-thumb.jpg",
-    "description": "If it senses danger it will immediately teleport away.",
-    "measurement": {
-      "height": ".9m",
-      "weight": "19.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Teleport",
-        "effect": "To instantly teleport to another location. Also known as teleportation.",
-        "costs": ["Psychic"]
-      }
-    ]
-  },
-
   {
     "id": "27d41ee8-e9af-440b-b633-551140734996",
     "total_cards_count": 50,
@@ -1437,42 +2203,6 @@
     ]
   },
   {
-    "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
-    "total_cards_count": 50,
-    "number": 44,
-    "sort_by": 44,
-    "name": "Naruto",
-    "parody": "Dragonite",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "120",
-    "image": "https://gaichu.b-cdn.net/wm/set1/44.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/44-thumb.jpg",
-    "description": "It can fly faster than any other Pokémon. It can circle the Earth in just 16 hours.",
-    "measurement": {
-      "height": "2.2m",
-      "weight": "210kg"
-    },
-    "attacks": [
-      {
-        "name": "Dragon Dance",
-        "effect": "The user performs a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
-        "costs": ["Dragon"]
-      }
-    ]
-  },
-
-  {
     "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
     "total_cards_count": 50,
     "number": 5,
@@ -1508,7 +2238,6 @@
       }
     ]
   },
-
   {
     "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
     "total_cards_count": 50,
@@ -1545,114 +2274,6 @@
       }
     ]
   },
-  {
-    "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
-    "total_cards_count": 50,
-    "number": 41,
-    "sort_by": 41,
-    "name": "Hanbot",
-    "parody": "Blastoise",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "150",
-    "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/41-thumb.jpg",
-    "description": "The water stream from the shell's rocket launcher has the destructive power to pierce even thick steel plates with a single shot.",
-    "measurement": {
-      "height": "1.6m",
-      "weight": "85kg"
-    },
-    "attacks": [
-      {
-        "name": "Hydro Pump",
-        "effect": "Shoots a powerful jet of water at the opponent. Also effective at cleaning cars and trucks.",
-        "damage": "150",
-        "costs": ["Water"]
-      }
-    ]
-  },
-  {
-    "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
-    "total_cards_count": 50,
-    "number": 46,
-    "sort_by": 46,
-    "name": "Gontar",
-    "parody": "Gengar",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "80",
-    "image": "https://gaichu.b-cdn.net/wm/set1/46.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/46-thumb.jpg",
-    "description": "It absorbs heat from anything around it. If you suddenly feel a chill, it's a sign that Gengar is nearby.",
-    "measurement": {
-      "height": "1.5m",
-      "weight": "40kg"
-    },
-    "attacks": [
-      {
-        "name": "Curse",
-        "effect": "This technique inflicts injustice on the opponent. This includes various types of bad luck, such as being hit by lightning or being stuck in traffic.",
-        "costs": ["Dark"]
-      }
-    ]
-  },
-  {
-    "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
-    "total_cards_count": 50,
-    "number": 50,
-    "sort_by": 50,
-    "name": "Shiny Fish",
-    "parody": "Magikarp",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/50-thumb.jpg",
-    "description": "This Pokémon is nearly useless in battle, but it tastes delicious when roasted and seasoned with salt.",
-    "measurement": {
-      "height": ".9m",
-      "weight": "10kg"
-    },
-    "attacks": [
-      {
-        "name": "Splash",
-        "effect": "In most cases, it does no damage. (Roll a d6 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
-        "damage": "0",
-        "costs": ["Water"]
-      }
-    ]
-  },
-
   {
     "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
     "total_cards_count": 50,
@@ -1762,156 +2383,6 @@
     ]
   },
   {
-    "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
-    "total_cards_count": 50,
-    "number": 39,
-    "sort_by": 39,
-    "name": "Dark Boy",
-    "parody": "Umbreon",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "90",
-    "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/39-thumb.jpg",
-    "description": "The light emitted from its ring can be dimmed to become completely invisible in the dark of night.",
-    "measurement": {
-      "height": "1m",
-      "weight": "27kg"
-    },
-    "attacks": [
-      {
-        "name": "Confuse Ray",
-        "effect": "This attack makes the opponent question reality. Forces them to ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
-        "costs": ["Dark"]
-      }
-    ]
-  },
-  {
-    "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
-    "total_cards_count": 50,
-    "number": 43,
-    "sort_by": 43,
-    "name": "Veronica",
-    "parody": "Venusaur",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "110",
-    "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/43-thumb.jpg",
-    "description": "The day after it rains, the scent of flowers on its back intensifies. Pokémon gather there, drawn by the scent.",
-    "measurement": {
-      "height": "2m",
-      "weight": "100kg"
-    },
-    "attacks": [
-      {
-        "name": "Solarbeam",
-        "effect": "Attacks the opponent with energy collected from the sun. Also gives them Vitamin D and may cause a sunburn.",
-        "damage": "150",
-        "costs": ["Grass"]
-      }
-    ]
-  },
-  {
-    "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
-    "total_cards_count": 50,
-    "number": 27,
-    "sort_by": 27,
-    "name": "Boat",
-    "parody": "Lapras",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "90",
-    "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/27-thumb.jpg",
-    "description": "A peaceful Pokémon that is happy for you to be carried on its back.",
-    "measurement": {
-      "height": "2.5m",
-      "weight": "220kg"
-    },
-    "attacks": [
-      {
-        "name": "Surf",
-        "effect": "Skilled at surfing and impresses its friends with its skills.",
-        "damage": "90",
-        "costs": ["Water"]
-      }
-    ]
-  },
-
-  {
-    "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
-    "total_cards_count": 50,
-    "number": 29,
-    "sort_by": 29,
-    "name": "Sleepy Boy",
-    "parody": "Snorlax",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "100",
-    "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/29-thumb.jpg",
-    "description": "A fat, lazy, and always hungry Pokémon. It will eat anything, even if it's poisonous.",
-    "measurement": {
-      "height": "2.1m",
-      "weight": "460kg"
-    },
-    "attacks": [
-      {
-        "name": "Rest",
-        "effect": "Falls asleep. Snorlax is good at this move.",
-        "costs": ["Normal"]
-      },
-      {
-        "name": "Snore",
-        "effect": "Attacks while asleep.",
-        "damage": "60",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-
-  {
     "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
     "total_cards_count": 50,
     "number": 4,
@@ -1947,43 +2418,6 @@
       }
     ]
   },
-
-  {
-    "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
-    "total_cards_count": 50,
-    "number": 35,
-    "sort_by": 35,
-    "name": "Kitty",
-    "parody": "Litten",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/35-thumb.jpg",
-    "description": "Hates the affection from people it trusts. Twice a year, sets itself on fire to burn off the old fur.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "4.3kg"
-    },
-    "attacks": [
-      {
-        "name": "Double Kick",
-        "effect": "This skill is difficult to master. The opponent is beaten not just once, but twice.",
-        "damage": "20",
-        "costs": ["Fighting"]
-      }
-    ]
-  },
   {
     "id": "b7e60ae3-6fdf-4b69-a5b5-18f6e0d70676",
     "total_cards_count": 50,
@@ -2016,77 +2450,6 @@
         "name": "Stomp",
         "effect": "Trample and forcefully attack your opponent.",
         "damage": "35",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-
-  {
-    "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
-    "total_cards_count": 50,
-    "number": 47,
-    "sort_by": 47,
-    "name": "Dakarei",
-    "parody": "Mewtwo",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "200",
-    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/00-thumb.jpg",
-    "description": "A Pokémon created in a laboratory through gene splicing. It has a body suited for battle, but lacks a compassionate heart.",
-    "measurement": {
-      "height": "2m",
-      "weight": "122kg"
-    },
-    "attacks": [
-      {
-        "name": "Future Sight",
-        "effect": "Attacks the opponent in the future with psychic powers. Pray that it's not when you're on the toilet.",
-        "costs": ["Psychic", "Psychic", "Psychic"]
-      }
-    ]
-  },
-  {
-    "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
-    "total_cards_count": 50,
-    "number": 49,
-    "sort_by": 49,
-    "name": "Are You Who",
-    "parody": "Arceus",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "∞",
-    "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/49-thumb.jpg",
-    "description": "It is said to have emerged from an egg in the middle of nowhere and created the world.",
-    "measurement": {
-      "height": "3.2m",
-      "weight": "320kg"
-    },
-    "attacks": [
-      {
-        "name": "Judgment",
-        "effect": "Arceus looks at you with judgment. As a god, it knows all your weirdness.",
         "costs": ["Normal"]
       }
     ]
@@ -2127,225 +2490,6 @@
       }
     ]
   },
-
-  {
-    "id": "c82550d0-3092-4480-b60b-283a3dbab478",
-    "total_cards_count": 50,
-    "number": 26,
-    "sort_by": 26,
-    "name": "Firefox",
-    "parody": "Vulpix",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "30",
-    "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/26-thumb.jpg",
-    "description": "This Pokémon is born with one tail, which divides into six as it grows up.",
-    "measurement": {
-      "height": ".6m",
-      "weight": "9.9kg"
-    },
-    "attacks": [
-      {
-        "name": "Will-o-wisp",
-        "effect": "Attacks the opponent and burns them.",
-        "costs": ["Fire"]
-      },
-      {
-        "name": "Grudge",
-        "effect": "It's resentful of the person who didn't send a happy birthday email.",
-        "costs": ["Dark"]
-      }
-    ]
-  },
-  {
-    "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
-    "total_cards_count": 50,
-    "number": 36,
-    "sort_by": 36,
-    "name": "Motherless Boy",
-    "parody": "Cubone",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "25",
-    "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/36-thumb.jpg",
-    "description": "Wears the skull of its deceased mother. It's said to evolve when enduring the pain of the mother's death.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "6.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Bone Rush",
-        "effect": "Rush towards the opponent and attack with bones.",
-        "damage": "50",
-        "costs": ["Fighting"]
-      }
-    ]
-  },
-  {
-    "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
-    "total_cards_count": 50,
-    "number": 33,
-    "sort_by": 33,
-    "name": "Big Bat",
-    "parody": "Golbat",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "60",
-    "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/33-thumb.jpg",
-    "description": "They love to drink blood. Once they sink their teeth into their prey, they can instantly take up to 10 ounces or more of blood.",
-    "measurement": {
-      "height": "1.6m",
-      "weight": "55kg"
-    },
-    "attacks": [
-      {
-        "name": "Screech",
-        "effect": "It produces a very annoying noise.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
-    "total_cards_count": 50,
-    "number": 38,
-    "sort_by": 38,
-    "name": "Clompy",
-    "parody": "Pikachu",
-    "variant": "Holo",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/38-thumb.jpg",
-    "description": "Pikachu is by far the most famous Pokémon. Its personality has changed with the games and attention it receives.",
-    "measurement": {
-      "height": ".4m",
-      "weight": "6kg"
-    },
-    "attacks": [
-      {
-        "name": "Shock",
-        "effect": "Pikachu gives the opponent an electric shock as strong as a toaster.",
-        "damage": "30",
-        "costs": ["Electric"]
-      }
-    ]
-  },
-  {
-    "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
-    "total_cards_count": 50,
-    "number": 31,
-    "sort_by": 31,
-    "name": "Egg Bath",
-    "parody": "Togepi",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "2",
-    "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/31-thumb.jpg",
-    "description": "A Pokémon that seals happiness in its shell and gives it to people. It is said that it brings good luck.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "1.5kg"
-    },
-    "attacks": [
-      {
-        "name": "Yawn",
-        "effect": "When it yawns, the opponent will yawn too.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-  {
-    "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
-    "total_cards_count": 50,
-    "number": 37,
-    "sort_by": 37,
-    "name": "Blob",
-    "parody": "Ditto",
-    "variant": "Normal",
-    "illustrators": ["Alex Roh"],
-    "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
-    ],
-    "hp": "200",
-    "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
-    "thumb": "https://gaichu.b-cdn.net/wm/set1/37-thumb.jpg",
-    "description": "Not only can it take on the appearance and skills of other Pokémon, but you can also mate and breed with other Pokémon. Many trainers use them for breeding purposes.",
-    "measurement": {
-      "height": ".3m",
-      "weight": "4kg"
-    },
-    "attacks": [
-      {
-        "name": "Transform",
-        "effect": "Transform into the opponent.",
-        "costs": ["Normal"]
-      }
-    ]
-  },
-
   {
     "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
     "total_cards_count": 50,

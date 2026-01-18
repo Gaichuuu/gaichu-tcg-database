@@ -6,6 +6,7 @@ import CardsListTile from "@/components/TileComponents/CardsListTile";
 import HoverTooltip from "@/components/TileComponents/HoverTooltip";
 import { useParams } from "react-router-dom";
 import { useLocale, t } from "@/i18n";
+import { SeriesShortName } from "@/services/CollectionSeriesService";
 
 interface CardListProps {
   collectionCards: CollectionCard[];
@@ -19,11 +20,11 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
 
   const tooltipWidth = function (seriesShortName: string) {
     switch (seriesShortName) {
-      case "oz":
+      case SeriesShortName.oz:
         return "w-[26rem]";
-      case "mz":
+      case SeriesShortName.mz:
         return "w-[30rem]";
-      case "ash":
+      case SeriesShortName.ash:
         return "w-[24rem]";
       default:
         return "w-80";
@@ -131,8 +132,8 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                         );
                       })}
 
-                    {series !== "oz" &&
-                      series !== "mz" &&
+                    {series !== SeriesShortName.oz &&
+                      series !== SeriesShortName.mz &&
                       card?.description && (
                         <tr>
                           <th className="py-2 pr-4 text-left">Flavor Text</th>

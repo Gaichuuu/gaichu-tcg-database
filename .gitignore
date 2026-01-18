@@ -29,3 +29,7 @@ stageServiceAccountKey.json
 # Local files
 .claude/
 CLAUDE.md
+
+# Build artifacts
+functions/lib
+functions/data
