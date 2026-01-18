@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "gaichu-fe55f",
+    "staging": "gaichu-stage"
+  }
+}
