@@ -2,7 +2,7 @@
   "functions": [
     {
       "source": "gaichu-api",
-      "codebase": "default",
+      "codebase": "gaichu-api",
       "ignore": [
         "node_modules",
         ".git",
