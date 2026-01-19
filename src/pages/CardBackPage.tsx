@@ -2,6 +2,8 @@
 import React, { useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { useSet } from "@/hooks/useCollection";
+import { CardDetailRow } from "@/components/CardDetail";
+import { CDN_BASE_URL } from "@/services/Constants";
 import {
   getTitleSetImagePathType,
   SetImagePathType,
@@ -25,7 +27,7 @@ const CardBackPage: React.FC = () => {
 
   const backUrl =
     seriesKey && setKey
-      ? `https://gaichu.b-cdn.net/${seriesKey}/${setKey}/00.jpg?v=2`
+      ? `${CDN_BASE_URL}/${seriesKey}/${setKey}/00.jpg?v=2`
       : "";
 
   if (setError || !cardBack) return <p>Not found.</p>;
@@ -51,22 +53,15 @@ const CardBackPage: React.FC = () => {
           <table className="w-full border-collapse">
             <tbody>
               {cardBack.text && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Text</th>
-                  <td className="py-2">{cardBack.text}</td>
-                </tr>
+                <CardDetailRow label="Text">{cardBack.text}</CardDetailRow>
               )}
               {cardBack.illustrator && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Illustrator</th>
-                  <td className="py-2">{cardBack.illustrator}</td>
-                </tr>
+                <CardDetailRow label="Illustrator">
+                  {cardBack.illustrator}
+                </CardDetailRow>
               )}
               {cardBack.note && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Note</th>
-                  <td className="py-2">{cardBack.note}</td>
-                </tr>
+                <CardDetailRow label="Note">{cardBack.note}</CardDetailRow>
               )}
             </tbody>
           </table>
