@@ -309,8 +309,8 @@ const CardDetailPage: React.FC = () => {
                             />
                           )}
                           {atk.effect && (
-                              <IconText text={atk.effect} series={seriesKey} />
-                            )}
+                            <IconText text={atk.effect} series={seriesKey} />
+                          )}
                         </td>
                       </tr>
                     </React.Fragment>

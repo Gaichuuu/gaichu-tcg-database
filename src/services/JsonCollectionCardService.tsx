@@ -20,8 +20,20 @@ import wmCardList from "../../data/wm/cards.json";
 import ashCardList from "../../data/ash/cards.json";
 import ozCardList from "../../data/oz/cards.json";
 import disgruntledCardList from "../../data/disgruntled/cards.json";
+import setsList from "../../data/sets.json";
 import { CollectionCard } from "@/types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
+
+interface JsonSet {
+  id: string;
+  short_name: string;
+  series_short_name: string;
+  name: string;
+  logo: string;
+  total_cards_count?: number;
+}
+
+const setsById = new Map((setsList as JsonSet[]).map((s) => [s.id, s]));
 
 // FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
 export const SerieCardList: Record<SeriesShortName, unknown[]> = {
@@ -109,7 +121,6 @@ const AttackSchemaRaw = z.object({
 
 const CardSchemaRaw = z.object({
   id: z.string(),
-  total_cards_count: z.number(),
   number: z.number(),
   sort_by: z.number(),
 
@@ -130,16 +141,8 @@ const CardSchemaRaw = z.object({
     .optional(),
   strength: z.string().optional(),
 
-  set_short_name: z.string(),
-  series_short_name: z.string(),
-  illustrators: z.array(z.string()),
+  illustrators: z.array(z.string()).optional(),
   set_ids: z.array(z.string()),
-  sets: z.array(
-    z.object({
-      name: z.string(),
-      image: z.string(),
-    }),
-  ),
   thumb: z.string(),
 
   description: I18nValue.optional(),
@@ -210,15 +213,26 @@ const CardSchemaRaw = z.object({
   note: z.string().optional(),
 });
 
-const CardSchema = CardSchemaRaw.transform((c) => ({
-  ...c,
-  name: toI18nMap(c.name),
-  description: toI18nMap(c.description),
+const CardSchema = CardSchemaRaw.transform((c) => {
+  const setId = c.set_ids?.[0];
+  const set = setId ? setsById.get(setId) : undefined;
 
-  attacks: (c.attacks ?? []).map((a) => ({
-    ...a,
-    name: toI18nMap(a.name),
-    effect: toI18nMap(a.effect),
-    costs: a.costs ?? [],
-  })),
-}));
+  return {
+    ...c,
+    name: toI18nMap(c.name),
+    description: toI18nMap(c.description),
+    illustrators: c.illustrators ?? [],
+
+    total_cards_count: set?.total_cards_count ?? 0,
+    set_short_name: set?.short_name ?? "",
+    series_short_name: set?.series_short_name ?? "",
+    sets: set ? [{ name: set.name, image: set.logo }] : [],
+
+    attacks: (c.attacks ?? []).map((a) => ({
+      ...a,
+      name: toI18nMap(a.name),
+      effect: toI18nMap(a.effect),
+      costs: a.costs ?? [],
+    })),
+  };
+});
