@@ -34,7 +34,7 @@ const SetListComponent: React.FC<Props> = ({ collectionSet, onClickSet }) => {
               {set.name}
             </h4>
             <p className="text-secondaryText text-center">
-              {cards.length.toLocaleString()}
+              {(set.total_cards_count ?? cards.length).toLocaleString()}
             </p>
           </div>
         </Tile>
