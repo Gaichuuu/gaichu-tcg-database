@@ -2,6 +2,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSet } from "@/hooks/useCollection";
+import { CardDetailRow } from "@/components/CardDetail";
 import {
   getTitleSetImagePathType,
   SetImagePathType,
@@ -78,32 +79,26 @@ const PackArtPage: React.FC = () => {
           <table className="w-full border-collapse">
             <tbody>
               {pack.frontDescription && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Front Text</th>
-                  <td className="py-2" style={{ whiteSpace: "pre-wrap" }}>
+                <CardDetailRow label="Front Text">
+                  <span style={{ whiteSpace: "pre-wrap" }}>
                     {pack.frontDescription}
-                  </td>
-                </tr>
+                  </span>
+                </CardDetailRow>
               )}
               {pack.backDescription && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Back Text</th>
-                  <td className="py-2" style={{ whiteSpace: "pre-wrap" }}>
+                <CardDetailRow label="Back Text">
+                  <span style={{ whiteSpace: "pre-wrap" }}>
                     {pack.backDescription}
-                  </td>
-                </tr>
+                  </span>
+                </CardDetailRow>
               )}
               {pack.illustrator && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Illustrator</th>
-                  <td className="py-2">{pack.illustrator}</td>
-                </tr>
+                <CardDetailRow label="Illustrator">
+                  {pack.illustrator}
+                </CardDetailRow>
               )}
               {pack.note && (
-                <tr>
-                  <th className="py-2 pr-4 text-left">Note</th>
-                  <td className="py-2">{pack.note}</td>
-                </tr>
+                <CardDetailRow label="Note">{pack.note}</CardDetailRow>
               )}
             </tbody>
           </table>

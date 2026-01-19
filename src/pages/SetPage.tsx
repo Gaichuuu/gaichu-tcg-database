@@ -2,6 +2,7 @@
 import HtmlCell from "@/components/HtmlCell";
 import CardList from "@/components/ListComponent/CardListComponent";
 import { useSet } from "@/hooks/useCollection";
+import { CDN_BASE_URL } from "@/services/Constants";
 import {
   getArtPath,
   getCardDetailPath,
@@ -25,7 +26,7 @@ const SetPage = () => {
   const printFileUrl =
     setAndCard?.set.print_file_url ??
     (seriesShortName === "oz" && setShortName === "legacy"
-      ? "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf"
+      ? `${CDN_BASE_URL}/oz/legacy/legacyPrint.pdf`
       : undefined);
 
   const buyUrl =
