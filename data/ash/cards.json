@@ -1,7 +1,6 @@
 [
   {
     "id": "f92c4031-672a-435a-95c7-e0fc1bc2f649",
-    "total_cards_count": 44,
     "number": 0,
     "sort_by": 0.1,
     "name": "Charizard",
@@ -17,15 +16,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Secret Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/ash/series1/*.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/*-thumb.jpg",
@@ -59,7 +50,6 @@
   },
   {
     "id": "064099c6-eb7d-4c5b-a9e0-a089d80ddc38",
-    "total_cards_count": 44,
     "number": 1,
     "sort_by": 1,
     "name": "Umbreon VMAX",
@@ -81,15 +71,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "310",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -111,7 +93,6 @@
   },
   {
     "id": "5b29fed5-4552-4877-9d3a-054d715a5471",
-    "total_cards_count": 44,
     "number": 2,
     "sort_by": 2,
     "name": "Charizard",
@@ -127,15 +108,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -173,7 +146,6 @@
   },
   {
     "id": "95ca47e0-7803-47f9-9f3a-216b2d04f5fb",
-    "total_cards_count": 44,
     "number": 3,
     "sort_by": 3,
     "name": "______'s Pikachu",
@@ -188,15 +160,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -226,7 +190,6 @@
   },
   {
     "id": "d2a2b24b-54df-4699-ac72-3c739953954a",
-    "total_cards_count": 44,
     "number": 4,
     "sort_by": 4,
     "name": "Blastoise",
@@ -242,15 +205,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/ash/series1/04.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/04-thumb.jpg",
@@ -284,7 +239,6 @@
   },
   {
     "id": "8a37a53b-f9a2-4372-98e9-8b3e258cfbdf",
-    "total_cards_count": 44,
     "number": 5,
     "sort_by": 5,
     "name": "Venusaur",
@@ -300,15 +254,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -342,7 +288,6 @@
   },
   {
     "id": "50ee2a9d-73ae-4f32-9271-0850212a24c6",
-    "total_cards_count": 44,
     "number": 6,
     "sort_by": 6,
     "name": "Lugia",
@@ -357,15 +302,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/ash/series1/06.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/06-thumb.jpg",
@@ -400,7 +337,6 @@
   },
   {
     "id": "e061beb3-523e-4876-9989-3d71e86ea223",
-    "total_cards_count": 44,
     "number": 7,
     "sort_by": 7,
     "name": "Mew",
@@ -415,15 +351,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/07.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/07-thumb.jpg",
@@ -454,7 +382,6 @@
   },
   {
     "id": "c682a2d9-bdbc-488b-a644-1e4ec5b0aa24",
-    "total_cards_count": 44,
     "number": 8,
     "sort_by": 8,
     "name": "Latias & Latios GX",
@@ -475,15 +402,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "250",
     "image": "https://gaichu.b-cdn.net/ash/series1/08.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/08-thumb.jpg",
@@ -515,7 +434,6 @@
   },
   {
     "id": "b417b4f4-bd2f-4e54-9ef2-9f07c1cdd79f",
-    "total_cards_count": 44,
     "number": 9,
     "sort_by": 9,
     "name": "Solgaleo & Lunala GX",
@@ -536,15 +454,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "270",
     "image": "https://gaichu.b-cdn.net/ash/series1/09.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/09-thumb.jpg",
@@ -577,7 +487,6 @@
   },
   {
     "id": "e91a1cb0-9eb8-4d28-b0cb-1ff85d1cc0a3",
-    "total_cards_count": 44,
     "number": 10,
     "sort_by": 10,
     "name": "Pikachu",
@@ -592,15 +501,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/10.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/10-thumb.jpg",
@@ -631,7 +532,6 @@
   },
   {
     "id": "ec7a1e34-60df-4a91-a9a2-6e8d7cf8b193",
-    "total_cards_count": 44,
     "number": 11,
     "sort_by": 11,
     "name": "Pikachu with Grey Felt Hat",
@@ -646,15 +546,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -680,7 +572,6 @@
   },
   {
     "id": "b6fe2c2a-4a2f-4b3a-8b7e-2e6a7d4e8a12",
-    "total_cards_count": 44,
     "number": 12,
     "sort_by": 12,
     "name": "Mewtwo V",
@@ -695,15 +586,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "220",
     "image": "https://gaichu.b-cdn.net/ash/series1/12.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/12-thumb.jpg",
@@ -739,7 +622,6 @@
   },
   {
     "id": "a02b8e83-0a72-4e3e-b3c0-3cf4e26c8a31",
-    "total_cards_count": 44,
     "number": 13,
     "sort_by": 13,
     "name": "Dark Charizard",
@@ -755,15 +637,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/ash/series1/13.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/13-thumb.jpg",
@@ -803,7 +677,6 @@
   },
   {
     "id": "8c2a3a5d-3d7e-47a1-86c2-4c2f3e3bf9e0",
-    "total_cards_count": 44,
     "number": 14,
     "sort_by": 14,
     "name": "Pika-Ma",
@@ -818,15 +691,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Secret Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/ash/series1/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/14-thumb.jpg",
@@ -855,7 +720,6 @@
   },
   {
     "id": "fc2c8f5e-8e2c-4a38-a8cf-5c87a5d0c4b9",
-    "total_cards_count": 44,
     "number": 15,
     "sort_by": 15,
     "name": "Special Delivery Charizard",
@@ -870,15 +734,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "160",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -914,7 +770,6 @@
   },
   {
     "id": "b09a0e3f-7039-4ad4-9e3b-fdf12d615f59",
-    "total_cards_count": 44,
     "number": 16,
     "sort_by": 16,
     "name": "Eevee with Straw Hat",
@@ -929,15 +784,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/16-thumb.jpg",
@@ -963,7 +810,6 @@
   },
   {
     "id": "eb4fae22-5922-49a8-8df9-891db9f548f1",
-    "total_cards_count": 44,
     "number": 17,
     "sort_by": 17,
     "name": "Charizard ex",
@@ -985,15 +831,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "330",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1025,7 +863,6 @@
   },
   {
     "id": "a7e84ef0-48a5-4a1c-8b15-1b82cf2a2177",
-    "total_cards_count": 44,
     "number": 18,
     "sort_by": 18,
     "name": "Mew ex",
@@ -1046,15 +883,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "180",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1083,7 +912,6 @@
   },
   {
     "id": "9e1bc4f8-917d-40b8-86cb-fd50b8e60215",
-    "total_cards_count": 44,
     "number": 19,
     "sort_by": 19,
     "name": "Snorlax",
@@ -1098,15 +926,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1138,7 +958,6 @@
   },
   {
     "id": "a87c7b38-3a73-4e91-8a11-b6c6ad0c1877",
-    "total_cards_count": 44,
     "number": 20,
     "sort_by": 20,
     "name": "Rayquaza VMAX",
@@ -1160,15 +979,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "320",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1190,7 +1001,6 @@
   },
   {
     "id": "b3f8828f-27ac-49ee-88c3-5b63b5681cf1",
-    "total_cards_count": 44,
     "number": 21,
     "sort_by": 21,
     "name": "Pikachu",
@@ -1205,15 +1015,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1245,7 +1047,6 @@
   },
   {
     "id": "dddb7278-6c72-4b4c-a8b9-8fc4d542bc3b",
-    "total_cards_count": 44,
     "number": 22,
     "sort_by": 22,
     "name": "Mewtwo ex",
@@ -1266,15 +1067,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "230",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1309,7 +1102,6 @@
   },
   {
     "id": "ab74cb8f-9a9e-4383-b3d0-61b6cf96a5b2",
-    "total_cards_count": 44,
     "number": 23,
     "sort_by": 23,
     "name": "Gengar VMAX",
@@ -1331,15 +1123,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "320",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1363,7 +1147,6 @@
   },
   {
     "id": "261611d4-772c-46a7-9d7e-df39eea90117",
-    "total_cards_count": 44,
     "number": 24,
     "sort_by": 24,
     "name": "Misty",
@@ -1378,21 +1161,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
   },
   {
     "id": "91a7b5e1-0a52-4a2a-8a5e-6c3a27b3ed45",
-    "total_cards_count": 44,
     "number": 25,
     "sort_by": 25,
     "name": "Serena",
@@ -1407,21 +1181,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/25.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/25-thumb.jpg"
   },
   {
     "id": "a517e82f-372e-4d33-9f39-aaf5dd14e8f8",
-    "total_cards_count": 44,
     "number": 26,
     "sort_by": 26,
     "name": "Marnie",
@@ -1436,21 +1201,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/26-thumb.jpg"
   },
   {
     "id": "0276be2b-dd12-4c06-85e8-a3a705fec2fd",
-    "total_cards_count": 44,
     "number": 27,
     "sort_by": 27,
     "name": "Jessie",
@@ -1465,21 +1221,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
   },
   {
     "id": "86b39467-7170-4daf-a92a-d60323e046e4",
-    "total_cards_count": 44,
     "number": 28,
     "sort_by": 28,
     "name": "James",
@@ -1494,21 +1241,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
   },
   {
     "id": "b5b7fa22-9124-4a89-9c02-f2aee89e607b",
-    "total_cards_count": 44,
     "number": 29,
     "sort_by": 29,
     "name": "Eevee",
@@ -1523,15 +1261,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1556,7 +1286,6 @@
   },
   {
     "id": "f26c911b-8a04-48b1-9c7e-07a680f12b75",
-    "total_cards_count": 44,
     "number": 30,
     "sort_by": 30,
     "name": "Moltres & Zapdos & Articuno GX",
@@ -1577,15 +1306,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "300",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1621,7 +1342,6 @@
   },
   {
     "id": "4cfbcd43-99f5-4a61-b9e0-54e0bb17d04b",
-    "total_cards_count": 44,
     "number": 31,
     "sort_by": 31,
     "name": "Charizard",
@@ -1637,15 +1357,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1685,7 +1397,6 @@
   },
   {
     "id": "c21e6b0b-8345-408a-98ea-9a3dc009ce35",
-    "total_cards_count": 44,
     "number": 32,
     "sort_by": 32,
     "name": "Iono",
@@ -1700,21 +1411,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/32-thumb.jpg"
   },
   {
     "id": "7f6b6a8c-f1d9-4d2e-9ab3-8a0c1f4f3f21",
-    "total_cards_count": 44,
     "number": 33,
     "sort_by": 33,
     "name": "Surfing Pikachu",
@@ -1729,15 +1431,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/33.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/33-thumb.jpg",
@@ -1764,7 +1458,6 @@
   },
   {
     "id": "862c1a20-5c48-47fc-b3a1-cfb4d71a5cd3",
-    "total_cards_count": 44,
     "number": 34,
     "sort_by": 34,
     "name": "Cynthia",
@@ -1779,21 +1472,12 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/34-thumb.jpg"
   },
   {
     "id": "ffbca53a-05c1-4b6d-8a34-daa3f7b46e98",
-    "total_cards_count": 44,
     "number": 35,
     "sort_by": 35,
     "name": "Psyduck",
@@ -1808,15 +1492,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/35-thumb.jpg",
@@ -1842,7 +1518,6 @@
   },
   {
     "id": "a1c3efb7-dc40-4b44-9411-1e5d6a5a2f87",
-    "total_cards_count": 44,
     "number": 36,
     "sort_by": 36,
     "name": "Johto Starters",
@@ -1857,15 +1532,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/36-thumb.jpg",
@@ -1887,7 +1554,6 @@
   },
   {
     "id": "b32967a1-4b1f-48e4-82a7-058a94f24869",
-    "total_cards_count": 44,
     "number": 37,
     "sort_by": 37,
     "name": "Hoenn Starters",
@@ -1902,15 +1568,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1932,7 +1590,6 @@
   },
   {
     "id": "bdbba5fd-fb91-497a-97bb-987b79f21fa7",
-    "total_cards_count": 44,
     "number": 38,
     "sort_by": 38,
     "name": "Sinnoh Starters",
@@ -1947,15 +1604,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/38.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/38-thumb.jpg",
@@ -1977,7 +1626,6 @@
   },
   {
     "id": "e3b1fa9d-4822-4d5a-9d76-5a08b83e8e64",
-    "total_cards_count": 44,
     "number": 39,
     "sort_by": 39,
     "name": "Charizard VMAX",
@@ -1999,15 +1647,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "330",
     "image": "https://gaichu.b-cdn.net/ash/series1/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/39-thumb.jpg",
@@ -2031,7 +1671,6 @@
   },
   {
     "id": "e4b8d067-3a32-47b0-9ffb-0a6116e9b1d2",
-    "total_cards_count": 44,
     "number": 40,
     "sort_by": 40,
     "name": "Poncho-wearing Pikachu",
@@ -2046,15 +1685,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -2087,7 +1718,6 @@
   },
   {
     "id": "8dbd4e8b-dfa2-4e74-82a3-6ce8af1e1e69",
-    "total_cards_count": 44,
     "number": 41,
     "sort_by": 41,
     "name": "Poncho-wearing Pikachu",
@@ -2102,15 +1732,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/41.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/41-thumb.jpg",
@@ -2143,7 +1765,6 @@
   },
   {
     "id": "c49a4b7b-54b8-490a-bd9b-0912eaa67a61",
-    "total_cards_count": 44,
     "number": 42,
     "sort_by": 42,
     "name": "Pretend Gyarados Pikachu",
@@ -2158,15 +1779,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/42-thumb.jpg",
@@ -2199,7 +1812,6 @@
   },
   {
     "id": "f2368b4c-1f11-4a36-9f2a-7f68b35de3b7",
-    "total_cards_count": 44,
     "number": 43,
     "sort_by": 43,
     "name": "Poncho-wearing Pikachu",
@@ -2214,15 +1826,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/43-thumb.jpg",
@@ -2255,7 +1859,6 @@
   },
   {
     "id": "7f9beef6-8d2d-4e40-b585-b50d314c6001",
-    "total_cards_count": 44,
     "number": 44,
     "sort_by": 44.1,
     "name": "Ditto",
@@ -2270,15 +1873,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -2303,7 +1898,6 @@
   },
   {
     "id": "e5cb691d-7845-4f19-8f38-60abe476924d",
-    "total_cards_count": 44,
     "number": 44,
     "sort_by": 44.2,
     "name": "Pikachu?",
@@ -2318,15 +1912,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -2351,7 +1937,6 @@
   },
   {
     "id": "5f4c8b63-05e2-42a0-9179-60edcdbd76fb",
-    "total_cards_count": 44,
     "number": 44,
     "sort_by": 44.3,
     "name": "Bulbasaur?",
@@ -2366,15 +1951,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/46-thumb.jpg",
@@ -2399,7 +1976,6 @@
   },
   {
     "id": "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3",
-    "total_cards_count": 44,
     "number": 44,
     "sort_by": 44.4,
     "name": "Charizard?",
@@ -2414,15 +1990,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/48-thumb.jpg",
@@ -2447,7 +2015,6 @@
   },
   {
     "id": "09a2848d-06f7-46cb-9e14-490b8e04e172",
-    "total_cards_count": 44,
     "number": 44,
     "sort_by": 44.5,
     "name": "Gengar?",
@@ -2462,15 +2029,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -2495,7 +2054,6 @@
   },
   {
     "id": "78a02344-0c51-48ef-b22c-d5892e98ce3e",
-    "total_cards_count": 44,
     "number": 44,
     "sort_by": 44.6,
     "name": "Ditto?",
@@ -2510,15 +2068,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Secret Rare",
-    "set_short_name": "series1",
-    "series_short_name": "ash",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "sets": [
-      {
-        "name": "Series 1 (reprint)",
-        "image": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/50-thumb.jpg",
@@ -2543,7 +2093,6 @@
   },
   {
     "id": "b7a33b4a-5a6f-4c6a-8b41-6a10ce78432b",
-    "total_cards_count": 80,
     "number": 21,
     "sort_by": 21,
     "name": "Paras?",
@@ -2558,15 +2107,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series2",
-    "series_short_name": "ash",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
-    "sets": [
-      {
-        "name": "Series 2",
-        "image": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/21-thumb.jpg",
@@ -2592,7 +2133,6 @@
   },
   {
     "id": "c1a7e4c5-8f0f-4a96-b2b0-6e3c3c4a1f35",
-    "total_cards_count": 80,
     "number": 35,
     "sort_by": 35,
     "name": "Slowpoke?",
@@ -2607,15 +2147,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series2",
-    "series_short_name": "ash",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
-    "sets": [
-      {
-        "name": "Series 2",
-        "image": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/35-thumb.jpg",
@@ -2641,7 +2173,6 @@
   },
   {
     "id": "c8c0b9f7-2f19-4b4b-9f33-feb4fae9ff2e",
-    "total_cards_count": 80,
     "number": 39,
     "sort_by": 39,
     "name": "Seal?",
@@ -2656,15 +2187,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series2",
-    "series_short_name": "ash",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
-    "sets": [
-      {
-        "name": "Series 2",
-        "image": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/39-thumb.jpg",
@@ -2690,7 +2213,6 @@
   },
   {
     "id": "df1b3086-45b0-4b69-940b-f3670cfb7625",
-    "total_cards_count": 80,
     "number": 66,
     "sort_by": 66,
     "name": "Jolteon?",
@@ -2705,15 +2227,7 @@
     ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
-    "set_short_name": "series2",
-    "series_short_name": "ash",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
-    "sets": [
-      {
-        "name": "Series 2",
-        "image": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg"
-      }
-    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/66.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/66-thumb.jpg",

@@ -19,33 +19,6 @@
             "type": "string",
             "enum": ["SR", "SSR"]
           },
-          "set_short_name": {
-            "type": "string",
-            "enum": ["set1"]
-          },
-          "series_short_name": {
-            "type": "string",
-            "enum": ["disgruntled"]
-          },
-          "sets": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "object",
-              "required": ["name", "image"],
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "enum": ["Set 1"]
-                },
-                "image": {
-                  "type": "string",
-                  "format": "uri"
-                }
-              },
-              "additionalProperties": false
-            }
-          },
           "type": {
             "type": "string",
             "enum": [

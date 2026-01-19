@@ -19,38 +19,6 @@
             "type": "string",
             "enum": ["Rare", "Secret Rare"]
           },
-          "set_short_name": {
-            "type": "string",
-            "enum": ["sticker", "og", "series1", "series2"]
-          },
-          "series_short_name": {
-            "type": "string",
-            "enum": ["ash"]
-          },
-          "sets": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "object",
-              "required": ["name", "image"],
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "enum": [
-                    "Sticker Art",
-                    "Series 1",
-                    "Series 1 (reprint)",
-                    "Series 2"
-                  ]
-                },
-                "image": {
-                  "type": "string",
-                  "format": "uri"
-                }
-              },
-              "additionalProperties": false
-            }
-          },
           "description": {
             "type": "string"
           },

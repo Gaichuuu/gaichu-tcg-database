@@ -17,6 +17,7 @@ export interface CollectionSet {
   logo: string;
   name: string;
   sort_by: number;
+  total_cards_count?: number;
   description?: string;
   print_file_url?: string;
   buy_url?: string;

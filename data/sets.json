@@ -34,7 +34,8 @@
         "illustrator": "Alex Roh",
         "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
-    ]
+    ],
+    "total_cards_count": 50
   },
   {
     "id": "679fc82a-ac5d-46dc-8cb3-7b8f6227f237",
@@ -43,7 +44,8 @@
     "short_name": "promo",
     "sort_by": 1,
     "name": "Promo Cards",
-    "logo": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg"
+    "logo": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg",
+    "total_cards_count": 165
   },
   {
     "id": "7bef5aa0-487d-4456-8fb4-2d26c6003f4e",
@@ -80,7 +82,8 @@
         "illustrator": "Alex Roh",
         "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
       }
-    ]
+    ],
+    "total_cards_count": 50
   },
   {
     "id": "cfcac0b5-738e-46de-9386-f3b42010c722",
@@ -145,7 +148,8 @@
         "illustrator": "Soo Zhi Wei",
         "note": "The reprinted set has \"2024\" at the bottom."
       }
-    ]
+    ],
+    "total_cards_count": 44
   },
   {
     "id": "c505fdeb-0d9e-4025-82d4-cf2a05a40a51",
@@ -182,7 +186,8 @@
         "illustrator": "Soo Zhi Wei",
         "note": "Series 2 has \"2025\" at the bottom."
       }
-    ]
+    ],
+    "total_cards_count": 80
   },
   {
     "id": "0cd30841-399e-4043-ac72-bdf4d268d4b3",
@@ -201,7 +206,8 @@
         "text": "OpenZoo",
         "illustrator": "mistletoe"
       }
-    ]
+    ],
+    "total_cards_count": 36
   },
   {
     "id": "a4ad7eb7-9361-44d5-b60a-eac571932d6c",
@@ -210,7 +216,8 @@
     "short_name": "promo25",
     "sort_by": 2,
     "name": "Promo Cards (2025)",
-    "logo": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
+    "logo": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg",
+    "total_cards_count": 3
   },
   {
     "id": "2375d762-5095-47b3-8538-99b9b47facca",
@@ -219,6 +226,7 @@
     "short_name": "set1",
     "sort_by": 1,
     "name": "Set 1",
-    "logo": "https://gaichu.b-cdn.net/disgruntled/set1/disgruntledSet1.jpg"
+    "logo": "https://gaichu.b-cdn.net/disgruntled/set1/disgruntledSet1.jpg",
+    "total_cards_count": 5
   }
 ]

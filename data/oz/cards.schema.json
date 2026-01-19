@@ -13,16 +13,12 @@
           "variant",
           "illustrators",
           "rarity",
-          "set_short_name",
-          "series_short_name",
-          "sets",
           "image",
           "thumb"
         ],
         "properties": {
           "id": { "type": "string" },
           "number": { "type": "integer", "minimum": 1 },
-          "total_cards_count": { "type": "integer", "minimum": 1 },
           "sort_by": { "type": "integer" },
           "name": { "type": "string", "minLength": 1 },
           "variant": {
@@ -44,29 +40,9 @@
             "enum": ["Gold", "Silver", "Bronze", "Promo"]
           },
 
-          "set_short_name": { "type": "string", "enum": ["legacy", "promo25"] },
-          "series_short_name": { "type": "string", "enum": ["oz"] },
-
           "set_ids": {
             "type": "array",
             "items": { "type": "string" }
-          },
-
-          "sets": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "object",
-              "required": ["name", "image"],
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "enum": ["Legacy", "Promo Cards (2025)"]
-                },
-                "image": { "type": "string", "format": "uri" }
-              },
-              "additionalProperties": false
-            }
           },
 
           "type": {

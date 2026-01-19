@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import type { Card } from "../types/card.js";
+import type { Card, RawCard, CardSet } from "../types/card.js";
 import type { Series } from "../types/series.js";
 import type { Set } from "../types/set.js";
 import type { Illustrator } from "../types/illustrator.js";
@@ -24,15 +24,34 @@ let cachedSets: Set[] | null = null;
 let cachedIllustrators: Illustrator[] | null = null;
 let cachedRarity: Rarity[] | null = null;
 
+function enrichCard(rawCard: RawCard, setsById: Map<string, Set>): Card {
+  const setId = rawCard.set_ids?.[0];
+  const set = setId ? setsById.get(setId) : undefined;
+
+  const cardSets: CardSet[] = set ? [{ name: set.name, image: set.logo }] : [];
+
+  return {
+    ...rawCard,
+    total_cards_count: set?.total_cards_count ?? 0,
+    set_short_name: set?.short_name ?? "",
+    series_short_name: set?.series_short_name ?? "",
+    sets: cardSets,
+  };
+}
+
 export function loadAllCards(): Card[] {
   if (cachedCards) return cachedCards;
+
+  const sets = loadSets();
+  const setsById = new Map(sets.map((s) => [s.id, s]));
 
   const allCards: Card[] = [];
   for (const series of SERIES_LIST) {
     const filePath = join(DATA_DIR, series, "cards.json");
     try {
-      const cards = loadJson<Card[]>(filePath);
-      allCards.push(...cards);
+      const rawCards = loadJson<RawCard[]>(filePath);
+      const enrichedCards = rawCards.map((raw) => enrichCard(raw, setsById));
+      allCards.push(...enrichedCards);
     } catch (err) {
       console.warn(`Failed to load cards for series ${series}:`, err);
     }

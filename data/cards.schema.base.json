@@ -21,23 +21,16 @@
   "type": "object",
   "required": [
     "id",
-    "total_cards_count",
     "number",
     "sort_by",
     "name",
     "image",
-    "set_short_name",
-    "series_short_name",
-    "illustrators",
     "set_ids",
-    "sets",
     "thumb",
     "variant"
   ],
   "properties": {
     "id": { "type": "string", "format": "uuid" },
-
-    "total_cards_count": { "type": "number" },
 
     "number": { "type": "number" },
     "sort_by": { "type": "number" },
@@ -46,8 +39,6 @@
 
     "image": { "type": "string", "format": "uri" },
     "rarity": { "type": "string" },
-    "set_short_name": { "type": "string" },
-    "series_short_name": { "type": "string" },
 
     "illustrators": {
       "type": "array",
@@ -58,20 +49,6 @@
     "set_ids": {
       "type": "array",
       "items": { "type": "string", "format": "uuid" },
-      "minItems": 1
-    },
-
-    "sets": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["name", "image"],
-        "properties": {
-          "name": { "type": "string" },
-          "image": { "type": "string", "format": "uri" }
-        },
-        "additionalProperties": false
-      },
       "minItems": 1
     },
 

@@ -19,33 +19,6 @@
             "type": "string",
             "enum": ["Silver"]
           },
-          "set_short_name": {
-            "type": "string",
-            "enum": ["promo"]
-          },
-          "series_short_name": {
-            "type": "string",
-            "enum": ["mz"]
-          },
-          "sets": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "object",
-              "required": ["name", "image"],
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "enum": ["Promo Cards"]
-                },
-                "image": {
-                  "type": "string",
-                  "format": "uri"
-                }
-              },
-              "additionalProperties": false
-            }
-          },
           "description": {
             "type": "string"
           },

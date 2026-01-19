@@ -20,7 +20,7 @@ function matchesFilter(card: Card, params: CardQueryParams): boolean {
   }
   if (
     params.rarity &&
-    card.rarity.toLowerCase() !== params.rarity.toLowerCase()
+    card.rarity?.toLowerCase() !== params.rarity.toLowerCase()
   ) {
     return false;
   }
@@ -32,7 +32,7 @@ function matchesFilter(card: Card, params: CardQueryParams): boolean {
   }
   if (params.illustrator) {
     const illustratorLower = params.illustrator.toLowerCase();
-    const hasIllustrator = card.illustrators.some(
+    const hasIllustrator = (card.illustrators ?? []).some(
       (i) => i.toLowerCase() === illustratorLower,
     );
     if (!hasIllustrator) return false;

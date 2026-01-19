@@ -1,8 +1,13 @@
 import { cardListMock } from "@/__test__/__mock__/cardJson.ts";
+import { setJsonMock } from "@/__test__/__mock__/setJson.ts";
 import { describe, expect, it, vi } from "vitest";
 
 vi.mock("data/wm/cards.json", () => ({
   default: cardListMock,
+}));
+
+vi.mock("data/sets.json", () => ({
+  default: setJsonMock,
 }));
 
 import { getJsonCardList } from "@/services/JsonCollectionCardService.tsx";

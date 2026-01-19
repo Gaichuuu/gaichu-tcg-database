@@ -1,22 +1,20 @@
 [
   {
     "id": "929c4924-4617-4c0c-b3a0-1b08d9597f02",
-    "total_cards_count": 50,
     "number": 1,
     "sort_by": 1,
-    "name": { "en": "Skipper", "ja": "スキッパー" },
+    "name": {
+      "en": "Skipper",
+      "ja": "スキッパー"
+    },
     "parody": "Mudkip",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/01.jpg",
@@ -31,41 +29,47 @@
     },
     "attacks": [
       {
-        "name": { "en": "Growl", "ja": "なきごえ" },
+        "name": {
+          "en": "Growl",
+          "ja": "なきごえ"
+        },
         "effect": {
           "en": "Lets out a low growl at the opponent. It's meant to intimidate them, but it's pretty cute.",
           "ja": "相手に向かってうなり声を出す。恐怖を与えるためのものだが、なかなかかわいい。"
         }
       },
       {
-        "name": { "en": "Water Gun", "ja": "みずでっぽう" },
+        "name": {
+          "en": "Water Gun",
+          "ja": "みずでっぽう"
+        },
         "effect": {
           "en": "Spits water at the opponent.",
           "ja": "相手に水を吐きかける。"
         },
         "damage": "20",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
-    "total_cards_count": 50,
     "number": 2,
     "sort_by": 2,
-    "name": { "en": "Ducky", "ja": "ダッキー" },
+    "name": {
+      "en": "Ducky",
+      "ja": "ダッキー"
+    },
     "parody": "Psyduck",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
@@ -80,33 +84,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Amnesia", "ja": "ドわすれ" },
+        "name": {
+          "en": "Amnesia",
+          "ja": "ドわすれ"
+        },
         "effect": {
           "en": "Forget everything that is happening right now. This somehow increases special defense. Editor's note: I do this all the time, but my special defense never goes up.",
           "ja": "今起きていることをすべて忘れてしまう。これにより、なぜか特防が上がる。私はいつもこれをやっていますが、特防が上がることはありません。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
-    "total_cards_count": 50,
     "number": 3,
     "sort_by": 3,
-    "name": { "en": "Lavatar", "ja": "ラーバター" },
+    "name": {
+      "en": "Lavatar",
+      "ja": "ラーバター"
+    },
     "parody": "Larvitar",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/03.jpg",
@@ -121,34 +128,38 @@
     },
     "attacks": [
       {
-        "name": { "en": "Rock Throw", "ja": "いわおとし" },
+        "name": {
+          "en": "Rock Throw",
+          "ja": "いわおとし"
+        },
         "effect": {
           "en": "Picks up a rock and throws it at the opponent. A technique often used in high school.",
           "ja": "岩石を拾って相手に投げつける。高校時代によく使われた技だ。"
         },
         "damage": "20",
-        "costs": ["Fighting", "Normal"]
+        "costs": [
+          "Fighting",
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
-    "total_cards_count": 50,
     "number": 4,
     "sort_by": 4,
-    "name": { "en": "Pink Boy", "ja": "ピンクボーイ" },
+    "name": {
+      "en": "Pink Boy",
+      "ja": "ピンクボーイ"
+    },
     "parody": "Jigglypuff",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set1/04.jpg",
@@ -157,45 +168,56 @@
       "en": "The frequency of the singing voice perfectly matches the brain waves of a person in deep sleep.",
       "ja": "歌声の波動は、深い眠りの人の脳波と完全に一致する。"
     },
-    "measurement": { "height": ".5m", "weight": "5.5kg" },
+    "measurement": {
+      "height": ".5m",
+      "weight": "5.5kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Sing", "ja": "うたう" },
+        "name": {
+          "en": "Sing",
+          "ja": "うたう"
+        },
         "effect": {
           "en": "It sings a variety of songs that are popular among young people today.",
           "ja": "今、若者に人気のある様々な歌を歌う。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
-        "name": { "en": "Doubleslap", "ja": "おうふくビンタ" },
+        "name": {
+          "en": "Doubleslap",
+          "ja": "おうふくビンタ"
+        },
         "effect": {
           "en": "Slaps the opponent with its small pink hands.",
           "ja": "ピンクの小さな手で相手をひっぱたく。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
-    "total_cards_count": 50,
     "number": 5,
     "sort_by": 5,
-    "name": { "en": "Piccolo", "ja": "ピッコロ" },
+    "name": {
+      "en": "Piccolo",
+      "ja": "ピッコロ"
+    },
     "parody": "Metapod",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/05.jpg",
@@ -204,36 +226,42 @@
       "en": "The shell becomes as hard as iron.",
       "ja": "甲羅が鉄のように硬くなる。"
     },
-    "measurement": { "height": ".7m", "weight": "9.9kg" },
+    "measurement": {
+      "height": ".7m",
+      "weight": "9.9kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Harden", "ja": "かたくなる" },
+        "name": {
+          "en": "Harden",
+          "ja": "かたくなる"
+        },
         "effect": {
           "en": "Becomes hard.",
           "ja": "硬くなる。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
-    "total_cards_count": 50,
     "number": 6,
     "sort_by": 6,
-    "name": { "en": "Heavy Boy", "ja": "ヘビーボーイ" },
+    "name": {
+      "en": "Heavy Boy",
+      "ja": "ヘビーボーイ"
+    },
     "parody": "Magnemite",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
@@ -242,36 +270,42 @@
       "en": "It can levitate thanks to the magnetic field generated within its body.",
       "ja": "体内で磁場を発生させるため、浮遊することができる。"
     },
-    "measurement": { "height": ".3m", "weight": "6kg" },
+    "measurement": {
+      "height": ".3m",
+      "weight": "6kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Thunder Wave", "ja": "でんじは" },
+        "name": {
+          "en": "Thunder Wave",
+          "ja": "でんじは"
+        },
         "effect": {
           "en": "An attack that paralyzes the target with a wave of electricity.",
           "ja": "電気の波動で対象を麻痺させる攻撃。"
         },
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
-    "total_cards_count": 50,
     "number": 7,
     "sort_by": 7,
-    "name": { "en": "Cutiepie", "ja": "かわい子ちゃん" },
+    "name": {
+      "en": "Cutiepie",
+      "ja": "かわい子ちゃん"
+    },
     "parody": "Raichu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set1/07.jpg",
@@ -280,37 +314,43 @@
       "en": "Items can be recharged when placed on the head.",
       "ja": "頭に乗せると充電できる。"
     },
-    "measurement": { "height": ".8m", "weight": "30kg" },
+    "measurement": {
+      "height": ".8m",
+      "weight": "30kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Thunderpunch", "ja": "かみなりパンチ" },
+        "name": {
+          "en": "Thunderpunch",
+          "ja": "かみなりパンチ"
+        },
         "effect": {
           "en": "Uses electricity to power up its punch and strike the enemy. Because its arms are small, this attack often misses.",
           "ja": "電気でパンチをパワーアップさせ、敵を殴る。腕が小さいので、この攻撃はよく外れる。"
         },
         "damage": "50",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
-    "total_cards_count": 50,
     "number": 8,
     "sort_by": 8,
-    "name": { "en": "Eevee", "ja": "イーブイ" },
+    "name": {
+      "en": "Eevee",
+      "ja": "イーブイ"
+    },
     "parody": "Eevee",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/08.jpg",
@@ -319,45 +359,56 @@
       "en": "This Pokémon is a big foodie. It only eats French fries and Hot Pockets.",
       "ja": "このポケモンは、とても食いしん坊です。フライドポテトとホットポケットしか食べません。"
     },
-    "measurement": { "height": ".3m", "weight": "6.5kg" },
+    "measurement": {
+      "height": ".3m",
+      "weight": "6.5kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Scratch", "ja": "ひっかく" },
+        "name": {
+          "en": "Scratch",
+          "ja": "ひっかく"
+        },
         "effect": {
           "en": "Scratches the opponent with its long clawed fingers.",
           "ja": "長い爪の指で相手を引っ掻く。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
-        "name": { "en": "Leech Seed", "ja": "やどりぎのタネ" },
+        "name": {
+          "en": "Leech Seed",
+          "ja": "やどりぎのタネ"
+        },
         "effect": {
           "en": "A terrifying attack that slowly sucks the life from the opponent, eventually leaving them a corpse.",
           "ja": "相手の命を少しずつ吸い取り、最後は死体になってしまう恐ろしい攻撃。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
-    "total_cards_count": 50,
     "number": 9,
     "sort_by": 9,
-    "name": { "en": "Green Boy", "ja": "グリーンボイ" },
+    "name": {
+      "en": "Green Boy",
+      "ja": "グリーンボイ"
+    },
     "parody": "Bulbasaur",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/09.jpg",
@@ -366,37 +417,43 @@
       "en": "This Pokémon is born with a seed on its back. They grow at the same rate and eventually become part of the body.",
       "ja": "このポケモンは、背中に種を背負って生まれてくる。同じ速度で成長し、やがて体の一部となる。"
     },
-    "measurement": { "height": ".7m", "weight": "6.9kg" },
+    "measurement": {
+      "height": ".7m",
+      "weight": "6.9kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Leech Seed", "ja": "やどりぎのタネ" },
+        "name": {
+          "en": "Leech Seed",
+          "ja": "やどりぎのタネ"
+        },
         "effect": {
           "en": "A terrifying attack that slowly sucks the life out of the opponent, eventually leaving them as a corpse.",
           "ja": "相手の命を少しずつ吸い取り、最後は死体になってしまう恐ろしい攻撃。"
         },
         "damage": "10",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "593a874f-f584-4127-a813-240fbd0953c9",
-    "total_cards_count": 50,
     "number": 10,
     "sort_by": 10,
-    "name": { "en": "Turtle Chips", "ja": "カメチップス" },
+    "name": {
+      "en": "Turtle Chips",
+      "ja": "カメチップス"
+    },
     "parody": "Squirtle",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
@@ -405,45 +462,56 @@
       "en": "When it's dangerous, it stays in the shell.",
       "ja": "危険なときは殻に閉じこもる。"
     },
-    "measurement": { "height": ".5m", "weight": "9kg" },
+    "measurement": {
+      "height": ".5m",
+      "weight": "9kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Bubble", "ja": "あわ" },
+        "name": {
+          "en": "Bubble",
+          "ja": "あわ"
+        },
         "effect": {
           "en": "Likes to blow bubbles. So cute!",
           "ja": "泡を吹くのが好き。なかなかかわいい。"
         },
         "damage": "20",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       },
       {
-        "name": { "en": "Rapid Spin", "ja": "こうそくスピン" },
+        "name": {
+          "en": "Rapid Spin",
+          "ja": "こうそくスピン"
+        },
         "effect": {
           "en": "Spins in a circle. Also very cute.",
           "ja": "円を描くように回転する。これもとてもかわいい。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
-    "total_cards_count": 50,
     "number": 11,
     "sort_by": 11,
-    "name": { "en": "Fire Boy", "ja": "ファイアーボーイ" },
+    "name": {
+      "en": "Fire Boy",
+      "ja": "ファイアーボーイ"
+    },
     "parody": "Charmander",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
@@ -458,42 +526,50 @@
     },
     "attacks": [
       {
-        "name": { "en": "Mean Look", "ja": "くろいまなざし" },
+        "name": {
+          "en": "Mean Look",
+          "ja": "くろいまなざし"
+        },
         "effect": {
           "en": "Stare at the opponent with contempt.",
           "ja": "相手を軽蔑したような目で見る。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
-        "name": { "en": "Ember", "ja": "ひのこ" },
+        "name": {
+          "en": "Ember",
+          "ja": "ひのこ"
+        },
         "effect": {
           "en": "Weak fire attack.",
           "ja": "弱火攻撃。"
         },
         "damage": "20",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ]
   },
   {
     "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
-    "total_cards_count": 50,
     "number": 12,
     "sort_by": 12,
-    "name": { "en": "Wamp", "ja": "ワンプ" },
+    "name": {
+      "en": "Wamp",
+      "ja": "ワンプ"
+    },
     "parody": "Wurmple",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
@@ -508,33 +584,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "String Shot", "ja": "ストリングショット" },
+        "name": {
+          "en": "String Shot",
+          "ja": "ストリングショット"
+        },
         "effect": {
           "en": "Shoots silk threads around the opponent, lowering their speed.",
           "ja": "絹でできた糸を相手の周囲に発射し、相手の素早さを下げる。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "31ea2242-1638-4040-ab15-6c7587da4397",
-    "total_cards_count": 50,
     "number": 13,
     "sort_by": 13,
-    "name": { "en": "Egg Boy", "ja": "エッグボーイ" },
+    "name": {
+      "en": "Egg Boy",
+      "ja": "エッグボーイ"
+    },
     "parody": "Chansey",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
@@ -549,33 +628,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Softboiled", "ja": "ゆで卵" },
+        "name": {
+          "en": "Softboiled",
+          "ja": "ゆで卵"
+        },
         "effect": {
           "en": "Lay and eat boiled eggs. To be honest, it's very unpleasant.",
           "ja": "卵を産んで食べます。正直なところ、非常に不愉快である。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
-    "total_cards_count": 50,
     "number": 14,
     "sort_by": 14,
-    "name": { "en": "Pointy", "ja": "先のとがった" },
+    "name": {
+      "en": "Pointy",
+      "ja": "先のとがった"
+    },
     "parody": "Scizor",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/14.jpg",
@@ -590,42 +672,50 @@
     },
     "attacks": [
       {
-        "name": { "en": "Swords Dance", "ja": "つるぎのまい" },
+        "name": {
+          "en": "Swords Dance",
+          "ja": "つるぎのまい"
+        },
         "effect": {
           "en": "Dance with swords. Do not use at home.",
           "ja": "剣を使ってダンスをします。自宅では使わないでください。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
-        "name": { "en": "Iron Head", "ja": "アイアンヘッド" },
+        "name": {
+          "en": "Iron Head",
+          "ja": "アイアンヘッド"
+        },
         "effect": {
           "en": "Attacks the opponent with its head.",
           "ja": "自分の頭で相手を攻撃する。"
         },
         "damage": "90",
-        "costs": ["Steel"]
+        "costs": [
+          "Steel"
+        ]
       }
     ]
   },
   {
     "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
-    "total_cards_count": 50,
     "number": 15,
     "sort_by": 15,
-    "name": { "en": "Buggy", "ja": "バギー" },
+    "name": {
+      "en": "Buggy",
+      "ja": "バギー"
+    },
     "parody": "Butterfree",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set1/15.jpg",
@@ -640,41 +730,49 @@
     },
     "attacks": [
       {
-        "name": { "en": "Poisonpowder", "ja": "どくのこな" },
+        "name": {
+          "en": "Poisonpowder",
+          "ja": "どくのこな"
+        },
         "effect": {
           "en": "Causes a poison status on the opponent.",
           "ja": "相手を毒状態にする。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       },
       {
-        "name": { "en": "Stun Spore", "ja": "しびれごな" },
+        "name": {
+          "en": "Stun Spore",
+          "ja": "しびれごな"
+        },
         "effect": {
           "en": "Makes the opponent faint.",
           "ja": "相手を気絶させる。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
-    "total_cards_count": 50,
     "number": 16,
     "sort_by": 16,
-    "name": { "en": "Pidgey", "ja": "ビジー" },
+    "name": {
+      "en": "Pidgey",
+      "ja": "ビジー"
+    },
     "parody": "Pidgey",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
@@ -683,36 +781,42 @@
       "en": "A common bird Pokémon. It dislikes conflict and often runs away from battle.",
       "ja": "一般的な鳥ポケモン。争いを好まず、戦闘から逃げることが多い。"
     },
-    "measurement": { "height": ".3m", "weight": "1.8kg" },
+    "measurement": {
+      "height": ".3m",
+      "weight": "1.8kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Sand Attack", "ja": "すなかけ" },
+        "name": {
+          "en": "Sand Attack",
+          "ja": "すなかけ"
+        },
         "effect": {
           "en": "Kicks sand into the opponent's eyes and runs away. A truly cowardly move.",
           "ja": "砂を相手の目に蹴りつけて逃走する。まさに卑怯な技。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
-    "total_cards_count": 50,
     "number": 17,
     "sort_by": 17,
-    "name": { "en": "Croco", "ja": "クロコ" },
+    "name": {
+      "en": "Croco",
+      "ja": "クロコ"
+    },
     "parody": "Totodile",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
@@ -721,43 +825,57 @@
       "en": "This Pokémon has a very strong jaw.",
       "ja": "非常に強い顎を持つポケモンです。"
     },
-    "measurement": { "height": ".6m", "weight": "9.5kg" },
+    "measurement": {
+      "height": ".6m",
+      "weight": "9.5kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Bite", "ja": "かみつく" },
-        "effect": { "en": "Bites the opponent.", "ja": "相手に噛みつく。" },
+        "name": {
+          "en": "Bite",
+          "ja": "かみつく"
+        },
+        "effect": {
+          "en": "Bites the opponent.",
+          "ja": "相手に噛みつく。"
+        },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
-        "name": { "en": "Water Gun", "ja": "みずでっぽう" },
+        "name": {
+          "en": "Water Gun",
+          "ja": "みずでっぽう"
+        },
         "effect": {
           "en": "Takes out the water gun you bought at the toy store and sprays the opponent.",
           "ja": "おもちゃ屋で買った水鉄砲を取り出し、相手に浴びせかける。"
         },
         "damage": "40",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
-    "total_cards_count": 50,
     "number": 18,
     "sort_by": 18,
-    "name": { "en": "Nugget", "ja": "ナゲット" },
+    "name": {
+      "en": "Nugget",
+      "ja": "ナゲット"
+    },
     "parody": "Torchic",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
@@ -766,37 +884,43 @@
       "en": "It has a flame inside that never goes out.",
       "ja": "体内に炎を宿しており、決して消えることはない。"
     },
-    "measurement": { "height": ".4m", "weight": "2.5kg" },
+    "measurement": {
+      "height": ".4m",
+      "weight": "2.5kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Flamethrower", "ja": "かえんほうしゃ" },
+        "name": {
+          "en": "Flamethrower",
+          "ja": "かえんほうしゃ"
+        },
         "effect": {
           "en": "An extremely powerful flame attack. Only the most powerful and experienced Pokémon can pull off this move.",
           "ja": "非常に強力な火炎放射攻撃。経験豊富な最強のポケモンのみが繰り出すことができる技。"
         },
         "damage": "100",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ]
   },
   {
     "id": "fc749318-113e-4087-9c80-b87d5c66b907",
-    "total_cards_count": 50,
     "number": 19,
     "sort_by": 19,
-    "name": { "en": "Ghost Boy", "ja": "ゴーストボーイ" },
+    "name": {
+      "en": "Ghost Boy",
+      "ja": "ゴーストボーイ"
+    },
     "parody": "Gastly",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
@@ -805,37 +929,43 @@
       "en": "A Pokémon made mostly of gas.",
       "ja": "ほとんどが気体でできているポケモン。"
     },
-    "measurement": { "height": "1.3m", "weight": "1kg" },
+    "measurement": {
+      "height": "1.3m",
+      "weight": "1kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Lick", "ja": "したでなめる" },
+        "name": {
+          "en": "Lick",
+          "ja": "したでなめる"
+        },
         "effect": {
           "en": "Licks the opponent. Some Pokémon enjoy this, so be careful.",
           "ja": "相手をなめる。中にはこれを喜ぶポケモンもいるので注意。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "c2b7f774-5c77-4e12-9e16-38479c9d3db6",
-    "total_cards_count": 50,
     "number": 20,
     "sort_by": 20,
-    "name": { "en": "Wormy", "ja": "ワーミー" },
+    "name": {
+      "en": "Wormy",
+      "ja": "ワーミー"
+    },
     "parody": "Dratini",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
@@ -844,46 +974,56 @@
       "en": "Once considered a legendary Pokémon until small colonies were discovered underwater.",
       "ja": "水中で小さなコロニーが発見されるまでは、伝説のポケモンとされていたポケモン。"
     },
-    "measurement": { "height": "1.6m", "weight": "3.3kg" },
+    "measurement": {
+      "height": "1.6m",
+      "weight": "3.3kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Dragon Tail", "ja": "ドラゴンテール" },
+        "name": {
+          "en": "Dragon Tail",
+          "ja": "ドラゴンテール"
+        },
         "effect": {
           "en": "Attacks the opponent with its tail.",
           "ja": "尻尾で相手を攻撃する。"
         },
         "damage": "40",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       },
       {
-        "name": { "en": "Leer", "ja": "にらみつける" },
+        "name": {
+          "en": "Leer",
+          "ja": "にらみつける"
+        },
         "effect": {
           "en": "Stares intently at the opponent.",
           "ja": "相手をじっと見る。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
-
   {
     "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
-    "total_cards_count": 50,
     "number": 21,
     "sort_by": 21,
-    "name": { "en": "Long Worm", "ja": "ロングワーム" },
+    "name": {
+      "en": "Long Worm",
+      "ja": "ロングワーム"
+    },
     "parody": "Dragonair",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
@@ -892,46 +1032,56 @@
       "en": "A Pokémon that emits a mysterious aura. It can change the weather with its emotions.",
       "ja": "神秘的なオーラを放つポケモン。感情で天候を変化させることができる。"
     },
-    "measurement": { "height": "4m", "weight": "16.5kg" },
+    "measurement": {
+      "height": "4m",
+      "weight": "16.5kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Rain Dance", "ja": "あまごい" },
+        "name": {
+          "en": "Rain Dance",
+          "ja": "あまごい"
+        },
         "effect": {
           "en": "It performs a dance that changes the weather.",
           "ja": "天候を変化させるダンスをする。"
         },
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       },
       {
-        "name": { "en": "Dragon Rush", "ja": "ドラゴンダイブ" },
+        "name": {
+          "en": "Dragon Rush",
+          "ja": "ドラゴンダイブ"
+        },
         "effect": {
           "en": "Charges at the opponent with dragon-like movements.",
           "ja": "ドラゴンのような動きで相手に突進する。"
         },
         "damage": "90",
-        "costs": ["Dragon"]
+        "costs": [
+          "Dragon"
+        ]
       }
     ]
   },
-
   {
     "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
-    "total_cards_count": 50,
     "number": 22,
     "sort_by": 22,
-    "name": { "en": "Robot", "ja": "ロボット" },
+    "name": {
+      "en": "Robot",
+      "ja": "ロボット"
+    },
     "parody": "Porygon",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
@@ -946,34 +1096,39 @@
     },
     "attacks": [
       {
-        "name": { "en": "Tri Attack", "ja": "トライアタック" },
+        "name": {
+          "en": "Tri Attack",
+          "ja": "トライアタック"
+        },
         "effect": {
           "en": "It fires a beam made up of multiple elements.",
           "ja": "複数の元素で構成されたビームを放つ。"
         },
         "damage": "80",
-        "costs": ["Fire", "Water", "Electric"]
+        "costs": [
+          "Fire",
+          "Water",
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
-    "total_cards_count": 50,
     "number": 23,
     "sort_by": 23,
-    "name": { "en": "Water Horse", "ja": "水馬" },
+    "name": {
+      "en": "Water Horse",
+      "ja": "水馬"
+    },
     "parody": "Horsea",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/23.jpg",
@@ -988,33 +1143,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Smokescreen", "ja": "えんまく" },
+        "name": {
+          "en": "Smokescreen",
+          "ja": "えんまく"
+        },
         "effect": {
           "en": "It creates a cloud of black smoke. This is a technique that the Pokémon learned by observing the ninja.",
           "ja": "黒煙のような雲を発生させる。ポケモンが忍者を観察して覚えた技である。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "adf5b6c2-5f0c-44b2-86a3-24c26a030e2b",
-    "total_cards_count": 50,
     "number": 24,
     "sort_by": 24,
-    "name": { "en": "Brown Rod", "ja": "ブラウンロッド" },
+    "name": {
+      "en": "Brown Rod",
+      "ja": "ブラウンロッド"
+    },
     "parody": "Diglett",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
@@ -1023,36 +1181,42 @@
       "en": "A Pokémon that is extremely weak to sunlight. It spends nearly its entire life underground.",
       "ja": "日光に非常に弱いポケモン。ほぼ一生を地面の下で過ごす。"
     },
-    "measurement": { "height": ".2m", "weight": ".8kg" },
+    "measurement": {
+      "height": ".2m",
+      "weight": ".8kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Dig", "ja": "あなをほる" },
+        "name": {
+          "en": "Dig",
+          "ja": "あなをほる"
+        },
         "effect": {
           "en": "Digs a hole.",
           "ja": "穴を掘る。"
         },
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "b62e2c35-74db-4c57-9052-3041abcf758a",
-    "total_cards_count": 50,
     "number": 25,
     "sort_by": 25,
-    "name": { "en": "Plant Boy", "ja": "プラントボーイ" },
+    "name": {
+      "en": "Plant Boy",
+      "ja": "プラントボーイ"
+    },
     "parody": "Oddish",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/25.jpg",
@@ -1061,36 +1225,42 @@
       "en": "During the day, it plants itself. At dusk, it wakes up and wanders around scattering seeds.",
       "ja": "日中に植物を植え、夕暮れ時に目覚めて歩き回り、種をまき散らすポケモン。"
     },
-    "measurement": { "height": ".5m", "weight": "5.4kg" },
+    "measurement": {
+      "height": ".5m",
+      "weight": "5.4kg"
+    },
     "attacks": [
       {
-        "name": { "en": "Growth", "ja": "せいちょう" },
+        "name": {
+          "en": "Growth",
+          "ja": "せいちょう"
+        },
         "effect": {
           "en": "Its body grows larger. Who needs protein powder when you’re a plant? Not a bad trick.",
           "ja": "体が大きくなる。プロテインパウダーが必要なのは誰だ？奇抜ではない。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "c82550d0-3092-4480-b60b-283a3dbab478",
-    "total_cards_count": 50,
     "number": 26,
     "sort_by": 26,
-    "name": { "en": "Firefox", "ja": "ファイアフォックス" },
+    "name": {
+      "en": "Firefox",
+      "ja": "ファイアフォックス"
+    },
     "parody": "Vulpix",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
@@ -1105,41 +1275,49 @@
     },
     "attacks": [
       {
-        "name": { "en": "Will-o-wisp", "ja": "おにび" },
+        "name": {
+          "en": "Will-o-wisp",
+          "ja": "おにび"
+        },
         "effect": {
           "en": "Attacks the opponent and burns them.",
           "ja": "相手を攻撃し、火傷を負わせる。"
         },
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       },
       {
-        "name": { "en": "Grudge", "ja": "おんねん" },
+        "name": {
+          "en": "Grudge",
+          "ja": "おんねん"
+        },
         "effect": {
           "en": "It's resentful of the person who didn't send a happy birthday email.",
           "ja": "誕生日おめでとうメールを送らなかった相手を恨んでいる。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ]
   },
   {
     "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
-    "total_cards_count": 50,
     "number": 27,
     "sort_by": 27,
-    "name": { "en": "Boat", "ja": "ボート" },
+    "name": {
+      "en": "Boat",
+      "ja": "ボート"
+    },
     "parody": "Lapras",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
@@ -1154,34 +1332,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Surf", "ja": "なみのり" },
+        "name": {
+          "en": "Surf",
+          "ja": "なみのり"
+        },
         "effect": {
           "en": "Skilled at surfing and impresses its friends with its skills.",
           "ja": "波乗りを得意とし、その技で仲間を感動させる。"
         },
         "damage": "90",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
-    "total_cards_count": 50,
     "number": 28,
     "sort_by": 28,
-    "name": { "en": "Shanpe", "ja": "シャンピー" },
+    "name": {
+      "en": "Shanpe",
+      "ja": "シャンピー"
+    },
     "parody": "Abra",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/28.jpg",
@@ -1196,33 +1377,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Teleport", "ja": "テレポート" },
+        "name": {
+          "en": "Teleport",
+          "ja": "テレポート"
+        },
         "effect": {
           "en": "To instantly teleport to another location. Also known as teleportation.",
           "ja": "瞬時に別の場所にテレポートする。瞬間移動とも呼ばれる。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
-    "total_cards_count": 50,
     "number": 29,
     "sort_by": 29,
-    "name": { "en": "Sleepy Boy", "ja": "シュリーピーボーイ" },
+    "name": {
+      "en": "Sleepy Boy",
+      "ja": "シュリーピーボーイ"
+    },
     "parody": "Snorlax",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
@@ -1237,42 +1421,50 @@
     },
     "attacks": [
       {
-        "name": { "en": "Rest", "ja": "ねむる" },
+        "name": {
+          "en": "Rest",
+          "ja": "ねむる"
+        },
         "effect": {
           "en": "Falls asleep. Snorlax is good at this move.",
           "ja": "眠りについてしまう。カビゴンはこの技を得意としています。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
-        "name": { "en": "Snore", "ja": "いびき" },
+        "name": {
+          "en": "Snore",
+          "ja": "いびき"
+        },
         "effect": {
           "en": "Attacks while asleep.",
           "ja": "眠っている間に攻撃する。"
         },
         "damage": "60",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "123ab3a2-529d-47b4-9a4d-390178d8399d",
-    "total_cards_count": 50,
     "number": 30,
     "sort_by": 30,
-    "name": { "en": "Balloon", "ja": "バルーン" },
+    "name": {
+      "en": "Balloon",
+      "ja": "バルーン"
+    },
     "parody": "Drifloon",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/30.jpg",
@@ -1287,34 +1479,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Selfdestruct", "ja": "じばく" },
+        "name": {
+          "en": "Selfdestruct",
+          "ja": "じばく"
+        },
         "effect": {
           "en": "An exploding bomb that can injure yourself or others. Editor's note: I'm afraid the balloon will pop.",
           "ja": "ユーザーが爆発し、自分や他人を傷つける。風船が割れるのが怖い。"
         },
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
-    "total_cards_count": 50,
     "number": 31,
     "sort_by": 31,
-    "name": { "en": "Egg Bath", "ja": "エッグバス" },
+    "name": {
+      "en": "Egg Bath",
+      "ja": "エッグバス"
+    },
     "parody": "Togepi",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "2",
     "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
@@ -1329,33 +1524,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Yawn", "ja": "あくび" },
+        "name": {
+          "en": "Yawn",
+          "ja": "あくび"
+        },
         "effect": {
           "en": "When it yawns, the opponent will yawn too.",
           "ja": "あくびをすると相手もあくびをする。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
-    "total_cards_count": 50,
     "number": 32,
     "sort_by": 32,
-    "name": { "en": "Sukawai", "ja": "スカワイ" },
+    "name": {
+      "en": "Sukawai",
+      "ja": "スカワイ"
+    },
     "parody": "Mimikyu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/32.jpg",
@@ -1370,33 +1568,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Copycat", "ja": "まねっこ" },
+        "name": {
+          "en": "Copycat",
+          "ja": "まねっこ"
+        },
         "effect": {
           "en": "Copy the opponent.",
           "ja": "相手をコピーする。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
-    "total_cards_count": 50,
     "number": 33,
     "sort_by": 33,
-    "name": { "en": "Big Bat", "ja": "ビッグバット" },
+    "name": {
+      "en": "Big Bat",
+      "ja": "ビッグバット"
+    },
     "parody": "Golbat",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
@@ -1411,33 +1612,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Screech", "ja": "いやなおと" },
+        "name": {
+          "en": "Screech",
+          "ja": "いやなおと"
+        },
         "effect": {
           "en": "It produces a very annoying noise.",
           "ja": "使用者はひどく迷惑な音を出す。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "12d9770e-32e2-4766-ab24-a43f86dccc42",
-    "total_cards_count": 50,
     "number": 34,
     "sort_by": 34,
-    "name": { "en": "Beaver", "ja": "ビーバー" },
+    "name": {
+      "en": "Beaver",
+      "ja": "ビーバー"
+    },
     "parody": "Bidoof",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/34.jpg",
@@ -1452,33 +1656,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Taunt", "ja": "ちょうはつ" },
+        "name": {
+          "en": "Taunt",
+          "ja": "ちょうはつ"
+        },
         "effect": {
           "en": "To mentally and psychologically torment the opponent until they feel uncomfortable.",
           "ja": "相手が嫌な思いをするまで精神的、心理的に苛める。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
-    "total_cards_count": 50,
     "number": 35,
     "sort_by": 35,
-    "name": { "en": "Kitty", "ja": "キティ" },
+    "name": {
+      "en": "Kitty",
+      "ja": "キティ"
+    },
     "parody": "Litten",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
@@ -1493,34 +1700,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Double Kick", "ja": "にどげり" },
+        "name": {
+          "en": "Double Kick",
+          "ja": "にどげり"
+        },
         "effect": {
           "en": "This skill is difficult to master. The opponent is beaten not just once, but twice.",
           "ja": "相手を一度だけでなく、二度蹴る。使いこなすのが難しい技。"
         },
         "damage": "20",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
-    "total_cards_count": 50,
     "number": 36,
     "sort_by": 36,
-    "name": { "en": "Motherless Boy", "ja": "マザーレスボーイ" },
+    "name": {
+      "en": "Motherless Boy",
+      "ja": "マザーレスボーイ"
+    },
     "parody": "Cubone",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
@@ -1535,34 +1745,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Bone Rush", "ja": "ボーンラッシュ" },
+        "name": {
+          "en": "Bone Rush",
+          "ja": "ボーンラッシュ"
+        },
         "effect": {
           "en": "Rush towards the opponent and attack with bones.",
           "ja": "相手に突進し、骨で攻撃する。"
         },
         "damage": "50",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
-    "total_cards_count": 50,
     "number": 37,
     "sort_by": 37,
-    "name": { "en": "Blob", "ja": "ブロブ" },
+    "name": {
+      "en": "Blob",
+      "ja": "ブロブ"
+    },
     "parody": "Ditto",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
@@ -1577,33 +1790,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Transform", "ja": "へんしん" },
+        "name": {
+          "en": "Transform",
+          "ja": "へんしん"
+        },
         "effect": {
           "en": "Transform into the opponent.",
           "ja": "相手に変身する。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
-    "total_cards_count": 50,
     "number": 38,
     "sort_by": 38,
-    "name": { "en": "Clompy", "ja": "クロンピー" },
+    "name": {
+      "en": "Clompy",
+      "ja": "クロンピー"
+    },
     "parody": "Pikachu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
@@ -1618,34 +1834,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Shock", "ja": "ショック" },
+        "name": {
+          "en": "Shock",
+          "ja": "ショック"
+        },
         "effect": {
           "en": "Pikachu gives the opponent an electric shock as strong as a toaster.",
           "ja": "ピカチュウが相手に与える電気ショックは、トースター並みの強さ"
         },
         "damage": "30",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
-    "total_cards_count": 50,
     "number": 39,
     "sort_by": 39,
-    "name": { "en": "Dark Boy", "ja": "ダークボーイ" },
+    "name": {
+      "en": "Dark Boy",
+      "ja": "ダークボーイ"
+    },
     "parody": "Umbreon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
@@ -1660,33 +1879,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Confuse Ray", "ja": "あやしいひかり" },
+        "name": {
+          "en": "Confuse Ray",
+          "ja": "あやしいひかり"
+        },
         "effect": {
           "en": "This attack makes the opponent question reality. Forces them to ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
           "ja": "この攻撃は、ターゲットに現実を疑わせます。相手は、映画館でどの肘掛が自分のものなのか、といった哲学的な深い問いかけを考えてしまいます。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ]
   },
   {
     "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
-    "total_cards_count": 50,
     "number": 40,
     "sort_by": 40,
-    "name": { "en": "Light Boy", "ja": "ライトボイ" },
+    "name": {
+      "en": "Light Boy",
+      "ja": "ライトボイ"
+    },
     "parody": "Espeon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
@@ -1701,34 +1923,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Psychic", "ja": "サイコキネシス" },
+        "name": {
+          "en": "Psychic",
+          "ja": "サイコキネシス"
+        },
         "effect": {
           "en": "An experimental move using psychic energy to cause the opponent to have an intense and unpleasant psychedelic experience. Also known as a bad trip.",
           "ja": "サイキックエネルギーによる攻撃で、相手に強烈で不快なサイケデリックな体験をさせる。バッドトリップとも呼ばれる。"
         },
         "damage": "90",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
-    "total_cards_count": 50,
     "number": 41,
     "sort_by": 41,
-    "name": { "en": "Hanbot", "ja": "ハンボット" },
+    "name": {
+      "en": "Hanbot",
+      "ja": "ハンボット"
+    },
     "parody": "Blastoise",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
@@ -1743,34 +1968,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Hydro Pump", "ja": "ハイドロポンプ" },
+        "name": {
+          "en": "Hydro Pump",
+          "ja": "ハイドロポンプ"
+        },
         "effect": {
           "en": "Shoots a powerful jet of water at the opponent. Also effective at cleaning cars and trucks.",
           "ja": "強力な水流を相手に浴びせる。車やトラックの清掃にも有効。"
         },
         "damage": "150",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
-    "total_cards_count": 50,
     "number": 42,
     "sort_by": 42,
-    "name": { "en": "Trumpety", "ja": "トランプティ" },
+    "name": {
+      "en": "Trumpety",
+      "ja": "トランプティ"
+    },
     "parody": "Charizard",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
@@ -1785,34 +2013,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Fire Blast", "ja": "だいもんじ" },
+        "name": {
+          "en": "Fire Blast",
+          "ja": "だいもんじ"
+        },
         "effect": {
           "en": "A powerful flame that can deal a lot of damage. Can also be used to make s'mores.",
           "ja": "強力な炎を放つ。大ダメージを与えることができるが、スモアの材料にもなる。"
         },
         "damage": "150",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ]
   },
   {
     "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
-    "total_cards_count": 50,
     "number": 43,
     "sort_by": 43,
-    "name": { "en": "Veronica", "ja": "ベロニカ" },
+    "name": {
+      "en": "Veronica",
+      "ja": "ベロニカ"
+    },
     "parody": "Venusaur",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
@@ -1827,34 +2058,37 @@
     },
     "attacks": [
       {
-        "name": { "en": "Solarbeam", "ja": "ソーラービーム" },
+        "name": {
+          "en": "Solarbeam",
+          "ja": "ソーラービーム"
+        },
         "effect": {
           "en": "Attacks the opponent with energy collected from the sun. Also gives them Vitamin D and may cause a sunburn.",
           "ja": "太陽から集めたエネルギーで相手を攻撃する。ビタミンDを浴びせ、日焼けさせる。"
         },
         "damage": "150",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
-    "total_cards_count": 50,
     "number": 44,
     "sort_by": 44,
-    "name": { "en": "Naruto", "ja": "なると" },
+    "name": {
+      "en": "Naruto",
+      "ja": "なると"
+    },
     "parody": "Dragonite",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/44.jpg",
@@ -1869,33 +2103,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Dragon Dance", "ja": "りゅうのまい" },
+        "name": {
+          "en": "Dragon Dance",
+          "ja": "りゅうのまい"
+        },
         "effect": {
           "en": "The user performs a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
           "ja": "使用者は攻撃力とスピードが上がる舞をする。最大で30分の効果があり、何度も衣装替えをする必要がある。"
         },
-        "costs": ["Dragon"]
+        "costs": [
+          "Dragon"
+        ]
       }
     ]
   },
   {
     "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
-    "total_cards_count": 50,
     "number": 45,
     "sort_by": 45,
-    "name": { "en": "Alola Pachu", "ja": "アローラ パチュー" },
+    "name": {
+      "en": "Alola Pachu",
+      "ja": "アローラ パチュー"
+    },
     "parody": "Alolan Raichu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/45.jpg",
@@ -1910,33 +2147,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Psychic", "ja": "サイコキネシス" },
+        "name": {
+          "en": "Psychic",
+          "ja": "サイコキネシス"
+        },
         "effect": {
           "en": "Uses tarot cards to predict the future. Can also channel your dead grandma ($100).",
           "ja": "タロットカードを使って、相手の未来を予言します。また、死んだおばあちゃんとチャネリングすることもできる（100ドル）。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
-    "total_cards_count": 50,
     "number": 46,
     "sort_by": 46,
-    "name": { "en": "Gontar", "ja": "ゴンター" },
+    "name": {
+      "en": "Gontar",
+      "ja": "ゴンター"
+    },
     "parody": "Gengar",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set1/46.jpg",
@@ -1951,33 +2191,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Curse", "ja": "のろい" },
+        "name": {
+          "en": "Curse",
+          "ja": "のろい"
+        },
         "effect": {
           "en": "This technique inflicts bad luck on the opponent. This includes various types of misfortune, such as being hit by lightning or being stuck in traffic.",
           "ja": "この技は相手に不運を与えます。雷に打たれる、渋滞に巻き込まれるなど、さまざまな運があります。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ]
   },
   {
     "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
-    "total_cards_count": 50,
     "number": 47,
     "sort_by": 47,
-    "name": { "en": "Dakarei", "ja": "だかれい" },
+    "name": {
+      "en": "Dakarei",
+      "ja": "だかれい"
+    },
     "parody": "Mewtwo",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/47.jpg",
@@ -1992,33 +2235,38 @@
     },
     "attacks": [
       {
-        "name": { "en": "Future Sight", "ja": "みらいよち" },
+        "name": {
+          "en": "Future Sight",
+          "ja": "みらいよち"
+        },
         "effect": {
           "en": "Attacks the opponent in the future with psychic powers. Pray that it's not when you're on the toilet.",
           "ja": "超能力で未来の相手を攻撃する。トイレの時でないことを祈る。"
         },
-        "costs": ["Psychic", "Psychic", "Psychic"]
+        "costs": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
-    "total_cards_count": 50,
     "number": 48,
     "sort_by": 48,
-    "name": { "en": "Gau", "ja": "ガウ" },
+    "name": {
+      "en": "Gau",
+      "ja": "ガウ"
+    },
     "parody": "Mew",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/48.jpg",
@@ -2033,33 +2281,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Transform", "ja": "へんしん" },
+        "name": {
+          "en": "Transform",
+          "ja": "へんしん"
+        },
         "effect": {
           "en": "It can take on the exact same appearance as the opponent and use their techniques. If this technique is used on one of its own kind, it will result in a long night.",
           "ja": "相手と全く同じ姿になり、その技を使うことができる。この技を同人に使うと、長い夜を過ごすことになる。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
-    "total_cards_count": 50,
     "number": 49,
     "sort_by": 49,
-    "name": { "en": "Are You Who", "ja": "アーフーユー" },
+    "name": {
+      "en": "Are You Who",
+      "ja": "アーフーユー"
+    },
     "parody": "Arceus",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "∞",
     "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
@@ -2074,33 +2325,36 @@
     },
     "attacks": [
       {
-        "name": { "en": "Judgment", "ja": "さばき" },
+        "name": {
+          "en": "Judgment",
+          "ja": "さばき"
+        },
         "effect": {
           "en": "Arceus looks at you with judgment. As a god, it knows all your weirdness.",
           "ja": "アルセウスは裁きの目であなたを見つめる。神様なので、あなたの全ての変態的な部分を知っている。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
-    "total_cards_count": 50,
     "number": 50,
     "sort_by": 50,
-    "name": { "en": "Shiny Fish", "ja": "ぴかぴかする フィッシュウ" },
+    "name": {
+      "en": "Shiny Fish",
+      "ja": "ぴかぴかする フィッシュウ"
+    },
     "parody": "Magikarp",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set1",
-    "series_short_name": "wm",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
-    "sets": [
-      {
-        "name": "Set One (reprint)",
-        "image": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg"
-      }
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
@@ -2115,34 +2369,34 @@
     },
     "attacks": [
       {
-        "name": { "en": "Splash", "ja": "はねる" },
+        "name": {
+          "en": "Splash",
+          "ja": "はねる"
+        },
         "effect": {
           "en": "In most cases, it does no damage. (Roll a d6 5 times. If the same number appears on all dice rolls, it's an instant KO.)",
           "ja": "ほとんどの場合、ダメージを与えない。(サイコロを5回振って、全て同じ目が出たら一撃KO)"
         },
         "damage": "0",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
-    "total_cards_count": 50,
     "number": 1,
     "sort_by": 1,
     "name": "Mudcreef",
     "parody": "Mudkip",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/01.jpg",
@@ -2157,28 +2411,25 @@
         "name": "Punch",
         "effect": "Throws a punch at the opponent.",
         "damage": "20",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "27d41ee8-e9af-440b-b633-551140734996",
-    "total_cards_count": 50,
     "number": 9,
     "sort_by": 9,
     "name": "Meow",
     "parody": "Meowth",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/09.jpg",
@@ -2192,34 +2443,33 @@
       {
         "name": "Yawn",
         "effect": "I yawn and then I go to sleep. It's a cute trick, but it doesn't work.",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": "Payday",
         "effect": "Attacks to make your opponent drop money.",
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
-    "total_cards_count": 50,
     "number": 5,
     "sort_by": 5,
     "name": "Nidonido",
     "parody": "Nidoran♂",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/05.jpg",
@@ -2234,28 +2484,25 @@
         "name": "Cut",
         "effect": "Cut whatever is in front of you.",
         "damage": "15",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
-    "total_cards_count": 50,
     "number": 2,
     "sort_by": 2,
     "name": "Furphy",
     "parody": "Farfetch'd",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/02.jpg",
@@ -2270,28 +2517,25 @@
         "name": "Stick Slap",
         "effect": "Hitting the opponent with a stick, leaving a lump on the opponent's head.",
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
-    "total_cards_count": 50,
     "number": 8,
     "sort_by": 8,
     "name": "Gegedu",
     "parody": "Geodude",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/08.jpg",
@@ -2306,28 +2550,25 @@
         "name": "Earthquake",
         "effect": "Shakes the ground and attacks the opponent. It can cause great damage to cities.",
         "damage": "25",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "6e145bfb-dde8-4836-9e48-7204bdf09a29",
-    "total_cards_count": 50,
     "number": 3,
     "sort_by": 3,
     "name": "Togouchi",
     "parody": "Togetic",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/03.jpg",
@@ -2342,28 +2583,25 @@
         "name": "Energy Ball",
         "effect": "When it touches other creatures, nothing happens.",
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "73dbce8e-1088-4a8b-a07c-fa03aacdac68",
-    "total_cards_count": 50,
     "number": 10,
     "sort_by": 10,
     "name": "Blissui",
     "parody": "Blissey",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/10.jpg",
@@ -2378,28 +2616,25 @@
         "name": "Egg Bomb",
         "effect": "Throws explosive eggs at opponents. Make it green and explode.",
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
-    "total_cards_count": 50,
     "number": 4,
     "sort_by": 4,
     "name": "Slow Mobi",
     "parody": "Slowbro",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set2/04.jpg",
@@ -2414,28 +2649,25 @@
         "name": "Hypnotist",
         "effect": "Uses telekinesis to enter the mind of his victim and tells him to do 50 embarrassing things in front of his friends.",
         "damage": "50",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "b7e60ae3-6fdf-4b69-a5b5-18f6e0d70676",
-    "total_cards_count": 50,
     "number": 7,
     "sort_by": 7,
     "name": "Pidgeotto",
     "parody": "Pidgeotto",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/07.jpg",
@@ -2450,28 +2682,25 @@
         "name": "Stomp",
         "effect": "Trample and forcefully attack your opponent.",
         "damage": "35",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "c60bb931-586b-4078-8aea-5e0edda8e49e",
-    "total_cards_count": 50,
     "number": 6,
     "sort_by": 6,
     "name": "Nidanida",
     "parody": "Nidoran♀",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/06.jpg",
@@ -2486,28 +2715,25 @@
         "name": "Tummy Kick",
         "effect": "Kicks the opponent in the stomach, causing hours of pain.",
         "damage": "15",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
-    "total_cards_count": 50,
     "number": 11,
     "sort_by": 11,
     "name": "Siechacha",
     "parody": "Scyther",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/11.jpg",
@@ -2522,34 +2748,33 @@
         "name": "Hyper Cut",
         "effect": "Slice the opponent into pieces with a devastating blow.",
         "damage": "60",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": "Bug's Gaze",
         "effect": "Stare at the opponent, causing extreme discomfort.",
         "damage": "20",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "f48bdb77-5685-4bf7-954c-a15ad3970ab7",
-    "total_cards_count": 50,
     "number": 12,
     "sort_by": 12,
     "name": "Ghost Boy",
     "parody": "Haunter",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/12.jpg",
@@ -2564,28 +2789,25 @@
         "name": "Scare",
         "effect": "Deform its body and face to scare the opponent. This reduces the opponent's attack power.",
         "damage": "40",
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ]
   },
   {
     "id": "8384f45d-4c02-4abd-97ad-dcb9d75b5197",
-    "total_cards_count": 50,
     "number": 13,
     "sort_by": 13,
     "name": "Bonzie",
     "parody": "Bonsly",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/13.jpg",
@@ -2600,28 +2822,25 @@
         "name": "Kick",
         "effect": "Kick the opponent with the small leg. It's not very effective.",
         "damage": "10",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "c4ee4c46-e14a-4124-aa2a-023e64662f5c",
-    "total_cards_count": 50,
     "number": 14,
     "sort_by": 14,
     "name": "Woopa",
     "parody": "Wooper",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/14.jpg",
@@ -2636,28 +2855,25 @@
         "name": "Water Spray",
         "effect": "Spray water on the opponent, causing confusion and then escaping.",
         "damage": "15",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "71d0b53d-8441-45d8-ae17-16b188652307",
-    "total_cards_count": 50,
     "number": 15,
     "sort_by": 15,
     "name": "Chachi",
     "parody": "Rowlet",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/15.jpg",
@@ -2672,28 +2888,25 @@
         "name": "Peck",
         "effect": "Peck the opponent with its sharp beak. Very effective against insect-type creatures.",
         "damage": "10",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "31c69bc1-8aa2-4b42-b7f3-22727c9ff208",
-    "total_cards_count": 50,
     "number": 16,
     "sort_by": 16,
     "name": "Growly",
     "parody": "Growlithe",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/16.jpg",
@@ -2707,34 +2920,33 @@
       {
         "name": "Growl",
         "effect": "Shout abusive language at the other person, making them run away.",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": "Fireball",
         "effect": "Throw a fireball at the opponent.",
         "damage": "25",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ]
   },
   {
     "id": "1944e6c4-c24c-4204-baaa-69c2bbc68586",
-    "total_cards_count": 50,
     "number": 17,
     "sort_by": 17,
     "name": "Pantomime Man",
     "parody": "Mr. Mine",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/17.jpg",
@@ -2748,28 +2960,25 @@
       {
         "name": "Mine",
         "effect": "Create a protective barrier against psychic energy.",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "240b6653-26aa-496a-a004-8113134a102b",
-    "total_cards_count": 50,
     "number": 18,
     "sort_by": 18,
     "name": "Jinx",
     "parody": "Jynx",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/18.jpg",
@@ -2784,28 +2993,25 @@
         "name": "Ice Kiss",
         "effect": "Kiss the opponent, freezing them for 2 turns.",
         "damage": "25",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   },
   {
     "id": "daa74bfb-22b4-4a45-a890-5229e4ed508c",
-    "total_cards_count": 50,
     "number": 19,
     "sort_by": 19,
     "name": "Peep",
     "parody": "Piplup",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/19.jpg",
@@ -2820,28 +3026,25 @@
         "name": "Flipper Smack",
         "effect": "Use its flippers to hit the opponent hard. It deals a lot of damage and is also a very cute move.",
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "a981c478-222a-4e6e-9944-4cf4477460ab",
-    "total_cards_count": 50,
     "number": 20,
     "sort_by": 20,
     "name": "Tight",
     "parody": "Shellder",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/20.jpg",
@@ -2855,28 +3058,25 @@
       {
         "name": "Close",
         "effect": "Close its shell, becoming invincible to most physical attacks.",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "9cb24990-f8c0-4c14-941b-dc7134b0b5ee",
-    "total_cards_count": 50,
     "number": 21,
     "sort_by": 21,
     "name": "Snow Boy",
     "parody": "Alolan Vulpix",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/21.jpg",
@@ -2891,28 +3091,25 @@
         "name": "Hail",
         "effect": "Summon a song from the clouds, dealing base damage to the opponent each turn.",
         "damage": "5",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "461a5ae6-d58b-4f49-b370-1b636272bcf7",
-    "total_cards_count": 50,
     "number": 22,
     "sort_by": 22,
     "name": "Ratatou",
     "parody": "Ratatta",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/22.jpg",
@@ -2927,28 +3124,25 @@
         "name": "Tackle",
         "effect": "Charge the opponent at full speed, dealing damage.",
         "damage": "10",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "c1914b5c-6dbd-4817-a613-41175b5017f3",
-    "total_cards_count": 50,
     "number": 23,
     "sort_by": 23,
     "name": "Ratacape",
     "parody": "Raticate",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/23.jpg",
@@ -2963,33 +3157,32 @@
         "name": "Superbite",
         "effect": "Bite the opponent in an extremely powerful manner.",
         "damage": "45",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": "Tail Whip",
         "effect": "Strike opponent with its tail.",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "1f972c13-70f4-40cc-8df9-ae00ac524d01",
-    "total_cards_count": 50,
     "number": 24,
     "sort_by": 24,
     "name": "Sanchi",
     "parody": "Sandshrew",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/24.jpg",
@@ -3003,28 +3196,25 @@
       {
         "name": "Sand Ball",
         "effect": "Throw sand balls at the opponent, lowering their accuracy.",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "9273f742-5c04-4877-82fb-1528c112b22e",
-    "total_cards_count": 50,
     "number": 25,
     "sort_by": 25,
     "name": "Catapy",
     "parody": "Caterpie",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/25.jpg",
@@ -3038,28 +3228,25 @@
       {
         "name": "String Shot",
         "effect": "Shoot strings around the opponent, greatly slowing them down.",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "e37f524c-3dee-4346-b465-a99e5b85f0aa",
-    "total_cards_count": 50,
     "number": 26,
     "sort_by": 26,
     "name": "Sticky",
     "parody": "Lickilicky",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set2/26.jpg",
@@ -3074,34 +3261,33 @@
         "name": "Lick",
         "effect": "Lick the other person.",
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": "Sit",
         "effect": "Sit on top of the other person.",
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "d29f94ee-3dc6-4bee-a0b5-b453c3933bc0",
-    "total_cards_count": 50,
     "number": 27,
     "sort_by": 27,
     "name": "Pachisui",
     "parody": "Pachurisu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/27.jpg",
@@ -3116,28 +3302,25 @@
         "name": "Thundercheeks",
         "effect": "Shock the opponent with your adorable little cheeks.",
         "damage": "25",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "6b9d86c3-b0ed-4934-be6d-92ba9c2f4080",
-    "total_cards_count": 50,
     "number": 28,
     "sort_by": 28,
     "name": "Onyx",
     "parody": "Onix",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set2/28.jpg",
@@ -3152,34 +3335,33 @@
         "name": "Rock Tail",
         "effect": "Slam the opponent with Rock Tail.",
         "damage": "40",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       },
       {
         "name": "Headbutt",
         "effect": "Headbutt the opponent.",
         "damage": "15",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "f5306450-5340-4b06-aa86-0c328571eed0",
-    "total_cards_count": 50,
     "number": 29,
     "sort_by": 29,
     "name": "Kakuma",
     "parody": "Kakuna",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/29.jpg",
@@ -3193,28 +3375,25 @@
       {
         "name": "Harden",
         "effect": "Harden itself to protect from damage.",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "40efda17-7356-492d-bfd7-e256c8a0d0e3",
-    "total_cards_count": 50,
     "number": 30,
     "sort_by": 30,
     "name": "Pony Pony",
     "parody": "Ponyta",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/30.jpg",
@@ -3229,28 +3408,25 @@
         "name": "Fire Wheel",
         "effect": "Create a ring of fire to attack, which can cause burns to the opponent.",
         "damage": "35",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ]
   },
   {
     "id": "a6602cc5-77db-44c3-affd-dac464dfc56f",
-    "total_cards_count": 50,
     "number": 31,
     "sort_by": 31,
     "name": "Pink Boy",
     "parody": "Clefairy",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/31.jpg",
@@ -3265,28 +3441,25 @@
         "name": "Random Move",
         "effect": "Connect with a higher dimensional being and learn random moves.",
         "damage": "?",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "c0a67fb1-2c93-4483-b233-4c3cbbc345f5",
-    "total_cards_count": 50,
     "number": 32,
     "sort_by": 32,
     "name": "Magic Mike",
     "parody": "Hitmonlee",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/32.jpg",
@@ -3301,28 +3474,25 @@
         "name": "Leg Kick",
         "effect": "Kick the opponent's leg to significantly reduce their evasion and speed.",
         "damage": "60",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "ec6bd531-ba02-4fd4-9a70-3cf17804021e",
-    "total_cards_count": 50,
     "number": 33,
     "sort_by": 33,
     "name": "Steve",
     "parody": "Hitmonchan",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
@@ -3337,28 +3507,25 @@
         "name": "Straight Jab",
         "effect": "Use the lead hand to punch the opponent in the face. All subsequent attacks will be critical hits.",
         "damage": "30",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ]
   },
   {
     "id": "de9f22b4-2442-4e7e-a0b9-86782267068a",
-    "total_cards_count": 50,
     "number": 34,
     "sort_by": 34,
     "name": "Magnemi",
     "parody": "Magneton",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "45",
     "image": "https://gaichu.b-cdn.net/wm/set2/34.jpg",
@@ -3373,28 +3540,25 @@
         "name": "Thunder Shock",
         "effect": "Shock the opponent with an electric shock, which can paralyze them.",
         "damage": "30",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "a6587285-00e7-4e86-8179-25f36e2fb041",
-    "total_cards_count": 50,
     "number": 35,
     "sort_by": 35,
     "name": "Watobatto",
     "parody": "Wartortle",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/35.jpg",
@@ -3409,28 +3573,25 @@
         "name": "Wet Slap",
         "effect": "Spit into its hand and start slapping the opponent. This is not only physically damaging, but is also very rude.",
         "damage": "30",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "e433ff5d-c206-4f65-a2cf-2a663ba79465",
-    "total_cards_count": 50,
     "number": 36,
     "sort_by": 36,
     "name": "Ivysor",
     "parody": "Ivysaur",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/36.jpg",
@@ -3445,28 +3606,25 @@
         "name": "Sweet Scent",
         "effect": "Cover itself in expensive body spray, attracting all kinds of creatures.",
         "damage": "35",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "45555f96-c9aa-454f-b43d-d7fcd85c13c9",
-    "total_cards_count": 50,
     "number": 37,
     "sort_by": 37,
     "name": "Charmi",
     "parody": "Charmeleon",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/37.jpg",
@@ -3481,34 +3639,33 @@
         "name": "Fire Breath",
         "effect": "Blow fire into the opponent's face after eating an onion.",
         "damage": "40",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       },
       {
         "name": "Scratch",
         "effect": "Scratch the opponent.",
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "edd88d82-d627-4bd3-b5eb-a6a738e0c721",
-    "total_cards_count": 50,
     "number": 38,
     "sort_by": 38,
     "name": "Champuru",
     "parody": "Flying Pikachu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
@@ -3522,28 +3679,25 @@
       {
         "name": "Fly",
         "effect": "Use balloons from a recent birthday party to levitate off the ground.",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "dc57bb94-44e2-4289-8924-79a446d73a7e",
-    "total_cards_count": 50,
     "number": 39,
     "sort_by": 39,
     "name": "Snopi",
     "parody": "Charmander",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/39.jpg",
@@ -3558,28 +3712,25 @@
         "name": "Burn",
         "effect": "Use fire to destroy everything in its path.",
         "damage": "10",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ]
   },
   {
     "id": "a7e13ccd-96b8-46eb-ae9f-5536b48263fd",
-    "total_cards_count": 50,
     "number": 40,
     "sort_by": 40,
     "name": "Lil Guy",
     "parody": "Bulbasaur",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/40.jpg",
@@ -3593,28 +3744,25 @@
       {
         "name": "Flower Delight",
         "effect": "Create a scent that evokes someone's most cherished memories.",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ]
   },
   {
     "id": "b6090d5b-3c41-4434-b19c-aa5718c53c96",
-    "total_cards_count": 50,
     "number": 41,
     "sort_by": 41,
     "name": "Champto",
     "parody": "Squirtle",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
@@ -3629,28 +3777,25 @@
         "name": "Bubbles",
         "effect": "Make cute animal shaped bubbles. This is very popular at birthday parties.",
         "damage": "10",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "68dec82e-45f0-4f10-89f4-984db75598bd",
-    "total_cards_count": 50,
     "number": 42,
     "sort_by": 42,
     "name": "Nanutayo",
     "parody": "Ninetails",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/42.jpg",
@@ -3664,28 +3809,25 @@
       {
         "name": "Seance",
         "effect": "Communicate with spirits from the afterlife using psychic abilities.",
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ]
   },
   {
     "id": "cba6f316-a88a-42a4-bf5d-2e38b102b93a",
-    "total_cards_count": 50,
     "number": 43,
     "sort_by": 43,
     "name": "Rai Rai",
     "parody": "Raichu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/43.jpg",
@@ -3700,28 +3842,25 @@
         "name": "Electric Shock",
         "effect": "Shock the opponent with an electric shock. This can also be used to charge mobile phones and tablets.",
         "damage": "40",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "696464c9-9c3c-44a1-88bf-0ba0dc7f2779",
-    "total_cards_count": 50,
     "number": 44,
     "sort_by": 44,
     "name": "Floreomon",
     "parody": "Flareon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/44.jpg",
@@ -3736,28 +3875,25 @@
         "name": "Bread Loaf",
         "effect": "All limbs retract into the body to take the shape of a loaf of bread.",
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "4d41c46d-7a80-45c4-abfc-750a89704361",
-    "total_cards_count": 50,
     "number": 45,
     "sort_by": 45,
     "name": "Johnnymon",
     "parody": "Jolteon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/45.jpg",
@@ -3772,28 +3908,25 @@
         "name": "Revive",
         "effect": "Use an electric shock to revive a stunned teammate.",
         "damage": "60",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "d53edbd7-066d-49b5-b9fb-5db0a54e887e",
-    "total_cards_count": 50,
     "number": 46,
     "sort_by": 46,
     "name": "Vepenomnom",
     "parody": "Vaporeon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/46.jpg",
@@ -3808,28 +3941,25 @@
         "name": "Aquafresh",
         "effect": "Produce a mist from its eye socket that kills 99.9% of germs and bacteria, leaving a refreshing scent behind.",
         "damage": "60",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "f85c3ce4-2faf-4a46-9adb-f76dfcaa59a1",
-    "total_cards_count": 50,
     "number": 47,
     "sort_by": 47,
     "name": "Entomi",
     "parody": "Entei",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/47.jpg",
@@ -3844,28 +3974,25 @@
         "name": "Unknown",
         "effect": "Summon an army of small creatures for help.",
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ]
   },
   {
     "id": "e7c55d0a-1ae9-4f3e-9a99-f08395970d23",
-    "total_cards_count": 50,
     "number": 48,
     "sort_by": 48,
     "name": "Raikomo",
     "parody": "Raikou",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/48.jpg",
@@ -3880,28 +4007,25 @@
         "name": "Lightning Rain",
         "effect": "Call down a thunderstorm, striking everything in the area with lightning.",
         "damage": "100",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ]
   },
   {
     "id": "6dfc5599-ab49-4b5b-af91-fba7c10d68ed",
-    "total_cards_count": 50,
     "number": 49,
     "sort_by": 49,
     "name": "Sukumo",
     "parody": "Suicune",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/49.jpg",
@@ -3916,28 +4040,25 @@
         "name": "Crystal Beam",
         "effect": "Decorate your room with beautiful stones and crystals.",
         "damage": "90",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ]
   },
   {
     "id": "0b636cc5-ecd5-4346-a9a5-6c1f19c81621",
-    "total_cards_count": 50,
     "number": 50,
     "sort_by": 50,
     "name": "Shiny Ramune",
     "parody": "Ralts",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_short_name": "set2",
-    "series_short_name": "wm",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
-    "sets": [
-      {
-        "name": "Set Two",
-        "image": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg"
-      }
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
     ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/50.jpg",
@@ -3952,7 +4073,9 @@
         "name": "Mind Read",
         "effect": "Use psychic ability to read the opponent's mind. This technique is also effective in poker.",
         "damage": "20",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ]
   }
