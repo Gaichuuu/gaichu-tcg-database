@@ -1,12 +1,17 @@
-export interface SetImage {
+export interface PackArt {
   url: string;
-  pathType?: string;
   frontDescription?: string;
   backDescription?: string;
+  illustrator?: string;
   note?: string;
+  packs?: Array<{ url: string; label: string }>;
+}
+
+export interface CardBack {
+  url: string;
   text?: string;
   illustrator?: string;
-  packs?: Array<{ url: string; label: string }>;
+  note?: string;
 }
 
 export interface CollectionSet {
@@ -21,5 +26,6 @@ export interface CollectionSet {
   description?: string;
   print_file_url?: string;
   buy_url?: string;
-  set_images?: SetImage[];
+  pack_art?: PackArt;
+  card_back?: CardBack;
 }

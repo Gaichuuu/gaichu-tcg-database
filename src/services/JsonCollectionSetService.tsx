@@ -3,15 +3,20 @@ import { SetAndCard } from "@/types/MergedCollection";
 import setsList from "data/sets.json";
 import { jsonCardList } from "./JsonCollectionCardService";
 
-interface JsonSetImage {
+interface JsonPackArt {
   url: string;
-  pathType?: string;
   frontDescription?: string;
   backDescription?: string;
+  illustrator?: string;
   note?: string;
+  packs?: Array<{ url: string; label: string }>;
+}
+
+interface JsonCardBack {
+  url: string;
   text?: string;
   illustrator?: string;
-  packs?: Array<{ url: string; label: string }>;
+  note?: string;
 }
 
 interface JsonSet {
@@ -23,9 +28,11 @@ interface JsonSet {
   name: string;
   sort_by: number;
   description?: string;
-  set_images?: JsonSetImage[];
+  pack_art?: JsonPackArt;
+  card_back?: JsonCardBack;
   print_file_url?: string;
   buy_url?: string;
+  total_cards_count?: number;
 }
 
 export const getJsonSet = (seriesShortName: string): SetAndCard[] => {
@@ -49,19 +56,9 @@ const convertToSetAndCard = (
     name: set.name,
     sort_by: set.sort_by,
     description: set.description,
-    set_images: set.set_images?.map((image) => ({
-      url: image.url,
-      pathType: image.pathType,
-      frontDescription: image.frontDescription,
-      backDescription: image.backDescription,
-      note: image.note,
-      text: image.text,
-      illustrator: image.illustrator,
-      packs: image.packs?.map((pack) => ({
-        url: pack.url,
-        label: pack.label,
-      })),
-    })),
+    pack_art: set.pack_art,
+    card_back: set.card_back,
+    total_cards_count: set.total_cards_count,
   },
   cards: cardList
     .filter(
