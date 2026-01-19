@@ -34,29 +34,6 @@
           "rarity": { "type": "string", "enum": ["Common", "Rare"] },
           "variant": { "type": "string", "enum": ["Normal", "Holo"] },
 
-          "set_short_name": {
-            "type": "string",
-            "enum": ["set1", "set2", "og"]
-          },
-          "series_short_name": { "type": "string", "enum": ["wm"] },
-
-          "sets": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "object",
-              "required": ["name", "image"],
-              "properties": {
-                "name": {
-                  "type": "string",
-                  "enum": ["Set One", "Set One (reprint)", "Set Two"]
-                },
-                "image": { "type": "string", "format": "uri" }
-              },
-              "additionalProperties": false
-            }
-          },
-
           "hp": { "type": "string" },
 
           "description": { "$ref": "#/$defs/i18nString" },
