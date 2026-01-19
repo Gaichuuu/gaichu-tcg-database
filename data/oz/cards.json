@@ -45,7 +45,7 @@
       "height": "2m",
       "legnth": ""
     },
-    "effect": "If this Page is Discarded, you may pay 1<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDark.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> to place it in the Arena Awakened instead.\nARENA: If you control an Artifact with \"Tower\" in its name, this Beastie has <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
+    "effect": "If this Page is Discarded, you may pay 1{icon:dark} to place it in the Arena Awakened instead.\nARENA: If you control an Artifact with \"Tower\" in its name, this Beastie has {icon:defender}.",
     "zoo_attack": [
       {
         "name": "Sky Dive",
@@ -53,7 +53,7 @@
         "multiplier": "",
         "damage": "30",
         "bonus": "",
-        "effect": "If the Primary Defender does not have <img alt=\"Flight Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFlight.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">, Inflict it with <img alt=\"Paralyze Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconParalyze.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">."
+        "effect": "If the Primary Defender does not have {icon:flight}, Inflict it with {icon:paralyze}."
       }
     ],
     "description": "While these Beasties usually stay near their posts, if the very caster that animated them asks for a favor, it's rather unlikely they would refuse.",
@@ -102,7 +102,7 @@
       "height": "2m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 2px;\">ARENA: If you are wearing a black blazer and a tie, once per turn when an opposing Beastie is Destroyed or Discarded into Limbo, you may place it into the Arena Fatigued under your control until this Beastie leaves the Arena.\nENTER: Destroy a Beastie you control to place any Page from your Spellbook into your Chapter.",
+    "effect": "{icon:4th_wall}ARENA: If you are wearing a black blazer and a tie, once per turn when an opposing Beastie is Destroyed or Discarded into Limbo, you may place it into the Arena Fatigued under your control until this Beastie leaves the Arena.\nENTER: Destroy a Beastie you control to place any Page from your Spellbook into your Chapter.",
     "zoo_attack": [
       {
         "name": "Indrid's Laugh",
@@ -147,7 +147,6 @@
         "aura": "Spirit"
       }
     ],
-
     "lp": "95",
     "traits": ["Fear", "Fleet"],
     "terra": [
@@ -169,7 +168,7 @@
       "height": "1.75m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Nighttime Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNighttime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active this Page has <img alt=\"Magiproof Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconMagiproof.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: You may Contract non-Aura Pages placed under this Beastie by the Attack \"Remove Skin\" using Aura of any type.",
+    "effect": "{icon:4th_wall}: If {icon:nighttime} is active this Page has {icon:magiproof}.\nARENA: You may Contract non-Aura Pages placed under this Beastie by the Attack \"Remove Skin\" using Aura of any type.",
     "zoo_attack": [
       {
         "name": "Remove Skin",
@@ -214,7 +213,6 @@
         "aura": "Dark"
       }
     ],
-
     "lp": "60",
     "traits": ["Fear", "Flight"],
     "terra": [
@@ -236,7 +234,7 @@
       "height": "1.3m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: You may produce a blood-curdling scream to look at an opposing Casters Chapter and discard a non-Aura Page.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If you are wearing wings, <img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDark.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> and <img alt=\"Spirit Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconSpirit.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties you control with an Aura Cost of 1 cannot be the target of declared Attacks.",
+    "effect": "{icon:4th_wall}CONTRACT: You may produce a blood-curdling scream to look at an opposing Casters Chapter and discard a non-Aura Page.\n{icon:4th_wall}ARENA: If you are wearing wings, {icon:dark} and {icon:spirit} Beasties you control with an Aura Cost of 1 cannot be the target of declared Attacks.",
     "zoo_attack": [
       {
         "name": "Bloody Hooves",
@@ -277,7 +275,6 @@
         "aura": "Neutral"
       }
     ],
-
     "lp": "50",
     "traits": ["Trap"],
     "terra": [
@@ -299,7 +296,7 @@
       "height": "1m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Nighttime Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNighttime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, this Beastie has <img alt=\"Fleet Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: You may meow to place up to 2 target opposing Beasties with an Aura Cost of 1 into their owner's Chapter.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If <img alt=\"Winter Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWinter.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, this Beastie has <img alt=\"First Strike Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFirstStrike.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
+    "effect": "{icon:4th_wall}: If {icon:nighttime} is active, this Beastie has {icon:fleet}.\n{icon:4th_wall}CONTRACT: You may meow to place up to 2 target opposing Beasties with an Aura Cost of 1 into their owner's Chapter.\n{icon:4th_wall}ARENA: If {icon:winter} is active, this Beastie has {icon:first_strike}.",
     "zoo_attack": [
       {
         "name": "Mysterious Bite",
@@ -371,7 +368,7 @@
         "aura": "Water"
       }
     ],
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Raining Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconRaining.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, you may Contract this Page at any time.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Place target Beastie into its owner's Chapter. If the weather forecast predicts a 75% or higher chance of rain for your current location, all Casters Bookmark 2.",
+    "effect": "{icon:4th_wall}: If {icon:raining} is active, you may Contract this Page at any time.\n{icon:4th_wall}: Place target Beastie into its owner's Chapter. If the weather forecast predicts a 75% or higher chance of rain for your current location, all Casters Bookmark 2.",
     "description": "In some parts of the Cryptid Nation, it only rains once a year. Their inhabitants learn to make the most of what they get.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/07.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/07-thumb.jpg",
@@ -404,7 +401,7 @@
     ],
     "lp": "50",
     "traits": ["Defender", "Defender"],
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If it is above 100°F at your current location, <img alt=\"Flame Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFlame.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties have <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">. All Beasties you control that are inflicted with <img alt=\"Burn Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconBurn.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot be inflicted with other Status Effects and cannot receive Combat Damage.",
+    "effect": "{icon:4th_wall}ARENA: If it is above 100°F at your current location, {icon:flame} Beasties have {icon:defender}. All Beasties you control that are inflicted with {icon:burn} cannot be inflicted with other Status Effects and cannot receive Combat Damage.",
     "description": "\"A shield that's on fire? What purpose could this possibly ser- WHOA! You should've led with that!\" -JP",
     "image": "https://gaichu.b-cdn.net/oz/legacy/08.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/08-thumb.jpg",
@@ -474,7 +471,6 @@
         "aura": "Water"
       }
     ],
-
     "lp": "90",
     "traits": ["Trap"],
     "terra": [
@@ -504,7 +500,7 @@
         "multiplier": "",
         "damage": "50",
         "bonus": "",
-        "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Lake Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLake.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, all non-<img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties lose 30 LP until the end of this turn."
+        "effect": "{icon:4th_wall}: If {icon:lake} is active, all non-{icon:water} Beasties lose 30 LP until the end of this turn."
       }
     ],
     "description": "\"Some believe it's serpentine in nature. Some think it's reptilian. All I know is that it's a real sweetheart!\" -Avid Water fan",
@@ -562,7 +558,7 @@
       "height": "1.6m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">Failed Oath: Choose a tribe. If you are wearing a plague doctor mask, Destroy all Beasties with the chosen tribe and this Beastie.",
+    "effect": "{icon:4th_wall}Failed Oath: Choose a tribe. If you are wearing a plague doctor mask, Destroy all Beasties with the chosen tribe and this Beastie.",
     "zoo_attack": [
       {
         "name": "Unlikely Cure",
@@ -570,7 +566,7 @@
         "multiplier": "",
         "damage": "30",
         "bonus": "",
-        "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: You may ring a Bell to target another Beastie and flip a coin. If heads, remove all Damage and Status Effect Indicators on that Beastie. If tails, the targeted Beastie and this Beastie are removed from the game."
+        "effect": "{icon:4th_wall}: You may ring a Bell to target another Beastie and flip a coin. If heads, remove all Damage and Status Effect Indicators on that Beastie. If tails, the targeted Beastie and this Beastie are removed from the game."
       }
     ],
     "description": "Thinking themselves protected from the plague, these poor souls doomed just as many as they saved, if not more. They still hear the screams in their dreams.",
@@ -608,7 +604,7 @@
       }
     ],
     "lp": "90",
-    "effect": "ARENA: When your Aura would dissolve, it becomes <img alt=\"Neutral Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconNeutral.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> instead.",
+    "effect": "ARENA: When your Aura would dissolve, it becomes {icon:neutral} instead.",
     "description": "\"AN ABNORMALLY LARGE AMOUNT OF POWER!!\"",
     "image": "https://gaichu.b-cdn.net/oz/legacy/12.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/12-thumb.jpg",
@@ -696,7 +692,7 @@
       "height": "1.1m",
       "length": ""
     },
-    "effect": "ARENA: Whenever an opposing Caster flips a coin or rolls a die, you may pay 1<img alt=\"Dark Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDark.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> to choose the result instead.",
+    "effect": "ARENA: Whenever an opposing Caster flips a coin or rolls a die, you may pay 1{icon:dark} to choose the result instead.",
     "zoo_attack": [
       {
         "name": "Dance Among the Dead",
@@ -738,7 +734,7 @@
       }
     ],
     "lp": "25",
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: Place a nail on target Beastie.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: Beasties with a nail on them have all ARENA Effects and Powers nullified. Nullify all <img alt=\"Immortal Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconImmortal.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> and <img alt=\"Spectral Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconSpectral.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.",
+    "effect": "{icon:4th_wall}CONTRACT: Place a nail on target Beastie.\n{icon:4th_wall}ARENA: Beasties with a nail on them have all ARENA Effects and Powers nullified. Nullify all {icon:immortal} and {icon:spectral}.",
     "description": "Until rather recently, the church had stepped back from performing true exorcisms. Now, though? Good luck finding a priest without a nail.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/15.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/15-thumb.jpg",
@@ -819,7 +815,7 @@
       "height": "4.2m",
       "length": ""
     },
-    "effect": "Aura Boost: Forest +10 ATK/+10 LP\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">ARENA: If flowers are within eyesight, other Beasties you control cannot be the target of Page Effects.",
+    "effect": "Aura Boost: Forest +10 ATK/+10 LP\n{icon:4th_wall}ARENA: If flowers are within eyesight, other Beasties you control cannot be the target of Page Effects.",
     "zoo_attack": [
       {
         "name": "Moonlight Bloom",
@@ -827,7 +823,7 @@
         "multiplier": "",
         "damage": "40",
         "bonus": "",
-        "effect": "<img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> generates 2 Aura instead of 1, until the end of this turn."
+        "effect": "{icon:convert} generates 2 Aura instead of 1, until the end of this turn."
       }
     ],
     "description": "This Beastie might look menacing during combat, but other than that? It's a big ol' softy!",
@@ -885,7 +881,7 @@
       "height": "",
       "length": "1.1km"
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">CONTRACT: If you slap your hands on the table, Aura Pages controlled by opposing Casters are Fatigued and do not Awaken at the start of their next turn.\nRock Tomb: Target Aura Page is Considered a Basic <img alt=\"Earth Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconEarth.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Aura Page and can only produce <img alt=\"Earth Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconEarth.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> as long as this Beastie stays in the Arena.",
+    "effect": "{icon:4th_wall}CONTRACT: If you slap your hands on the table, Aura Pages controlled by opposing Casters are Fatigued and do not Awaken at the start of their next turn.\nRock Tomb: Target Aura Page is Considered a Basic {icon:earth} Aura Page and can only produce {icon:earth} as long as this Beastie stays in the Arena.",
     "zoo_attack": [
       {
         "name": "Rock Slide",
@@ -893,7 +889,7 @@
         "multiplier": "",
         "damage": "100",
         "bonus": "",
-        "effect": "You may Destroy a Basic <img alt=\"Earth Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconEarth.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Aura Page."
+        "effect": "You may Destroy a Basic {icon:earth} Aura Page."
       }
     ],
     "description": "You might not expect it, but this Beastie is a carnivore. Luckily, Ben is there to keep it from devouring civilians.",
@@ -951,7 +947,7 @@
       "height": "93 hands",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If you are wearing a plaid flannel shirt, this Beastie has <img alt=\"Fleet Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: Beasties you control with <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> double their Life Points and <img alt=\"Defender Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconDefender.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> cannot activate.\nDynamic Duo: Fatigue a Beastie with \"Bunyan\" in its name to Destroy target Beastie.",
+    "effect": "{icon:4th_wall}: If you are wearing a plaid flannel shirt, this Beastie has {icon:fleet}.\nARENA: Beasties you control with {icon:defender} double their Life Points and {icon:defender} cannot activate.\nDynamic Duo: Fatigue a Beastie with \"Bunyan\" in its name to Destroy target Beastie.",
     "zoo_attack": [
       {
         "name": "Vigilant Stampede",
@@ -1013,7 +1009,7 @@
       "height": "",
       "length": "10m"
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If <img alt=\"Lightning Storm Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> is active, this Page has <img alt=\"Fleet Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFleet.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nYou may Contract this Page for 1<img alt=\"Lightning Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> to treat this Page as a <img alt=\"Lightning Storm Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Special Terra Page with the Effect \"ARENA: Beasties with <img alt=\"Lightning Storm Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> or <img alt=\"Raining Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconRaining.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonuses have +20ATK/+20 LP\".",
+    "effect": "{icon:4th_wall}: If {icon:lightning_storm} is active, this Page has {icon:fleet}.\nYou may Contract this Page for 1{icon:lightning} to treat this Page as a {icon:lightning_storm} Special Terra Page with the Effect \"ARENA: Beasties with {icon:lightning_storm} or {icon:raining} Terra Bonuses have +20ATK/+20 LP\".",
     "zoo_attack": [
       {
         "name": "Original Lightning",
@@ -1021,7 +1017,7 @@
         "multiplier": "",
         "damage": "40",
         "bonus": "",
-        "effect": "<img alt=\"Lightning Storm Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightningStorm.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonuses of other <img alt=\"Lightning Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Beasties are doubled until the end of this turn."
+        "effect": "{icon:lightning_storm} Terra Bonuses of other {icon:lightning} Beasties are doubled until the end of this turn."
       }
     ],
     "description": "Adam has a 7th sense for Beasties with potential. It's no wonder he ends up with such powerful companions.",
@@ -1199,7 +1195,7 @@
       "height": "1.2m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">Survival Tears: At any time, you may show a \"Pocket Squonk\" to target opposing Caster to have target Beastie gain <img alt=\"Immortal Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconImmortal.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> until the end of this turn.",
+    "effect": "{icon:4th_wall}Survival Tears: At any time, you may show a \"Pocket Squonk\" to target opposing Caster to have target Beastie gain {icon:immortal} until the end of this turn.",
     "zoo_attack": [
       {
         "name": "Pocket Tears",
@@ -1207,7 +1203,7 @@
         "multiplier": "",
         "damage": "10",
         "bonus": "",
-        "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: You may make crying sounds and shed a tear to Inflict the Primary Defender with <img alt=\"Paralyze Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconParalyze.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">."
+        "effect": "{icon:4th_wall}: You may make crying sounds and shed a tear to Inflict the Primary Defender with {icon:paralyze}."
       }
     ],
     "description": "Paul thought taking this poor creature along would help it cheer up! It didn't work. At least it saved its friends!",
@@ -1265,7 +1261,7 @@
       "height": "0.25m",
       "length": ""
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If you say \"Gee-geeze that's cold!\", you may Contract this Page at any time.\nARENA: Whenever a Caster searches their Spellbook for a Page, they search the top Page of their Spellbook instead.",
+    "effect": "{icon:4th_wall}: If you say \"Gee-geeze that's cold!\", you may Contract this Page at any time.\nARENA: Whenever a Caster searches their Spellbook for a Page, they search the top Page of their Spellbook instead.",
     "zoo_attack": [
       {
         "name": "Gee-Gee Icicle",
@@ -1273,7 +1269,7 @@
         "multiplier": "",
         "damage": "30",
         "bonus": "",
-        "effect": "Inflict Target Beastie with <img alt=\"Frozen Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconFrozen.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> (2)."
+        "effect": "Inflict Target Beastie with {icon:frozen} (2)."
       }
     ],
     "description": "Not all Frost Beasties have cold hearts! The Gee-Gee Bird, for example, is actually a really goofy bird, making it a great fit for a caster like Rose.",
@@ -1306,7 +1302,7 @@
         "aura": "Neutral"
       }
     ],
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Open a booster pack from the Cryptid Nation block and reveal all opened Pages to all Casters. Choose one of those Pages and place it into your Chapter. When the chosen Page enters a Discard Zone it's removed from the game. Remove the chosen Page from your Spellbook at the end of this game.",
+    "effect": "{icon:4th_wall}: Open a booster pack from the Cryptid Nation block and reveal all opened Pages to all Casters. Choose one of those Pages and place it into your Chapter. When the chosen Page enters a Discard Zone it's removed from the game. Remove the chosen Page from your Spellbook at the end of this game.",
     "description": "It might not quite be the \"real thing\", but I'm glad you're here playing with us at OpenZoo all the same. To the future!",
     "image": "https://gaichu.b-cdn.net/oz/legacy/25.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/25-thumb.jpg",
@@ -1575,12 +1571,18 @@
     ],
     "type": "Artifact Hygiene Stone",
     "cost": [
-      { "total": "1", "aura": "Neutral" },
-      { "total": "2", "aura": "Water" }
+      {
+        "total": "1",
+        "aura": "Neutral"
+      },
+      {
+        "total": "2",
+        "aura": "Water"
+      }
     ],
     "lp": "65",
     "traits": ["Convert"],
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: Nullify all smell related 4th Wall Effects.\n<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If a hygiene product is within eyesight, this Page's <img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> can produce Aura of any type.\nScrub: Once per turn, you may discard a <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Page from your hand. If you do, this Page's <img alt=\"Convert Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconConvert.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> produces 2 Aura instead of 1. Awaken this Page.",
+    "effect": "{icon:4th_wall}: Nullify all smell related 4th Wall Effects.\n{icon:4th_wall}: If a hygiene product is within eyesight, this Page's {icon:convert} can produce Aura of any type.\nScrub: Once per turn, you may discard a {icon:water} Page from your hand. If you do, this Page's {icon:convert} produces 2 Aura instead of 1. Awaken this Page.",
     "description": "Discord janitors must pass the Donkey Test. Not fresh enough? You're getting replaced.",
     "image": "https://gaichu.b-cdn.net/oz/promo25/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/promo25/01-thumb.jpg",
@@ -1605,7 +1607,12 @@
       }
     ],
     "type": "Artifact Pumpkin",
-    "cost": [{ "total": "1", "aura": "Forest" }],
+    "cost": [
+      {
+        "total": "1",
+        "aura": "Forest"
+      }
+    ],
     "lp": "50",
     "traits": ["Convert"],
     "effect": "Tricking the Devil: You may activate this Power whenever a die is rolled or a coin flip resolves. Redo the die roll or coin flip.",
@@ -1634,8 +1641,14 @@
     ],
     "type": "Beastie Wolf",
     "cost": [
-      { "total": "1", "aura": "Neutral" },
-      { "total": "2", "aura": "Frost" }
+      {
+        "total": "1",
+        "aura": "Neutral"
+      },
+      {
+        "total": "2",
+        "aura": "Frost"
+      }
     ],
     "lp": "50",
     "traits": ["Fleet"],
@@ -1657,7 +1670,7 @@
       "weight": "70kg",
       "height": "1.2m"
     },
-    "effect": "<img alt=\"4th Wall Icon\" width=\"16\" src=\"https://gaichu.b-cdn.net/oz/icon4thWall.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">: If it is the month of December, this Beastie has <img alt=\"Invisible Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/oz/iconInvisible.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">.\nARENA: This Beastie can attack other Pages you control.",
+    "effect": "{icon:4th_wall}: If it is the month of December, this Beastie has {icon:invisible}.\nARENA: This Beastie can attack other Pages you control.",
     "zoo_attack": [
       {
         "name": "Surprise Gift",
