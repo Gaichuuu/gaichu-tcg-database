@@ -74,19 +74,15 @@ export interface Measurement {
   weight?: string;
 }
 
-export interface Card {
+export interface RawCard {
   id: string;
-  total_cards_count: number;
   number: number;
   sort_by: number;
   name: I18nMap | string;
   image: string;
-  rarity: string;
-  set_short_name: string;
-  series_short_name: string;
-  illustrators: string[];
+  rarity?: string;
+  illustrators?: string[];
   set_ids: string[];
-  sets: CardSet[];
   thumb: string;
   variant: string;
 
@@ -112,4 +108,12 @@ export interface Card {
   cost?: Cost[];
   effect?: string;
   note?: string;
+  strength?: string;
+}
+
+export interface Card extends RawCard {
+  total_cards_count: number;
+  set_short_name: string;
+  series_short_name: string;
+  sets: CardSet[];
 }

@@ -23,4 +23,5 @@ export interface Set {
   description?: string;
   printFileUrl?: string;
   set_images?: SetImage[];
+  total_cards_count?: number;
 }

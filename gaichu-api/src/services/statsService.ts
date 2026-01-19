@@ -21,7 +21,8 @@ export function getStats(): Stats {
   for (const card of cards) {
     cardsBySeries[card.series_short_name] =
       (cardsBySeries[card.series_short_name] || 0) + 1;
-    cardsByRarity[card.rarity] = (cardsByRarity[card.rarity] || 0) + 1;
+    const rarity = card.rarity ?? "Unknown";
+    cardsByRarity[rarity] = (cardsByRarity[rarity] || 0) + 1;
   }
 
   return {
