@@ -1,7 +1,7 @@
 // src/components/ListComponent/CardListComponent.tsx
 import { CollectionCard } from "@/types/CollectionCard";
 import React from "react";
-import HtmlCell from "@/components/HtmlCell";
+import IconText from "@/components/IconText";
 import CardsListTile from "@/components/TileComponents/CardsListTile";
 import HoverTooltip from "@/components/TileComponents/HoverTooltip";
 import { useParams } from "react-router-dom";
@@ -50,7 +50,9 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                     {card?.effect && (
                       <tr>
                         <th className="py-2 pr-4 text-left">Effect</th>
-                        <HtmlCell html={card.effect} />
+                        <td className="py-2">
+                          <IconText text={card.effect} series={series} />
+                        </td>
                       </tr>
                     )}
 
@@ -71,9 +73,10 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                                 className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
                               />
                             ))}
-                            <HtmlCell
-                              html={atkEffect}
-                              className="html-cell mx-1"
+                            <IconText
+                              text={atkEffect}
+                              series={series}
+                              className="mx-1"
                             />{" "}
                             {attack.damage ? `(${attack.damage})` : ""}
                           </td>
@@ -124,7 +127,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                                   />
                                 )}
                                 {atk.effect && (
-                                  <HtmlCell html={atk.effect ?? ""} />
+                                  <IconText text={atk.effect} series={series} />
                                 )}
                               </td>
                             </tr>
