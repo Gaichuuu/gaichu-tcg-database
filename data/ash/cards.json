@@ -32,7 +32,7 @@
     "attacks": [
       {
         "name": "PKM POWER ~ Energy Burn",
-        "effect": "All energys becomes <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">"
+        "effect": "All energys becomes {icon:fire}"
       },
       {
         "name": "Fire Spin",
@@ -59,7 +59,6 @@
   },
   {
     "id": "064099c6-eb7d-4c5b-a9e0-a089d80ddc38",
-
     "total_cards_count": 44,
     "number": 1,
     "sort_by": 1,
@@ -112,7 +111,6 @@
   },
   {
     "id": "5b29fed5-4552-4877-9d3a-054d715a5471",
-
     "total_cards_count": 44,
     "number": 2,
     "sort_by": 2,
@@ -148,7 +146,7 @@
     "attacks": [
       {
         "name": "Pokemon Power: Energy Burn",
-        "effect": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy for the rest of the turn. This power can’t be used if Charizard is Asleep, Confused, or Paralyzed."
+        "effect": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into {icon:fire} Energy for the rest of the turn. This power can’t be used if Charizard is Asleep, Confused, or Paralyzed."
       },
       {
         "name": "Fire Spin",
@@ -157,9 +155,21 @@
         "costs": ["Fire", "Fire", "Fire", "Fire"]
       }
     ],
-    "weakness": [{ "type": "Water" }],
-    "resistance": [{ "type": "Fighting" }],
-    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }]
+    "weakness": [
+      {
+        "type": "Water"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ]
   },
   {
     "id": "95ca47e0-7803-47f9-9f3a-216b2d04f5fb",
@@ -169,10 +179,13 @@
     "name": "______'s Pikachu",
     "parody": "Pikachu",
     "variant": "Holo",
-
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -199,9 +212,17 @@
         "costs": ["Lightning", "Lightning"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "d2a2b24b-54df-4699-ac72-3c739953954a",
@@ -240,11 +261,11 @@
     "attacks": [
       {
         "name": "Pokemon Power: Rain Dance",
-        "effect": "As often as you like during your turn (before your attack), you may attach 1<img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy Card to 1 of your <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Pokemon. (This doesn't use up your 1 Energy card attachment for the turn). This power can't be used if Blastoise is Asleep, Confused, or Paralyzed."
+        "effect": "As often as you like during your turn (before your attack), you may attach 1{icon:water} Energy Card to 1 of your {icon:water} Pokemon. (This doesn't use up your 1 Energy card attachment for the turn). This power can't be used if Blastoise is Asleep, Confused, or Paralyzed."
       },
       {
         "name": "Hydro Pump",
-        "effect": "Does 40 damage plus 10 more damage for each <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy after the 2nd doesn't count.",
+        "effect": "Does 40 damage plus 10 more damage for each {icon:water} Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra {icon:water} Energy after the 2nd doesn't count.",
         "damage": "40+",
         "costs": ["Water", "Water", "Water"]
       }
@@ -298,7 +319,7 @@
     "attacks": [
       {
         "name": "Pokemon Power: Energy Trans",
-        "effect": "As often as you like during your turn (before you attack), you may take 1 <img alt=\"Grass Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconGrass.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy card attached to 1 of your Pokémon and attach it to a different one. This power can’t be used if Venusaur is Asleep, Confused, or Paralyzed."
+        "effect": "As often as you like during your turn (before you attack), you may take 1 {icon:grass} Energy card attached to 1 of your Pokémon and attach it to a different one. This power can’t be used if Venusaur is Asleep, Confused, or Paralyzed."
       },
       {
         "name": "Solarbeam",
@@ -307,9 +328,17 @@
         "costs": ["Grass", "Grass", "Grass", "Grass"]
       }
     ],
-    "weakness": [{ "type": "Fire" }],
+    "weakness": [
+      {
+        "type": "Fire"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless", "Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ]
   },
   {
     "id": "50ee2a9d-73ae-4f32-9271-0850212a24c6",
@@ -347,7 +376,7 @@
     "attacks": [
       {
         "name": "Elemental Blast",
-        "effect": "Discard a <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy card, a <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy card, and a <img alt=\"Lightning Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy card attached to Lugia in order to use this attack.",
+        "effect": "Discard a {icon:fire} Energy card, a {icon:water} Energy card, and a {icon:lightning} Energy card attached to Lugia in order to use this attack.",
         "damage": "90",
         "costs": ["Fire", "Water", "Lightning"]
       }
@@ -556,7 +585,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -578,9 +611,23 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting", "value": "x2" }],
-    "resistance": [{ "type": "Metal", "value": "-20" }],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": "x2"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "ec7a1e34-60df-4a91-a9a2-6e8d7cf8b193",
@@ -592,7 +639,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -614,9 +665,18 @@
         "costs": ["Lightning"]
       }
     ],
-    "weakness": [{ "type": "Fighting", "value": "x2" }],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": "x2"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "b6fe2c2a-4a2f-4b3a-8b7e-2e6a7d4e8a12",
@@ -720,7 +780,7 @@
       },
       {
         "name": "Continuous Fireball",
-        "effect": "Flip a number of coins equal to the number of <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy cards attached to Dark Charizard. This attack does 50 damage times the number of heads. Discard a number of <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy cards attached to Dark Charizard equal to the number of heads.",
+        "effect": "Flip a number of coins equal to the number of {icon:fire} Energy cards attached to Dark Charizard. This attack does 50 damage times the number of heads. Discard a number of {icon:fire} Energy cards attached to Dark Charizard equal to the number of heads.",
         "damage": "50x",
         "costs": ["Fire", "Fire"]
       }
@@ -781,9 +841,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "fc2c8f5e-8e2c-4a38-a8cf-5c87a5d0c4b9",
@@ -832,11 +900,18 @@
         "costs": ["Fire", "Fire", "Colorless"]
       }
     ],
-    "weakness": [{ "type": "Water" }],
+    "weakness": [
+      {
+        "type": "Water"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ]
   },
-
   {
     "id": "b09a0e3f-7039-4ad4-9e3b-fdf12d615f59",
     "total_cards_count": 44,
@@ -847,7 +922,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -869,9 +948,18 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting", "value": "x2" }],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": "x2"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "eb4fae22-5922-49a8-8df9-891db9f548f1",
@@ -923,9 +1011,17 @@
         "costs": ["Fire", "Fire", "Fire", "Colorless"]
       }
     ],
-    "weakness": [{ "type": "Water" }],
+    "weakness": [
+      {
+        "type": "Water"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless", "Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ]
   },
   {
     "id": "a7e84ef0-48a5-4a1c-8b15-1b82cf2a2177",
@@ -937,7 +1033,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "rule": [
       {
         "name": "Pokemon ex",
@@ -969,8 +1069,16 @@
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
     ],
-    "weakness": [{ "type": "Darkness" }],
-    "resistance": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Darkness"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "retreat": []
   },
   {
@@ -983,7 +1091,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -1011,10 +1123,17 @@
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting", "value": "x2" }],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": "x2"
+      }
+    ],
     "resistance": [],
     "retreat": [
-      { "costs": ["Colorless", "Colorless", "Colorless", "Colorless"] }
+      {
+        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
+      }
     ]
   },
   {
@@ -1060,7 +1179,7 @@
       },
       {
         "name": "Max Burst",
-        "effect": "You may discard any amount of basic <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy or any amount of basic <img alt=\"Lightning Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy from this Pokémon. This attack does 80 more damage for each card you discarded in this way.",
+        "effect": "You may discard any amount of basic {icon:fire} Energy or any amount of basic {icon:lightning} Energy from this Pokémon. This attack does 80 more damage for each card you discarded in this way.",
         "damage": "20+",
         "costs": ["Fire", "Lightning"]
       }
@@ -1079,7 +1198,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -1108,9 +1231,17 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "dddb7278-6c72-4b4c-a8b9-8fc4d542bc3b",
@@ -1122,7 +1253,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "rule": [
       {
         "name": "Pokémon ex",
@@ -1146,19 +1281,31 @@
     "attacks": [
       {
         "name": "Transfer Charge",
-        "effect": "Attach up to 2 Basic <img alt=\"Psychic Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconPsychic.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy cards from your discard pile to your Pokémon in any way you like.",
+        "effect": "Attach up to 2 Basic {icon:psychic} Energy cards from your discard pile to your Pokémon in any way you like.",
         "costs": ["Psychic"]
       },
       {
         "name": "Photon Kenesis",
-        "effect": "This attack does 30 more damage for each <img alt=\"Psychic Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconPsychic.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy attached to all of your Pokémon.",
+        "effect": "This attack does 30 more damage for each {icon:psychic} Energy attached to all of your Pokémon.",
         "damage": "10+",
         "costs": ["Psychic", "Psychic"]
       }
     ],
-    "weakness": [{ "type": "Darkness" }],
-    "resistance": [{ "type": "Fighting" }],
-    "retreat": [{ "costs": ["Colorless", "Colorless"] }]
+    "weakness": [
+      {
+        "type": "Darkness"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ]
   },
   {
     "id": "ab74cb8f-9a9e-4383-b3d0-61b6cf96a5b2",
@@ -1369,7 +1516,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -1391,9 +1542,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "f26c911b-8a04-48b1-9c7e-07a680f12b75",
@@ -1405,7 +1564,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "rule": [
       {
         "name": "TAG TEAM",
@@ -1435,13 +1598,26 @@
       },
       {
         "name": "Sky Legends GX",
-        "effect": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">, <img alt=\"Water Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconWater.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">, and <img alt=\"Lightning Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Energy attached to it (in addition to this attack’s cost), this attack does 110 damage to 3 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.) (You can’t use more than 1 GX attack in a game.)",
+        "effect": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra {icon:fire}, {icon:water}, and {icon:lightning} Energy attached to it (in addition to this attack’s cost), this attack does 110 damage to 3 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.) (You can’t use more than 1 GX attack in a game.)",
         "costs": ["Colorless", "Plus"]
       }
     ],
-    "weakness": [{ "type": "Lightning", "value": "x2" }],
-    "resistance": [{ "type": "Fighting" }],
-    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }]
+    "weakness": [
+      {
+        "type": "Lightning",
+        "value": "x2"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ]
   },
   {
     "id": "4cfbcd43-99f5-4a61-b9e0-54e0bb17d04b",
@@ -1480,7 +1656,7 @@
     "attacks": [
       {
         "name": "Poke-BODY — Crystal Type",
-        "effect": "Whenever you attach a <img alt=\"Fire Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFire.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">, <img alt=\"Lightning Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconLightning.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\">, or <img alt=\"Fighting Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/ash/iconFighting.jpg\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> basic Energy card from your hand to Charizard, Charizard’s type (colour) becomes the same as that type of Energy until the end of the turn."
+        "effect": "Whenever you attach a {icon:fire}, {icon:lightning}, or {icon:fighting} basic Energy card from your hand to Charizard, Charizard’s type (colour) becomes the same as that type of Energy until the end of the turn."
       },
       {
         "name": "Fire Blast",
@@ -1495,10 +1671,16 @@
         "costs": ["Fighting", "Lightning", "Lightning", "Colorless"]
       }
     ],
-    "weakness": [{ "type": "Water" }],
+    "weakness": [
+      {
+        "type": "Water"
+      }
+    ],
     "resistance": [],
     "retreat": [
-      { "costs": ["Colorless", "Colorless", "Colorless", "Colorless"] }
+      {
+        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
+      }
     ]
   },
   {
@@ -1568,9 +1750,17 @@
         "costs": ["Water", "Water"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "862c1a20-5c48-47fc-b3a1-cfb4d71a5cd3",
@@ -1637,9 +1827,18 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Grass", "value": "x2" }],
+    "weakness": [
+      {
+        "type": "Grass",
+        "value": "x2"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "a1c3efb7-dc40-4b44-9411-1e5d6a5a2f87",
@@ -1680,7 +1879,11 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "b32967a1-4b1f-48e4-82a7-058a94f24869",
@@ -1692,7 +1895,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -1717,7 +1924,11 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "bdbba5fd-fb91-497a-97bb-987b79f21fa7",
@@ -1729,7 +1940,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -1754,7 +1969,11 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "e3b1fa9d-4822-4d5a-9d76-5a08b83e8e64",
@@ -1820,7 +2039,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series1",
@@ -1850,9 +2073,17 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "8dbd4e8b-dfa2-4e74-82a3-6ce8af1e1e69",
@@ -1898,9 +2129,17 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "c49a4b7b-54b8-490a-bd9b-0912eaa67a61",
@@ -1946,9 +2185,17 @@
         "costs": ["Lightning", "Lightning", "Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless", "Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ]
   },
   {
     "id": "f2368b4c-1f11-4a36-9f2a-7f68b35de3b7",
@@ -1994,9 +2241,17 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "7f9beef6-8d2d-4e40-b585-b50d314c6001",
@@ -2034,9 +2289,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "e5cb691d-7845-4f19-8f38-60abe476924d",
@@ -2074,9 +2337,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "5f4c8b63-05e2-42a0-9179-60edcdbd76fb",
@@ -2114,9 +2385,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3",
@@ -2154,9 +2433,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "09a2848d-06f7-46cb-9e14-490b8e04e172",
@@ -2194,9 +2481,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "78a02344-0c51-48ef-b22c-d5892e98ce3e",
@@ -2234,9 +2529,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "b7a33b4a-5a6f-4c6a-8b41-6a10ce78432b",
@@ -2248,7 +2551,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series2",
@@ -2271,9 +2578,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "c1a7e4c5-8f0f-4a96-b2b0-6e3c3c4a1f35",
@@ -2285,7 +2600,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series2",
@@ -2308,9 +2627,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "c8c0b9f7-2f19-4b4b-9f33-feb4fae9ff2e",
@@ -2322,7 +2649,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series2",
@@ -2345,9 +2676,17 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   },
   {
     "id": "df1b3086-45b0-4b69-940b-f3670cfb7625",
@@ -2359,7 +2698,11 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [{ "basic": "Basic" }],
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_short_name": "series2",
@@ -2382,8 +2725,16 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [{ "type": "Fighting" }],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
     "resistance": [],
-    "retreat": [{ "costs": ["Colorless"] }]
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ]
   }
 ]

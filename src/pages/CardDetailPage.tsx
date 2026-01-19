@@ -2,7 +2,7 @@
 import CardDetailPagingButton, {
   PagingType,
 } from "@/components/ButtonComponents/CardDetailPagingButton";
-import HtmlCell from "@/components/HtmlCell";
+import IconText from "@/components/IconText";
 import LocaleToggle from "@/components/LocaleToggle";
 import { PageLoading, PageError, PageNotFound } from "@/components/PageStates";
 import { useCurrentAndAdjacentCards } from "@/hooks/useCollectionCard";
@@ -157,9 +157,10 @@ const CardDetailPage: React.FC = () => {
                         className="mr-2 inline-block h-5 w-5 rounded-full align-middle"
                       />
                     ))}
-                    <HtmlCell
-                      html={t(attack.effect, locale)}
-                      className="html-cell mx-1"
+                    <IconText
+                      text={t(attack.effect, locale)}
+                      series={seriesKey}
+                      className="mx-1"
                     />
                     {attack.damage ? `(${attack.damage})` : ""}
                   </td>
@@ -262,7 +263,9 @@ const CardDetailPage: React.FC = () => {
               {data.card.effect && (
                 <tr>
                   <th>Effect</th>
-                  <HtmlCell html={data.card.effect} />
+                  <td>
+                    <IconText text={data.card.effect} series={seriesKey} />
+                  </td>
                 </tr>
               )}
 
@@ -305,7 +308,9 @@ const CardDetailPage: React.FC = () => {
                               className="inline-block h-5 w-5 align-middle"
                             />
                           )}
-                          {atk.effect && <HtmlCell html={atk.effect ?? ""} />}
+                          {atk.effect && (
+                              <IconText text={atk.effect} series={seriesKey} />
+                            )}
                         </td>
                       </tr>
                     </React.Fragment>

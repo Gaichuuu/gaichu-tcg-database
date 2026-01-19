@@ -29,7 +29,7 @@
         "aura": "Neutral"
       }
     ],
-    "effect": "Awaken up to two Beasties you control that have a <img alt=\"Woodlands Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/mz/iconWoodlands.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> or <img alt=\"Daytime Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/mz/iconDaytime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
+    "effect": "Awaken up to two Beasties you control that have a {icon:woodlands} or {icon:daytime} Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
     "image": "https://gaichu.b-cdn.net/mz/promo/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/mz/promo/01-thumb.jpg",
     "description": "Free to be one with the Wilderness. Time to soak up the sun.",
@@ -65,7 +65,7 @@
         "aura": "Neutral"
       }
     ],
-    "effect": "Awaken up to two Beasties you control that have a <img alt=\"Woodlands Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/mz/iconWoodlands.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> or <img alt=\"Daytime Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/mz/iconDaytime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
+    "effect": "Awaken up to two Beasties you control that have a {icon:woodlands} or {icon:daytime} Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
     "image": "https://gaichu.b-cdn.net/mz/promo/02.jpg",
     "thumb": "https://gaichu.b-cdn.net/mz/promo/02-thumb.jpg",
     "description": "Free to be one with the Wilderness. Time to soak up the sun.",
@@ -101,7 +101,7 @@
         "aura": "Neutral"
       }
     ],
-    "effect": "Awaken up to two Beasties you control that have a <img alt=\"Woodlands Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/mz/iconWoodlands.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> or <img alt=\"Daytime Icon\" width=\"20\" src=\"https://gaichu.b-cdn.net/mz/iconDaytime.png\" style=\"display:inline;vertical-align:middle;margin:0 0px;\"> Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
+    "effect": "Awaken up to two Beasties you control that have a {icon:woodlands} or {icon:daytime} Terra Bonus. Until the end of the next turn, Beasties affected by this Spell cannot declare Attacks or be declared as a Defender.",
     "image": "https://gaichu.b-cdn.net/mz/promo/03.jpg",
     "thumb": "https://gaichu.b-cdn.net/mz/promo/03-thumb.jpg",
     "description": "Free to be one with the Wilderness. Time to soak up the sun.",
