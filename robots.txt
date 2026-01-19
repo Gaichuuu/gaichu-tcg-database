@@ -1,0 +1,9 @@
+# Gaichu TCG Database - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gaichu.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
