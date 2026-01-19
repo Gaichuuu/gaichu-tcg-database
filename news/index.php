@@ -2,7 +2,7 @@
 
 $ua = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
 $isBot = (bool) preg_match(
-  '/facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|SkypeUriPreview|redditbot|Meta-ExternalAgent/i',
+  '/facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|Googlebot|bingbot|SkypeUriPreview|redditbot|Meta-ExternalAgent/i',
   $ua
 );
 
@@ -12,7 +12,7 @@ $path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
 $slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 if ($slug === '') {
   $path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
-  if (preg_match('#^/news/([^/?#]+)#', $path, $m)) {
+  if (preg_match('~^/news/([^/?#]+)~', $path, $m)) {
     $slug = urldecode($m[1]);
   }
 }
@@ -64,7 +64,7 @@ function fetch_news($projectId, $slug) {
   );
 }
 
-function render_og($host, $slug, $title, $desc, $image) {
+function render_og($host, $slug, $title, $desc, $image, $doc = null) {
   $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || ((isset($_SERVER['SERVER_PORT']) ? $_SERVER['SERVER_PORT'] : '') == 443);
   $scheme = $isHttps ? 'https' : 'http';
   $url = $scheme . '://' . $host . '/news/' . rawurlencode($slug);
@@ -78,7 +78,8 @@ function render_og($host, $slug, $title, $desc, $image) {
 
   echo "<!doctype html>\n<html lang=\"en\"><head>\n";
   echo "<meta charset=\"utf-8\" />\n";
-  echo "<title>{$safeTitle}</title>\n";
+  echo "<title>{$safeTitle} - Gaichu</title>\n";
+  echo "<meta name=\"description\" content=\"{$safeDesc}\" />\n";
   echo "<link rel=\"canonical\" href=\"{$url}\" />\n";
   echo "<meta property=\"og:site_name\" content=\"Gaichu\" />\n";
   echo "<meta property=\"og:type\" content=\"article\" />\n";
@@ -90,6 +91,32 @@ function render_og($host, $slug, $title, $desc, $image) {
   echo "<meta name=\"twitter:title\" content=\"{$safeTitle}\" />\n";
   echo "<meta name=\"twitter:description\" content=\"{$safeDesc}\" />\n";
   echo "<meta name=\"twitter:image\" content=\"{$safeImg}\" />\n";
+
+  // Structured data for news articles
+  if ($doc && !empty($doc['title'])) {
+    $jsonLd = [
+      '@context' => 'https://schema.org',
+      '@type' => 'NewsArticle',
+      'headline' => $title,
+      'description' => $desc,
+      'image' => $image,
+      'url' => $url,
+      'publisher' => [
+        '@type' => 'Organization',
+        'name' => 'Gaichu',
+        'url' => $scheme . '://' . $host
+      ],
+      'mainEntityOfPage' => [
+        '@type' => 'WebPage',
+        '@id' => $url
+      ]
+    ];
+    if (!empty($doc['created_at'])) {
+      $jsonLd['datePublished'] = date('c', $doc['created_at'] / 1000);
+    }
+    echo '<script type="application/ld+json">' . json_encode($jsonLd, JSON_UNESCAPED_SLASHES) . "</script>\n";
+  }
+
   echo "<meta http-equiv=\"refresh\" content=\"0; url={$url}\" />\n";
   echo "<style>body{font:14px system-ui, sans-serif;padding:24px;color:#ddd;background:#000}</style>\n";
   echo "</head><body>Redirecting to <a href=\"{$url}\">{$safeTitle}</a>…</body></html>";
@@ -110,7 +137,7 @@ if ($isBot) {
   $desc = (is_array($doc) && !empty($doc['excerpt'])) ? $doc['excerpt'] : 'Your #2 source for parody and bootleg card games.';
   $img = (is_array($doc) && !empty($doc['hero_url'])) ? $doc['hero_url'] : 'https://gaichu.b-cdn.net/assets/default.png?v=3';
 
-  render_og($host, $slug ? $slug : 'news', $title, $desc, $img);
+  render_og($host, $slug ? $slug : 'news', $title, $desc, $img, $doc);
   exit;
 }
 

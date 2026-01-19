@@ -63,8 +63,20 @@ const SeriesPage: React.FC = () => {
 
   const { series, sets } = seriesAndSet;
 
+  // SEO metadata
+  const pageTitle = `${series.name} - Gaichu`;
+  const pageDescription =
+    series.description || `Browse all ${series.name} card sets on Gaichu.`;
+
   return (
     <div className="container mx-auto p-0">
+      {/* React 19 native metadata */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      {series.logo && <meta property="og:image" content={series.logo} />}
+
       <div className="mb-4 flex gap-4">
         <img
           src={series.logo}

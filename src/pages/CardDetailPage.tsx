@@ -45,6 +45,20 @@ const CardDetailPage: React.FC = () => {
   const { card, previousCard, nextCard } = data;
   const resolvedName = t(card.name, locale);
 
+  // Build SEO metadata
+  const pageTitle = `${resolvedName} - Gaichu`;
+  const descriptionParts: string[] = [];
+  if (card.parody) descriptionParts.push(`A parody of ${card.parody}`);
+  if (card.rarity) descriptionParts.push(`${card.rarity} card`);
+  if (card.hp) descriptionParts.push(`HP: ${card.hp}`);
+  const flavorText = t(card.description, locale);
+  if (flavorText) descriptionParts.push(flavorText);
+  const pageDescription =
+    descriptionParts.length > 0
+      ? descriptionParts.join(". ")
+      : `View ${resolvedName} card details on Gaichu TCG Database.`;
+  const pageImage = card.image || card.thumb;
+
   const resolveLocaleText = (
     value: Partial<Record<"en" | "ja", string>> | undefined,
   ): string => {
@@ -61,6 +75,16 @@ const CardDetailPage: React.FC = () => {
 
   return (
     <div className="container mx-auto pt-2">
+      {/* React 19 native metadata */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      {pageImage && <meta property="og:image" content={pageImage} />}
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={pageDescription} />
+      {pageImage && <meta name="twitter:image" content={pageImage} />}
+
       <div className="flex flex-col gap-6 md:flex-row">
         <CardImageSection
           card={card}

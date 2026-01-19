@@ -4,6 +4,18 @@ import React from "react";
 const AboutPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* React 19 native metadata */}
+      <title>About - Gaichu</title>
+      <meta
+        name="description"
+        content="Gaichu is an open-source database project for homemade card games."
+      />
+      <meta property="og:title" content="About - Gaichu" />
+      <meta
+        property="og:description"
+        content="Gaichu is an open-source database project for homemade card games."
+      />
+
       <section className="mb-8">
         <p className="mb-4">
           Gaichu is an open-source database project for homemade card games.
