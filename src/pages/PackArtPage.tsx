@@ -31,8 +31,23 @@ const PackArtPage: React.FC = () => {
     return <p>Not found.</p>;
   }
 
+  // SEO metadata
+  const setName = setAndCard?.set.name || "Set";
+  const pageTitle = `Pack Art - ${setName} - Gaichu`;
+  const pageDescription = packArt.frontDescription
+    ? `Pack art for ${setName}. ${packArt.frontDescription.slice(0, 150)}...`
+    : `View the pack art for ${setName} on Gaichu.`;
+  const pageImage = packArt.url;
+
   return (
     <div className="container mx-auto pt-2">
+      {/* React 19 native metadata */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      {pageImage && <meta property="og:image" content={pageImage} />}
+
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col items-center md:w-1/3">
           {current && (

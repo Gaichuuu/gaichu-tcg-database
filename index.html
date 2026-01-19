@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="TCG, trading card game, parody cards, bootleg cards, WrennyMoo, OpenZoo, MetaZoo, card database, card collection"
+    />
+    <meta name="author" content="Gaichu" />
 
     <link rel="canonical" href="https://gaichu.com/" />
 
-    <title>Gaichu</title>
+    <title>Gaichu - TCG Database for Parody and Bootleg Card Games</title>
     <meta
       name="description"
-      content="Your #2 source for parody and bootleg card games."
+      content="Your #2 source for parody and bootleg card games. Browse cards from WrennyMoo, OpenZoo, MetaZoo, After Skool Hobby, and more."
     />
 
     <meta property="og:site_name" content="Gaichu" />
@@ -22,7 +29,7 @@
     <meta property="og:title" content="Gaichu TCG Database" />
     <meta
       property="og:description"
-      content="Your #2 source for parody and bootleg card games."
+      content="Your #2 source for parody and bootleg card games. Browse cards from WrennyMoo, OpenZoo, MetaZoo, and more."
     />
     <meta
       property="og:image"
@@ -37,12 +44,29 @@
     <meta name="twitter:title" content="Gaichu TCG Database" />
     <meta
       name="twitter:description"
-      content="Your #2 source for parody and bootleg card games."
+      content="Your #2 source for parody and bootleg card games. Browse cards from WrennyMoo, OpenZoo, MetaZoo, and more."
     />
     <meta
       name="twitter:image"
       content="https://gaichu.b-cdn.net/assets/default.png?v=3"
     />
+
+    <!-- Structured Data for Search Engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Gaichu",
+        "alternateName": "Gaichu TCG Database",
+        "url": "https://gaichu.com/",
+        "description": "Your #2 source for parody and bootleg card games. Browse cards from WrennyMoo, OpenZoo, MetaZoo, After Skool Hobby, and more.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://gaichu.com/cards?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

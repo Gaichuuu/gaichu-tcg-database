@@ -2,12 +2,20 @@
   RewriteEngine On
   RewriteBase /
 
+  # Serve existing files and directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
+  # Bot detection for news pages - serve PHP with meta tags
+  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|Googlebot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
   RewriteRule ^news/([^/?#]+)/?$ /news/index.php?slug=$1 [L,QSA]
 
+  # Bot detection for card detail pages - serve PHP with meta tags
+  # Pattern: /cards/{series}/sets/{set}/card/{sortBy_cardName}
+  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|Googlebot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
+  RewriteRule ^cards/([^/]+)/sets/([^/]+)/card/([^/?#]+)/?$ /cards/index.php [L,QSA]
+
+  # All other routes fall through to React app
   RewriteRule . /index.html [L]
 </IfModule>

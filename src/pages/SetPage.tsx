@@ -49,8 +49,24 @@ const SetPage = () => {
     });
   }
 
+  // SEO metadata
+  const pageTitle = setAndCard?.set.name
+    ? `${setAndCard.set.name} - Gaichu`
+    : "Set - Gaichu";
+  const pageDescription =
+    setAndCard?.set.description ||
+    `Browse all cards in ${setAndCard?.set.name || "this set"} on Gaichu.`;
+  const pageImage = setAndCard?.set.logo;
+
   return (
     <div className="container mx-auto pt-1 pb-1">
+      {/* React 19 native metadata */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      {pageImage && <meta property="og:image" content={pageImage} />}
+
       <div className="mb-2 flex">
         <div className="flex flex-row">
           {imageTiles.map((img) => (

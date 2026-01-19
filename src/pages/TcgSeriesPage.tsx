@@ -14,6 +14,18 @@ const TcgSeriesPage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-0">
+      {/* React 19 native metadata */}
+      <title>Card Series - Gaichu</title>
+      <meta
+        name="description"
+        content="Browse all card series including WrennyMoo, OpenZoo, MetaZoo, After Skool Hobby, and more parody card games."
+      />
+      <meta property="og:title" content="Card Series - Gaichu" />
+      <meta
+        property="og:description"
+        content="Browse all card series including WrennyMoo, OpenZoo, MetaZoo, and more."
+      />
+
       <h3 className="mb-2">Series</h3>
       <SeriesList
         series={result?.data ?? []}

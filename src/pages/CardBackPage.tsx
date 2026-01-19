@@ -26,8 +26,23 @@ const CardBackPage: React.FC = () => {
 
   if (setError || !cardBack) return <p>Not found.</p>;
 
+  // SEO metadata
+  const setName = setAndCard?.set.name || "Set";
+  const pageTitle = `Card Back - ${setName} - Gaichu`;
+  const pageDescription = cardBack.text
+    ? `Card back design for ${setName}. ${cardBack.text}`
+    : `View the card back design for ${setName} on Gaichu.`;
+  const pageImage = cardBack.url || backUrl;
+
   return (
     <div className="container mx-auto pt-2">
+      {/* React 19 native metadata */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      {pageImage && <meta property="og:image" content={pageImage} />}
+
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col items-center md:w-1/3">
           {backUrl && (

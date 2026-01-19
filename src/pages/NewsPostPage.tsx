@@ -19,8 +19,23 @@ export default function NewsPostPage() {
   if (status === "error") return <PageError message="Failed to load post." />;
   if (!post) return <PageNotFound message={`Post not found: ${slug}`} />;
 
+  // SEO metadata
+  const pageTitle = `${post.title} - Gaichu`;
+  const pageDescription = post.excerpt || post.title;
+
   return (
     <article className="mx-auto mb-2 max-w-4xl px-4 py-2">
+      {/* React 19 native metadata */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={pageDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      <meta property="og:type" content="article" />
+      {post.hero_url && <meta property="og:image" content={post.hero_url} />}
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={pageDescription} />
+      {post.hero_url && <meta name="twitter:image" content={post.hero_url} />}
+
       <h2>{post.title}</h2>
       <p className="text-secondaryText mt-1">
         {new Date(post.created_at).toLocaleDateString()}

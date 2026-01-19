@@ -10,6 +10,18 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="mt-1 flex flex-col items-center justify-center p-0">
+      {/* React 19 native metadata */}
+      <title>Gaichu TCG Database</title>
+      <meta
+        name="description"
+        content="Your #2 source for parody and bootleg card games. Browse cards from WrennyMoo, OpenZoo, MetaZoo, and more."
+      />
+      <meta property="og:title" content="Gaichu TCG Database" />
+      <meta
+        property="og:description"
+        content="Your #2 source for parody and bootleg card games."
+      />
+
       <p className="mb-4 text-5xl tracking-wide">Welcome</p>
       <p className="mb-4 max-w-xl text-lg">
         Your #2 source for parody and bootleg card games.
