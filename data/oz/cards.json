@@ -2,21 +2,12 @@
   {
     "id": "3d42b7dd-b86d-459f-9f3c-fab96f841d79",
     "number": 1,
-    "total_cards_count": 36,
     "sort_by": 1,
     "name": "Rainbow Wizard's Gargoyle",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie",
     "cost": [
       {
@@ -64,21 +55,12 @@
   {
     "id": "df343bb1-fed4-4e46-868a-62052ae542c2",
     "number": 2,
-    "total_cards_count": 36,
     "sort_by": 2,
     "name": "Indrid Cold",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Caster",
     "cost": [
       {
@@ -121,21 +103,12 @@
   {
     "id": "826cf975-a400-4d83-8d69-243130865203",
     "number": 3,
-    "total_cards_count": 36,
     "sort_by": 3,
     "name": "Skinwalker",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Witch",
     "cost": [
       {
@@ -187,21 +160,12 @@
   {
     "id": "b3fabc62-157d-44f7-838f-e769c1adc23f",
     "number": 4,
-    "total_cards_count": 36,
     "sort_by": 4,
     "name": "Jersey Devil",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Demon",
     "cost": [
       {
@@ -253,21 +217,12 @@
   {
     "id": "36268e29-5a47-496e-9060-8c5512c96058",
     "number": 5,
-    "total_cards_count": 36,
     "sort_by": 5,
     "name": "Beast of Bladenboro",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Bloodsucker Cat",
     "cost": [
       {
@@ -315,21 +270,12 @@
   {
     "id": "003f3eed-4557-4881-acda-cfe360a98919",
     "number": 6,
-    "total_cards_count": 36,
     "sort_by": 6,
     "name": "Size Up",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Spell",
     "cost": [
       {
@@ -346,21 +292,12 @@
   {
     "id": "d97fcb2b-3048-4ea3-8272-ccb74b256d99",
     "number": 7,
-    "total_cards_count": 36,
     "sort_by": 7,
     "name": "Dancing in the Rain",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Spell",
     "cost": [
       {
@@ -377,21 +314,12 @@
   {
     "id": "a2b57c35-bdfd-40bc-9579-b1c6d577e800",
     "number": 8,
-    "total_cards_count": 36,
     "sort_by": 8,
     "name": "Fire Shield",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Artifact",
     "cost": [
       {
@@ -410,21 +338,12 @@
   {
     "id": "253f6cb9-5508-4ad3-ac61-00610f8ffa01",
     "number": 9,
-    "total_cards_count": 36,
     "sort_by": 9,
     "name": "Nuke from Orbit",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Spell",
     "cost": [
       {
@@ -445,21 +364,12 @@
   {
     "id": "9af238b1-9f92-492e-be9a-81b6f78f3400",
     "number": 10,
-    "total_cards_count": 36,
     "sort_by": 10,
     "name": "Flossie",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Dinosaur",
     "cost": [
       {
@@ -511,21 +421,12 @@
   {
     "id": "ec19e917-6bda-4151-98c1-affb575dc833",
     "number": 11,
-    "total_cards_count": 36,
     "sort_by": 11,
     "name": "Plague Doctor",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Spirit",
     "cost": [
       {
@@ -577,21 +478,12 @@
   {
     "id": "ee029d43-bb8a-4ca2-823b-f3dbd367998d",
     "number": 12,
-    "total_cards_count": 36,
     "sort_by": 12,
     "name": "Aura Battery",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Artifact",
     "cost": [
       {
@@ -613,21 +505,12 @@
   {
     "id": "7bf7ba01-98c1-44f7-8e0b-4cb5c350325e",
     "number": 13,
-    "total_cards_count": 36,
     "sort_by": 13,
     "name": "Aura Generator",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Artifact",
     "cost": [
       {
@@ -649,21 +532,12 @@
   {
     "id": "19ed2e06-ef68-4a9b-a4ca-c820ff28cafd",
     "number": 14,
-    "total_cards_count": 36,
     "sort_by": 14,
     "name": "Nain Rouge",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie",
     "cost": [
       {
@@ -711,21 +585,12 @@
   {
     "id": "cc4b1715-a13c-4486-bb7d-ddce5fa0a145",
     "number": 15,
-    "total_cards_count": 36,
     "sort_by": 15,
     "name": "Exorcist's Nail",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Silver",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Artifact",
     "cost": [
       {
@@ -743,21 +608,12 @@
   {
     "id": "d5bfc0a3-70cb-42e9-aa7d-3fb9bb0e079c",
     "number": 16,
-    "total_cards_count": 36,
     "sort_by": 16,
     "name": "Potion Aura",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Special Aura",
     "effect": "Shatter: Destroy this Page to place 1 Aura Page from your Spellbook into the Arena Awakened.",
     "description": "",
@@ -768,21 +624,12 @@
   {
     "id": "0e9cbc1f-8e1b-4fe6-9d31-b2c43f97b652",
     "number": 17,
-    "total_cards_count": 36,
     "sort_by": 17,
     "name": "Sam's Cumberland Dragon",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Dragon",
     "cost": [
       {
@@ -834,21 +681,12 @@
   {
     "id": "f0ab08cb-72af-4b4d-b1c2-53578fd0e354",
     "number": 18,
-    "total_cards_count": 36,
     "sort_by": 18,
     "name": "Ben's Slide-Rock Bolter",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie",
     "cost": [
       {
@@ -900,21 +738,12 @@
   {
     "id": "1679c965-dfba-4022-8ba5-6e42d3de7fd3",
     "number": 19,
-    "total_cards_count": 36,
     "sort_by": 19,
     "name": "Ben's Babe the Blue Ox",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie",
     "cost": [
       {
@@ -966,21 +795,12 @@
   {
     "id": "aa2c93a2-4451-4a8e-a8ce-e6d4f4f1e60f",
     "number": 20,
-    "total_cards_count": 36,
     "sort_by": 20,
     "name": "Adam's Thunderbird",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Bird",
     "cost": [
       {
@@ -1028,21 +848,12 @@
   {
     "id": "aaac4e63-7e49-427a-a573-21cbd6160289",
     "number": 21,
-    "total_cards_count": 36,
     "sort_by": 21,
     "name": "Sam's Dingbelle",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie",
     "cost": [
       {
@@ -1090,21 +901,12 @@
   {
     "id": "8c3868ee-d095-4f72-a778-6c467678a55b",
     "number": 22,
-    "total_cards_count": 36,
     "sort_by": 22,
     "name": "Dark Caster's Walking Sam",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Demon",
     "cost": [
       {
@@ -1152,21 +954,12 @@
   {
     "id": "054e4d9e-ce10-4de5-bcc9-62e2541bd7e8",
     "number": 23,
-    "total_cards_count": 36,
     "sort_by": 23,
     "name": "Paul's Squonk",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Fearsome Critter",
     "cost": [
       {
@@ -1214,21 +1007,12 @@
   {
     "id": "7ade655e-2584-44c4-8060-62bef384a4f2",
     "number": 24,
-    "total_cards_count": 36,
     "sort_by": 24,
     "name": "Rose's Gee-Gee Bird",
     "variant": "Normal",
     "illustrators": ["Corey Lewis"],
     "rarity": "Gold",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie",
     "cost": [
       {
@@ -1280,21 +1064,12 @@
   {
     "id": "6f304082-d46b-47ef-9b6f-b2310feda278",
     "number": 25,
-    "total_cards_count": 36,
     "sort_by": 25,
     "name": "OpenZoo LEGACY!",
     "variant": "Normal",
     "illustrators": ["Jemooshka"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Spell",
     "cost": [
       {
@@ -1311,22 +1086,13 @@
   {
     "id": "4fb8145e-8654-47a7-b8d5-a562e50e09b9",
     "number": 26,
-    "total_cards_count": 36,
     "sort_by": 26,
     "name": "Pocket Squonk",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "type": "Beastie Fearsome Critter",
     "image": "https://gaichu.b-cdn.net/oz/legacy/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/26-thumb.jpg"
@@ -1334,241 +1100,142 @@
   {
     "id": "c8868db2-c2db-45eb-a5b0-540636c78194",
     "number": 27,
-    "total_cards_count": 36,
     "sort_by": 27,
     "name": "Dark Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/27.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/27-thumb.jpg"
   },
   {
     "id": "3562ac3d-ce5a-4110-a60a-7f036d5ff362",
     "number": 28,
-    "total_cards_count": 36,
     "sort_by": 28,
     "name": "Forest Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/28.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/28-thumb.jpg"
   },
   {
     "id": "240cb2c3-7c80-48ee-a73f-ca573213f112",
     "number": 29,
-    "total_cards_count": 36,
     "sort_by": 29,
     "name": "Cosmic Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/29.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/29-thumb.jpg"
   },
   {
     "id": "cf5ed1c2-c9a8-4f3f-af0c-eb078e762066",
     "number": 30,
-    "total_cards_count": 36,
     "sort_by": 30,
     "name": "Earth Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/30-thumb.jpg"
   },
   {
     "id": "cd49c313-87fe-43bb-ac02-660d280915de",
     "number": 31,
-    "total_cards_count": 36,
     "sort_by": 31,
     "name": "Flame Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/31.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/31-thumb.jpg"
   },
   {
     "id": "7551ac54-ddc2-46c7-a2fd-71b2fc4695f8",
     "number": 32,
-    "total_cards_count": 36,
     "sort_by": 32,
     "name": "Frost Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/32-thumb.jpg"
   },
   {
     "id": "2de891c3-145b-4d06-b1b9-0cd73c635bd2",
     "number": 33,
-    "total_cards_count": 36,
     "sort_by": 33,
     "name": "Light Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/33.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/33-thumb.jpg"
   },
   {
     "id": "c1966b39-1aa8-48b8-9d1f-93d95e9cbf57",
     "number": 34,
-    "total_cards_count": 36,
     "sort_by": 34,
     "name": "Lightning Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/34-thumb.jpg"
   },
   {
     "id": "3fe3026c-a41f-4518-938a-a5b073309c0d",
     "number": 35,
-    "total_cards_count": 36,
     "sort_by": 35,
     "name": "Spirit Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/35-thumb.jpg"
   },
   {
     "id": "e888f383-95a2-4902-9a40-0a9709d5ca71",
     "number": 36,
-    "total_cards_count": 36,
     "sort_by": 36,
     "name": "Water Aura",
     "variant": "Normal",
     "illustrators": ["PMZ"],
     "rarity": "Bronze",
-    "set_short_name": "legacy",
-    "series_short_name": "oz",
     "description": "",
     "set_ids": ["0cd30841-399e-4043-ac72-bdf4d268d4b3"],
-    "sets": [
-      {
-        "name": "Legacy",
-        "image": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2"
-      }
-    ],
     "image": "https://gaichu.b-cdn.net/oz/legacy/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/36-thumb.jpg"
   },
   {
     "id": "a7a6b0c3-6c7d-4a3b-ae3e-6f6b1d8f2c41",
     "number": 1,
-    "total_cards_count": 3,
     "sort_by": 1,
     "name": "Fresh Cakes",
     "variant": "Normal",
     "illustrators": ["taktikal1"],
     "rarity": "Promo",
-    "set_short_name": "promo25",
-    "series_short_name": "oz",
     "set_ids": ["a4ad7eb7-9361-44d5-b60a-eac571932d6c"],
-    "sets": [
-      {
-        "name": "Promo Cards (2025)",
-        "image": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
-      }
-    ],
     "type": "Artifact Hygiene Stone",
     "cost": [
       {
@@ -1591,21 +1258,12 @@
   {
     "id": "4d8c7b80-2f3a-4a20-97e5-1f2c2b2d7c8e",
     "number": 2,
-    "total_cards_count": 3,
     "sort_by": 2,
     "name": "Jack-o-Lantern",
     "variant": "Normal",
     "illustrators": ["gaichu"],
     "rarity": "Promo",
-    "set_short_name": "promo25",
-    "series_short_name": "oz",
     "set_ids": ["a4ad7eb7-9361-44d5-b60a-eac571932d6c"],
-    "sets": [
-      {
-        "name": "Promo Cards (2025)",
-        "image": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
-      }
-    ],
     "type": "Artifact Pumpkin",
     "cost": [
       {
@@ -1624,21 +1282,12 @@
   {
     "id": "f6c3c9dd-bf57-4ab1-9f8a-4bb8bb3887af",
     "number": 3,
-    "total_cards_count": 3,
     "sort_by": 3,
     "name": "Christmas Waheela",
     "variant": "Normal",
     "illustrators": ["Jemooshka"],
     "rarity": "Promo",
-    "set_short_name": "promo25",
-    "series_short_name": "oz",
     "set_ids": ["a4ad7eb7-9361-44d5-b60a-eac571932d6c"],
-    "sets": [
-      {
-        "name": "Promo Cards (2025)",
-        "image": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg"
-      }
-    ],
     "type": "Beastie Wolf",
     "cost": [
       {
