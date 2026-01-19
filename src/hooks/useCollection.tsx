@@ -49,3 +49,22 @@ export const useSet = (
     },
   });
 };
+
+export const useSeriesByShortName = (
+  seriesShortName: string,
+): UseQueryResult<SeriesAndSet | null, Error> => {
+  return useQuery<SeriesAndSet | null, Error>({
+    queryKey: IS_USE_LOCAL_DATA
+      ? [`useSeriesByShortNameLocal_${seriesShortName}`]
+      : [`useSeriesByShortName_${seriesShortName}`],
+    enabled: !!seriesShortName,
+    queryFn: async () => {
+      const allSeries = IS_USE_LOCAL_DATA
+        ? getJsonSeries()
+        : await fetchSeries();
+      return (
+        allSeries.find((s) => s.series.short_name === seriesShortName) || null
+      );
+    },
+  });
+};

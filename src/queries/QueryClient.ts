@@ -2,9 +2,7 @@ import { ONE_HOUR, TEN_MINUTES, TWENTY_FOUR_HOURS } from "@/utils/TimeUtils";
 import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
 import { QueryClient } from "@tanstack/react-query";
 import { persistQueryClient } from "@tanstack/react-query-persist-client";
-
-const PERSIST_VERSION = "v2"; // update this to invalidate old caches
-const PERSIST_KEY = `gaichu-query-cache-${PERSIST_VERSION}`;
+import { PERSIST_KEY } from "./persistenceKey";
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -36,4 +34,5 @@ export function setupQueryPersistence() {
     persister,
     maxAge: TWENTY_FOUR_HOURS, // keep persisted cache 24h
   });
+  queryClient.resetQueries();
 }

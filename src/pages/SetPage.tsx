@@ -35,27 +35,39 @@ const SetPage = () => {
       ? "https://www.thegamecrafter.com/games/openzoo-legacy"
       : undefined);
 
+  const imageTiles: Array<{ url: string; pathType: SetImagePathType }> = [];
+  if (setAndCard?.set.pack_art) {
+    imageTiles.push({
+      url: setAndCard.set.pack_art.url,
+      pathType: SetImagePathType.PackArt,
+    });
+  }
+  if (setAndCard?.set.card_back) {
+    imageTiles.push({
+      url: setAndCard.set.card_back.url,
+      pathType: SetImagePathType.CardBack,
+    });
+  }
+
   return (
     <div className="container mx-auto pt-1 pb-1">
       <div className="mb-2 flex">
         <div className="flex flex-row">
-          {setAndCard?.set.set_images?.map((img) => (
+          {imageTiles.map((img) => (
             <div
               key={img.url}
               className="flex cursor-pointer flex-col items-center p-1.5 duration-200 hover:scale-110"
               onClick={() => {
-                navigate(
-                  getArtPath(setAndCard?.set, img.pathType as SetImagePathType),
-                );
+                navigate(getArtPath(setAndCard?.set, img.pathType));
               }}
             >
               <img
                 src={img.url}
-                alt={getTitleSetImagePathType(img.pathType as SetImagePathType)}
+                alt={getTitleSetImagePathType(img.pathType)}
                 className="border-secondaryBorder mb-0 block max-h-25 w-full rounded border object-contain transition-transform duration-200"
               />
               <span className="mt-0.5 w-full text-center text-xs">
-                {getTitleSetImagePathType(img.pathType as SetImagePathType)}
+                {getTitleSetImagePathType(img.pathType)}
               </span>
             </div>
           ))}

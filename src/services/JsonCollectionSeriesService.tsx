@@ -1,3 +1,4 @@
+import { SeriesLink } from "@/types/CollectionSeries";
 import { SeriesAndSet } from "@/types/MergedCollection";
 import seriesList from "data/series.json";
 import setsList from "data/sets.json";
@@ -8,17 +9,30 @@ interface JsonSeries {
   logo: string;
   name: string;
   sort_by: number;
+  description?: string;
+  website?: string;
+  patreon?: string;
+  instagram?: string;
+  discord?: string;
+  twitter?: string;
+  youtube?: string;
+  links?: SeriesLink[];
 }
 
-interface JsonSetImage {
+interface JsonPackArt {
   url: string;
-  pathType?: string;
   frontDescription?: string;
   backDescription?: string;
+  illustrator?: string;
   note?: string;
+  packs?: Array<{ url: string; label: string }>;
+}
+
+interface JsonCardBack {
+  url: string;
   text?: string;
   illustrator?: string;
-  packs?: Array<{ url: string; label: string }>;
+  note?: string;
 }
 
 interface JsonSet {
@@ -30,7 +44,9 @@ interface JsonSet {
   name: string;
   sort_by: number;
   description?: string;
-  set_images?: JsonSetImage[];
+  pack_art?: JsonPackArt;
+  card_back?: JsonCardBack;
+  total_cards_count?: number;
 }
 
 export const getJsonSeries = (): SeriesAndSet[] => {
@@ -49,6 +65,14 @@ const convertToSeriesAndSet = (series: JsonSeries): SeriesAndSet => ({
     logo: series.logo,
     name: series.name,
     sort_by: series.sort_by,
+    description: series.description,
+    website: series.website,
+    patreon: series.patreon,
+    instagram: series.instagram,
+    discord: series.discord,
+    twitter: series.twitter,
+    youtube: series.youtube,
+    links: series.links,
   },
   sets: (setsList as JsonSet[])
     .filter((set) => set.series_id === series.id)
@@ -61,18 +85,8 @@ const convertToSeriesAndSet = (series: JsonSeries): SeriesAndSet => ({
       name: set.name,
       sort_by: set.sort_by,
       description: set.description,
-      set_images: set.set_images?.map((image) => ({
-        url: image.url,
-        pathType: image.pathType,
-        frontDescription: image.frontDescription,
-        backDescription: image.backDescription,
-        note: image.note,
-        text: image.text,
-        illustrator: image.illustrator,
-        packs: image.packs?.map((pack) => ({
-          url: pack.url,
-          label: pack.label,
-        })),
-      })),
+      pack_art: set.pack_art,
+      card_back: set.card_back,
+      total_cards_count: set.total_cards_count,
     })),
 });

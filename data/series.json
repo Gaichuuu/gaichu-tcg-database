@@ -4,34 +4,41 @@
     "short_name": "ash",
     "name": "After Skool Hobby",
     "logo": "https://gaichu.b-cdn.net/ash/ashLogo.png",
-    "sort_by": 1
+    "sort_by": 1,
+    "description": "",
+    "instagram": "https://www.instagram.com/afterskoolhobby"
   },
   {
     "id": "bc24ff9c-17a8-47ed-ac18-d202bf32d21c",
     "short_name": "disgruntled",
     "name": "Disgruntled Games",
     "logo": "https://gaichu.b-cdn.net/disgruntled/disgruntledLogo.png",
-    "sort_by": 2
+    "sort_by": 2,
+    "description": ""
   },
   {
     "id": "8ece2d2a-33c0-45c2-b6b3-6fad225c1314",
     "short_name": "mz",
     "name": "MetaZoo",
     "logo": "https://gaichu.b-cdn.net/mz/mzLogo.png",
-    "sort_by": 3
+    "sort_by": 3,
+    "description": ""
   },
   {
     "id": "32b8b500-9985-4bbe-a494-05a47d009a48",
     "short_name": "oz",
     "name": "OpenZoo",
     "logo": "https://gaichu.b-cdn.net/oz/ozLogo.png?v=2",
-    "sort_by": 4
+    "sort_by": 4,
+    "description": "",
+    "discord": "https://discord.gg/openzoo"
   },
   {
     "id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
     "short_name": "wm",
     "name": "WrennyMoo",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
-    "sort_by": 5
+    "sort_by": 5,
+    "description": ""
   }
 ]
