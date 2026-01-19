@@ -29,6 +29,7 @@ stageServiceAccountKey.json
 # Local files
 .claude/
 CLAUDE.md
+scripts/
 
 # Build artifacts
 gaichu-api/lib
