@@ -21,18 +21,15 @@ export const setJsonMock: CollectionSet[] = [
     sort_by: 2,
     total_cards_count: 30,
     description: "test_2 description",
-    set_images: [
-      {
-        url: "https://example.com/test_2_image_1.png",
-        pathType: "pack-art",
-        packs: [
-          {
-            url: "https://example.com/test_2_pack_1.png",
-            label: "Pack 1",
-          },
-        ],
-      },
-    ],
+    pack_art: {
+      url: "https://example.com/test_2_image_1.png",
+      packs: [
+        {
+          url: "https://example.com/test_2_pack_1.png",
+          label: "Pack 1",
+        },
+      ],
+    },
   },
   {
     id: "set-id-3",
