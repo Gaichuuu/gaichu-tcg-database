@@ -8,33 +8,29 @@
     "name": "Set One (reprint)",
     "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
     "description": "The reprint removes Pokémon trademarks from the packaging and changes the official Pokémon names to parody ones. The card back is also changed. However, Pokémon trademarks and official names still remain on many attacks and descriptions.",
-    "set_images": [
-      {
-        "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
-        "pathType": "pack-art",
-        "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
-        "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
-        "illustrator": "Alex Roh",
-        "note": "",
-        "packs": [
-          {
-            "label": "Front of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
-          },
-          {
-            "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set1/pack01-back.jpg"
-          }
-        ]
-      },
-      {
-        "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-        "pathType": "card-back",
-        "text": "Parody Parody",
-        "illustrator": "Alex Roh",
-        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
-      }
-    ],
+    "pack_art": {
+      "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
+      "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+      "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+      "illustrator": "Alex Roh",
+      "note": "",
+      "packs": [
+        {
+          "label": "Front of Pack",
+          "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg"
+        },
+        {
+          "label": "Back of Pack",
+          "url": "https://gaichu.b-cdn.net/wm/set1/pack01-back.jpg"
+        }
+      ]
+    },
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+      "text": "Parody Parody",
+      "illustrator": "Alex Roh",
+      "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
+    },
     "total_cards_count": 50
   },
   {
@@ -56,33 +52,29 @@
     "name": "Set Two",
     "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
     "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
-    "set_images": [
-      {
-        "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
-        "pathType": "pack-art",
-        "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
-        "backDescription": "Wrenny Moo's second card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
-        "illustrator": "Alex Roh",
-        "note": "",
-        "packs": [
-          {
-            "label": "Front of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
-          },
-          {
-            "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/wm/set2/pack01-back.jpg"
-          }
-        ]
-      },
-      {
-        "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
-        "pathType": "card-back",
-        "text": "Parody Parody",
-        "illustrator": "Alex Roh",
-        "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
-      }
-    ],
+    "pack_art": {
+      "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
+      "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
+      "backDescription": "Wrenny Moo's second card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+      "illustrator": "Alex Roh",
+      "note": "",
+      "packs": [
+        {
+          "label": "Front of Pack",
+          "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg"
+        },
+        {
+          "label": "Back of Pack",
+          "url": "https://gaichu.b-cdn.net/wm/set2/pack01-back.jpg"
+        }
+      ]
+    },
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+      "text": "Parody Parody",
+      "illustrator": "Alex Roh",
+      "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
+    },
     "total_cards_count": 50
   },
   {
@@ -122,33 +114,29 @@
     "name": "Series 1 (reprint)",
     "logo": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg",
     "description": "Generation One booster packs were reprinted in 2024 to meet the growing international demand outside of Singapore.",
-    "set_images": [
-      {
-        "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg",
-        "pathType": "pack-art",
-        "frontDescription": "GENERATION ONE BOOSTER PACK\nAfter Skool Hobby ~ Series 1\n2 ADDITIONAL COLLECTIBLE CARDS",
-        "backDescription": "THIS IS NOT AN OFFICIAL MERCH.\nAll art are recreated & drawn by afterskoolhobby. This booster pack contains 2 holofoil collectible cards based on the poplular TCG. 50 different cards for you to discover and add to your collection including Base set Zard, Moonbreon & Poncho Pika!\n@afterskoolhobby ~ collect'em all la!\nThis is NOT an official Merch. The cards are NOT tournament legal. Do NOT send this pack or the cards inside for grading. All characters, items, symbols and names depicted belongs to the BIG P company.\nAfter Skool Hobby ~ 2023/2024\nAll cards are designed in SG by After Skool Hobby.\n50 cards in total ~ 7 Trainers ~ 6 Ditto variants ~ 4 Poncho Pikas ~ 1 Sketch card",
-        "illustrator": "Soo Zhi Wei",
-        "note": "",
-        "packs": [
-          {
-            "label": "Front of Pack",
-            "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg"
-          },
-          {
-            "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/ash/series1/pack01-back.jpg"
-          }
-        ]
-      },
-      {
-        "url": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
-        "pathType": "card-back",
-        "text": "After Skool Hobby",
-        "illustrator": "Soo Zhi Wei",
-        "note": "The reprinted set has \"2024\" at the bottom."
-      }
-    ],
+    "pack_art": {
+      "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg",
+      "frontDescription": "GENERATION ONE BOOSTER PACK\nAfter Skool Hobby ~ Series 1\n2 ADDITIONAL COLLECTIBLE CARDS",
+      "backDescription": "THIS IS NOT AN OFFICIAL MERCH.\nAll art are recreated & drawn by afterskoolhobby. This booster pack contains 2 holofoil collectible cards based on the poplular TCG. 50 different cards for you to discover and add to your collection including Base set Zard, Moonbreon & Poncho Pika!\n@afterskoolhobby ~ collect'em all la!\nThis is NOT an official Merch. The cards are NOT tournament legal. Do NOT send this pack or the cards inside for grading. All characters, items, symbols and names depicted belongs to the BIG P company.\nAfter Skool Hobby ~ 2023/2024\nAll cards are designed in SG by After Skool Hobby.\n50 cards in total ~ 7 Trainers ~ 6 Ditto variants ~ 4 Poncho Pikas ~ 1 Sketch card",
+      "illustrator": "Soo Zhi Wei",
+      "note": "",
+      "packs": [
+        {
+          "label": "Front of Pack",
+          "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg"
+        },
+        {
+          "label": "Back of Pack",
+          "url": "https://gaichu.b-cdn.net/ash/series1/pack01-back.jpg"
+        }
+      ]
+    },
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/ash/series1/00.jpg",
+      "text": "After Skool Hobby",
+      "illustrator": "Soo Zhi Wei",
+      "note": "The reprinted set has \"2024\" at the bottom."
+    },
     "total_cards_count": 44
   },
   {
@@ -160,33 +148,29 @@
     "name": "Series 2",
     "logo": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg",
     "description": "Genetic Mystery is a fatter booster pack with 4 holofoil cards inside, all based on the fan-favorite purple blob.",
-    "set_images": [
-      {
-        "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg",
-        "pathType": "pack-art",
-        "frontDescription": "GENETIC MYSTERY 1ST PRINT\nAfter Skool Hobby ~ Series 2\n4 ADDITIONAL COLLECTIBLE CARDS",
-        "backDescription": "THIS IS NOT AN OFFICIAL MERCH.\nAll art is created & illustrated by AfterSkoolHobby. This booster pack includes 4 holofoil collectible cards inspired by the fan-favorite purple blob. Discover and collect all 80 unique cards including 3 secret rares!\n@afterskoolhobby ~ collect'em all la!\nThis is NOT an official Merch. The cards are NOT tournament legal. Do NOT send this pack or the cards inside for grading. All characters, items, symbols and names depicted belongs to the BIG P company.\nAfter Skool Hobby ~ 2025\n80 cards in total ~ 72 Rare ~ 5 Super Rare ~ 3 Secret Rare",
-        "illustrator": "Soo Zhi Wei",
-        "note": "",
-        "packs": [
-          {
-            "label": "Front of Pack",
-            "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg"
-          },
-          {
-            "label": "Back of Pack",
-            "url": "https://gaichu.b-cdn.net/ash/series2/pack01-back.jpg"
-          }
-        ]
-      },
-      {
-        "url": "https://gaichu.b-cdn.net/ash/series2/00.jpg",
-        "pathType": "card-back",
-        "text": "After Skool Hobby\n1ST PRINT",
-        "illustrator": "Soo Zhi Wei",
-        "note": "Series 2 has \"2025\" at the bottom."
-      }
-    ],
+    "pack_art": {
+      "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg",
+      "frontDescription": "GENETIC MYSTERY 1ST PRINT\nAfter Skool Hobby ~ Series 2\n4 ADDITIONAL COLLECTIBLE CARDS",
+      "backDescription": "THIS IS NOT AN OFFICIAL MERCH.\nAll art is created & illustrated by AfterSkoolHobby. This booster pack includes 4 holofoil collectible cards inspired by the fan-favorite purple blob. Discover and collect all 80 unique cards including 3 secret rares!\n@afterskoolhobby ~ collect'em all la!\nThis is NOT an official Merch. The cards are NOT tournament legal. Do NOT send this pack or the cards inside for grading. All characters, items, symbols and names depicted belongs to the BIG P company.\nAfter Skool Hobby ~ 2025\n80 cards in total ~ 72 Rare ~ 5 Super Rare ~ 3 Secret Rare",
+      "illustrator": "Soo Zhi Wei",
+      "note": "",
+      "packs": [
+        {
+          "label": "Front of Pack",
+          "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg"
+        },
+        {
+          "label": "Back of Pack",
+          "url": "https://gaichu.b-cdn.net/ash/series2/pack01-back.jpg"
+        }
+      ]
+    },
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/ash/series2/00.jpg",
+      "text": "After Skool Hobby\n1ST PRINT",
+      "illustrator": "Soo Zhi Wei",
+      "note": "Series 2 has \"2025\" at the bottom."
+    },
     "total_cards_count": 80
   },
   {
@@ -199,14 +183,11 @@
     "printFileUrl": "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf",
     "logo": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2",
     "description": "LEGACY has arrived! This was created by fans based on publicly available information.\nSee the full OpenZoo <a href='https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342' target='_blank'>attributions sheet</a>.",
-    "set_images": [
-      {
-        "url": "https://gaichu.b-cdn.net/oz/legacy/00.jpg?v=2",
-        "pathType": "card-back",
-        "text": "OpenZoo",
-        "illustrator": "mistletoe"
-      }
-    ],
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/oz/legacy/00.jpg?v=2",
+      "text": "OpenZoo",
+      "illustrator": "mistletoe"
+    },
     "total_cards_count": 36
   },
   {
