@@ -1,5 +1,5 @@
 // src/pages/CardBackPage.tsx
-import React, { useMemo } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { useSet } from "@/hooks/useCollection";
 import { CardDetailRow } from "@/components/CardDetail";
@@ -17,13 +17,7 @@ const CardBackPage: React.FC = () => {
 
   const { data: setAndCard, error: setError } = useSet(seriesKey, setKey);
 
-  const cardBack = useMemo(
-    () =>
-      setAndCard?.set.set_images?.find(
-        (img) => img.pathType === SetImagePathType.CardBack,
-      ),
-    [setAndCard],
-  );
+  const cardBack = setAndCard?.set.card_back;
 
   const backUrl =
     seriesKey && setKey

@@ -1,5 +1,5 @@
 // src/pages/PackArtPage.tsx
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSet } from "@/hooks/useCollection";
 import { CardDetailRow } from "@/components/CardDetail";
@@ -17,15 +17,8 @@ const PackArtPage: React.FC = () => {
 
   const { data: setAndCard, error: setError } = useSet(seriesKey, setKey);
 
-  const pack = useMemo(
-    () =>
-      setAndCard?.set.set_images?.find(
-        (img) => img.pathType === SetImagePathType.PackArt,
-      ),
-    [setAndCard],
-  );
-
-  const packArts = pack?.packs ?? [];
+  const packArt = setAndCard?.set.pack_art;
+  const packArts = packArt?.packs ?? [];
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -34,7 +27,7 @@ const PackArtPage: React.FC = () => {
 
   const current = packArts[selectedIndex];
 
-  if (setError || !pack || packArts.length === 0) {
+  if (setError || !packArt || packArts.length === 0) {
     return <p>Not found.</p>;
   }
 
@@ -78,27 +71,27 @@ const PackArtPage: React.FC = () => {
           </h1>
           <table className="w-full border-collapse">
             <tbody>
-              {pack.frontDescription && (
+              {packArt.frontDescription && (
                 <CardDetailRow label="Front Text">
                   <span style={{ whiteSpace: "pre-wrap" }}>
-                    {pack.frontDescription}
+                    {packArt.frontDescription}
                   </span>
                 </CardDetailRow>
               )}
-              {pack.backDescription && (
+              {packArt.backDescription && (
                 <CardDetailRow label="Back Text">
                   <span style={{ whiteSpace: "pre-wrap" }}>
-                    {pack.backDescription}
+                    {packArt.backDescription}
                   </span>
                 </CardDetailRow>
               )}
-              {pack.illustrator && (
+              {packArt.illustrator && (
                 <CardDetailRow label="Illustrator">
-                  {pack.illustrator}
+                  {packArt.illustrator}
                 </CardDetailRow>
               )}
-              {pack.note && (
-                <CardDetailRow label="Note">{pack.note}</CardDetailRow>
+              {packArt.note && (
+                <CardDetailRow label="Note">{packArt.note}</CardDetailRow>
               )}
             </tbody>
           </table>
