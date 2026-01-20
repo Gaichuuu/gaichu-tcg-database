@@ -8,10 +8,25 @@
     "name": "Set One (reprint)",
     "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
     "description": "The reprint removes Pokémon trademarks from the packaging and changes the official Pokémon names to parody ones. The card back is also changed. However, Pokémon trademarks and official names still remain on many attacks and descriptions.",
+    "keywords": [
+      "WrennyMoo Set One",
+      "derpy Pokemon cards",
+      "holographic parody cards",
+      "Alex Roh",
+      "Charizard parody",
+      "Mew parody",
+      "custom Pokemon cards"
+    ],
     "pack_art": {
       "url": "https://gaichu.b-cdn.net/wm/set1/pack01.jpg",
-      "frontDescription": "⭐1 ~ Mojiri Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
-      "backDescription": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+      "frontDescription": {
+        "ja": "⭐1 〜 もじりカード 〜 トレーディングカード\n1パックに1枚、ホログラムのレアカードが登場！\nもし、このカードを誰も買ってくれなかったら、大変なことになる。このカードを作るために、怪しい人たちからお金を借りたんだ。怖いんです。（リザードン）\nこれだれ？（ミュウ）〜 すばらしい！（ラッキー）〜 キュート（カラカラ）\nHE'S A GREY BOY 〜 7 TRADING CARDS 〜 レニムー（ロゴ）",
+        "en": "⭐1 ~ Parody Card ~ Trading Cards\nA rare holographic card appears in each pack!\nIf no one buys this card, I'll be in big trouble. I borrowed money from shady people to make this card. I'm scared. (Charizard)\nWho is this...? (Mew) ~ Wonderful! (Chansey) ~ Cute (Cubone)\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)"
+      },
+      "backDescription": {
+        "ja": "50枚全部集めると、あなたとあなたの家族は今後100年間祝福されるでしょう。誰かがあなたを超クールだと思うでしょう。あの子も含めてね。あなたのコレクションを彼女に見せれば、彼女はあなたのものになる。彼女を大切にすること。そんな関係でも辛いことはあるだろうが、楽しいものになる。いい時を思い出せばいいんです。\nISBN 1-57620-784-7 〜 742818060342（upc）〜 Wrenny Moo WM 06036（mpn）\nHE'S A GREY BOY 〜 レニムー（ロゴ）〜 レニムーのコスト",
+        "en": "If you collect all 50 cards, your family will be blessed for the next 100 years. Everyone will think you're super cool, including the girl. Show her your collection and she'll be yours. Take care of her. Even in such a relationship, there will be hard times. But it will be fun. Just remember the good times.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost"
+      },
       "illustrator": "Alex Roh",
       "note": "",
       "packs": [
@@ -27,7 +42,10 @@
     },
     "card_back": {
       "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-      "text": "Parody Parody",
+      "text": {
+        "ja": "パロディー パロディー",
+        "en": "Parody Parody"
+      },
       "illustrator": "Alex Roh",
       "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
     },
@@ -41,6 +59,23 @@
     "sort_by": 1,
     "name": "Promo Cards",
     "logo": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg",
+    "description": "Unique cards distributed through special events, conventions, product bundles, and retailer partnerships. Includes holiday promos, convention exclusives, serialized cards, and collaboration sets with Steve Aoki and Sanrio.",
+    "keywords": [
+      "MetaZoo promos",
+      "Hiroquest",
+      "Kuromi Cryptid Carnival",
+      "Steve Aoki MetaZoo",
+      "Sanrio MetaZoo",
+      "convention exclusives",
+      "serialized cards",
+      "holiday promos",
+      "limited edition MetaZoo"
+    ],
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/mz/promo/00.jpg",
+      "text": "OpenZoo",
+      "illustrator": "mistletoe"
+    },
     "total_cards_count": 165
   },
   {
@@ -52,10 +87,25 @@
     "name": "Set Two",
     "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
     "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
+    "keywords": [
+      "WrennyMoo Set Two",
+      "Wrenny Moo Volume 2",
+      "derpy Pokemon",
+      "Rapidash parody",
+      "Suicune parody",
+      "holographic parody cards",
+      "Alex Roh"
+    ],
     "pack_art": {
       "url": "https://gaichu.b-cdn.net/wm/set2/pack01.jpg",
-      "frontDescription": "⭐2 ~ Mojiri Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds, it please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)",
-      "backDescription": "Wrenny Moo's second card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, /I always wanted a little brother./ Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wrenny Moo's Cost",
+      "frontDescription": {
+        "ja": "⭐2 〜 もじりカード 〜 トレーディングカード\n間違ってこのパックの中にIDを入れてしまったので、もし見つけた方がいらっしゃいましたら、ご連絡ください。\nすばらしい（ギャロップ）〜 これだれ？（スイクン）\nこれらのカードを購入すると、あなたとあなたの家族に20年間の幸運が訪れます。\nHE'S A GREY BOY 〜 7 TRADING CARDS 〜 レニムー（ロゴ）",
+        "en": "⭐2 ~ Parody Card ~ Trading Cards\nI accidentally put my ID in this pack, so if anyone finds it, please let me know.\nWonderful (Rapidash) ~ Who is this...? (Suicune)\nPurchasing one of these cards will bring your family 20 years of good luck.\nHE'S A GREY BOY ~ 7 TRADING CARDS ~ Wrenny Moo (logo)"
+      },
+      "backDescription": {
+        "ja": "レニムー初のカードセット。カードはすべて手描きのオリジナルデザインです。50枚のカードを集めて、友達を驚かせよう。全部集めたら、弟にパックを買ってあげましょう。彼は一生感謝することでしょう。弟がいない場合は、両親に「弟が欲しかったんだ」と言いましょう。いずれにせよ、買えるだけパックを買いましょう。このカードはいつか大金になるはずです。\nISBN 1-57620-784-7 〜 742818060342（upc）〜 Wrenny Moo WM 06036（mpn）\nHE'S A GREY BOY 〜 レニムー（ロゴ）〜 ウィザードのコスト",
+        "en": "Wrenny Moo's second card set. All cards are hand-drawn original designs. Collect 50 cards and amaze your friends. Once you've collected them all, buy a pack for your little brother. He'll be forever grateful to you. If you don't have a little brother, tell your parents, 'I always wanted a little brother.' Either way, buy as many packs as you can. These cards will probably be worth a lot of money one day.\nISBN 1-57620-784-7 ~ 742818060342 (upc) ~ Wrenny Moo WM 06036 (mpn)\nHE'S A GREY BOY ~ Wrenny Moo (logo) ~ Wizard's Cost"
+      },
       "illustrator": "Alex Roh",
       "note": "",
       "packs": [
@@ -71,7 +121,10 @@
     },
     "card_back": {
       "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
-      "text": "Parody Parody",
+      "text": {
+        "ja": "パロディー パロディー",
+        "en": "Parody Parody"
+      },
       "illustrator": "Alex Roh",
       "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
     },
@@ -85,7 +138,15 @@
     "sort_by": 1,
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
-    "description": "The first print of Wrenny Moo. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed."
+    "description": "The first print of Wrenny Moo featuring 50 holographic \"Derpy Parody\" cards illustrated by Alex Roh. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed.",
+    "keywords": [
+      "WrennyMoo first print",
+      "original Wrenny Moo",
+      "derpy Pokemon cards",
+      "holographic parody",
+      "Alex Roh illustrations",
+      "rare Pokemon parody"
+    ]
   },
   {
     "id": "b9a8c0f0-1ca0-4354-b683-22797d8c2e92",
@@ -94,7 +155,12 @@
     "short_name": "sticker",
     "sort_by": 1,
     "name": "Sticker Art",
-    "logo": "https://gaichu.b-cdn.net/ash/sticker/ashStickerArt.jpg"
+    "logo": "https://gaichu.b-cdn.net/ash/sticker/ashStickerArt.jpg",
+    "keywords": [
+      "After Skool Hobby stickers",
+      "Pokemon sticker art",
+      "Singapore Pokemon fan art"
+    ]
   },
   {
     "id": "4ff11bae-2f96-4aaa-b2e8-178167504f5f",
@@ -103,7 +169,17 @@
     "short_name": "og",
     "sort_by": 2,
     "name": "Series 1",
-    "logo": "https://gaichu.b-cdn.net/ash/og/ashOriginalSet.jpg"
+    "logo": "https://gaichu.b-cdn.net/ash/og/ashOriginalSet.jpg",
+    "description": "The original release of Generation One, featuring 50 holographic Pokémon parody cards including Base Set Charizard, Moonbreon, and Poncho Pikachu. Limited availability led to the 2024 reprint for international collectors.",
+    "keywords": [
+      "After Skool Hobby Series 1",
+      "Generation One",
+      "Moonbreon",
+      "Poncho Pikachu",
+      "Base Set Charizard parody",
+      "Singapore Pokemon cards",
+      "holographic fan art"
+    ]
   },
   {
     "id": "5444924f-490b-465f-8364-66b4e34da7c8",
@@ -114,6 +190,15 @@
     "name": "Series 1 (reprint)",
     "logo": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg",
     "description": "Generation One booster packs were reprinted in 2024 to meet the growing international demand outside of Singapore.",
+    "keywords": [
+      "After Skool Hobby reprint",
+      "Generation One 2024",
+      "Moonbreon",
+      "Poncho Pika",
+      "Base Set Zard",
+      "Ditto variants",
+      "Singapore Pokemon parody"
+    ],
     "pack_art": {
       "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg",
       "frontDescription": "GENERATION ONE BOOSTER PACK\nAfter Skool Hobby ~ Series 1\n2 ADDITIONAL COLLECTIBLE CARDS",
@@ -148,6 +233,16 @@
     "name": "Series 2",
     "logo": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg",
     "description": "Genetic Mystery is a fatter booster pack with 4 holofoil cards inside, all based on the fan-favorite purple blob.",
+    "keywords": [
+      "Genetic Mystery",
+      "Ditto cards",
+      "Pokemon Ditto parody",
+      "After Skool Hobby Series 2",
+      "holographic Ditto",
+      "Ditto Mewtwo",
+      "Ditto Eevee",
+      "secret rare"
+    ],
     "pack_art": {
       "url": "https://gaichu.b-cdn.net/ash/series2/pack01.jpg",
       "frontDescription": "GENETIC MYSTERY 1ST PRINT\nAfter Skool Hobby ~ Series 2\n4 ADDITIONAL COLLECTIBLE CARDS",
@@ -182,7 +277,18 @@
     "name": "Legacy",
     "printFileUrl": "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf",
     "logo": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2",
-    "description": "LEGACY has arrived! This was created by fans based on publicly available information.\nSee the full OpenZoo <a href='https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342' target='_blank'>attributions sheet</a>.",
+    "description": "Casters! YOUR Legacy is awaiting! Return to the world that once was... OpenZoo Legacy is compatible with MetaZoo (the good one). Dust off your collection and start brewing decks again with all new community-made cards. Get all new \"team-up\" cards featuring Casters and their Beasties, including the never before seen Dark Caster.",
+    "keywords": [
+      "OpenZoo Legacy",
+      "fan-made cryptid cards",
+      "custom MetaZoo",
+      "Mothman",
+      "Jersey Devil",
+      "Skinwalker",
+      "Indrid Cold",
+      "cryptid Beasties",
+      "community cards"
+    ],
     "card_back": {
       "url": "https://gaichu.b-cdn.net/oz/legacy/00.jpg?v=2",
       "text": "OpenZoo",
@@ -198,6 +304,18 @@
     "sort_by": 2,
     "name": "Promo Cards (2025)",
     "logo": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg",
+    "description": "Impossibly limited promotional cards created by OpenZoo for special events, continuing the tradition of MetaZoo-style holiday promos.",
+    "keywords": [
+      "OpenZoo promos",
+      "fan-made promo cards",
+      "community cryptid cards",
+      "OpenZoo 2025"
+    ],
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/oz/promo25/00.jpg",
+      "text": "MetaZoo™\n© Copyright MetaZoo Games LLC",
+      "illustrator": "Victor Larson"
+    },
     "total_cards_count": 3
   },
   {
@@ -208,6 +326,16 @@
     "sort_by": 1,
     "name": "Set 1",
     "logo": "https://gaichu.b-cdn.net/disgruntled/set1/disgruntledSet1.jpg",
+    "description": "The debut set of satirical MetaZoo parody cards featuring iconic \"Dumpster Fire,\" which eventually came true when Golden dumped pallets of sealed UFO into the dumpster outside the California distribution warehouse.",
+    "keywords": [
+      "Disgruntled Games",
+      "MetaZoo parody",
+      "Brainwash TCG",
+      "satirical cards",
+      "Men in Black Borders",
+      "FOMO cards",
+      "TCG satire"
+    ],
     "total_cards_count": 5
   }
 ]
