@@ -76,6 +76,7 @@ const convertToSeriesAndSet = (series: JsonSeries): SeriesAndSet => ({
   },
   sets: (setsList as JsonSet[])
     .filter((set) => set.series_id === series.id)
+    .sort((a, b) => a.sort_by - b.sort_by)
     .map((set) => ({
       id: set.id,
       short_name: set.short_name,
