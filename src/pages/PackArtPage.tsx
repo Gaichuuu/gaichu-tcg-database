@@ -8,9 +8,20 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import type { ArtParamKeys } from "@/types/routes";
+import { t, useLocale, type I18nValue } from "@/i18n";
+
+function isJaAvailable(v: I18nValue | undefined): boolean {
+  return (
+    v != null &&
+    typeof v === "object" &&
+    typeof v.ja === "string" &&
+    v.ja.trim() !== ""
+  );
+}
 
 const PackArtPage: React.FC = () => {
   const { seriesShortName = "", setShortName = "" } = useParams<ArtParamKeys>();
+  const { locale, setLocale } = useLocale();
 
   const seriesKey = decodeURIComponent(seriesShortName);
   const setKey = decodeURIComponent(setShortName);
@@ -34,10 +45,15 @@ const PackArtPage: React.FC = () => {
   // SEO metadata
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Pack Art - ${setName} - Gaichu`;
-  const pageDescription = packArt.frontDescription
-    ? `Pack art for ${setName}. ${packArt.frontDescription.slice(0, 150)}...`
+  const frontText = t(packArt.frontDescription, "en");
+  const pageDescription = frontText
+    ? `Pack art for ${setName}. ${frontText.slice(0, 150)}...`
     : `View the pack art for ${setName} on Gaichu.`;
   const pageImage = packArt.url;
+
+  const hasJaLocale =
+    isJaAvailable(packArt.frontDescription) ||
+    isJaAvailable(packArt.backDescription);
 
   return (
     <div className="container mx-auto pt-2">
@@ -81,22 +97,56 @@ const PackArtPage: React.FC = () => {
         </div>
 
         <div className="md:w-2/3">
-          <h1 className="mb-4">
-            {getTitleSetImagePathType(SetImagePathType.PackArt)}
-          </h1>
+          <div className="flex items-start justify-between gap-3">
+            <h1 className="mb-4">
+              {getTitleSetImagePathType(SetImagePathType.PackArt)}
+            </h1>
+            {hasJaLocale && (
+              <div
+                role="group"
+                aria-label="Language toggle"
+                className="group/toggle border-secondaryBorder mb-3 inline-flex items-center gap-1 rounded-2xl border p-1 shadow-sm transition-colors"
+              >
+                <button
+                  type="button"
+                  onClick={() => setLocale("en")}
+                  aria-pressed={locale === "en"}
+                  className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
+                    locale === "en"
+                      ? "bg-primaryButton text-mainBg"
+                      : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
+                  }`}
+                >
+                  English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLocale("ja")}
+                  aria-pressed={locale === "ja"}
+                  className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
+                    locale === "ja"
+                      ? "bg-primaryButton text-mainBg"
+                      : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
+                  }`}
+                >
+                  日本語
+                </button>
+              </div>
+            )}
+          </div>
           <table className="w-full border-collapse">
             <tbody>
               {packArt.frontDescription && (
                 <CardDetailRow label="Front Text">
                   <span style={{ whiteSpace: "pre-wrap" }}>
-                    {packArt.frontDescription}
+                    {t(packArt.frontDescription, locale)}
                   </span>
                 </CardDetailRow>
               )}
               {packArt.backDescription && (
                 <CardDetailRow label="Back Text">
                   <span style={{ whiteSpace: "pre-wrap" }}>
-                    {packArt.backDescription}
+                    {t(packArt.backDescription, locale)}
                   </span>
                 </CardDetailRow>
               )}

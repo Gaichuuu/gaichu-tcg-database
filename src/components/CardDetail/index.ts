@@ -4,3 +4,4 @@ export { default as CardImageSection } from "./CardImageSection";
 export { default as AttacksSection } from "./AttacksSection";
 export { default as AttributesSection } from "./AttributesSection";
 export { default as ZooAttackSection } from "./ZooAttackSection";
+export { default as ZooAttributesSection } from "./ZooAttributesSection";
