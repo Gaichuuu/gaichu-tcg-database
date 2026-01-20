@@ -1,5 +1,6 @@
 // src/pages/SeriesPage.tsx
 import React from "react";
+import { FiExternalLink } from "react-icons/fi";
 import { useNavigate, useParams } from "react-router-dom";
 import SetsList from "@/components/ListComponent/SetListComponent";
 import { PageError } from "@/components/PageStates";
@@ -7,46 +8,45 @@ import { useSeriesByShortName } from "@/hooks/useCollection";
 import { getCardListPath } from "@/utils/RoutePathBuildUtils";
 import { CollectionSeries } from "@/types/CollectionSeries";
 
-const SocialLink: React.FC<{
-  href: string | undefined;
+interface LinkItem {
+  href: string;
   label: string;
-}> = ({ href, label }) => {
-  if (!href) return null;
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="secondary-button"
-    >
-      {label}
-    </a>
-  );
-};
+}
 
 const SeriesLinks: React.FC<{ series: CollectionSeries }> = ({ series }) => {
-  const hasAnyLink =
-    series.website ||
-    series.patreon ||
-    series.instagram ||
-    series.discord ||
-    series.twitter ||
-    series.youtube ||
-    (series.links && series.links.length > 0);
+  const links: LinkItem[] = [];
 
-  if (!hasAnyLink) return null;
+  if (series.website) links.push({ href: series.website, label: "Website" });
+  if (series.patreon) links.push({ href: series.patreon, label: "Patreon" });
+  if (series.instagram)
+    links.push({ href: series.instagram, label: "Instagram" });
+  if (series.discord) links.push({ href: series.discord, label: "Discord" });
+  if (series.twitter) links.push({ href: series.twitter, label: "Twitter" });
+  if (series.youtube) links.push({ href: series.youtube, label: "YouTube" });
+  series.links?.forEach((link) =>
+    links.push({ href: link.url, label: link.label }),
+  );
+
+  if (links.length === 0) return null;
 
   return (
-    <div className="mt-2 flex flex-wrap gap-2">
-      <SocialLink href={series.website} label="Website" />
-      <SocialLink href={series.patreon} label="Patreon" />
-      <SocialLink href={series.instagram} label="Instagram" />
-      <SocialLink href={series.discord} label="Discord" />
-      <SocialLink href={series.twitter} label="Twitter" />
-      <SocialLink href={series.youtube} label="YouTube" />
-      {series.links?.map((link) => (
-        <SocialLink key={link.url} href={link.url} label={link.label} />
-      ))}
+    <div>
+      <h4 className="mb-1 text-sm">Links</h4>
+      <ul className="text-secondaryText list-disc pl-4 text-sm">
+        {links.map((link) => (
+          <li key={link.href}>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-alt inline-flex items-center gap-1 text-xs hover:underline"
+            >
+              {link.label}
+              <FiExternalLink className="h-3 w-3" />
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
@@ -77,19 +77,23 @@ const SeriesPage: React.FC = () => {
       <meta property="og:description" content={pageDescription} />
       {series.logo && <meta property="og:image" content={series.logo} />}
 
-      <div className="mb-4 flex gap-4">
-        <img
-          src={series.logo}
-          alt={series.name}
-          className="h-20 w-auto object-contain"
-        />
-        <div className="flex flex-col justify-center">
-          <h3 className="mb-1">{series.name}</h3>
-          {series.description && (
-            <p className="text-secondaryText text-sm">{series.description}</p>
-          )}
-          <SeriesLinks series={series} />
+      <div className="mb-4 flex flex-col gap-4 sm:flex-row">
+        <div className="flex gap-4">
+          <img
+            src={series.logo}
+            alt={series.name}
+            className="h-20 w-auto object-contain"
+          />
+          <div>
+            <h3 className="mb-0">{series.name}</h3>
+            {series.description && (
+              <p className="text-secondaryText max-w-2xl text-sm">
+                {series.description}
+              </p>
+            )}
+          </div>
         </div>
+        <SeriesLinks series={series} />
       </div>
 
       <h4 className="mb-2">Sets ({sets.length})</h4>
