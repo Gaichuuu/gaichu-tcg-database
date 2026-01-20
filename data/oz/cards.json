@@ -50,7 +50,12 @@
     "description": "While these Beasties usually stay near their posts, if the very caster that animated them asks for a favor, it's rather unlikely they would refuse.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/01.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/01-thumb.jpg",
-    "limit": 7
+    "limit": 7,
+    "strength": [
+      {
+        "type": ["Light", "Spirit"]
+      }
+    ]
   },
   {
     "id": "df343bb1-fed4-4e46-868a-62052ae542c2",
@@ -95,10 +100,15 @@
         "effect": ""
       }
     ],
-    "description": "\"Smile your way through the pain. Smile so they leave you alone. Smile to ignore your suffering. Smile as flesh melts from bone.\" -Survivor of the Veil’s shattering",
+    "description": "\"Smile your way through the pain. Smile so they leave you alone. Smile to ignore your suffering. Smile as flesh melts from bone.\" -Survivor of the Veil\u2019s shattering",
     "image": "https://gaichu.b-cdn.net/oz/legacy/02.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/02-thumb.jpg",
-    "limit": 1
+    "limit": 1,
+    "strength": [
+      {
+        "type": ["Light", "Spirit"]
+      }
+    ]
   },
   {
     "id": "826cf975-a400-4d83-8d69-243130865203",
@@ -155,7 +165,12 @@
     "description": "These beings are rumored to be able to change their forms using powerful dark magic. Be careful, though! You never know when once could be watching...",
     "image": "https://gaichu.b-cdn.net/oz/legacy/03.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/03-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Dark", "Light", "Spirit"]
+      }
+    ]
   },
   {
     "id": "b3fabc62-157d-44f7-838f-e769c1adc23f",
@@ -212,7 +227,12 @@
     "description": "High above the Pine Barrens flies the Jersey Devil. Seldom seen, it mostly feeds on cattle. Occasionally, though, it finds a traveler wandering alone...",
     "image": "https://gaichu.b-cdn.net/oz/legacy/04.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/04-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Light", "Spirit"]
+      }
+    ]
   },
   {
     "id": "36268e29-5a47-496e-9060-8c5512c96058",
@@ -265,7 +285,12 @@
     "description": "This Beastie particularly despises canine-kind, but it isn't particularly picky about which faces it tears off their skulls.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/05.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/05-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "value": "(none)"
+      }
+    ]
   },
   {
     "id": "003f3eed-4557-4881-acda-cfe360a98919",
@@ -287,7 +312,12 @@
     "description": "Its power keeps going up! And up, and up, and up...",
     "image": "https://gaichu.b-cdn.net/oz/legacy/06.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/06-thumb.jpg",
-    "limit": 5
+    "limit": 5,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "d97fcb2b-3048-4ea3-8272-ccb74b256d99",
@@ -309,7 +339,12 @@
     "description": "In some parts of the Cryptid Nation, it only rains once a year. Their inhabitants learn to make the most of what they get.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/07.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/07-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Flame", "Earth"]
+      }
+    ]
   },
   {
     "id": "a2b57c35-bdfd-40bc-9579-b1c6d577e800",
@@ -329,11 +364,16 @@
     ],
     "lp": "50",
     "traits": ["Defender", "Defender"],
-    "effect": "{icon:4th_wall}ARENA: If it is above 100°F at your current location, {icon:flame} Beasties have {icon:defender}. All Beasties you control that are inflicted with {icon:burn} cannot be inflicted with other Status Effects and cannot receive Combat Damage.",
+    "effect": "{icon:4th_wall}ARENA: If it is above 100\u00b0F at your current location, {icon:flame} Beasties have {icon:defender}. All Beasties you control that are inflicted with {icon:burn} cannot be inflicted with other Status Effects and cannot receive Combat Damage.",
     "description": "\"A shield that's on fire? What purpose could this possibly ser- WHOA! You should've led with that!\" -JP",
     "image": "https://gaichu.b-cdn.net/oz/legacy/08.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/08-thumb.jpg",
-    "limit": 4
+    "limit": 4,
+    "strength": [
+      {
+        "type": ["Forest", "Frost"]
+      }
+    ]
   },
   {
     "id": "253f6cb9-5508-4ad3-ac61-00610f8ffa01",
@@ -355,11 +395,16 @@
         "aura": "Cosmic"
       }
     ],
-    "effect": "All Pages with \"UFO\" in their name are not Affected by this Spell. Destroy all Beasties in the Arena. All Casters reveal their Chapters and Discard all Beastie Pages. Until the end of your next turn, Actions cannot be taken with Beastie Pages. Reveal all Pages that would be placed in or Bookmarked to any Caster’s Chapter. Discard any Beastie Page revealed by this Effect.",
+    "effect": "All Pages with \"UFO\" in their name are not Affected by this Spell. Destroy all Beasties in the Arena. All Casters reveal their Chapters and Discard all Beastie Pages. Until the end of your next turn, Actions cannot be taken with Beastie Pages. Reveal all Pages that would be placed in or Bookmarked to any Caster\u2019s Chapter. Discard any Beastie Page revealed by this Effect.",
     "description": "The Manhattan Project introduced a grave threat to humanity. How did they obtain such a powerful technology? Was there influence, perhaps, from above?",
     "image": "https://gaichu.b-cdn.net/oz/legacy/09.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/09-thumb.jpg",
-    "limit": 1
+    "limit": 1,
+    "strength": [
+      {
+        "type": ["Spirit"]
+      }
+    ]
   },
   {
     "id": "9af238b1-9f92-492e-be9a-81b6f78f3400",
@@ -416,7 +461,12 @@
     "description": "\"Some believe it's serpentine in nature. Some think it's reptilian. All I know is that it's a real sweetheart!\" -Avid Water fan",
     "image": "https://gaichu.b-cdn.net/oz/legacy/10.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/10-thumb.jpg",
-    "limit": 1
+    "limit": 1,
+    "strength": [
+      {
+        "type": ["Flame", "Earth"]
+      }
+    ]
   },
   {
     "id": "ec19e917-6bda-4151-98c1-affb575dc833",
@@ -473,7 +523,12 @@
     "description": "Thinking themselves protected from the plague, these poor souls doomed just as many as they saved, if not more. They still hear the screams in their dreams.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/11.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/11-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Dark"]
+      }
+    ]
   },
   {
     "id": "ee029d43-bb8a-4ca2-823b-f3dbd367998d",
@@ -500,7 +555,12 @@
     "description": "\"AN ABNORMALLY LARGE AMOUNT OF POWER!!\"",
     "image": "https://gaichu.b-cdn.net/oz/legacy/12.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/12-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "7bf7ba01-98c1-44f7-8e0b-4cb5c350325e",
@@ -527,7 +587,12 @@
     "description": "\"One of these is enough to power Point Pleasant for a lifetime! ... Or, it would be if those blasted Dingbelle would share the thing!\" -Sam Sinclair",
     "image": "https://gaichu.b-cdn.net/oz/legacy/13.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/13-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "19ed2e06-ef68-4a9b-a4ca-c820ff28cafd",
@@ -580,7 +645,12 @@
     "description": "Also known as \"the Demon of the Strait\", this Beastie is more than glad to cause suffering for its own amusement.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/14.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/14-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Light", "Spirit"]
+      }
+    ]
   },
   {
     "id": "cc4b1715-a13c-4486-bb7d-ddce5fa0a145",
@@ -603,7 +673,12 @@
     "description": "Until rather recently, the church had stepped back from performing true exorcisms. Now, though? Good luck finding a priest without a nail.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/15.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/15-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Dark"]
+      }
+    ]
   },
   {
     "id": "d5bfc0a3-70cb-42e9-aa7d-3fb9bb0e079c",
@@ -676,7 +751,12 @@
     "description": "This Beastie might look menacing during combat, but other than that? It's a big ol' softy!",
     "image": "https://gaichu.b-cdn.net/oz/legacy/17.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/17-thumb.jpg",
-    "limit": 1
+    "limit": 1,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "f0ab08cb-72af-4b4d-b1c2-53578fd0e354",
@@ -733,7 +813,12 @@
     "description": "You might not expect it, but this Beastie is a carnivore. Luckily, Ben is there to keep it from devouring civilians.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/18.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/18-thumb.jpg",
-    "limit": 1
+    "limit": 1,
+    "strength": [
+      {
+        "type": ["Lightning"]
+      }
+    ]
   },
   {
     "id": "1679c965-dfba-4022-8ba5-6e42d3de7fd3",
@@ -790,7 +875,12 @@
     "description": "Not often does Babe leave Paul's side. For Ben, though? She'll make an exception, just this once.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/19.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/19-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Water", "Lightning"]
+      }
+    ]
   },
   {
     "id": "aa2c93a2-4451-4a8e-a8ce-e6d4f4f1e60f",
@@ -843,7 +933,12 @@
     "description": "Adam has a 7th sense for Beasties with potential. It's no wonder he ends up with such powerful companions.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/20.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/20-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "aaac4e63-7e49-427a-a573-21cbd6160289",
@@ -896,7 +991,12 @@
     "description": "These little critters usually don't play well with others. For one reason or another, Sam was an exception.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/21.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/21-thumb.jpg",
-    "limit": 4
+    "limit": 4,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "8c3868ee-d095-4f72-a778-6c467678a55b",
@@ -949,7 +1049,12 @@
     "description": "In the darkest of nights, you can see a faint, glimmering string pulling this caster along...",
     "image": "https://gaichu.b-cdn.net/oz/legacy/22.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/22-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Dark"]
+      }
+    ]
   },
   {
     "id": "054e4d9e-ce10-4de5-bcc9-62e2541bd7e8",
@@ -1002,7 +1107,12 @@
     "description": "Paul thought taking this poor creature along would help it cheer up! It didn't work. At least it saved its friends!",
     "image": "https://gaichu.b-cdn.net/oz/legacy/23.jpg?v=3",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/23-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "7ade655e-2584-44c4-8060-62bef384a4f2",
@@ -1059,7 +1169,12 @@
     "description": "Not all Frost Beasties have cold hearts! The Gee-Gee Bird, for example, is actually a really goofy bird, making it a great fit for a caster like Rose.",
     "image": "https://gaichu.b-cdn.net/oz/legacy/24.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/24-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "6f304082-d46b-47ef-9b6f-b2310feda278",
@@ -1081,7 +1196,12 @@
     "description": "It might not quite be the \"real thing\", but I'm glad you're here playing with us at OpenZoo all the same. To the future!",
     "image": "https://gaichu.b-cdn.net/oz/legacy/25.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/oz/legacy/25-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "value": "(none)"
+      }
+    ]
   },
   {
     "id": "4fb8145e-8654-47a7-b8d5-a562e50e09b9",
@@ -1253,7 +1373,12 @@
     "description": "Discord janitors must pass the Donkey Test. Not fresh enough? You're getting replaced.",
     "image": "https://gaichu.b-cdn.net/oz/promo25/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/promo25/01-thumb.jpg",
-    "limit": 3
+    "limit": 3,
+    "strength": [
+      {
+        "type": ["Flame", "Earth"]
+      }
+    ]
   },
   {
     "id": "4d8c7b80-2f3a-4a20-97e5-1f2c2b2d7c8e",
@@ -1277,7 +1402,12 @@
     "description": "You'll need the BIG spoon for this lobotomy!",
     "image": "https://gaichu.b-cdn.net/oz/promo25/02.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/promo25/02-thumb.jpg",
-    "limit": 6
+    "limit": 6,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   },
   {
     "id": "f6c3c9dd-bf57-4ab1-9f8a-4bb8bb3887af",
@@ -1330,6 +1460,11 @@
     "description": "Dare to disturb his holiday slumber? He promises to only take one bite.",
     "image": "https://gaichu.b-cdn.net/oz/promo25/03.jpg",
     "thumb": "https://gaichu.b-cdn.net/oz/promo25/03-thumb.jpg",
-    "limit": 2
+    "limit": 2,
+    "strength": [
+      {
+        "type": ["Water"]
+      }
+    ]
   }
 ]
