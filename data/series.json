@@ -5,8 +5,35 @@
     "name": "After Skool Hobby",
     "logo": "https://gaichu.b-cdn.net/ash/ashLogo.png",
     "sort_by": 1,
-    "description": "",
-    "instagram": "https://www.instagram.com/afterskoolhobby"
+    "description": "Singapore-based parody Pokémon cards. Many popular cards are reimagined in a cute, simplified style, such as the \"Poncho-wearing Pikachu\" and \"Latias & Latios GX.\". Individual packs and bundles are sold via the official Etsy store.",
+    "keywords": [
+      "custom Pokemon cards",
+      "fan-made Pokemon cards",
+      "Pokemon parody",
+      "Singapore trading cards",
+      "holographic cards",
+      "derpy Pokemon",
+      "bootleg cards",
+      "Pokemon fan art"
+    ],
+    "instagram": "https://www.instagram.com/afterskoolhobby",
+    "links": [
+      {
+        "type": "telegram",
+        "label": "Telegram group",
+        "url": "https://t.me/+e0D8YsyQpE1kODU1"
+      },
+      {
+        "type": "tiktok",
+        "label": "TikTok",
+        "url": "https://tiktok.com/@afterskoolhobby"
+      },
+      {
+        "type": "etsy",
+        "label": "Etsy store",
+        "url": "https://afterskoolhobby.etsy.com"
+      }
+    ]
   },
   {
     "id": "bc24ff9c-17a8-47ed-ac18-d202bf32d21c",
@@ -14,7 +41,17 @@
     "name": "Disgruntled Games",
     "logo": "https://gaichu.b-cdn.net/disgruntled/disgruntledLogo.png",
     "sort_by": 2,
-    "description": ""
+    "description": "Ohio-based tattoo shop known for creating the first MetaZoo parody cards. Originally a collaboration between Disgruntled Games LLC and Black Border Society, the latter moved on to make their own satirical \"Brainwash TCG.\" The series pokes fun at the controversial industry practices happening at the time (and still happen today).",
+    "keywords": [
+      "MetaZoo parody",
+      "Brainwash TCG",
+      "satirical trading cards",
+      "MetaZoo alternative",
+      "indie TCG",
+      "parody cards",
+      "Ohio trading cards"
+    ],
+    "instagram": "https://www.instagram.com/disgruntled_games"
   },
   {
     "id": "8ece2d2a-33c0-45c2-b6b3-6fad225c1314",
@@ -22,7 +59,21 @@
     "name": "MetaZoo",
     "logo": "https://gaichu.b-cdn.net/mz/mzLogo.png",
     "sort_by": 3,
-    "description": ""
+    "description": "Cryptid-themed tcg launched in 2020 via Kickstarter by Michael Waddell. The game featured \"Beasties\" inspired by folklore creatures like Mothman and Bigfoot, with unique \"4th Wall\" mechanics that let real-world conditions affect gameplay. After rapid growth and partnerships with Steve Aoki and Sanrio, MetaZoo Games abruptly shut down in January 2024 and filed for bankruptcy.",
+    "keywords": [
+      "MetaZoo",
+      "cryptid trading card game",
+      "Mothman cards",
+      "Bigfoot TCG",
+      "4th wall mechanics",
+      "cryptozoology cards",
+      "Beasties",
+      "Michael Waddell",
+      "Cryptid Nation",
+      "paranormal TCG",
+      "folklore cards"
+    ],
+    "website": "https://metazoogames.com"
   },
   {
     "id": "32b8b500-9985-4bbe-a494-05a47d009a48",
@@ -30,8 +81,24 @@
     "name": "OpenZoo",
     "logo": "https://gaichu.b-cdn.net/oz/ozLogo.png?v=2",
     "sort_by": 4,
-    "description": "",
-    "discord": "https://discord.gg/openzoo"
+    "description": "A community-driven fan project creating original cards in the MetaZoo style. Born from the ashes of Mothman and Bigfoot, OpenZoo produces cards compatible with MetaZoo (the good one), keeping the true spirit of the game alive after the company's closure.",
+    "keywords": [
+      "OpenZoo",
+      "fan-made MetaZoo",
+      "MetaZoo alternative",
+      "community TCG",
+      "cryptid cards",
+      "custom Beasties",
+      "MetaZoo revival"
+    ],
+    "discord": "https://discord.gg/2jQPtQceqT",
+    "links": [
+      {
+        "type": "spreadsheets",
+        "label": "Attributions sheet",
+        "url": "https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342"
+      }
+    ]
   },
   {
     "id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
@@ -39,6 +106,16 @@
     "name": "WrennyMoo",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
     "sort_by": 5,
-    "description": ""
+    "description": "Parody card series featuring distinctive \"Derpy\" illustrations of popular Pokémon. Created by Alex Roh before disappearing from the internet, the packs were sold on a mysterious Etsy store. The series has become a cult collector's item since being discontinued.",
+    "keywords": [
+      "WrennyMoo",
+      "Wrenny Moo cards",
+      "derpy Pokemon",
+      "Pokemon parody cards",
+      "Alex Roh",
+      "holographic parody cards",
+      "custom Pokemon",
+      "limited edition Pokemon"
+    ]
   }
 ]
