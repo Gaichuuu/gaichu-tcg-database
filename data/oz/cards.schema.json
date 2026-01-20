@@ -196,7 +196,46 @@
 
           "limit": { "type": "integer" },
 
-          "note": { "type": "string" }
+          "note": { "type": "string" },
+
+          "strength": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "Light",
+                          "Spirit",
+                          "Dark",
+                          "Water",
+                          "Flame",
+                          "Earth",
+                          "Forest",
+                          "Frost",
+                          "Lightning"
+                        ]
+                      }
+                    }
+                  },
+                  "required": ["type"],
+                  "additionalProperties": false
+                },
+                {
+                  "properties": {
+                    "value": { "type": "string" }
+                  },
+                  "required": ["value"],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          }
         }
       }
     ]
