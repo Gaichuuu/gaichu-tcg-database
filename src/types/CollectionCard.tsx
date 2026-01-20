@@ -84,7 +84,7 @@ export interface CollectionCard {
   weakness?: WeaknessEntry[];
   resistance?: ResistanceEntry[];
   retreat?: RetreatEntry[];
-  strength?: string;
+  strength?: StrengthEntry[];
   parody?: string;
   hp?: string;
   lp?: string;
@@ -158,6 +158,11 @@ interface Cost {
 
 interface WeaknessEntry {
   type?: string;
+  value?: string;
+}
+
+interface StrengthEntry {
+  type?: string[];
   value?: string;
 }
 
