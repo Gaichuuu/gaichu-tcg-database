@@ -1918,7 +1918,7 @@
     "rarity": "Rare",
     "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
     "hp": "200",
-    "image": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/00-thumb.jpg",
     "description": {
       "en": "A Pokémon created in a laboratory through gene splicing. It has a body suited for battle, but lacks a compassionate heart.",
@@ -2061,7 +2061,10 @@
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
     "number": 1,
     "sort_by": 1,
-    "name": "Mudcreef",
+    "name": {
+      "en": "Mudcreef",
+      "ja": "マッドクリーフ"
+    },
     "parody": "Mudkip",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2070,15 +2073,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/01-thumb.jpg",
-    "description": "Its strength is so great that it can destroy mountains with a single blow, and even legends dare not challenge this creature.",
+    "description": {
+      "en": "Its strength is so great that it can destroy mountains with a single blow, and even legends dare not challenge this creature.",
+      "ja": "その強さは、一撃で山を破壊できるほど強大なものです。伝説の者ですらこの生き物には挑むことはありません。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "7.6kg"
     },
     "attacks": [
       {
-        "name": "Punch",
-        "effect": "Throws a punch at the opponent.",
+        "name": {
+          "en": "Punch",
+          "ja": "パンチ"
+        },
+        "effect": {
+          "en": "Throws a punch at the opponent.",
+          "ja": "相手にパンチを繰り出します。"
+        },
         "damage": "20",
         "costs": ["Water"]
       }
@@ -2088,7 +2100,10 @@
     "id": "27d41ee8-e9af-440b-b633-551140734996",
     "number": 9,
     "sort_by": 9,
-    "name": "Meow",
+    "name": {
+      "en": "Meow",
+      "ja": "ニャー"
+    },
     "parody": "Meowth",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2097,20 +2112,35 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/09.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/09-thumb.jpg",
-    "description": "This creature is cute and fluffy, but highly intelligent and devious! I have a kind heart and like to spend my days sleeping.",
+    "description": {
+      "en": "This creature is cute and fluffy, but has high intelligence and a devious heart. It likes to spend its days sleeping.",
+      "ja": "この生物は可愛くてフワフワしていますが、高い知性と邪悪な心を持っており、日々を寝て過ごすのが好きです。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "4.2kg"
     },
     "attacks": [
       {
-        "name": "Yawn",
-        "effect": "I yawn and then I go to sleep. It's a cute trick, but it doesn't work.",
+        "name": {
+          "en": "Yawn",
+          "ja": "あくび"
+        },
+        "effect": {
+          "en": "Yawns and then goes to sleep. It's a cute move, but it has no effect.",
+          "ja": "あくびをしてから眠ります。可愛い技ですが、効果はありません。"
+        },
         "costs": ["Normal"]
       },
       {
-        "name": "Payday",
-        "effect": "Attacks to make your opponent drop money.",
+        "name": {
+          "en": "Payday",
+          "ja": "給料日"
+        },
+        "effect": {
+          "en": "Attacks and makes the opponent drop money.",
+          "ja": "攻撃して相手からお金をドロップさせます。"
+        },
         "damage": "20",
         "costs": ["Normal"]
       }
@@ -2120,7 +2150,10 @@
     "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
     "number": 5,
     "sort_by": 5,
-    "name": "Nidonido",
+    "name": {
+      "en": "Nidonido",
+      "ja": "ニドニド"
+    },
     "parody": "Nidoran♂",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2129,15 +2162,24 @@
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/05.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/05-thumb.jpg",
-    "description": "This sign is very aggressive and rebellious. It even has a desire to protect its home.",
+    "description": {
+      "en": "This creature is very aggressive and territorial, and will fight to the end to protect its home.",
+      "ja": "この生物は非常に攻撃的で縄張り意識が強く、自分の家を守るために最後まで戦います。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "1kg"
     },
     "attacks": [
       {
-        "name": "Cut",
-        "effect": "Cut whatever is in front of you.",
+        "name": {
+          "en": "Cut",
+          "ja": "カット"
+        },
+        "effect": {
+          "en": "Cuts through whatever is in its path.",
+          "ja": "目の前の道を何でも切り開きます。"
+        },
         "damage": "15",
         "costs": ["Normal"]
       }
@@ -2147,7 +2189,10 @@
     "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
     "number": 2,
     "sort_by": 2,
-    "name": "Furphy",
+    "name": {
+      "en": "Furphy",
+      "ja": "ファーフィー"
+    },
     "parody": "Farfetch'd",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2156,15 +2201,24 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/02.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/02-thumb.jpg",
-    "description": "This creature is capable of solving difficult puzzles and has an extremely high IQ.",
+    "description": {
+      "en": "This creature is capable of solving difficult puzzles. It has an extremely high IQ.",
+      "ja": "この生物は難易度の高いパズルを解くことができます。極めて高い知能指数を持っています。"
+    },
     "measurement": {
       "height": ".8m",
       "weight": "15kg"
     },
     "attacks": [
       {
-        "name": "Stick Slap",
-        "effect": "Hitting the opponent with a stick, leaving a lump on the opponent's head.",
+        "name": {
+          "en": "Stick Slap",
+          "ja": "スティックスラップ"
+        },
+        "effect": {
+          "en": "Hits the opponent with a stick. Leaves a lump on the opponent's head.",
+          "ja": "棒で相手を叩きます。相手の頭にコブが残ります。"
+        },
         "damage": "30",
         "costs": ["Normal"]
       }
@@ -2174,7 +2228,10 @@
     "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
     "number": 8,
     "sort_by": 8,
-    "name": "Gegedu",
+    "name": {
+      "en": "Gegedu",
+      "ja": "ゲゲドウ"
+    },
     "parody": "Geodude",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2183,15 +2240,24 @@
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/08.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/08-thumb.jpg",
-    "description": "This organism is actually just a rock, and has baffled scientists and biologists since its discovery.",
+    "description": {
+      "en": "This creature is actually just a rock, and has baffled scientists and biologists since its discovery.",
+      "ja": "この生物は実はただの石であり、発見以来、科学者や生物学者を困惑させてきました。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "Earthquake",
-        "effect": "Shakes the ground and attacks the opponent. It can cause great damage to cities.",
+        "name": {
+          "en": "Earthquake",
+          "ja": "地震"
+        },
+        "effect": {
+          "en": "Shakes the ground and deals heavy damage to the opponent, or causes damage to cities.",
+          "ja": "地面を揺さぶり、相手に大ダメージを与えたり、都市に被害を与えたりします。"
+        },
         "damage": "25",
         "costs": ["Fighting"]
       }
@@ -2201,7 +2267,10 @@
     "id": "6e145bfb-dde8-4836-9e48-7204bdf09a29",
     "number": 3,
     "sort_by": 3,
-    "name": "Togouchi",
+    "name": {
+      "en": "Togouchi",
+      "ja": "戸河内"
+    },
     "parody": "Togetic",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2210,15 +2279,24 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/03.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/03-thumb.jpg",
-    "description": "This creature can taste sound with its eyes.",
+    "description": {
+      "en": "This creature can taste sound with its eyes.",
+      "ja": "この生物は、音を目で味わうことができます。"
+    },
     "measurement": {
       "height": ".6m",
       "weight": "3.2kg"
     },
     "attacks": [
       {
-        "name": "Energy Ball",
-        "effect": "When it touches other creatures, nothing happens.",
+        "name": {
+          "en": "Energy Ball",
+          "ja": "エネルギーボール"
+        },
+        "effect": {
+          "en": "Creates an energy ball. Even if it touches other creatures, nothing happens.",
+          "ja": "エネルギー球を作ります。これが他の生物に触れても何も起こりません。"
+        },
         "damage": "20",
         "costs": ["Normal"]
       }
@@ -2228,7 +2306,10 @@
     "id": "73dbce8e-1088-4a8b-a07c-fa03aacdac68",
     "number": 10,
     "sort_by": 10,
-    "name": "Blissui",
+    "name": {
+      "en": "Blissui",
+      "ja": "ブリスイ"
+    },
     "parody": "Blissey",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2237,15 +2318,24 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/10.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/10-thumb.jpg",
-    "description": "This creature loves to protect and heal others. Therefore, it will not be used in combat and will not carry on the fight.",
+    "description": {
+      "en": "This creature loves to protect and heal others. Because of this, it dislikes fighting and is not used in battle.",
+      "ja": "この生物は他人を守り、癒すのが好きであるため、戦いを嫌い、戦闘には使われません。"
+    },
     "measurement": {
       "height": "1.5m",
       "weight": "46kg"
     },
     "attacks": [
       {
-        "name": "Egg Bomb",
-        "effect": "Throws explosive eggs at opponents. Make it green and explode.",
+        "name": {
+          "en": "Egg Bomb",
+          "ja": "卵爆弾"
+        },
+        "effect": {
+          "en": "Throws eggs at the opponent and makes them explode.",
+          "ja": "卵を相手に投げつけて爆発させます。"
+        },
         "damage": "30",
         "costs": ["Normal"]
       }
@@ -2255,7 +2345,10 @@
     "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
     "number": 4,
     "sort_by": 4,
-    "name": "Slow Mobi",
+    "name": {
+      "en": "Slow Mobi",
+      "ja": "スローモビ"
+    },
     "parody": "Slowbro",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2264,15 +2357,24 @@
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set2/04.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/04-thumb.jpg",
-    "description": "This creature uses a sixth sense to see into the future.",
+    "description": {
+      "en": "This creature uses a sixth sense to see into the future.",
+      "ja": "この生物は第六感を使って未来を見通すことができます。"
+    },
     "measurement": {
       "height": "1.6m",
       "weight": "78kg"
     },
     "attacks": [
       {
-        "name": "Hypnotist",
-        "effect": "Uses telekinesis to enter the mind of his victim and tells him to do 50 embarrassing things in front of his friends.",
+        "name": {
+          "en": "Hypnotist",
+          "ja": "催眠術師"
+        },
+        "effect": {
+          "en": "Uses telekinesis to enter the opponent's mind and commands them to do embarrassing things in front of their friends.",
+          "ja": "念動力を使って相手の思考に入り込み、友人の前で恥ずかしいことをするように命令します。"
+        },
         "damage": "50",
         "costs": ["Psychic"]
       }
@@ -2282,7 +2384,10 @@
     "id": "b7e60ae3-6fdf-4b69-a5b5-18f6e0d70676",
     "number": 7,
     "sort_by": 7,
-    "name": "Pidgeotto",
+    "name": {
+      "en": "Pidgeotto",
+      "ja": "ピジョット"
+    },
     "parody": "Pidgeotto",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2291,15 +2396,24 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/07.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/07-thumb.jpg",
-    "description": "This creature was once abundant on Earth, but now only a handful remain.",
+    "description": {
+      "en": "This creature was once abundant on Earth, but now only a handful remain.",
+      "ja": "かつてこの生物は地球上を多く彷徨っていましたが、今では数えるほどしか存在しません。"
+    },
     "measurement": {
       "height": "1.5m",
       "weight": "39kg"
     },
     "attacks": [
       {
-        "name": "Stomp",
-        "effect": "Trample and forcefully attack your opponent.",
+        "name": {
+          "en": "Stomp",
+          "ja": "踏みつけ"
+        },
+        "effect": {
+          "en": "Stomps the opponent forcefully.",
+          "ja": "相手を力強く踏みつけます。"
+        },
         "damage": "35",
         "costs": ["Normal"]
       }
@@ -2309,7 +2423,10 @@
     "id": "c60bb931-586b-4078-8aea-5e0edda8e49e",
     "number": 6,
     "sort_by": 6,
-    "name": "Nidanida",
+    "name": {
+      "en": "Nidanida",
+      "ja": "ニダニダ"
+    },
     "parody": "Nidoran♀",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2318,15 +2435,24 @@
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/06.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/06-thumb.jpg",
-    "description": "This creature has magical powers that can be used to contact its body.",
+    "description": {
+      "en": "This creature has poisonous spines that are toxic when touched.",
+      "ja": "この生物は身体に触れると毒性がある棘を持っています。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "1kg"
     },
     "attacks": [
       {
-        "name": "Tummy Kick",
-        "effect": "Kicks the opponent in the stomach, causing hours of pain.",
+        "name": {
+          "en": "Tummy Kick",
+          "ja": "タミーキック"
+        },
+        "effect": {
+          "en": "Kicks the opponent in the stomach, causing hours of pain.",
+          "ja": "相手のお腹を蹴って何時間もの苦痛を与えます。"
+        },
         "damage": "15",
         "costs": ["Normal"]
       }
@@ -2336,7 +2462,10 @@
     "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
     "number": 11,
     "sort_by": 11,
-    "name": "Siechacha",
+    "name": {
+      "en": "Siechacha",
+      "ja": "シエチャチャ"
+    },
     "parody": "Scyther",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2345,21 +2474,36 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/11.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/11-thumb.jpg",
-    "description": "This creature loves to fight, and will take on anything while spending its entire life communicating.",
+    "description": {
+      "en": "This creature loves to fight, and will take on anything while spending its entire life in solitude.",
+      "ja": "この生物は戦い好きで、一生を孤独で過ごしながら何にでも挑戦します。"
+    },
     "measurement": {
       "height": "1.5m",
       "weight": "56kg"
     },
     "attacks": [
       {
-        "name": "Hyper Cut",
-        "effect": "Slice the opponent into pieces with a devastating blow.",
+        "name": {
+          "en": "Hyper Cut",
+          "ja": "ハイパーカット"
+        },
+        "effect": {
+          "en": "Slices the opponent with a devastating blow.",
+          "ja": "壊滅的な一撃で相手を切り裂きます。"
+        },
         "damage": "60",
         "costs": ["Normal"]
       },
       {
-        "name": "Bug's Gaze",
-        "effect": "Stare at the opponent, causing extreme discomfort.",
+        "name": {
+          "en": "Bug's Gaze",
+          "ja": "虫の視線"
+        },
+        "effect": {
+          "en": "Stares at the opponent, causing extreme discomfort.",
+          "ja": "相手を見つめて極度の不快感を与えます。"
+        },
         "damage": "20",
         "costs": ["Grass"]
       }
@@ -2369,7 +2513,10 @@
     "id": "f48bdb77-5685-4bf7-954c-a15ad3970ab7",
     "number": 12,
     "sort_by": 12,
-    "name": "Ghost Boy",
+    "name": {
+      "en": "Ghost Boy",
+      "ja": "ゴーストボーイ"
+    },
     "parody": "Haunter",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2378,15 +2525,24 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/12.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/12-thumb.jpg",
-    "description": "They are extremely mischievous creatures, and their daily routine is to scare and play pranks on others.",
+    "description": {
+      "en": "An extremely mischievous creature whose daily routine is to surprise other creatures and play pranks on them.",
+      "ja": "非常にいたずら好きな生物であり、他の生物を驚かせたり、イタズラをしたりするのが日課です。"
+    },
     "measurement": {
       "height": "1.6m",
       "weight": "0kg"
     },
     "attacks": [
       {
-        "name": "Scare",
-        "effect": "Deform its body and face to scare the opponent. This reduces the opponent's attack power.",
+        "name": {
+          "en": "Scare",
+          "ja": "怖がらせ"
+        },
+        "effect": {
+          "en": "Deforms its body and face to scare the opponent. This reduces the opponent's attack power.",
+          "ja": "自分の体や顔を変形させて相手を怖がらせます。これにより、相手の攻撃力が下がります。"
+        },
         "damage": "40",
         "costs": ["Dark"]
       }
@@ -2396,7 +2552,10 @@
     "id": "8384f45d-4c02-4abd-97ad-dcb9d75b5197",
     "number": 13,
     "sort_by": 13,
-    "name": "Bonzie",
+    "name": {
+      "en": "Bonzie",
+      "ja": "ボンジー"
+    },
     "parody": "Bonsly",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2405,15 +2564,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/13.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/13-thumb.jpg",
-    "description": "Known for burying its lower body in the ground as a defense, and will continue in this state until it's strong enough to defend itself properly.",
+    "description": {
+      "en": "This creature buries its lower body in the ground as a defense, and continues in this state until it's strong enough to defend itself properly.",
+      "ja": "この生物は防御として地面に下半身を埋め、もっと強くなり、きちんと防御できるようになるまでこの状態を続けます。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "15kg"
     },
     "attacks": [
       {
-        "name": "Kick",
-        "effect": "Kick the opponent with the small leg. It's not very effective.",
+        "name": {
+          "en": "Kick",
+          "ja": "キック"
+        },
+        "effect": {
+          "en": "Kicks the opponent with its small legs. It's not very effective.",
+          "ja": "小さな足で相手を蹴ります。あまり効果的ではありません。"
+        },
         "damage": "10",
         "costs": ["Normal"]
       }
@@ -2423,7 +2591,10 @@
     "id": "c4ee4c46-e14a-4124-aa2a-023e64662f5c",
     "number": 14,
     "sort_by": 14,
-    "name": "Woopa",
+    "name": {
+      "en": "Woopa",
+      "ja": "ウーパ"
+    },
     "parody": "Wooper",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2432,15 +2603,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/14-thumb.jpg",
-    "description": "This creature can store water in its stomach and release it when needed.",
+    "description": {
+      "en": "This creature can store water in its stomach and release it when needed.",
+      "ja": "この生物はお腹に水を貯めておき、必要なときに取り出すことができます。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "Water Spray",
-        "effect": "Spray water on the opponent, causing confusion and then escaping.",
+        "name": {
+          "en": "Water Spray",
+          "ja": "水吹き"
+        },
+        "effect": {
+          "en": "Sprays water on the opponent, causing confusion, then escapes.",
+          "ja": "相手に水を吹きかけ、混乱を引き起こしてから逃走します。"
+        },
         "damage": "15",
         "costs": ["Water"]
       }
@@ -2450,7 +2630,10 @@
     "id": "71d0b53d-8441-45d8-ae17-16b188652307",
     "number": 15,
     "sort_by": 15,
-    "name": "Chachi",
+    "name": {
+      "en": "Chachi",
+      "ja": "チャチ"
+    },
     "parody": "Rowlet",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2459,15 +2642,24 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/15.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/15-thumb.jpg",
-    "description": "This creature is nocturnal. It has excellent night vision and can fly very silently.",
+    "description": {
+      "en": "This creature is nocturnal. It has excellent night vision and can fly very silently.",
+      "ja": "この生物は夜行性です。夜間視力が優れており、非常に静かに飛ぶことができます。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "Peck",
-        "effect": "Peck the opponent with its sharp beak. Very effective against insect-type creatures.",
+        "name": {
+          "en": "Peck",
+          "ja": "つつく"
+        },
+        "effect": {
+          "en": "Pecks the opponent with its sharp beak. Very effective against insect-type creatures.",
+          "ja": "鋭いくちばしで相手をつつきます。虫型の生物に対して非常に効果的です。"
+        },
         "damage": "10",
         "costs": ["Normal"]
       }
@@ -2477,7 +2669,10 @@
     "id": "31c69bc1-8aa2-4b42-b7f3-22727c9ff208",
     "number": 16,
     "sort_by": 16,
-    "name": "Growly",
+    "name": {
+      "en": "Growly",
+      "ja": "グロウリ"
+    },
     "parody": "Growlithe",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2486,20 +2681,35 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/16-thumb.jpg",
-    "description": "This creature is nocturnal. It has excellent night vision and can fly very silently.",
+    "description": {
+      "en": "An extremely loyal creature that would give its life to protect someone in its pack.",
+      "ja": "非常に忠実な生物であり、群れの誰かを守るためなら命を捧げます。"
+    },
     "measurement": {
       "height": ".7m",
       "weight": "19kg"
     },
     "attacks": [
       {
-        "name": "Growl",
-        "effect": "Shout abusive language at the other person, making them run away.",
+        "name": {
+          "en": "Growl",
+          "ja": "唸り声"
+        },
+        "effect": {
+          "en": "Shouts abusive language at the opponent, making them run away.",
+          "ja": "相手に対して乱暴な言葉を叫び、相手を逃げさせます。"
+        },
         "costs": ["Normal"]
       },
       {
-        "name": "Fireball",
-        "effect": "Throw a fireball at the opponent.",
+        "name": {
+          "en": "Fireball",
+          "ja": "火の玉"
+        },
+        "effect": {
+          "en": "Throws a fireball at the opponent.",
+          "ja": "火の玉を相手に投げつけます。"
+        },
         "damage": "25",
         "costs": ["Fire"]
       }
@@ -2509,8 +2719,11 @@
     "id": "1944e6c4-c24c-4204-baaa-69c2bbc68586",
     "number": 17,
     "sort_by": 17,
-    "name": "Pantomime Man",
-    "parody": "Mr. Mine",
+    "name": {
+      "en": "Pantomime Man",
+      "ja": "パントマイムマン"
+    },
+    "parody": "Mr. Mime",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
@@ -2518,15 +2731,24 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/17.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/17-thumb.jpg",
-    "description": "This creature is believed to have once been human.",
+    "description": {
+      "en": "This creature is believed to have once been human.",
+      "ja": "この生物はかつて人間だったと考えられています。"
+    },
     "measurement": {
       "height": "1.3m",
       "weight": "59kg"
     },
     "attacks": [
       {
-        "name": "Mine",
-        "effect": "Create a protective barrier against psychic energy.",
+        "name": {
+          "en": "Mine",
+          "ja": "マイン"
+        },
+        "effect": {
+          "en": "Creates a protective barrier from psychic energy.",
+          "ja": "心霊エネルギーから防御壁を作り出します。"
+        },
         "costs": ["Psychic"]
       }
     ]
@@ -2535,7 +2757,10 @@
     "id": "240b6653-26aa-496a-a004-8113134a102b",
     "number": 18,
     "sort_by": 18,
-    "name": "Jinx",
+    "name": {
+      "en": "Jinx",
+      "ja": "ジンクス"
+    },
     "parody": "Jynx",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2544,15 +2769,24 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/18.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/18-thumb.jpg",
-    "description": "The creature disguises itself as a human female, for unknown reasons.",
+    "description": {
+      "en": "This creature disguises itself as a human female, for unknown reasons.",
+      "ja": "この生物は人間の女性に変装しますが、その理由は不明です。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "40kg"
     },
     "attacks": [
       {
-        "name": "Ice Kiss",
-        "effect": "Kiss the opponent, freezing them for 2 turns.",
+        "name": {
+          "en": "Ice Kiss",
+          "ja": "アイスキス"
+        },
+        "effect": {
+          "en": "Kiss the opponent, freezing them for 2 turns.",
+          "ja": "相手にキスして2ターン凍らせます。"
+        },
         "damage": "25",
         "costs": ["Psychic"]
       }
@@ -2562,7 +2796,10 @@
     "id": "daa74bfb-22b4-4a45-a890-5229e4ed508c",
     "number": 19,
     "sort_by": 19,
-    "name": "Peep",
+    "name": {
+      "en": "Peep",
+      "ja": "ピープ"
+    },
     "parody": "Piplup",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2571,15 +2808,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/19.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/19-thumb.jpg",
-    "description": "This creature can destroy objects with just a gaze and can also create black holes with a thought.",
+    "description": {
+      "en": "This creature can destroy enemies with just a gaze and can also create black holes with a thought.",
+      "ja": "この生物は、ただ見つめるだけで敵を破壊することができ、思考でブラックホールを作り出すことも可能です。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "5kg"
     },
     "attacks": [
       {
-        "name": "Flipper Smack",
-        "effect": "Use its flippers to hit the opponent hard. It deals a lot of damage and is also a very cute move.",
+        "name": {
+          "en": "Flipper Smack",
+          "ja": "フリッパースマック"
+        },
+        "effect": {
+          "en": "Use its flippers to hit the opponent hard. It deals a lot of damage and is also a very cute move.",
+          "ja": "ヒレを使って相手を強く叩きます。大ダメージを与え、とてもかわいい技でもあります。"
+        },
         "damage": "100",
         "costs": ["Normal"]
       }
@@ -2589,7 +2835,10 @@
     "id": "a981c478-222a-4e6e-9944-4cf4477460ab",
     "number": 20,
     "sort_by": 20,
-    "name": "Tight",
+    "name": {
+      "en": "Tight",
+      "ja": "きつい"
+    },
     "parody": "Shellder",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2598,15 +2847,24 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/20.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/20-thumb.jpg",
-    "description": "The shells are as hard as iron and highly poisonous, so they cannot be eaten.",
+    "description": {
+      "en": "The shell is as hard as iron and highly poisonous, so it cannot be eaten.",
+      "ja": "貝は鉄のように硬く、強い毒性があるので食べることはできません。"
+    },
     "measurement": {
       "height": ".3m",
       "weight": "4kg"
     },
     "attacks": [
       {
-        "name": "Close",
-        "effect": "Close its shell, becoming invincible to most physical attacks.",
+        "name": {
+          "en": "Close",
+          "ja": "クローズ"
+        },
+        "effect": {
+          "en": "Closes its shell, becoming invincible to most physical attacks.",
+          "ja": "貝殻を閉じ、ほとんどの物理攻撃に対して無敵になります。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -2615,7 +2873,10 @@
     "id": "9cb24990-f8c0-4c14-941b-dc7134b0b5ee",
     "number": 21,
     "sort_by": 21,
-    "name": "Snow Boy",
+    "name": {
+      "en": "Snow Boy",
+      "ja": "スノーボーイ"
+    },
     "parody": "Alolan Vulpix",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2624,15 +2885,24 @@
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/21-thumb.jpg",
-    "description": "This creature is so rare that in the past it was thought to be a mythical entity.",
+    "description": {
+      "en": "This creature is so rare that in the past it was thought to be a mythical entity.",
+      "ja": "この生物は非常に貴重で、過去には神話の存在と考えられていました。"
+    },
     "measurement": {
       "height": ".6m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "Hail",
-        "effect": "Summon a song from the clouds, dealing base damage to the opponent each turn.",
+        "name": {
+          "en": "Hail",
+          "ja": "ヘイル"
+        },
+        "effect": {
+          "en": "Summon hail from the clouds, dealing base damage to the opponent each turn.",
+          "ja": "雲から雹を召喚し、毎ターン相手に累積ダメージを与えます。"
+        },
         "damage": "5",
         "costs": ["Water"]
       }
@@ -2642,7 +2912,10 @@
     "id": "461a5ae6-d58b-4f49-b370-1b636272bcf7",
     "number": 22,
     "sort_by": 22,
-    "name": "Ratatou",
+    "name": {
+      "en": "Ratatou",
+      "ja": "ラタトゥ"
+    },
     "parody": "Ratatta",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2651,15 +2924,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/22.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/22-thumb.jpg",
-    "description": "This creature can survive in almost any environment, especially where cheese is plentiful.",
+    "description": {
+      "en": "This creature can survive in almost any environment, especially where cheese is plentiful.",
+      "ja": "この生物はほぼどんな環境でも生き残ることができ、チーズが豊富な場所であればなおさらです。"
+    },
     "measurement": {
       "height": ".2m",
       "weight": "2kg"
     },
     "attacks": [
       {
-        "name": "Tackle",
-        "effect": "Charge the opponent at full speed, dealing damage.",
+        "name": {
+          "en": "Tackle",
+          "ja": "タックル"
+        },
+        "effect": {
+          "en": "Charge the opponent at full speed, dealing damage.",
+          "ja": "全速力で相手に突進し、ダメージを与えます。"
+        },
         "damage": "10",
         "costs": ["Normal"]
       }
@@ -2669,7 +2951,10 @@
     "id": "c1914b5c-6dbd-4817-a613-41175b5017f3",
     "number": 23,
     "sort_by": 23,
-    "name": "Ratacape",
+    "name": {
+      "en": "Ratacape",
+      "ja": "ラタケープ"
+    },
     "parody": "Raticate",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2678,21 +2963,36 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/23.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/23-thumb.jpg",
-    "description": "This creature's teeth never stop growing.",
+    "description": {
+      "en": "This creature's teeth never stop growing.",
+      "ja": "この生物の歯は成長を止めることがありません。"
+    },
     "measurement": {
       "height": ".7m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "Superbite",
-        "effect": "Bite the opponent in an extremely powerful manner.",
+        "name": {
+          "en": "Superbite",
+          "ja": "スーパーバイト"
+        },
+        "effect": {
+          "en": "Bite the opponent in an extremely powerful manner.",
+          "ja": "非常に強烈な方法で相手に噛みつきます。"
+        },
         "damage": "45",
         "costs": ["Normal"]
       },
       {
-        "name": "Tail Whip",
-        "effect": "Strike opponent with its tail.",
+        "name": {
+          "en": "Tail Whip",
+          "ja": "テールウィップ"
+        },
+        "effect": {
+          "en": "Strike opponent with its tail.",
+          "ja": "しっぽで相手を打ちます。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -2701,7 +3001,10 @@
     "id": "1f972c13-70f4-40cc-8df9-ae00ac524d01",
     "number": 24,
     "sort_by": 24,
-    "name": "Sanchi",
+    "name": {
+      "en": "Sanchi",
+      "ja": "サンチー"
+    },
     "parody": "Sandshrew",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2710,15 +3013,24 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/24.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/24-thumb.jpg",
-    "description": "This creature lives in the desert and creates its songs underground.",
+    "description": {
+      "en": "This creature lives in the desert and creates its home underground.",
+      "ja": "この生物は砂漠に生息し、地下に家を作ります。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "Sand Ball",
-        "effect": "Throw sand balls at the opponent, lowering their accuracy.",
+        "name": {
+          "en": "Sand Ball",
+          "ja": "サンドボール"
+        },
+        "effect": {
+          "en": "Throw sand balls at the opponent, lowering their accuracy.",
+          "ja": "砂の玉を相手に投げつけることで、相手の精度が下がります。"
+        },
         "costs": ["Fighting"]
       }
     ]
@@ -2727,7 +3039,10 @@
     "id": "9273f742-5c04-4877-82fb-1528c112b22e",
     "number": 25,
     "sort_by": 25,
-    "name": "Catapy",
+    "name": {
+      "en": "Catapy",
+      "ja": "カタピー"
+    },
     "parody": "Caterpie",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2736,15 +3051,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/25.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/25-thumb.jpg",
-    "description": "Although this creature is small and weak, it is a Lion.",
+    "description": {
+      "en": "Although this creature is small and weak, it has the heart of a lion.",
+      "ja": "この生物は小さく弱いにもかかわらず、ライオンの心を持っています。"
+    },
     "measurement": {
       "height": ".3m",
       "weight": "3kg"
     },
     "attacks": [
       {
-        "name": "String Shot",
-        "effect": "Shoot strings around the opponent, greatly slowing them down.",
+        "name": {
+          "en": "String Shot",
+          "ja": "ストリングショット"
+        },
+        "effect": {
+          "en": "Shoot strings around the opponent, greatly slowing them down.",
+          "ja": "相手の周りに糸を射出し、スピードを大幅に低下させます。"
+        },
         "costs": ["Grass"]
       }
     ]
@@ -2753,7 +3077,10 @@
     "id": "e37f524c-3dee-4346-b465-a99e5b85f0aa",
     "number": 26,
     "sort_by": 26,
-    "name": "Sticky",
+    "name": {
+      "en": "Sticky",
+      "ja": "ベタベタした"
+    },
     "parody": "Lickilicky",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2762,21 +3089,36 @@
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set2/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/26-thumb.jpg",
-    "description": "The creature's brain is located within the West.",
+    "description": {
+      "en": "This creature's brain is located within its tongue.",
+      "ja": "この生物の脳は舌の中にあります。"
+    },
     "measurement": {
       "height": "1.7m",
       "weight": "140kg"
     },
     "attacks": [
       {
-        "name": "Lick",
-        "effect": "Lick the other person.",
+        "name": {
+          "en": "Lick",
+          "ja": "なめる"
+        },
+        "effect": {
+          "en": "Lick the opponent.",
+          "ja": "相手をなめます。"
+        },
         "damage": "30",
         "costs": ["Normal"]
       },
       {
-        "name": "Sit",
-        "effect": "Sit on top of the other person.",
+        "name": {
+          "en": "Sit",
+          "ja": "座る"
+        },
+        "effect": {
+          "en": "Sit on top of the opponent.",
+          "ja": "相手の上に座ります。"
+        },
         "damage": "30",
         "costs": ["Normal"]
       }
@@ -2786,7 +3128,10 @@
     "id": "d29f94ee-3dc6-4bee-a0b5-b453c3933bc0",
     "number": 27,
     "sort_by": 27,
-    "name": "Pachisui",
+    "name": {
+      "en": "Pachisui",
+      "ja": "パチスイ"
+    },
     "parody": "Pachurisu",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2795,16 +3140,25 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/27.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/27-thumb.jpg",
-    "description": "This creature has enough electrical energy to fully charge a smartphone.",
+    "description": {
+      "en": "This creature has enough electrical energy to fully charge a smartphone.",
+      "ja": "この生物にはスマホを完全に充電するのに十分な電気エネルギーがあります。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "Thundercheeks",
-        "effect": "Shock the opponent with your adorable little cheeks.",
-        "damage": "25",
+        "name": {
+          "en": "Thundercheeks",
+          "ja": "サンダーチークス"
+        },
+        "effect": {
+          "en": "Shock the opponent with its adorable little cheeks.",
+          "ja": "可愛らしい小さな頬で相手に衝撃を与えます。"
+        },
+        "damage": "35",
         "costs": ["Electric"]
       }
     ]
@@ -2813,7 +3167,10 @@
     "id": "6b9d86c3-b0ed-4934-be6d-92ba9c2f4080",
     "number": 28,
     "sort_by": 28,
-    "name": "Onyx",
+    "name": {
+      "en": "Onyx",
+      "ja": "オニクス"
+    },
     "parody": "Onix",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2822,21 +3179,36 @@
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set2/28.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/28-thumb.jpg",
-    "description": "The creature's body appears to be made of rock, but it is just a calcified exoskeleton.",
+    "description": {
+      "en": "This creature's body appears to be made of rock, but it is just a calcified exoskeleton.",
+      "ja": "この生物の体は岩でできているように見えますが、ただの石灰化した外皮です。"
+    },
     "measurement": {
       "height": "8.8m",
       "weight": "210kg"
     },
     "attacks": [
       {
-        "name": "Rock Tail",
-        "effect": "Slam the opponent with Rock Tail.",
+        "name": {
+          "en": "Rock Tail",
+          "ja": "ロックテール"
+        },
+        "effect": {
+          "en": "Slam the opponent with its rock tail.",
+          "ja": "ロックテールで相手を叩きます。"
+        },
         "damage": "40",
         "costs": ["Fighting"]
       },
       {
-        "name": "Headbutt",
-        "effect": "Headbutt the opponent.",
+        "name": {
+          "en": "Headbutt",
+          "ja": "ヘッドバット"
+        },
+        "effect": {
+          "en": "Headbutt the opponent.",
+          "ja": "相手に頭突きをします。"
+        },
         "damage": "15",
         "costs": ["Normal"]
       }
@@ -2846,7 +3218,10 @@
     "id": "f5306450-5340-4b06-aa86-0c328571eed0",
     "number": 29,
     "sort_by": 29,
-    "name": "Kakuma",
+    "name": {
+      "en": "Kakuma",
+      "ja": "カクマ"
+    },
     "parody": "Kakuna",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2855,15 +3230,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/29.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/29-thumb.jpg",
-    "description": "This creature is in the process of evolving and is unable to fight. It hides until ready to transform.",
+    "description": {
+      "en": "This creature is in the process of evolving and is unable to fight, so it hides until ready to transform.",
+      "ja": "この生物は進化過程にあり、戦うことができないので、変身する準備が整うまで隠れます。"
+    },
     "measurement": {
       "height": ".3m",
       "weight": "3kg"
     },
     "attacks": [
       {
-        "name": "Harden",
-        "effect": "Harden itself to protect from damage.",
+        "name": {
+          "en": "Harden",
+          "ja": "硬化"
+        },
+        "effect": {
+          "en": "Harden itself to protect from damage.",
+          "ja": "ダメージから自身を守るために硬化します。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -2872,7 +3256,10 @@
     "id": "40efda17-7356-492d-bfd7-e256c8a0d0e3",
     "number": 30,
     "sort_by": 30,
-    "name": "Pony Pony",
+    "name": {
+      "en": "Pony Pony",
+      "ja": "ポニーポニ"
+    },
     "parody": "Ponyta",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2881,15 +3268,24 @@
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/30-thumb.jpg",
-    "description": "Depending on whether the creature likes you or not, the fire can either hurt or heal you.",
+    "description": {
+      "en": "Depending on whether the creature likes you or not, the fire can either hurt or heal you.",
+      "ja": "この生物があなたを好きか嫌いかによって、炎があなたを傷つけることも癒すこともあります。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "30kg"
     },
     "attacks": [
       {
-        "name": "Fire Wheel",
-        "effect": "Create a ring of fire to attack, which can cause burns to the opponent.",
+        "name": {
+          "en": "Fire Wheel",
+          "ja": "ファイヤーホイール"
+        },
+        "effect": {
+          "en": "Create a ring of fire to attack the opponent. This can cause burns to the opponent.",
+          "ja": "火の輪を作り、相手を攻撃します。これにより相手は火傷をする可能性があります。"
+        },
         "damage": "35",
         "costs": ["Fire"]
       }
@@ -2899,7 +3295,10 @@
     "id": "a6602cc5-77db-44c3-affd-dac464dfc56f",
     "number": 31,
     "sort_by": 31,
-    "name": "Pink Boy",
+    "name": {
+      "en": "Pink Boy",
+      "ja": "ピンクボーイ"
+    },
     "parody": "Clefairy",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2908,15 +3307,24 @@
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/31.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/31-thumb.jpg",
-    "description": "This organism is believed to be of extraterrestrial origin and its genes are completely different from any other organism on Earth.",
+    "description": {
+      "en": "This creature is believed to be of extraterrestrial origin and its genes are completely different from any other organism on Earth.",
+      "ja": "この生物は地球外から来たと考えられており、その遺伝子は地球上の他の生物とは全く異なっています。"
+    },
     "measurement": {
       "height": ".5m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "Random Move",
-        "effect": "Connect with a higher dimensional being and learn random moves.",
+        "name": {
+          "en": "Random Move",
+          "ja": "ランダムムーブ"
+        },
+        "effect": {
+          "en": "Connect with a higher dimensional being and learn a random move.",
+          "ja": "高次元の存在と繋がり、ランダムな技を覚えます。"
+        },
         "damage": "?",
         "costs": ["Normal"]
       }
@@ -2926,7 +3334,10 @@
     "id": "c0a67fb1-2c93-4483-b233-4c3cbbc345f5",
     "number": 32,
     "sort_by": 32,
-    "name": "Magic Mike",
+    "name": {
+      "en": "Magic Mike",
+      "ja": "マジックマイク"
+    },
     "parody": "Hitmonlee",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2935,15 +3346,24 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/32-thumb.jpg",
-    "description": "This creature has a very powerful kick, but an incredibly weak punch.",
+    "description": {
+      "en": "This creature has a very powerful kick, but an incredibly weak punch.",
+      "ja": "この生物は非常に強力なキックを持っていますが、パンチは信じられないほど弱いです。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "Leg Kick",
-        "effect": "Kick the opponent's leg to significantly reduce their evasion and speed.",
+        "name": {
+          "en": "Leg Kick",
+          "ja": "レッグキック"
+        },
+        "effect": {
+          "en": "Kick the opponent's leg to significantly reduce their evasion and speed.",
+          "ja": "相手の脚を蹴ることで、相手の回避性とスピードが大幅に低下します。"
+        },
         "damage": "60",
         "costs": ["Fighting"]
       }
@@ -2953,24 +3373,36 @@
     "id": "ec6bd531-ba02-4fd4-9a70-3cf17804021e",
     "number": 33,
     "sort_by": 33,
-    "name": "Steve",
+    "name": {
+      "en": "Steve",
+      "ja": "スティーブ"
+    },
     "parody": "Hitmonchan",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "hp": "50",
-    "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set2/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
-    "description": "The creature appears to be wearing boxing shorts and gloves, but these are actual body parts.",
+    "description": {
+      "en": "This creature appears to be wearing clothes and boxing gloves, but these are actual body parts.",
+      "ja": "この生物は服とボクシンググローブを着ているように見えますが、実際の体の一部です。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "15kg"
     },
     "attacks": [
       {
-        "name": "Straight Jab",
-        "effect": "Use the lead hand to punch the opponent in the face. All subsequent attacks will be critical hits.",
+        "name": {
+          "en": "Straight Jab",
+          "ja": "ストレートジャブ"
+        },
+        "effect": {
+          "en": "Use the lead hand to punch the opponent in the face. All subsequent attacks will be critical hits.",
+          "ja": "リードハンドを使って相手の顔をパンチします。これ以降の攻撃はすべてクリティカルヒットとなります。"
+        },
         "damage": "30",
         "costs": ["Fighting"]
       }
@@ -2980,7 +3412,10 @@
     "id": "de9f22b4-2442-4e7e-a0b9-86782267068a",
     "number": 34,
     "sort_by": 34,
-    "name": "Magnemi",
+    "name": {
+      "en": "Magnemi",
+      "ja": "マグネミ"
+    },
     "parody": "Magneton",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -2989,15 +3424,24 @@
     "hp": "45",
     "image": "https://gaichu.b-cdn.net/wm/set2/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/34-thumb.jpg",
-    "description": "It is not yet clear whether this is one organism or three.",
+    "description": {
+      "en": "It is not yet clear whether this is one creature or three.",
+      "ja": "これが1つの生物なのか3つなのかはまだ不明です。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "60kg"
     },
     "attacks": [
       {
-        "name": "Thunder Shock",
-        "effect": "Shock the opponent with an electric shock, which can paralyze them.",
+        "name": {
+          "en": "Thunder Shock",
+          "ja": "サンダーショック"
+        },
+        "effect": {
+          "en": "Shock the opponent with an electric shock. This can paralyze the opponent.",
+          "ja": "電撃を使って相手をショックさせます。これにより相手は麻痺する可能性があります。"
+        },
         "damage": "30",
         "costs": ["Electric"]
       }
@@ -3007,7 +3451,10 @@
     "id": "a6587285-00e7-4e86-8179-25f36e2fb041",
     "number": 35,
     "sort_by": 35,
-    "name": "Watobatto",
+    "name": {
+      "en": "Watobatto",
+      "ja": "わとばっと"
+    },
     "parody": "Wartortle",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -3016,15 +3463,24 @@
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/35-thumb.jpg",
-    "description": "This creature's shell is as hard as steel.",
+    "description": {
+      "en": "This creature's shell is as hard as steel.",
+      "ja": "この生物の殻は鋼のように硬いです。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "22kg"
     },
     "attacks": [
       {
-        "name": "Wet Slap",
-        "effect": "Spit into its hand and start slapping the opponent. This is not only physically damaging, but is also very rude.",
+        "name": {
+          "en": "Wet Slap",
+          "ja": "ウェットスラップ"
+        },
+        "effect": {
+          "en": "Spit into its hand and slap the opponent. This is not only physically damaging, but is also very rude.",
+          "ja": "手につばを吐いて相手をビンタします。これは物理的なダメージだけでなく、非常に失礼な行為でもあります。"
+        },
         "damage": "30",
         "costs": ["Water"]
       }
@@ -3034,7 +3490,10 @@
     "id": "e433ff5d-c206-4f65-a2cf-2a663ba79465",
     "number": 36,
     "sort_by": 36,
-    "name": "Ivysor",
+    "name": {
+      "en": "Ivysor",
+      "ja": "アイビーソル"
+    },
     "parody": "Ivysaur",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -3043,15 +3502,24 @@
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/36-thumb.jpg",
-    "description": "This creature has a large flower on its back that converts sunlight into energy, so it barely needs to eat.",
+    "description": {
+      "en": "This creature has a large flower on its back that converts sunlight into energy. Because of this, it barely needs to eat.",
+      "ja": "この生物は背中に大きな花を持っており、太陽光をエネルギーに変えます。そのため、ほとんど食事を必要としません。"
+    },
     "measurement": {
       "height": ".7m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "Sweet Scent",
-        "effect": "Cover itself in expensive body spray, attracting all kinds of creatures.",
+        "name": {
+          "en": "Sweet Scent",
+          "ja": "甘い香り"
+        },
+        "effect": {
+          "en": "Cover itself in expensive body spray, attracting all kinds of creatures.",
+          "ja": "高価なボディスプレーで自身を覆い、すべての種類の生物が引き寄せられます。"
+        },
         "damage": "35",
         "costs": ["Grass"]
       }
@@ -3061,7 +3529,10 @@
     "id": "45555f96-c9aa-454f-b43d-d7fcd85c13c9",
     "number": 37,
     "sort_by": 37,
-    "name": "Charmi",
+    "name": {
+      "en": "Charmi",
+      "ja": "チャーミ"
+    },
     "parody": "Charmeleon",
     "variant": "Normal",
     "illustrators": ["Alex Roh"],
@@ -3070,21 +3541,36 @@
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/37.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/37-thumb.jpg",
-    "description": "This creature is very unusual and almost always rebellious.",
+    "description": {
+      "en": "This creature is very rare and almost always rebellious.",
+      "ja": "この生物は非常に珍しく、ほとんど常に反抗的な態度を取ります。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "20kg"
     },
     "attacks": [
       {
-        "name": "Fire Breath",
-        "effect": "Blow fire into the opponent's face after eating an onion.",
+        "name": {
+          "en": "Fire Breath",
+          "ja": "ファイヤーブレス"
+        },
+        "effect": {
+          "en": "Blow fire into the opponent's face after eating an onion.",
+          "ja": "相手の顔にタマネギを食べた後に息を吹きかけます。"
+        },
         "damage": "40",
         "costs": ["Fire"]
       },
       {
-        "name": "Scratch",
-        "effect": "Scratch the opponent.",
+        "name": {
+          "en": "Scratch",
+          "ja": "ひっかき"
+        },
+        "effect": {
+          "en": "Scratch the opponent.",
+          "ja": "相手をひっかきます。"
+        },
         "damage": "20",
         "costs": ["Normal"]
       }
@@ -3094,24 +3580,36 @@
     "id": "edd88d82-d627-4bd3-b5eb-a6a738e0c721",
     "number": 38,
     "sort_by": 38,
-    "name": "Champuru",
+    "name": {
+      "en": "Champuru",
+      "ja": "チャンプルー"
+    },
     "parody": "Flying Pikachu",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "hp": "20",
-    "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set2/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
-    "description": "This creature is known to take part in many recreational activities and has been spotted surfing on numerous occasions.",
+    "description": {
+      "en": "This creature is known to take part in many recreational activities and has been spotted surfing on numerous occasions.",
+      "ja": "この生物は多くのレクリエーション活動に参加することで知られ、何度もサーフィンをしているのが目撃されています。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "6kg"
     },
     "attacks": [
       {
-        "name": "Fly",
-        "effect": "Use balloons from a recent birthday party to levitate off the ground.",
+        "name": {
+          "en": "Fly",
+          "ja": "フライ"
+        },
+        "effect": {
+          "en": "Use balloons from a recent birthday party to levitate off the ground.",
+          "ja": "最近の誕生日パーティーで使った風船を使い、地面から浮遊することができます。"
+        },
         "costs": ["Normal"]
       }
     ]
@@ -3120,7 +3618,10 @@
     "id": "dc57bb94-44e2-4289-8924-79a446d73a7e",
     "number": 39,
     "sort_by": 39,
-    "name": "Snopi",
+    "name": {
+      "en": "Snopi",
+      "ja": "スノピ"
+    },
     "parody": "Charmander",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3129,15 +3630,24 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/39-thumb.jpg",
-    "description": "This organism is extremely rare and can only be found in active volcanoes.",
+    "description": {
+      "en": "This creature is extremely rare and can only be found in active volcanoes.",
+      "ja": "この生物は非常に珍しく、活火山でしか見つけられません。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "Burn",
-        "effect": "Use fire to destroy everything in its path.",
+        "name": {
+          "en": "Burn",
+          "ja": "バーン"
+        },
+        "effect": {
+          "en": "Use fire to destroy everything in its path.",
+          "ja": "火を使ってその先にあるすべてを破壊します。"
+        },
         "damage": "10",
         "costs": ["Fire"]
       }
@@ -3147,7 +3657,10 @@
     "id": "a7e13ccd-96b8-46eb-ae9f-5536b48263fd",
     "number": 40,
     "sort_by": 40,
-    "name": "Lil Guy",
+    "name": {
+      "en": "Lil Guy",
+      "ja": "リルガイ"
+    },
     "parody": "Bulbasaur",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3156,15 +3669,24 @@
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/40.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/40-thumb.jpg",
-    "description": "This organism can convert sunlight into food and, if stationary, can survive for years on sunlight and rain alone.",
+    "description": {
+      "en": "This organism can convert sunlight into food and, if stationary, can survive for years on sunlight and rain alone.",
+      "ja": "この生物は太陽光を食物に変えることができ、静止した状態であれば、何年もの間、太陽光と雨だけで生きることができます。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "8kg"
     },
     "attacks": [
       {
-        "name": "Flower Delight",
-        "effect": "Create a scent that evokes someone's most cherished memories.",
+        "name": {
+          "en": "Flower Delight",
+          "ja": "フラワーディライト"
+        },
+        "effect": {
+          "en": "Create a scent that evokes someone's most cherished memories.",
+          "ja": "相手の最も大切な記憶を思い出させる香りを作り出します。"
+        },
         "costs": ["Grass"]
       }
     ]
@@ -3173,24 +3695,36 @@
     "id": "b6090d5b-3c41-4434-b19c-aa5718c53c96",
     "number": 41,
     "sort_by": 41,
-    "name": "Champto",
+    "name": {
+      "en": "Camptoo",
+      "ja": "キャンプトゥー"
+    },
     "parody": "Squirtle",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
     "hp": "15",
-    "image": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
+    "image": "https://gaichu.b-cdn.net/wm/set2/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
-    "description": "The shell of this creature is as hard as iron.",
+    "description": {
+      "en": "The shell of this creature is as hard as iron.",
+      "ja": "この生物の殻は鉄のように硬いです。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "10kg"
     },
     "attacks": [
       {
-        "name": "Bubbles",
-        "effect": "Make cute animal shaped bubbles. This is very popular at birthday parties.",
+        "name": {
+          "en": "Bubble",
+          "ja": "バブル"
+        },
+        "effect": {
+          "en": "Make cute animal shaped bubbles. This is very popular at birthday parties.",
+          "ja": "かわいい動物の形の泡を作ることができます。誕生日パーティーで非常に人気があります。"
+        },
         "damage": "10",
         "costs": ["Water"]
       }
@@ -3200,7 +3734,10 @@
     "id": "68dec82e-45f0-4f10-89f4-984db75598bd",
     "number": 42,
     "sort_by": 42,
-    "name": "Nanutayo",
+    "name": {
+      "en": "Nanutayo",
+      "ja": "なぬたよ"
+    },
     "parody": "Ninetails",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3209,15 +3746,24 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/42-thumb.jpg",
-    "description": "These creatures are very rare and are said to only appear to those with good karma.",
+    "description": {
+      "en": "This creature is very rare and is said to only appear to those with good karma.",
+      "ja": "この生物は非常に珍しく、良いカルマを持つ人々にだけ自分の姿を見せると言われています。"
+    },
     "measurement": {
       "height": "1.5m",
       "weight": "30kg"
     },
     "attacks": [
       {
-        "name": "Seance",
-        "effect": "Communicate with spirits from the afterlife using psychic abilities.",
+        "name": {
+          "en": "Seance",
+          "ja": "交霊"
+        },
+        "effect": {
+          "en": "Communicate with spirits from the afterlife using psychic abilities.",
+          "ja": "超能力を使ってあの世の霊と交信します。"
+        },
         "costs": ["Dark"]
       }
     ]
@@ -3226,7 +3772,10 @@
     "id": "cba6f316-a88a-42a4-bf5d-2e38b102b93a",
     "number": 43,
     "sort_by": 43,
-    "name": "Rai Rai",
+    "name": {
+      "en": "Rai Rai",
+      "ja": "ライライ"
+    },
     "parody": "Raichu",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3235,15 +3784,24 @@
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/43-thumb.jpg",
-    "description": "This creature enjoys taking selfies.",
+    "description": {
+      "en": "This creature enjoys taking photos.",
+      "ja": "この生物は写真を撮るのが趣味です。"
+    },
     "measurement": {
       "height": ".9m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "Electric Shock",
-        "effect": "Shock the opponent with an electric shock. This can also be used to charge mobile phones and tablets.",
+        "name": {
+          "en": "Electric Shock",
+          "ja": "電撃"
+        },
+        "effect": {
+          "en": "Shock the opponent with an electric shock. This can also be used to charge mobile phones and tablets.",
+          "ja": "電撃で相手に衝撃を与えます。この攻撃は携帯電話やタブレットを充電するためにも使われます。"
+        },
         "damage": "40",
         "costs": ["Electric"]
       }
@@ -3253,7 +3811,10 @@
     "id": "696464c9-9c3c-44a1-88bf-0ba0dc7f2779",
     "number": 44,
     "sort_by": 44,
-    "name": "Floreomon",
+    "name": {
+      "en": "Floreomon",
+      "ja": "フロレオモン"
+    },
     "parody": "Flareon",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3262,15 +3823,24 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/44.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/44-thumb.jpg",
-    "description": "This creature's daily routine is to find a sunny spot on the floor and spend the whole day sleeping.",
+    "description": {
+      "en": "This creature's daily routine is to find a sunny spot on the floor and spend the whole day sleeping.",
+      "ja": "この生物は床の上の日当たりの良い場所を見つけて一日中寝て過ごすのが日課です。"
+    },
     "measurement": {
       "height": ".9m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "Bread Loaf",
-        "effect": "All limbs retract into the body to take the shape of a loaf of bread.",
+        "name": {
+          "en": "Bread Loaf",
+          "ja": "パンの塊"
+        },
+        "effect": {
+          "en": "All limbs retract into the body to take the shape of a loaf of bread.",
+          "ja": "全ての手足を体の中に収めてパンの塊の形になります。"
+        },
         "damage": "100",
         "costs": ["Normal"]
       }
@@ -3280,7 +3850,10 @@
     "id": "4d41c46d-7a80-45c4-abfc-750a89704361",
     "number": 45,
     "sort_by": 45,
-    "name": "Johnnymon",
+    "name": {
+      "en": "Johnnymon",
+      "ja": "ジョニーモン"
+    },
     "parody": "Jolteon",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3289,15 +3862,24 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/45.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/45-thumb.jpg",
-    "description": "This creature can summon thunderstorms when provoked or threatened.",
+    "description": {
+      "en": "This creature can summon thunderstorms when provoked or threatened.",
+      "ja": "この生物は挑発されたり脅かされたりすると雷雲を召喚することができます。"
+    },
     "measurement": {
       "height": "1m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "Revive",
-        "effect": "Use an electric shock to revive a stunned teammate.",
+        "name": {
+          "en": "Revive",
+          "ja": "リバイブ"
+        },
+        "effect": {
+          "en": "Use an electric shock to revive a stunned teammate.",
+          "ja": "電撃を使って気絶したチームメイトを復活させます。"
+        },
         "damage": "60",
         "costs": ["Electric"]
       }
@@ -3307,7 +3889,10 @@
     "id": "d53edbd7-066d-49b5-b9fb-5db0a54e887e",
     "number": 46,
     "sort_by": 46,
-    "name": "Vepenomnom",
+    "name": {
+      "en": "Vepenomnom",
+      "ja": "ヴェペノムノム"
+    },
     "parody": "Vaporeon",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3316,15 +3901,24 @@
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/46-thumb.jpg",
-    "description": "These creatures love frozen desserts like ice cream and shaved ice.",
+    "description": {
+      "en": "This creature loves frozen desserts like ice cream and shaved ice.",
+      "ja": "この生物はアイスクリームやかき氷のような冷凍デザートが大好きです。"
+    },
     "measurement": {
       "height": ".9m",
       "weight": "25kg"
     },
     "attacks": [
       {
-        "name": "Aquafresh",
-        "effect": "Produce a mist from its eye socket that kills 99.9% of germs and bacteria, leaving a refreshing scent behind.",
+        "name": {
+          "en": "Aquafresh",
+          "ja": "アクアフレッシュ"
+        },
+        "effect": {
+          "en": "Produce a mist from its eye socket that kills 99.9% of germs and bacteria, leaving a refreshing scent behind.",
+          "ja": "眼窩から99.9%の細菌とバクテリアを殺すミストを吹き出し、さわやかな香りを残します。"
+        },
         "damage": "60",
         "costs": ["Water"]
       }
@@ -3334,7 +3928,10 @@
     "id": "f85c3ce4-2faf-4a46-9adb-f76dfcaa59a1",
     "number": 47,
     "sort_by": 47,
-    "name": "Entomi",
+    "name": {
+      "en": "Entomi",
+      "ja": "えんとみ"
+    },
     "parody": "Entei",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3343,15 +3940,24 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/47.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/47-thumb.jpg",
-    "description": "It is said that this creature was reborn from something that died long ago in the burning tower.",
+    "description": {
+      "en": "It is said that this creature was reborn from something that died long ago in the burning tower.",
+      "ja": "この生物は昔、燃えている塔で死んだ何かから生まれ変わったと言われています。"
+    },
     "measurement": {
       "height": "2.1m",
       "weight": "198kg"
     },
     "attacks": [
       {
-        "name": "Unknown",
-        "effect": "Summon an army of small creatures for help.",
+        "name": {
+          "en": "Unknown",
+          "ja": "アンノウン"
+        },
+        "effect": {
+          "en": "Summon an army of small creatures for help.",
+          "ja": "小さな生物の軍団を呼び出して助けを求めます。"
+        },
         "damage": "100",
         "costs": ["Normal"]
       }
@@ -3361,7 +3967,10 @@
     "id": "e7c55d0a-1ae9-4f3e-9a99-f08395970d23",
     "number": 48,
     "sort_by": 48,
-    "name": "Raikomo",
+    "name": {
+      "en": "Raikomo",
+      "ja": "ライコモ"
+    },
     "parody": "Raikou",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3370,15 +3979,24 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/48-thumb.jpg",
-    "description": "It is said that this creature was reborn from something that died long ago in the burning tower.",
+    "description": {
+      "en": "It is said that this creature was reborn from something that died long ago in the burning tower.",
+      "ja": "この生物は昔、燃えている塔で死んだ何かから生まれ変わったと言われています。"
+    },
     "measurement": {
       "height": "1.9m",
       "weight": "178kg"
     },
     "attacks": [
       {
-        "name": "Lightning Rain",
-        "effect": "Call down a thunderstorm, striking everything in the area with lightning.",
+        "name": {
+          "en": "Lightning Rain",
+          "ja": "ライトニングレイン"
+        },
+        "effect": {
+          "en": "Call down a thunderstorm, striking everything in the area with lightning.",
+          "ja": "雷雨を呼び下ろし、エリア内の何もかもが雷に打たれます。"
+        },
         "damage": "100",
         "costs": ["Electric"]
       }
@@ -3388,7 +4006,10 @@
     "id": "6dfc5599-ab49-4b5b-af91-fba7c10d68ed",
     "number": 49,
     "sort_by": 49,
-    "name": "Sukumo",
+    "name": {
+      "en": "Sukumo",
+      "ja": "すくも"
+    },
     "parody": "Suicune",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3397,15 +4018,24 @@
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/49.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/49-thumb.jpg",
-    "description": "It is said that this creature was reborn from something that died long ago in the burning tower.",
+    "description": {
+      "en": "It is said that this creature was reborn from something that died long ago in the burning tower.",
+      "ja": "この生物は昔、燃えている塔で死んだ何かから生まれ変わったと言われています。"
+    },
     "measurement": {
       "height": "2m",
       "weight": "187kg"
     },
     "attacks": [
       {
-        "name": "Crystal Beam",
-        "effect": "Decorate your room with beautiful stones and crystals.",
+        "name": {
+          "en": "Crystal Beam",
+          "ja": "クリスタルビーム"
+        },
+        "effect": {
+          "en": "Decorate your room with beautiful stones and crystals.",
+          "ja": "部屋をきれいな石とクリスタルで装飾します。"
+        },
         "damage": "90",
         "costs": ["Water"]
       }
@@ -3415,7 +4045,10 @@
     "id": "0b636cc5-ecd5-4346-a9a5-6c1f19c81621",
     "number": 50,
     "sort_by": 50,
-    "name": "Shiny Ramune",
+    "name": {
+      "en": "Shiny Ramune",
+      "ja": "シャイニング ラムネ"
+    },
     "parody": "Ralts",
     "variant": "Holo",
     "illustrators": ["Alex Roh"],
@@ -3424,15 +4057,24 @@
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/50-thumb.jpg",
-    "description": "This creature can make his emotions felt by those around him.",
+    "description": {
+      "en": "This creature can make its emotions felt by those around it.",
+      "ja": "この生物は、自身の感情を周りの人々に感じさせることができます。"
+    },
     "measurement": {
       "height": ".4m",
       "weight": "6kg"
     },
     "attacks": [
       {
-        "name": "Mind Read",
-        "effect": "Use psychic ability to read the opponent's mind. This technique is also effective in poker.",
+        "name": {
+          "en": "Mind Reader",
+          "ja": "マインドリーダー"
+        },
+        "effect": {
+          "en": "Use psychic ability to read the opponent's mind. This technique is also effective in poker.",
+          "ja": "相手の心を読む超能力を使います。この技はポーカーでも効果的です。"
+        },
         "damage": "20",
         "costs": ["Psychic"]
       }
