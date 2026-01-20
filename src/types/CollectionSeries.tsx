@@ -11,6 +11,7 @@ export interface CollectionSeries {
   name: string;
   logo: string;
   description?: string;
+  keywords?: string[];
   website?: string;
   patreon?: string;
   instagram?: string;

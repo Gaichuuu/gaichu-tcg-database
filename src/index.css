@@ -14,6 +14,8 @@
   --color-errorText: #ff0000;
   --color-primaryButton: #646cff;
   --color-hoverButton: #dadada;
+  --color-linkAlt: #a855f7;
+  --color-linkAltHover: #fafafa;
 }
 
 @layer components {
@@ -62,14 +64,17 @@ a {
 a:hover {
   color: var(--color-hoverText);
 }
+a.link-alt {
+  color: var(--color-linkAlt);
+}
+a.link-alt:hover {
+  color: var(--color-linkAltHover);
+}
 
 body {
   font-family: var(--font-mono);
-  font-synthesis: none;
   color: var(--color-primaryText);
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   font-size: 0.9rem;
@@ -88,10 +93,7 @@ b {
 
 dd,
 dt {
-  margin-left: 1.5em;
-  font-size: 0.8rem;
-  line-height: 1.25rem;
-  font-style: italic;
+  @apply ml-6 text-xs italic;
 }
 
 h1 {
@@ -116,11 +118,6 @@ h4 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   letter-spacing: 0.025em;
-}
-
-.text-sm {
-  font-size: 0.8rem;
-  line-height: 1.25rem;
 }
 
 th {

@@ -21,6 +21,52 @@
       },
       "sort_by": {
         "type": "number"
+      },
+      "description": {
+        "type": "string"
+      },
+      "keywords": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "instagram": {
+        "type": "string",
+        "format": "uri"
+      },
+      "discord": {
+        "type": "string",
+        "format": "uri"
+      },
+      "website": {
+        "type": "string",
+        "format": "uri"
+      },
+      "patreon": {
+        "type": "string",
+        "format": "uri"
+      },
+      "twitter": {
+        "type": "string",
+        "format": "uri"
+      },
+      "youtube": {
+        "type": "string",
+        "format": "uri"
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["type", "url", "label"],
+          "properties": {
+            "type": { "type": "string" },
+            "url": { "type": "string", "format": "uri" },
+            "label": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
       }
     }
   }

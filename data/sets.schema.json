@@ -1,6 +1,22 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
+  "$defs": {
+    "i18nString": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "ja": { "type": "string", "minLength": 1 }
+          },
+          "minProperties": 1,
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
   "items": {
     "type": "object",
     "required": [
@@ -36,6 +52,58 @@
       "logo": {
         "type": "string",
         "format": "uri"
+      },
+      "description": {
+        "type": "string"
+      },
+      "keywords": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "total_cards_count": {
+        "type": "number"
+      },
+      "printFileUrl": {
+        "type": "string",
+        "format": "uri"
+      },
+      "buy_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "pack_art": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "frontDescription": { "$ref": "#/$defs/i18nString" },
+          "backDescription": { "$ref": "#/$defs/i18nString" },
+          "illustrator": { "type": "string" },
+          "note": { "type": "string" },
+          "packs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": { "type": "string" },
+                "url": { "type": "string", "format": "uri" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "card_back": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "text": { "$ref": "#/$defs/i18nString" },
+          "illustrator": { "type": "string" },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
       }
     }
   }

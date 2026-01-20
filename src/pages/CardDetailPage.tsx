@@ -9,6 +9,7 @@ import {
   AttacksSection,
   AttributesSection,
   ZooAttackSection,
+  ZooAttributesSection,
 } from "@/components/CardDetail";
 import { useCurrentAndAdjacentCards } from "@/hooks/useCollectionCard";
 import { t, useLocale } from "@/i18n";
@@ -236,11 +237,10 @@ const CardDetailPage: React.FC = () => {
                 retreat={card.retreat}
               />
 
-              {card.strength && (
-                <CardDetailRow label="Attributes">
-                  {card.strength}
-                </CardDetailRow>
-              )}
+              <ZooAttributesSection
+                series={seriesKey}
+                strength={card.strength}
+              />
 
               {hasLocaleText(card.description) && (
                 <CardDetailRow label="Flavor Text">

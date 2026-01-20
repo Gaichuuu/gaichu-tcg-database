@@ -139,7 +139,14 @@ const CardSchemaRaw = z.object({
   retreat: z
     .array(z.object({ costs: z.array(z.string()).optional() }))
     .optional(),
-  strength: z.string().optional(),
+  strength: z
+    .array(
+      z.object({
+        type: z.array(z.string()).optional(),
+        value: z.string().optional(),
+      }),
+    )
+    .optional(),
 
   illustrators: z.array(z.string()).optional(),
   set_ids: z.array(z.string()),

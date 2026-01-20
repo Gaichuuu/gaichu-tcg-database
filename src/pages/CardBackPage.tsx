@@ -9,9 +9,20 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import type { ArtParamKeys } from "@/types/routes";
+import { t, useLocale, type I18nValue } from "@/i18n";
+
+function isJaAvailable(v: I18nValue | undefined): boolean {
+  return (
+    v != null &&
+    typeof v === "object" &&
+    typeof v.ja === "string" &&
+    v.ja.trim() !== ""
+  );
+}
 
 const CardBackPage: React.FC = () => {
   const { seriesShortName = "", setShortName = "" } = useParams<ArtParamKeys>();
+  const { locale, setLocale } = useLocale();
   const seriesKey = decodeURIComponent(seriesShortName);
   const setKey = decodeURIComponent(setShortName);
 
@@ -29,10 +40,13 @@ const CardBackPage: React.FC = () => {
   // SEO metadata
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Card Back - ${setName} - Gaichu`;
-  const pageDescription = cardBack.text
-    ? `Card back design for ${setName}. ${cardBack.text}`
+  const textForSeo = t(cardBack.text, "en");
+  const pageDescription = textForSeo
+    ? `Card back design for ${setName}. ${textForSeo}`
     : `View the card back design for ${setName} on Gaichu.`;
   const pageImage = cardBack.url || backUrl;
+
+  const hasJaLocale = isJaAvailable(cardBack.text);
 
   return (
     <div className="container mx-auto pt-2">
@@ -56,13 +70,49 @@ const CardBackPage: React.FC = () => {
         </div>
 
         <div className="md:w-2/3">
-          <h1 className="mb-4">
-            {getTitleSetImagePathType(SetImagePathType.CardBack)}
-          </h1>
+          <div className="flex items-start justify-between gap-3">
+            <h1 className="mb-4">
+              {getTitleSetImagePathType(SetImagePathType.CardBack)}
+            </h1>
+            {hasJaLocale && (
+              <div
+                role="group"
+                aria-label="Language toggle"
+                className="group/toggle border-secondaryBorder mb-3 inline-flex items-center gap-1 rounded-2xl border p-1 shadow-sm transition-colors"
+              >
+                <button
+                  type="button"
+                  onClick={() => setLocale("en")}
+                  aria-pressed={locale === "en"}
+                  className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
+                    locale === "en"
+                      ? "bg-primaryButton text-mainBg"
+                      : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
+                  }`}
+                >
+                  English
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLocale("ja")}
+                  aria-pressed={locale === "ja"}
+                  className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
+                    locale === "ja"
+                      ? "bg-primaryButton text-mainBg"
+                      : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
+                  }`}
+                >
+                  日本語
+                </button>
+              </div>
+            )}
+          </div>
           <table className="w-full border-collapse">
             <tbody>
               {cardBack.text && (
-                <CardDetailRow label="Text">{cardBack.text}</CardDetailRow>
+                <CardDetailRow label="Text">
+                  {t(cardBack.text, locale)}
+                </CardDetailRow>
               )}
               {cardBack.illustrator && (
                 <CardDetailRow label="Illustrator">

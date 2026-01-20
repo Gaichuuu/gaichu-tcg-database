@@ -36,7 +36,15 @@
             "type": "string"
           },
           "strength": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": { "type": "string" }
+              },
+              "required": ["value"],
+              "additionalProperties": false
+            }
           },
           "description": {
             "type": "string"
