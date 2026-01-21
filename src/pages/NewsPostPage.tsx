@@ -12,7 +12,35 @@ export default function NewsPostPage() {
 
   const sanitizedHtml = useMemo(() => {
     if (!post?.body_html) return "";
-    return DOMPurify.sanitize(post.body_html);
+
+    DOMPurify.addHook("uponSanitizeElement", (node, data) => {
+      if (data.tagName === "iframe" && node instanceof HTMLIFrameElement) {
+        const src = node.getAttribute("src") || "";
+        const allowedHosts = [
+          "youtube.com",
+          "www.youtube.com",
+          "youtube-nocookie.com",
+          "www.youtube-nocookie.com",
+          "player.vimeo.com",
+        ];
+        try {
+          const url = new URL(src);
+          if (!allowedHosts.includes(url.hostname)) {
+            node.parentNode?.removeChild(node);
+          }
+        } catch {
+          node.parentNode?.removeChild(node);
+        }
+      }
+    });
+
+    const clean = DOMPurify.sanitize(post.body_html, {
+      ADD_TAGS: ["iframe"],
+      ADD_ATTR: ["allow", "allowfullscreen", "frameborder", "scrolling"],
+    });
+
+    DOMPurify.removeHook("uponSanitizeElement");
+    return clean;
   }, [post?.body_html]);
 
   if (status === "pending") return <PageLoading />;
