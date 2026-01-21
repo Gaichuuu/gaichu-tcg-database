@@ -36,6 +36,8 @@ const mergeWithSeriesId = (
 ): SeriesAndSet[] => {
   return series.map((seriesItem) => ({
     series: seriesItem,
-    sets: sets.filter((setItem) => setItem.series_id === seriesItem.id),
+    sets: sets
+      .filter((setItem) => setItem.series_id === seriesItem.id)
+      .sort((a, b) => a.sort_by - b.sort_by),
   }));
 };
