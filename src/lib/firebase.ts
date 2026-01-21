@@ -1,6 +1,6 @@
 // src/lib/firebase.ts
 import { initializeApp, getApps, getApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore/lite";
 import { IS_USE_STAGING_DATA } from "../services/Constants";
 
 const firebaseConfig = IS_USE_STAGING_DATA

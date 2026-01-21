@@ -14,7 +14,7 @@ import {
   QueryConstraint,
   DocumentSnapshot,
   DocumentData,
-} from "firebase/firestore";
+} from "firebase/firestore/lite";
 
 export type NewsPage = { items: NewsPost[]; nextCursor?: DocumentSnapshot };
 
