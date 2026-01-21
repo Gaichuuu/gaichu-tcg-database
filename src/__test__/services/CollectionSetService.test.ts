@@ -35,46 +35,69 @@ beforeEach(async () => {
 
 describe("fetchSets", () => {
   it("queries Firestore correctly and merges sets with their cards", async () => {
-    // prepare our two snapshots
+    // New implementation: 1 query for sets + N queries for cards (one per set using array-contains)
+    // First call returns sets, subsequent calls return cards for each set
     (getDocs as Mock)
+      // First call: return all sets
       .mockResolvedValueOnce({
         docs: setJsonMock.map((item) => ({
           id: item.id,
           data: () => item,
         })),
       })
-      .mockResolvedValueOnce({
+      // Subsequent calls: return cards filtered by set_id
+      // Each set query returns only cards that belong to that set
+      .mockImplementation(async () => ({
         docs: cardListMock.map((item) => ({
           id: item.id,
           data: () => item,
         })),
-      });
+      }));
 
     const seriesShortName = "wm";
     const result = await fetchSets(seriesShortName);
     const { collection, where, orderBy, query } = await import(
       "firebase/firestore/lite"
     );
-    expect(where).toHaveBeenCalledTimes(2);
-    expect(query).toHaveBeenCalledTimes(2);
-    expect(getDocs).toHaveBeenCalledTimes(2);
 
+    // 1 where for sets query + 1 where per set for cards query (3 sets = 4 total)
+    expect(where).toHaveBeenCalledTimes(1 + setJsonMock.length);
+    // 1 query for sets + 1 query per set for cards
+    expect(query).toHaveBeenCalledTimes(1 + setJsonMock.length);
+    // 1 getDocs for sets + 1 getDocs per set for cards
+    expect(getDocs).toHaveBeenCalledTimes(1 + setJsonMock.length);
+
+    // Verify sets query
     expect(query).toHaveBeenCalledWith(
       collection(fakeDb, "sets"),
       where("series_short_name", "==", seriesShortName),
       orderBy("sort_by", "asc"),
     );
-    expect(query).toHaveBeenCalledWith(
-      collection(fakeDb, "cards"),
-      where("series_short_name", "==", seriesShortName),
-      orderBy("sort_by", "asc"),
-    );
 
-    // testing that merge logic still works
-    const expected = setJsonMock.map((setItem) => ({
-      set: setItem,
-      cards: cardListMock.filter((c) => c.set_ids[0] === setItem.id),
-    }));
-    expect(result).toEqual(expected);
+    // Verify cards queries use array-contains for each set
+    for (const setItem of setJsonMock) {
+      expect(where).toHaveBeenCalledWith(
+        "set_ids",
+        "array-contains",
+        setItem.id,
+      );
+    }
+
+    // Verify result structure - each set should have cards with derived fields
+    expect(result.length).toBe(setJsonMock.length);
+    for (const setAndCard of result) {
+      expect(setAndCard.set).toBeDefined();
+      // Cards should have derived fields from the set
+      for (const card of setAndCard.cards) {
+        expect(card.set_short_name).toBe(setAndCard.set.short_name);
+        expect(card.series_short_name).toBe(setAndCard.set.series_short_name);
+        expect(card.total_cards_count).toBe(
+          setAndCard.set.total_cards_count ?? 0,
+        );
+        expect(card.sets).toEqual([
+          { name: setAndCard.set.name, image: setAndCard.set.logo },
+        ]);
+      }
+    }
   });
 });

@@ -1,8 +1,14 @@
-import { CollectionCard } from "@/types/CollectionCard";
-import { CollectionSet } from "@/types/CollectionSet";
-import { SetAndCard } from "@/types/MergedCollection";
+import type { CollectionCard } from "@/types/CollectionCard";
+import type { CollectionSet } from "@/types/CollectionSet";
+import type { SetAndCard } from "@/types/MergedCollection";
 import { database } from "@/lib/firebase";
-import { collection, getDocs, orderBy, query, where } from "firebase/firestore/lite";
+import {
+  collection,
+  getDocs,
+  orderBy,
+  query,
+  where,
+} from "firebase/firestore/lite";
 
 export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
   const setsQuery = query(
@@ -16,26 +22,35 @@ export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
     ...doc.data(),
   })) as CollectionSet[];
 
-  const cardsQuery = query(
-    collection(database, "cards"),
-    where("series_short_name", "==", shortName),
-    orderBy("sort_by", "asc"),
+  if (sets.length === 0) {
+    return [];
+  }
+
+  // Query cards for each set using array-contains (no composite index required)
+  const results: SetAndCard[] = await Promise.all(
+    sets.map(async (setItem) => {
+      const cardsQuery = query(
+        collection(database, "cards"),
+        where("set_ids", "array-contains", setItem.id),
+      );
+      const cardsSnapshot = await getDocs(cardsQuery);
+      const cards = cardsSnapshot.docs
+        .map(
+          (doc) =>
+            ({
+              id: doc.id,
+              ...doc.data(),
+              set_short_name: setItem.short_name,
+              series_short_name: setItem.series_short_name,
+              total_cards_count: setItem.total_cards_count ?? 0,
+              sets: [{ name: setItem.name, image: setItem.logo }],
+            }) as CollectionCard,
+        )
+        .sort((a, b) => a.sort_by - b.sort_by);
+
+      return { set: setItem, cards };
+    }),
   );
-  const cardsSnapshot = await getDocs(cardsQuery);
-  const cards = cardsSnapshot.docs.map((doc) => ({
-    id: doc.id,
-    ...doc.data(),
-  })) as CollectionCard[];
 
-  return mergeWithSetsId(sets, cards);
-};
-
-const mergeWithSetsId = (
-  sets: CollectionSet[],
-  cards: CollectionCard[],
-): SetAndCard[] => {
-  return sets.map((setItem) => ({
-    set: setItem,
-    cards: cards.filter((cardItem) => cardItem.set_ids[0] === setItem.id),
-  }));
+  return results;
 };

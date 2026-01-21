@@ -11,10 +11,12 @@ import {
   DocumentData,
 } from "firebase/firestore/lite";
 import type { CollectionCard } from "@/types/CollectionCard";
+import type { CollectionSet } from "@/types/CollectionSet";
 import { I18nValue, t } from "@/i18n";
 import { slugify } from "@/utils/RoutePathBuildUtils";
 
 const cardsRef = collection(database, "cards");
+const setsRef = collection(database, "sets");
 const __DEV__ = import.meta.env.DEV;
 
 const toSlug = (v: unknown): string =>
@@ -30,23 +32,39 @@ function warnIfCamel(raw: DocumentData, id?: string) {
   }
 }
 
-function asCard(raw: DocumentData, id?: string): CollectionCard {
+function asCard(
+  raw: DocumentData,
+  set: CollectionSet,
+  id?: string,
+): CollectionCard {
   warnIfCamel(raw, id);
-  return raw as CollectionCard;
+  return {
+    ...raw,
+    set_short_name: set.short_name,
+    series_short_name: set.series_short_name,
+    total_cards_count: set.total_cards_count ?? 0,
+    sets: [{ name: set.name, image: set.logo }],
+  } as CollectionCard;
 }
 
-async function getDocsWithSeriesSet(
+async function getSetByShortNames(
   seriesShortName: string,
   setShortName: string,
-  extra: QueryConstraint[] = [],
-) {
+): Promise<CollectionSet | null> {
+  const setQuery = query(
+    setsRef,
+    where("series_short_name", "==", seriesShortName),
+    where("short_name", "==", setShortName),
+    ql(1),
+  );
+  const snap = await getDocs(setQuery);
+  if (snap.empty) return null;
+  return { id: snap.docs[0].id, ...snap.docs[0].data() } as CollectionSet;
+}
+
+async function getDocsWithSetId(setId: string, extra: QueryConstraint[] = []) {
   return getDocs(
-    query(
-      cardsRef,
-      where("series_short_name", "==", seriesShortName),
-      where("set_short_name", "==", setShortName),
-      ...extra,
-    ),
+    query(cardsRef, where("set_ids", "array-contains", setId), ...extra),
   );
 }
 
@@ -58,27 +76,30 @@ export async function fetchCardDetail(
 ): Promise<CollectionCard | null> {
   const targetSlug = slugify(cardNameFromUrl);
 
+  const set = await getSetByShortNames(seriesShortName, setShortName);
+  if (!set) {
+    console.warn("[cards] set not found:", seriesShortName, setShortName);
+    return null;
+  }
+
   if (Number.isFinite(sortBy as number)) {
     try {
-      const snap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
+      const snap = await getDocsWithSetId(set.id, [
         where("sort_by", "==", sortBy),
         ql(1),
       ]);
-      if (!snap.empty) return asCard(snap.docs[0].data(), snap.docs[0].id);
+      if (!snap.empty)
+        return asCard(snap.docs[0].data(), set, snap.docs[0].id);
     } catch (e) {
       console.warn("[cards] sort_by query failed (index?):", e);
     }
   }
 
   try {
-    const withinSet = await getDocsWithSeriesSet(
-      seriesShortName,
-      setShortName,
-      [ql(1000)],
-    );
+    const withinSet = await getDocsWithSetId(set.id, [ql(1000)]);
     const match =
       withinSet.docs
-        .map((d) => asCard(d.data(), d.id))
+        .map((d) => asCard(d.data(), set, d.id))
         .find((d) => toSlug(d.name) === targetSlug) ?? null;
 
     if (match) return match;
@@ -100,13 +121,16 @@ export async function fetchAdjacentCards(
   if (!Number.isFinite(sortBy as number))
     return { previousCard: null, nextCard: null };
 
+  const set = await getSetByShortNames(seriesShortName, setShortName);
+  if (!set) return { previousCard: null, nextCard: null };
+
   try {
-    const prevSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
+    const prevSnap = await getDocsWithSetId(set.id, [
       where("sort_by", "<", sortBy),
       orderBy("sort_by", "desc"),
       ql(1),
     ]);
-    const nextSnap = await getDocsWithSeriesSet(seriesShortName, setShortName, [
+    const nextSnap = await getDocsWithSetId(set.id, [
       where("sort_by", ">", sortBy),
       orderBy("sort_by", "asc"),
       ql(1),
@@ -115,10 +139,10 @@ export async function fetchAdjacentCards(
     return {
       previousCard: prevSnap.empty
         ? null
-        : asCard(prevSnap.docs[0].data(), prevSnap.docs[0].id),
+        : asCard(prevSnap.docs[0].data(), set, prevSnap.docs[0].id),
       nextCard: nextSnap.empty
         ? null
-        : asCard(nextSnap.docs[0].data(), nextSnap.docs[0].id),
+        : asCard(nextSnap.docs[0].data(), set, nextSnap.docs[0].id),
     };
   } catch (e) {
     console.warn("[cards] adjacent query failed (likely missing index):", e);
