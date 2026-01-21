@@ -1,19 +1,20 @@
 // src/App.tsx
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
-import AboutPage from "./pages/AboutPage";
-import CardBackPage from "./pages/CardBackPage";
-import CardDetailPage from "./pages/CardDetailPage";
-import HomePage from "./pages/HomePage";
-import PackArtPage from "./pages/PackArtPage";
-import SeriesPage from "./pages/SeriesPage";
-import SetPage from "./pages/SetPage";
-import TcgSeriesPage from "./pages/TcgSeriesPage";
-import NewsIndex from "./pages/NewsIndex";
-import NewsPostPage from "./pages/NewsPostPage";
+
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const CardBackPage = lazy(() => import("./pages/CardBackPage"));
+const CardDetailPage = lazy(() => import("./pages/CardDetailPage"));
+const HomePage = lazy(() => import("./pages/HomePage"));
+const PackArtPage = lazy(() => import("./pages/PackArtPage"));
+const SeriesPage = lazy(() => import("./pages/SeriesPage"));
+const SetPage = lazy(() => import("./pages/SetPage"));
+const TcgSeriesPage = lazy(() => import("./pages/TcgSeriesPage"));
+const NewsIndex = lazy(() => import("./pages/NewsIndex"));
+const NewsPostPage = lazy(() => import("./pages/NewsPostPage"));
 import {
   AboutPagePath,
   CardBackPath,
@@ -34,19 +35,21 @@ const App: React.FC = () => {
           <Header />
           <main className="grow">
             <Layout>
-              <Routes>
-                <Route path={HomePagePath} element={<HomePage />} />
-                <Route path={SeriesListPath} element={<TcgSeriesPage />} />
-                <Route path={SetListPath} element={<SeriesPage />} />
-                <Route path={CardListPath} element={<SetPage />} />
-                <Route path={CardDetailPath} element={<CardDetailPage />} />
-                <Route path={AboutPagePath} element={<AboutPage />} />
-                <Route path={CardBackPath} element={<CardBackPage />} />
-                <Route path={PackArtPath} element={<PackArtPage />} />
-                <Route path="news" element={<NewsIndex />} />
-                <Route path="news/:slug" element={<NewsPostPage />} />
-                <Route path="*" element={<div>Not found</div>} />
-              </Routes>
+              <Suspense fallback={<div className="p-4">Loading...</div>}>
+                <Routes>
+                  <Route path={HomePagePath} element={<HomePage />} />
+                  <Route path={SeriesListPath} element={<TcgSeriesPage />} />
+                  <Route path={SetListPath} element={<SeriesPage />} />
+                  <Route path={CardListPath} element={<SetPage />} />
+                  <Route path={CardDetailPath} element={<CardDetailPage />} />
+                  <Route path={AboutPagePath} element={<AboutPage />} />
+                  <Route path={CardBackPath} element={<CardBackPage />} />
+                  <Route path={PackArtPath} element={<PackArtPage />} />
+                  <Route path="news" element={<NewsIndex />} />
+                  <Route path="news/:slug" element={<NewsPostPage />} />
+                  <Route path="*" element={<div>Not found</div>} />
+                </Routes>
+              </Suspense>
             </Layout>
           </main>
           <Footer />

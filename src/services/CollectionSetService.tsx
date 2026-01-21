@@ -2,7 +2,7 @@ import { CollectionCard } from "@/types/CollectionCard";
 import { CollectionSet } from "@/types/CollectionSet";
 import { SetAndCard } from "@/types/MergedCollection";
 import { database } from "@/lib/firebase";
-import { collection, getDocs, orderBy, query, where } from "firebase/firestore";
+import { collection, getDocs, orderBy, query, where } from "firebase/firestore/lite";
 
 export const fetchSets = async (shortName: string): Promise<SetAndCard[]> => {
   const setsQuery = query(

@@ -9,7 +9,7 @@ import {
   orderBy,
   QueryConstraint,
   DocumentData,
-} from "firebase/firestore";
+} from "firebase/firestore/lite";
 import type { CollectionCard } from "@/types/CollectionCard";
 import { I18nValue, t } from "@/i18n";
 import { slugify } from "@/utils/RoutePathBuildUtils";

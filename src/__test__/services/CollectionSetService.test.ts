@@ -9,7 +9,7 @@ vi.mock("src/lib/firebase", () => ({
   database: fakeDb,
 }));
 
-vi.mock("firebase/firestore", () => ({
+vi.mock("firebase/firestore/lite", () => ({
   getFirestore: vi.fn(() => fakeDb),
   collection: vi.fn(),
   query: vi.fn(),
@@ -19,7 +19,7 @@ vi.mock("firebase/firestore", () => ({
 }));
 
 let fetchSets: (typeof import("@/services/CollectionSetService"))["fetchSets"];
-let getDocs: (typeof import("firebase/firestore"))["getDocs"];
+let getDocs: (typeof import("firebase/firestore/lite"))["getDocs"];
 
 beforeEach(async () => {
   vi.clearAllMocks();
@@ -29,7 +29,7 @@ beforeEach(async () => {
 beforeEach(async () => {
   vi.clearAllMocks();
   // import mocks & the functions for TS/runtime
-  const fs = await import("firebase/firestore");
+  const fs = await import("firebase/firestore/lite");
   getDocs = fs.getDocs;
 });
 
@@ -53,7 +53,7 @@ describe("fetchSets", () => {
     const seriesShortName = "wm";
     const result = await fetchSets(seriesShortName);
     const { collection, where, orderBy, query } = await import(
-      "firebase/firestore"
+      "firebase/firestore/lite"
     );
     expect(where).toHaveBeenCalledTimes(2);
     expect(query).toHaveBeenCalledTimes(2);
