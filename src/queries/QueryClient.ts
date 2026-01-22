@@ -34,5 +34,4 @@ export function setupQueryPersistence() {
     persister,
     maxAge: TWENTY_FOUR_HOURS, // keep persisted cache 24h
   });
-  queryClient.resetQueries();
 }
