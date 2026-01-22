@@ -78,7 +78,7 @@ const SeriesPage: React.FC = () => {
       {series.logo && <meta property="og:image" content={series.logo} />}
 
       <div className="mb-4 flex flex-col gap-4 sm:flex-row">
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
           <img
             src={series.logo}
             alt={series.name}

@@ -7,7 +7,6 @@ const allCollections = [
   "rarity",
   "series",
   "sets",
-  "type",
 ];
 
 const jsonFilePath = path.join(__dirname, "../data");
