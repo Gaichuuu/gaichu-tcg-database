@@ -88,8 +88,12 @@ export async function fetchCardDetail(
         where("sort_by", "==", sortBy),
         ql(1),
       ]);
-      if (!snap.empty)
-        return asCard(snap.docs[0].data(), set, snap.docs[0].id);
+      if (snap.empty) return null;
+
+      const card = asCard(snap.docs[0].data(), set, snap.docs[0].id);
+      if (toSlug(card.name) === targetSlug) {
+        return card;
+      }
     } catch (e) {
       console.warn("[cards] sort_by query failed (index?):", e);
     }
