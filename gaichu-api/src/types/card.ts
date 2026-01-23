@@ -109,6 +109,9 @@ export interface RawCard {
   effect?: string;
   note?: string;
   strength?: string;
+
+  /** Average eBay sale price (USD), 0 if no data */
+  average_price?: number;
 }
 
 export interface Card extends RawCard {
