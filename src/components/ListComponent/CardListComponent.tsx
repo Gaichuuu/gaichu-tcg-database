@@ -157,11 +157,18 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
               }
             >
               <div className="flex w-full flex-col items-center duration-200 hover:scale-110">
-                <img
-                  src={card.image}
-                  alt={name}
-                  className="border-secondaryBorder block max-h-65 w-full rounded-xl border object-contain transition-transform duration-200"
-                />
+                <div className="relative w-full">
+                  <img
+                    src={card.image}
+                    alt={name}
+                    className="border-secondaryBorder block max-h-65 w-full rounded-xl border object-contain transition-transform duration-200"
+                  />
+                  {card.average_price != null && card.average_price > 0 && (
+                    <span className="absolute top-1 right-1 rounded bg-black/70 px-1.5 py-0.5 text-xs text-white">
+                      ${card.average_price.toFixed(2)}
+                    </span>
+                  )}
+                </div>
                 <p className="mt-0 line-clamp-1 text-center text-sm">{name}</p>
               </div>
             </HoverTooltip>
