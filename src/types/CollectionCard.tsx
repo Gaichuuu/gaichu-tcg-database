@@ -55,6 +55,9 @@ export interface RawCollectionCard {
   cost?: Cost[];
   effect?: string;
   note?: string;
+
+  /** Average eBay sale price (USD), 0 if no data */
+  average_price?: number;
 }
 
 export interface CollectionCard {
@@ -96,6 +99,9 @@ export interface CollectionCard {
   cost?: Cost[];
   effect?: string;
   note?: string;
+
+  /** Average eBay sale price (USD), 0 if no data */
+  average_price?: number;
 }
 
 interface CardSet {

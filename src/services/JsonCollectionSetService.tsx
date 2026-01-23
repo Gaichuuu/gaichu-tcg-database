@@ -129,5 +129,6 @@ const convertToSetAndCard = (
       limit: card.limit,
       cost: card.cost,
       lp: card.lp,
+      average_price: card.average_price,
     })),
 });
