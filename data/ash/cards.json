@@ -46,7 +46,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "064099c6-eb7d-4c5b-a9e0-a089d80ddc38",
@@ -89,7 +90,8 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 0
   },
   {
     "id": "5b29fed5-4552-4877-9d3a-054d715a5471",
@@ -142,7 +144,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "95ca47e0-7803-47f9-9f3a-216b2d04f5fb",
@@ -186,7 +189,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "d2a2b24b-54df-4699-ac72-3c739953954a",
@@ -235,7 +239,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "8a37a53b-f9a2-4372-98e9-8b3e258cfbdf",
@@ -284,7 +289,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "50ee2a9d-73ae-4f32-9271-0850212a24c6",
@@ -333,7 +339,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "e061beb3-523e-4876-9989-3d71e86ea223",
@@ -378,7 +385,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 19.99
   },
   {
     "id": "c682a2d9-bdbc-488b-a644-1e4ec5b0aa24",
@@ -430,7 +438,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "b417b4f4-bd2f-4e54-9ef2-9f07c1cdd79f",
@@ -483,7 +492,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 8.49
   },
   {
     "id": "e91a1cb0-9eb8-4d28-b0cb-1ff85d1cc0a3",
@@ -528,7 +538,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "ec7a1e34-60df-4a91-a9a2-6e8d7cf8b193",
@@ -568,7 +579,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "b6fe2c2a-4a2f-4b3a-8b7e-2e6a7d4e8a12",
@@ -618,7 +630,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 18.19
   },
   {
     "id": "a02b8e83-0a72-4e3e-b3c0-3cf4e26c8a31",
@@ -673,7 +686,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.16
   },
   {
     "id": "8c2a3a5d-3d7e-47a1-86c2-4c2f3e3bf9e0",
@@ -716,7 +730,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "fc2c8f5e-8e2c-4a38-a8cf-5c87a5d0c4b9",
@@ -766,7 +781,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.16
   },
   {
     "id": "b09a0e3f-7039-4ad4-9e3b-fdf12d615f59",
@@ -806,7 +822,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 20
   },
   {
     "id": "eb4fae22-5922-49a8-8df9-891db9f548f1",
@@ -859,7 +876,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.16
   },
   {
     "id": "a7e84ef0-48a5-4a1c-8b15-1b82cf2a2177",
@@ -908,7 +926,8 @@
         "type": "Fighting"
       }
     ],
-    "retreat": []
+    "retreat": [],
+    "average_price": 19.99
   },
   {
     "id": "9e1bc4f8-917d-40b8-86cb-fd50b8e60215",
@@ -954,7 +973,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "a87c7b38-3a73-4e91-8a11-b6c6ad0c1877",
@@ -997,7 +1017,8 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 0
   },
   {
     "id": "b3f8828f-27ac-49ee-88c3-5b63b5681cf1",
@@ -1043,7 +1064,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "dddb7278-6c72-4b4c-a8b9-8fc4d542bc3b",
@@ -1098,7 +1120,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 18.19
   },
   {
     "id": "ab74cb8f-9a9e-4383-b3d0-61b6cf96a5b2",
@@ -1143,7 +1166,8 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 29.99
   },
   {
     "id": "261611d4-772c-46a7-9d7e-df39eea90117",
@@ -1163,7 +1187,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "91a7b5e1-0a52-4a2a-8a5e-6c3a27b3ed45",
@@ -1183,7 +1208,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/25.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/25-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/25-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "a517e82f-372e-4d33-9f39-aaf5dd14e8f8",
@@ -1203,7 +1229,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/26.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/26-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/26-thumb.jpg",
+    "average_price": 11
   },
   {
     "id": "0276be2b-dd12-4c06-85e8-a3a705fec2fd",
@@ -1223,7 +1250,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "86b39467-7170-4daf-a92a-d60323e046e4",
@@ -1243,7 +1271,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "b5b7fa22-9124-4a89-9c02-f2aee89e607b",
@@ -1282,7 +1311,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 20
   },
   {
     "id": "f26c911b-8a04-48b1-9c7e-07a680f12b75",
@@ -1338,7 +1368,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "4cfbcd43-99f5-4a61-b9e0-54e0bb17d04b",
@@ -1393,7 +1424,8 @@
       {
         "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.16
   },
   {
     "id": "c21e6b0b-8345-408a-98ea-9a3dc009ce35",
@@ -1413,7 +1445,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/32.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/32-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/32-thumb.jpg",
+    "average_price": 16.5
   },
   {
     "id": "7f6b6a8c-f1d9-4d2e-9ab3-8a0c1f4f3f21",
@@ -1454,7 +1487,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "862c1a20-5c48-47fc-b3a1-cfb4d71a5cd3",
@@ -1474,7 +1508,8 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/34.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/34-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/34-thumb.jpg",
+    "average_price": 13.39
   },
   {
     "id": "ffbca53a-05c1-4b6d-8a34-daa3f7b46e98",
@@ -1514,7 +1549,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "a1c3efb7-dc40-4b44-9411-1e5d6a5a2f87",
@@ -1550,7 +1586,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "b32967a1-4b1f-48e4-82a7-058a94f24869",
@@ -1586,7 +1623,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "bdbba5fd-fb91-497a-97bb-987b79f21fa7",
@@ -1622,7 +1660,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "e3b1fa9d-4822-4d5a-9d76-5a08b83e8e64",
@@ -1667,7 +1706,8 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 17.16
   },
   {
     "id": "e4b8d067-3a32-47b0-9ffb-0a6116e9b1d2",
@@ -1714,7 +1754,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "8dbd4e8b-dfa2-4e74-82a3-6ce8af1e1e69",
@@ -1761,7 +1802,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "c49a4b7b-54b8-490a-bd9b-0912eaa67a61",
@@ -1808,7 +1850,8 @@
       {
         "costs": ["Colorless", "Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "f2368b4c-1f11-4a36-9f2a-7f68b35de3b7",
@@ -1855,7 +1898,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "7f9beef6-8d2d-4e40-b585-b50d314c6001",
@@ -1894,7 +1938,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "e5cb691d-7845-4f19-8f38-60abe476924d",
@@ -1933,7 +1978,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "5f4c8b63-05e2-42a0-9179-60edcdbd76fb",
@@ -1972,7 +2018,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3",
@@ -2011,7 +2058,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "09a2848d-06f7-46cb-9e14-490b8e04e172",
@@ -2050,7 +2098,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "78a02344-0c51-48ef-b22c-d5892e98ce3e",
@@ -2089,7 +2138,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "b7a33b4a-5a6f-4c6a-8b41-6a10ce78432b",
@@ -2129,7 +2179,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 11.09
   },
   {
     "id": "c1a7e4c5-8f0f-4a96-b2b0-6e3c3c4a1f35",
@@ -2169,7 +2220,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 11.09
   },
   {
     "id": "c8c0b9f7-2f19-4b4b-9f33-feb4fae9ff2e",
@@ -2209,7 +2261,8 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 11.71
   },
   {
     "id": "df1b3086-45b0-4b69-940b-f3670cfb7625",
@@ -2249,6 +2302,7 @@
       {
         "costs": ["Colorless"]
       }
-    ]
+    ],
+    "average_price": 11.8
   }
 ]

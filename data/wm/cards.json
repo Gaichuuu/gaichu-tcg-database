@@ -46,7 +46,8 @@
         "damage": "20",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 23.6
   },
   {
     "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
@@ -84,7 +85,8 @@
         },
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 55.8
   },
   {
     "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
@@ -123,7 +125,8 @@
         "damage": "20",
         "costs": ["Fighting", "Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
@@ -173,7 +176,8 @@
         "damage": "20",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 38.69
   },
   {
     "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
@@ -211,7 +215,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 6.99
   },
   {
     "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
@@ -249,7 +254,8 @@
         },
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 7.99
   },
   {
     "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
@@ -288,7 +294,8 @@
         "damage": "50",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 46.75
   },
   {
     "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
@@ -338,7 +345,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 42
   },
   {
     "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
@@ -377,7 +385,8 @@
         "damage": "10",
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "593a874f-f584-4127-a813-240fbd0953c9",
@@ -427,7 +436,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
@@ -477,7 +487,8 @@
         "damage": "20",
         "costs": ["Fire"]
       }
-    ]
+    ],
+    "average_price": 60
   },
   {
     "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
@@ -515,7 +526,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "31ea2242-1638-4040-ab15-6c7587da4397",
@@ -553,7 +565,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
@@ -603,7 +616,8 @@
         "damage": "90",
         "costs": ["Steel"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
@@ -652,7 +666,8 @@
         },
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 11.99
   },
   {
     "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
@@ -690,7 +705,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 36.99
   },
   {
     "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
@@ -741,7 +757,8 @@
         "damage": "40",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 19.99
   },
   {
     "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
@@ -780,7 +797,8 @@
         "damage": "100",
         "costs": ["Fire"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "fc749318-113e-4087-9c80-b87d5c66b907",
@@ -819,7 +837,8 @@
         "damage": "20",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 67.15
   },
   {
     "id": "c2b7f774-5c77-4e12-9e16-38479c9d3db6",
@@ -869,7 +888,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 9.99
   },
   {
     "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
@@ -919,7 +939,8 @@
         "damage": "90",
         "costs": ["Dragon"]
       }
-    ]
+    ],
+    "average_price": 67.15
   },
   {
     "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
@@ -958,7 +979,8 @@
         "damage": "80",
         "costs": ["Fire", "Water", "Electric"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
@@ -996,7 +1018,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 4.79
   },
   {
     "id": "adf5b6c2-5f0c-44b2-86a3-24c26a030e2b",
@@ -1034,7 +1057,8 @@
         },
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "b62e2c35-74db-4c57-9052-3041abcf758a",
@@ -1072,7 +1096,8 @@
         },
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "c82550d0-3092-4480-b60b-283a3dbab478",
@@ -1121,7 +1146,8 @@
         },
         "costs": ["Dark"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
@@ -1160,7 +1186,8 @@
         "damage": "90",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
@@ -1198,7 +1225,8 @@
         },
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
@@ -1248,7 +1276,8 @@
         "damage": "60",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "123ab3a2-529d-47b4-9a4d-390178d8399d",
@@ -1287,7 +1316,8 @@
         "damage": "100",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
@@ -1325,7 +1355,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
@@ -1363,7 +1394,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 28.59
   },
   {
     "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
@@ -1401,7 +1433,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 6
   },
   {
     "id": "12d9770e-32e2-4766-ab24-a43f86dccc42",
@@ -1439,7 +1472,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 67.15
   },
   {
     "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
@@ -1478,7 +1512,8 @@
         "damage": "20",
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
@@ -1517,7 +1552,8 @@
         "damage": "50",
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 35.48
   },
   {
     "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
@@ -1555,7 +1591,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 37.5
   },
   {
     "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
@@ -1594,7 +1631,8 @@
         "damage": "30",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 561.76
   },
   {
     "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
@@ -1632,7 +1670,8 @@
         },
         "costs": ["Dark"]
       }
-    ]
+    ],
+    "average_price": 192.5
   },
   {
     "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
@@ -1671,7 +1710,8 @@
         "damage": "90",
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 118
   },
   {
     "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
@@ -1710,7 +1750,8 @@
         "damage": "150",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 110
   },
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
@@ -1749,7 +1790,8 @@
         "damage": "150",
         "costs": ["Fire"]
       }
-    ]
+    ],
+    "average_price": 184.24
   },
   {
     "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
@@ -1788,7 +1830,8 @@
         "damage": "150",
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 103
   },
   {
     "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
@@ -1826,7 +1869,8 @@
         },
         "costs": ["Dragon"]
       }
-    ]
+    ],
+    "average_price": 116.15
   },
   {
     "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
@@ -1864,7 +1908,8 @@
         },
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 58.5
   },
   {
     "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
@@ -1902,7 +1947,8 @@
         },
         "costs": ["Dark"]
       }
-    ]
+    ],
+    "average_price": 1041.65
   },
   {
     "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
@@ -1940,7 +1986,8 @@
         },
         "costs": ["Psychic", "Psychic", "Psychic"]
       }
-    ]
+    ],
+    "average_price": 154.17
   },
   {
     "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
@@ -1978,7 +2025,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 163.93
   },
   {
     "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
@@ -2016,7 +2064,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 53.75
   },
   {
     "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
@@ -2055,7 +2104,8 @@
         "damage": "0",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 99.09
   },
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
@@ -2094,7 +2144,8 @@
         "damage": "20",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "27d41ee8-e9af-440b-b633-551140734996",
@@ -2144,7 +2195,8 @@
         "damage": "20",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "37d8dbdb-b12f-4793-a618-3de46d770703",
@@ -2183,7 +2235,8 @@
         "damage": "15",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 4
   },
   {
     "id": "3985e19e-803a-4308-96aa-1f2583fd90c6",
@@ -2222,7 +2275,8 @@
         "damage": "30",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "59ec6746-d088-4af5-8e6e-92989e0ad5b6",
@@ -2261,7 +2315,8 @@
         "damage": "25",
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "6e145bfb-dde8-4836-9e48-7204bdf09a29",
@@ -2300,7 +2355,8 @@
         "damage": "20",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "73dbce8e-1088-4a8b-a07c-fa03aacdac68",
@@ -2339,7 +2395,8 @@
         "damage": "30",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "975927c4-0f15-4aaa-a322-e3f00ce6689d",
@@ -2378,7 +2435,8 @@
         "damage": "50",
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "b7e60ae3-6fdf-4b69-a5b5-18f6e0d70676",
@@ -2417,7 +2475,8 @@
         "damage": "35",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "c60bb931-586b-4078-8aea-5e0edda8e49e",
@@ -2456,7 +2515,8 @@
         "damage": "15",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 4
   },
   {
     "id": "d7603015-ca21-4d7a-a9cb-c6f33a174b97",
@@ -2507,7 +2567,8 @@
         "damage": "20",
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f48bdb77-5685-4bf7-954c-a15ad3970ab7",
@@ -2546,7 +2607,8 @@
         "damage": "40",
         "costs": ["Dark"]
       }
-    ]
+    ],
+    "average_price": 68
   },
   {
     "id": "8384f45d-4c02-4abd-97ad-dcb9d75b5197",
@@ -2585,7 +2647,8 @@
         "damage": "10",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "c4ee4c46-e14a-4124-aa2a-023e64662f5c",
@@ -2624,7 +2687,8 @@
         "damage": "15",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "71d0b53d-8441-45d8-ae17-16b188652307",
@@ -2663,7 +2727,8 @@
         "damage": "10",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "31c69bc1-8aa2-4b42-b7f3-22727c9ff208",
@@ -2713,7 +2778,8 @@
         "damage": "25",
         "costs": ["Fire"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "1944e6c4-c24c-4204-baaa-69c2bbc68586",
@@ -2751,7 +2817,8 @@
         },
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "240b6653-26aa-496a-a004-8113134a102b",
@@ -2790,7 +2857,8 @@
         "damage": "25",
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "daa74bfb-22b4-4a45-a890-5229e4ed508c",
@@ -2829,7 +2897,8 @@
         "damage": "100",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "a981c478-222a-4e6e-9944-4cf4477460ab",
@@ -2867,7 +2936,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "9cb24990-f8c0-4c14-941b-dc7134b0b5ee",
@@ -2906,7 +2976,8 @@
         "damage": "5",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 18
   },
   {
     "id": "461a5ae6-d58b-4f49-b370-1b636272bcf7",
@@ -2945,7 +3016,8 @@
         "damage": "10",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "c1914b5c-6dbd-4817-a613-41175b5017f3",
@@ -2995,7 +3067,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 7
   },
   {
     "id": "1f972c13-70f4-40cc-8df9-ae00ac524d01",
@@ -3033,7 +3106,8 @@
         },
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "9273f742-5c04-4877-82fb-1528c112b22e",
@@ -3071,7 +3145,8 @@
         },
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 7.23
   },
   {
     "id": "e37f524c-3dee-4346-b465-a99e5b85f0aa",
@@ -3122,7 +3197,8 @@
         "damage": "30",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "d29f94ee-3dc6-4bee-a0b5-b453c3933bc0",
@@ -3161,7 +3237,8 @@
         "damage": "35",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "6b9d86c3-b0ed-4934-be6d-92ba9c2f4080",
@@ -3212,7 +3289,8 @@
         "damage": "15",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f5306450-5340-4b06-aa86-0c328571eed0",
@@ -3250,7 +3328,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "40efda17-7356-492d-bfd7-e256c8a0d0e3",
@@ -3289,7 +3368,8 @@
         "damage": "35",
         "costs": ["Fire"]
       }
-    ]
+    ],
+    "average_price": 5
   },
   {
     "id": "a6602cc5-77db-44c3-affd-dac464dfc56f",
@@ -3328,7 +3408,8 @@
         "damage": "?",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 20
   },
   {
     "id": "c0a67fb1-2c93-4483-b233-4c3cbbc345f5",
@@ -3367,7 +3448,8 @@
         "damage": "60",
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 7
   },
   {
     "id": "ec6bd531-ba02-4fd4-9a70-3cf17804021e",
@@ -3406,7 +3488,8 @@
         "damage": "30",
         "costs": ["Fighting"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "de9f22b4-2442-4e7e-a0b9-86782267068a",
@@ -3445,7 +3528,8 @@
         "damage": "30",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "a6587285-00e7-4e86-8179-25f36e2fb041",
@@ -3484,7 +3568,8 @@
         "damage": "30",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 25
   },
   {
     "id": "e433ff5d-c206-4f65-a2cf-2a663ba79465",
@@ -3523,7 +3608,8 @@
         "damage": "35",
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "45555f96-c9aa-454f-b43d-d7fcd85c13c9",
@@ -3574,7 +3660,8 @@
         "damage": "20",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "edd88d82-d627-4bd3-b5eb-a6a738e0c721",
@@ -3612,7 +3699,8 @@
         },
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 199.99
   },
   {
     "id": "dc57bb94-44e2-4289-8924-79a446d73a7e",
@@ -3651,7 +3739,8 @@
         "damage": "10",
         "costs": ["Fire"]
       }
-    ]
+    ],
+    "average_price": 125
   },
   {
     "id": "a7e13ccd-96b8-46eb-ae9f-5536b48263fd",
@@ -3689,7 +3778,8 @@
         },
         "costs": ["Grass"]
       }
-    ]
+    ],
+    "average_price": 112.5
   },
   {
     "id": "b6090d5b-3c41-4434-b19c-aa5718c53c96",
@@ -3728,7 +3818,8 @@
         "damage": "10",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "68dec82e-45f0-4f10-89f4-984db75598bd",
@@ -3766,7 +3857,8 @@
         },
         "costs": ["Dark"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "cba6f316-a88a-42a4-bf5d-2e38b102b93a",
@@ -3805,7 +3897,8 @@
         "damage": "40",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 50
   },
   {
     "id": "696464c9-9c3c-44a1-88bf-0ba0dc7f2779",
@@ -3844,7 +3937,8 @@
         "damage": "100",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "4d41c46d-7a80-45c4-abfc-750a89704361",
@@ -3883,7 +3977,8 @@
         "damage": "60",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 160
   },
   {
     "id": "d53edbd7-066d-49b5-b9fb-5db0a54e887e",
@@ -3922,7 +4017,8 @@
         "damage": "60",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f85c3ce4-2faf-4a46-9adb-f76dfcaa59a1",
@@ -3961,7 +4057,8 @@
         "damage": "100",
         "costs": ["Normal"]
       }
-    ]
+    ],
+    "average_price": 92.5
   },
   {
     "id": "e7c55d0a-1ae9-4f3e-9a99-f08395970d23",
@@ -4000,7 +4097,8 @@
         "damage": "100",
         "costs": ["Electric"]
       }
-    ]
+    ],
+    "average_price": 105
   },
   {
     "id": "6dfc5599-ab49-4b5b-af91-fba7c10d68ed",
@@ -4039,7 +4137,8 @@
         "damage": "90",
         "costs": ["Water"]
       }
-    ]
+    ],
+    "average_price": 80
   },
   {
     "id": "0b636cc5-ecd5-4346-a9a5-6c1f19c81621",
@@ -4078,6 +4177,7 @@
         "damage": "20",
         "costs": ["Psychic"]
       }
-    ]
+    ],
+    "average_price": 50
   }
 ]
