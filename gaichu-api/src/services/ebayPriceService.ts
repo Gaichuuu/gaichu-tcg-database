@@ -27,8 +27,13 @@ const SERIES_NAME_MAP: Record<string, string> = {
 
 /** Map set short names to eBay-friendly search terms
  * eBay sellers use product names like "Generation One" rather than internal names like "series1"
+ * Uses eBay OR syntax: (term1,term2) matches either variant
  */
 const SET_NAME_MAP: Record<string, Record<string, string>> = {
+  wm: {
+    // WM sellers use both "set 1" and "series 1" interchangeably
+    set1: '("set 1","series 1")',
+  },
   ash: {
     series1: '"generation one"',
     og: '"generation one"',
@@ -38,7 +43,8 @@ const SET_NAME_MAP: Record<string, Record<string, string>> = {
 };
 
 /** Default keywords to exclude from searches */
-// Keep exclusions minimal to avoid filtering out valid listings
+// Keep exclusions minimal to avoid
+// filtering out valid listings
 // The API seems to do word-level matching, so "complete set" might also exclude "Set 1"
 const DEFAULT_EXCLUDED_KEYWORDS = [
   "lot",
@@ -52,6 +58,45 @@ const DEFAULT_EXCLUDED_KEYWORDS = [
 const SERIES_EXCLUDED_KEYWORDS: Record<string, string[]> = {
   // "first" excludes first print/edition cards which are priced differently
   wm: ["first"],
+  // "ditto" excludes ditto variants for non-ditto cards (except #44 which ARE ditto cards)
+  ash: ["ditto"],
+};
+
+/** ASH card name overrides for eBay search
+ * Maps internal card names to more searchable eBay terms
+ */
+const ASH_CARD_NAME_MAP: Record<string, string> = {
+  // "______'s Pikachu" is better known as "Birthday Pikachu" on eBay
+  "______'s Pikachu": '"birthday pikachu"',
+};
+
+/** Card-specific search name overrides
+ * Key format: "series-set-number" (e.g., "ash-series1-0")
+ * Used when the default card name needs to be replaced entirely
+ */
+const CARD_NAME_OVERRIDES: Record<string, string> = {
+  // ASH Charizard #0 is the Nagaba promo
+  "ash-series1-0": "Charizard Nagaba",
+  // ASH Gen 1 cards that need specific search terms
+  "ash-series1-2": "Charizard #2",
+  "ash-series1-10": "scream pikachu",
+  "ash-series1-18": "bubble mew",
+  "ash-series1-21": "pikachu #21",
+  "ash-series1-29": "eeveelutions",
+  "ash-series1-31": "charizard #31",
+  // ASH Poncho Pikachu cards (40-43)
+  "ash-series1-40": "poncho charizard",
+  "ash-series1-41": "poncho mega charizard",
+  "ash-series1-42": "poncho gyarados",
+  "ash-series1-43": "poncho lucario",
+};
+
+/** Card-specific search name overrides by card ID
+ * Used when multiple cards share the same number and need different search terms
+ */
+const CARD_ID_OVERRIDES: Record<string, string> = {
+  // ASH Ditto secret rare
+  "78a02344-0c51-48ef-b22c-d5892e98ce3e": "ditto secret",
 };
 
 /** Card-specific excluded keywords
@@ -60,6 +105,10 @@ const SERIES_EXCLUDED_KEYWORDS: Record<string, string[]> = {
 const CARD_EXCLUDED_KEYWORDS: Record<string, string[]> = {
   // WM Set 1 #7 (Raichu) - exclude "Alolan" to avoid Alolan Raichu listings
   "wm-set1-7": ["Alolan"],
+  // WM Set 1 #38 (Pikachu) - exclude "signed" to avoid autographed cards
+  "wm-set1-38": ["signed"],
+  // ASH #40 (Poncho Charizard) - exclude "mega" to avoid mega charizard variant
+  "ash-series1-40": ["mega"],
 };
 
 /**
@@ -67,6 +116,17 @@ const CARD_EXCLUDED_KEYWORDS: Record<string, string[]> = {
  * Handles series-specific formatting
  */
 function getSearchCardName(card: Card): string {
+  // Check for card ID overrides first (for cards sharing the same number)
+  if (CARD_ID_OVERRIDES[card.id]) {
+    return CARD_ID_OVERRIDES[card.id];
+  }
+
+  // Check for card-specific overrides (e.g., "ash-series1-0" -> "Charizard Nagaba")
+  const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
+  if (CARD_NAME_OVERRIDES[cardKey]) {
+    return CARD_NAME_OVERRIDES[cardKey];
+  }
+
   let cardName: string;
 
   if (card.series_short_name === "ash") {
@@ -78,9 +138,15 @@ function getSearchCardName(card: Card): string {
         ? card.name
         : card.name.en || card.name.ja || "";
 
-    // Remove ? from card names for search (e.g., "Pikachu?" becomes "Pikachu")
+    // Check for card name overrides first (e.g., "______'s Pikachu" -> "birthday pikachu")
+    if (ASH_CARD_NAME_MAP[cardName]) {
+      return ASH_CARD_NAME_MAP[cardName];
+    }
+
+    // Ditto cards end with "?" - include "ditto" in search and remove the "?"
+    // e.g., "Pikachu?" becomes "Pikachu ditto"
     if (cardName.endsWith("?")) {
-      cardName = cardName.slice(0, -1);
+      cardName = `${cardName.slice(0, -1)} ditto`;
     }
   } else {
     // For other series, use parody name if available (what eBay sellers actually list)
@@ -144,14 +210,18 @@ export function buildSearchQuery(card: Card): string {
   }
 
   // 3. Card number identifier (series-specific format)
-  const numberIdentifier = getCardNumberIdentifier(card);
-  if (numberIdentifier) {
-    parts.push(numberIdentifier);
+  // ASH: Skip numbering - sellers don't consistently use it
+  if (card.series_short_name !== "ash") {
+    const numberIdentifier = getCardNumberIdentifier(card);
+    if (numberIdentifier) {
+      parts.push(numberIdentifier);
+    }
   }
 
   // 4. Set identifier for specificity
   //    Use SET_NAME_MAP if available, otherwise convert "set1" to "set 1" format
-  if (card.set_short_name) {
+  //    ASH: Skip set name - sellers don't consistently use it
+  if (card.set_short_name && card.series_short_name !== "ash") {
     const seriesSetMap = SET_NAME_MAP[card.series_short_name];
     const setName =
       seriesSetMap?.[card.set_short_name] ||
@@ -174,7 +244,13 @@ export function getExcludedKeywords(card?: Card): string {
   // Add series-specific exclusions
   const seriesExclusions = SERIES_EXCLUDED_KEYWORDS[card.series_short_name];
   if (seriesExclusions) {
-    keywords.push(...seriesExclusions);
+    // ASH #44 cards ARE ditto cards, so don't exclude "ditto" for them
+    const isDittoCard =
+      card.series_short_name === "ash" && card.number === 44;
+    const filteredExclusions = isDittoCard
+      ? seriesExclusions.filter((kw) => kw !== "ditto")
+      : seriesExclusions;
+    keywords.push(...filteredExclusions);
   }
 
   // Add card-specific exclusions (key format: "series-set-number")
