@@ -1,6 +1,6 @@
-// src/App.tsx
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
@@ -35,8 +35,9 @@ const App: React.FC = () => {
           <Header />
           <main className="grow">
             <Layout>
-              <Suspense fallback={<div className="p-4">Loading...</div>}>
-                <Routes>
+              <ErrorBoundary>
+                <Suspense fallback={<div className="p-4">Loading...</div>}>
+                  <Routes>
                   <Route path={HomePagePath} element={<HomePage />} />
                   <Route path={SeriesListPath} element={<TcgSeriesPage />} />
                   <Route path={SetListPath} element={<SeriesPage />} />
@@ -49,7 +50,8 @@ const App: React.FC = () => {
                   <Route path="news/:slug" element={<NewsPostPage />} />
                   <Route path="*" element={<div>Not found</div>} />
                 </Routes>
-              </Suspense>
+                </Suspense>
+              </ErrorBoundary>
             </Layout>
           </main>
           <Footer />
