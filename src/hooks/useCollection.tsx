@@ -1,4 +1,3 @@
-// src/hooks/useCollection.tsx
 import { fetchSeries } from "@/services/CollectionSeriesService";
 import { fetchSets } from "@/services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";

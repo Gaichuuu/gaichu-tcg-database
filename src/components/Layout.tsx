@@ -1,4 +1,3 @@
-// src/components/Layout.tsx
 import React from "react";
 import Breadcrumbs from "./Breadcrumbs";
 

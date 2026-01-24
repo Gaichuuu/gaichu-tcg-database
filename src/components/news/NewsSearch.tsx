@@ -1,4 +1,3 @@
-// src/components/news/NewsSearch.tsx
 import { useEffect, useState } from "react";
 import { useQueryParam } from "@/hooks/useQueryParam";
 

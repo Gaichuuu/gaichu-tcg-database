@@ -1,4 +1,3 @@
-// src/components/ListComponent/CardListComponent.tsx
 import { CollectionCard } from "@/types/CollectionCard";
 import React from "react";
 import IconText from "@/components/IconText";

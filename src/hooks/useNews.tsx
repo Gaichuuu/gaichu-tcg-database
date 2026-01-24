@@ -1,4 +1,3 @@
-// src/hooks/useNews.tsx
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import {
   fetchLatestNews,

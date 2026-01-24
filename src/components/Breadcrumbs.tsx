@@ -1,4 +1,3 @@
-// src/components/Breadcrumbs.tsx
 import React from "react";
 import { FaBug } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";

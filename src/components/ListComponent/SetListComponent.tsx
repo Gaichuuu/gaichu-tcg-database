@@ -1,4 +1,3 @@
-// src/components/ListComponent/SetListComponent.tsx
 import React from "react";
 import Tile from "@/components/TileComponents/Tile";
 import type { CollectionSet } from "@/types/CollectionSet";

@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa";

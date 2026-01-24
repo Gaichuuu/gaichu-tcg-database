@@ -1,4 +1,3 @@
-// src/components/PageStates.tsx
 import React from "react";
 
 interface PageStateProps {

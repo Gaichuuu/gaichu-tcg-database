@@ -1,5 +1,3 @@
-// src/components/news/Scale.tsx
-
 type Props = {
   score?: number;
   label?: string;

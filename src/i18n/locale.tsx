@@ -1,4 +1,3 @@
-// src/i18n/locale.tsx
 import React, { useMemo, useState, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import { type Locale, DEFAULT_LOCALE } from "./t";

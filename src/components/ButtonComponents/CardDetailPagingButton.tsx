@@ -1,4 +1,3 @@
-// src/components/ButtonComponents/CardDetailPagingButton.tsx
 import React from "react";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 import { CollectionCard } from "@/types/CollectionCard";

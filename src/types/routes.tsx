@@ -1,4 +1,3 @@
-// src/types/routes.ts
 export type CollectionParamKeys =
   | "seriesShortName"
   | "setShortName"
