@@ -9,9 +9,13 @@
     },
     "parody": "Mudkip",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/01-thumb.jpg",
@@ -44,10 +48,12 @@
           "ja": "相手に水を吐きかける。"
         },
         "damage": "20",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
-    "average_price": 23.6
+    "average_price": 27.11
   },
   {
     "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
@@ -59,9 +65,13 @@
     },
     "parody": "Psyduck",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/02.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/02-thumb.jpg",
@@ -83,10 +93,12 @@
           "en": "Forget everything that is happening right now. This somehow increases special defense. Editor's note: I do this all the time, but my special defense never goes up.",
           "ja": "今起きていることをすべて忘れてしまう。これにより、なぜか特防が上がる。私はいつもこれをやっていますが、特防が上がることはありません。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
-    "average_price": 55.8
+    "average_price": 60.5
   },
   {
     "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
@@ -98,9 +110,13 @@
     },
     "parody": "Larvitar",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/03.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/03-thumb.jpg",
@@ -123,10 +139,13 @@
           "ja": "岩石を拾って相手に投げつける。高校時代によく使われた技だ。"
         },
         "damage": "20",
-        "costs": ["Fighting", "Normal"]
+        "costs": [
+          "Fighting",
+          "Normal"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 19
   },
   {
     "id": "51baf3c3-87fa-4ea1-8c81-073797930671",
@@ -138,9 +157,13 @@
     },
     "parody": "Jigglypuff",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set1/04.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/04-thumb.jpg",
@@ -162,7 +185,9 @@
           "en": "It sings a variety of songs that are popular among young people today.",
           "ja": "今、若者に人気のある様々な歌を歌う。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -174,10 +199,12 @@
           "ja": "ピンクの小さな手で相手をひっぱたく。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 38.69
+    "average_price": 35.59
   },
   {
     "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
@@ -189,9 +216,13 @@
     },
     "parody": "Metapod",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/05.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/05-thumb.jpg",
@@ -213,10 +244,12 @@
           "en": "Becomes hard.",
           "ja": "硬くなる。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 6.99
+    "average_price": 11.59
   },
   {
     "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
@@ -228,9 +261,13 @@
     },
     "parody": "Magnemite",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/06.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/06-thumb.jpg",
@@ -252,10 +289,12 @@
           "en": "An attack that paralyzes the target with a wave of electricity.",
           "ja": "電気の波動で対象を麻痺させる攻撃。"
         },
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
-    "average_price": 7.99
+    "average_price": 9
   },
   {
     "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
@@ -267,9 +306,13 @@
     },
     "parody": "Raichu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set1/07.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/07-thumb.jpg",
@@ -292,10 +335,12 @@
           "ja": "電気でパンチをパワーアップさせ、敵を殴る。腕が小さいので、この攻撃はよく外れる。"
         },
         "damage": "50",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
-    "average_price": 46.75
+    "average_price": 34.99
   },
   {
     "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
@@ -307,9 +352,13 @@
     },
     "parody": "Eevee",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/08.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/08-thumb.jpg",
@@ -332,7 +381,9 @@
           "ja": "長い爪の指で相手を引っ掻く。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -343,10 +394,12 @@
           "en": "A terrifying attack that slowly sucks the life from the opponent, eventually leaving them a corpse.",
           "ja": "相手の命を少しずつ吸い取り、最後は死体になってしまう恐ろしい攻撃。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 42
+    "average_price": 32.52
   },
   {
     "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
@@ -358,9 +411,13 @@
     },
     "parody": "Bulbasaur",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/09.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/09-thumb.jpg",
@@ -383,10 +440,12 @@
           "ja": "相手の命を少しずつ吸い取り、最後は死体になってしまう恐ろしい攻撃。"
         },
         "damage": "10",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 27.42
   },
   {
     "id": "593a874f-f584-4127-a813-240fbd0953c9",
@@ -398,9 +457,13 @@
     },
     "parody": "Squirtle",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/10.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/10-thumb.jpg",
@@ -423,7 +486,9 @@
           "ja": "泡を吹くのが好き。なかなかかわいい。"
         },
         "damage": "20",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       },
       {
         "name": {
@@ -434,10 +499,12 @@
           "en": "Spins in a circle. Also very cute.",
           "ja": "円を描くように回転する。これもとてもかわいい。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 55
   },
   {
     "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
@@ -449,9 +516,13 @@
     },
     "parody": "Charmander",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/11.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/11-thumb.jpg",
@@ -473,7 +544,9 @@
           "en": "Stare at the opponent with contempt.",
           "ja": "相手を軽蔑したような目で見る。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -485,10 +558,12 @@
           "ja": "弱火攻撃。"
         },
         "damage": "20",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ],
-    "average_price": 60
+    "average_price": 53.33
   },
   {
     "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
@@ -500,9 +575,13 @@
     },
     "parody": "Wurmple",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/12.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/12-thumb.jpg",
@@ -524,7 +603,9 @@
           "en": "Shoots silk threads around the opponent, lowering their speed.",
           "ja": "絹でできた糸を相手の周囲に発射し、相手の素早さを下げる。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -539,9 +620,13 @@
     },
     "parody": "Chansey",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/13.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/13-thumb.jpg",
@@ -563,10 +648,12 @@
           "en": "Lay and eat boiled eggs. To be honest, it's very unpleasant.",
           "ja": "卵を産んで食べます。正直なところ、非常に不愉快である。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 14.99
   },
   {
     "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
@@ -578,9 +665,13 @@
     },
     "parody": "Scizor",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/14-thumb.jpg",
@@ -602,7 +693,9 @@
           "en": "Dance with swords. Do not use at home.",
           "ja": "剣を使ってダンスをします。自宅では使わないでください。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -614,7 +707,9 @@
           "ja": "自分の頭で相手を攻撃する。"
         },
         "damage": "90",
-        "costs": ["Steel"]
+        "costs": [
+          "Steel"
+        ]
       }
     ],
     "average_price": 0
@@ -629,9 +724,13 @@
     },
     "parody": "Butterfree",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set1/15.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/15-thumb.jpg",
@@ -653,7 +752,9 @@
           "en": "Causes a poison status on the opponent.",
           "ja": "相手を毒状態にする。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       },
       {
         "name": {
@@ -664,10 +765,12 @@
           "en": "Makes the opponent faint.",
           "ja": "相手を気絶させる。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
-    "average_price": 11.99
+    "average_price": 13.47
   },
   {
     "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
@@ -679,9 +782,13 @@
     },
     "parody": "Pidgey",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set1/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/16-thumb.jpg",
@@ -703,10 +810,12 @@
           "en": "Kicks sand into the opponent's eyes and runs away. A truly cowardly move.",
           "ja": "砂を相手の目に蹴りつけて逃走する。まさに卑怯な技。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 36.99
+    "average_price": 21.31
   },
   {
     "id": "5319a7d3-c43d-4429-bf48-85f67cbccf48",
@@ -718,9 +827,13 @@
     },
     "parody": "Totodile",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/17.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/17-thumb.jpg",
@@ -743,7 +856,9 @@
           "ja": "相手に噛みつく。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -755,10 +870,12 @@
           "ja": "おもちゃ屋で買った水鉄砲を取り出し、相手に浴びせかける。"
         },
         "damage": "40",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
-    "average_price": 19.99
+    "average_price": 20.1
   },
   {
     "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
@@ -770,9 +887,13 @@
     },
     "parody": "Torchic",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/18.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/18-thumb.jpg",
@@ -795,10 +916,12 @@
           "ja": "非常に強力な火炎放射攻撃。経験豊富な最強のポケモンのみが繰り出すことができる技。"
         },
         "damage": "100",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 11
   },
   {
     "id": "fc749318-113e-4087-9c80-b87d5c66b907",
@@ -810,9 +933,13 @@
     },
     "parody": "Gastly",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/19.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/19-thumb.jpg",
@@ -835,10 +962,12 @@
           "ja": "相手をなめる。中にはこれを喜ぶポケモンもいるので注意。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 67.15
+    "average_price": 31.38
   },
   {
     "id": "c2b7f774-5c77-4e12-9e16-38479c9d3db6",
@@ -850,9 +979,13 @@
     },
     "parody": "Dratini",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/20.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/20-thumb.jpg",
@@ -875,7 +1008,9 @@
           "ja": "尻尾で相手を攻撃する。"
         },
         "damage": "40",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       },
       {
         "name": {
@@ -886,10 +1021,12 @@
           "en": "Stares intently at the opponent.",
           "ja": "相手をじっと見る。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 9.99
+    "average_price": 13.09
   },
   {
     "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
@@ -901,9 +1038,13 @@
     },
     "parody": "Dragonair",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set1/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/21-thumb.jpg",
@@ -925,7 +1066,9 @@
           "en": "It performs a dance that changes the weather.",
           "ja": "天候を変化させるダンスをする。"
         },
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       },
       {
         "name": {
@@ -937,10 +1080,12 @@
           "ja": "ドラゴンのような動きで相手に突進する。"
         },
         "damage": "90",
-        "costs": ["Dragon"]
+        "costs": [
+          "Dragon"
+        ]
       }
     ],
-    "average_price": 67.15
+    "average_price": 30.89
   },
   {
     "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
@@ -952,9 +1097,13 @@
     },
     "parody": "Porygon",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/22.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/22-thumb.jpg",
@@ -977,10 +1126,14 @@
           "ja": "複数の元素で構成されたビームを放つ。"
         },
         "damage": "80",
-        "costs": ["Fire", "Water", "Electric"]
+        "costs": [
+          "Fire",
+          "Water",
+          "Electric"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 11
   },
   {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
@@ -992,9 +1145,13 @@
     },
     "parody": "Horsea",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/23.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/23-thumb.jpg",
@@ -1016,7 +1173,9 @@
           "en": "It creates a cloud of black smoke. This is a technique that the Pokémon learned by observing the ninja.",
           "ja": "黒煙のような雲を発生させる。ポケモンが忍者を観察して覚えた技である。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 4.79
@@ -1031,9 +1190,13 @@
     },
     "parody": "Diglett",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/24.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/24-thumb.jpg",
@@ -1055,10 +1218,12 @@
           "en": "Digs a hole.",
           "ja": "穴を掘る。"
         },
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 8.51
   },
   {
     "id": "b62e2c35-74db-4c57-9052-3041abcf758a",
@@ -1070,9 +1235,13 @@
     },
     "parody": "Oddish",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set1/25.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/25-thumb.jpg",
@@ -1094,10 +1263,12 @@
           "en": "Its body grows larger. Who needs protein powder when you’re a plant? Not a bad trick.",
           "ja": "体が大きくなる。プロテインパウダーが必要なのは誰だ？奇抜ではない。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 7.65
   },
   {
     "id": "c82550d0-3092-4480-b60b-283a3dbab478",
@@ -1109,9 +1280,13 @@
     },
     "parody": "Vulpix",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/26-thumb.jpg",
@@ -1133,7 +1308,9 @@
           "en": "Attacks the opponent and burns them.",
           "ja": "相手を攻撃し、火傷を負わせる。"
         },
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       },
       {
         "name": {
@@ -1144,10 +1321,12 @@
           "en": "It's resentful of the person who didn't send a happy birthday email.",
           "ja": "誕生日おめでとうメールを送らなかった相手を恨んでいる。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 18.87
   },
   {
     "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
@@ -1159,9 +1338,13 @@
     },
     "parody": "Lapras",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/27.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/27-thumb.jpg",
@@ -1184,10 +1367,12 @@
           "ja": "波乗りを得意とし、その技で仲間を感動させる。"
         },
         "damage": "90",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 14.48
   },
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
@@ -1199,9 +1384,13 @@
     },
     "parody": "Abra",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/28.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/28-thumb.jpg",
@@ -1223,10 +1412,12 @@
           "en": "To instantly teleport to another location. Also known as teleportation.",
           "ja": "瞬時に別の場所にテレポートする。瞬間移動とも呼ばれる。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 15.5
   },
   {
     "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
@@ -1238,9 +1429,13 @@
     },
     "parody": "Snorlax",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/wm/set1/29.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/29-thumb.jpg",
@@ -1262,7 +1457,9 @@
           "en": "Falls asleep. Snorlax is good at this move.",
           "ja": "眠りについてしまう。カビゴンはこの技を得意としています。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -1274,10 +1471,12 @@
           "ja": "眠っている間に攻撃する。"
         },
         "damage": "60",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 72.71
   },
   {
     "id": "123ab3a2-529d-47b4-9a4d-390178d8399d",
@@ -1289,9 +1488,13 @@
     },
     "parody": "Drifloon",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set1/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/30-thumb.jpg",
@@ -1314,10 +1517,12 @@
           "ja": "ユーザーが爆発し、自分や他人を傷つける。風船が割れるのが怖い。"
         },
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 12.33
   },
   {
     "id": "faea605a-34a9-419f-a3e8-495d7bd66ad8",
@@ -1329,9 +1534,13 @@
     },
     "parody": "Togepi",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "2",
     "image": "https://gaichu.b-cdn.net/wm/set1/31.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/31-thumb.jpg",
@@ -1353,10 +1562,12 @@
           "en": "When it yawns, the opponent will yawn too.",
           "ja": "あくびをすると相手もあくびをする。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 18.4
   },
   {
     "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
@@ -1368,9 +1579,13 @@
     },
     "parody": "Mimikyu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/32-thumb.jpg",
@@ -1392,10 +1607,12 @@
           "en": "Copy the opponent.",
           "ja": "相手をコピーする。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 28.59
+    "average_price": 28.49
   },
   {
     "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
@@ -1407,9 +1624,13 @@
     },
     "parody": "Golbat",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/33.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/33-thumb.jpg",
@@ -1431,10 +1652,12 @@
           "en": "It produces a very annoying noise.",
           "ja": "使用者はひどく迷惑な音を出す。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 6
+    "average_price": 7.33
   },
   {
     "id": "12d9770e-32e2-4766-ab24-a43f86dccc42",
@@ -1446,9 +1669,13 @@
     },
     "parody": "Bidoof",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/34-thumb.jpg",
@@ -1470,10 +1697,12 @@
           "en": "To mentally and psychologically torment the opponent until they feel uncomfortable.",
           "ja": "相手が嫌な思いをするまで精神的、心理的に苛める。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 67.15
+    "average_price": 30.26
   },
   {
     "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
@@ -1485,9 +1714,13 @@
     },
     "parody": "Litten",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/35-thumb.jpg",
@@ -1510,10 +1743,12 @@
           "ja": "相手を一度だけでなく、二度蹴る。使いこなすのが難しい技。"
         },
         "damage": "20",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
-    "average_price": 0
+    "average_price": 12.23
   },
   {
     "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
@@ -1525,9 +1760,13 @@
     },
     "parody": "Cubone",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set1/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/36-thumb.jpg",
@@ -1550,10 +1789,12 @@
           "ja": "相手に突進し、骨で攻撃する。"
         },
         "damage": "50",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
-    "average_price": 35.48
+    "average_price": 35.24
   },
   {
     "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
@@ -1565,9 +1806,13 @@
     },
     "parody": "Ditto",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/37.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/37-thumb.jpg",
@@ -1589,10 +1834,12 @@
           "en": "Transform into the opponent.",
           "ja": "相手に変身する。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 37.5
+    "average_price": 31.38
   },
   {
     "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
@@ -1604,9 +1851,13 @@
     },
     "parody": "Pikachu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/38.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/38-thumb.jpg",
@@ -1629,10 +1880,12 @@
           "ja": "ピカチュウが相手に与える電気ショックは、トースター並みの強さ"
         },
         "damage": "30",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
-    "average_price": 561.76
+    "average_price": 396.81
   },
   {
     "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
@@ -1644,9 +1897,13 @@
     },
     "parody": "Umbreon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/wm/set1/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/39-thumb.jpg",
@@ -1668,7 +1925,9 @@
           "en": "This attack makes the opponent question reality. Forces them to ask deep philosophical questions, like which arm-rest in a movie theater is theirs.",
           "ja": "この攻撃は、ターゲットに現実を疑わせます。相手は、映画館でどの肘掛が自分のものなのか、といった哲学的な深い問いかけを考えてしまいます。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ],
     "average_price": 192.5
@@ -1683,9 +1942,13 @@
     },
     "parody": "Espeon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/40.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/40-thumb.jpg",
@@ -1708,7 +1971,9 @@
           "ja": "サイキックエネルギーによる攻撃で、相手に強烈で不快なサイケデリックな体験をさせる。バッドトリップとも呼ばれる。"
         },
         "damage": "90",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
     "average_price": 118
@@ -1723,9 +1988,13 @@
     },
     "parody": "Blastoise",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set1/41.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/41-thumb.jpg",
@@ -1748,10 +2017,12 @@
           "ja": "強力な水流を相手に浴びせる。車やトラックの清掃にも有効。"
         },
         "damage": "150",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
-    "average_price": 110
+    "average_price": 117.85
   },
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
@@ -1763,9 +2034,13 @@
     },
     "parody": "Charizard",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/42-thumb.jpg",
@@ -1788,10 +2063,12 @@
           "ja": "強力な炎を放つ。大ダメージを与えることができるが、スモアの材料にもなる。"
         },
         "damage": "150",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ],
-    "average_price": 184.24
+    "average_price": 228.71
   },
   {
     "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
@@ -1803,9 +2080,13 @@
     },
     "parody": "Venusaur",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/wm/set1/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/43-thumb.jpg",
@@ -1828,7 +2109,9 @@
           "ja": "太陽から集めたエネルギーで相手を攻撃する。ビタミンDを浴びせ、日焼けさせる。"
         },
         "damage": "150",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
     "average_price": 103
@@ -1843,9 +2126,13 @@
     },
     "parody": "Dragonite",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/wm/set1/44.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/44-thumb.jpg",
@@ -1867,10 +2154,12 @@
           "en": "The user performs a dance that increases their attack power and speed. The effect lasts for up to 30 minutes, requiring multiple costume changes.",
           "ja": "使用者は攻撃力とスピードが上がる舞をする。最大で30分の効果があり、何度も衣装替えをする必要がある。"
         },
-        "costs": ["Dragon"]
+        "costs": [
+          "Dragon"
+        ]
       }
     ],
-    "average_price": 116.15
+    "average_price": 112.69
   },
   {
     "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
@@ -1882,9 +2171,13 @@
     },
     "parody": "Alolan Raichu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set1/45.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/45-thumb.jpg",
@@ -1906,10 +2199,12 @@
           "en": "Uses tarot cards to predict the future. Can also channel your dead grandma ($100).",
           "ja": "タロットカードを使って、相手の未来を予言します。また、死んだおばあちゃんとチャネリングすることもできる（100ドル）。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
-    "average_price": 58.5
+    "average_price": 57.33
   },
   {
     "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
@@ -1921,9 +2216,13 @@
     },
     "parody": "Gengar",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set1/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/46-thumb.jpg",
@@ -1945,10 +2244,12 @@
           "en": "This technique inflicts bad luck on the opponent. This includes various types of misfortune, such as being hit by lightning or being stuck in traffic.",
           "ja": "この技は相手に不運を与えます。雷に打たれる、渋滞に巻き込まれるなど、さまざまな運があります。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ],
-    "average_price": 1041.65
+    "average_price": 678.75
   },
   {
     "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
@@ -1960,9 +2261,13 @@
     },
     "parody": "Mewtwo",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/wm/set1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/00-thumb.jpg",
@@ -1984,10 +2289,14 @@
           "en": "Attacks the opponent in the future with psychic powers. Pray that it's not when you're on the toilet.",
           "ja": "超能力で未来の相手を攻撃する。トイレの時でないことを祈る。"
         },
-        "costs": ["Psychic", "Psychic", "Psychic"]
+        "costs": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ]
       }
     ],
-    "average_price": 154.17
+    "average_price": 170.72
   },
   {
     "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
@@ -1999,9 +2308,13 @@
     },
     "parody": "Mew",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set1/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/48-thumb.jpg",
@@ -2023,10 +2336,12 @@
           "en": "It can take on the exact same appearance as the opponent and use their techniques. If this technique is used on one of its own kind, it will result in a long night.",
           "ja": "相手と全く同じ姿になり、その技を使うことができる。この技を同人に使うと、長い夜を過ごすことになる。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 163.93
+    "average_price": 161.63
   },
   {
     "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
@@ -2038,9 +2353,13 @@
     },
     "parody": "Arceus",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "∞",
     "image": "https://gaichu.b-cdn.net/wm/set1/49.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/49-thumb.jpg",
@@ -2062,10 +2381,12 @@
           "en": "Arceus looks at you with judgment. As a god, it knows all your weirdness.",
           "ja": "アルセウスは裁きの目であなたを見つめる。神様なので、あなたの全ての変態的な部分を知っている。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 53.75
+    "average_price": 128.57
   },
   {
     "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
@@ -2077,9 +2398,13 @@
     },
     "parody": "Magikarp",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["13c9cae0-290f-4f9d-8006-8bb7be104f1b"],
+    "set_ids": [
+      "13c9cae0-290f-4f9d-8006-8bb7be104f1b"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set1/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set1/50-thumb.jpg",
@@ -2102,10 +2427,12 @@
           "ja": "ほとんどの場合、ダメージを与えない。(サイコロを5回振って、全て同じ目が出たら一撃KO)"
         },
         "damage": "0",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
-    "average_price": 99.09
+    "average_price": 105
   },
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
@@ -2117,9 +2444,13 @@
     },
     "parody": "Mudkip",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/01-thumb.jpg",
@@ -2142,7 +2473,9 @@
           "ja": "相手にパンチを繰り出します。"
         },
         "damage": "20",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 0
@@ -2157,9 +2490,13 @@
     },
     "parody": "Meowth",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/09.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/09-thumb.jpg",
@@ -2181,7 +2518,9 @@
           "en": "Yawns and then goes to sleep. It's a cute move, but it has no effect.",
           "ja": "あくびをしてから眠ります。可愛い技ですが、効果はありません。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -2193,7 +2532,9 @@
           "ja": "攻撃して相手からお金をドロップさせます。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2208,9 +2549,13 @@
     },
     "parody": "Nidoran♂",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/05.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/05-thumb.jpg",
@@ -2233,7 +2578,9 @@
           "ja": "目の前の道を何でも切り開きます。"
         },
         "damage": "15",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 4
@@ -2248,9 +2595,13 @@
     },
     "parody": "Farfetch'd",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/02.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/02-thumb.jpg",
@@ -2273,7 +2624,9 @@
           "ja": "棒で相手を叩きます。相手の頭にコブが残ります。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2288,9 +2641,13 @@
     },
     "parody": "Geodude",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/08.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/08-thumb.jpg",
@@ -2313,7 +2670,9 @@
           "ja": "地面を揺さぶり、相手に大ダメージを与えたり、都市に被害を与えたりします。"
         },
         "damage": "25",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
     "average_price": 0
@@ -2328,9 +2687,13 @@
     },
     "parody": "Togetic",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/03.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/03-thumb.jpg",
@@ -2353,7 +2716,9 @@
           "ja": "エネルギー球を作ります。これが他の生物に触れても何も起こりません。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2368,9 +2733,13 @@
     },
     "parody": "Blissey",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/10.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/10-thumb.jpg",
@@ -2393,7 +2762,9 @@
           "ja": "卵を相手に投げつけて爆発させます。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2408,9 +2779,13 @@
     },
     "parody": "Slowbro",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/wm/set2/04.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/04-thumb.jpg",
@@ -2433,7 +2808,9 @@
           "ja": "念動力を使って相手の思考に入り込み、友人の前で恥ずかしいことをするように命令します。"
         },
         "damage": "50",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
     "average_price": 0
@@ -2448,9 +2825,13 @@
     },
     "parody": "Pidgeotto",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/07.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/07-thumb.jpg",
@@ -2473,7 +2854,9 @@
           "ja": "相手を力強く踏みつけます。"
         },
         "damage": "35",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2488,9 +2871,13 @@
     },
     "parody": "Nidoran♀",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/06.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/06-thumb.jpg",
@@ -2513,7 +2900,9 @@
           "ja": "相手のお腹を蹴って何時間もの苦痛を与えます。"
         },
         "damage": "15",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 4
@@ -2528,9 +2917,13 @@
     },
     "parody": "Scyther",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/11.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/11-thumb.jpg",
@@ -2553,7 +2946,9 @@
           "ja": "壊滅的な一撃で相手を切り裂きます。"
         },
         "damage": "60",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -2565,7 +2960,9 @@
           "ja": "相手を見つめて極度の不快感を与えます。"
         },
         "damage": "20",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
     "average_price": 0
@@ -2580,9 +2977,13 @@
     },
     "parody": "Haunter",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/12.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/12-thumb.jpg",
@@ -2605,7 +3006,9 @@
           "ja": "自分の体や顔を変形させて相手を怖がらせます。これにより、相手の攻撃力が下がります。"
         },
         "damage": "40",
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ],
     "average_price": 68
@@ -2620,9 +3023,13 @@
     },
     "parody": "Bonsly",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/13.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/13-thumb.jpg",
@@ -2645,7 +3052,9 @@
           "ja": "小さな足で相手を蹴ります。あまり効果的ではありません。"
         },
         "damage": "10",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2660,9 +3069,13 @@
     },
     "parody": "Wooper",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/14-thumb.jpg",
@@ -2685,7 +3098,9 @@
           "ja": "相手に水を吹きかけ、混乱を引き起こしてから逃走します。"
         },
         "damage": "15",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 0
@@ -2700,9 +3115,13 @@
     },
     "parody": "Rowlet",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/15.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/15-thumb.jpg",
@@ -2725,7 +3144,9 @@
           "ja": "鋭いくちばしで相手をつつきます。虫型の生物に対して非常に効果的です。"
         },
         "damage": "10",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2740,9 +3161,13 @@
     },
     "parody": "Growlithe",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/16-thumb.jpg",
@@ -2764,7 +3189,9 @@
           "en": "Shouts abusive language at the opponent, making them run away.",
           "ja": "相手に対して乱暴な言葉を叫び、相手を逃げさせます。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -2776,7 +3203,9 @@
           "ja": "火の玉を相手に投げつけます。"
         },
         "damage": "25",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ],
     "average_price": 0
@@ -2791,9 +3220,13 @@
     },
     "parody": "Mr. Mime",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/17.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/17-thumb.jpg",
@@ -2815,7 +3248,9 @@
           "en": "Creates a protective barrier from psychic energy.",
           "ja": "心霊エネルギーから防御壁を作り出します。"
         },
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
     "average_price": 0
@@ -2830,9 +3265,13 @@
     },
     "parody": "Jynx",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/18.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/18-thumb.jpg",
@@ -2855,7 +3294,9 @@
           "ja": "相手にキスして2ターン凍らせます。"
         },
         "damage": "25",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
     "average_price": 0
@@ -2870,9 +3311,13 @@
     },
     "parody": "Piplup",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/19.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/19-thumb.jpg",
@@ -2895,7 +3340,9 @@
           "ja": "ヒレを使って相手を強く叩きます。大ダメージを与え、とてもかわいい技でもあります。"
         },
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2910,9 +3357,13 @@
     },
     "parody": "Shellder",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/20.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/20-thumb.jpg",
@@ -2934,7 +3385,9 @@
           "en": "Closes its shell, becoming invincible to most physical attacks.",
           "ja": "貝殻を閉じ、ほとんどの物理攻撃に対して無敵になります。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -2949,9 +3402,13 @@
     },
     "parody": "Alolan Vulpix",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/21-thumb.jpg",
@@ -2974,7 +3431,9 @@
           "ja": "雲から雹を召喚し、毎ターン相手に累積ダメージを与えます。"
         },
         "damage": "5",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 18
@@ -2989,9 +3448,13 @@
     },
     "parody": "Ratatta",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/22.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/22-thumb.jpg",
@@ -3014,7 +3477,9 @@
           "ja": "全速力で相手に突進し、ダメージを与えます。"
         },
         "damage": "10",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -3029,9 +3494,13 @@
     },
     "parody": "Raticate",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/23.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/23-thumb.jpg",
@@ -3054,7 +3523,9 @@
           "ja": "非常に強烈な方法で相手に噛みつきます。"
         },
         "damage": "45",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -3065,7 +3536,9 @@
           "en": "Strike opponent with its tail.",
           "ja": "しっぽで相手を打ちます。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 7
@@ -3080,9 +3553,13 @@
     },
     "parody": "Sandshrew",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/24.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/24-thumb.jpg",
@@ -3104,7 +3581,9 @@
           "en": "Throw sand balls at the opponent, lowering their accuracy.",
           "ja": "砂の玉を相手に投げつけることで、相手の精度が下がります。"
         },
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
     "average_price": 0
@@ -3119,9 +3598,13 @@
     },
     "parody": "Caterpie",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/25.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/25-thumb.jpg",
@@ -3143,10 +3626,12 @@
           "en": "Shoot strings around the opponent, greatly slowing them down.",
           "ja": "相手の周りに糸を射出し、スピードを大幅に低下させます。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
-    "average_price": 7.23
+    "average_price": 7.3
   },
   {
     "id": "e37f524c-3dee-4346-b465-a99e5b85f0aa",
@@ -3158,9 +3643,13 @@
     },
     "parody": "Lickilicky",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/wm/set2/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/26-thumb.jpg",
@@ -3183,7 +3672,9 @@
           "ja": "相手をなめます。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       },
       {
         "name": {
@@ -3195,7 +3686,9 @@
           "ja": "相手の上に座ります。"
         },
         "damage": "30",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -3210,9 +3703,13 @@
     },
     "parody": "Pachurisu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/27.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/27-thumb.jpg",
@@ -3235,7 +3732,9 @@
           "ja": "可愛らしい小さな頬で相手に衝撃を与えます。"
         },
         "damage": "35",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
     "average_price": 0
@@ -3250,9 +3749,13 @@
     },
     "parody": "Onix",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/wm/set2/28.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/28-thumb.jpg",
@@ -3275,7 +3778,9 @@
           "ja": "ロックテールで相手を叩きます。"
         },
         "damage": "40",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       },
       {
         "name": {
@@ -3287,7 +3792,9 @@
           "ja": "相手に頭突きをします。"
         },
         "damage": "15",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -3302,9 +3809,13 @@
     },
     "parody": "Kakuna",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/29.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/29-thumb.jpg",
@@ -3326,7 +3837,9 @@
           "en": "Harden itself to protect from damage.",
           "ja": "ダメージから自身を守るために硬化します。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -3341,9 +3854,13 @@
     },
     "parody": "Ponyta",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "30",
     "image": "https://gaichu.b-cdn.net/wm/set2/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/30-thumb.jpg",
@@ -3366,7 +3883,9 @@
           "ja": "火の輪を作り、相手を攻撃します。これにより相手は火傷をする可能性があります。"
         },
         "damage": "35",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ],
     "average_price": 5
@@ -3381,9 +3900,13 @@
     },
     "parody": "Clefairy",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "25",
     "image": "https://gaichu.b-cdn.net/wm/set2/31.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/31-thumb.jpg",
@@ -3406,7 +3929,9 @@
           "ja": "高次元の存在と繋がり、ランダムな技を覚えます。"
         },
         "damage": "?",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 20
@@ -3421,9 +3946,13 @@
     },
     "parody": "Hitmonlee",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/32-thumb.jpg",
@@ -3446,7 +3975,9 @@
           "ja": "相手の脚を蹴ることで、相手の回避性とスピードが大幅に低下します。"
         },
         "damage": "60",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
     "average_price": 7
@@ -3461,9 +3992,13 @@
     },
     "parody": "Hitmonchan",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
@@ -3486,7 +4021,9 @@
           "ja": "リードハンドを使って相手の顔をパンチします。これ以降の攻撃はすべてクリティカルヒットとなります。"
         },
         "damage": "30",
-        "costs": ["Fighting"]
+        "costs": [
+          "Fighting"
+        ]
       }
     ],
     "average_price": 0
@@ -3501,9 +4038,13 @@
     },
     "parody": "Magneton",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "45",
     "image": "https://gaichu.b-cdn.net/wm/set2/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/34-thumb.jpg",
@@ -3526,7 +4067,9 @@
           "ja": "電撃を使って相手をショックさせます。これにより相手は麻痺する可能性があります。"
         },
         "damage": "30",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
     "average_price": 0
@@ -3541,9 +4084,13 @@
     },
     "parody": "Wartortle",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/35-thumb.jpg",
@@ -3566,7 +4113,9 @@
           "ja": "手につばを吐いて相手をビンタします。これは物理的なダメージだけでなく、非常に失礼な行為でもあります。"
         },
         "damage": "30",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 25
@@ -3581,9 +4130,13 @@
     },
     "parody": "Ivysaur",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/36-thumb.jpg",
@@ -3606,7 +4159,9 @@
           "ja": "高価なボディスプレーで自身を覆い、すべての種類の生物が引き寄せられます。"
         },
         "damage": "35",
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
     "average_price": 0
@@ -3621,9 +4176,13 @@
     },
     "parody": "Charmeleon",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "35",
     "image": "https://gaichu.b-cdn.net/wm/set2/37.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/37-thumb.jpg",
@@ -3646,7 +4205,9 @@
           "ja": "相手の顔にタマネギを食べた後に息を吹きかけます。"
         },
         "damage": "40",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       },
       {
         "name": {
@@ -3658,7 +4219,9 @@
           "ja": "相手をひっかきます。"
         },
         "damage": "20",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -3673,9 +4236,13 @@
     },
     "parody": "Flying Pikachu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/wm/set2/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
@@ -3697,7 +4264,9 @@
           "en": "Use balloons from a recent birthday party to levitate off the ground.",
           "ja": "最近の誕生日パーティーで使った風船を使い、地面から浮遊することができます。"
         },
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 199.99
@@ -3712,9 +4281,13 @@
     },
     "parody": "Charmander",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/39-thumb.jpg",
@@ -3737,10 +4310,12 @@
           "ja": "火を使ってその先にあるすべてを破壊します。"
         },
         "damage": "10",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       }
     ],
-    "average_price": 125
+    "average_price": 131.75
   },
   {
     "id": "a7e13ccd-96b8-46eb-ae9f-5536b48263fd",
@@ -3752,9 +4327,13 @@
     },
     "parody": "Bulbasaur",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/40.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/40-thumb.jpg",
@@ -3776,10 +4355,12 @@
           "en": "Create a scent that evokes someone's most cherished memories.",
           "ja": "相手の最も大切な記憶を思い出させる香りを作り出します。"
         },
-        "costs": ["Grass"]
+        "costs": [
+          "Grass"
+        ]
       }
     ],
-    "average_price": 112.5
+    "average_price": 117
   },
   {
     "id": "b6090d5b-3c41-4434-b19c-aa5718c53c96",
@@ -3791,9 +4372,13 @@
     },
     "parody": "Squirtle",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "15",
     "image": "https://gaichu.b-cdn.net/wm/set2/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/00-thumb.jpg",
@@ -3816,7 +4401,9 @@
           "ja": "かわいい動物の形の泡を作ることができます。誕生日パーティーで非常に人気があります。"
         },
         "damage": "10",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 0
@@ -3831,9 +4418,13 @@
     },
     "parody": "Ninetails",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/42-thumb.jpg",
@@ -3855,7 +4446,9 @@
           "en": "Communicate with spirits from the afterlife using psychic abilities.",
           "ja": "超能力を使ってあの世の霊と交信します。"
         },
-        "costs": ["Dark"]
+        "costs": [
+          "Dark"
+        ]
       }
     ],
     "average_price": 0
@@ -3870,9 +4463,13 @@
     },
     "parody": "Raichu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/wm/set2/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/43-thumb.jpg",
@@ -3895,7 +4492,9 @@
           "ja": "電撃で相手に衝撃を与えます。この攻撃は携帯電話やタブレットを充電するためにも使われます。"
         },
         "damage": "40",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
     "average_price": 50
@@ -3910,9 +4509,13 @@
     },
     "parody": "Flareon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/44.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/44-thumb.jpg",
@@ -3935,7 +4538,9 @@
           "ja": "全ての手足を体の中に収めてパンの塊の形になります。"
         },
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
     "average_price": 0
@@ -3950,9 +4555,13 @@
     },
     "parody": "Jolteon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/45.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/45-thumb.jpg",
@@ -3975,7 +4584,9 @@
           "ja": "電撃を使って気絶したチームメイトを復活させます。"
         },
         "damage": "60",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
     "average_price": 160
@@ -3990,9 +4601,13 @@
     },
     "parody": "Vaporeon",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/wm/set2/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/46-thumb.jpg",
@@ -4015,7 +4630,9 @@
           "ja": "眼窩から99.9%の細菌とバクテリアを殺すミストを吹き出し、さわやかな香りを残します。"
         },
         "damage": "60",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 0
@@ -4030,9 +4647,13 @@
     },
     "parody": "Entei",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/47.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/47-thumb.jpg",
@@ -4055,10 +4676,12 @@
           "ja": "小さな生物の軍団を呼び出して助けを求めます。"
         },
         "damage": "100",
-        "costs": ["Normal"]
+        "costs": [
+          "Normal"
+        ]
       }
     ],
-    "average_price": 92.5
+    "average_price": 99.99
   },
   {
     "id": "e7c55d0a-1ae9-4f3e-9a99-f08395970d23",
@@ -4070,9 +4693,13 @@
     },
     "parody": "Raikou",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/48-thumb.jpg",
@@ -4095,10 +4722,12 @@
           "ja": "雷雨を呼び下ろし、エリア内の何もかもが雷に打たれます。"
         },
         "damage": "100",
-        "costs": ["Electric"]
+        "costs": [
+          "Electric"
+        ]
       }
     ],
-    "average_price": 105
+    "average_price": 92.7
   },
   {
     "id": "6dfc5599-ab49-4b5b-af91-fba7c10d68ed",
@@ -4110,9 +4739,13 @@
     },
     "parody": "Suicune",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/wm/set2/49.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/49-thumb.jpg",
@@ -4135,7 +4768,9 @@
           "ja": "部屋をきれいな石とクリスタルで装飾します。"
         },
         "damage": "90",
-        "costs": ["Water"]
+        "costs": [
+          "Water"
+        ]
       }
     ],
     "average_price": 80
@@ -4150,9 +4785,13 @@
     },
     "parody": "Ralts",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["7bef5aa0-487d-4456-8fb4-2d26c6003f4e"],
+    "set_ids": [
+      "7bef5aa0-487d-4456-8fb4-2d26c6003f4e"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/wm/set2/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/wm/set2/50-thumb.jpg",
@@ -4175,7 +4814,9 @@
           "ja": "相手の心を読む超能力を使います。この技はポーカーでも効果的です。"
         },
         "damage": "20",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       }
     ],
     "average_price": 50
