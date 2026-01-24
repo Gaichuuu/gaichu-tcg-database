@@ -1,5 +1,6 @@
 import HtmlCell from "@/components/HtmlCell";
 import CardList from "@/components/ListComponent/CardListComponent";
+import { PageLoading, PageError } from "@/components/PageStates";
 import { useSet } from "@/hooks/useCollection";
 import { CDN_BASE_URL } from "@/services/Constants";
 import {
@@ -12,14 +13,18 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const SetPage = () => {
   const { seriesShortName, setShortName } = useParams();
-  const { data: setAndCard, error: setError } = useSet(
+  const { data: setAndCard, isLoading, error: setError } = useSet(
     seriesShortName ?? "",
     setShortName ?? "",
   );
   const navigate = useNavigate();
 
-  if (!setShortName || setError) {
-    return <div className="container mx-auto pt-1">Set not found</div>;
+  if (isLoading) {
+    return <PageLoading />;
+  }
+
+  if (!setShortName || setError || !setAndCard) {
+    return <PageError message="Set not found." />;
   }
 
   const printFileUrl =

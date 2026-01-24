@@ -1,4 +1,3 @@
-// src/components/news/NewsGrid.tsx
 import { useEffect, useRef } from "react";
 import { PageLoading, PageError } from "@/components/PageStates";
 import { useInfiniteNews } from "@/hooks/useNews";
@@ -25,6 +24,14 @@ export function NewsGrid({ q }: { q: string }) {
   if (status === "error") return <PageError message="Failed to load news." />;
 
   const posts = data?.pages.flatMap((p) => p.items) ?? [];
+
+  if (posts.length === 0) {
+    return (
+      <div className="text-secondaryText py-12 text-center">
+        {q ? `No news found for "${q}"` : "No news available."}
+      </div>
+    );
+  }
 
   return (
     <>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import type { NewsPost } from "@/types/news";
 
 const HomePage: React.FC = () => {
-  const { data: latest } = useLatestNews(3);
+  const { data: latest, isLoading, error } = useLatestNews(3);
 
   return (
     <div className="mt-1 flex flex-col items-center justify-center p-0">
@@ -35,9 +35,21 @@ const HomePage: React.FC = () => {
           </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
-          {latest?.map((p: NewsPost) => (
-            <NewsCard key={p.id} post={p} />
-          ))}
+          {isLoading ? (
+            <div className="text-secondaryText col-span-3 py-4 text-center">
+              Loading news...
+            </div>
+          ) : error ? (
+            <div className="text-errorText col-span-3 py-4 text-center">
+              Failed to load news.
+            </div>
+          ) : latest?.length === 0 ? (
+            <div className="text-secondaryText col-span-3 py-4 text-center">
+              No news available.
+            </div>
+          ) : (
+            latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />)
+          )}
         </div>
       </section>
     </div>
