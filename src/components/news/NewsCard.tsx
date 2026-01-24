@@ -1,4 +1,3 @@
-// src/components/news/NewsCard.tsx
 import { useNavigate } from "react-router-dom";
 import type { NewsPost } from "@/types/news";
 import Scale from "@/components/news/Scale";
@@ -11,9 +10,19 @@ export function NewsCard({ post }: { post: NewsPost }) {
 
   const go = () => navigate(`/news/${post.slug}`);
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      go();
+    }
+  };
+
   return (
     <article
+      role="button"
+      tabIndex={0}
       onClick={go}
+      onKeyDown={handleKeyDown}
       aria-label={post.title}
       className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder focus-visible:ring-primaryBorder flex h-full cursor-pointer flex-col rounded-2xl border p-4 transition focus:outline-none focus-visible:ring-2"
     >
