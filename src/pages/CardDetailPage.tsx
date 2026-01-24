@@ -1,4 +1,3 @@
-// src/pages/CardDetailPage.tsx
 import IconText from "@/components/IconText";
 import { PageLoading, PageError, PageNotFound } from "@/components/PageStates";
 import {
@@ -48,7 +47,6 @@ const CardDetailPage: React.FC = () => {
   const { card, previousCard, nextCard } = data;
   const resolvedName = t(card.name, locale);
 
-  // Build SEO metadata
   const pageTitle = `${resolvedName} - Gaichu`;
   const descriptionParts: string[] = [];
   if (card.parody) descriptionParts.push(`A parody of ${card.parody}`);
@@ -78,7 +76,6 @@ const CardDetailPage: React.FC = () => {
 
   return (
     <div className="container mx-auto pt-2">
-      {/* React 19 native metadata */}
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />
@@ -89,7 +86,6 @@ const CardDetailPage: React.FC = () => {
       {pageImage && <meta name="twitter:image" content={pageImage} />}
 
       <div className="flex flex-col gap-6 lg:flex-row">
-        {/* Column 1: Card Image - fixed width, never shrinks */}
         <div className="shrink-0">
           <CardImageSection
             card={card}
@@ -99,9 +95,7 @@ const CardDetailPage: React.FC = () => {
           />
         </div>
 
-        {/* Columns 2 & 3 wrapper - stacks on mobile, side-by-side on lg */}
         <div className="flex min-w-0 flex-1 flex-col gap-6 lg:flex-row">
-          {/* Column 2: Card Details */}
           <div className="min-w-0 flex-1">
             <div className="mb-4 flex items-center justify-between gap-4">
               <h1 className="text-2xl font-semibold">{resolvedName}</h1>
@@ -279,7 +273,6 @@ const CardDetailPage: React.FC = () => {
             </table>
           </div>
 
-          {/* Column 3: Printings & Prices Panel */}
           <div className="w-full shrink-0 lg:w-80">
             <PrintingsPricesPanel
               card={card}

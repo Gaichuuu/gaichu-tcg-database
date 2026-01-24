@@ -1,4 +1,3 @@
-// src/services/CollectionCardService.tsx
 import { database } from "@/lib/firebase";
 import {
   collection,

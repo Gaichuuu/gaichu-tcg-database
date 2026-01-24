@@ -1,4 +1,3 @@
-// src/pages/SeriesPage.tsx
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { useNavigate, useParams } from "react-router-dom";
@@ -63,14 +62,12 @@ const SeriesPage: React.FC = () => {
 
   const { series, sets } = seriesAndSet;
 
-  // SEO metadata
   const pageTitle = `${series.name} - Gaichu`;
   const pageDescription =
     series.description || `Browse all ${series.name} card sets on Gaichu.`;
 
   return (
     <div className="container mx-auto p-0">
-      {/* React 19 native metadata */}
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />

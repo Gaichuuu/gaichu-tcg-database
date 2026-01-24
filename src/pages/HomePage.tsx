@@ -1,4 +1,3 @@
-// src/pages/HomePage.tsx
 import React from "react";
 import { useLatestNews } from "@/hooks/useNews";
 import { NewsCard } from "@/components/news/NewsCard";
@@ -10,7 +9,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="mt-1 flex flex-col items-center justify-center p-0">
-      {/* React 19 native metadata */}
       <title>Gaichu TCG Database</title>
       <meta
         name="description"

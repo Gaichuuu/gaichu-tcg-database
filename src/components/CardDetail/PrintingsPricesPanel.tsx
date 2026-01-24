@@ -17,7 +17,6 @@ const PrintingsPricesPanel: React.FC<PrintingsPricesPanelProps> = ({
 
   return (
     <div className="border-secondaryBorder bg-navBg rounded-2xl border p-4">
-      {/* Header: Selected set info */}
       <div className="mb-4 flex items-start justify-between gap-3">
         <div className="flex flex-col">
           <span className="text-primaryText font-medium">
@@ -38,7 +37,6 @@ const PrintingsPricesPanel: React.FC<PrintingsPricesPanelProps> = ({
         )}
       </div>
 
-      {/* Printings list - only show if multiple printings */}
       {card.sets.length > 1 && (
         <>
           <div className="border-secondaryBorder my-4 border-t" />

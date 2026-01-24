@@ -1,4 +1,3 @@
-// src/pages/NewsPostPage.tsx
 import { useParams } from "react-router-dom";
 import { useMemo } from "react";
 import DOMPurify from "dompurify";
@@ -47,13 +46,11 @@ export default function NewsPostPage() {
   if (status === "error") return <PageError message="Failed to load post." />;
   if (!post) return <PageNotFound message={`Post not found: ${slug}`} />;
 
-  // SEO metadata
   const pageTitle = `${post.title} - Gaichu`;
   const pageDescription = post.excerpt || post.title;
 
   return (
     <article className="mx-auto mb-2 max-w-4xl px-4 py-2">
-      {/* React 19 native metadata */}
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />

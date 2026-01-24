@@ -1,4 +1,3 @@
-// src/pages/SetPage.tsx
 import HtmlCell from "@/components/HtmlCell";
 import CardList from "@/components/ListComponent/CardListComponent";
 import { useSet } from "@/hooks/useCollection";
@@ -49,7 +48,6 @@ const SetPage = () => {
     });
   }
 
-  // SEO metadata
   const pageTitle = setAndCard?.set.name
     ? `${setAndCard.set.name} - Gaichu`
     : "Set - Gaichu";
@@ -60,7 +58,6 @@ const SetPage = () => {
 
   return (
     <div className="container mx-auto pt-1 pb-1">
-      {/* React 19 native metadata */}
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />

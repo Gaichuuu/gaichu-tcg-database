@@ -1,4 +1,3 @@
-// src/pages/TcgSeriesPage.tsx
 import SeriesList from "@/components/ListComponent/SeriesListComponent";
 import { PageError } from "@/components/PageStates";
 import { useSeries } from "@/hooks/useCollection";
@@ -14,7 +13,6 @@ const TcgSeriesPage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-0">
-      {/* React 19 native metadata */}
       <title>Card Series - Gaichu</title>
       <meta
         name="description"

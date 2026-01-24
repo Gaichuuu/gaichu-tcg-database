@@ -1,4 +1,3 @@
-// src/pages/PackArtPage.tsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSet } from "@/hooks/useCollection";
@@ -42,7 +41,6 @@ const PackArtPage: React.FC = () => {
     return <p>Not found.</p>;
   }
 
-  // SEO metadata
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Pack Art - ${setName} - Gaichu`;
   const frontText = t(packArt.frontDescription, "en");
@@ -57,7 +55,6 @@ const PackArtPage: React.FC = () => {
 
   return (
     <div className="container mx-auto pt-2">
-      {/* React 19 native metadata */}
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />

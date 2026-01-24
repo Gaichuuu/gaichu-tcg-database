@@ -31,7 +31,6 @@ function formatTimeAgo(dateString: string): string {
 const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
   const { data, isLoading, error } = useEbayPrices(cardId, seriesShortName);
 
-  // Not enabled for this series
   if (!["ash", "wm"].includes(seriesShortName)) {
     return (
       <div className="border-secondaryBorder rounded-xl border p-3">
@@ -45,7 +44,6 @@ const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
     );
   }
 
-  // Loading state
   if (isLoading) {
     return (
       <div className="border-secondaryBorder rounded-xl border p-3">
@@ -64,7 +62,6 @@ const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
     );
   }
 
-  // Error or no data
   if (error || !data) {
     return (
       <div className="border-secondaryBorder rounded-xl border p-3">
@@ -78,7 +75,6 @@ const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
     );
   }
 
-  // No results found
   if (data.sample_size === 0) {
     return (
       <div className="border-secondaryBorder rounded-xl border p-3">
@@ -92,7 +88,6 @@ const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
     );
   }
 
-  // Success - show price data
   return (
     <div className="border-secondaryBorder rounded-xl border p-3">
       <div className="mb-3 flex items-center justify-between">
