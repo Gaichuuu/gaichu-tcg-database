@@ -41,7 +41,7 @@ async function main(): Promise<void> {
     console.log("\n" + "═".repeat(50));
     console.log(`Build completed in ${duration}s`);
     console.log("═".repeat(50));
-    console.log("\nOutput: tts-mod/output/mods/OpenZoo_Mod.json");
+    console.log("\nOutput: tts-mod/output/mods/3653472444.json");
     console.log("\nNext steps:");
     console.log("  1. Copy mod JSON to TTS Saves folder");
     console.log("  2. Load in Tabletop Simulator and test");

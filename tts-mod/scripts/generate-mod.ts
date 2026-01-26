@@ -13,17 +13,14 @@ import type {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = join(__dirname, "..", "..");
 const OUTPUT_DIR = join(__dirname, "..", "output", "mods");
-const TEMPLATE_PATH = join(OUTPUT_DIR, "OpenZoo_Mod.json");
+const TEMPLATE_PATH = join(OUTPUT_DIR, "3653472444.json");
 
-// OpenZoo set IDs
 const LEGACY_SET_ID = "0cd30841-399e-4043-ac72-bdf4d268d4b3";
 const PROMO25_SET_ID = "a4ad7eb7-9361-44d5-b60a-eac571932d6c";
 
-// MetaZoo card back URL
 const METAZOO_CARD_BACK_URL =
   "https://gaichu.b-cdn.net/mz/sample/MZ_Card_Back.jpg";
 
-// Simple card type for CDN-based cards (MetaZoo sets)
 interface SimpleCard {
   filename: string;
   name: string;
@@ -32,7 +29,6 @@ interface SimpleCard {
   sort_by: number;
 }
 
-// Deck nicknames to regenerate (these will be removed and recreated fresh)
 const DECK_NICKNAMES_TO_REGENERATE = [
   "OpenZoo Legacy",
   "OpenZoo Promo 2025",
@@ -41,7 +37,10 @@ const DECK_NICKNAMES_TO_REGENERATE = [
   "MetaZoo Wilderness",
   "MetaZoo UFO",
   "MetaZoo Seance",
+  "Flexible Card Sleever 1.1.0",
 ];
+
+const SLEEVER_PANEL_PATH = join(__dirname, "..", "data", "sleever-panel.json");
 
 interface TTSObject {
   GUID: string;
@@ -138,6 +137,15 @@ async function loadSeanceCards(): Promise<SimpleCard[]> {
   return JSON.parse(content) as SimpleCard[];
 }
 
+async function loadSleeverPanel(): Promise<TTSObject> {
+  const content = await readFile(SLEEVER_PANEL_PATH, "utf-8");
+  const panel = JSON.parse(content) as TTSObject;
+  panel.Transform.posX = 30;
+  panel.Transform.posY = 1.01;
+  panel.Transform.posZ = 0;
+  return panel;
+}
+
 function getCardsBySet(cards: Card[], setId: string): Card[] {
   return cards
     .filter((card) => card.set_ids.includes(setId))
@@ -223,7 +231,7 @@ function buildCardDescription(card: Card): string {
 function createTTSCard(
   card: Card,
   index: number,
-  cardBackUrl: string
+  cardBackUrl: string,
 ): TTSCard {
   const deckId = index + 1;
   const cardId = deckId * 100;
@@ -286,10 +294,10 @@ function createTTSDeck(
   setName: string,
   cards: Card[],
   cardBackUrl: string,
-  position: { x: number; y: number; z: number }
+  position: { x: number; y: number; z: number },
 ): TTSDeck {
   const containedObjects = cards.map((card, index) =>
-    createTTSCard(card, index, cardBackUrl)
+    createTTSCard(card, index, cardBackUrl),
   );
 
   const customDeck: Record<string, CustomDeckConfig> = {};
@@ -341,11 +349,10 @@ function createTTSDeck(
   };
 }
 
-// Create a simple TTS card for CDN-based cards (no detailed metadata)
 function createSimpleTTSCard(
   card: SimpleCard,
   index: number,
-  cardBackUrl: string
+  cardBackUrl: string,
 ): TTSCard {
   const deckId = index + 1;
   const cardId = deckId * 100;
@@ -408,10 +415,10 @@ function createSimpleTTSDeck(
   description: string,
   cards: SimpleCard[],
   cardBackUrl: string,
-  position: { x: number; y: number; z: number }
+  position: { x: number; y: number; z: number },
 ): TTSDeck {
   const containedObjects = cards.map((card, index) =>
-    createSimpleTTSCard(card, index, cardBackUrl)
+    createSimpleTTSCard(card, index, cardBackUrl),
   );
 
   const customDeck: Record<string, CustomDeckConfig> = {};
@@ -463,37 +470,30 @@ function createSimpleTTSDeck(
   };
 }
 
-// Check if object is a deck that should be regenerated
-function isDeckToRegenerate(obj: TTSObject): boolean {
-  if (obj.Name !== "Deck") return false;
+function shouldRegenerate(obj: TTSObject): boolean {
   return DECK_NICKNAMES_TO_REGENERATE.includes(obj.Nickname ?? "");
 }
 
-// Filter out decks that will be regenerated fresh
 function filterObjects(objects: TTSObject[]): TTSObject[] {
-  return objects.filter((obj) => !isDeckToRegenerate(obj));
+  return objects.filter((obj) => !shouldRegenerate(obj));
 }
 
 async function main(): Promise<void> {
   console.log("OpenZoo TTS Mod Generator");
   console.log("=========================\n");
 
-  // Ensure output directory exists
   if (!existsSync(OUTPUT_DIR)) {
     await mkdir(OUTPUT_DIR, { recursive: true });
   }
 
-  // Load template (uses existing mod as base)
   console.log("Loading base mod...");
   const template = await loadTemplate();
 
-  // Remove existing card decks (they will be regenerated fresh)
   const filteredObjects = filterObjects(template.ObjectStates);
   const deckCount = template.ObjectStates.length - filteredObjects.length;
   console.log(`  Base objects: ${filteredObjects.length}`);
   console.log(`  Decks to regenerate: ${deckCount}`);
 
-  // Load card data
   const cards = await loadCards();
   const sets = await loadSets();
   const cn2Cards = await loadCN2Cards();
@@ -501,6 +501,7 @@ async function main(): Promise<void> {
   const wnCards = await loadWNCards();
   const ufoCards = await loadUFOCards();
   const seanceCards = await loadSeanceCards();
+  const sleeverPanel = await loadSleeverPanel();
   console.log(`\nLoaded ${cards.length} OpenZoo cards`);
   console.log(`Loaded ${cn2Cards.length} MetaZoo CN2 cards`);
   console.log(`Loaded ${nfCards.length} MetaZoo Nightfall cards`);
@@ -508,7 +509,6 @@ async function main(): Promise<void> {
   console.log(`Loaded ${ufoCards.length} MetaZoo UFO cards`);
   console.log(`Loaded ${seanceCards.length} MetaZoo Seance cards`);
 
-  // Create OpenZoo decks
   const legacySet = sets.find((s) => s.id === LEGACY_SET_ID);
   const promo25Set = sets.find((s) => s.id === PROMO25_SET_ID);
 
@@ -528,67 +528,60 @@ async function main(): Promise<void> {
   console.log(`  MetaZoo UFO: ${ufoCards.length} cards`);
   console.log(`  MetaZoo Seance: ${seanceCards.length} cards`);
 
-  // Create deck objects positioned on the table
   const legacyDeck = createTTSDeck(
     "Legacy",
     legacyCards,
     legacySet.card_back.url.replace(/\.jpg(\?.*)?$/, ".png"),
-    { x: 0, y: 1.5, z: 0 } // Center of table
+    { x: 0, y: 1.5, z: 0 },
   );
 
   const promo25Deck = createTTSDeck(
     "Promo 2025",
     promo25Cards,
     promo25Set.card_back.url.replace(/\.jpg(\?.*)?$/, ".png"),
-    { x: 5, y: 1.5, z: 0 } // Offset to the right
+    { x: 5, y: 1.5, z: 0 },
   );
 
-  // Create MetaZoo CN2 deck
   const cn2Deck = createSimpleTTSDeck(
     "MetaZoo Cryptid Nation 2nd Edition",
     `${cn2Cards.length} cards from Cryptid Nation 2nd Edition`,
     cn2Cards,
     METAZOO_CARD_BACK_URL,
-    { x: -5, y: 1.5, z: 0 } // Offset to the left
+    { x: -5, y: 1.5, z: 0 },
   );
 
-  // Create MetaZoo Nightfall deck
   const nfDeck = createSimpleTTSDeck(
     "MetaZoo Nightfall",
     `${nfCards.length} cards from Nightfall`,
     nfCards,
     METAZOO_CARD_BACK_URL,
-    { x: -10, y: 1.5, z: 0 } // Further left
+    { x: -10, y: 1.5, z: 0 },
   );
 
-  // Create MetaZoo Wilderness deck
   const wnDeck = createSimpleTTSDeck(
     "MetaZoo Wilderness",
     `${wnCards.length} cards from Wilderness`,
     wnCards,
     METAZOO_CARD_BACK_URL,
-    { x: -15, y: 1.5, z: 0 } // Even further left
+    { x: -15, y: 1.5, z: 0 },
   );
 
-  // Create MetaZoo UFO deck
   const ufoDeck = createSimpleTTSDeck(
     "MetaZoo UFO",
     `${ufoCards.length} cards from UFO`,
     ufoCards,
     METAZOO_CARD_BACK_URL,
-    { x: -20, y: 1.5, z: 0 }
+    { x: -20, y: 1.5, z: 0 },
   );
 
-  // Create MetaZoo Seance deck
   const seanceDeck = createSimpleTTSDeck(
     "MetaZoo Seance",
     `${seanceCards.length} cards from Seance`,
     seanceCards,
     METAZOO_CARD_BACK_URL,
-    { x: -25, y: 1.5, z: 0 }
+    { x: -25, y: 1.5, z: 0 },
   );
 
-  // Build final mod
   const mod: TTSModFile = {
     ...template,
     SaveName: "OpenZoo PlayTesting and Deckbuilding Table",
@@ -604,11 +597,11 @@ async function main(): Promise<void> {
       wnDeck as unknown as TTSObject,
       ufoDeck as unknown as TTSObject,
       seanceDeck as unknown as TTSObject,
+      sleeverPanel,
     ],
   };
 
-  // Write output
-  const outputPath = join(OUTPUT_DIR, "OpenZoo_Mod.json");
+  const outputPath = join(OUTPUT_DIR, "3653472444.json");
   await writeFile(outputPath, JSON.stringify(mod, null, 2));
 
   console.log(`\nMod generated successfully!`);
