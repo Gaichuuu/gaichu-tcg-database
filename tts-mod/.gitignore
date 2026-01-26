@@ -1,5 +1,4 @@
 node_modules/
 dist/
 .DS_Store
-output/saved-objects/
-output/card-list.json
+output/
