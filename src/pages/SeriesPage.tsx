@@ -29,23 +29,24 @@ const SeriesLinks: React.FC<{ series: CollectionSeries }> = ({ series }) => {
   if (links.length === 0) return null;
 
   return (
-    <div>
+    <div className="sm:border-l sm:border-white/20 sm:pl-4">
       <h4 className="mb-1 text-sm">Links</h4>
-      <ul className="text-secondaryText list-disc pl-4 text-sm">
+      <div className="flex flex-wrap gap-x-1 gap-y-1">
         {links.map((link) => (
-          <li key={link.href}>
+          <span key={link.href} className="inline-flex items-center gap-1">
+            <span className="text-secondaryText">·</span>
             <a
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="link-alt inline-flex items-center gap-1 text-xs hover:underline"
+              className="link-alt text-secondaryText inline-flex items-center gap-1 text-xs hover:underline"
             >
               {link.label}
               <FiExternalLink className="h-3 w-3" />
             </a>
-          </li>
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
@@ -84,7 +85,7 @@ const SeriesPage: React.FC = () => {
           <div>
             <h3 className="mb-0">{series.name}</h3>
             {series.description && (
-              <p className="text-secondaryText max-w-2xl text-sm">
+              <p className="text-secondaryText mt-2 max-w-2xl text-sm">
                 {series.description}
               </p>
             )}
