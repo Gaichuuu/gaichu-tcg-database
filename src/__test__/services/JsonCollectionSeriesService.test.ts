@@ -1,4 +1,3 @@
-// src/hooks/__tests__/getJsonSeries.test.ts
 import { seriesJsonMock } from "@/__test__/__mock__/seriesJson.ts";
 import { setJsonMock } from "@/__test__/__mock__/setJson.ts";
 import { describe, expect, it, vi } from "vitest";

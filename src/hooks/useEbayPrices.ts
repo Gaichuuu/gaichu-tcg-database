@@ -19,7 +19,6 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
 
 async function fetchEbayPrices(cardId: string): Promise<EbayPriceData | null> {
   const url = `${API_BASE_URL}/v1/prices/${cardId}`;
-  console.log("[useEbayPrices] Fetching:", url);
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -30,7 +29,6 @@ async function fetchEbayPrices(cardId: string): Promise<EbayPriceData | null> {
   }
 
   const json = (await response.json()) as ApiResponse;
-  console.log("[useEbayPrices] Response:", json);
   return json.data;
 }
 

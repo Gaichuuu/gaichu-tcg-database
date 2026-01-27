@@ -1,4 +1,3 @@
-// src/components/HtmlCell.tsx
 import React, { useMemo } from "react";
 import DOMPurify from "dompurify";
 

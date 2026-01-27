@@ -1,4 +1,3 @@
-// src/api/news.tsx
 import type { NewsPost } from "@/types/news";
 import { database } from "@/lib/firebase";
 import {

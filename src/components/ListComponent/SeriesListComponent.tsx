@@ -1,16 +1,19 @@
-// src/components/ListComponent/SeriesListComponent.tsx
 import { CollectionSeries } from "@/types/CollectionSeries";
 import { SeriesAndSet } from "@/types/MergedCollection";
 import Tile from "@/components/TileComponents/Tile";
 
-type SeriesListComponent = {
+interface SeriesListProps {
   series: SeriesAndSet[];
   onClickSeries: (series: CollectionSeries) => void;
-};
-const SeriesList: React.FC<SeriesListComponent> = ({
-  series,
-  onClickSeries,
-}) => {
+}
+
+const SeriesList: React.FC<SeriesListProps> = ({ series, onClickSeries }) => {
+  if (!series?.length) {
+    return (
+      <div className="text-errorText text-center">No series found.</div>
+    );
+  }
+
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {series?.map((collection) => (

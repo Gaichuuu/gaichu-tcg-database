@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 
-// src/components/IconText.tsx
 const ICON_URLS: Record<string, Record<string, string>> = {
   oz: {
     "4th_wall": "https://gaichu.b-cdn.net/oz/icon4thWall.png",

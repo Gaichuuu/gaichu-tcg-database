@@ -1,4 +1,3 @@
-// src/hooks/useCollectionCard.tsx
 import {
   fetchAdjacentCards,
   fetchCardDetail,

@@ -1,4 +1,3 @@
-// src/components/LocaleToggle.tsx
 import React, { useMemo } from "react";
 import { useLocale, I18nValue } from "@/i18n";
 import type { CollectionCard } from "@/types/CollectionCard";

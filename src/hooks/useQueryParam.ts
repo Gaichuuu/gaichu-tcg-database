@@ -1,4 +1,3 @@
-// src/hooks/useQueryParam.ts
 import { useSearchParams } from "react-router-dom";
 
 export function useQueryParam(key: string, fallback = "") {

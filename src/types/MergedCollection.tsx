@@ -1,4 +1,3 @@
-// src/types/MergedCollection.tsx
 import { CollectionCard } from "./CollectionCard";
 import { CollectionSeries } from "./CollectionSeries";
 import { CollectionSet } from "./CollectionSet";

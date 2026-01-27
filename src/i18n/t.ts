@@ -1,4 +1,3 @@
-// src/i18n/t.ts
 export type Locale = "en" | "ja";
 export const DEFAULT_LOCALE: Locale = "en";
 

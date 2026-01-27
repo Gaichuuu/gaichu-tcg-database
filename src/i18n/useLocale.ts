@@ -1,4 +1,3 @@
-// src/i18n/useLocale.ts
 import { createContext, useContext } from "react";
 import { type Locale, DEFAULT_LOCALE } from "./t";
 
