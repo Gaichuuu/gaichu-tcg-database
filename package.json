@@ -1,7 +1,7 @@
 {
   "name": "gaichu",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Gaichu TCG Database - Your #2 source for booleg card games!",
   "homepage": "https://www.gaichu.com",
   "engines": {
