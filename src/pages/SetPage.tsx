@@ -93,7 +93,7 @@ const SetPage = () => {
 
         <div className="flex-1 pl-4">
           <div className="flex items-center">
-            <h3 className="text-lg font-bold">{setAndCard?.set.name}</h3>
+            <h3 className="mb-0">{setAndCard?.set.name}</h3>
 
             <div className="ml-auto flex items-center gap-2">
               {buyUrl && (
@@ -114,7 +114,7 @@ const SetPage = () => {
             </div>
           </div>
 
-          <p className="max-w-2xl text-sm whitespace-pre-line">
+          <p className="text-secondaryText max-w-2xl text-sm whitespace-pre-line">
             <HtmlCell html={setAndCard?.set.description} />
           </p>
         </div>

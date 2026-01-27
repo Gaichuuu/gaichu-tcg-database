@@ -7,7 +7,7 @@
     "sort_by": 2,
     "name": "Set One (reprint)",
     "logo": "https://gaichu.b-cdn.net/wm/set1/wmSet1.jpg",
-    "description": "The reprint removes Pokémon trademarks from the packaging and changes the official Pokémon names to parody ones. The card back is also changed. However, Pokémon trademarks and official names still remain on many attacks and descriptions.",
+    "description": "Reprint with parody names and updated card back. Some official names remain on attacks.",
     "keywords": [
       "WrennyMoo Set One",
       "derpy Pokemon cards",
@@ -59,7 +59,7 @@
     "sort_by": 1,
     "name": "Promo Cards",
     "logo": "https://gaichu.b-cdn.net/mz/promo/mzPromo.jpg",
-    "description": "Unique cards distributed through special events, conventions, product bundles, and retailer partnerships. Includes holiday promos, convention exclusives, serialized cards, and collaboration sets with Steve Aoki and Sanrio.",
+    "description": "Special cards from events, conventions, and collaborations including Steve Aoki and Sanrio.",
     "keywords": [
       "MetaZoo promos",
       "Hiroquest",
@@ -86,7 +86,7 @@
     "sort_by": 3,
     "name": "Set Two",
     "logo": "https://gaichu.b-cdn.net/wm/set2/wmSet2.jpg",
-    "description": "The second and final set of Wrenny Moo. This was released at the same time as the first set reprint, and is similar in style.",
+    "description": "The second and final Wrenny Moo set, released alongside the Set One reprint.",
     "keywords": [
       "WrennyMoo Set Two",
       "Wrenny Moo Volume 2",
@@ -138,7 +138,7 @@
     "sort_by": 1,
     "name": "Set One",
     "logo": "https://gaichu.b-cdn.net/wm/og/wmOriginalSet.jpg",
-    "description": "The first print of Wrenny Moo featuring 50 holographic \"Derpy Parody\" cards illustrated by Alex Roh. This set includes several Pokémon trademarks and uses official Pokémon names and moves. A second print was later released with some of this removed.",
+    "description": "Original 50-card set with official Pokémon names. A (somewhat) trademark-free reprint was later released.",
     "keywords": [
       "WrennyMoo first print",
       "original Wrenny Moo",
@@ -170,7 +170,7 @@
     "sort_by": 2,
     "name": "Series 1",
     "logo": "https://gaichu.b-cdn.net/ash/og/ashOriginalSet.jpg",
-    "description": "The original release of Generation One, featuring 50 holographic Pokémon parody cards including Base Set Charizard, Moonbreon, and Poncho Pikachu. Limited availability led to the 2024 reprint for international collectors.",
+    "description": "Original release featuring Base Set Charizard, Moonbreon, and Poncho Pikachu. Reprinted in 2024.",
     "keywords": [
       "After Skool Hobby Series 1",
       "Generation One",
@@ -189,7 +189,7 @@
     "sort_by": 3,
     "name": "Series 1 (reprint)",
     "logo": "https://gaichu.b-cdn.net/ash/series1/ashSeries1.jpg",
-    "description": "Generation One booster packs were reprinted in 2024 to meet the growing international demand outside of Singapore.",
+    "description": "2024 reprint of Generation One for international collectors.",
     "keywords": [
       "After Skool Hobby reprint",
       "Generation One 2024",
@@ -232,7 +232,7 @@
     "sort_by": 4,
     "name": "Series 2",
     "logo": "https://gaichu.b-cdn.net/ash/series2/ashSeries2.jpg",
-    "description": "Genetic Mystery is a fatter booster pack with 4 holofoil cards inside, all based on the fan-favorite purple blob.",
+    "description": "Genetic Mystery features 4 holofoil cards per pack, all based on the fan-favorite purple blob.",
     "keywords": [
       "Genetic Mystery",
       "Ditto cards",
@@ -277,7 +277,7 @@
     "name": "Legacy",
     "printFileUrl": "https://gaichu.b-cdn.net/oz/legacy/legacyPrint.pdf",
     "logo": "https://gaichu.b-cdn.net/oz/legacy/ozLegacy.jpg?v=2",
-    "description": "Casters! YOUR Legacy is awaiting! Return to the world that once was... OpenZoo Legacy is compatible with MetaZoo (the good one). Dust off your collection and start brewing decks again with all new community-made cards. Get all new \"team-up\" cards featuring Casters and their Beasties, including the never before seen Dark Caster.",
+    "description": "Community-made cards compatible with MetaZoo. Features team-up cards with Casters and Beasties, including the new Dark Caster.",
     "keywords": [
       "OpenZoo Legacy",
       "fan-made cryptid cards",
@@ -304,7 +304,7 @@
     "sort_by": 2,
     "name": "Promo Cards (2025)",
     "logo": "https://gaichu.b-cdn.net/oz/promo25/ozPromo25.jpg",
-    "description": "Impossibly limited promotional cards created by OpenZoo for special events, continuing the tradition of MetaZoo-style holiday promos.",
+    "description": "Limited promotional cards for special events, continuing the MetaZoo holiday promo tradition.",
     "keywords": [
       "OpenZoo promos",
       "fan-made promo cards",
@@ -326,7 +326,7 @@
     "sort_by": 1,
     "name": "Set 1",
     "logo": "https://gaichu.b-cdn.net/disgruntled/set1/disgruntledSet1.jpg",
-    "description": "The debut set of satirical MetaZoo parody cards featuring iconic \"Dumpster Fire,\" which eventually came true when Golden dumped pallets of sealed UFO into the dumpster outside the California distribution warehouse.",
+    "description": "Debut satirical MetaZoo parody cards, featuring the iconic \"Dumpster Fire.\"",
     "keywords": [
       "Disgruntled Games",
       "MetaZoo parody",

@@ -5,7 +5,7 @@
     "name": "After Skool Hobby",
     "logo": "https://gaichu.b-cdn.net/ash/ashLogo.png",
     "sort_by": 1,
-    "description": "Singapore-based parody Pokémon cards. Many popular cards are reimagined in a cute, simplified style, such as the \"Poncho-wearing Pikachu\" and \"Latias & Latios GX.\". Individual packs and bundles are sold via the official Etsy store.",
+    "description": "Singapore-based parody Pokémon cards featuring popular characters reimagined in a cute, simplified style.",
     "keywords": [
       "custom Pokemon cards",
       "fan-made Pokemon cards",
@@ -20,7 +20,7 @@
     "links": [
       {
         "type": "telegram",
-        "label": "Telegram group",
+        "label": "Telegram",
         "url": "https://t.me/+e0D8YsyQpE1kODU1"
       },
       {
@@ -41,7 +41,7 @@
     "name": "Disgruntled Games",
     "logo": "https://gaichu.b-cdn.net/disgruntled/disgruntledLogo.png",
     "sort_by": 2,
-    "description": "Ohio-based tattoo shop known for creating the first MetaZoo parody cards. Originally a collaboration between Disgruntled Games LLC and Black Border Society, the latter moved on to make their own satirical \"Brainwash TCG.\" The series pokes fun at the controversial industry practices happening at the time (and still happen today).",
+    "description": "Ohio-based creators of the first MetaZoo parody cards, poking fun at controversial industry practices.",
     "keywords": [
       "MetaZoo parody",
       "Brainwash TCG",
@@ -59,7 +59,7 @@
     "name": "MetaZoo",
     "logo": "https://gaichu.b-cdn.net/mz/mzLogo.png",
     "sort_by": 3,
-    "description": "Cryptid-themed tcg launched in 2020 via Kickstarter by Michael Waddell. The game featured \"Beasties\" inspired by folklore creatures like Mothman and Bigfoot, with unique \"4th Wall\" mechanics that let real-world conditions affect gameplay. After rapid growth and partnerships with Steve Aoki and Sanrio, MetaZoo Games abruptly shut down in January 2024 and filed for bankruptcy.",
+    "description": "Cryptid-themed TCG featuring folklore creatures like Mothman and Bigfoot, with unique 4th Wall mechanics that let real-world conditions affect gameplay. The company shut down in January 2024.",
     "keywords": [
       "MetaZoo",
       "cryptid trading card game",
@@ -81,7 +81,7 @@
     "name": "OpenZoo",
     "logo": "https://gaichu.b-cdn.net/oz/ozLogo.png?v=2",
     "sort_by": 4,
-    "description": "A community-driven fan project creating original cards in the MetaZoo style. Born from the ashes of Mothman and Bigfoot, OpenZoo produces cards compatible with MetaZoo (the good one), keeping the true spirit of the game alive after the company's closure.",
+    "description": "Community-driven fan project creating original cards compatible with MetaZoo, keeping the spirit of the game alive.",
     "keywords": [
       "OpenZoo",
       "fan-made MetaZoo",
@@ -95,8 +95,13 @@
     "links": [
       {
         "type": "spreadsheets",
-        "label": "Attributions sheet",
+        "label": "Attributions",
         "url": "https://docs.google.com/spreadsheets/d/1LlZz28i4evrb8faHliBlQwQD1QvFC2s0EMz8cRvjbD0/edit?gid=298662342#gid=298662342"
+      },
+      {
+        "type": "steam",
+        "label": "Tabletop Simulator Mod",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3653472444"
       }
     ]
   },
@@ -106,7 +111,7 @@
     "name": "WrennyMoo",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
     "sort_by": 5,
-    "description": "Parody card series featuring distinctive \"Derpy\" illustrations of popular Pokémon. Created by Alex Roh before disappearing from the internet, the packs were sold on a mysterious Etsy store. The series has become a cult collector's item since being discontinued.",
+    "description": "Discontinued parody series featuring distinctive \"Derpy\" Pokémon illustrations. Now a cult collector's item.",
     "keywords": [
       "WrennyMoo",
       "Wrenny Moo cards",

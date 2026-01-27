@@ -1,0 +1,17 @@
+{
+  "name": "openzoo-tts-mod",
+  "version": "1.0.0",
+  "description": "Tabletop Simulator mod generator for OpenZoo",
+  "type": "module",
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "mod": "tsx scripts/generate-mod.ts",
+    "json": "tsx scripts/generate-tts-json.ts"
+  },
+  "homepage": "https://steamcommunity.com/sharedfiles/filedetails/?id=3653472444",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
