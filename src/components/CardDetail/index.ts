@@ -5,3 +5,5 @@ export { default as AttacksSection } from "./AttacksSection";
 export { default as AttributesSection } from "./AttributesSection";
 export { default as ZooAttackSection } from "./ZooAttackSection";
 export { default as ZooAttributesSection } from "./ZooAttributesSection";
+export { default as PrintingsPricesPanel } from "./PrintingsPricesPanel";
+export { default as PriceTable } from "./PriceTable";

@@ -14,9 +14,13 @@
         "description": "Put the Charizard on the Stage 1 card"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Secret Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/ash/series1/*.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/*-thumb.jpg",
@@ -29,7 +33,12 @@
         "name": "Fire Spin",
         "effect": "throw two fire from this zard",
         "damage": "100 dmg",
-        "costs": ["Fire", "Fire", "Fire", "Fire"]
+        "costs": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Fire"
+        ]
       }
     ],
     "weakness": [
@@ -44,9 +53,14 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 50
   },
   {
     "id": "064099c6-eb7d-4c5b-a9e0-a089d80ddc38",
@@ -69,9 +83,13 @@
         "description": "When your Pokemon VMAX is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "310",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -84,12 +102,17 @@
         "name": "Max Darkness",
         "effect": "",
         "damage": "160",
-        "costs": ["Darkness", "Colorless", "Colorless"]
+        "costs": [
+          "Darkness",
+          "Colorless",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 32.95
   },
   {
     "id": "5b29fed5-4552-4877-9d3a-054d715a5471",
@@ -106,9 +129,13 @@
         "description": "Put the Charizard on the Stage 1 card"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -125,7 +152,12 @@
         "name": "Fire Spin",
         "effect": "Discard 2 Energy cards attached to Charizard in order to use this attack.",
         "damage": "100",
-        "costs": ["Fire", "Fire", "Fire", "Fire"]
+        "costs": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Fire"
+        ]
       }
     ],
     "weakness": [
@@ -140,9 +172,14 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 22.14
   },
   {
     "id": "95ca47e0-7803-47f9-9f3a-216b2d04f5fb",
@@ -158,9 +195,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -173,7 +214,10 @@
         "name": "Birthday Surprise",
         "effect": "If it’s not your birthday, this attack does 30 damage. If it is your birthday, flip a coin. If heads, this attack does 30 damage plus 50 more damage; if tails, this attack does 30 damage.",
         "damage": "30+",
-        "costs": ["Lightning", "Lightning"]
+        "costs": [
+          "Lightning",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -184,9 +228,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "d2a2b24b-54df-4699-ac72-3c739953954a",
@@ -203,9 +250,13 @@
         "description": "Put the Blastoise on the Stage 1 card"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/ash/series1/04.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/04-thumb.jpg",
@@ -222,7 +273,11 @@
         "name": "Hydro Pump",
         "effect": "Does 40 damage plus 10 more damage for each {icon:water} Energy attached to Blastoise but not used to pay for this attack's Energy cost. Extra {icon:water} Energy after the 2nd doesn't count.",
         "damage": "40+",
-        "costs": ["Water", "Water", "Water"]
+        "costs": [
+          "Water",
+          "Water",
+          "Water"
+        ]
       }
     ],
     "weakness": [
@@ -233,9 +288,14 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 20.9
   },
   {
     "id": "8a37a53b-f9a2-4372-98e9-8b3e258cfbdf",
@@ -252,9 +312,13 @@
         "description": "Put the Venusaur on the Stage 1 card"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -271,7 +335,12 @@
         "name": "Solarbeam",
         "effect": "",
         "damage": "60",
-        "costs": ["Grass", "Grass", "Grass", "Grass"]
+        "costs": [
+          "Grass",
+          "Grass",
+          "Grass",
+          "Grass"
+        ]
       }
     ],
     "weakness": [
@@ -282,9 +351,13 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 12.95
   },
   {
     "id": "50ee2a9d-73ae-4f32-9271-0850212a24c6",
@@ -300,9 +373,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/ash/series1/06.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/06-thumb.jpg",
@@ -315,7 +392,11 @@
         "name": "Elemental Blast",
         "effect": "Discard a {icon:fire} Energy card, a {icon:water} Energy card, and a {icon:lightning} Energy card attached to Lugia in order to use this attack.",
         "damage": "90",
-        "costs": ["Fire", "Water", "Lightning"]
+        "costs": [
+          "Fire",
+          "Water",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -331,9 +412,13 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "e061beb3-523e-4876-9989-3d71e86ea223",
@@ -349,9 +434,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/07.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/07-thumb.jpg",
@@ -365,7 +454,10 @@
         "name": "Psyshot",
         "effect": "",
         "damage": "30",
-        "costs": ["Psychic", "Colorless"]
+        "costs": [
+          "Psychic",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [],
@@ -376,9 +468,12 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 21.49
   },
   {
     "id": "c682a2d9-bdbc-488b-a644-1e4ec5b0aa24",
@@ -400,9 +495,13 @@
         "description": "When your TAG TEAM Pokemon is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "250",
     "image": "https://gaichu.b-cdn.net/ash/series1/08.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/08-thumb.jpg",
@@ -411,12 +510,20 @@
         "name": "Buster Purge",
         "effect": "Discard 3 Energy from this Pokemon.",
         "damage": "240",
-        "costs": ["Water", "Psychic", "Psychic", "Colorless"]
+        "costs": [
+          "Water",
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ]
       },
       {
         "name": "Aero Unit GX",
         "effect": "Attach 5 basic Energy cards from your discard pile to your Pokemon in any way you like. If this Pokemon has at least 1 extra Energy attached to it (in addition to this attack's cost), prevent all effects of attacks, including damage, done to it during your opponent's next turn. (You can't use more than 1 GX attack in a game.)",
-        "costs": ["Psychic", "Plus"]
+        "costs": [
+          "Psychic",
+          "Plus"
+        ]
       }
     ],
     "weakness": [
@@ -428,9 +535,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "b417b4f4-bd2f-4e54-9ef2-9f07c1cdd79f",
@@ -452,9 +562,13 @@
         "description": "When your TAG TEAM Pokemon is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "270",
     "image": "https://gaichu.b-cdn.net/ash/series1/09.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/09-thumb.jpg",
@@ -463,13 +577,23 @@
         "name": "Cosmic Burn",
         "effect": "This Pokemon can’t use Cosmic Burn during your next turn.",
         "damage": "230",
-        "costs": ["Psychic", "Psychic", "Psychic", "Colorless"]
+        "costs": [
+          "Psychic",
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ]
       },
       {
         "name": "Light of the Protector GX",
         "effect": "If you played Lillie’s Full Force from your hand during this turn, prevent all effects of attacks, including damage, done to each of your Pokemon during your opponent’s next turn. (You can’t use more than 1 GX attack in a game.)",
         "damage": "200",
-        "costs": ["Psychic", "Psychic", "Colorless", "Plus"]
+        "costs": [
+          "Psychic",
+          "Psychic",
+          "Colorless",
+          "Plus"
+        ]
       }
     ],
     "weakness": [
@@ -481,9 +605,13 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 8.49
   },
   {
     "id": "e91a1cb0-9eb8-4d28-b0cb-1ff85d1cc0a3",
@@ -499,9 +627,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/10.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/10-thumb.jpg",
@@ -509,7 +641,9 @@
       {
         "name": "Scream",
         "effect": "Both Active Pokémon are now Confused.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -526,9 +660,12 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.96
   },
   {
     "id": "ec7a1e34-60df-4a91-a9a2-6e8d7cf8b193",
@@ -544,9 +681,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -554,7 +695,9 @@
       {
         "name": "Pika Portrait",
         "effect": "Search your deck for a Pikachu and put it onto your Bench. Then, shuffle your deck.",
-        "costs": ["Lightning"]
+        "costs": [
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -566,9 +709,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.56
   },
   {
     "id": "b6fe2c2a-4a2f-4b3a-8b7e-2e6a7d4e8a12",
@@ -584,9 +730,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "220",
     "image": "https://gaichu.b-cdn.net/ash/series1/12.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/12-thumb.jpg",
@@ -595,13 +745,20 @@
         "name": "Super Psy Bolt",
         "effect": "",
         "damage": "50",
-        "costs": ["Psychic", "Colorless"]
+        "costs": [
+          "Psychic",
+          "Colorless"
+        ]
       },
       {
         "name": "Transfer Break",
         "effect": "Move an Energy from this Pokemon to 1 of your Benched Pokemon.",
         "damage": "160",
-        "costs": ["Psychic", "Psychic", "Colorless"]
+        "costs": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -616,9 +773,13 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 24.44
   },
   {
     "id": "a02b8e83-0a72-4e3e-b3c0-3cf4e26c8a31",
@@ -635,9 +796,13 @@
         "description": "Put the Dark Charizard on the Stage 1 card"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/ash/series1/13.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/13-thumb.jpg",
@@ -650,13 +815,18 @@
         "name": "Nail Flick",
         "effect": "",
         "damage": "10",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       },
       {
         "name": "Continuous Fireball",
         "effect": "Flip a number of coins equal to the number of {icon:fire} Energy cards attached to Dark Charizard. This attack does 50 damage times the number of heads. Discard a number of {icon:fire} Energy cards attached to Dark Charizard equal to the number of heads.",
         "damage": "50x",
-        "costs": ["Fire", "Fire"]
+        "costs": [
+          "Fire",
+          "Fire"
+        ]
       }
     ],
     "weakness": [
@@ -671,9 +841,14 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 16.45
   },
   {
     "id": "8c2a3a5d-3d7e-47a1-86c2-4c2f3e3bf9e0",
@@ -689,9 +864,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Secret Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/ash/series1/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/14-thumb.jpg",
@@ -703,7 +882,9 @@
       {
         "name": "All the Bless!",
         "effect": "You miss 100% of the shots you don't take.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -714,9 +895,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "fc2c8f5e-8e2c-4a38-a8cf-5c87a5d0c4b9",
@@ -732,9 +916,13 @@
         "evolution": "Evolves from Charmeleon"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "160",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -747,13 +935,19 @@
       {
         "name": "Happy Delivery",
         "effect": "Search your deck for up to 2 Item cards, reveal them, and put them into your hand. Then, shuffle your deck.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       },
       {
         "name": "Flamethrower",
         "effect": "Discard an Energy from this Pokémon.",
         "damage": "160",
-        "costs": ["Fire", "Fire", "Colorless"]
+        "costs": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -764,9 +958,14 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.04
   },
   {
     "id": "b09a0e3f-7039-4ad4-9e3b-fdf12d615f59",
@@ -782,9 +981,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/16-thumb.jpg",
@@ -792,7 +995,9 @@
       {
         "name": "Eevee Portrait",
         "effect": "Search your deck for an Eevee and put it onto your Bench. Then, shuffle your deck.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -804,9 +1009,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 20
   },
   {
     "id": "eb4fae22-5922-49a8-8df9-891db9f548f1",
@@ -829,9 +1037,13 @@
         "description": "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "330",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -840,13 +1052,20 @@
         "name": "Brave Wing",
         "effect": "If this Pokémon has any damage counters on it, this attack does 100 more damage.",
         "damage": "60+",
-        "costs": ["Fire"]
+        "costs": [
+          "Fire"
+        ]
       },
       {
         "name": "Explosive Vortex",
         "effect": "Discard 3 Energy from this Pokémon.",
         "damage": "330",
-        "costs": ["Fire", "Fire", "Fire", "Colorless"]
+        "costs": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -857,9 +1076,13 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.16
   },
   {
     "id": "a7e84ef0-48a5-4a1c-8b15-1b82cf2a2177",
@@ -881,9 +1104,13 @@
         "description": "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "180",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -895,7 +1122,11 @@
       {
         "name": "Genome Hacking",
         "effect": "Choose 1 of your opponent’s Active Pokémon’s attacks and use it as this attack.",
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -908,7 +1139,8 @@
         "type": "Fighting"
       }
     ],
-    "retreat": []
+    "retreat": [],
+    "average_price": 22.74
   },
   {
     "id": "9e1bc4f8-917d-40b8-86cb-fd50b8e60215",
@@ -924,9 +1156,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -940,7 +1176,11 @@
         "name": "Big Counter",
         "effect": "If your opponent’s Active Pokémon is a TAG TEAM, this attack does 120 more damage.",
         "damage": "60+",
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -952,9 +1192,15 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 16.66
   },
   {
     "id": "a87c7b38-3a73-4e91-8a11-b6c6ad0c1877",
@@ -977,9 +1223,13 @@
         "description": "When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "320",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -992,12 +1242,16 @@
         "name": "Max Burst",
         "effect": "You may discard any amount of basic {icon:fire} Energy or any amount of basic {icon:lightning} Energy from this Pokémon. This attack does 80 more damage for each card you discarded in this way.",
         "damage": "20+",
-        "costs": ["Fire", "Lightning"]
+        "costs": [
+          "Fire",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 15.07
   },
   {
     "id": "b3f8828f-27ac-49ee-88c3-5b63b5681cf1",
@@ -1013,9 +1267,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1024,13 +1282,19 @@
       {
         "name": "I Choose You",
         "effect": "The person you chose draws a card.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       },
       {
         "name": "Mega Thunderbolt",
         "effect": "Discard all Energy attached to this Pokémon.",
         "damage": "120",
-        "costs": ["Lightning", "Lightning", "Lightning"]
+        "costs": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -1041,9 +1305,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.96
   },
   {
     "id": "dddb7278-6c72-4b4c-a8b9-8fc4d542bc3b",
@@ -1065,9 +1332,13 @@
         "description": "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "230",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1075,13 +1346,18 @@
       {
         "name": "Transfer Charge",
         "effect": "Attach up to 2 Basic {icon:psychic} Energy cards from your discard pile to your Pokémon in any way you like.",
-        "costs": ["Psychic"]
+        "costs": [
+          "Psychic"
+        ]
       },
       {
         "name": "Photon Kenesis",
         "effect": "This attack does 30 more damage for each {icon:psychic} Energy attached to all of your Pokémon.",
         "damage": "10+",
-        "costs": ["Psychic", "Psychic"]
+        "costs": [
+          "Psychic",
+          "Psychic"
+        ]
       }
     ],
     "weakness": [
@@ -1096,9 +1372,13 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 18.19
   },
   {
     "id": "ab74cb8f-9a9e-4383-b3d0-61b6cf96a5b2",
@@ -1121,9 +1401,13 @@
         "description": "When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "320",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1132,18 +1416,26 @@
         "name": "Fear and Panic",
         "effect": "This attack does 60 damage for each of your opponent’s Pokémon V and Pokémon-GX in play.",
         "damage": "60x",
-        "costs": ["Darkness", "Darkness"]
+        "costs": [
+          "Darkness",
+          "Darkness"
+        ]
       },
       {
         "name": "G-Max Swallow Up",
         "effect": "During your next turn, this Pokémon can’t attack.",
         "damage": "250",
-        "costs": ["Darkness", "Darkness", "Darkness"]
+        "costs": [
+          "Darkness",
+          "Darkness",
+          "Darkness"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 38.66
   },
   {
     "id": "261611d4-772c-46a7-9d7e-df39eea90117",
@@ -1159,11 +1451,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "91a7b5e1-0a52-4a2a-8a5e-6c3a27b3ed45",
@@ -1179,11 +1476,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/25.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/25-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/25-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "a517e82f-372e-4d33-9f39-aaf5dd14e8f8",
@@ -1199,11 +1501,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/26.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/26-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/26-thumb.jpg",
+    "average_price": 11
   },
   {
     "id": "0276be2b-dd12-4c06-85e8-a3a705fec2fd",
@@ -1219,11 +1526,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "86b39467-7170-4daf-a92a-d60323e046e4",
@@ -1239,11 +1551,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "average_price": 0
   },
   {
     "id": "b5b7fa22-9124-4a89-9c02-f2aee89e607b",
@@ -1259,9 +1576,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1269,7 +1590,9 @@
       {
         "name": "Eeveelution",
         "effect": "Search your deck for a card that evolves from this Pokémon and put it onto this Pokémon to evolve it.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1280,9 +1603,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.73
   },
   {
     "id": "f26c911b-8a04-48b1-9c7e-07a680f12b75",
@@ -1304,9 +1630,13 @@
         "description": "When your TAG TEAM is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "300",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1315,12 +1645,20 @@
         "name": "Trinity Burn",
         "effect": "",
         "damage": "210",
-        "costs": ["Fire", "Water", "Lightning", "Colorless"]
+        "costs": [
+          "Fire",
+          "Water",
+          "Lightning",
+          "Colorless"
+        ]
       },
       {
         "name": "Sky Legends GX",
         "effect": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra {icon:fire}, {icon:water}, and {icon:lightning} Energy attached to it (in addition to this attack’s cost), this attack does 110 damage to 3 of your opponent’s Pokémon. (Don’t apply Weakness and Resistance for Benched Pokémon.) (You can’t use more than 1 GX attack in a game.)",
-        "costs": ["Colorless", "Plus"]
+        "costs": [
+          "Colorless",
+          "Plus"
+        ]
       }
     ],
     "weakness": [
@@ -1336,9 +1674,14 @@
     ],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 19.99
   },
   {
     "id": "4cfbcd43-99f5-4a61-b9e0-54e0bb17d04b",
@@ -1355,9 +1698,13 @@
         "description": "Put the Charizard on the Stage 1 card"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1374,13 +1721,22 @@
         "name": "Fire Blast",
         "effect": "Discard an Energy card attached to Charizard.",
         "damage": "40",
-        "costs": ["Fire", "Fire", "Fighting"]
+        "costs": [
+          "Fire",
+          "Fire",
+          "Fighting"
+        ]
       },
       {
         "name": "Dragon Tail",
         "effect": "Flip 2 coins. This attack does 50 damage times the number of heads.",
         "damage": "50x",
-        "costs": ["Fighting", "Lightning", "Lightning", "Colorless"]
+        "costs": [
+          "Fighting",
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1391,9 +1747,15 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 22.14
   },
   {
     "id": "c21e6b0b-8345-408a-98ea-9a3dc009ce35",
@@ -1409,11 +1771,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/32.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/32-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/32-thumb.jpg",
+    "average_price": 16.5
   },
   {
     "id": "7f6b6a8c-f1d9-4d2e-9ab3-8a0c1f4f3f21",
@@ -1429,9 +1796,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/33.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/33-thumb.jpg",
@@ -1441,7 +1812,10 @@
         "name": "Surf",
         "effect": "",
         "damage": "30",
-        "costs": ["Water", "Water"]
+        "costs": [
+          "Water",
+          "Water"
+        ]
       }
     ],
     "weakness": [
@@ -1452,9 +1826,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "862c1a20-5c48-47fc-b3a1-cfb4d71a5cd3",
@@ -1470,11 +1847,16 @@
         "description": "You may play only 1 Supporter card during your turn."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "image": "https://gaichu.b-cdn.net/ash/series1/34.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/34-thumb.jpg"
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/34-thumb.jpg",
+    "average_price": 13.39
   },
   {
     "id": "ffbca53a-05c1-4b6d-8a34-daa3f7b46e98",
@@ -1490,9 +1872,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/35-thumb.jpg",
@@ -1500,7 +1886,9 @@
       {
         "name": "Scream",
         "effect": "Both Active Pokemon are now Confused.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1512,9 +1900,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 23.49
   },
   {
     "id": "a1c3efb7-dc40-4b44-9411-1e5d6a5a2f87",
@@ -1530,9 +1921,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/36-thumb.jpg",
@@ -1541,16 +1936,21 @@
       {
         "name": "I Choose You",
         "effect": "Search your deck for Chikorita, Cyndaquil or Totodile and put it onto this card.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 4.99
   },
   {
     "id": "b32967a1-4b1f-48e4-82a7-058a94f24869",
@@ -1566,9 +1966,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1577,16 +1981,21 @@
       {
         "name": "I Choose You",
         "effect": "Search your deck for Treecko, Torchic, or Mudkip and put it onto this card.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 18
   },
   {
     "id": "bdbba5fd-fb91-497a-97bb-987b79f21fa7",
@@ -1602,9 +2011,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/ash/series1/38.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/38-thumb.jpg",
@@ -1613,16 +2026,21 @@
       {
         "name": "I Choose You",
         "effect": "Search your deck for Turtwig, Chimchar, or Piplup and put it onto this card.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "e3b1fa9d-4822-4d5a-9d76-5a08b83e8e64",
@@ -1645,9 +2063,13 @@
         "description": "When your Pokemon VMAX is Knocked Out, your opponent takes 3 Prize cards."
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "330",
     "image": "https://gaichu.b-cdn.net/ash/series1/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/39-thumb.jpg",
@@ -1656,18 +2078,29 @@
         "name": "Claw Slash",
         "effect": "",
         "damage": "100",
-        "costs": ["Colorless", "Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ]
       },
       {
         "name": "G-Max Wildfire",
         "effect": "Discard 2 Energy from this Pokemon.",
         "damage": "300",
-        "costs": ["Fire", "Fire", "Fire", "Colorless", "Colorless"]
+        "costs": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": []
+    "retreat": [],
+    "average_price": 16.31
   },
   {
     "id": "e4b8d067-3a32-47b0-9ffb-0a6116e9b1d2",
@@ -1683,9 +2116,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1695,13 +2132,20 @@
         "name": "Pika Punch",
         "effect": "",
         "damage": "20",
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       },
       {
         "name": "Crimson Dive?",
         "effect": "Flip a coin. If tails, this Pokémon does 30 damage to itself.",
         "damage": "90",
-        "costs": ["Lightning", "Lightning", "Lightning"]
+        "costs": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -1712,9 +2156,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "8dbd4e8b-dfa2-4e74-82a3-6ce8af1e1e69",
@@ -1730,9 +2177,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/41.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/41-thumb.jpg",
@@ -1742,13 +2193,20 @@
         "name": "Pika Punch",
         "effect": "",
         "damage": "20",
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       },
       {
         "name": "Wild Blaze?",
         "effect": "Flip a coin. If tails, discard the top 3 cards of your deck.",
         "damage": "90",
-        "costs": ["Lightning", "Lightning", "Lightning"]
+        "costs": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -1759,9 +2217,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.29
   },
   {
     "id": "c49a4b7b-54b8-490a-bd9b-0912eaa67a61",
@@ -1777,9 +2238,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/42-thumb.jpg",
@@ -1789,13 +2254,20 @@
         "name": "Try to Get Angry",
         "effect": "Flip a coin. If heads, this attack does 10 damage times the number of damage counters on this Pokemon.",
         "damage": "10x",
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       },
       {
         "name": "Thunderbolt",
         "effect": "Discard all Energy attached to this Pokemon.",
         "damage": "80",
-        "costs": ["Lightning", "Lightning", "Colorless"]
+        "costs": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1806,9 +2278,13 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 16.46
   },
   {
     "id": "f2368b4c-1f11-4a36-9f2a-7f68b35de3b7",
@@ -1824,9 +2300,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/ash/series1/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/43-thumb.jpg",
@@ -1836,13 +2316,20 @@
         "name": "Pika Punch",
         "effect": "",
         "damage": "20",
-        "costs": ["Colorless", "Colorless"]
+        "costs": [
+          "Colorless",
+          "Colorless"
+        ]
       },
       {
         "name": "Rising Fist?",
         "effect": "Discard an Energy attached to your opponent's Active Pokemon.",
         "damage": "90",
-        "costs": ["Lightning", "Lightning", "Lightning"]
+        "costs": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ]
       }
     ],
     "weakness": [
@@ -1853,9 +2340,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 16.86
   },
   {
     "id": "7f9beef6-8d2d-4e40-b585-b50d314c6001",
@@ -1871,9 +2361,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1881,7 +2375,9 @@
       {
         "name": "Transform",
         "effect": "Search your deck for a Pokemon and put it onto this Pokemon.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1892,9 +2388,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 16
   },
   {
     "id": "e5cb691d-7845-4f19-8f38-60abe476924d",
@@ -1910,9 +2409,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -1920,7 +2423,9 @@
       {
         "name": "Transform",
         "effect": "Search your deck for a Pokemon and put it onto this Pokemon.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1931,9 +2436,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 18.98
   },
   {
     "id": "5f4c8b63-05e2-42a0-9179-60edcdbd76fb",
@@ -1949,9 +2457,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/46-thumb.jpg",
@@ -1959,7 +2471,9 @@
       {
         "name": "Transform",
         "effect": "Search your deck for a Pokemon and put it onto this Pokemon.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -1970,9 +2484,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 21.32
   },
   {
     "id": "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3",
@@ -1988,9 +2505,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/48-thumb.jpg",
@@ -1998,7 +2519,9 @@
       {
         "name": "Transform",
         "effect": "Search your deck for a Pokemon and put it onto this Pokemon.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2009,9 +2532,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 25.24
   },
   {
     "id": "09a2848d-06f7-46cb-9e14-490b8e04e172",
@@ -2027,9 +2553,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
@@ -2037,7 +2567,9 @@
       {
         "name": "Transform",
         "effect": "Search your deck for a Pokemon and put it onto this Pokemon.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2048,9 +2580,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 17.18
   },
   {
     "id": "78a02344-0c51-48ef-b22c-d5892e98ce3e",
@@ -2066,9 +2601,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Secret Rare",
-    "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
+    "set_ids": [
+      "5444924f-490b-465f-8364-66b4e34da7c8"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series1/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/50-thumb.jpg",
@@ -2076,7 +2615,9 @@
       {
         "name": "Transform",
         "effect": "Search your deck for a Pokemon and put it onto this Pokemon.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2087,9 +2628,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 16.43
   },
   {
     "id": "b7a33b4a-5a6f-4c6a-8b41-6a10ce78432b",
@@ -2105,9 +2649,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
+    "set_ids": [
+      "c505fdeb-0d9e-4025-82d4-cf2a05a40a51"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/21-thumb.jpg",
@@ -2116,7 +2664,9 @@
       {
         "name": "Put Aeroplane",
         "effect": "Shuffle 1 of your benched Pokémon into your deck.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2127,9 +2677,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 11.44
   },
   {
     "id": "c1a7e4c5-8f0f-4a96-b2b0-6e3c3c4a1f35",
@@ -2145,9 +2698,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
+    "set_ids": [
+      "c505fdeb-0d9e-4025-82d4-cf2a05a40a51"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/35-thumb.jpg",
@@ -2156,7 +2713,9 @@
       {
         "name": "Everyone Kiasu",
         "effect": "You and your opponent draws a card.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2167,9 +2726,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 11.09
   },
   {
     "id": "c8c0b9f7-2f19-4b4b-9f33-feb4fae9ff2e",
@@ -2185,9 +2747,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
+    "set_ids": [
+      "c505fdeb-0d9e-4025-82d4-cf2a05a40a51"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/39-thumb.jpg",
@@ -2196,7 +2762,9 @@
       {
         "name": "Put Aeroplane",
         "effect": "Shuffle 1 of your benched Pokémon into your deck.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2207,9 +2775,12 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 11.71
   },
   {
     "id": "df1b3086-45b0-4b69-940b-f3670cfb7625",
@@ -2225,9 +2796,13 @@
         "basic": "Basic"
       }
     ],
-    "illustrators": ["Soo Zhi Wei"],
+    "illustrators": [
+      "Soo Zhi Wei"
+    ],
     "rarity": "Rare",
-    "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
+    "set_ids": [
+      "c505fdeb-0d9e-4025-82d4-cf2a05a40a51"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/ash/series2/66.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series2/66-thumb.jpg",
@@ -2236,7 +2811,9 @@
       {
         "name": "Why Bojio?",
         "effect": "Search your deck for a Ditto and put it onto your Bench.",
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
     ],
     "weakness": [
@@ -2247,8 +2824,11 @@
     "resistance": [],
     "retreat": [
       {
-        "costs": ["Colorless"]
+        "costs": [
+          "Colorless"
+        ]
       }
-    ]
+    ],
+    "average_price": 11.8
   }
 ]

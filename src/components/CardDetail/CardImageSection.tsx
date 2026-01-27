@@ -21,11 +21,11 @@ export default function CardImageSection({
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center md:w-1/3">
+    <div className="flex flex-col items-center">
       <img
         src={card.image}
         alt={resolvedName}
-        className="border-secondaryBorder mb-4 block max-h-150 rounded-3xl border object-contain shadow"
+        className="border-secondaryBorder mb-4 block h-142.5 w-102 shrink-0 rounded-3xl border shadow"
       />
       <div className="mt-0 flex w-full max-w-xs gap-4">
         {previousCard && (

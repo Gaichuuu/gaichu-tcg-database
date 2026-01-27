@@ -218,6 +218,7 @@ const CardSchemaRaw = z.object({
   cost: z.array(z.object({ total: z.string(), aura: z.string() })).optional(),
   effect: z.string().optional(),
   note: z.string().optional(),
+  average_price: z.number().optional(),
 });
 
 const CardSchema = CardSchemaRaw.transform((c) => {

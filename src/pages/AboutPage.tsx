@@ -1,10 +1,8 @@
-// src/pages/AboutPage.tsx
 import React from "react";
 
 const AboutPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* React 19 native metadata */}
       <title>About - Gaichu</title>
       <meta
         name="description"

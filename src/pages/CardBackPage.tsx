@@ -1,4 +1,3 @@
-// src/pages/CardBackPage.tsx
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useSet } from "@/hooks/useCollection";
@@ -37,7 +36,6 @@ const CardBackPage: React.FC = () => {
 
   if (setError || !cardBack) return <p>Not found.</p>;
 
-  // SEO metadata
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Card Back - ${setName} - Gaichu`;
   const textForSeo = t(cardBack.text, "en");
@@ -50,7 +48,6 @@ const CardBackPage: React.FC = () => {
 
   return (
     <div className="container mx-auto pt-2">
-      {/* React 19 native metadata */}
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta property="og:title" content={pageTitle} />

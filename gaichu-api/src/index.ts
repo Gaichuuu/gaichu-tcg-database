@@ -4,6 +4,14 @@ import { corsMiddleware } from "./config/index.js";
 import { errorHandler, notFoundHandler, rateLimiter, cacheHeaders } from "./middleware/index.js";
 import routes from "./routes/index.js";
 
+// Re-export scheduled functions for Firebase deployment
+export {
+  scheduledPriceSync,
+  triggerPriceSync,
+  syncSingleCardPrice,
+  backfillPriceUrls,
+} from "./functions/priceSync.js";
+
 const app = express();
 
 // Middleware
@@ -25,6 +33,7 @@ app.get("/", (_req, res) => {
       illustrators: "/v1/illustrators",
       rarity: "/v1/rarity",
       stats: "/v1/stats",
+      prices: "/v1/prices",
     },
   });
 });

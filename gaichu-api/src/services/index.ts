@@ -5,3 +5,5 @@ export * from "./setService.js";
 export * from "./illustratorService.js";
 export * from "./rarityService.js";
 export * from "./statsService.js";
+export * from "./priceService.js";
+export * from "./ebayPriceService.js";
