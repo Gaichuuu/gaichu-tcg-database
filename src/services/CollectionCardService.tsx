@@ -38,6 +38,7 @@ function asCard(
 ): CollectionCard {
   warnIfCamel(raw, id);
   return {
+    id,
     ...raw,
     set_short_name: set.short_name,
     series_short_name: set.series_short_name,
