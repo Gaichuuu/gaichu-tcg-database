@@ -95,7 +95,10 @@ WrennyMoo cards include Japanese translations. Text fields use a localized objec
 ```json
 {
   "name": { "en": "Skipper", "ja": "スキッパー" },
-  "description": { "en": "This Pokémon spends most of its time hiding in the mud.", "ja": "このポケモンは、ほとんどの時間を泥の中に隠れて過ごしています。" }
+  "description": {
+    "en": "This Pokémon spends most of its time hiding in the mud.",
+    "ja": "このポケモンは、ほとんどの時間を泥の中に隠れて過ごしています。"
+  }
 }
 ```
 
@@ -113,6 +116,59 @@ Average sold prices from eBay are available for select series:
 | `mz`   | No         |
 
 Cards with price data include an `average_price` field (USD).
+
+### Price Endpoints
+
+| Endpoint                      | Description                                    |
+| ----------------------------- | ---------------------------------------------- |
+| `GET /v1/prices`              | List all prices                                |
+| `GET /v1/prices/:cardId`      | Get price for a single card                    |
+| `GET /v1/prices/sync/status`  | Get last price sync status                     |
+| `GET /v1/prices/sync/history` | Get recent sync history (default: 10, max: 50) |
+
+**Example: Check sync status**
+
+```bash
+curl "https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/prices/sync/status"
+```
+
+**Response:**
+
+```json
+{
+  "data": {
+    "timestamp": "2026-01-27T08:00:10.811Z",
+    "trigger": "scheduled",
+    "cardsProcessed": 5,
+    "success": 4,
+    "noResults": 1,
+    "errors": 0,
+    "updatedCards": [{ "cardId": "abc-123", "cardName": "Charizard" }]
+  }
+}
+```
+
+### Weekly Price Sync
+
+Prices are automatically updated every Monday at 8 AM UTC via a scheduled Cloud Function.
+
+1. Checks for cards with stale prices (older than 7 days)
+2. Fetches current eBay sold prices via RapidAPI
+3. Updates `card_prices` collection in Firestore
+4. Logs results to `price_sync_logs` collection
+
+**Sync workflow** (after weekly job):
+
+```bash
+# 1. Check if any cards were updated
+curl ".../api/v1/prices/sync/status"
+
+# 2. If there are updates, export prices to JSON files
+npm run prices:export
+
+# 3. Push updated cards to Firestore
+npm run data:import:prod
+```
 
 ## Rate Limiting
 
