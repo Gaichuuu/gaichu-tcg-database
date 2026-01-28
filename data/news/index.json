@@ -1,14 +1,14 @@
 [
   {
-    "title": "Gaichu API released",
+    "title": "Gaichu database API",
     "author": "gaichu",
     "tags": ["site-updates"],
     "hero_url": "https://gaichu.b-cdn.net/news/04.png",
-    "excerpt": "Public REST API for accessing the card database.",
+    "excerpt": "Public REST API for accessing the Gaichu card database.",
     "body_html": "<p>As requested by <a href=\"https://www.metazoocryptids.com/\" target=\"_blank\">MetaZoo Cryptids</a>, the Gaichu API is now publicly available!</p><ul style=\"margin-left:20px;\"><li>Search cards by name, type, rarity, or illustrator</li><li>Browse all series: After Skool Hobby, Disgruntled Games, MetaZoo, OpenZoo, WrennyMoo</li><li>Get card images, stats, and effects</li><li>Multi-language support: English and Japanese text (WrennyMoo)</li><li>Average sold prices from eBay (WrennyMoo and After Skool Hobby)</li></ul><h3>Quick start</h3><p>Fetch all OpenZoo Legacy cards:</p><pre style=\"background:#1a1a2e;padding:12px;border-radius:4px;overflow-x:auto;\"><code>curl \"https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/cards?series=oz&set=legacy\"</code></pre><p>Search for any card by name:</p><pre style=\"background:#1a1a2e;padding:12px;border-radius:4px;overflow-x:auto;\"><code>curl \"https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/cards/search?q=mothman\"</code></pre><h3>Available endpoints</h3><p><strong>Cards</strong></p><ul style=\"margin-left:20px;\"><li><code>GET /v1/cards</code> - List cards with filtering and pagination</li><li><code>GET /v1/cards/:id</code> - Get a single card</li><li><code>GET /v1/cards/search?q=</code> - Search by name or effect</li></ul><p><strong>Series & Sets</strong></p><ul style=\"margin-left:20px;\"><li><code>GET /v1/series</code> - List all series</li><li><code>GET /v1/series/:shortName/cards</code> - Get all cards in a series</li><li><code>GET /v1/sets/:id/cards</code> - Get all cards in a set</li></ul><p><strong>Other</strong></p><ul style=\"margin-left:20px;\"><li><code>GET /v1/illustrators</code> - List all illustrators</li><li><code>GET /v1/rarity</code> - List rarity types</li><li><code>GET /v1/stats</code> - Database statistics</li></ul><p>The <code>/v1/cards</code> endpoint supports these filters:</p><ul style=\"margin-left:20px;\"><li><code>series</code> - ash, disgruntled, mz, oz, wm</li><li><code>set, rarity, type, illustrator</code></li><li><code>page</code> & <code>limit</code> - Max 100 per page</li></ul><p>Full documentation is available on <a href=\"https://github.com/Gaichuuu/gaichu-tcg-database/blob/main/gaichu-api/README.md\" target=\"_blank\">GitHub</a>.</p>",
-    "created_at": 1769385600000,
-    "slug": "gaichu-api-released",
-    "id": "gaichu-api-released"
+    "created_at": 1769472000000,
+    "slug": "gaichu-database-api",
+    "id": "gaichu-database-api"
   },
   {
     "title": "Gaichu news service is live",
