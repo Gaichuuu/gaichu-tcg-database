@@ -301,3 +301,60 @@ export async function backfillEbayUrls(
 
   return { updated, skipped };
 }
+
+/**
+ * Sync log entry for tracking price sync runs
+ */
+export interface SyncLogEntry {
+  timestamp: string;
+  trigger: "scheduled" | "manual";
+  cardsProcessed: number;
+  success: number;
+  noResults: number;
+  errors: number;
+  updatedCards: Array<{ cardId: string; cardName: string }>;
+}
+
+const SYNC_LOG_COLLECTION = "price_sync_logs";
+
+/**
+ * Log a price sync run to Firestore
+ */
+export async function logSyncRun(entry: SyncLogEntry): Promise<void> {
+  const db = getFirestore();
+  await db.collection(SYNC_LOG_COLLECTION).add(entry);
+}
+
+/**
+ * Get the most recent sync log entry
+ */
+export async function getLastSyncLog(): Promise<SyncLogEntry | null> {
+  const db = getFirestore();
+  const snapshot = await db
+    .collection(SYNC_LOG_COLLECTION)
+    .orderBy("timestamp", "desc")
+    .limit(1)
+    .get();
+
+  if (snapshot.empty) {
+    return null;
+  }
+
+  return snapshot.docs[0].data() as SyncLogEntry;
+}
+
+/**
+ * Get recent sync logs
+ */
+export async function getRecentSyncLogs(
+  limit: number = 10,
+): Promise<SyncLogEntry[]> {
+  const db = getFirestore();
+  const snapshot = await db
+    .collection(SYNC_LOG_COLLECTION)
+    .orderBy("timestamp", "desc")
+    .limit(limit)
+    .get();
+
+  return snapshot.docs.map((doc) => doc.data() as SyncLogEntry);
+}

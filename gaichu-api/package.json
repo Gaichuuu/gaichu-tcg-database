@@ -12,7 +12,7 @@
     "build": "npm run copy-data && tsc",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
-    "deploy": "firebase deploy --only functions:gaichu-api",
+    "deploy:prod": "firebase deploy --only functions:gaichu-api",
     "deploy:staging": "firebase deploy --only functions:gaichu-api --project staging",
     "lint": "eslint src/**/*.ts",
     "test": "vitest"
