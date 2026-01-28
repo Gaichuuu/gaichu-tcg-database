@@ -13,6 +13,7 @@ import {
   getCardPriceDocument,
   getAllPricedCardIds,
   backfillEbayUrls,
+  logSyncRun,
 } from "../services/priceService.js";
 import type { Card } from "../types/index.js";
 
@@ -189,6 +190,16 @@ export const scheduledPriceSync = onSchedule(
 
     if (cardsToSync.length === 0) {
       console.log("No cards need updating. Sync complete.");
+      // Log even when no updates needed
+      await logSyncRun({
+        timestamp: new Date().toISOString(),
+        trigger: "scheduled",
+        cardsProcessed: 0,
+        success: 0,
+        noResults: 0,
+        errors: 0,
+        updatedCards: [],
+      });
       return;
     }
 
@@ -198,6 +209,19 @@ export const scheduledPriceSync = onSchedule(
     console.log(`Success: ${results.success}`);
     console.log(`No Results: ${results.noResults}`);
     console.log(`Errors: ${results.errors}`);
+
+    // Log sync results to Firestore
+    await logSyncRun({
+      timestamp: new Date().toISOString(),
+      trigger: "scheduled",
+      cardsProcessed: cardsToSync.length,
+      success: results.success,
+      noResults: results.noResults,
+      errors: results.errors,
+      updatedCards: results.details
+        .filter((d) => d.status === "success")
+        .map((d) => ({ cardId: d.cardId, cardName: d.cardName })),
+    });
   },
 );
 
