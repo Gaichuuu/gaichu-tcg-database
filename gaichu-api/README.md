@@ -147,7 +147,7 @@ npm run serve
 
 ```bash
 npm run build
-npm run deploy
+npm run deploy:prod
 npm run deploy:staging
 ```
 
