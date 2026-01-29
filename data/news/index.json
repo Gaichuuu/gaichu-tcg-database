@@ -1,5 +1,16 @@
 [
   {
+    "title": "eBay price tracking",
+    "author": "gaichu",
+    "tags": ["site-updates"],
+    "hero_url": "https://gaichu.b-cdn.net/news/05.png",
+    "excerpt": "Sold price tracking for WrennyMoo and After Skool Hobby cards.",
+    "body_html": "<p>You can now see eBay sold price tracking for <a href=\"https://gaichu.com/cards/wm\" target=\"_blank\">WrennyMoo</a> and <a href=\"https://gaichu.com/cards/ash\" target=\"_blank\">After Skool Hobby</a> cards.</p><p><strong>Set pages</strong> ~ Browse wm or ash and you'll see average sold prices on each card.</p><p><strong>Sales panel</strong> ~ Card detail pages now show a sales panel with:</p><ul style=\"margin-left:20px;\"><li>Number of recent sales</li><li>Lowest/highest sold price</li><li>90-day rolling average</li></ul><p>The panel includes a link to eBay sold listings for that card.</p><p><strong>Weekly price sync</strong> ~ A scheduled job runs <em>every Monday at 8 AM UTC</em> and fetches completed eBay sales using the <a href=\"https://github.com/colindaniels/eBay-sold-items-documentation\" target=\"_blank\">eBay Sold Items API</a>.</p><p><strong>Search queries</strong> ~ Each card is searched using:</p><ul style=\"margin-left:20px;\"><li><strong>Keywords</strong>: Series name + card name, with spelling variants like:</li></ul><pre style=\"background:#1a1a2e;padding:12px;border-radius:4px;overflow-x:auto;\"><code>(\"wrenny moo\",wrennymoo) Pidgey</code></pre><ul style=\"margin-left:20px;\"><li><strong>Excluded keywords</strong>: lot, bundle, complete, etc.</li></ul><p><strong>90-day rolling average</strong> ~ Each sync merges new sales with existing data, deduplicates by eBay listing ID, and filters out sales older than 90 days. Price stats are recalculated from this rolling window.</p>",
+    "created_at": 1769644800000,
+    "slug": "ebay-price-tracking",
+    "id": "ebay-price-tracking"
+  },
+  {
     "title": "Gaichu database API",
     "author": "gaichu",
     "tags": ["site-updates"],
