@@ -76,8 +76,6 @@ const PrintingsPricesPanel: React.FC<PrintingsPricesPanelProps> = ({
         </>
       )}
 
-      <div className="border-secondaryBorder my-4 border-t" />
-
       <PriceTable cardId={card.id} seriesShortName={card.series_short_name} />
     </div>
   );
