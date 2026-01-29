@@ -1,3 +1,3 @@
-const PERSIST_VERSION = "v4"; // update this to invalidate old caches
+const PERSIST_VERSION = "v5"; // update this to invalidate old caches
 const PERSIST_KEY = `gaichu-query-cache-${PERSIST_VERSION}`;
 export { PERSIST_KEY };

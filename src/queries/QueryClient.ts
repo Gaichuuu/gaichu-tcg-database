@@ -1,4 +1,4 @@
-import { ONE_HOUR, TEN_MINUTES, TWENTY_FOUR_HOURS } from "@/utils/TimeUtils";
+import { ONE_HOUR, TWENTY_FOUR_HOURS } from "@/utils/TimeUtils";
 import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
 import { QueryClient } from "@tanstack/react-query";
 import { persistQueryClient } from "@tanstack/react-query-persist-client";
@@ -6,7 +6,7 @@ import { PERSIST_KEY } from "./persistenceKey";
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: TEN_MINUTES,
+      staleTime: TWENTY_FOUR_HOURS,
       gcTime: ONE_HOUR,
       refetchOnWindowFocus: false,
       refetchOnMount: false,
