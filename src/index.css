@@ -4,6 +4,7 @@
   --color-mainBg: #0d0614;
   --color-navBg: #171721;
   --color-tileBg: #364153;
+  --color-codeBg: #1a1a2e;
   --color-primaryBorder: #646cff;
   --color-secondaryBorder: #202039;
   --color-hoverBorder: #dadada;
@@ -19,11 +20,21 @@
 }
 
 @layer components {
+  .btn {
+    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded tracking-wider transition focus-visible:ring-2 focus-visible:ring-primaryBorder focus-visible:outline-none;
+  }
+  .btn-lg {
+    @apply px-6 py-3;
+  }
+  .btn-sm {
+    @apply px-3 py-2;
+  }
+  /* Legacy aliases */
   .button {
-    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded px-6 py-3 tracking-wider transition;
+    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded tracking-wider transition focus-visible:ring-2 focus-visible:ring-primaryBorder focus-visible:outline-none px-6 py-3;
   }
   .secondary-button {
-    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded px-3 py-2 tracking-wider transition;
+    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded tracking-wider transition focus-visible:ring-2 focus-visible:ring-primaryBorder focus-visible:outline-none px-3 py-2;
   }
 }
 
@@ -47,7 +58,6 @@
     Menlo, Consolas, Monaco, "Cascadia Mono", "Segoe UI Mono", SFMono-Regular,
     ui-monospace, "Liberation Mono", "DejaVu Sans Mono", monospace;
 
-  font-family: var(--font-sans);
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -78,7 +88,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-size: 0.9rem;
-  line-height: 1.5rem;
 }
 
 em,
@@ -94,6 +103,16 @@ b {
 dd,
 dt {
   @apply ml-6 text-xs italic;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
 }
 
 h1 {
@@ -145,4 +164,29 @@ pre,
 kbd,
 samp {
   font-family: var(--font-mono);
+}
+
+code {
+  background: var(--color-codeBg);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  border-left: 3px solid var(--color-secondaryText);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--color-secondaryText);
 }
