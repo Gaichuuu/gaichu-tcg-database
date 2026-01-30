@@ -1171,6 +1171,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://gaichu.com/news/wrennymoo-is-back-as-katu-ramen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/news/ebay-price-tracking</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://gaichu.com/news/gaichu-database-api</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

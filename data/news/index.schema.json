@@ -25,15 +25,10 @@
           "uniqueItems": true,
           "default": []
         },
-        "hero_url": { "type": "string", "format": "uri" },
+        "hero_url": { "type": "string" },
         "excerpt": { "type": "string" },
         "body_html": { "type": "string" },
-        "created_at": {
-          "oneOf": [
-            { "type": "number", "minimum": 0 },
-            { "type": "string", "format": "date-time" }
-          ]
-        },
+        "created_at": { "type": "string", "format": "date" },
         "score": {
           "type": "number",
           "minimum": 1,

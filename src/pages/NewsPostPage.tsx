@@ -4,6 +4,8 @@ import DOMPurify from "dompurify";
 import { PageLoading, PageError, PageNotFound } from "@/components/PageStates";
 import { useNewsBySlug } from "@/hooks/useNews";
 import Scale from "@/components/news/Scale";
+import { expandTokens } from "@/utils/expandTokens";
+import { resolveHeroUrl } from "@/utils/resolveHeroUrl";
 
 export default function NewsPostPage() {
   const { slug = "" } = useParams();
@@ -11,6 +13,8 @@ export default function NewsPostPage() {
 
   const sanitizedHtml = useMemo(() => {
     if (!post?.body_html) return "";
+
+    const expanded = expandTokens(post.body_html);
 
     DOMPurify.addHook("uponSanitizeElement", (node, data) => {
       if (data.tagName === "iframe" && node instanceof HTMLIFrameElement) {
@@ -33,7 +37,7 @@ export default function NewsPostPage() {
       }
     });
 
-    const clean = DOMPurify.sanitize(post.body_html, {
+    const clean = DOMPurify.sanitize(expanded, {
       ADD_TAGS: ["iframe"],
       ADD_ATTR: ["allow", "allowfullscreen", "frameborder", "scrolling"],
     });
@@ -48,6 +52,7 @@ export default function NewsPostPage() {
 
   const pageTitle = `${post.title} - Gaichu`;
   const pageDescription = post.excerpt || post.title;
+  const heroUrl = resolveHeroUrl(post.hero_url);
 
   return (
     <article className="mx-auto mb-2 max-w-4xl px-4 py-2">
@@ -56,10 +61,10 @@ export default function NewsPostPage() {
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
       <meta property="og:type" content="article" />
-      {post.hero_url && <meta property="og:image" content={post.hero_url} />}
+      {heroUrl && <meta property="og:image" content={heroUrl} />}
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
-      {post.hero_url && <meta name="twitter:image" content={post.hero_url} />}
+      {heroUrl && <meta name="twitter:image" content={heroUrl} />}
 
       <h2>{post.title}</h2>
       <p className="text-secondaryText mt-1">
@@ -68,10 +73,10 @@ export default function NewsPostPage() {
         {post.author}
       </p>
 
-      {post.hero_url && (
+      {heroUrl && (
         <div className="relative mt-4 w-full overflow-hidden rounded-xl">
           <img
-            src={post.hero_url}
+            src={heroUrl}
             alt=""
             className="block aspect-video w-full object-cover"
           />
@@ -87,7 +92,7 @@ export default function NewsPostPage() {
 
       {sanitizedHtml ? (
         <div
-          className="mt-4 max-w-none space-y-4 leading-relaxed"
+          className="prose mt-4 max-w-none space-y-4 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
         />
       ) : (

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import type { NewsPost } from "@/types/news";
 import Scale from "@/components/news/Scale";
+import { resolveHeroUrl } from "@/utils/resolveHeroUrl";
 
 export function NewsCard({ post }: { post: NewsPost }) {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
     typeof post.created_at === "number" ? post.created_at : Date.now();
 
   const go = () => navigate(`/news/${post.slug}`);
+  const heroUrl = resolveHeroUrl(post.hero_url);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -26,7 +28,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
       aria-label={post.title}
       className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder focus-visible:ring-primaryBorder flex h-full cursor-pointer flex-col rounded-2xl border p-4 transition focus:outline-none focus-visible:ring-2"
     >
-      {post.hero_url && (
+      {heroUrl && (
         <div className="relative overflow-hidden rounded-xl">
           {typeof post.score === "number" && (
             <Scale
@@ -35,7 +37,7 @@ export function NewsCard({ post }: { post: NewsPost }) {
             />
           )}
           <img
-            src={post.hero_url}
+            src={heroUrl}
             alt=""
             loading="lazy"
             className="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.05]"
