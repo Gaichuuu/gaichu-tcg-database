@@ -92,7 +92,7 @@ export default function NewsPostPage() {
 
       {sanitizedHtml ? (
         <div
-          className="mt-4 max-w-none space-y-4 leading-relaxed"
+          className="prose mt-4 max-w-none space-y-4 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
         />
       ) : (

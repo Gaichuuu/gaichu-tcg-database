@@ -7,6 +7,7 @@
  * - {img:URL} or {img:URL|alt text} - Image
  * - {link:URL|text} - Link with target="_blank"
  * - {code}...{/code} - Styled code block
+ * - {indent}...{/indent} - Indented block (no bullets)
  */
 
 const NEWS_CDN_BASE = "https://gaichu.b-cdn.net/news/";
@@ -26,7 +27,10 @@ const LINK_TEMPLATE = (url: string, text: string) =>
   `<a href="${url}" target="_blank">${text}</a>`;
 
 const CODE_TEMPLATE = (content: string) =>
-  `<pre style="background:#1a1a2e;padding:12px;border-radius:4px;overflow-x:auto;"><code>${content}</code></pre>`;
+  `<pre style="background:var(--color-codeBg);padding:12px;border-radius:4px;overflow-x:auto;"><code>${content}</code></pre>`;
+
+const INDENT_TEMPLATE = (content: string) =>
+  `<div style="margin-left:1.25rem;">${content}</div>`;
 
 const TOKEN_PATTERNS: Array<{
   pattern: RegExp;
@@ -51,6 +55,11 @@ const TOKEN_PATTERNS: Array<{
     // {code}...{/code}
     pattern: /\{code\}([\s\S]*?)\{\/code\}/g,
     replace: (match) => CODE_TEMPLATE(match[1]),
+  },
+  {
+    // {indent}...{/indent}
+    pattern: /\{indent\}([\s\S]*?)\{\/indent\}/g,
+    replace: (match) => INDENT_TEMPLATE(match[1]),
   },
 ];
 
