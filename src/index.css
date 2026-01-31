@@ -178,7 +178,7 @@ pre code {
   padding: 0;
 }
 
-img {
+.prose img {
   max-width: 100%;
   height: auto;
 }

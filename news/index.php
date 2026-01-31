@@ -26,6 +26,12 @@ $projectId = (stripos($host, 'stage') !== false || stripos($host, 'dev') !== fal
   ? 'gaichu-stage'
   : 'gaichu-fe55f';
 
+function resolve_hero_url($heroUrl) {
+  if (!$heroUrl) return null;
+  if (strpos($heroUrl, 'http') === 0) return $heroUrl;
+  return 'https://gaichu.b-cdn.net/news/' . $heroUrl;
+}
+
 function fetch_news($projectId, $slug) {
   if (!$slug) return null;
 
@@ -58,7 +64,7 @@ function fetch_news($projectId, $slug) {
   return array(
     'title' => $str('title'),
     'excerpt' => $str('excerpt'),
-    'hero_url' => $str('hero_url'),
+    'hero_url' => resolve_hero_url($str('hero_url')),
     'slug' => $slug,
     'created_at' => $num('created_at'),
   );
@@ -92,7 +98,6 @@ function render_og($host, $slug, $title, $desc, $image, $doc = null) {
   echo "<meta name=\"twitter:description\" content=\"{$safeDesc}\" />\n";
   echo "<meta name=\"twitter:image\" content=\"{$safeImg}\" />\n";
 
-  // Structured data for news articles
   if ($doc && !empty($doc['title'])) {
     $jsonLd = [
       '@context' => 'https://schema.org',

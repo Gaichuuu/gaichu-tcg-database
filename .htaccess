@@ -7,15 +7,21 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Bot detection for news pages - serve PHP with meta tags
+  # Bot detection for news pages
   RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|Googlebot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
   RewriteRule ^news/([^/?#]+)/?$ /news/index.php?slug=$1 [L,QSA]
 
-  # Bot detection for card detail pages - serve PHP with meta tags
+  # Pattern: /cards/{series}
+  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|Googlebot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
+  RewriteRule ^cards/([^/]+)/?$ /cards/index.php [L,QSA]
+
+  # Pattern: /cards/{series}/sets/{set}
+  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|Googlebot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
+  RewriteRule ^cards/([^/]+)/sets/([^/]+)(?:/(?:pack-art|card-back))?/?$ /cards/index.php [L,QSA]
+
   # Pattern: /cards/{series}/sets/{set}/card/{sortBy_cardName}
   RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Discordbot|Slackbot|LinkedInBot|WhatsApp|TelegramBot|Applebot|Google.*snippet|bingbot|Googlebot|SkypeUriPreview|redditbot|Meta-ExternalAgent) [NC]
   RewriteRule ^cards/([^/]+)/sets/([^/]+)/card/([^/?#]+)/?$ /cards/index.php [L,QSA]
 
-  # All other routes fall through to React app
   RewriteRule . /index.html [L]
 </IfModule>

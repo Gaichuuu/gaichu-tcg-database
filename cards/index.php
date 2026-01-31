@@ -1,10 +1,12 @@
 <?php
 /**
- * SEO handler for card detail pages.
+ * SEO handler for card pages.
  * Serves proper Open Graph meta tags to social media bots and search engine crawlers.
  *
- * URL pattern: /cards/{series}/sets/{set}/card/{sortBy}_{cardSlug}
- * Example: /cards/wm/sets/set1/card/1_skipper
+ * URL patterns:
+ *   /cards/{series} - Series page
+ *   /cards/{series}/sets/{set} - Set page
+ *   /cards/{series}/sets/{set}/card/{sortBy}_{cardSlug} - Card detail
  */
 
 $ua = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
@@ -15,87 +17,239 @@ $isBot = (bool) preg_match(
 
 $debug = isset($_GET['dbg']);
 
-// Parse URL to extract series, set, and card info
 $path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
 $parsedPath = parse_url($path, PHP_URL_PATH);
 
-// Match pattern: /cards/{series}/sets/{set}/card/{sortBy_cardName}
+$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'gaichu.com';
+$projectId = (stripos($host, 'stage') !== false || stripos($host, 'dev') !== false)
+  ? 'gaichu-stage'
+  : 'gaichu-fe55f';
+
+$pageType = null;
+$seriesShortName = null;
+$setShortName = null;
+$sortBy = null;
+$cardSlug = null;
+
 $matches = [];
-$pattern = '~^/cards/([^/]+)/sets/([^/]+)/card/([^/?#]+)~';
-if (!preg_match($pattern, $parsedPath, $matches)) {
-  // Not a card detail URL, serve index.html
+if (preg_match('~^/cards/([^/]+)/sets/([^/]+)/card/([^/?#]+)~', $parsedPath, $matches)) {
+  $pageType = 'card';
+  $seriesShortName = urldecode($matches[1]);
+  $setShortName = urldecode($matches[2]);
+  $sortByAndCardName = urldecode($matches[3]);
+
+  $cardMatches = [];
+  if (preg_match('/^(\d+(?:\.\d+)?)_(.+)$/', $sortByAndCardName, $cardMatches)) {
+    $sortBy = floatval($cardMatches[1]);
+    $cardSlug = $cardMatches[2];
+  } else {
+    $sortBy = null;
+    $cardSlug = $sortByAndCardName;
+  }
+}
+elseif (preg_match('~^/cards/([^/]+)/sets/([^/?#]+)(?:/(?:pack-art|card-back))?/?$~', $parsedPath, $matches)) {
+  $pageType = 'set';
+  $seriesShortName = urldecode($matches[1]);
+  $setShortName = urldecode($matches[2]);
+}
+elseif (preg_match('~^/cards/([^/]+)/?$~', $parsedPath, $matches)) {
+  $pageType = 'series';
+  $seriesShortName = urldecode($matches[1]);
+}
+
+if (!$pageType) {
   serve_index();
   exit;
 }
 
-$seriesShortName = urldecode($matches[1]);
-$setShortName = urldecode($matches[2]);
-$sortByAndCardName = urldecode($matches[3]);
+function firestore_query($projectId, $collection, $filters) {
+  $url = "https://firestore.googleapis.com/v1/projects/$projectId/databases/(default)/documents:runQuery";
 
-// Parse sortBy_cardName format (e.g., "1_skipper" or "99.3_sunlight")
-$cardMatches = [];
-if (preg_match('/^(\d+(?:\.\d+)?)_(.+)$/', $sortByAndCardName, $cardMatches)) {
-  $sortBy = floatval($cardMatches[1]);
-  $cardSlug = $cardMatches[2];
-} else {
-  $sortBy = null;
-  $cardSlug = $sortByAndCardName;
+  $where = null;
+  if (count($filters) === 1) {
+    $f = $filters[0];
+    $where = [
+      'fieldFilter' => [
+        'field' => ['fieldPath' => $f['field']],
+        'op' => 'EQUAL',
+        'value' => ['stringValue' => $f['value']]
+      ]
+    ];
+  } elseif (count($filters) > 1) {
+    $fieldFilters = [];
+    foreach ($filters as $f) {
+      $fieldFilters[] = [
+        'fieldFilter' => [
+          'field' => ['fieldPath' => $f['field']],
+          'op' => 'EQUAL',
+          'value' => ['stringValue' => $f['value']]
+        ]
+      ];
+    }
+    $where = [
+      'compositeFilter' => [
+        'op' => 'AND',
+        'filters' => $fieldFilters
+      ]
+    ];
+  }
+
+  $query = [
+    'structuredQuery' => [
+      'from' => [['collectionId' => $collection]],
+      'where' => $where,
+      'limit' => 1
+    ]
+  ];
+
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 4);
+
+  $res = curl_exec($ch);
+  curl_close($ch);
+
+  if (!$res) return null;
+
+  $json = json_decode($res, true);
+  if (!$json || !isset($json[0]['document']['fields'])) return null;
+
+  $result = parse_firestore_fields($json[0]['document']['fields']);
+
+  if (isset($json[0]['document']['name'])) {
+    $docName = $json[0]['document']['name'];
+    $parts = explode('/', $docName);
+    $result['id'] = end($parts);
+  }
+
+  return $result;
 }
 
-$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'gaichu.com';
-$cdnBase = 'https://gaichu.b-cdn.net';
-
-/**
- * Load card data from JSON files
- */
-function load_card_data($seriesShortName, $setShortName, $sortBy, $cardSlug) {
-  global $cdnBase;
-
-  $baseDir = dirname(__DIR__);
-
-  // Load sets.json to find the set
-  $setsPath = $baseDir . '/data/sets.json';
-  if (!file_exists($setsPath)) return null;
-
-  $sets = json_decode(file_get_contents($setsPath), true);
-  if (!$sets) return null;
-
-  $targetSet = null;
-  foreach ($sets as $set) {
-    if ($set['series_short_name'] === $seriesShortName && $set['short_name'] === $setShortName) {
-      $targetSet = $set;
-      break;
+function parse_firestore_fields($fields) {
+  $result = [];
+  foreach ($fields as $key => $value) {
+    if (isset($value['stringValue'])) {
+      $result[$key] = $value['stringValue'];
+    } elseif (isset($value['integerValue'])) {
+      $result[$key] = (int)$value['integerValue'];
+    } elseif (isset($value['doubleValue'])) {
+      $result[$key] = (float)$value['doubleValue'];
+    } elseif (isset($value['booleanValue'])) {
+      $result[$key] = $value['booleanValue'];
+    } elseif (isset($value['mapValue']['fields'])) {
+      $result[$key] = parse_firestore_fields($value['mapValue']['fields']);
+    } elseif (isset($value['arrayValue']['values'])) {
+      $arr = [];
+      foreach ($value['arrayValue']['values'] as $v) {
+        if (isset($v['stringValue'])) {
+          $arr[] = $v['stringValue'];
+        } elseif (isset($v['mapValue']['fields'])) {
+          $arr[] = parse_firestore_fields($v['mapValue']['fields']);
+        }
+      }
+      $result[$key] = $arr;
     }
   }
-  if (!$targetSet) return null;
+  return $result;
+}
 
-  // Load cards.json for this series
-  $cardsPath = $baseDir . '/data/' . $seriesShortName . '/cards.json';
-  if (!file_exists($cardsPath)) return null;
+function load_series_data($projectId, $seriesShortName) {
+  return firestore_query($projectId, 'series', [
+    ['field' => 'short_name', 'value' => $seriesShortName]
+  ]);
+}
 
-  $cards = json_decode(file_get_contents($cardsPath), true);
-  if (!$cards) return null;
+function load_set_data($projectId, $seriesShortName, $setShortName) {
+  return firestore_query($projectId, 'sets', [
+    ['field' => 'series_short_name', 'value' => $seriesShortName],
+    ['field' => 'short_name', 'value' => $setShortName]
+  ]);
+}
 
-  // Find the card by sort_by and/or slug match
-  foreach ($cards as $card) {
-    // Check if card belongs to this set
-    if (!in_array($targetSet['id'], $card['set_ids'] ?? [])) continue;
+function load_card_data($projectId, $seriesShortName, $setShortName, $sortBy, $cardSlug) {
 
-    // Match by sortBy if provided
-    if ($sortBy !== null && floatval($card['sort_by']) != $sortBy) continue;
+  $set = load_set_data($projectId, $seriesShortName, $setShortName);
+  if (!$set || !isset($set['id'])) return null;
 
-    // Get card name
-    $cardName = is_array($card['name'])
+  $url = "https://firestore.googleapis.com/v1/projects/$projectId/databases/(default)/documents:runQuery";
+
+  $filters = [
+    [
+      'fieldFilter' => [
+        'field' => ['fieldPath' => 'set_ids'],
+        'op' => 'ARRAY_CONTAINS',
+        'value' => ['stringValue' => $set['id']]
+      ]
+    ]
+  ];
+
+  if ($sortBy !== null) {
+    $sortByValue = floor($sortBy) == $sortBy
+      ? ['integerValue' => (string)(int)$sortBy]
+      : ['doubleValue' => $sortBy];
+    $filters[] = [
+      'fieldFilter' => [
+        'field' => ['fieldPath' => 'sort_by'],
+        'op' => 'EQUAL',
+        'value' => $sortByValue
+      ]
+    ];
+  }
+
+  $query = [
+    'structuredQuery' => [
+      'from' => [['collectionId' => 'cards']],
+      'where' => count($filters) === 1 ? $filters[0] : [
+        'compositeFilter' => [
+          'op' => 'AND',
+          'filters' => $filters
+        ]
+      ],
+      'limit' => $sortBy !== null ? 1 : 100
+    ]
+  ];
+
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 4);
+
+  $res = curl_exec($ch);
+  curl_close($ch);
+
+  if (!$res) return null;
+
+  $json = json_decode($res, true);
+  if (!$json) return null;
+
+  foreach ($json as $result) {
+    if (!isset($result['document']['fields'])) continue;
+
+    $card = parse_firestore_fields($result['document']['fields']);
+
+    $cardName = is_array($card['name'] ?? null)
       ? ($card['name']['en'] ?? reset($card['name']) ?? '')
       : ($card['name'] ?? '');
 
-    // Match slug
-    $nameSlug = slugify($cardName);
-    if ($nameSlug === $cardSlug || $sortBy !== null) {
+    if ($sortBy !== null) {
       return [
         'card' => $card,
-        'set' => $targetSet,
-        'cardName' => $cardName,
+        'set' => $set,
+        'cardName' => $cardName
+      ];
+    }
+
+    $nameSlug = slugify($cardName);
+    if ($nameSlug === $cardSlug) {
+      return [
+        'card' => $card,
+        'set' => $set,
+        'cardName' => $cardName
       ];
     }
   }
@@ -111,25 +265,20 @@ function slugify($s) {
 }
 
 function get_card_description($card, $cardName) {
-  // Build a description from card data
   $parts = [];
 
-  // Add parody info if available
   if (!empty($card['parody'])) {
     $parts[] = "A parody of " . $card['parody'];
   }
 
-  // Add rarity
   if (!empty($card['rarity'])) {
     $parts[] = $card['rarity'] . " card";
   }
 
-  // Add HP if available
   if (!empty($card['hp'])) {
     $parts[] = "HP: " . $card['hp'];
   }
 
-  // Add description
   $desc = is_array($card['description'] ?? null)
     ? ($card['description']['en'] ?? '')
     : ($card['description'] ?? '');
@@ -170,7 +319,6 @@ function render_og($host, $path, $title, $desc, $image, $card = null) {
   echo "<meta name=\"twitter:description\" content=\"{$safeDesc}\" />\n";
   echo "<meta name=\"twitter:image\" content=\"{$safeImg}\" />\n";
 
-  // Structured data for cards
   if ($card) {
     $jsonLd = [
       '@context' => 'https://schema.org',
@@ -204,27 +352,66 @@ function serve_index() {
   echo 'Not found';
 }
 
-// Debug mode
 if ($debug) {
   header('Content-Type: text/plain; charset=utf-8');
   echo "UA: $ua\n";
   echo "HOST: $host\n";
   echo "PATH: $path\n";
+  echo "PROJECT: $projectId\n";
+  echo "PAGE_TYPE: $pageType\n";
   echo "SERIES: $seriesShortName\n";
   echo "SET: $setShortName\n";
   echo "SORT_BY: $sortBy\n";
   echo "CARD_SLUG: $cardSlug\n";
   echo "IS_BOT: " . ($isBot ? 'true' : 'false') . "\n\n";
 
-  $data = load_card_data($seriesShortName, $setShortName, $sortBy, $cardSlug);
-  echo "CARD DATA: " . json_encode($data, JSON_PRETTY_PRINT) . "\n";
+  if ($pageType === 'series') {
+    $data = load_series_data($projectId, $seriesShortName);
+    echo "SERIES DATA: " . json_encode($data, JSON_PRETTY_PRINT) . "\n";
+  } elseif ($pageType === 'set') {
+    $seriesData = load_series_data($projectId, $seriesShortName);
+    $setData = load_set_data($projectId, $seriesShortName, $setShortName);
+    echo "SERIES DATA: " . json_encode($seriesData, JSON_PRETTY_PRINT) . "\n";
+    echo "SET DATA: " . json_encode($setData, JSON_PRETTY_PRINT) . "\n";
+  } else {
+    $data = load_card_data($projectId, $seriesShortName, $setShortName, $sortBy, $cardSlug);
+    echo "CARD DATA: " . json_encode($data, JSON_PRETTY_PRINT) . "\n";
+  }
   exit;
 }
 
-// Serve meta tags for bots
 if ($isBot) {
-  $data = load_card_data($seriesShortName, $setShortName, $sortBy, $cardSlug);
+  $defaultImage = 'https://gaichu.b-cdn.net/assets/default.png?v=3';
 
+  if ($pageType === 'series') {
+    $series = load_series_data($projectId, $seriesShortName);
+    if ($series) {
+      $title = $series['name'];
+      $desc = $series['description'] ?? "Browse all {$series['name']} card sets on Gaichu.";
+      $image = $series['logo'] ?? $defaultImage;
+      render_og($host, $parsedPath, $title, $desc, $image);
+      exit;
+    }
+    render_og($host, $parsedPath, 'Card Series', 'Browse card series on Gaichu TCG Database.', $defaultImage);
+    exit;
+  }
+
+  if ($pageType === 'set') {
+    $series = load_series_data($projectId, $seriesShortName);
+    $set = load_set_data($projectId, $seriesShortName, $setShortName);
+    if ($set) {
+      $seriesName = $series ? $series['name'] : $seriesShortName;
+      $title = $set['name'] . ' - ' . $seriesName;
+      $desc = $set['description'] ?? "Browse all cards in {$set['name']} on Gaichu.";
+      $image = $set['logo'] ?? ($series['logo'] ?? $defaultImage);
+      render_og($host, $parsedPath, $title, $desc, $image);
+      exit;
+    }
+    render_og($host, $parsedPath, 'Card Set', 'Browse card sets on Gaichu TCG Database.', $defaultImage);
+    exit;
+  }
+
+  $data = load_card_data($projectId, $seriesShortName, $setShortName, $sortBy, $cardSlug);
   if ($data) {
     $card = $data['card'];
     $set = $data['set'];
@@ -232,22 +419,14 @@ if ($isBot) {
 
     $title = $cardName . ' - ' . $set['name'];
     $desc = get_card_description($card, $cardName);
-    $image = $card['image'] ?? $card['thumb'] ?? 'https://gaichu.b-cdn.net/assets/default.png?v=3';
+    $image = $card['image'] ?? $card['thumb'] ?? $defaultImage;
 
     render_og($host, $parsedPath, $title, $desc, $image, $card);
     exit;
   }
 
-  // Fallback for unknown cards
-  render_og(
-    $host,
-    $parsedPath,
-    'Card Details',
-    'View card details on Gaichu TCG Database.',
-    'https://gaichu.b-cdn.net/assets/default.png?v=3'
-  );
+  render_og($host, $parsedPath, 'Card Details', 'View card details on Gaichu TCG Database.', $defaultImage);
   exit;
 }
 
-// For regular users, serve the React app
 serve_index();
