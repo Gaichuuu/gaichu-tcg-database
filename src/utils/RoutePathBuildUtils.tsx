@@ -174,10 +174,24 @@ export function getArtPath(
 }
 export function getCardDetailPath(card: CollectionCard): string {
   const nameSlug = slugify(i18nToEnString(card.name as unknown as I18nValue));
+  return buildCardDetailPath(
+    card.series_short_name,
+    card.set_short_name,
+    card.sort_by,
+    nameSlug,
+  );
+}
+
+export function buildCardDetailPath(
+  seriesShortName: string,
+  setShortName: string,
+  sortBy: number,
+  nameSlug: string,
+): string {
   return generatePath(CardDetailPath, {
-    seriesShortName: encodeURIComponent(card.series_short_name),
-    setShortName: encodeURIComponent(card.set_short_name),
-    sortByAndCardName: encodeURIComponent(`${card.sort_by}_${nameSlug}`),
+    seriesShortName: encodeURIComponent(seriesShortName),
+    setShortName: encodeURIComponent(setShortName),
+    sortByAndCardName: encodeURIComponent(`${sortBy}_${nameSlug}`),
   });
 }
 
