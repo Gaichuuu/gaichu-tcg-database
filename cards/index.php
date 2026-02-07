@@ -267,16 +267,8 @@ function slugify($s) {
 function get_card_description($card, $cardName) {
   $parts = [];
 
-  if (!empty($card['parody'])) {
-    $parts[] = "A parody of " . $card['parody'];
-  }
-
-  if (!empty($card['rarity'])) {
-    $parts[] = $card['rarity'] . " card";
-  }
-
-  if (!empty($card['hp'])) {
-    $parts[] = "HP: " . $card['hp'];
+  if (!empty($card['average_price'])) {
+    $parts[] = "Probably sells for " . $card['average_price'] . " USD";
   }
 
   $desc = is_array($card['description'] ?? null)

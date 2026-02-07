@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FiChevronRight } from "react-icons/fi";
 import { useLatestNews } from "@/hooks/useNews";
 import { NewsCard } from "@/components/news/NewsCard";
-import { Link } from "react-router-dom";
+import CardMarquee from "@/components/home/CardMarquee";
+import SeriesTiles from "@/components/home/SeriesTiles";
+import FriendsSection from "@/components/home/FriendsSection";
 import type { NewsPost } from "@/types/news";
 
 const HomePage: React.FC = () => {
   const { data: latest, isLoading, error } = useLatestNews(3);
 
   return (
-    <div className="mt-1 flex flex-col items-center justify-center p-0">
+    <div className="space-y-10">
       <title>Gaichu TCG Database</title>
       <meta
         name="description"
@@ -20,28 +24,46 @@ const HomePage: React.FC = () => {
         content="Your #2 source for parody and bootleg card games."
       />
 
-      <p className="mb-4 text-5xl tracking-wide">Welcome</p>
-      <p className="mb-4 max-w-xl text-lg">
-        Your #2 source for parody and bootleg card games.
-      </p>
-      <Link to="/cards" className="button">
-        Browse Cards
-      </Link>
-      <section className="mx-auto mt-8 max-w-6xl px-0">
+      <section>
+        <p className="text-secondaryText mt-2 mb-4 text-center text-sm">
+          Your #2 source for parody and bootleg card games.
+        </p>
+        <CardMarquee />
+      </section>
+
+      <section>
+        <div className="mb-2 flex items-baseline justify-between">
+          <h3>Browse by Series</h3>
+          <Link
+            to="/cards"
+            className="text-interactiveText inline-flex items-center gap-0.5 text-sm"
+          >
+            See all
+            <FiChevronRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <SeriesTiles />
+      </section>
+
+      <section>
         <div className="mb-2 flex items-baseline justify-between">
           <h3>Latest News</h3>
-          <Link to="/news" className="text-interactiveText">
+          <Link
+            to="/news"
+            className="text-interactiveText inline-flex items-center gap-0.5 text-sm"
+          >
             See all
+            <FiChevronRight className="h-4 w-4" />
           </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
-          {isLoading ? (
-            <div className="text-secondaryText col-span-3 py-4 text-center">
-              Loading news...
-            </div>
-          ) : error ? (
+          {error ? (
             <div className="text-errorText col-span-3 py-4 text-center">
               Failed to load news.
+            </div>
+          ) : isLoading && !latest ? (
+            <div className="text-secondaryText col-span-3 py-4 text-center">
+              Loading news...
             </div>
           ) : latest?.length === 0 ? (
             <div className="text-secondaryText col-span-3 py-4 text-center">
@@ -51,6 +73,13 @@ const HomePage: React.FC = () => {
             latest?.map((p: NewsPost) => <NewsCard key={p.id} post={p} />)
           )}
         </div>
+      </section>
+
+      <section className="pb-8">
+        <div className="mb-2">
+          <h3>Trusted Links</h3>
+        </div>
+        <FriendsSection />
       </section>
     </div>
   );
