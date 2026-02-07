@@ -1,5 +1,16 @@
 [
   {
+    "title": "MetaZaurus PDA-reader application",
+    "author": "grimzwald",
+    "tags": ["news-archive"],
+    "hero_url": "07.png",
+    "excerpt": "Grimzwald announces the MetaZaurus revival.",
+    "body_html": "<p><em>(Posted originally from the {link:https://discord.gg/artistappreciationproject|Artist Appreciation Project} discord)</em></p><p>I want to take a moment to share something with you all which ties back to the roots of my journey in the community and the evolution of the AAP.</p><h3>MetaZaurus</h3><p><em>(now there's a name you haven't heard in a while...)</em></p><p>For those of you who are new here, MetaZaurus was my alias back when I was running the card database site under the same name. It was a labour of love and something that I never profited from, even before MetaZoo went bankrupt and I had offers (from Mike himself) to purchase or take over the site. I declined because it didn't align with my vision and I ultimately took the site down and moved on, choosing to focus on the AAP and the incredible group of talent we have today.</p><p>Recently, {link:https://github.com/CamelJR|CamelJR} (a long-time supporter of the AAP and the Kickstarter) approached me with a proposal to revive MetaZaurus as a historical resource. I was skeptical at first, but the results have far exceeded my expectations. The new site faithfully recreates the original PDA-style interface (something I always dreamed of but couldn't achieve) and improves on it in different ways. What's even better is that the data is now open source ({link:https://github.com/Gaichuuu/metazaurus|available on GitHub}), ensuring it remains a community resource for years to come.</p><p>Although I'm no longer involved in this type of work beyond passing along my archives and giving my blessing, I wanted to highlight the incredible effort CamelJR has put into reviving this project. For the OGs amongst us, I hope you'll appreciate the care that's gone into it, and for newer members I hope this serves as a reminder of how far we've come as a community and why initiatives like the AAP matter so much.</p><p>Kudos again to CamelJR for making this happen 🙌</p><p>{link:https://metazaurus.com/|metazaurus.com}</p>{img:07-1.png}",
+    "created_at": "2026-02-06",
+    "slug": "the-return-of-metazaurus",
+    "id": "the-return-of-metazaurus"
+  },
+  {
     "title": "WrennyMoo is BACK as katu.ramen",
     "author": "gaichu",
     "tags": ["card-release"],
