@@ -170,6 +170,8 @@ npm run prices:export
 npm run data:import:prod
 ```
 
+> **Note:** No API deploy is needed after a price sync. The API reads prices directly from Firestore at request time, so updated prices are served automatically. Steps 2-3 above only update the `cards` collection used by set/list pages.
+
 ## Rate Limiting
 
 The API is rate limited. If you exceed the limit, you'll receive a `429 Too Many Requests` response.
