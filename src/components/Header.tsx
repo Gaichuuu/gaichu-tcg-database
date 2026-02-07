@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-navBg border-secondaryBorder/40 border-b-2 shadow-xl">
+    <header className="bg-navBg border-secondaryBorder/20 border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1">
         <Link to="/" className="flex items-center space-x-2">
           <img
