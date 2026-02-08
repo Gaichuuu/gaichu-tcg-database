@@ -1,5 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore/lite";
+import { getAnalytics, isSupported } from "firebase/analytics";
 import { IS_USE_STAGING_DATA } from "../services/Constants";
 
 const firebaseConfig = IS_USE_STAGING_DATA
@@ -24,3 +25,4 @@ const firebaseConfig = IS_USE_STAGING_DATA
 
 export const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 export const database = getFirestore(app);
+export const analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
