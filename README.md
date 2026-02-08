@@ -59,7 +59,6 @@ The Gaichu API provides public access to card data. See the [API documentation](
 **Base URL:** `https://us-central1-gaichu-fe55f.cloudfunctions.net/api`
 
 ```bash
-# Example: Get OpenZoo Legacy cards
 curl "https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/cards?series=oz&set=legacy"
 ```
 
@@ -82,6 +81,20 @@ There are many ways to get involved~
 - Make improvements to the layout and UI
 - Create a [ticket](https://github.com/Gaichuuu/gaichu-tcg-database/issues) for any suggestions or issues
 - Chat with us on [Discord](https://discord.gg/gTW9brGkQw)
+
+---
+
+## Deployment
+
+Deploy the frontend with a single command~
+
+```bash
+npm run deploy
+```
+
+This builds the project, then rsyncs `dist/`, `.htaccess`, `sitemap.xml`, and PHP SEO handlers to the server over SSH.
+
+See `scripts/deploy.sh` for details.
 
 ---
 
