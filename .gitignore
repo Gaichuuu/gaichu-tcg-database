@@ -30,6 +30,7 @@ stageServiceAccountKey.json
 .claude/
 CLAUDE.md
 scripts/temp/
+.deploy.env
 
 # Build artifacts
 gaichu-api/lib

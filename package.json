@@ -26,7 +26,8 @@
     "news:import:staging": "NODE_ENV=staging node firestoreScript/importNews.cjs",
     "prices:export": "npx tsx scripts/export-prices-to-json.ts",
     "tts:build": "npm --prefix tts-mod run build",
-    "tts:json": "npm --prefix tts-mod run json"
+    "tts:json": "npm --prefix tts-mod run json",
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
