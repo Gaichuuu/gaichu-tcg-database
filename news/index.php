@@ -122,9 +122,8 @@ function render_og($host, $slug, $title, $desc, $image, $doc = null) {
     echo '<script type="application/ld+json">' . json_encode($jsonLd, JSON_UNESCAPED_SLASHES) . "</script>\n";
   }
 
-  echo "<meta http-equiv=\"refresh\" content=\"0; url={$url}\" />\n";
   echo "<style>body{font:14px system-ui, sans-serif;padding:24px;color:#ddd;background:#000}</style>\n";
-  echo "</head><body>Redirecting to <a href=\"{$url}\">{$safeTitle}</a>…</body></html>";
+  echo "</head><body><a href=\"{$url}\">{$safeTitle}</a></body></html>";
 }
 
 if ($debug) {
