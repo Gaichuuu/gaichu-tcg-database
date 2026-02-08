@@ -27,7 +27,7 @@ echo "==> Deploying .htaccess and sitemap..."
 rsync -avz .htaccess sitemap.xml "$REMOTE"
 
 echo "==> Deploying PHP handlers..."
-rsync -avz cards/index.php "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}cards/index.php"
-rsync -avz news/index.php "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}news/index.php"
+rsync -avz --mkpath cards/index.php "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}cards/index.php"
+rsync -avz --mkpath news/index.php "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}news/index.php"
 
 echo "==> Deploy complete!"
