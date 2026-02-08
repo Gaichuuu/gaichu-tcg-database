@@ -1,5 +1,16 @@
 [
   {
+    "title": "OpenZoo Tabletop Simulator mod",
+    "author": "gaichu",
+    "tags": ["site-updates"],
+    "hero_url": "08.png",
+    "excerpt": "Play with over 1,000 cards from OpenZoo and MetaZoo.",
+    "body_html": "<p>You can now play OpenZoo (and vintage MetaZoo) on {link:https://store.steampowered.com/app/286160/Tabletop_Simulator/|Tabletop Simulator}. Subscribe to the mod on the {link:https://steamcommunity.com/sharedfiles/filedetails/?id=3653472444|Steam Workshop} and you're all set.</p><p>The mod is based on the original <strong>MetaZoo PlayTesting and Deckbuilding Table</strong>, created by <strong>Aussie Brickster</strong>. He gave us his blessing to take what was created and build on top of it.</p><p>Here's what's included in the initial release:</p><p><strong>OpenZoo</strong></p><ul><li>Legacy (36 cards)</li><li>Promo 2025 (3 cards)</li></ul><p><strong>MetaZoo</strong></p><ul><li>Cryptid Nation 2nd Edition (189 cards)</li><li>Nightfall (193 cards)</li><li>Wilderness (200 cards)</li><li>UFO (193 cards)</li><li>Seance (230 cards)</li></ul><p>That's over 1,000 cards to play with. There's also a <strong>Card Sleever</strong> panel for changing card back on any deck.</p><p>The majority of card scans are from {link:https://metazaurus.com/|MetaZaurus}. Thanks again to MetaZaurus, and anyone else that put long hours into creating these high-quality card scans. We'll continue to update the mod and add additional decks, such as <strong>Native</strong> and <strong>KCC</strong>. The eventual goal is to have decks created with MetaZoo Cryptid's {link:https://www.metazoocryptids.com/gameplay|deckbuilder} export into the OpenZoo TTS mod.</p><p>This mod generator is open source and available as part of the {link:https://github.com/Gaichuuu/gaichu-tcg-database/tree/main/tts-mod|Gaichu repo}.</p>",
+    "created_at": "2026-02-07",
+    "slug": "play-openzoo-on-tts",
+    "id": "play-openzoo-on-tts"
+  },
+  {
     "title": "MetaZaurus PDA-reader application",
     "author": "grimzwald",
     "tags": ["news-archive"],
