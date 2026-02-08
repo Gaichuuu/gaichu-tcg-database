@@ -97,7 +97,7 @@ const CardDetailPage: React.FC = () => {
 
         <div className="flex min-w-0 flex-1 flex-col gap-6 lg:flex-row">
           <div className="min-w-0 flex-1">
-            <div className="mb-4 flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
+            <div className="mb-4 flex flex-col items-start gap-2 sm:flex-row sm:justify-between sm:gap-x-4">
               <h1 className="text-2xl font-semibold">{resolvedName}</h1>
               <LocaleToggle card={card} />
             </div>

@@ -35,7 +35,7 @@ export function NewsGrid({ q }: { q: string }) {
 
   return (
     <>
-      <div className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((p) => (
           <NewsCard key={p.id} post={p} />
         ))}

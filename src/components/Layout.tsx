@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="bg-mainBg">
-      <div className="container mx-auto px-4 py-2">
+      <div className="container mx-auto px-4 pt-2 pb-8">
         <Breadcrumbs />
 
         <main>{children}</main>
