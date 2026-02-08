@@ -75,7 +75,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="pb-8">
+      <section>
         <div className="mb-2">
           <h3>Trusted Links</h3>
         </div>

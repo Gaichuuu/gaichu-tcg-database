@@ -16,7 +16,7 @@ export function NewsSearch() {
 
   return (
     <div className="bg-mainBg/60 supports-backdrop-filter:bg-mainBg/40 sticky top-0 z-10 backdrop-blur-sm">
-      <div className="mx-auto max-w-6xl px-4 py-3">
+      <div className="py-3">
         <input
           value={local}
           onChange={(e) => setLocal(e.target.value)}

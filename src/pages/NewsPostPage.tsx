@@ -37,12 +37,20 @@ export default function NewsPostPage() {
       }
     });
 
+    DOMPurify.addHook("afterSanitizeAttributes", (node) => {
+      if (node.tagName === "A") {
+        node.setAttribute("target", "_blank");
+        node.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+
     const clean = DOMPurify.sanitize(expanded, {
       ADD_TAGS: ["iframe"],
       ADD_ATTR: ["allow", "allowfullscreen", "frameborder", "scrolling"],
     });
 
     DOMPurify.removeHook("uponSanitizeElement");
+    DOMPurify.removeHook("afterSanitizeAttributes");
     return clean;
   }, [post?.body_html]);
 
