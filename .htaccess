@@ -2,6 +2,10 @@
   RewriteEngine On
   RewriteBase /
 
+  # Bypass cards/ and news/ directories for bare paths (serve SPA directly)
+  RewriteRule ^cards/?$ /index.html [L]
+  RewriteRule ^news/?$ /index.html [L]
+
   # Serve existing files and directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
