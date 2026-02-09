@@ -15,11 +15,11 @@ interface ShowcaseCard {
   averagePrice?: number;
 }
 
-function hasValidImage(card: CollectionCard): boolean {
+export function hasValidImage(card: CollectionCard): boolean {
   return !card.image.includes("*") && !card.image.endsWith("/00.jpg");
 }
 
-function shuffle<T>(arr: T[], rng: () => number): T[] {
+export function shuffle<T>(arr: T[], rng: () => number): T[] {
   const out = [...arr];
   for (let i = out.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
@@ -28,7 +28,7 @@ function shuffle<T>(arr: T[], rng: () => number): T[] {
   return out;
 }
 
-function toEnName(name: CollectionCard["name"]): string {
+export function toEnName(name: CollectionCard["name"]): string {
   if (typeof name === "string") return name;
   return name?.en ?? Object.values(name ?? {})[0] ?? "";
 }
