@@ -1,7 +1,8 @@
-import React, { useRef, useEffect, useCallback } from "react";
+import React, { useRef, useEffect, useCallback, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { slugify, buildCardDetailPath } from "@/utils/RoutePathBuildUtils";
 import { useShowcaseCards } from "@/hooks/useShowcaseCards";
+import { useImagesLoaded } from "@/hooks/useImagesLoaded";
 
 /** Pixels per second when auto-scrolling */
 const AUTO_SPEED = 50;
@@ -53,6 +54,10 @@ const CardMarquee: React.FC = () => {
     lastTime: 0,
     animFrame: 0,
   });
+
+  const imageUrls = useMemo(() => cards.map((c) => c.image), [cards]);
+  const imagesReady = useImagesLoaded(imageUrls, 8);
+  const showSkeleton = isLoading || cards.length === 0 || !imagesReady;
 
   useEffect(() => {
     const el = containerRef.current;
@@ -106,7 +111,7 @@ const CardMarquee: React.FC = () => {
       mql.removeEventListener("change", onMotionChange);
       s.lastTime = 0;
     };
-  }, [cards.length]);
+  }, [cards.length, showSkeleton]);
 
   const dragStart = useCallback((x: number) => {
     const s = stateRef.current;
@@ -199,7 +204,24 @@ const CardMarquee: React.FC = () => {
     stateRef.current.isPaused = false;
   }, []);
 
-  if (isLoading || cards.length === 0) return null;
+  if (showSkeleton) {
+    return (
+      <div
+        className="full-bleed marquee-fade overflow-hidden"
+        role="region"
+        aria-label="Loading showcase cards"
+      >
+        <div className="flex gap-3 py-6">
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div
+              key={i}
+              className="bg-secondaryBorder aspect-5/7 h-56 shrink-0 animate-pulse rounded-xl sm:h-72"
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

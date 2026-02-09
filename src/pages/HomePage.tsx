@@ -62,9 +62,25 @@ const HomePage: React.FC = () => {
               Failed to load news.
             </div>
           ) : isLoading && !latest ? (
-            <div className="text-secondaryText col-span-3 py-4 text-center">
-              Loading news...
-            </div>
+            <>
+              {Array.from({ length: 3 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="border-secondaryBorder bg-mainBg flex animate-pulse flex-col rounded-2xl border p-4"
+                >
+                  <div className="bg-secondaryBorder aspect-video w-full rounded-xl" />
+                  <div className="mt-3 flex-1 space-y-2">
+                    <div className="bg-secondaryBorder h-5 w-3/4 rounded" />
+                    <div className="bg-secondaryBorder h-4 w-full rounded" />
+                    <div className="bg-secondaryBorder h-4 w-2/3 rounded" />
+                  </div>
+                  <div className="mt-3 flex items-center justify-between">
+                    <div className="bg-secondaryBorder h-3 w-20 rounded" />
+                    <div className="bg-secondaryBorder h-4 w-12 rounded" />
+                  </div>
+                </div>
+              ))}
+            </>
           ) : latest?.length === 0 ? (
             <div className="text-secondaryText col-span-3 py-4 text-center">
               No news available.

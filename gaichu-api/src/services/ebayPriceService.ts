@@ -12,13 +12,10 @@ const CATEGORY_ID = "183454"; // CCG Individual Cards
 const MAX_SEARCH_RESULTS = "60";
 
 /** Map series short names to searchable names on eBay
- * Uses eBay OR syntax: (term1,term2) matches either variant
- * This catches listings using "wrenny moo" OR "wrennymoo", etc.
+ * Uses eBay OR syntax: (term1,term2)
  */
 const SERIES_NAME_MAP: Record<string, string> = {
   wm: '("wrenny moo",wrennymoo)',
-  // ASH: Unlike Wrenny Moo, sellers consistently use "After Skool Hobby" with spaces.
-  // The no-spaces variant "afterskoolhobby" returns unrelated generic Pokemon cards.
   ash: '"after skool hobby"',
   oz: "openzoo",
   mz: "metazoo",
@@ -27,11 +24,10 @@ const SERIES_NAME_MAP: Record<string, string> = {
 
 /** Map set short names to eBay-friendly search terms
  * eBay sellers use product names like "Generation One" rather than internal names like "series1"
- * Uses eBay OR syntax: (term1,term2) matches either variant
+ * Uses eBay OR syntax: (term1,term2)
  */
 const SET_NAME_MAP: Record<string, Record<string, string>> = {
   wm: {
-    // WM sellers use both "set 1" and "series 1" interchangeably
     set1: '("set 1","series 1")',
   },
   ash: {
@@ -43,9 +39,6 @@ const SET_NAME_MAP: Record<string, Record<string, string>> = {
 };
 
 /** Default keywords to exclude from searches */
-// Keep exclusions minimal to avoid
-// filtering out valid listings
-// The API seems to do word-level matching, so "complete set" might also exclude "Set 1"
 const DEFAULT_EXCLUDED_KEYWORDS = [
   "lot",
   "bundle",
@@ -56,72 +49,47 @@ const DEFAULT_EXCLUDED_KEYWORDS = [
 
 /** Series-specific excluded keywords */
 const SERIES_EXCLUDED_KEYWORDS: Record<string, string[]> = {
-  // "first" excludes first print/edition cards which are priced differently
   wm: ["first"],
-  // "ditto" excludes ditto variants for non-ditto cards (except #44 which ARE ditto cards)
   ash: ["ditto"],
 };
 
-/** ASH card name overrides for eBay search
- * Maps internal card names to more searchable eBay terms
- */
+/** ASH card name overrides for eBay search */
 const ASH_CARD_NAME_MAP: Record<string, string> = {
-  // "______'s Pikachu" is better known as "Birthday Pikachu" on eBay
   "______'s Pikachu": '"birthday pikachu"',
 };
 
-/** Card-specific search name overrides
- * Key format: "series-set-number" (e.g., "ash-series1-0")
- * Used when the default card name needs to be replaced entirely
- */
+/** Card-specific search name overrides */
 const CARD_NAME_OVERRIDES: Record<string, string> = {
-  // ASH Charizard #0 is the Nagaba promo
   "ash-series1-0": "Charizard Nagaba",
-  // ASH Gen 1 cards that need specific search terms
   "ash-series1-2": "Charizard #2",
   "ash-series1-10": "scream pikachu",
   "ash-series1-18": "bubble mew",
   "ash-series1-21": "pikachu #21",
   "ash-series1-29": "eeveelutions",
   "ash-series1-31": "charizard #31",
-  // ASH Poncho Pikachu cards (40-43)
   "ash-series1-40": "poncho charizard",
   "ash-series1-41": "poncho mega charizard",
   "ash-series1-42": "poncho gyarados",
   "ash-series1-43": "poncho lucario",
 };
 
-/** Card-specific search name overrides by card ID
- * Used when multiple cards share the same number and need different search terms
- */
+/** Card-specific search name overrides by card ID */
 const CARD_ID_OVERRIDES: Record<string, string> = {
-  // ASH Ditto secret rare
   "78a02344-0c51-48ef-b22c-d5892e98ce3e": "ditto secret",
 };
 
-/** Card-specific excluded keywords
- * Key format: "series-set-number" (e.g., "wm-set1-7")
- */
+/** Card-specific excluded keywords */
 const CARD_EXCLUDED_KEYWORDS: Record<string, string[]> = {
-  // WM Set 1 #7 (Raichu) - exclude "Alolan" to avoid Alolan Raichu listings
   "wm-set1-7": ["Alolan"],
-  // WM Set 1 #38 (Pikachu) - exclude "signed" to avoid autographed cards
   "wm-set1-38": ["signed"],
-  // ASH #40 (Poncho Charizard) - exclude "mega" to avoid mega charizard variant
   "ash-series1-40": ["mega"],
 };
 
-/**
- * Get the card name to use in search query
- * Handles series-specific formatting
- */
 function getSearchCardName(card: Card): string {
-  // Check for card ID overrides first (for cards sharing the same number)
   if (CARD_ID_OVERRIDES[card.id]) {
     return CARD_ID_OVERRIDES[card.id];
   }
 
-  // Check for card-specific overrides (e.g., "ash-series1-0" -> "Charizard Nagaba")
   const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
   if (CARD_NAME_OVERRIDES[cardKey]) {
     return CARD_NAME_OVERRIDES[cardKey];
@@ -130,26 +98,18 @@ function getSearchCardName(card: Card): string {
   let cardName: string;
 
   if (card.series_short_name === "ash") {
-    // ASH: Always use the card name, not parody name
-    // The "?" suffix (e.g., "Pikachu?") indicates a Ditto card and is the unique identifier
-    // Multiple cards share the same parody (e.g., 6 different "Ditto" cards all numbered #44)
     cardName =
       typeof card.name === "string"
         ? card.name
         : card.name.en || card.name.ja || "";
 
-    // Check for card name overrides first (e.g., "______'s Pikachu" -> "birthday pikachu")
     if (ASH_CARD_NAME_MAP[cardName]) {
       return ASH_CARD_NAME_MAP[cardName];
     }
-
-    // Ditto cards end with "?" - include "ditto" in search and remove the "?"
-    // e.g., "Pikachu?" becomes "Pikachu ditto"
     if (cardName.endsWith("?")) {
       cardName = `${cardName.slice(0, -1)} ditto`;
     }
   } else {
-    // For other series, use parody name if available (what eBay sellers actually list)
     if (card.parody) {
       cardName = card.parody;
     } else {
@@ -163,38 +123,19 @@ function getSearchCardName(card: Card): string {
   return cardName;
 }
 
-/**
- * Get the card number identifier for the search query
- * Different series use different formats:
- * - WM: No card number (sellers don't consistently use it)
- * - ASH: "#44" format, or "Nagaba" for card 0
- */
+/* Get the card number identifier for the search query */
 function getCardNumberIdentifier(card: Card): string | null {
   if (!card.number && card.number !== 0) return null;
 
   if (card.series_short_name === "ash") {
-    // ASH: Card 0 is the Nagaba promo (e.g., "Charizard 0/44")
     if (card.number === 0) {
       return "Nagaba";
     }
-    // ASH: "#44" format for other cards
     return `#${card.number}`;
   }
-
-  // WM and other series: no card number in search
   return null;
 }
 
-/**
- * Build a search query for a card
- *
- * For fan-made cards, eBay sellers typically list by the parody name (e.g., "Charizard")
- * rather than the custom card name (e.g., "Trumpety"). So we prioritize parody names.
- *
- * Series-specific formats:
- * - WM: 'wrennymoo Pidgey 16/50 set 1' (excludes "first" for reprint differentiation)
- * - ASH: 'after skool hobby Ditto #44 "generation one"' (card 0 uses "Nagaba" instead)
- */
 export function buildSearchQuery(card: Card): string {
   const parts: string[] = [];
 
@@ -210,8 +151,10 @@ export function buildSearchQuery(card: Card): string {
   }
 
   // 3. Card number identifier (series-specific format)
-  // ASH: Skip numbering - sellers don't consistently use it
-  if (card.series_short_name !== "ash") {
+  const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
+  const hasOverride =
+    !!CARD_ID_OVERRIDES[card.id] || !!CARD_NAME_OVERRIDES[cardKey];
+  if (card.series_short_name === "ash" && !hasOverride) {
     const numberIdentifier = getCardNumberIdentifier(card);
     if (numberIdentifier) {
       parts.push(numberIdentifier);
@@ -219,8 +162,6 @@ export function buildSearchQuery(card: Card): string {
   }
 
   // 4. Set identifier for specificity
-  //    Use SET_NAME_MAP if available, otherwise convert "set1" to "set 1" format
-  //    ASH: Skip set name - sellers don't consistently use it
   if (card.set_short_name && card.series_short_name !== "ash") {
     const seriesSetMap = SET_NAME_MAP[card.series_short_name];
     const setName =
@@ -232,28 +173,20 @@ export function buildSearchQuery(card: Card): string {
   return parts.join(" ");
 }
 
-/**
- * Get excluded keywords for a card
- * Combines default, series-specific, and card-specific exclusions
- */
 export function getExcludedKeywords(card?: Card): string {
   const keywords = [...DEFAULT_EXCLUDED_KEYWORDS];
 
   if (!card) return keywords.join(" ");
 
-  // Add series-specific exclusions
   const seriesExclusions = SERIES_EXCLUDED_KEYWORDS[card.series_short_name];
   if (seriesExclusions) {
-    // ASH #44 cards ARE ditto cards, so don't exclude "ditto" for them
-    const isDittoCard =
-      card.series_short_name === "ash" && card.number === 44;
+    const isDittoCard = card.series_short_name === "ash" && card.number === 44;
     const filteredExclusions = isDittoCard
       ? seriesExclusions.filter((kw) => kw !== "ditto")
       : seriesExclusions;
     keywords.push(...filteredExclusions);
   }
 
-  // Add card-specific exclusions (key format: "series-set-number")
   const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
   const cardExclusions = CARD_EXCLUDED_KEYWORDS[cardKey];
   if (cardExclusions) {
@@ -276,6 +209,14 @@ export function buildEbaySearchUrl(searchQuery: string): string {
   });
   return `https://www.ebay.com/sch/i.html?${params.toString()}`;
 }
+
+const EMPTY_PRICE_DATA: EbayPriceData = {
+  average_price: null,
+  median_price: null,
+  min_price: null,
+  max_price: null,
+  sample_size: 0,
+};
 
 /**
  * Fetch price data from eBay API for a single card
@@ -336,13 +277,7 @@ export async function fetchEbayPrice(
 
     if (!data.success) {
       return {
-        priceData: {
-          average_price: null,
-          median_price: null,
-          min_price: null,
-          max_price: null,
-          sample_size: 0,
-        },
+        priceData: { ...EMPTY_PRICE_DATA },
         recentSales: [],
         searchQuery,
         excludedKeywords,
@@ -355,13 +290,7 @@ export async function fetchEbayPrice(
 
     if (sampleSize === 0) {
       return {
-        priceData: {
-          average_price: null,
-          median_price: null,
-          min_price: null,
-          max_price: null,
-          sample_size: 0,
-        },
+        priceData: { ...EMPTY_PRICE_DATA },
         recentSales: [],
         searchQuery,
         excludedKeywords,
@@ -376,7 +305,7 @@ export async function fetchEbayPrice(
       max_price: data.max_price ?? null,
       sample_size: sampleSize,
     };
-    // Only include response_url if it exists (Firestore doesn't accept undefined)
+
     if (data.response_url) {
       priceData.response_url = data.response_url;
     }
@@ -400,13 +329,7 @@ export async function fetchEbayPrice(
     const errorMessage =
       error instanceof Error ? error.message : "Unknown error";
     return {
-      priceData: {
-        average_price: null,
-        median_price: null,
-        min_price: null,
-        max_price: null,
-        sample_size: 0,
-      },
+      priceData: { ...EMPTY_PRICE_DATA },
       recentSales: [],
       searchQuery,
       excludedKeywords,
@@ -429,7 +352,6 @@ export function buildCardPriceDocument(
       ? card.name
       : card.name.en || card.name.ja || "";
 
-  // Always generate eBay search URL from our search query
   const ebaySearchUrl = buildEbaySearchUrl(fetchResult.searchQuery);
 
   const doc: CardPrice = {
@@ -439,9 +361,9 @@ export function buildCardPriceDocument(
     card_name: cardName,
     prices: {
       ...fetchResult.priceData,
-      response_url: ebaySearchUrl,
+      response_url: fetchResult.priceData.response_url ?? ebaySearchUrl,
     },
-    all_sales: fetchResult.recentSales, // All fetched sales for rolling window merge
+    all_sales: fetchResult.recentSales,
     recent_sales: fetchResult.recentSales.slice(0, 10),
     search_query_used: fetchResult.searchQuery,
     excluded_keywords_used: fetchResult.excludedKeywords,
@@ -451,7 +373,6 @@ export function buildCardPriceDocument(
     status: fetchResult.status,
   };
 
-  // Only include error_message if it exists (Firestore doesn't accept undefined)
   if (fetchResult.errorMessage) {
     doc.error_message = fetchResult.errorMessage;
   }

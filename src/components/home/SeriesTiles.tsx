@@ -18,8 +18,15 @@ const SeriesTiles: React.FC = () => {
 
   if (isLoading && !allSeries) {
     return (
-      <div className="text-secondaryText py-4 text-center">
-        Loading series...
+      <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <div
+            key={i}
+            className="bg-tileBg border-primaryBorder flex animate-pulse items-center justify-center rounded-lg border p-4 shadow-lg"
+          >
+            <div className="bg-secondaryBorder h-10 w-full rounded" />
+          </div>
+        ))}
       </div>
     );
   }
