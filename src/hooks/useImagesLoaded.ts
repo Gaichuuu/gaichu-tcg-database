@@ -1,16 +1,18 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 
 export function useImagesLoaded(urls: string[], threshold?: number): boolean {
   const count = threshold ?? urls.length;
   const [ready, setReady] = useState(false);
   const loadedRef = useRef(0);
+  const urlsKey = urls.join("\0");
+  const stableUrls = useMemo(() => urls, [urlsKey]);
 
   useEffect(() => {
-    if (urls.length === 0 || count === 0) return;
+    if (stableUrls.length === 0 || count === 0) return;
     loadedRef.current = 0;
     setReady(false);
 
-    const target = Math.min(count, urls.length);
+    const target = Math.min(count, stableUrls.length);
 
     const onDone = () => {
       loadedRef.current += 1;
@@ -19,7 +21,7 @@ export function useImagesLoaded(urls: string[], threshold?: number): boolean {
       }
     };
 
-    const images = urls.slice(0, target).map((src) => {
+    const images = stableUrls.slice(0, target).map((src) => {
       const img = new Image();
       img.onload = onDone;
       img.onerror = onDone;
@@ -33,7 +35,7 @@ export function useImagesLoaded(urls: string[], threshold?: number): boolean {
         img.onerror = null;
       });
     };
-  }, [urls, count]);
+  }, [stableUrls, count]);
 
   return ready;
 }
