@@ -15,6 +15,21 @@ export default defineConfig({
         if (warning.code === "MODULE_LEVEL_DIRECTIVE") return;
         defaultHandler(warning);
       },
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom", "react-router-dom"],
+          firebase: [
+            "firebase/app",
+            "firebase/firestore",
+            "firebase/firestore/lite",
+            "firebase/analytics",
+          ],
+          tanstack: [
+            "@tanstack/react-query",
+            "@tanstack/react-query-persist-client",
+          ],
+        },
+      },
     },
   },
   test: {
