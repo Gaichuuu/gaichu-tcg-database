@@ -26,5 +26,6 @@
       "config/*": ["config/*"]
     }
   },
-  "include": ["src", "config", "data", "config"]
+  "include": ["src", "config", "data", "config"],
+  "exclude": ["src/__test__"]
 }
