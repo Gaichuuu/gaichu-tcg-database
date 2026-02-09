@@ -1,4 +1,5 @@
 import { waitFor } from "@testing-library/react";
+import { QueryClient } from "@tanstack/react-query";
 import { renderHookWithProviders } from "../testUtils";
 import { useEbayPrices, type EbayPriceData } from "@/hooks/useEbayPrices";
 
@@ -122,16 +123,18 @@ describe("useEbayPrices", () => {
   it("throws on non-404 error response", async () => {
     mockFetchResponse({ success: false, data: null }, 500);
 
-    const { result } = renderHookWithProviders(() =>
-      useEbayPrices("card-error", "ash"),
+    const queryClient = new QueryClient({
+      defaultOptions: { queries: { retryDelay: 0, gcTime: 0 } },
+    });
+
+    const { result } = renderHookWithProviders(
+      () => useEbayPrices("card-error", "ash"),
+      { queryClient },
     );
 
-    await waitFor(
-      () => {
-        expect(result.current.isError).toBe(true);
-      },
-      { timeout: 3000 },
-    );
+    await waitFor(() => {
+      expect(result.current.isError).toBe(true);
+    });
 
     expect(result.current.error?.message).toContain("Failed to fetch prices");
   });
