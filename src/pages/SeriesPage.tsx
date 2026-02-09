@@ -59,7 +59,37 @@ const SeriesPage: React.FC = () => {
   const navigate = useNavigate();
 
   if (error) return <PageError message="Failed to load series." />;
-  if (!seriesAndSet) return null;
+
+  if (!seriesAndSet) {
+    return (
+      <div className="container mx-auto animate-pulse p-0">
+        <div className="mb-4 flex flex-col gap-4 sm:flex-row">
+          <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
+            <div className="bg-secondaryBorder h-20 w-40 rounded" />
+            <div>
+              <div className="bg-secondaryBorder h-6 w-48 rounded" />
+              <div className="bg-secondaryBorder mt-2 h-4 w-80 rounded" />
+            </div>
+          </div>
+        </div>
+        <div className="bg-secondaryBorder mb-2 h-5 w-24 rounded" />
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <div
+              key={i}
+              className="bg-tileBg border-primaryBorder flex items-center justify-center rounded-lg border p-4 shadow-lg"
+            >
+              <div className="flex w-full flex-col items-center">
+                <div className="bg-secondaryBorder h-24 w-full rounded" />
+                <div className="bg-secondaryBorder mt-2 h-5 w-1/2 rounded" />
+                <div className="bg-secondaryBorder mt-2 h-4 w-1/4 rounded" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   const { series, sets } = seriesAndSet;
 

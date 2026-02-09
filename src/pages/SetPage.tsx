@@ -1,6 +1,6 @@
 import HtmlCell from "@/components/HtmlCell";
 import CardList from "@/components/ListComponent/CardListComponent";
-import { PageLoading, PageError } from "@/components/PageStates";
+import { PageError } from "@/components/PageStates";
 import { useSet } from "@/hooks/useCollection";
 import { CDN_BASE_URL } from "@/services/Constants";
 import {
@@ -19,8 +19,30 @@ const SetPage = () => {
   );
   const navigate = useNavigate();
 
-  if (isLoading) {
-    return <PageLoading />;
+  if (isLoading && !setAndCard) {
+    return (
+      <div className="container mx-auto animate-pulse pt-1 pb-1">
+        <div className="mb-2 flex">
+          <div className="flex flex-row gap-1.5">
+            <div className="bg-secondaryBorder h-25 w-20 rounded" />
+            <div className="bg-secondaryBorder h-25 w-20 rounded" />
+          </div>
+          <div className="flex-1 pl-4">
+            <div className="bg-secondaryBorder h-6 w-48 rounded" />
+            <div className="bg-secondaryBorder mt-2 h-4 w-full max-w-2xl rounded" />
+            <div className="bg-secondaryBorder mt-1 h-4 w-2/3 max-w-2xl rounded" />
+          </div>
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div key={i} className="flex flex-col items-center p-0.5">
+              <div className="bg-secondaryBorder aspect-5/7 w-full rounded-xl" />
+              <div className="bg-secondaryBorder mt-1 h-3 w-3/4 rounded" />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
   }
 
   if (!setShortName || setError || !setAndCard) {
