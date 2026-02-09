@@ -14,6 +14,7 @@ const CardSearch: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const containerRef = useRef<HTMLDivElement>(null);
+  const mobileContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const mobileInputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
@@ -37,13 +38,10 @@ const CardSearch: React.FC = () => {
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       const target = e.target;
-      if (
-        containerRef.current &&
-        target instanceof Node &&
-        !containerRef.current.contains(target)
-      ) {
-        setIsOpen(false);
-      }
+      if (!(target instanceof Node)) return;
+      if (containerRef.current?.contains(target)) return;
+      if (mobileContainerRef.current?.contains(target)) return;
+      setIsOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -69,8 +67,14 @@ const CardSearch: React.FC = () => {
 
   useEffect(() => {
     if (mobileOpen) {
+      document.body.style.overflow = "hidden";
       requestAnimationFrame(() => mobileInputRef.current?.focus());
+    } else {
+      document.body.style.overflow = "";
     }
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileOpen]);
 
   const navigateToCard = useCallback(
@@ -117,7 +121,7 @@ const CardSearch: React.FC = () => {
   const showResults = isOpen && results.length > 0;
 
   const inputClasses =
-    "bg-mainBg border-secondaryBorder focus:border-primaryBorder w-full rounded-lg border py-1.5 pl-8 pr-8 text-sm transition-colors focus:outline-none";
+    "bg-mainBg border-secondaryBorder focus:border-primaryBorder w-full rounded-lg border py-1.5 pl-8 pr-8 text-base sm:text-sm transition-colors focus:outline-none";
 
   const dropdownClasses =
     "bg-navBg border-secondaryBorder absolute left-0 right-0 top-full z-50 mt-1 rounded-xl border shadow-lg";
@@ -265,7 +269,7 @@ const CardSearch: React.FC = () => {
             className="fixed inset-0 z-40 bg-black/50 sm:hidden"
             onClick={closeMobile}
           />
-          <div className="bg-navBg border-secondaryBorder/20 fixed inset-x-0 top-10.5 z-50 border-b px-4 py-2 sm:hidden">
+          <div ref={mobileContainerRef} className="bg-navBg border-secondaryBorder/20 fixed inset-x-0 top-10.5 z-50 border-b px-4 py-2 sm:hidden">
             <div className="relative">
               <FiSearch
                 className="text-secondaryText pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"

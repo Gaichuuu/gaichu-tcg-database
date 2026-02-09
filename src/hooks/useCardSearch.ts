@@ -3,7 +3,7 @@ import { useAllCards } from "./useAllCards";
 import { t, useLocale, type Locale } from "@/i18n";
 import type { CollectionCard } from "@/types/CollectionCard";
 
-const MAX_RESULTS = 8;
+const MAX_RESULTS = 20;
 const DEBOUNCE_MS = 250;
 
 export function buildSearchText(card: CollectionCard, locale: Locale): string {

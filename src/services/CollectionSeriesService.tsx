@@ -30,7 +30,7 @@ export const fetchSeries = async (): Promise<SeriesAndSet[]> => {
   );
 };
 
-const mergeWithSeriesId = (
+export const mergeWithSeriesId = (
   series: CollectionSeries[],
   sets: CollectionSet[],
 ): SeriesAndSet[] => {

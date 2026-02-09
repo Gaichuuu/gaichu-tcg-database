@@ -17,7 +17,7 @@ import {
 
 export type NewsPage = { items: NewsPost[]; nextCursor?: DocumentSnapshot };
 
-const toTokens = (s: string) =>
+export const toTokens = (s: string) =>
   Array.from(
     new Set(
       (s || "")
@@ -28,8 +28,8 @@ const toTokens = (s: string) =>
     ),
   ).slice(0, 10);
 
-const stripHtml = (s: string) => String(s || "").replace(/<[^>]+>/g, " ");
-const textHaystack = (p: NewsPost) =>
+export const stripHtml = (s: string) => String(s || "").replace(/<[^>]+>/g, " ");
+export const textHaystack = (p: NewsPost) =>
   [
     p.title ?? "",
     p.excerpt ?? "",
