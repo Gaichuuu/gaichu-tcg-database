@@ -95,7 +95,7 @@ const CardDetailPage: React.FC = () => {
           />
         </div>
 
-        <div className="flex min-w-0 flex-1 flex-col gap-6 lg:flex-row">
+        <div className="flex min-w-0 flex-1 flex-col gap-6 xl:flex-row">
           <div className="min-w-0 flex-1">
             <div className="mb-4 flex flex-col items-start gap-2 sm:flex-row sm:justify-between sm:gap-x-4">
               <h1 className="text-2xl font-semibold">{resolvedName}</h1>
@@ -146,7 +146,10 @@ const CardDetailPage: React.FC = () => {
                   </CardDetailRow>
                 )}
 
-                <AttacksSection attacks={card.attacks ?? []} series={seriesKey} />
+                <AttacksSection
+                  attacks={card.attacks ?? []}
+                  series={seriesKey}
+                />
 
                 {card.limit && (
                   <CardDetailRow label="Limit">{card.limit}</CardDetailRow>
@@ -251,7 +254,9 @@ const CardDetailPage: React.FC = () => {
                 )}
 
                 {card.rule?.map((s, i) => {
-                  const text = [s.name, s.description].filter(Boolean).join("\n");
+                  const text = [s.name, s.description]
+                    .filter(Boolean)
+                    .join("\n");
                   if (!text) return null;
                   return (
                     <CardDetailRow key={i} label="Rule">

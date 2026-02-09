@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CardSearch from "./CardSearch";
 
 const Header: React.FC = () => {
   return (
     <header className="bg-navBg border-secondaryBorder/20 border-b">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1">
-        <Link to="/" className="flex items-center space-x-2">
+      <div className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-1">
+        <Link to="/" className="z-10 flex shrink-0 items-center space-x-2">
           <img
             src="https://gaichu.b-cdn.net/assets/logo.gif"
             alt="Logo"
@@ -14,7 +15,9 @@ const Header: React.FC = () => {
           <span className="text-lg tracking-wider">Gaichu</span>
         </Link>
 
-        <nav>
+        <CardSearch />
+
+        <nav className="z-10 shrink-0">
           <Link to="/cards" className="tracking-wider">
             Cards
           </Link>
