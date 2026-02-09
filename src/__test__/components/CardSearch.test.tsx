@@ -25,6 +25,11 @@ vi.mock("@/i18n", async () => {
   };
 });
 
+function typeInSearch(input: HTMLElement, value: string) {
+  fireEvent.focus(input);
+  fireEvent.change(input, { target: { value } });
+}
+
 describe("CardSearch", () => {
   beforeEach(() => {
     mockUseCardSearch.mockReturnValue({
@@ -53,12 +58,10 @@ describe("CardSearch", () => {
     expect(inputs[0]).toHaveAttribute("aria-label", "Search cards");
   });
 
-  it("shows clear button when user types text", async () => {
-    const user = userEvent.setup();
+  it("shows clear button when user types text", () => {
     renderWithProviders(<CardSearch />);
-
     const input = screen.getAllByRole("combobox")[0];
-    await user.type(input, "dragon");
+    typeInSearch(input, "dragon");
 
     const clearButton = screen.getAllByLabelText("Clear search")[0];
     expect(clearButton).toBeInTheDocument();
@@ -76,7 +79,7 @@ describe("CardSearch", () => {
     renderWithProviders(<CardSearch />);
 
     const input = screen.getAllByRole("combobox")[0] as HTMLInputElement;
-    await user.type(input, "dragon");
+    typeInSearch(input, "dragon");
     expect(input.value).toBe("dragon");
 
     const clearButton = screen.getAllByLabelText("Clear search")[0];
@@ -85,9 +88,7 @@ describe("CardSearch", () => {
     expect(input.value).toBe("");
   });
 
-  it("dropdown shows when debouncedQuery has value and results exist", async () => {
-    const user = userEvent.setup();
-
+  it("dropdown shows when debouncedQuery has value and results exist", () => {
     const mockCards = [
       makeCard({ id: "1", name: { en: "Fire Dragon" }, sort_by: 1 }),
     ];
@@ -103,14 +104,12 @@ describe("CardSearch", () => {
     const input = screen.getAllByRole("combobox")[0];
     expect(screen.queryByText("Fire Dragon")).not.toBeInTheDocument();
 
-    await user.type(input, "fire");
+    typeInSearch(input, "fire");
 
     expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
   });
 
-  it("input updates as user types", async () => {
-    const user = userEvent.setup();
-
+  it("input updates as user types", () => {
     mockUseCardSearch.mockImplementation((query: string) => ({
       results: [],
       isLoading: false,
@@ -122,13 +121,11 @@ describe("CardSearch", () => {
     const input = screen.getAllByRole("combobox")[0] as HTMLInputElement;
     expect(input.value).toBe("");
 
-    await user.type(input, "fire");
+    typeInSearch(input, "fire");
     expect(input.value).toBe("fire");
   });
 
-  it("shows result items when results are present", async () => {
-    const user = userEvent.setup();
-
+  it("shows result items when results are present", () => {
     const mockCards = [
       makeCard({ id: "1", name: { en: "Fire Dragon" }, sort_by: 1 }),
       makeCard({ id: "2", name: { en: "Thunder Mouse" }, sort_by: 2 }),
@@ -143,15 +140,13 @@ describe("CardSearch", () => {
     renderWithProviders(<CardSearch />);
 
     const input = screen.getAllByRole("combobox")[0];
-    await user.type(input, "dragon");
+    typeInSearch(input, "dragon");
 
     expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
     expect(screen.getByText("Thunder Mouse")).toBeInTheDocument();
   });
 
-  it("result items display card name", async () => {
-    const user = userEvent.setup();
-
+  it("result items display card name", () => {
     const mockCards = [
       makeCard({
         id: "1",
@@ -171,15 +166,13 @@ describe("CardSearch", () => {
     renderWithProviders(<CardSearch />);
 
     const input = screen.getAllByRole("combobox")[0];
-    await user.type(input, "fire");
+    typeInSearch(input, "fire");
 
     expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
     expect(screen.getByText(/ash · base/i)).toBeInTheDocument();
   });
 
-  it("ArrowDown/ArrowUp keyboard navigation changes active item", async () => {
-    const user = userEvent.setup();
-
+  it("ArrowDown/ArrowUp keyboard navigation changes active item", () => {
     const mockCards = [
       makeCard({ id: "1", name: { en: "Card One" }, sort_by: 1 }),
       makeCard({ id: "2", name: { en: "Card Two" }, sort_by: 2 }),
@@ -195,7 +188,7 @@ describe("CardSearch", () => {
     renderWithProviders(<CardSearch />);
 
     const input = screen.getAllByRole("combobox")[0];
-    await user.type(input, "card");
+    typeInSearch(input, "card");
 
     fireEvent.keyDown(input, { key: "ArrowDown" });
     const firstItem = screen.getByText("Card One").closest('[role="option"]');
@@ -209,9 +202,7 @@ describe("CardSearch", () => {
     expect(firstItem).toHaveAttribute("aria-selected", "true");
   });
 
-  it("Escape key closes dropdown", async () => {
-    const user = userEvent.setup();
-
+  it("Escape key closes dropdown", () => {
     const mockCards = [
       makeCard({ id: "1", name: { en: "Fire Dragon" }, sort_by: 1 }),
     ];
@@ -225,7 +216,7 @@ describe("CardSearch", () => {
     renderWithProviders(<CardSearch />);
 
     const input = screen.getAllByRole("combobox")[0];
-    await user.type(input, "fire");
+    typeInSearch(input, "fire");
 
     expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
 
