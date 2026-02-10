@@ -161,7 +161,7 @@ Prices are automatically updated every Monday at 8 AM UTC via a scheduled Cloud 
 
 ```bash
 # 1. Check if any cards were updated
-curl ".../api/v1/prices/sync/status"
+curl "https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/prices/sync/status"
 
 # 2. If there are updates, export prices to JSON files
 npm run prices:export
