@@ -4,7 +4,7 @@
  * This script:
  * 1. Reads all card prices from Firestore
  * 2. For each series (wm, ash), loads cards.json
- * 3. Adds average_price field to each card (0 if no price data)
+ * 3. Adds average_price field to each card (preserves last known price if rolling window is empty)
  * 4. Writes updated cards.json back to disk
  *
  * Usage: npx tsx scripts/export-prices-to-json.ts
@@ -111,8 +111,8 @@ function updateCardsJson(
     if (price !== undefined) {
       card.average_price = price;
       updated++;
-    } else {
-      // Set to 0 if no price data (or remove if previously had a price)
+    } else if (card.average_price === undefined) {
+      // Only set 0 for cards that never had a price
       card.average_price = 0;
     }
   }

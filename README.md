@@ -59,6 +59,7 @@ The Gaichu API provides public access to card data. See the [API documentation](
 **Base URL:** `https://us-central1-gaichu-fe55f.cloudfunctions.net/api`
 
 ```bash
+# Get all cards from OpenZoo Legacy set
 curl "https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/cards?series=oz&set=legacy"
 ```
 
