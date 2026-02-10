@@ -5,14 +5,17 @@
   --color-navBg: #171721;
   --color-tileBg: #364153;
   --color-codeBg: #1a1a2e;
+  --color-overlayBg: #000000;
   --color-primaryBorder: #646cff;
   --color-secondaryBorder: #202039;
   --color-hoverBorder: #dadada;
   --color-interactiveText: #646cff;
   --color-hoverText: #dadada;
   --color-primaryText: #dadada;
+  --color-primaryAltText: #fafafa;
   --color-secondaryText: #99a1af;
   --color-errorText: #ff0000;
+  --color-priceText: #00ff00;
   --color-primaryButton: #646cff;
   --color-hoverButton: #dadada;
   --color-linkAlt: #a855f7;
@@ -21,7 +24,7 @@
 
 @layer components {
   .btn {
-    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded tracking-wider transition focus-visible:ring-2 focus-visible:ring-primaryBorder focus-visible:outline-none;
+    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton focus-visible:ring-primaryBorder rounded tracking-wider transition focus-visible:ring-2 focus-visible:outline-none;
   }
   .btn-lg {
     @apply px-6 py-3;
@@ -31,10 +34,10 @@
   }
   /* Legacy aliases */
   .button {
-    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded tracking-wider transition focus-visible:ring-2 focus-visible:ring-primaryBorder focus-visible:outline-none px-6 py-3;
+    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton focus-visible:ring-primaryBorder rounded px-6 py-3 tracking-wider transition focus-visible:ring-2 focus-visible:outline-none;
   }
   .secondary-button {
-    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton rounded tracking-wider transition focus-visible:ring-2 focus-visible:ring-primaryBorder focus-visible:outline-none px-3 py-2;
+    @apply bg-primaryButton text-mainBg! hover:bg-hoverButton focus-visible:ring-primaryBorder rounded px-3 py-2 tracking-wider transition focus-visible:ring-2 focus-visible:outline-none;
   }
 }
 
