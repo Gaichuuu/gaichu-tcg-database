@@ -124,7 +124,7 @@ const CardSearch: React.FC = () => {
     "bg-mainBg border-secondaryBorder focus:border-primaryBorder w-full rounded-lg border py-1.5 pl-8 pr-8 text-base sm:text-sm transition-colors focus:outline-none";
 
   const dropdownClasses =
-    "bg-navBg border-secondaryBorder absolute left-0 right-0 top-full z-50 mt-1 rounded-xl border shadow-lg";
+    "bg-navBg border-secondaryBorder absolute left-0 right-0 top-full z-50 mt-1 rounded-xl border shadow-[0_8px_30px_rgba(0,0,0,0.5)]";
 
   const renderDropdown = () => (
     <>
@@ -183,8 +183,11 @@ const CardSearch: React.FC = () => {
                 <p className="text-secondaryText mt-0.5 text-[10px] tracking-wider uppercase">
                   {card.series_short_name} · {card.set_short_name}
                   {card.average_price != null && card.average_price > 0 && (
-                    <span className="text-primaryText ml-1.5 normal-case">
-                      ${card.average_price.toFixed(2)}
+                    <span className="normal-case">
+                      {" · "}
+                      <span className="text-priceText">
+                        ${card.average_price.toFixed(2)}
+                      </span>
                     </span>
                   )}
                 </p>
@@ -201,9 +204,9 @@ const CardSearch: React.FC = () => {
       {/* Desktop: page-centered search bar */}
       <div
         ref={containerRef}
-        className="absolute inset-0 hidden w-full items-center justify-center sm:flex"
+        className="pointer-events-none absolute inset-0 z-10 hidden place-items-center sm:grid"
       >
-        <div className="relative w-86">
+        <div className="pointer-events-auto relative w-86">
           <div className="relative">
             <FiSearch
               className="text-secondaryText pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"
@@ -266,10 +269,13 @@ const CardSearch: React.FC = () => {
       {mobileOpen && (
         <>
           <div
-            className="fixed inset-0 z-40 bg-black/50 sm:hidden"
+            className="fixed inset-0 z-40 bg-overlayBg/50 sm:hidden"
             onClick={closeMobile}
           />
-          <div ref={mobileContainerRef} className="bg-navBg border-secondaryBorder/20 fixed inset-x-0 top-10.5 z-50 border-b px-4 py-2 sm:hidden">
+          <div
+            ref={mobileContainerRef}
+            className="bg-navBg border-secondaryBorder/20 fixed inset-x-0 top-10.5 z-50 border-b px-4 py-2 sm:hidden"
+          >
             <div className="relative">
               <FiSearch
                 className="text-secondaryText pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"
