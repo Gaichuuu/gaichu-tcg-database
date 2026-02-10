@@ -15,7 +15,7 @@ const CardsListTile: React.FC<TileModel> = ({ children, onClick }) => {
       tabIndex={0}
       onClick={onClick}
       onKeyDown={handleKeyDown}
-      className="flex cursor-pointer items-center justify-center rounded-lg p-0.5 shadow-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+      className="flex cursor-pointer items-center justify-center rounded-lg p-0.5 shadow-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primaryBorder"
     >
       {children}
     </div>

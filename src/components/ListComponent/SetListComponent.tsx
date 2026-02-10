@@ -25,7 +25,7 @@ const SetListComponent: React.FC<Props> = ({ collectionSet, onClickSet }) => {
                 className="w-full object-contain transition group-hover:scale-[1.05]"
               />
             ) : (
-              <div className="flex h-24 w-full items-center justify-center rounded bg-zinc-800/40">
+              <div className="flex h-24 w-full items-center justify-center rounded bg-secondaryBorder">
                 <span className="text-secondaryText text-sm">No logo</span>
               </div>
             )}
