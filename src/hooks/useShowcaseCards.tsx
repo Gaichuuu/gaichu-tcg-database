@@ -4,6 +4,7 @@ import { useSeries } from "@/hooks/useCollection";
 import { fetchSets } from "@/services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";
 import { getJsonSet } from "@/services/JsonCollectionSetService";
+import { ONE_HOUR } from "@/utils/TimeUtils";
 import type { CollectionCard } from "@/types/CollectionCard";
 
 interface ShowcaseCard {
@@ -33,6 +34,23 @@ export function toEnName(name: CollectionCard["name"]): string {
   return name?.en ?? Object.values(name ?? {})[0] ?? "";
 }
 
+const SEED_KEY = "marquee_seed";
+const SEED_TS_KEY = "marquee_seed_ts";
+
+function getOrCreateSeed(): number {
+  try {
+    const ts = Number(sessionStorage.getItem(SEED_TS_KEY) ?? 0);
+    const cached = sessionStorage.getItem(SEED_KEY);
+    if (cached && Date.now() - ts < ONE_HOUR) return Number(cached);
+  } catch {}
+  const seed = Math.random();
+  try {
+    sessionStorage.setItem(SEED_KEY, String(seed));
+    sessionStorage.setItem(SEED_TS_KEY, String(Date.now()));
+  } catch {}
+  return seed;
+}
+
 export function useShowcaseCards(count = 24): {
   cards: ShowcaseCard[];
   isLoading: boolean;
@@ -43,7 +61,7 @@ export function useShowcaseCards(count = 24): {
     [allSeries],
   );
 
-  const seedRef = useRef(Math.random());
+  const seedRef = useRef(getOrCreateSeed());
 
   const queries = useQueries({
     queries: seriesNames.map((name) => ({
