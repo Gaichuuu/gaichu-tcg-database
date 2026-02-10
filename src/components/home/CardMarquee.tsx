@@ -263,7 +263,7 @@ const CardMarquee: React.FC = () => {
               draggable={false}
             />
             {card.averagePrice != null && card.averagePrice > 0 && (
-              <span className="absolute top-1 right-1 rounded bg-black/70 px-1.5 py-0.5 text-xs text-white">
+              <span className="absolute top-1 right-1 rounded bg-overlayBg/70 px-1.5 py-0.5 text-xs text-primaryAltText">
                 ${card.averagePrice.toFixed(2)}
               </span>
             )}

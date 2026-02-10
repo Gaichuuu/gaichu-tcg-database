@@ -163,7 +163,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                     className="border-secondaryBorder block max-h-65 w-full rounded-xl border object-contain transition-transform duration-200"
                   />
                   {card.average_price != null && card.average_price > 0 && (
-                    <span className="absolute top-1 right-1 rounded bg-black/70 px-1.5 py-0.5 text-xs text-white">
+                    <span className="absolute top-1 right-1 rounded bg-overlayBg/70 px-1.5 py-0.5 text-xs text-primaryAltText">
                       ${card.average_price.toFixed(2)}
                     </span>
                   )}

@@ -41,7 +41,7 @@ class ErrorBoundary extends Component<Props, State> {
           <div className="flex gap-4">
             <button
               onClick={this.handleReset}
-              className="bg-interactiveText rounded px-4 py-2 text-white"
+              className="bg-interactiveText rounded px-4 py-2 text-primaryAltText"
             >
               Try again
             </button>

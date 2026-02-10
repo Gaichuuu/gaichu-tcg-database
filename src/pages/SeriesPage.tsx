@@ -29,7 +29,7 @@ const SeriesLinks: React.FC<{ series: CollectionSeries }> = ({ series }) => {
   if (links.length === 0) return null;
 
   return (
-    <div className="sm:border-l sm:border-white/20 sm:pl-4">
+    <div className="sm:border-l sm:border-secondaryBorder sm:pl-4">
       <h4 className="mb-1 text-sm">Links</h4>
       <div className="flex flex-wrap gap-x-1 gap-y-1">
         {links.map((link) => (
