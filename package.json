@@ -14,20 +14,15 @@
     "dev:staging": "vite --mode staging",
     "dev:production": "vite --mode production",
     "build": "tsc -b && vite build && npm run sitemap",
+    "deploy": "bash scripts/deploy.sh",
     "sitemap": "npx tsx scripts/generate-sitemap.ts",
-    "lint": "eslint .",
-    "test": "vitest",
-    "preview": "vite preview",
-    "tailwind": "tailwindcss",
-    "data:export:prod": "node firestoreScript/exportCollections.cjs",
     "data:import:prod": "NODE_ENV=production node firestoreScript/importCollections.cjs",
     "data:import:staging": "NODE_ENV=staging node firestoreScript/importCollections.cjs",
     "news:import:prod": "NODE_ENV=production node firestoreScript/importNews.cjs",
     "news:import:staging": "NODE_ENV=staging node firestoreScript/importNews.cjs",
     "prices:export": "npx tsx scripts/export-prices-to-json.ts",
     "tts:build": "npm --prefix tts-mod run build",
-    "tts:json": "npm --prefix tts-mod run json",
-    "deploy": "bash scripts/deploy.sh"
+    "tts:json": "npm --prefix tts-mod run json"
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
