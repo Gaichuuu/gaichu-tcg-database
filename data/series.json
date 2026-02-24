@@ -122,5 +122,33 @@
       "custom Pokemon",
       "limited edition Pokemon"
     ]
+  },
+  {
+    "id": "378bb7da-fad9-4790-906b-143869cd0594",
+    "short_name": "tygadu",
+    "name": "Tygadu",
+    "logo": "https://gaichu.b-cdn.net/tygadu/tygaduLogo.png",
+    "sort_by": 6,
+    "description": "A mysterious new series from WrennyMoo creator Alex Roh, featuring derpy hand-drawn characters from your favorite anime.",
+    "keywords": [
+      "Tygadu",
+      "anime parody cards",
+      "Alex Roh",
+      "hand-drawn trading cards",
+      "anime trading cards",
+      "Naruto parody",
+      "One Piece parody",
+      "Chainsaw Man parody",
+      "Jujutsu Kaisen parody",
+      "Demon Slayer parody"
+    ],
+    "instagram": "https://www.instagram.com/katu.ramen/",
+    "links": [
+      {
+        "type": "shopify",
+        "label": "Store",
+        "url": "https://katuramen.myshopify.com/"
+      }
+    ]
   }
 ]

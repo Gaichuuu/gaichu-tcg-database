@@ -2,6 +2,10 @@
   RewriteEngine On
   RewriteBase /
 
+  # Redirect www to non-www (301 permanent)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
   # Bypass cards/ and news/ directories for bare paths (serve SPA directly)
   RewriteRule ^cards/?$ /index.html [L]
   RewriteRule ^news/?$ /index.html [L]

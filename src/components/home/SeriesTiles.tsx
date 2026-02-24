@@ -4,6 +4,10 @@ import { useSeries } from "@/hooks/useCollection";
 import { getSetListPath } from "@/utils/RoutePathBuildUtils";
 import Tile from "@/components/TileComponents/Tile";
 
+const FEATURED_SERIES = ["ash", "disgruntled", "mz", "oz", "wm", "tygadu"];
+
+const MAX_FEATURED = 6;
+
 const SeriesTiles: React.FC = () => {
   const { data: allSeries, isLoading, error } = useSeries();
   const navigate = useNavigate();
@@ -18,8 +22,8 @@ const SeriesTiles: React.FC = () => {
 
   if (isLoading && !allSeries) {
     return (
-      <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
-        {Array.from({ length: 5 }).map((_, i) => (
+      <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
+        {Array.from({ length: MAX_FEATURED }).map((_, i) => (
           <div
             key={i}
             className="bg-tileBg border-primaryBorder flex animate-pulse items-center justify-center rounded-lg border p-4 shadow-lg"
@@ -39,9 +43,15 @@ const SeriesTiles: React.FC = () => {
     );
   }
 
+  const featured = FEATURED_SERIES.slice(0, MAX_FEATURED)
+    .map((shortName) =>
+      allSeries.find((c) => c.series.short_name === shortName),
+    )
+    .filter((c): c is NonNullable<typeof c> => c != null);
+
   return (
-    <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
-      {allSeries.map((collection) => (
+    <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
+      {featured.map((collection) => (
         <Tile
           key={collection.series.id}
           onClick={() => navigate(getSetListPath(collection.series.short_name))}
