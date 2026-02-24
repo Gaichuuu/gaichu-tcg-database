@@ -1,0 +1,2720 @@
+[
+  {
+    "id": "a849ddeb-0cb3-4100-99c7-ba63ffa6ffd7",
+    "number": 1,
+    "sort_by": 1,
+    "name": {
+      "en": "Onii-san",
+      "ja": "お兄さん"
+    },
+    "parody": "Itachi Uchiha",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/01-thumb.jpg",
+    "favorite_food": {
+      "en": "Meatballs",
+      "ja": "ミートボール"
+    },
+    "description": {
+      "en": "This character is very popular, and despite having massacred his own people, is still widely loved with many fans.",
+      "ja": "このキャラクターはとても人気があり、自国民を大量虐殺したにもかかわらず、今でも広く愛され、多くのファンがいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Summon",
+          "ja": "召喚"
+        },
+        "effect": {
+          "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
+          "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "72839878-ddc6-4135-afaa-23b29dde5371",
+    "number": 2,
+    "sort_by": 2,
+    "name": {
+      "en": "Star Girl",
+      "ja": "スターガール"
+    },
+    "parody": "Usagi Tsukino",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/02-thumb.jpg",
+    "favorite_food": {
+      "en": "Spicy curry",
+      "ja": "辛いカレー"
+    },
+    "description": {
+      "en": "This character has two cats that give her wise advice.",
+      "ja": "このキャラクターは、賢明なアドバイスをくれる2匹の猫を飼っている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Star Reading",
+          "ja": "星読み"
+        },
+        "effect": {
+          "en": "By reading the position of the moon and stars in the night sky, she can predict the opponent's next move.",
+          "ja": "夜空の月や星の位置から、相手の次の一手を予測することができる。"
+        },
+        "damage": "40",
+        "costs": [
+          "Flower",
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cec8789b-3f65-42d3-899f-772bc542a32d",
+    "number": 3,
+    "sort_by": 3,
+    "name": {
+      "en": "Kumo Boy",
+      "ja": "クモボーイ"
+    },
+    "parody": "Killua Zoldyck",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/03-thumb.jpg",
+    "favorite_food": {
+      "en": "Chicken salad",
+      "ja": "チキンサラダ"
+    },
+    "description": {
+      "en": "This character comes from a family of assassins who bear the mark of the spider.",
+      "ja": "このキャラクターは、蜘蛛の印を持つ暗殺者一族の出身である。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Heart Surgery",
+          "ja": "心臓手術"
+        },
+        "effect": {
+          "en": "Swiftly and sloppily removes the opponent's heart.",
+          "ja": "迅速かつ雑に相手の心臓を摘出する。"
+        },
+        "damage": "70",
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f1959c99-4a91-4818-bde9-d2b2b863c3ca",
+    "number": 4,
+    "sort_by": 4,
+    "name": {
+      "en": "Pow Pow",
+      "ja": "パウパウ"
+    },
+    "parody": "Power",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/04-thumb.jpg",
+    "favorite_food": {
+      "en": "Meat meat meat meat meat meat meat meat",
+      "ja": "肉肉肉肉肉肉肉肉"
+    },
+    "description": {
+      "en": "This character is passionate about making sweets. She recently made a birthday cake for her boss.",
+      "ja": "このキャラクターはお菓子作りに情熱を注いでいる。彼女は最近、上司のために誕生日ケーキを作った。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Cat Whisper",
+          "ja": "猫のささやき"
+        },
+        "effect": {
+          "en": "Communicates with cats through telepathy. However, cats don't follow orders, so it's not very useful.",
+          "ja": "猫とテレパシーで会話する。ただし、猫は命令を聞かないのであまり役には立たない。"
+        },
+        "damage": "10",
+        "costs": [
+          "Heart",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "29562e54-a5d6-498a-b82c-2f232481dbe9",
+    "number": 5,
+    "sort_by": 5,
+    "name": {
+      "en": "O.P.",
+      "ja": "おーピー"
+    },
+    "parody": "Satoru Gojo",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/05.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/05-thumb.jpg",
+    "favorite_food": {
+      "en": "Chocolate",
+      "ja": "チョコレート"
+    },
+    "description": {
+      "en": "This character is so powerful that this card cannot be used in battle.",
+      "ja": "このキャラクターは非常に強力であるため、このカードは対戦では使用できない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Infinity",
+          "ja": "無限"
+        },
+        "effect": {
+          "en": "Feeds the opponent infinite information, causing paralysis and madness.",
+          "ja": "相手に無限の情報を与える。これにより、麻痺と狂気を引き起こす。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "616a81c8-6771-4027-9dc0-1a966de102ac",
+    "number": 6,
+    "sort_by": 6,
+    "name": {
+      "en": "Cutie",
+      "ja": "キューティー"
+    },
+    "parody": "Mitsuri Kanroji",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/06-thumb.jpg",
+    "favorite_food": {
+      "en": "Chicken and waffles",
+      "ja": "チキンとワッフル"
+    },
+    "description": {
+      "en": "Her hair was originally black. It turned pink from eating too much sakura mochi.",
+      "ja": "彼女の髪は元々黒髪だった。桜餅を食べ過ぎてピンク色になった。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Idol Pose",
+          "ja": "アイドルポーズ"
+        },
+        "effect": {
+          "en": "Captivates the opponent with charm and charisma.",
+          "ja": "魅力とカリスマ性で相手を魅了する。"
+        },
+        "damage": "30",
+        "costs": [
+          "Star",
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2c40dd35-63e8-493f-888e-f95d4f1528ca",
+    "number": 7,
+    "sort_by": 7,
+    "name": {
+      "en": "Jeans",
+      "ja": "ジーンズ"
+    },
+    "parody": "Levi Ackerman",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/07-thumb.jpg",
+    "favorite_food": {
+      "en": "Pepperoni pizza",
+      "ja": "ペパロニピザ"
+    },
+    "description": {
+      "en": "Exceptionally skilled in combat, with a particular hatred for giant apes.",
+      "ja": "戦闘に非常に長けており、巨大な猿を特に強く憎んでいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Death Spin",
+          "ja": "デススピン"
+        },
+        "effect": {
+          "en": "Spins with two swords in hand, dealing massive damage to the opponent.",
+          "ja": "2本の剣を持ったまま体を回転させる。相手に大ダメージを与える。"
+        },
+        "damage": "90",
+        "costs": [
+          "Triangle",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "89250004-6c5e-4570-81bd-a4028e93b4ca",
+    "number": 8,
+    "sort_by": 8,
+    "name": {
+      "en": "Akamu",
+      "ja": "アカム"
+    },
+    "parody": "Maka Albarn",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "65",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/08-thumb.jpg",
+    "favorite_food": {
+      "en": "French fries",
+      "ja": "フライドポテト"
+    },
+    "description": {
+      "en": "Despite a severe gaming addiction, this character reigns at the top of the class.",
+      "ja": "重度のゲーム依存症にもかかわらず、クラスのトップに君臨している。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Squad Goal",
+          "ja": "隊の目標"
+        },
+        "effect": {
+          "en": "Calls for reinforcements to overwhelm the opponent. Unfortunately, the reinforcements aren't very capable.",
+          "ja": "援軍を呼び、相手を圧倒する。残念ながら援軍はあまり有能ではない。"
+        },
+        "damage": "20",
+        "costs": [
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "296140e5-54b9-41e2-a632-e52abd2586b4",
+    "number": 9,
+    "sort_by": 9,
+    "name": {
+      "en": "Kunasack",
+      "ja": "クナサック"
+    },
+    "parody": "Sukuna",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "190",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/09.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/09-thumb.jpg",
+    "favorite_food": {
+      "en": "Grilled cheese sandwich",
+      "ja": "グリルチーズサンドイッチ"
+    },
+    "description": {
+      "en": "His fingers are said to be a delicious snack rich in essential vitamins and minerals.",
+      "ja": "彼の指は、必須ビタミンとミネラルが豊富な美味しいおやつだと言われている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Shrine of Death",
+          "ja": "死の神社"
+        },
+        "effect": {
+          "en": "Teleports both the opponent and self to a shrine no one has ever seen.",
+          "ja": "相手と自分自身を、誰も見たことのない神社にテレポートさせる。"
+        },
+        "damage": "100",
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c02122c9-98ff-49fb-89ff-e120686195b1",
+    "number": 10,
+    "sort_by": 10,
+    "name": {
+      "en": "Ghibli",
+      "ja": "ジブリー"
+    },
+    "parody": "Chihiro Ogino",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/10.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/10-thumb.jpg",
+    "favorite_food": {
+      "en": "Cheesecake",
+      "ja": "チーズケーキ"
+    },
+    "description": {
+      "en": "This character has many friends, including small animals.",
+      "ja": "このキャラクターには、小動物を含む多くの友人がいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Spa Day",
+          "ja": "スパ・デイ"
+        },
+        "effect": {
+          "en": "Restores health to 100% by visiting the best spa in the spirit world.",
+          "ja": "霊界一のスパに行くことで、健康状態が100%回復する。"
+        },
+        "costs": [
+          "Star",
+          "Flower"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d47b8ef2-b007-48fc-8d4d-efafd47bde16",
+    "number": 11,
+    "sort_by": 11,
+    "name": {
+      "en": "Ika",
+      "ja": "イカ"
+    },
+    "parody": "Aki Hayakawa",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/11.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/11-thumb.jpg",
+    "favorite_food": {
+      "en": "Bacon and eggs",
+      "ja": "ベーコンと卵"
+    },
+    "description": {
+      "en": "This character has been trying to quit smoking for quite a long time.",
+      "ja": "このキャラクターは、もうかなり長い間禁煙を試みている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Finger Puppet",
+          "ja": "指人形"
+        },
+        "effect": {
+          "en": "Distracts the opponent by making fun finger puppets.",
+          "ja": "楽しい指人形を作って相手の気をそらす。"
+        },
+        "damage": "50",
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2cb1631e-af4b-4f8c-a4f1-45314509bf0a",
+    "number": 12,
+    "sort_by": 12,
+    "name": {
+      "en": "Runner",
+      "ja": "ランナー"
+    },
+    "parody": "Lucy",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/12.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/12-thumb.jpg",
+    "favorite_food": {
+      "en": "Steak and fries",
+      "ja": "ステーキとフライドポテト"
+    },
+    "description": {
+      "en": "This character was once part of a team bound by strong bonds. Sadly, she is now the only one left alive. She often thinks about her friends.",
+      "ja": "このキャラクターはかつて、強い絆で結ばれたチームの一員だった。残念ながら今は彼女だけが生き残っている。彼女は仲間のことをよく思い出す。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Claw Skill",
+          "ja": "引っ搔きスキル"
+        },
+        "effect": {
+          "en": "Wins prizes from a claw machine.",
+          "ja": "引っ搔きマシーンから賞品を獲得する。"
+        },
+        "damage": "30",
+        "costs": [
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c75defa0-b6c7-41ba-9c76-91754e1b14cb",
+    "number": 13,
+    "sort_by": 13,
+    "name": {
+      "en": "Marushiku",
+      "ja": "マルシク"
+    },
+    "parody": "Shikamaru Nara",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/13.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/13-thumb.jpg",
+    "favorite_food": {
+      "en": "Cup ramen",
+      "ja": "カップラーメン"
+    },
+    "description": {
+      "en": "There is one person this character would never try to control.",
+      "ja": "このキャラクターが決してコントロールを試みない人物が1人いる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Shadow Attack",
+          "ja": "影攻撃"
+        },
+        "effect": {
+          "en": "Controls the opponent's shadow, manipulating them freely for 2 turns.",
+          "ja": "相手の影をコントロールすることで、2ターンの間相手を意のままに操る。"
+        },
+        "damage": "60",
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "312ef368-a1d6-4cc8-bcbb-e8ed2ac2cf88",
+    "number": 14,
+    "sort_by": 14,
+    "name": {
+      "en": "Rei Rei",
+      "ja": "レイレイ"
+    },
+    "parody": "Rei Ayanami",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "—",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/14.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/14-thumb.jpg",
+    "favorite_food": {
+      "en": "Sushi and beer",
+      "ja": "寿司とビール"
+    },
+    "description": {
+      "en": "Despite being small, this character has taken on food challenges from around the world and has never failed once.",
+      "ja": "このキャラクターは小さいにも関わらず、世界中の食べ物に挑戦し、一度も失敗したことがない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "The End",
+          "ja": "終わり"
+        },
+        "effect": {
+          "en": "Destroys all things and people.",
+          "ja": "すべての物と人を破壊する。"
+        },
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3351ef54-4c0c-4c90-84c4-cf560a3aa541",
+    "number": 15,
+    "sort_by": 15,
+    "name": {
+      "en": "Yashain",
+      "ja": "ヤシャイン"
+    },
+    "parody": "Inuyasha",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/15.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/15-thumb.jpg",
+    "favorite_food": {
+      "en": "Fried chicken",
+      "ja": "フライドチキン"
+    },
+    "description": {
+      "en": "This character became friends with a single flea.",
+      "ja": "このキャラクターは一匹のノミと仲良くなった。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Sit!",
+          "ja": "お座り"
+        },
+        "effect": {
+          "en": "The inner \"good boy\" emerges and sits on command. This is usually encouraged with snacks.",
+          "ja": "内なる「良い子」が出現し、命令に従って座る。これは通常、おやつで助長される。"
+        },
+        "damage": "40",
+        "costs": [
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "32e317ce-9033-4049-96e1-627a3e04a5c8",
+    "number": 16,
+    "sort_by": 16,
+    "name": {
+      "en": "Gomeka",
+      "ja": "ゴメカ"
+    },
+    "parody": "Kagome Higurashi",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/16.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/16-thumb.jpg",
+    "favorite_food": {
+      "en": "Butter popcorn",
+      "ja": "バターポップコーン"
+    },
+    "description": {
+      "en": "This character's life mission is to find the most perfect pearl.",
+      "ja": "このキャラクターの人生の使命は、最も完璧な真珠を見つけることである。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Guard Dog",
+          "ja": "番犬"
+        },
+        "effect": {
+          "en": "Sends in the most ferocious and bloodthirsty animal to attack the opponent.",
+          "ja": "最も凶暴で血に飢えた動物を1匹送り込み、相手を攻撃する。"
+        },
+        "damage": "80",
+        "costs": [
+          "Flower",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "db3e0009-9d85-4901-ba72-028fbe80906d",
+    "number": 17,
+    "sort_by": 17,
+    "name": {
+      "en": "Sensei",
+      "ja": "センセイ"
+    },
+    "parody": "Kakashi Hatake",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/17.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/17-thumb.jpg",
+    "favorite_food": {
+      "en": "Lobster mac",
+      "ja": "ロブスターマック"
+    },
+    "description": {
+      "en": "This character is very cool and mysterious. Hardly anyone has seen the lower half of his face.",
+      "ja": "このキャラクターはとてもクールでミステリアスだ。彼の顔の下半分を見た人はほとんどいない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Summon",
+          "ja": "召喚"
+        },
+        "effect": {
+          "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
+          "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a9138d22-56fe-457b-9060-67b3aa2f2dea",
+    "number": 18,
+    "sort_by": 18,
+    "name": {
+      "en": "Birdie",
+      "ja": "バーディー"
+    },
+    "parody": "Makima",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/18.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/18-thumb.jpg",
+    "favorite_food": {
+      "en": "BBQ chips",
+      "ja": "バーベキューチップス"
+    },
+    "description": {
+      "en": "This character loves obedient animals.",
+      "ja": "このキャラクターは従順な動物を愛している"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Roll Call",
+          "ja": "点呼"
+        },
+        "effect": {
+          "en": "Kills the opponent just by saying their name. Can only be used once per battle.",
+          "ja": "名前を言うだけで相手を殺す。1回の戦闘につき1回のみ使用可能。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2e852441-d2f4-4c6e-ae2f-ef5d5d474f7e",
+    "number": 19,
+    "sort_by": 19,
+    "name": {
+      "en": "Monke",
+      "ja": "モンケ"
+    },
+    "parody": "Monkey D. Luffy",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/19.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/19-thumb.jpg",
+    "favorite_food": {
+      "en": "Korean BBQ",
+      "ja": "韓国のバーベキュー"
+    },
+    "description": {
+      "en": "This character and friends love riding goats across the sea.",
+      "ja": "このキャラクターとその仲間は、ヤギに乗って海を渡るのが好きである。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Heartbeat",
+          "ja": "ハートビート"
+        },
+        "effect": {
+          "en": "Creates music with their heartbeat, changing the world at will.",
+          "ja": "自分のハートビートで曲を作り、世界を意のままに変えることができる。"
+        },
+        "damage": "100",
+        "costs": [
+          "Star",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5fa1810b-9816-4a6a-a4c8-4a347011ec12",
+    "number": 20,
+    "sort_by": 20,
+    "name": {
+      "en": "Butterfly",
+      "ja": "バタフライ"
+    },
+    "parody": "Shinobu Kocho",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/20.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/20-thumb.jpg",
+    "favorite_food": {
+      "en": "Jalapeño poppers",
+      "ja": "ハラペーニョポッパー"
+    },
+    "description": {
+      "en": "Butterflies always follow this character wherever they go.",
+      "ja": "このキャラクターは、どこへ行くにもいつも蝶がついてくる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Students",
+          "ja": "生徒"
+        },
+        "effect": {
+          "en": "Calls on students for help. They're not great at fighting, but useful for housework.",
+          "ja": "自分の生徒たちに助けを求める。彼らは戦いは苦手だが、家事には役立つ。"
+        },
+        "damage": "30",
+        "costs": [
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3a7db75b-8f41-4b45-9a6a-0deefad42274",
+    "number": 21,
+    "sort_by": 21,
+    "name": {
+      "en": "Jelly",
+      "ja": "ゼリー"
+    },
+    "parody": "Roronoa Zoro",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/21.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/21-thumb.jpg",
+    "favorite_food": {
+      "en": "Mashed potatoes",
+      "ja": "マッシュポテト"
+    },
+    "description": {
+      "en": "This character loves eating onigiri. However, he won't eat them if they've been stepped on.",
+      "ja": "このキャラクターはおにぎりを食べるのが大好き。ただし、踏まれたときは食べない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Three-Sword Style",
+          "ja": "3刀流"
+        },
+        "effect": {
+          "en": "By wielding three swords simultaneously, attack power triples.",
+          "ja": "3本の剣を同時に振るうことで、攻撃力が3倍になる。"
+        },
+        "damage": "70",
+        "costs": [
+          "Triangle",
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "06f5a306-737e-47fa-b3ce-7bada66290de",
+    "number": 22,
+    "sort_by": 22,
+    "name": {
+      "en": "Icon",
+      "ja": "アイコン"
+    },
+    "parody": "Asuka Langley Soryu",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/22.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/22-thumb.jpg",
+    "favorite_food": {
+      "en": "Thai yellow curry",
+      "ja": "タイのイエローカレー"
+    },
+    "description": {
+      "en": "This character is known for taking on multiple enemies at once. This ultimately led to her downfall.",
+      "ja": "このキャラクターは複数の敵を同時に相手にすることで知られている。これが最終的に彼女の破滅を招いた。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Mental Breakdown",
+          "ja": "精神崩壊"
+        },
+        "effect": {
+          "en": "Torments the opponent until they have a complete mental breakdown.",
+          "ja": "相手が完全に精神崩壊するまで責め立てる。"
+        },
+        "damage": "50",
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f25615e3-7066-44e0-a0ed-a5ed545be526",
+    "number": 23,
+    "sort_by": 23,
+    "name": {
+      "en": "Mahabu",
+      "ja": "マハブ"
+    },
+    "parody": "Shigeo Kageyama",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/23.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/23-thumb.jpg",
+    "favorite_food": {
+      "en": "Takoyaki and rice",
+      "ja": "たこ焼きとご飯"
+    },
+    "description": {
+      "en": "This character can bend spoons with psychic power. Unfortunately, once bent, they can't be straightened back.",
+      "ja": "このキャラクターは精神力でスプーンを曲げる能力を持っている。残念ながら、曲げたものを元に戻すことはできない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Master",
+          "ja": "マスター"
+        },
+        "effect": {
+          "en": "Calls forth a master with unrivaled psychic abilities.",
+          "ja": "超能力使いとして比類なき技術を持つマスターを呼び出す。"
+        },
+        "damage": "100",
+        "costs": [
+          "Eye",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1303e9b5-df0f-47bc-8225-bff915618efb",
+    "number": 24,
+    "sort_by": 24,
+    "name": {
+      "en": "Kit Kat",
+      "ja": "キットカット"
+    },
+    "parody": "Yoruichi Shihōin",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/24-thumb.jpg",
+    "favorite_food": {
+      "en": "Canned cat food",
+      "ja": "猫の缶詰フード"
+    },
+    "description": {
+      "en": "This character is so strong and fast that many compare her to lightning.",
+      "ja": "このキャラクターは、多くの人が彼女を稲妻に例えるほど強くて速い。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Cute Cat",
+          "ja": "かわいい猫"
+        },
+        "effect": {
+          "en": "Transforms into a black cat. So adorable you'd want to hug it, causing the opponent to fall in love.",
+          "ja": "黒猫に変身する。抱きしめたくなるほどの可愛さなので、相手は思わず恋に落ちてしまう。"
+        },
+        "damage": "40",
+        "costs": [
+          "Flower",
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "02fa3e22-4086-48b7-a968-6d92b0c2800e",
+    "number": 25,
+    "sort_by": 25,
+    "name": {
+      "en": "Ice Hat",
+      "ja": "アイセハット"
+    },
+    "parody": "Shoto Todoroki",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "95",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/25.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/25-thumb.jpg",
+    "favorite_food": {
+      "en": "Strawberry ice cream",
+      "ja": "いちごアイスクリーム"
+    },
+    "description": {
+      "en": "He attends a very exclusive and prestigious school and is one of the most popular students.",
+      "ja": "彼はとても特別で高級な学校に通っており、最も人気のある生徒の一人である。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Manicure",
+          "ja": "マニキュア"
+        },
+        "effect": {
+          "en": "Gives the opponent a perfect manicure, but charges an outrageous fee.",
+          "ja": "使用者は相手に完璧なマニキュアを施すが、法外な金額を請求する。"
+        },
+        "damage": "50",
+        "costs": [
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "78e3cd92-8b65-431b-b7b8-abdaaf88ab96",
+    "number": 26,
+    "sort_by": 26,
+    "name": {
+      "en": "Spy",
+      "ja": "スパイ"
+    },
+    "parody": "Anya Forger",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/26.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/26-thumb.jpg",
+    "favorite_food": {
+      "en": "Peanuts",
+      "ja": "ピーナッツ"
+    },
+    "description": {
+      "en": "She loves penguins.",
+      "ja": "彼女はペンギンが大好き。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Stare",
+          "ja": "凝視"
+        },
+        "effect": {
+          "en": "Stares at the opponent, causing extreme discomfort.",
+          "ja": "相手を凝視し、非常に不快感を与える。"
+        },
+        "damage": "100",
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "42eed304-7a33-4dc3-8cf1-4e3b8b10f05f",
+    "number": 27,
+    "sort_by": 27,
+    "name": {
+      "en": "Edo",
+      "ja": "江戸"
+    },
+    "parody": "Edward Elric",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/27.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/27-thumb.jpg",
+    "favorite_food": {
+      "en": "Ham omelette",
+      "ja": "ハムオムレツ"
+    },
+    "description": {
+      "en": "This character met many small, cute friends during their adventures.",
+      "ja": "このキャラクターは、冒険の中でたくさんの小さなかわいい友達に出会った。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Metal Arm",
+          "ja": "メタルアーム"
+        },
+        "effect": {
+          "en": "Uses a metal arm to easily defeat any opponent in arm wrestling.",
+          "ja": "メタルアームを使い、腕相撲でどんな敵でも簡単に倒す。"
+        },
+        "damage": "60",
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6ea17fe2-fca2-4433-9db5-cc654141c40e",
+    "number": 28,
+    "sort_by": 28,
+    "name": {
+      "en": "Dansuru",
+      "ja": "ダンスル"
+    },
+    "parody": "Kobeni Higashiyama",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/28.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/28-thumb.jpg",
+    "favorite_food": {
+      "en": "Cinnamon cereal",
+      "ja": "シナモンシリアル"
+    },
+    "description": {
+      "en": "This character only acts for money.",
+      "ja": "このキャラクターは金でしか動かない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "DDR",
+          "ja": "DDR"
+        },
+        "effect": {
+          "en": "Effortlessly and stylishly gets high scores on any DDR track.",
+          "ja": "どんなDDRトラックでも、簡単かつスタイリッシュにハイスコアを叩き出す。"
+        },
+        "damage": "70",
+        "costs": [
+          "Star",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ba3790c6-42d9-42b3-9bec-01a256d06d42",
+    "number": 29,
+    "sort_by": 29,
+    "name": {
+      "en": "Noya",
+      "ja": "のや"
+    },
+    "parody": "Yu Nishinoya",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/29.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/29-thumb.jpg",
+    "favorite_food": {
+      "en": "Grilled salmon",
+      "ja": "焼きサーモン"
+    },
+    "description": {
+      "en": "He is considered the team's last line of defense.",
+      "ja": "彼はチームの最終防衛ラインとみなされている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Second Wind",
+          "ja": "第二の風"
+        },
+        "effect": {
+          "en": "Gets a massive power boost from hearing their crush cheering from the stands.",
+          "ja": "観客席から片思いの相手の声援を聞くことで、大幅にパワーアップする。"
+        },
+        "damage": "50",
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "68c5824f-92df-4480-a3c1-42a0d4b03242",
+    "number": 30,
+    "sort_by": 30,
+    "name": {
+      "en": "Waifu",
+      "ja": "ワイフ"
+    },
+    "parody": "Ryuko Matoi",
+    "variant": "Normal",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Common",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/30.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/30-thumb.jpg",
+    "favorite_food": {
+      "en": "Butter toast",
+      "ja": "バタートースト"
+    },
+    "description": {
+      "en": "This character has a dog that follows wherever they go.",
+      "ja": "このキャラクターには、どこに行くにもついてくる犬がいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Best Friend",
+          "ja": "親友"
+        },
+        "effect": {
+          "en": "Gains a 100% power boost after seeing their best friend in danger.",
+          "ja": "親友が危険にさらされているのを見た後、100%のパワーアップを得る。"
+        },
+        "damage": "100",
+        "costs": [
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "00e3e489-269b-41cc-bc01-8142b8ba3776",
+    "number": 31,
+    "sort_by": 31,
+    "name": {
+      "en": "Onii-san",
+      "ja": "お兄さん"
+    },
+    "parody": "Itachi Uchiha",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "120",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/31.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/31-thumb.jpg",
+    "favorite_food": {
+      "en": "Meatballs",
+      "ja": "ミートボール"
+    },
+    "description": {
+      "en": "This character is very popular, and despite having massacred his own people, is still widely loved with many fans.",
+      "ja": "このキャラクターはとても人気があり、自国民を大量虐殺したにもかかわらず、今でも広く愛され、多くのファンがいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Summon",
+          "ja": "召喚"
+        },
+        "effect": {
+          "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
+          "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "93a034db-611b-468a-b350-14d4dbb24f93",
+    "number": 32,
+    "sort_by": 32,
+    "name": {
+      "en": "Star Girl",
+      "ja": "スターガール"
+    },
+    "parody": "Usagi Tsukino",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Spicy curry",
+      "ja": "辛いカレー"
+    },
+    "description": {
+      "en": "This character has two cats that give her wise advice.",
+      "ja": "このキャラクターは、賢明なアドバイスをくれる2匹の猫を飼っている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Star Reading",
+          "ja": "星読み"
+        },
+        "effect": {
+          "en": "By reading the position of the moon and stars in the night sky, she can predict the opponent's next move.",
+          "ja": "夜空の月や星の位置から、相手の次の一手を予測することができる。"
+        },
+        "damage": "40",
+        "costs": [
+          "Flower",
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "441d56c4-ee32-41a5-9622-06e96ed01ae7",
+    "number": 33,
+    "sort_by": 33,
+    "name": {
+      "en": "Kumo Boy",
+      "ja": "クモボーイ"
+    },
+    "parody": "Killua Zoldyck",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Chicken salad",
+      "ja": "チキンサラダ"
+    },
+    "description": {
+      "en": "This character comes from a family of assassins who bear the mark of the spider.",
+      "ja": "このキャラクターは、蜘蛛の印を持つ暗殺者一族の出身である。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Heart Surgery",
+          "ja": "心臓手術"
+        },
+        "effect": {
+          "en": "Swiftly and sloppily removes the opponent's heart.",
+          "ja": "迅速かつ雑に相手の心臓を摘出する。"
+        },
+        "damage": "70",
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6405854b-922d-410b-a358-6d6eebccbd92",
+    "number": 34,
+    "sort_by": 34,
+    "name": {
+      "en": "Pow Pow",
+      "ja": "パウパウ"
+    },
+    "parody": "Power",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Meat meat meat meat meat meat meat meat",
+      "ja": "肉肉肉肉肉肉肉肉"
+    },
+    "description": {
+      "en": "This character is passionate about making sweets. She recently made a birthday cake for her boss.",
+      "ja": "このキャラクターはお菓子作りに情熱を注いでいる。彼女は最近、上司のために誕生日ケーキを作った。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Cat Whisper",
+          "ja": "猫のささやき"
+        },
+        "effect": {
+          "en": "Communicates with cats through telepathy. However, cats don't follow orders, so it's not very useful.",
+          "ja": "猫とテレパシーで会話する。ただし、猫は命令を聞かないのであまり役には立たない。"
+        },
+        "damage": "10",
+        "costs": [
+          "Heart",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0f656ed2-41d8-42ac-90fe-614ad9fd6134",
+    "number": 35,
+    "sort_by": 35,
+    "name": {
+      "en": "O.P.",
+      "ja": "おーピー"
+    },
+    "parody": "Satoru Gojo",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/35.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/35-thumb.jpg",
+    "favorite_food": {
+      "en": "Chocolate",
+      "ja": "チョコレート"
+    },
+    "description": {
+      "en": "This character is so powerful that this card cannot be used in battle.",
+      "ja": "このキャラクターは非常に強力であるため、このカードは対戦では使用できない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Infinity",
+          "ja": "無限"
+        },
+        "effect": {
+          "en": "Feeds the opponent infinite information, causing paralysis and madness.",
+          "ja": "相手に無限の情報を与える。これにより、麻痺と狂気を引き起こす。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bbda797d-dca5-4e29-aed3-ef55b68271da",
+    "number": 36,
+    "sort_by": 36,
+    "name": {
+      "en": "Cutie",
+      "ja": "キューティー"
+    },
+    "parody": "Mitsuri Kanroji",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/36.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/36-thumb.jpg",
+    "favorite_food": {
+      "en": "Chicken and waffles",
+      "ja": "チキンとワッフル"
+    },
+    "description": {
+      "en": "Her hair was originally black. It turned pink from eating too much sakura mochi.",
+      "ja": "彼女の髪は元々黒髪だった。桜餅を食べ過ぎてピンク色になった。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Idol Pose",
+          "ja": "アイドルポーズ"
+        },
+        "effect": {
+          "en": "Captivates the opponent with charm and charisma.",
+          "ja": "魅力とカリスマ性で相手を魅了する。"
+        },
+        "damage": "30",
+        "costs": [
+          "Star",
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c0721896-b3f0-4aad-932b-733e4db50f63",
+    "number": 37,
+    "sort_by": 37,
+    "name": {
+      "en": "Jeans",
+      "ja": "ジーンズ"
+    },
+    "parody": "Levi Ackerman",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/37.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/37-thumb.jpg",
+    "favorite_food": {
+      "en": "Pepperoni pizza",
+      "ja": "ペパロニピザ"
+    },
+    "description": {
+      "en": "Exceptionally skilled in combat, with a particular hatred for giant apes.",
+      "ja": "戦闘に非常に長けており、巨大な猿を特に強く憎んでいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Death Spin",
+          "ja": "デススピン"
+        },
+        "effect": {
+          "en": "Spins with two swords in hand, dealing massive damage to the opponent.",
+          "ja": "2本の剣を持ったまま体を回転させる。相手に大ダメージを与える。"
+        },
+        "damage": "90",
+        "costs": [
+          "Triangle",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8b998afc-8781-4380-a9f2-64f64a4c4fb4",
+    "number": 38,
+    "sort_by": 38,
+    "name": {
+      "en": "Akamu",
+      "ja": "アカム"
+    },
+    "parody": "Maka Albarn",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "65",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "French fries",
+      "ja": "フライドポテト"
+    },
+    "description": {
+      "en": "Despite a severe gaming addiction, this character reigns at the top of the class.",
+      "ja": "重度のゲーム依存症にもかかわらず、クラスのトップに君臨している。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Squad Goal",
+          "ja": "隊の目標"
+        },
+        "effect": {
+          "en": "Calls for reinforcements to overwhelm the opponent. Unfortunately, the reinforcements aren't very capable.",
+          "ja": "援軍を呼び、相手を圧倒する。残念ながら援軍はあまり有能ではない。"
+        },
+        "damage": "20",
+        "costs": [
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "91fabc2d-42b0-4449-ac8c-6571f061cb92",
+    "number": 39,
+    "sort_by": 39,
+    "name": {
+      "en": "Kunasack",
+      "ja": "クナサック"
+    },
+    "parody": "Sukuna",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "190",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/39.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/39-thumb.jpg",
+    "favorite_food": {
+      "en": "Grilled cheese sandwich",
+      "ja": "グリルチーズサンドイッチ"
+    },
+    "description": {
+      "en": "His fingers are said to be a delicious snack rich in essential vitamins and minerals.",
+      "ja": "彼の指は、必須ビタミンとミネラルが豊富な美味しいおやつだと言われている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Shrine of Death",
+          "ja": "死の神社"
+        },
+        "effect": {
+          "en": "Teleports both the opponent and self to a shrine no one has ever seen.",
+          "ja": "相手と自分自身を、誰も見たことのない神社にテレポートさせる。"
+        },
+        "damage": "100",
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5cfe2fa3-70c6-4f3d-8693-551f3440ea96",
+    "number": 40,
+    "sort_by": 40,
+    "name": {
+      "en": "Ghibli",
+      "ja": "ジブリー"
+    },
+    "parody": "Chihiro Ogino",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "20",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Cheesecake",
+      "ja": "チーズケーキ"
+    },
+    "description": {
+      "en": "This character has many friends, including small animals.",
+      "ja": "このキャラクターには、小動物を含む多くの友人がいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Spa Day",
+          "ja": "スパ・デイ"
+        },
+        "effect": {
+          "en": "Restores health to 100% by visiting the best spa in the spirit world.",
+          "ja": "霊界一のスパに行くことで、健康状態が100%回復する。"
+        },
+        "costs": [
+          "Star",
+          "Flower"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "75f8bced-ed78-487e-afb1-e7554c66d72f",
+    "number": 41,
+    "sort_by": 41,
+    "name": {
+      "en": "Ika",
+      "ja": "イカ"
+    },
+    "parody": "Aki Hayakawa",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Bacon and eggs",
+      "ja": "ベーコンと卵"
+    },
+    "description": {
+      "en": "This character has been trying to quit smoking for quite a long time.",
+      "ja": "このキャラクターは、もうかなり長い間禁煙を試みている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Finger Puppet",
+          "ja": "指人形"
+        },
+        "effect": {
+          "en": "Distracts the opponent by making fun finger puppets.",
+          "ja": "楽しい指人形を作って相手の気をそらす。"
+        },
+        "damage": "50",
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "24905b89-b125-448d-b5ca-3c76a3d65e25",
+    "number": 42,
+    "sort_by": 42,
+    "name": {
+      "en": "Runner",
+      "ja": "ランナー"
+    },
+    "parody": "Lucy",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Steak and fries",
+      "ja": "ステーキとフライドポテト"
+    },
+    "description": {
+      "en": "This character was once part of a team bound by strong bonds. Sadly, she is now the only one left alive. She often thinks about her friends.",
+      "ja": "このキャラクターはかつて、強い絆で結ばれたチームの一員だった。残念ながら今は彼女だけが生き残っている。彼女は仲間のことをよく思い出す。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Claw Skill",
+          "ja": "引っ搔きスキル"
+        },
+        "effect": {
+          "en": "Wins prizes from a claw machine.",
+          "ja": "引っ搔きマシーンから賞品を獲得する。"
+        },
+        "damage": "30",
+        "costs": [
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "01f6746d-d2f3-4168-b412-b6a80a5716ae",
+    "number": 43,
+    "sort_by": 43,
+    "name": {
+      "en": "Marushiku",
+      "ja": "マルシク"
+    },
+    "parody": "Shikamaru Nara",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/43.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/43-thumb.jpg",
+    "favorite_food": {
+      "en": "Cup ramen",
+      "ja": "カップラーメン"
+    },
+    "description": {
+      "en": "There is one person this character would never try to control.",
+      "ja": "このキャラクターが決してコントロールを試みない人物が1人いる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Shadow Attack",
+          "ja": "影攻撃"
+        },
+        "effect": {
+          "en": "Controls the opponent's shadow, manipulating them freely for 2 turns.",
+          "ja": "相手の影をコントロールすることで、2ターンの間相手を意のままに操る。"
+        },
+        "damage": "60",
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7a02c0ff-391c-4151-8b25-55b32358ce27",
+    "number": 44,
+    "sort_by": 44,
+    "name": {
+      "en": "Rei Rei",
+      "ja": "レイレイ"
+    },
+    "parody": "Rei Ayanami",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "—",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Sushi and beer",
+      "ja": "寿司とビール"
+    },
+    "description": {
+      "en": "Despite being small, this character has taken on food challenges from around the world and has never failed once.",
+      "ja": "このキャラクターは小さいにも関わらず、世界中の食べ物に挑戦し、一度も失敗したことがない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "The End",
+          "ja": "終わり"
+        },
+        "effect": {
+          "en": "Destroys all things and people.",
+          "ja": "すべての物と人を破壊する。"
+        },
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1796f111-0f5d-4c31-8886-fed2088474da",
+    "number": 45,
+    "sort_by": 45,
+    "name": {
+      "en": "Yashain",
+      "ja": "ヤシャイン"
+    },
+    "parody": "Inuyasha",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/45.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/45-thumb.jpg",
+    "favorite_food": {
+      "en": "Fried chicken",
+      "ja": "フライドチキン"
+    },
+    "description": {
+      "en": "This character became friends with a single flea.",
+      "ja": "このキャラクターは一匹のノミと仲良くなった。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Sit!",
+          "ja": "お座り"
+        },
+        "effect": {
+          "en": "The inner \"good boy\" emerges and sits on command. This is usually encouraged with snacks.",
+          "ja": "内なる「良い子」が出現し、命令に従って座る。これは通常、おやつで助長される。"
+        },
+        "damage": "40",
+        "costs": [
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bc6fc3eb-bd1d-4e63-8117-fb14c04c81a8",
+    "number": 46,
+    "sort_by": 46,
+    "name": {
+      "en": "Gomeka",
+      "ja": "ゴメカ"
+    },
+    "parody": "Kagome Higurashi",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Butter popcorn",
+      "ja": "バターポップコーン"
+    },
+    "description": {
+      "en": "This character's life mission is to find the most perfect pearl.",
+      "ja": "このキャラクターの人生の使命は、最も完璧な真珠を見つけることである。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Guard Dog",
+          "ja": "番犬"
+        },
+        "effect": {
+          "en": "Sends in the most ferocious and bloodthirsty animal to attack the opponent.",
+          "ja": "最も凶暴で血に飢えた動物を1匹送り込み、相手を攻撃する。"
+        },
+        "damage": "80",
+        "costs": [
+          "Flower",
+          "Triangle"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6f8ad5d4-4db4-41b9-a9d6-92b4d3f59b76",
+    "number": 47,
+    "sort_by": 47,
+    "name": {
+      "en": "Sensei",
+      "ja": "センセイ"
+    },
+    "parody": "Kakashi Hatake",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Lobster mac",
+      "ja": "ロブスターマック"
+    },
+    "description": {
+      "en": "This character is very cool and mysterious. Hardly anyone has seen the lower half of his face.",
+      "ja": "このキャラクターはとてもクールでミステリアスだ。彼の顔の下半分を見た人はほとんどいない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Summon",
+          "ja": "召喚"
+        },
+        "effect": {
+          "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
+          "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e06a474c-22da-492d-bf91-47ad9679392a",
+    "number": 48,
+    "sort_by": 48,
+    "name": {
+      "en": "Birdie",
+      "ja": "バーディー"
+    },
+    "parody": "Makima",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "BBQ chips",
+      "ja": "バーベキューチップス"
+    },
+    "description": {
+      "en": "This character loves obedient animals.",
+      "ja": "このキャラクターは従順な動物を愛している"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Roll Call",
+          "ja": "点呼"
+        },
+        "effect": {
+          "en": "Kills the opponent just by saying their name. Can only be used once per battle.",
+          "ja": "名前を言うだけで相手を殺す。1回の戦闘につき1回のみ使用可能。"
+        },
+        "costs": [
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1aeded9e-4ad5-4838-aea9-1b0b6cc1af4d",
+    "number": 49,
+    "sort_by": 49,
+    "name": {
+      "en": "Monke",
+      "ja": "モンケ"
+    },
+    "parody": "Monkey D. Luffy",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Korean BBQ",
+      "ja": "韓国のバーベキュー"
+    },
+    "description": {
+      "en": "This character and friends love riding goats across the sea.",
+      "ja": "このキャラクターとその仲間は、ヤギに乗って海を渡るのが好きである。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Heartbeat",
+          "ja": "ハートビート"
+        },
+        "effect": {
+          "en": "Creates music with their heartbeat, changing the world at will.",
+          "ja": "自分のハートビートで曲を作り、世界を意のままに変えることができる。"
+        },
+        "damage": "100",
+        "costs": [
+          "Star",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5521318e-5c10-4b2b-860e-e789e9f6a157",
+    "number": 50,
+    "sort_by": 50,
+    "name": {
+      "en": "Butterfly",
+      "ja": "バタフライ"
+    },
+    "parody": "Shinobu Kocho",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/50.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/50-thumb.jpg",
+    "favorite_food": {
+      "en": "Jalapeño poppers",
+      "ja": "ハラペーニョポッパー"
+    },
+    "description": {
+      "en": "Butterflies always follow this character wherever they go.",
+      "ja": "このキャラクターは、どこへ行くにもいつも蝶がついてくる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Students",
+          "ja": "生徒"
+        },
+        "effect": {
+          "en": "Calls on students for help. They're not great at fighting, but useful for housework.",
+          "ja": "自分の生徒たちに助けを求める。彼らは戦いは苦手だが、家事には役立つ。"
+        },
+        "damage": "30",
+        "costs": [
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5af09eb5-eff1-44af-9de5-8bb6e45f961d",
+    "number": 51,
+    "sort_by": 51,
+    "name": {
+      "en": "Jelly",
+      "ja": "ゼリー"
+    },
+    "parody": "Roronoa Zoro",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Mashed potatoes",
+      "ja": "マッシュポテト"
+    },
+    "description": {
+      "en": "This character loves eating onigiri. However, he won't eat them if they've been stepped on.",
+      "ja": "このキャラクターはおにぎりを食べるのが大好き。ただし、踏まれたときは食べない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Three-Sword Style",
+          "ja": "3刀流"
+        },
+        "effect": {
+          "en": "By wielding three swords simultaneously, attack power triples.",
+          "ja": "3本の剣を同時に振るうことで、攻撃力が3倍になる。"
+        },
+        "damage": "70",
+        "costs": [
+          "Triangle",
+          "Heart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7ee89e06-6b0f-43d9-bf7c-bbb5ae315e24",
+    "number": 52,
+    "sort_by": 52,
+    "name": {
+      "en": "Icon",
+      "ja": "アイコン"
+    },
+    "parody": "Asuka Langley Soryu",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Thai yellow curry",
+      "ja": "タイのイエローカレー"
+    },
+    "description": {
+      "en": "This character is known for taking on multiple enemies at once. This ultimately led to her downfall.",
+      "ja": "このキャラクターは複数の敵を同時に相手にすることで知られている。これが最終的に彼女の破滅を招いた。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Mental Breakdown",
+          "ja": "精神崩壊"
+        },
+        "effect": {
+          "en": "Torments the opponent until they have a complete mental breakdown.",
+          "ja": "相手が完全に精神崩壊するまで責め立てる。"
+        },
+        "damage": "50",
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "22b1449f-df78-4942-98dd-d2fee0fb854c",
+    "number": 53,
+    "sort_by": 53,
+    "name": {
+      "en": "Mahabu",
+      "ja": "マハブ"
+    },
+    "parody": "Shigeo Kageyama",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/53.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/53-thumb.jpg",
+    "favorite_food": {
+      "en": "Takoyaki and rice",
+      "ja": "たこ焼きとご飯"
+    },
+    "description": {
+      "en": "This character can bend spoons with psychic power. Unfortunately, once bent, they can't be straightened back.",
+      "ja": "このキャラクターは精神力でスプーンを曲げる能力を持っている。残念ながら、曲げたものを元に戻すことはできない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Master",
+          "ja": "マスター"
+        },
+        "effect": {
+          "en": "Calls forth a master with unrivaled psychic abilities.",
+          "ja": "超能力使いとして比類なき技術を持つマスターを呼び出す。"
+        },
+        "damage": "100",
+        "costs": [
+          "Eye",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0ca09e23-d1f4-43a6-a637-5c25743f89f9",
+    "number": 54,
+    "sort_by": 54,
+    "name": {
+      "en": "Kit Kat",
+      "ja": "キットカット"
+    },
+    "parody": "Yoruichi Shihōin",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/54.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/54-thumb.jpg",
+    "favorite_food": {
+      "en": "Canned cat food",
+      "ja": "猫の缶詰フード"
+    },
+    "description": {
+      "en": "This character is so strong and fast that many compare her to lightning.",
+      "ja": "このキャラクターは、多くの人が彼女を稲妻に例えるほど強くて速い。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Cute Cat",
+          "ja": "かわいい猫"
+        },
+        "effect": {
+          "en": "Transforms into a black cat. So adorable you'd want to hug it, causing the opponent to fall in love.",
+          "ja": "黒猫に変身する。抱きしめたくなるほどの可愛さなので、相手は思わず恋に落ちてしまう。"
+        },
+        "damage": "40",
+        "costs": [
+          "Flower",
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "13d95950-71d8-46dc-b0ba-09398defa002",
+    "number": 55,
+    "sort_by": 55,
+    "name": {
+      "en": "Ice Hat",
+      "ja": "アイセハット"
+    },
+    "parody": "Shoto Todoroki",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "95",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Strawberry ice cream",
+      "ja": "いちごアイスクリーム"
+    },
+    "description": {
+      "en": "He attends a very exclusive and prestigious school and is one of the most popular students.",
+      "ja": "彼はとても特別で高級な学校に通っており、最も人気のある生徒の一人である。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Manicure",
+          "ja": "マニキュア"
+        },
+        "effect": {
+          "en": "Gives the opponent a perfect manicure, but charges an outrageous fee.",
+          "ja": "使用者は相手に完璧なマニキュアを施すが、法外な金額を請求する。"
+        },
+        "damage": "50",
+        "costs": [
+          "Star"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f649100b-ef16-4896-a4b8-1388033429eb",
+    "number": 56,
+    "sort_by": 56,
+    "name": {
+      "en": "Spy",
+      "ja": "スパイ"
+    },
+    "parody": "Anya Forger",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "10",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Peanuts",
+      "ja": "ピーナッツ"
+    },
+    "description": {
+      "en": "She loves penguins.",
+      "ja": "彼女はペンギンが大好き。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Stare",
+          "ja": "凝視"
+        },
+        "effect": {
+          "en": "Stares at the opponent, causing extreme discomfort.",
+          "ja": "相手を凝視し、非常に不快感を与える。"
+        },
+        "damage": "100",
+        "costs": [
+          "Eye"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3dd95510-ada0-4836-ad6f-a182ecea2f7f",
+    "number": 57,
+    "sort_by": 57,
+    "name": {
+      "en": "Edo",
+      "ja": "江戸"
+    },
+    "parody": "Edward Elric",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Ham omelette",
+      "ja": "ハムオムレツ"
+    },
+    "description": {
+      "en": "This character met many small, cute friends during their adventures.",
+      "ja": "このキャラクターは、冒険の中でたくさんの小さなかわいい友達に出会った。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Metal Arm",
+          "ja": "メタルアーム"
+        },
+        "effect": {
+          "en": "Uses a metal arm to easily defeat any opponent in arm wrestling.",
+          "ja": "メタルアームを使い、腕相撲でどんな敵でも簡単に倒す。"
+        },
+        "damage": "60",
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e7661ace-86e8-466d-8226-ff47958e7b04",
+    "number": 58,
+    "sort_by": 58,
+    "name": {
+      "en": "Dansuru",
+      "ja": "ダンスル"
+    },
+    "parody": "Kobeni Higashiyama",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/00-thumb.jpg",
+    "favorite_food": {
+      "en": "Cinnamon cereal",
+      "ja": "シナモンシリアル"
+    },
+    "description": {
+      "en": "This character only acts for money.",
+      "ja": "このキャラクターは金でしか動かない。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "DDR",
+          "ja": "DDR"
+        },
+        "effect": {
+          "en": "Effortlessly and stylishly gets high scores on any DDR track.",
+          "ja": "どんなDDRトラックでも、簡単かつスタイリッシュにハイスコアを叩き出す。"
+        },
+        "damage": "70",
+        "costs": [
+          "Star",
+          "BW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a9d292bb-934e-41ed-a250-027a7872998b",
+    "number": 59,
+    "sort_by": 59,
+    "name": {
+      "en": "Noya",
+      "ja": "のや"
+    },
+    "parody": "Yu Nishinoya",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/59.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/59-thumb.jpg",
+    "favorite_food": {
+      "en": "Grilled salmon",
+      "ja": "焼きサーモン"
+    },
+    "description": {
+      "en": "He is considered the team's last line of defense.",
+      "ja": "彼はチームの最終防衛ラインとみなされている。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Second Wind",
+          "ja": "第二の風"
+        },
+        "effect": {
+          "en": "Gets a massive power boost from hearing their crush cheering from the stands.",
+          "ja": "観客席から片思いの相手の声援を聞くことで、大幅にパワーアップする。"
+        },
+        "damage": "50",
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f46756fc-87e4-4336-bbeb-0a926e44c293",
+    "number": 60,
+    "sort_by": 60,
+    "name": {
+      "en": "Waifu",
+      "ja": "ワイフ"
+    },
+    "parody": "Ryuko Matoi",
+    "variant": "Holo",
+    "illustrators": [
+      "Alex Roh"
+    ],
+    "rarity": "Rare",
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
+    "hp": "100",
+    "image": "https://gaichu.b-cdn.net/tygadu/set1/60.jpg",
+    "thumb": "https://gaichu.b-cdn.net/tygadu/set1/60-thumb.jpg",
+    "favorite_food": {
+      "en": "Butter toast",
+      "ja": "バタートースト"
+    },
+    "description": {
+      "en": "This character has a dog that follows wherever they go.",
+      "ja": "このキャラクターには、どこに行くにもついてくる犬がいる。"
+    },
+    "attacks": [
+      {
+        "name": {
+          "en": "Best Friend",
+          "ja": "親友"
+        },
+        "effect": {
+          "en": "Gains a 100% power boost after seeing their best friend in danger.",
+          "ja": "親友が危険にさらされているのを見た後、100%のパワーアップを得る。"
+        },
+        "damage": "100",
+        "costs": [
+          "Heart"
+        ]
+      }
+    ]
+  }
+]

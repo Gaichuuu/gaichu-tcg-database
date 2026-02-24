@@ -337,5 +337,49 @@
       "TCG satire"
     ],
     "total_cards_count": 5
+  },
+  {
+    "id": "1a1863ec-60be-44e3-b434-4ef43c41cb60",
+    "series_short_name": "tygadu",
+    "series_id": "378bb7da-fad9-4790-906b-143869cd0594",
+    "short_name": "set1",
+    "sort_by": 1,
+    "name": "Set One",
+    "logo": "https://gaichu.b-cdn.net/tygadu/set1/tygaduSet1.jpg?v=4",
+    "description": "60-card set featuring 30 iconic characters, each with a b&w sketch version and a full-color holo variant.",
+    "keywords": [
+      "Tygadu Set One",
+      "anime parody cards",
+      "Alex Roh",
+      "hand-drawn cards",
+      "Naruto parody",
+      "One Piece parody",
+      "Chainsaw Man parody"
+    ],
+    "pack_art": {
+      "url": "https://gaichu.b-cdn.net/tygadu/set1/pack01.jpg",
+      "frontDescription": {
+        "ja": "テイガーパク\nトレーディングカードはとても楽しいので、人々はトレーディングカードを集めるために船で旅行します\nこのカードを友達にあげると、3日連続で歓声が上がります。それはあなたができる最高の贈り物です\nテイガー（ロゴ）〜 7 TRADING CARDS",
+        "en": "Tiger Pack\nTrading cards are so fun that people travel by boat to collect them.\nIf you give this card to a friend, they'll cheer for 3 days straight. It's the best gift you can give.\nTiger (logo) ~ 7 TRADING CARDS"
+      },
+      "backDescription": "",
+      "illustrator": "Alex Roh",
+      "packs": [
+        {
+          "label": "Front of Pack",
+          "url": "https://gaichu.b-cdn.net/tygadu/set1/pack01.jpg"
+        },
+        {
+          "label": "Back of Pack",
+          "url": "https://gaichu.b-cdn.net/tygadu/set1/pack01-back.jpg"
+        }
+      ]
+    },
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/tygadu/set1/00.jpg",
+      "text": { "en": "Tiger Pack", "ja": "テイガーパク" },
+      "illustrator": "Alex Roh"
+    },
+    "total_cards_count": 60
   }
 ]
