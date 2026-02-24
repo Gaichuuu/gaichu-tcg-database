@@ -14,7 +14,10 @@ interface AttacksSectionProps {
   series: string;
 }
 
-export default function AttacksSection({ attacks, series }: AttacksSectionProps) {
+export default function AttacksSection({
+  attacks,
+  series,
+}: AttacksSectionProps) {
   const { locale } = useLocale();
 
   if (!attacks.length) return null;
@@ -31,7 +34,10 @@ export default function AttacksSection({ attacks, series }: AttacksSectionProps)
                 series={series}
                 name={cost}
                 extension="jpg"
-                className="mr-2 rounded-full"
+                className={[
+                  "mr-2 rounded",
+                  series === "tygadu" && "border border-hoverBorder",
+                ].filter(Boolean).join(" ")}
               />
             ))}
             <IconText

@@ -45,6 +45,7 @@ export interface RawCollectionCard {
   weakness?: WeaknessEntry[];
   resistance?: ResistanceEntry[];
   retreat?: RetreatEntry[];
+  favorite_food?: I18nInput;
   parody?: string;
   hp?: string;
   lp?: string;
@@ -88,6 +89,7 @@ export interface CollectionCard {
   resistance?: ResistanceEntry[];
   retreat?: RetreatEntry[];
   strength?: StrengthEntry[];
+  favorite_food?: Partial<Record<LocaleKey, string>>;
   parody?: string;
   hp?: string;
   lp?: string;
@@ -190,6 +192,7 @@ export function normalizeCollectionCard(
     ...raw,
     name: toI18nMap(raw.name),
     description: toI18nMap(raw.description),
+    favorite_food: toI18nMap(raw.favorite_food),
 
     attacks: (raw.attacks ?? []).map((a) => ({
       name: toI18nMap(a.name),

@@ -10,6 +10,7 @@ export enum SeriesShortName {
   ash = "ash",
   oz = "oz",
   disgruntled = "disgruntled",
+  tygadu = "tygadu",
 }
 
 export const fetchSeries = async (): Promise<SeriesAndSet[]> => {

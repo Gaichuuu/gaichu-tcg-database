@@ -146,6 +146,12 @@ const CardDetailPage: React.FC = () => {
                   </CardDetailRow>
                 )}
 
+                {card.favorite_food && (
+                  <CardDetailRow label="Favorite Food">
+                    {t(card.favorite_food, locale)}
+                  </CardDetailRow>
+                )}
+
                 <AttacksSection
                   attacks={card.attacks ?? []}
                   series={seriesKey}

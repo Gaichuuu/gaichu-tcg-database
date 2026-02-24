@@ -20,6 +20,7 @@ import wmCardList from "../../data/wm/cards.json";
 import ashCardList from "../../data/ash/cards.json";
 import ozCardList from "../../data/oz/cards.json";
 import disgruntledCardList from "../../data/disgruntled/cards.json";
+import tygaduCardList from "../../data/tygadu/cards.json";
 import setsList from "../../data/sets.json";
 import { CollectionCard } from "@/types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
@@ -42,6 +43,7 @@ export const SerieCardList: Record<SeriesShortName, unknown[]> = {
   [SeriesShortName.ash]: ashCardList,
   [SeriesShortName.oz]: ozCardList,
   [SeriesShortName.disgruntled]: disgruntledCardList,
+  [SeriesShortName.tygadu]: tygaduCardList,
 };
 
 export const getJsonCardList = (
@@ -218,6 +220,7 @@ const CardSchemaRaw = z.object({
   cost: z.array(z.object({ total: z.string(), aura: z.string() })).optional(),
   effect: z.string().optional(),
   note: z.string().optional(),
+  favorite_food: I18nValue.optional(),
   average_price: z.number().optional(),
 });
 
@@ -229,6 +232,7 @@ const CardSchema = CardSchemaRaw.transform((c) => {
     ...c,
     name: toI18nMap(c.name),
     description: toI18nMap(c.description),
+    favorite_food: toI18nMap(c.favorite_food),
     illustrators: c.illustrators ?? [],
 
     total_cards_count: set?.total_cards_count ?? 0,
