@@ -23,12 +23,16 @@ rsync -avz --delete \
   dist/ \
   "$REMOTE"
 
-echo "==> Deploying .htaccess and sitemap..."
-rsync -avz .htaccess sitemap.xml "$REMOTE"
+echo "==> Deploying sitemap..."
+rsync -avz sitemap.xml "$REMOTE"
 
 echo "==> Deploying PHP handlers..."
 ssh "${DEPLOY_USER}@${DEPLOY_HOST}" "mkdir -p ${DEPLOY_PATH}cards ${DEPLOY_PATH}news"
 rsync -avz cards/index.php "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}cards/index.php"
 rsync -avz news/index.php "${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}news/index.php"
+
+echo "==> Deploying NGINX config..."
+ssh "${DEPLOY_USER}@${DEPLOY_HOST}" "mkdir -p ~/nginx/gaichu.com"
+rsync -avz nginx/gaichu.com/nginx.conf "${DEPLOY_USER}@${DEPLOY_HOST}:~/nginx/gaichu.com/nginx.conf"
 
 echo "==> Deploy complete!"
