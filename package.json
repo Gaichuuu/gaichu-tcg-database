@@ -16,6 +16,8 @@
     "build": "tsc -b && vite build && npm run sitemap",
     "deploy": "bash scripts/deploy.sh",
     "sitemap": "npx tsx scripts/generate-sitemap.ts",
+    "lint": "eslint .",
+    "test": "vitest",
     "data:import:prod": "NODE_ENV=production node firestoreScript/importCollections.cjs",
     "data:import:staging": "NODE_ENV=staging node firestoreScript/importCollections.cjs",
     "news:import:prod": "NODE_ENV=production node firestoreScript/importNews.cjs",
