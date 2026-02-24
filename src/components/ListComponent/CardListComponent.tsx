@@ -69,7 +69,10 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
                                 key={`${atkNameEn}-cost-${cIndex}`}
                                 src={`https://gaichu.b-cdn.net/${series}/icon${cost}.jpg`}
                                 alt={`${cost} Icon`}
-                                className="mr-2 mb-1 inline-block h-5 w-5 rounded-full align-middle"
+                                className={[
+                                  "mr-2 mb-1 inline-block h-5 w-auto rounded align-middle",
+                                  series === "tygadu" && "border border-hoverBorder",
+                                ].filter(Boolean).join(" ")}
                               />
                             ))}
                             <IconText
