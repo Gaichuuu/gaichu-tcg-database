@@ -5,6 +5,7 @@ import { fetchSets } from "@/services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";
 import { getJsonSet } from "@/services/JsonCollectionSetService";
 import { ONE_HOUR } from "@/utils/TimeUtils";
+import { i18nToEnString } from "@/utils/RoutePathBuildUtils";
 import type { CollectionCard } from "@/types/CollectionCard";
 
 interface ShowcaseCard {
@@ -29,10 +30,8 @@ export function shuffle<T>(arr: T[], rng: () => number): T[] {
   return out;
 }
 
-export function toEnName(name: CollectionCard["name"]): string {
-  if (typeof name === "string") return name;
-  return name?.en ?? Object.values(name ?? {})[0] ?? "";
-}
+export const toEnName = (name: CollectionCard["name"]): string =>
+  i18nToEnString(name as Parameters<typeof i18nToEnString>[0]);
 
 const SEED_KEY = "marquee_seed";
 const SEED_TS_KEY = "marquee_seed_ts";
@@ -42,12 +41,16 @@ function getOrCreateSeed(): number {
     const ts = Number(sessionStorage.getItem(SEED_TS_KEY) ?? 0);
     const cached = sessionStorage.getItem(SEED_KEY);
     if (cached && Date.now() - ts < ONE_HOUR) return Number(cached);
-  } catch {}
+  } catch {
+    // sessionStorage unavailable
+  }
   const seed = Math.random();
   try {
     sessionStorage.setItem(SEED_KEY, String(seed));
     sessionStorage.setItem(SEED_TS_KEY, String(Date.now()));
-  } catch {}
+  } catch {
+    // sessionStorage unavailable
+  }
   return seed;
 }
 
@@ -90,7 +93,9 @@ export function useShowcaseCards(count = 24): {
             series: card.series_short_name,
             set: card.set_short_name,
             sortBy: card.sort_by,
-            name: toEnName(card.name),
+            name: i18nToEnString(
+              card.name as Parameters<typeof i18nToEnString>[0],
+            ),
             averagePrice: card.average_price,
           });
         }
