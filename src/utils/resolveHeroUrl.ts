@@ -1,4 +1,4 @@
-const NEWS_CDN_BASE = "https://gaichu.b-cdn.net/news/";
+export const NEWS_CDN_BASE = "https://gaichu.b-cdn.net/news/";
 
 /**
  * Resolves a hero_url to a full URL.

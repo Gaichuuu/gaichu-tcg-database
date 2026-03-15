@@ -29,6 +29,7 @@ stageServiceAccountKey.json
 # Local files
 .claude/
 CLAUDE.md
+.mcp.json
 scripts/temp/
 .deploy.env
 

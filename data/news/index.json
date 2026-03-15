@@ -1,5 +1,16 @@
 [
   {
+    "title": "OpenZoo Card Creator is live",
+    "author": "gaichu",
+    "tags": ["site-updates"],
+    "hero_url": "09.png",
+    "excerpt": "Design and print your own OpenZoo trading cards in the browser.",
+    "body_html": "<p>Jack Penman came to me with a simple request: \"we need a site like this\" — {link:https://mtgcardbuilder.com/|mtgcardbuilder.com}</p><p>Say less. {link:https://openzootcg.com/|OpenZooTCG.com} is here! A browser-based tool for designing custom OpenZoo trading cards.</p><p>The Card Editor has templates to quickly create the various OpenZoo card types.</p><ul style=\"margin-left:20px;\"><li>Beastie</li><li>Artifact</li><li>Spell</li><li>Potion</li><li>Aura</li><li>Terra</li><li>Token</li></ul><p>And built-in support for card variants.</p><ul style=\"margin-left:20px;\"><li>Borderless</li><li>Sample or Playtester</li><li>Japanese</li></ul><p>Effect blocks use auto layout, so the card formats itself as you build it. Optional 3.5mm bleed for print-ready output. Also works great for vintage MetaZoo proxies.</p><p>Join the {link:https://discord.gg/2jQPtQceqT|OpenZoo discord} to see newly created cards automatically posted to #gallery by the Gallery bot. You can even remix other people's cards. Give it a try!</p><p>Source is available on {link:https://github.com/Gaichuuu/openzoo-card-creator|GitHub}. The codebase is MIT licensed and assets are CC BY-SA 3.0.</p>",
+    "created_at": "2026-03-14",
+    "slug": "openzoo-card-creator-launch",
+    "id": "openzoo-card-creator-launch"
+  },
+  {
     "title": "OpenZoo Tabletop Simulator mod",
     "author": "gaichu",
     "tags": ["site-updates"],

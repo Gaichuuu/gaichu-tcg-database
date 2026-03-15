@@ -10,9 +10,9 @@
  * - {indent}...{/indent} - Indented block (no bullets)
  */
 
-const NEWS_CDN_BASE = "https://gaichu.b-cdn.net/news/";
+import { NEWS_CDN_BASE } from "@/utils/resolveHeroUrl";
 
-const resolveUrl = (url: string) =>
+const resolveUrl = (url: string): string =>
   url.startsWith("http") ? url : NEWS_CDN_BASE + url;
 
 const YOUTUBE_TEMPLATE = (videoId: string) => `

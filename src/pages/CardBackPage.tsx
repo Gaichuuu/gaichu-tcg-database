@@ -8,24 +8,17 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import type { ArtParamKeys } from "@/types/routes";
-import { t, useLocale, type I18nValue } from "@/i18n";
-
-function isJaAvailable(v: I18nValue | undefined): boolean {
-  return (
-    v != null &&
-    typeof v === "object" &&
-    typeof v.ja === "string" &&
-    v.ja.trim() !== ""
-  );
-}
+import { t, useLocale, isJaAvailable } from "@/i18n";
+import { PageError, PageLoading, PageNotFound } from "@/components/PageStates";
+import LocaleToggle from "@/components/LocaleToggle";
 
 const CardBackPage: React.FC = () => {
   const { seriesShortName = "", setShortName = "" } = useParams<ArtParamKeys>();
-  const { locale, setLocale } = useLocale();
+  const { locale } = useLocale();
   const seriesKey = decodeURIComponent(seriesShortName);
   const setKey = decodeURIComponent(setShortName);
 
-  const { data: setAndCard, error: setError } = useSet(seriesKey, setKey);
+  const { data: setAndCard, error: setError, isLoading } = useSet(seriesKey, setKey);
 
   const cardBack = setAndCard?.set.card_back;
 
@@ -34,7 +27,9 @@ const CardBackPage: React.FC = () => {
       ? `${CDN_BASE_URL}/${seriesKey}/${setKey}/00.jpg?v=2`
       : "";
 
-  if (setError || !cardBack) return <p>Not found.</p>;
+  if (setError) return <PageError message="Failed to load card back." />;
+  if (isLoading && !setAndCard) return <PageLoading />;
+  if (!cardBack) return <PageNotFound message="Card back not found." />;
 
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Card Back - ${setName} - Gaichu`;
@@ -71,38 +66,7 @@ const CardBackPage: React.FC = () => {
             <h1 className="mb-4">
               {getTitleSetImagePathType(SetImagePathType.CardBack)}
             </h1>
-            {hasJaLocale && (
-              <div
-                role="group"
-                aria-label="Language toggle"
-                className="group/toggle border-secondaryBorder mb-3 inline-flex items-center gap-1 rounded-2xl border p-1 shadow-sm transition-colors"
-              >
-                <button
-                  type="button"
-                  onClick={() => setLocale("en")}
-                  aria-pressed={locale === "en"}
-                  className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
-                    locale === "en"
-                      ? "bg-primaryButton text-mainBg"
-                      : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
-                  }`}
-                >
-                  English
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setLocale("ja")}
-                  aria-pressed={locale === "ja"}
-                  className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
-                    locale === "ja"
-                      ? "bg-primaryButton text-mainBg"
-                      : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
-                  }`}
-                >
-                  日本語
-                </button>
-              </div>
-            )}
+            <LocaleToggle jaAvailable={hasJaLocale} />
           </div>
           <table className="w-full border-collapse">
             <tbody>

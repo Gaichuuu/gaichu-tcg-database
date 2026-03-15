@@ -9,6 +9,11 @@ interface Friend {
 
 const FRIENDS: Friend[] = [
   {
+    name: "OpenZoo Card Creator",
+    url: "https://openzootcg.com/",
+    description: "Web-based card creator for the OpenZoo trading card game.",
+  },
+  {
     name: "MetaZaurus",
     url: "https://metazaurus.com/",
     description:

@@ -1,16 +1,10 @@
 import React, { useMemo } from "react";
-import { useLocale, I18nValue } from "@/i18n";
+import { useLocale, isJaAvailable } from "@/i18n";
 import type { CollectionCard } from "@/types/CollectionCard";
 
-type Props = { card?: CollectionCard };
-
-function isJaAvailable(v: I18nValue | undefined): boolean {
-  return (
-    v != null &&
-    typeof v === "object" &&
-    typeof v.ja === "string" &&
-    v.ja.trim() !== ""
-  );
+interface Props {
+  card?: CollectionCard;
+  jaAvailable?: boolean;
 }
 
 function hasJA(card?: CollectionCard): boolean {
@@ -24,11 +18,14 @@ function hasJA(card?: CollectionCard): boolean {
   return false;
 }
 
-const LocaleToggle: React.FC<Props> = ({ card }) => {
+const LocaleToggle: React.FC<Props> = ({ card, jaAvailable }) => {
   const { locale, setLocale } = useLocale();
-  const jaAvailable = useMemo(() => hasJA(card), [card]);
+  const jaIsAvailable = useMemo(
+    () => (jaAvailable !== undefined ? jaAvailable : hasJA(card)),
+    [card, jaAvailable],
+  );
 
-  if (!jaAvailable) return null;
+  if (!jaIsAvailable) return null;
 
   const stopDown = (e: React.SyntheticEvent) => {
     e.preventDefault();

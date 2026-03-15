@@ -40,8 +40,8 @@ const CardDetailPage: React.FC = () => {
     cardName,
   );
 
-  if (isFetching) return <PageLoading />;
   if (error) return <PageError message="Failed to load card." />;
+  if (isFetching && !data) return <PageLoading />;
   if (!data?.card) return <PageNotFound message="Card not found." />;
 
   const { card, previousCard, nextCard } = data;

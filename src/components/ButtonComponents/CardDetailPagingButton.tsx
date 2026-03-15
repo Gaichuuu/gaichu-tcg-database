@@ -4,12 +4,12 @@ import { CollectionCard } from "@/types/CollectionCard";
 import { useLocale, t } from "@/i18n";
 import { PagingType } from "./PagingType";
 
-type ButtonAction = {
+interface ButtonAction {
   pagingType: PagingType;
   card?: CollectionCard;
   onClick: () => void;
   className?: string;
-};
+}
 
 const CardDetailPagingButton: React.FC<ButtonAction> = ({
   pagingType,

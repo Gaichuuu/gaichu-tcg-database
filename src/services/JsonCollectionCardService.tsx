@@ -1,19 +1,11 @@
 import { z } from "zod";
 import { t } from "@/i18n";
 import { slugify } from "@/utils/RoutePathBuildUtils";
+import { toI18nMap } from "@/types/CollectionCard";
 
 const localeEnum = z.enum(["en", "ja"]);
 
 const I18nValue = z.union([z.string(), z.record(localeEnum, z.string())]);
-
-type LocaleKey = z.infer<typeof localeEnum>;
-
-function toI18nMap(v: unknown): Partial<Record<LocaleKey, string>> {
-  if (v == null) return {};
-  return typeof v === "string"
-    ? { en: v }
-    : (v as Partial<Record<LocaleKey, string>>);
-}
 
 import mzCardList from "../../data/mz/cards.json";
 import wmCardList from "../../data/wm/cards.json";
@@ -92,26 +84,34 @@ export const getAdjacentCards = (
   }
   const cardList = jsonCardList(seriesShortName);
   const cards = cardList
-    .filter((card) => card.series_short_name === seriesShortName)
-    .filter((card) => card.set_short_name === setShortName)
+    .filter(
+      (card) =>
+        card.series_short_name === seriesShortName &&
+        card.set_short_name === setShortName,
+    )
     .sort((a, b) => a.sort_by - b.sort_by);
 
-  const previousCard =
-    cards.filter((card) => card.sort_by < currentCardSortBy).at(-1) || null;
-  const nextCard =
-    cards.filter((card) => card.sort_by > currentCardSortBy).at(0) || null;
+  const idx = cards.findIndex((c) => c.sort_by === currentCardSortBy);
+  const previousCard = idx > 0 ? cards[idx - 1] : null;
+  const nextCard = idx >= 0 && idx < cards.length - 1 ? cards[idx + 1] : null;
 
-  return {
-    previousCard: previousCard,
-    nextCard: nextCard,
-  };
+  return { previousCard, nextCard };
 };
 
+const _jsonCardListCache = new Map<string, CollectionCard[]>();
+
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
+  const cached = _jsonCardListCache.get(seriesShortName);
+  if (cached) return cached;
+  if (!(seriesShortName in SerieCardList)) {
+    throw new Error(`Unknown series: ${seriesShortName}`);
+  }
   const cards = SerieCardList[seriesShortName as SeriesShortName].map((card) =>
     CardSchema.parse(card),
   ) as CollectionCard[];
-  return cards.sort((a, b) => a.sort_by - b.sort_by);
+  const sorted = cards.sort((a, b) => a.sort_by - b.sort_by);
+  _jsonCardListCache.set(seriesShortName, sorted);
+  return sorted;
 };
 
 const AttackSchemaRaw = z.object({
