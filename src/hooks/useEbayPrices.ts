@@ -1,4 +1,5 @@
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
+import { THIRTY_MINUTES, ONE_HOUR } from "@/utils/TimeUtils";
 
 export interface EbayPriceData {
   average_price: number | null;
@@ -43,8 +44,8 @@ export function useEbayPrices(
     queryKey: ["ebayPrices", cardId],
     queryFn: () => fetchEbayPrices(cardId),
     enabled,
-    staleTime: 1000 * 60 * 30, // 30 minutes
-    gcTime: 1000 * 60 * 60, // 1 hour
+    staleTime: THIRTY_MINUTES,
+    gcTime: ONE_HOUR,
     retry: 1,
   });
 }

@@ -99,17 +99,10 @@ export const useCurrentAndAdjacentCards = (
         };
       }
 
-      const card = await fetchCardDetail(
-        seriesShortName,
-        setShortName,
-        sortBy,
-        cardName,
-      );
-      const adjacentCards = await fetchAdjacentCards(
-        seriesShortName,
-        setShortName,
-        sortBy,
-      );
+      const [card, adjacentCards] = await Promise.all([
+        fetchCardDetail(seriesShortName, setShortName, sortBy, cardName),
+        fetchAdjacentCards(seriesShortName, setShortName, sortBy),
+      ]);
       return {
         card,
         previousCard: adjacentCards.previousCard,

@@ -7,16 +7,8 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import type { ArtParamKeys } from "@/types/routes";
-import { t, useLocale, type I18nValue } from "@/i18n";
-
-function isJaAvailable(v: I18nValue | undefined): boolean {
-  return (
-    v != null &&
-    typeof v === "object" &&
-    typeof v.ja === "string" &&
-    v.ja.trim() !== ""
-  );
-}
+import { t, useLocale, isJaAvailable } from "@/i18n";
+import { PageError, PageNotFound } from "@/components/PageStates";
 
 const PackArtPage: React.FC = () => {
   const { seriesShortName = "", setShortName = "" } = useParams<ArtParamKeys>();
@@ -37,9 +29,8 @@ const PackArtPage: React.FC = () => {
 
   const current = packArts[selectedIndex];
 
-  if (setError || !packArt || packArts.length === 0) {
-    return <p>Not found.</p>;
-  }
+  if (setError) return <PageError message="Failed to load pack art." />;
+  if (!packArt || packArts.length === 0) return <PageNotFound message="Pack art not found." />;
 
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Pack Art - ${setName} - Gaichu`;

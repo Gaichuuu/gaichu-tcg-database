@@ -8,12 +8,14 @@ interface PriceTableProps {
   seriesShortName: string;
 }
 
+const USD_FORMATTER = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+
 function formatPrice(price: number | null): string {
   if (price === null) return "—";
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(price);
+  return USD_FORMATTER.format(price);
 }
 
 function formatTimeAgo(dateString: string): string {

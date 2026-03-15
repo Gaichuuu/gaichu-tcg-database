@@ -119,7 +119,7 @@ const SetPage = () => {
 
             <div className="ml-auto flex items-center gap-2">
               {buyUrl && (
-                <a href={buyUrl} target="_blank" className="secondary-button">
+                <a href={buyUrl} target="_blank" rel="noopener noreferrer" className="secondary-button">
                   Buy
                 </a>
               )}
@@ -128,6 +128,7 @@ const SetPage = () => {
                 <a
                   href={printFileUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="secondary-button"
                 >
                   Print

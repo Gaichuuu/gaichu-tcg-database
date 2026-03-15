@@ -8,16 +8,8 @@ import {
   SetImagePathType,
 } from "@/utils/RoutePathBuildUtils";
 import type { ArtParamKeys } from "@/types/routes";
-import { t, useLocale, type I18nValue } from "@/i18n";
-
-function isJaAvailable(v: I18nValue | undefined): boolean {
-  return (
-    v != null &&
-    typeof v === "object" &&
-    typeof v.ja === "string" &&
-    v.ja.trim() !== ""
-  );
-}
+import { t, useLocale, isJaAvailable } from "@/i18n";
+import { PageError, PageNotFound } from "@/components/PageStates";
 
 const CardBackPage: React.FC = () => {
   const { seriesShortName = "", setShortName = "" } = useParams<ArtParamKeys>();
@@ -34,7 +26,8 @@ const CardBackPage: React.FC = () => {
       ? `${CDN_BASE_URL}/${seriesKey}/${setKey}/00.jpg?v=2`
       : "";
 
-  if (setError || !cardBack) return <p>Not found.</p>;
+  if (setError) return <PageError message="Failed to load card back." />;
+  if (!cardBack) return <PageNotFound message="Card back not found." />;
 
   const setName = setAndCard?.set.name || "Set";
   const pageTitle = `Card Back - ${setName} - Gaichu`;

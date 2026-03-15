@@ -1,8 +1,8 @@
-type Props = {
+interface Props {
   score?: number;
   label?: string;
   className?: string;
-};
+}
 
 export default function Score({ score, label = "Sus", className = "" }: Props) {
   if (typeof score !== "number") return null;

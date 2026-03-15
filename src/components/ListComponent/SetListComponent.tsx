@@ -3,10 +3,10 @@ import Tile from "@/components/TileComponents/Tile";
 import type { CollectionSet } from "@/types/CollectionSet";
 import type { SetAndCard } from "@/types/MergedCollection";
 
-type Props = {
+interface Props {
   collectionSet: SetAndCard[];
   onClickSet: (set: CollectionSet) => void;
-};
+}
 
 const SetListComponent: React.FC<Props> = ({ collectionSet, onClickSet }) => {
   if (!collectionSet?.length) {

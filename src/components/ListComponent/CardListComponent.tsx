@@ -12,23 +12,23 @@ interface CardListProps {
   onClick: (card: CollectionCard) => void;
 }
 
+function tooltipWidth(seriesShortName: string): string {
+  switch (seriesShortName) {
+    case SeriesShortName.oz:
+      return "w-[26rem]";
+    case SeriesShortName.mz:
+      return "w-[30rem]";
+    case SeriesShortName.ash:
+      return "w-[24rem]";
+    default:
+      return "w-80";
+  }
+}
+
 const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
   const { seriesShortName } = useParams();
   const { locale } = useLocale();
   const series = seriesShortName ?? "";
-
-  const tooltipWidth = function (seriesShortName: string) {
-    switch (seriesShortName) {
-      case SeriesShortName.oz:
-        return "w-[26rem]";
-      case SeriesShortName.mz:
-        return "w-[30rem]";
-      case SeriesShortName.ash:
-        return "w-[24rem]";
-      default:
-        return "w-80";
-    }
-  };
 
   if (!collectionCards || collectionCards.length === 0) {
     return <div className="text-errorText text-center">No cards found.</div>;
