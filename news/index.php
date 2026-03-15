@@ -71,9 +71,7 @@ function fetch_news($projectId, $slug) {
 }
 
 function render_og($host, $slug, $title, $desc, $image, $doc = null) {
-  $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || ((isset($_SERVER['SERVER_PORT']) ? $_SERVER['SERVER_PORT'] : '') == 443);
-  $scheme = $isHttps ? 'https' : 'http';
-  $url = $scheme . '://' . $host . '/news/' . rawurlencode($slug);
+  $url = 'https://' . $host . '/news/' . rawurlencode($slug);
 
   $safeTitle = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
   $safeDesc = htmlspecialchars($desc, ENT_QUOTES, 'UTF-8');
@@ -109,7 +107,7 @@ function render_og($host, $slug, $title, $desc, $image, $doc = null) {
       'publisher' => [
         '@type' => 'Organization',
         'name' => 'Gaichu',
-        'url' => $scheme . '://' . $host
+        'url' => 'https://' . $host
       ],
       'mainEntityOfPage' => [
         '@type' => 'WebPage',

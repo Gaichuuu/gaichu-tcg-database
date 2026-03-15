@@ -283,10 +283,7 @@ function get_card_description($card, $cardName) {
 }
 
 function render_og($host, $path, $title, $desc, $image, $card = null) {
-  $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ||
-             ((isset($_SERVER['SERVER_PORT']) ? $_SERVER['SERVER_PORT'] : '') == 443);
-  $scheme = $isHttps ? 'https' : 'http';
-  $url = $scheme . '://' . $host . $path;
+  $url = 'https://' . $host . $path;
 
   $safeTitle = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
   $safeDesc = htmlspecialchars(substr($desc, 0, 300), ENT_QUOTES, 'UTF-8');
@@ -312,6 +309,21 @@ function render_og($host, $path, $title, $desc, $image, $card = null) {
   echo "<meta name=\"twitter:image\" content=\"{$safeImg}\" />\n";
 
   if ($card) {
+    $avgPrice = isset($card['average_price']) && $card['average_price'] > 0
+      ? $card['average_price']
+      : null;
+
+    $offer = [
+      '@type' => 'Offer',
+      'url' => $url,
+      'itemCondition' => 'https://schema.org/UsedCondition',
+      'availability' => 'https://schema.org/InStock',
+      'priceCurrency' => 'USD'
+    ];
+    if ($avgPrice !== null) {
+      $offer['price'] = $avgPrice;
+    }
+
     $jsonLd = [
       '@context' => 'https://schema.org',
       '@type' => 'Product',
@@ -323,7 +335,8 @@ function render_og($host, $path, $title, $desc, $image, $card = null) {
         '@type' => 'Brand',
         'name' => 'Gaichu TCG'
       ],
-      'category' => 'Trading Card'
+      'category' => 'Trading Card',
+      'offers' => $offer
     ];
     echo '<script type="application/ld+json">' . json_encode($jsonLd, JSON_UNESCAPED_SLASHES) . "</script>\n";
   }
