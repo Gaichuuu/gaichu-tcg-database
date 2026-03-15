@@ -31,7 +31,7 @@ export function shuffle<T>(arr: T[], rng: () => number): T[] {
 }
 
 export const toEnName = (name: CollectionCard["name"]): string =>
-  i18nToEnString(name as Parameters<typeof i18nToEnString>[0]);
+  i18nToEnString(name);
 
 const SEED_KEY = "marquee_seed";
 const SEED_TS_KEY = "marquee_seed_ts";
@@ -93,9 +93,7 @@ export function useShowcaseCards(count = 24): {
             series: card.series_short_name,
             set: card.set_short_name,
             sortBy: card.sort_by,
-            name: i18nToEnString(
-              card.name as Parameters<typeof i18nToEnString>[0],
-            ),
+            name: i18nToEnString(card.name),
             averagePrice: card.average_price,
           });
         }

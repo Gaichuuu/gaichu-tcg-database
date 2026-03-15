@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa";
 import packageJson from "../../package.json";
 
-const CURRENT_YEAR = new Date().getFullYear();
-
 const Footer: React.FC = () => {
   return (
     <footer className="bg-navBg border-secondaryBorder/20 text-secondaryText border-t py-2.5">
@@ -12,7 +10,7 @@ const Footer: React.FC = () => {
         <p>
           &copy;{" "}
           <span className="text-sm">
-            {CURRENT_YEAR} Gaichu v{packageJson.version}
+            {new Date().getFullYear()} Gaichu v{packageJson.version}
           </span>
         </p>
         <div className="mt-2 flex items-center space-x-5 md:mt-0">

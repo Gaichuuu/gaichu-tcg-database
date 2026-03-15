@@ -5,6 +5,7 @@ export function useImagesLoaded(urls: string[], threshold?: number): boolean {
   const [ready, setReady] = useState(false);
   const loadedRef = useRef(0);
   const urlsKey = urls.join("\0");
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- urlsKey is a stable string derived from urls
   const stableUrls = useMemo(() => urls, [urlsKey]);
 
   useEffect(() => {

@@ -103,6 +103,9 @@ const _jsonCardListCache = new Map<string, CollectionCard[]>();
 export const jsonCardList = (seriesShortName: string): CollectionCard[] => {
   const cached = _jsonCardListCache.get(seriesShortName);
   if (cached) return cached;
+  if (!(seriesShortName in SerieCardList)) {
+    throw new Error(`Unknown series: ${seriesShortName}`);
+  }
   const cards = SerieCardList[seriesShortName as SeriesShortName].map((card) =>
     CardSchema.parse(card),
   ) as CollectionCard[];

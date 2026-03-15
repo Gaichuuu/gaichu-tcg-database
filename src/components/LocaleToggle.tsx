@@ -4,6 +4,7 @@ import type { CollectionCard } from "@/types/CollectionCard";
 
 interface Props {
   card?: CollectionCard;
+  jaAvailable?: boolean;
 }
 
 function hasJA(card?: CollectionCard): boolean {
@@ -17,11 +18,14 @@ function hasJA(card?: CollectionCard): boolean {
   return false;
 }
 
-const LocaleToggle: React.FC<Props> = ({ card }) => {
+const LocaleToggle: React.FC<Props> = ({ card, jaAvailable }) => {
   const { locale, setLocale } = useLocale();
-  const jaAvailable = useMemo(() => hasJA(card), [card]);
+  const jaIsAvailable = useMemo(
+    () => (jaAvailable !== undefined ? jaAvailable : hasJA(card)),
+    [card, jaAvailable],
+  );
 
-  if (!jaAvailable) return null;
+  if (!jaIsAvailable) return null;
 
   const stopDown = (e: React.SyntheticEvent) => {
     e.preventDefault();
