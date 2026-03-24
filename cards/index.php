@@ -317,11 +317,33 @@ function render_og($host, $path, $title, $desc, $image, $card = null) {
       '@type' => 'Offer',
       'url' => $url,
       'itemCondition' => 'https://schema.org/UsedCondition',
-      'availability' => 'https://schema.org/InStock',
-      'priceCurrency' => 'USD'
+      'priceCurrency' => 'USD',
+      'shippingDetails' => [
+        '@type' => 'OfferShippingDetails',
+        'shippingRate' => [
+          '@type' => 'MonetaryAmount',
+          'value' => '0',
+          'currency' => 'USD'
+        ],
+        'shippingDestination' => [
+          '@type' => 'DefinedRegion',
+          'addressCountry' => 'US'
+        ]
+      ],
+      'hasMerchantReturnPolicy' => [
+        '@type' => 'MerchantReturnPolicy',
+        'applicableCountry' => 'US',
+        'returnPolicyCategory' => 'https://schema.org/MerchantReturnNotPermitted'
+      ]
     ];
+    $priceValidUntil = date('Y-m-d', strtotime('+90 days'));
     if ($avgPrice !== null) {
       $offer['price'] = $avgPrice;
+      $offer['availability'] = 'https://schema.org/InStock';
+      $offer['priceValidUntil'] = $priceValidUntil;
+    } else {
+      $offer['price'] = 0;
+      $offer['availability'] = 'https://schema.org/OutOfStock';
     }
 
     $jsonLd = [
