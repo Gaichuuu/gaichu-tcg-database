@@ -11,6 +11,7 @@ import type { ArtParamKeys } from "@/types/routes";
 import { t, useLocale, isJaAvailable } from "@/i18n";
 import { PageError, PageLoading, PageNotFound } from "@/components/PageStates";
 import LocaleToggle from "@/components/LocaleToggle";
+import TiltableImage from "@/components/TiltableImage";
 
 const CardBackPage: React.FC = () => {
   const { seriesShortName = "", setShortName = "" } = useParams<ArtParamKeys>();
@@ -52,13 +53,13 @@ const CardBackPage: React.FC = () => {
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col items-center md:w-1/3">
           {backUrl && (
-            <img
+            <TiltableImage
               src={backUrl}
               alt={getTitleSetImagePathType(SetImagePathType.CardBack)}
-              className="border-secondaryBorder mb-4 block max-h-150 rounded-3xl border object-contain shadow"
+              className="mb-4 shrink-0 rounded-3xl"
+              imgClassName="border-secondaryBorder block max-h-150 border object-contain shadow"
             />
           )}
-          <div className="mt-0 flex w-full max-w-xs gap-4" />
         </div>
 
         <div className="md:w-2/3">
