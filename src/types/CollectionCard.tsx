@@ -9,6 +9,13 @@ export function toI18nMap(
   return typeof v === "string" ? { en: v } : v;
 }
 
+export function hasI18nContent(
+  v: Partial<Record<LocaleKey, string>> | undefined,
+): boolean {
+  if (!v) return false;
+  return Object.values(v).some((s) => s && s.trim().length > 0);
+}
+
 // ---------- Types ----------
 
 export interface RawCollectionCard {
@@ -56,8 +63,6 @@ export interface RawCollectionCard {
   cost?: Cost[];
   effect?: string;
   note?: string;
-
-  /** Average eBay sale price (USD), 0 if no data */
   average_price?: number;
 }
 
