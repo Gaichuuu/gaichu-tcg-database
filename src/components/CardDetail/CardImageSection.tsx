@@ -1,6 +1,7 @@
 import CardDetailPagingButton, {
   PagingType,
 } from "@/components/ButtonComponents/CardDetailPagingButton";
+import TiltableImage from "@/components/TiltableImage";
 import type { CollectionCard } from "@/types/CollectionCard";
 import { getCardDetailPath } from "@/utils/RoutePathBuildUtils";
 import { useNavigate } from "react-router-dom";
@@ -22,10 +23,12 @@ export default function CardImageSection({
 
   return (
     <div className="flex flex-col items-center">
-      <img
+      <TiltableImage
+        key={card.image}
         src={card.image}
         alt={resolvedName}
-        className="border-secondaryBorder mb-4 block h-142.5 w-102 shrink-0 rounded-3xl border shadow"
+        className="mb-4 shrink-0 rounded-3xl"
+        imgClassName="border-secondaryBorder block h-142.5 w-102 border shadow"
       />
       <div className="mt-0 flex w-full max-w-xs gap-4">
         {previousCard && (
