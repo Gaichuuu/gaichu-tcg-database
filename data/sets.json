@@ -73,10 +73,10 @@
     ],
     "card_back": {
       "url": "https://gaichu.b-cdn.net/mz/promo/00.jpg",
-      "text": "OpenZoo",
-      "illustrator": "mistletoe"
+      "text": "MetaZoo™\n© Copyright MetaZoo Games LLC",
+      "illustrator": "Victor Larson"
     },
-    "total_cards_count": 165
+    "total_cards_count": 3
   },
   {
     "id": "7bef5aa0-487d-4456-8fb4-2d26c6003f4e",
@@ -208,11 +208,11 @@
       "packs": [
         {
           "label": "Front of Pack",
-          "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg"
+          "url": "https://gaichu.b-cdn.net/ash/series1/pack01.jpg?v=2"
         },
         {
           "label": "Back of Pack",
-          "url": "https://gaichu.b-cdn.net/ash/series1/pack01-back.jpg"
+          "url": "https://gaichu.b-cdn.net/ash/series1/pack01-back.jpg?v=2"
         }
       ]
     },
@@ -313,8 +313,8 @@
     ],
     "card_back": {
       "url": "https://gaichu.b-cdn.net/oz/promo25/00.jpg",
-      "text": "MetaZoo™\n© Copyright MetaZoo Games LLC",
-      "illustrator": "Victor Larson"
+      "text": "OpenZoo",
+      "illustrator": "mistletoe"
     },
     "total_cards_count": 3
   },
