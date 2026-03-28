@@ -20,21 +20,15 @@ const SERIES_NAME_MAP: Record<string, string> = {
   oz: "openzoo",
   mz: "metazoo",
   disgruntled: '("disgruntled games",disgruntledgames)',
+  tygadu: "tygadu",
 };
 
 /** Map set short names to eBay-friendly search terms
- * eBay sellers use product names like "Generation One" rather than internal names like "series1"
  * Uses eBay OR syntax: (term1,term2)
  */
 const SET_NAME_MAP: Record<string, Record<string, string>> = {
   wm: {
     set1: '("set 1","series 1")',
-  },
-  ash: {
-    series1: '"generation one"',
-    og: '"generation one"',
-    series2: '"genetic mystery"',
-    sticker: "sticker",
   },
 };
 
@@ -47,26 +41,32 @@ const DEFAULT_EXCLUDED_KEYWORDS = [
   "repack",
 ];
 
-/** Series-specific excluded keywords */
-const SERIES_EXCLUDED_KEYWORDS: Record<string, string[]> = {
-  wm: ["first"],
-  ash: ["ditto"],
+/** Set-specific excluded keywords */
+const SET_EXCLUDED_KEYWORDS: Record<string, string[]> = {
+  "wm-set1": ["first"],
+  "ash-series1": ["ditto", "genetic"],
 };
 
-/** ASH card name overrides for eBay search */
-const ASH_CARD_NAME_MAP: Record<string, string> = {
-  "______'s Pikachu": '"birthday pikachu"',
-};
+/** Series that rely on card name/number alone */
+const SERIES_WITHOUT_SET_IDENTIFIER = new Set(["ash", "tygadu"]);
 
 /** Card-specific search name overrides */
 const CARD_NAME_OVERRIDES: Record<string, string> = {
-  "ash-series1-0": "Charizard Nagaba",
-  "ash-series1-2": "Charizard #2",
+  "ash-series1-0": "charizard Nagaba",
+  "ash-series1-1": '("umbreon","moonbreon")',
+  "ash-series1-2": "charizard #2",
+  "ash-series1-3": "birthday pikachu",
+  "ash-series1-7": "mew #7",
+  "ash-series1-8": "Latias & Latios",
+  "ash-series1-9": "Solgaleo & Lunala",
   "ash-series1-10": "scream pikachu",
   "ash-series1-18": "bubble mew",
   "ash-series1-21": "pikachu #21",
+  "ash-series1-22": '("bubble mewtwo","mewtwo ex")',
   "ash-series1-29": "eeveelutions",
-  "ash-series1-31": "charizard #31",
+  "ash-series1-30": "Moltres & Zapdos & Articuno",
+  "ash-series1-31": '("crystal charizard","charizard #31")',
+  "ash-series1-35": '("psyduck","scream psyduck")',
   "ash-series1-40": "poncho charizard",
   "ash-series1-41": "poncho mega charizard",
   "ash-series1-42": "poncho gyarados",
@@ -75,6 +75,11 @@ const CARD_NAME_OVERRIDES: Record<string, string> = {
 
 /** Card-specific search name overrides by card ID */
 const CARD_ID_OVERRIDES: Record<string, string> = {
+  "7f9beef6-8d2d-4e40-b585-b50d314c6001": "ditto #44",
+  "e5cb691d-7845-4f19-8f38-60abe476924d": "pikachu ditto",
+  "5f4c8b63-05e2-42a0-9179-60edcdbd76fb": "bulbasaur ditto",
+  "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3": "charizard ditto",
+  "09a2848d-06f7-46cb-9e14-490b8e04e172": "gengar ditto",
   "78a02344-0c51-48ef-b22c-d5892e98ce3e": "ditto secret",
 };
 
@@ -85,55 +90,35 @@ const CARD_EXCLUDED_KEYWORDS: Record<string, string[]> = {
   "ash-series1-40": ["mega"],
 };
 
+function resolveCardName(card: Card): string {
+  return typeof card.name === "string"
+    ? card.name
+    : card.name.en || card.name.ja || "";
+}
+
+function getCardKey(card: Card): string {
+  return `${card.series_short_name}-${card.set_short_name}-${card.number}`;
+}
+
+function getSetKey(card: Card): string {
+  return `${card.series_short_name}-${card.set_short_name}`;
+}
+
 function getSearchCardName(card: Card): string {
   if (CARD_ID_OVERRIDES[card.id]) {
     return CARD_ID_OVERRIDES[card.id];
   }
 
-  const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
+  const cardKey = getCardKey(card);
   if (CARD_NAME_OVERRIDES[cardKey]) {
     return CARD_NAME_OVERRIDES[cardKey];
   }
 
-  let cardName: string;
-
-  if (card.series_short_name === "ash") {
-    cardName =
-      typeof card.name === "string"
-        ? card.name
-        : card.name.en || card.name.ja || "";
-
-    if (ASH_CARD_NAME_MAP[cardName]) {
-      return ASH_CARD_NAME_MAP[cardName];
-    }
-    if (cardName.endsWith("?")) {
-      cardName = `${cardName.slice(0, -1)} ditto`;
-    }
-  } else {
-    if (card.parody) {
-      cardName = card.parody;
-    } else {
-      cardName =
-        typeof card.name === "string"
-          ? card.name
-          : card.name.en || card.name.ja || "";
-    }
+  if (card.parody && card.series_short_name !== "ash") {
+    return card.parody;
   }
 
-  return cardName;
-}
-
-/* Get the card number identifier for the search query */
-function getCardNumberIdentifier(card: Card): string | null {
-  if (!card.number && card.number !== 0) return null;
-
-  if (card.series_short_name === "ash") {
-    if (card.number === 0) {
-      return "Nagaba";
-    }
-    return `#${card.number}`;
-  }
-  return null;
+  return resolveCardName(card);
 }
 
 export function buildSearchQuery(card: Card): string {
@@ -150,19 +135,11 @@ export function buildSearchQuery(card: Card): string {
     parts.push(cardName);
   }
 
-  // 3. Card number identifier (series-specific format)
-  const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
-  const hasOverride =
-    !!CARD_ID_OVERRIDES[card.id] || !!CARD_NAME_OVERRIDES[cardKey];
-  if (card.series_short_name === "ash" && !hasOverride) {
-    const numberIdentifier = getCardNumberIdentifier(card);
-    if (numberIdentifier) {
-      parts.push(numberIdentifier);
-    }
-  }
-
-  // 4. Set identifier for specificity
-  if (card.set_short_name && card.series_short_name !== "ash") {
+  // 3. Set identifier for specificity
+  if (
+    card.set_short_name &&
+    !SERIES_WITHOUT_SET_IDENTIFIER.has(card.series_short_name)
+  ) {
     const seriesSetMap = SET_NAME_MAP[card.series_short_name];
     const setName =
       seriesSetMap?.[card.set_short_name] ||
@@ -178,17 +155,16 @@ export function getExcludedKeywords(card?: Card): string {
 
   if (!card) return keywords.join(" ");
 
-  const seriesExclusions = SERIES_EXCLUDED_KEYWORDS[card.series_short_name];
-  if (seriesExclusions) {
+  const setExclusions = SET_EXCLUDED_KEYWORDS[getSetKey(card)];
+  if (setExclusions) {
     const isDittoCard = card.series_short_name === "ash" && card.number === 44;
     const filteredExclusions = isDittoCard
-      ? seriesExclusions.filter((kw) => kw !== "ditto")
-      : seriesExclusions;
+      ? setExclusions.filter((kw) => kw !== "ditto")
+      : setExclusions;
     keywords.push(...filteredExclusions);
   }
 
-  const cardKey = `${card.series_short_name}-${card.set_short_name}-${card.number}`;
-  const cardExclusions = CARD_EXCLUDED_KEYWORDS[cardKey];
+  const cardExclusions = CARD_EXCLUDED_KEYWORDS[getCardKey(card)];
   if (cardExclusions) {
     keywords.push(...cardExclusions);
   }
@@ -347,10 +323,7 @@ export function buildCardPriceDocument(
   fetchResult: Awaited<ReturnType<typeof fetchEbayPrice>>,
 ): CardPrice {
   const now = new Date().toISOString();
-  const cardName =
-    typeof card.name === "string"
-      ? card.name
-      : card.name.en || card.name.ja || "";
+  const cardName = resolveCardName(card);
 
   const ebaySearchUrl = buildEbaySearchUrl(fetchResult.searchQuery);
 
