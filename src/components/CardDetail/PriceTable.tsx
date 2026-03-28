@@ -34,7 +34,7 @@ function formatTimeAgo(dateString: string): string {
 const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
   const { data, isLoading, error } = useEbayPrices(cardId, seriesShortName);
 
-  if (!["ash", "wm"].includes(seriesShortName)) {
+  if (!["ash", "wm", "tygadu"].includes(seriesShortName)) {
     return (
       <div className="border-secondaryBorder rounded-xl border p-3">
         <h4 className="text-secondaryText mb-2 text-xs font-medium uppercase tracking-wide">

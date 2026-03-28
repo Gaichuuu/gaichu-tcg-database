@@ -22,13 +22,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Series that have price data
-const PRICED_SERIES = ["wm", "ash"];
+const PRICED_SERIES = ["wm", "ash", "tygadu"];
 
 // Path to data directory
 const DATA_DIR = join(__dirname, "../data");
 
 interface RawCard {
   id: string;
+  number?: number;
   [key: string]: unknown;
 }
 
@@ -106,6 +107,12 @@ function updateCardsJson(
   let updated = 0;
 
   for (const card of cards) {
+    // Tygadu cards 1-30 (non-holo) are not price-tracked
+    if (series === "tygadu" && card.number !== undefined && card.number < 31) {
+      card.average_price = 0;
+      continue;
+    }
+
     const price = pricesMap.get(card.id);
 
     if (price !== undefined) {

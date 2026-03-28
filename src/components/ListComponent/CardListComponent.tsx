@@ -1,4 +1,4 @@
-import { CollectionCard } from "@/types/CollectionCard";
+import { CollectionCard, hasI18nContent } from "@/types/CollectionCard";
 import React from "react";
 import IconText from "@/components/IconText";
 import CardsListTile from "@/components/TileComponents/CardsListTile";
@@ -139,7 +139,7 @@ const CardList: React.FC<CardListProps> = ({ collectionCards, onClick }) => {
 
                     {series !== SeriesShortName.oz &&
                       series !== SeriesShortName.mz &&
-                      card?.description && (
+                      hasI18nContent(card?.description) && (
                         <tr>
                           <th className="py-2 pr-4 text-left">Flavor Text</th>
                           <td className="py-2">

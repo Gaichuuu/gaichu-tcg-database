@@ -9,9 +9,13 @@
     },
     "parody": "Itachi Uchiha",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/01.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/01-thumb.jpg",
@@ -33,9 +37,12 @@
           "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
           "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "72839878-ddc6-4135-afaa-23b29dde5371",
@@ -47,9 +54,13 @@
     },
     "parody": "Usagi Tsukino",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/02.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/02-thumb.jpg",
@@ -72,9 +83,13 @@
           "ja": "夜空の月や星の位置から、相手の次の一手を予測することができる。"
         },
         "damage": "40",
-        "costs": ["Flower", "Star"]
+        "costs": [
+          "Flower",
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "cec8789b-3f65-42d3-899f-772bc542a32d",
@@ -86,9 +101,13 @@
     },
     "parody": "Killua Zoldyck",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/03.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/03-thumb.jpg",
@@ -111,9 +130,13 @@
           "ja": "迅速かつ雑に相手の心臓を摘出する。"
         },
         "damage": "70",
-        "costs": ["Eye", "Triangle"]
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f1959c99-4a91-4818-bde9-d2b2b863c3ca",
@@ -125,9 +148,13 @@
     },
     "parody": "Power",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/04.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/04-thumb.jpg",
@@ -150,9 +177,13 @@
           "ja": "猫とテレパシーで会話する。ただし、猫は命令を聞かないのであまり役には立たない。"
         },
         "damage": "10",
-        "costs": ["Heart", "Triangle"]
+        "costs": [
+          "Heart",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "29562e54-a5d6-498a-b82c-2f232481dbe9",
@@ -164,9 +195,13 @@
     },
     "parody": "Satoru Gojo",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/05.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/05-thumb.jpg",
@@ -188,9 +223,12 @@
           "en": "Feeds the opponent infinite information, causing paralysis and madness.",
           "ja": "相手に無限の情報を与える。これにより、麻痺と狂気を引き起こす。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "616a81c8-6771-4027-9dc0-1a966de102ac",
@@ -202,9 +240,13 @@
     },
     "parody": "Mitsuri Kanroji",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/06.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/06-thumb.jpg",
@@ -227,9 +269,13 @@
           "ja": "魅力とカリスマ性で相手を魅了する。"
         },
         "damage": "30",
-        "costs": ["Star", "Heart"]
+        "costs": [
+          "Star",
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "2c40dd35-63e8-493f-888e-f95d4f1528ca",
@@ -241,9 +287,13 @@
     },
     "parody": "Levi Ackerman",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/07.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/07-thumb.jpg",
@@ -266,9 +316,13 @@
           "ja": "2本の剣を持ったまま体を回転させる。相手に大ダメージを与える。"
         },
         "damage": "90",
-        "costs": ["Triangle", "BW"]
+        "costs": [
+          "Triangle",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "89250004-6c5e-4570-81bd-a4028e93b4ca",
@@ -280,9 +334,13 @@
     },
     "parody": "Maka Albarn",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "65",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/08.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/08-thumb.jpg",
@@ -305,9 +363,12 @@
           "ja": "援軍を呼び、相手を圧倒する。残念ながら援軍はあまり有能ではない。"
         },
         "damage": "20",
-        "costs": ["Heart"]
+        "costs": [
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "296140e5-54b9-41e2-a632-e52abd2586b4",
@@ -319,9 +380,13 @@
     },
     "parody": "Sukuna",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "190",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/09.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/09-thumb.jpg",
@@ -344,9 +409,12 @@
           "ja": "相手と自分自身を、誰も見たことのない神社にテレポートさせる。"
         },
         "damage": "100",
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "c02122c9-98ff-49fb-89ff-e120686195b1",
@@ -358,9 +426,13 @@
     },
     "parody": "Chihiro Ogino",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/10.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/10-thumb.jpg",
@@ -382,9 +454,13 @@
           "en": "Restores health to 100% by visiting the best spa in the spirit world.",
           "ja": "霊界一のスパに行くことで、健康状態が100%回復する。"
         },
-        "costs": ["Star", "Flower"]
+        "costs": [
+          "Star",
+          "Flower"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "d47b8ef2-b007-48fc-8d4d-efafd47bde16",
@@ -396,9 +472,13 @@
     },
     "parody": "Aki Hayakawa",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/11.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/11-thumb.jpg",
@@ -421,9 +501,12 @@
           "ja": "楽しい指人形を作って相手の気をそらす。"
         },
         "damage": "50",
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "2cb1631e-af4b-4f8c-a4f1-45314509bf0a",
@@ -435,9 +518,13 @@
     },
     "parody": "Lucy",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/12.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/12-thumb.jpg",
@@ -460,9 +547,12 @@
           "ja": "引っ搔きマシーンから賞品を獲得する。"
         },
         "damage": "30",
-        "costs": ["Star"]
+        "costs": [
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "c75defa0-b6c7-41ba-9c76-91754e1b14cb",
@@ -474,9 +564,13 @@
     },
     "parody": "Shikamaru Nara",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/13.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/13-thumb.jpg",
@@ -499,9 +593,13 @@
           "ja": "相手の影をコントロールすることで、2ターンの間相手を意のままに操る。"
         },
         "damage": "60",
-        "costs": ["Eye", "Triangle"]
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "312ef368-a1d6-4cc8-bcbb-e8ed2ac2cf88",
@@ -513,9 +611,13 @@
     },
     "parody": "Rei Ayanami",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "—",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/14-thumb.jpg",
@@ -537,9 +639,12 @@
           "en": "Destroys all things and people.",
           "ja": "すべての物と人を破壊する。"
         },
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "3351ef54-4c0c-4c90-84c4-cf560a3aa541",
@@ -551,9 +656,13 @@
     },
     "parody": "Inuyasha",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/15.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/15-thumb.jpg",
@@ -576,9 +685,12 @@
           "ja": "内なる「良い子」が出現し、命令に従って座る。これは通常、おやつで助長される。"
         },
         "damage": "40",
-        "costs": ["Triangle"]
+        "costs": [
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "32e317ce-9033-4049-96e1-627a3e04a5c8",
@@ -590,9 +702,13 @@
     },
     "parody": "Kagome Higurashi",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/16.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/16-thumb.jpg",
@@ -615,9 +731,13 @@
           "ja": "最も凶暴で血に飢えた動物を1匹送り込み、相手を攻撃する。"
         },
         "damage": "80",
-        "costs": ["Flower", "Triangle"]
+        "costs": [
+          "Flower",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "db3e0009-9d85-4901-ba72-028fbe80906d",
@@ -629,9 +749,13 @@
     },
     "parody": "Kakashi Hatake",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/17.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/17-thumb.jpg",
@@ -653,9 +777,12 @@
           "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
           "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "a9138d22-56fe-457b-9060-67b3aa2f2dea",
@@ -667,9 +794,13 @@
     },
     "parody": "Makima",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/18.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/18-thumb.jpg",
@@ -691,9 +822,12 @@
           "en": "Kills the opponent just by saying their name. Can only be used once per battle.",
           "ja": "名前を言うだけで相手を殺す。1回の戦闘につき1回のみ使用可能。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "2e852441-d2f4-4c6e-ae2f-ef5d5d474f7e",
@@ -705,9 +839,13 @@
     },
     "parody": "Monkey D. Luffy",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/19.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/19-thumb.jpg",
@@ -730,9 +868,13 @@
           "ja": "自分のハートビートで曲を作り、世界を意のままに変えることができる。"
         },
         "damage": "100",
-        "costs": ["Star", "BW"]
+        "costs": [
+          "Star",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "5fa1810b-9816-4a6a-a4c8-4a347011ec12",
@@ -744,9 +886,13 @@
     },
     "parody": "Shinobu Kocho",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/20.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/20-thumb.jpg",
@@ -769,9 +915,12 @@
           "ja": "自分の生徒たちに助けを求める。彼らは戦いは苦手だが、家事には役立つ。"
         },
         "damage": "30",
-        "costs": ["Heart"]
+        "costs": [
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "3a7db75b-8f41-4b45-9a6a-0deefad42274",
@@ -783,9 +932,13 @@
     },
     "parody": "Roronoa Zoro",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/21.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/21-thumb.jpg",
@@ -808,9 +961,13 @@
           "ja": "3本の剣を同時に振るうことで、攻撃力が3倍になる。"
         },
         "damage": "70",
-        "costs": ["Triangle", "Heart"]
+        "costs": [
+          "Triangle",
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "06f5a306-737e-47fa-b3ce-7bada66290de",
@@ -822,9 +979,13 @@
     },
     "parody": "Asuka Langley Soryu",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/22.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/22-thumb.jpg",
@@ -847,9 +1008,12 @@
           "ja": "相手が完全に精神崩壊するまで責め立てる。"
         },
         "damage": "50",
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "f25615e3-7066-44e0-a0ed-a5ed545be526",
@@ -861,9 +1025,13 @@
     },
     "parody": "Shigeo Kageyama",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/23.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/23-thumb.jpg",
@@ -886,9 +1054,13 @@
           "ja": "超能力使いとして比類なき技術を持つマスターを呼び出す。"
         },
         "damage": "100",
-        "costs": ["Eye", "BW"]
+        "costs": [
+          "Eye",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "1303e9b5-df0f-47bc-8225-bff915618efb",
@@ -900,9 +1072,13 @@
     },
     "parody": "Yoruichi Shihōin",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/24.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/24-thumb.jpg",
@@ -925,9 +1101,13 @@
           "ja": "黒猫に変身する。抱きしめたくなるほどの可愛さなので、相手は思わず恋に落ちてしまう。"
         },
         "damage": "40",
-        "costs": ["Flower", "Star"]
+        "costs": [
+          "Flower",
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "02fa3e22-4086-48b7-a968-6d92b0c2800e",
@@ -939,9 +1119,13 @@
     },
     "parody": "Shoto Todoroki",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "95",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/25.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/25-thumb.jpg",
@@ -964,9 +1148,12 @@
           "ja": "使用者は相手に完璧なマニキュアを施すが、法外な金額を請求する。"
         },
         "damage": "50",
-        "costs": ["Star"]
+        "costs": [
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "78e3cd92-8b65-431b-b7b8-abdaaf88ab96",
@@ -978,9 +1165,13 @@
     },
     "parody": "Anya Forger",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/26.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/26-thumb.jpg",
@@ -1003,9 +1194,12 @@
           "ja": "相手を凝視し、非常に不快感を与える。"
         },
         "damage": "100",
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "42eed304-7a33-4dc3-8cf1-4e3b8b10f05f",
@@ -1017,9 +1211,13 @@
     },
     "parody": "Edward Elric",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/27.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/27-thumb.jpg",
@@ -1042,9 +1240,13 @@
           "ja": "メタルアームを使い、腕相撲でどんな敵でも簡単に倒す。"
         },
         "damage": "60",
-        "costs": ["Heart", "Flower"]
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "6ea17fe2-fca2-4433-9db5-cc654141c40e",
@@ -1056,9 +1258,13 @@
     },
     "parody": "Kobeni Higashiyama",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/28.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/28-thumb.jpg",
@@ -1081,9 +1287,13 @@
           "ja": "どんなDDRトラックでも、簡単かつスタイリッシュにハイスコアを叩き出す。"
         },
         "damage": "70",
-        "costs": ["Star", "BW"]
+        "costs": [
+          "Star",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "ba3790c6-42d9-42b3-9bec-01a256d06d42",
@@ -1095,9 +1305,13 @@
     },
     "parody": "Yu Nishinoya",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/29.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/29-thumb.jpg",
@@ -1120,9 +1334,13 @@
           "ja": "観客席から片思いの相手の声援を聞くことで、大幅にパワーアップする。"
         },
         "damage": "50",
-        "costs": ["Heart", "Flower"]
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "68c5824f-92df-4480-a3c1-42a0d4b03242",
@@ -1134,9 +1352,13 @@
     },
     "parody": "Ryuko Matoi",
     "variant": "Normal",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Common",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/30.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/30-thumb.jpg",
@@ -1159,9 +1381,12 @@
           "ja": "親友が危険にさらされているのを見た後、100%のパワーアップを得る。"
         },
         "damage": "100",
-        "costs": ["Heart"]
+        "costs": [
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "00e3e489-269b-41cc-bc01-8142b8ba3776",
@@ -1173,9 +1398,13 @@
     },
     "parody": "Itachi Uchiha",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "120",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/31.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/31-thumb.jpg",
@@ -1197,9 +1426,12 @@
           "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
           "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 50
   },
   {
     "id": "93a034db-611b-468a-b350-14d4dbb24f93",
@@ -1211,9 +1443,13 @@
     },
     "parody": "Usagi Tsukino",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/32.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/32-thumb.jpg",
@@ -1236,9 +1472,13 @@
           "ja": "夜空の月や星の位置から、相手の次の一手を予測することができる。"
         },
         "damage": "40",
-        "costs": ["Flower", "Star"]
+        "costs": [
+          "Flower",
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 35
   },
   {
     "id": "441d56c4-ee32-41a5-9622-06e96ed01ae7",
@@ -1250,9 +1490,13 @@
     },
     "parody": "Killua Zoldyck",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/33.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/33-thumb.jpg",
@@ -1275,9 +1519,13 @@
           "ja": "迅速かつ雑に相手の心臓を摘出する。"
         },
         "damage": "70",
-        "costs": ["Eye", "Triangle"]
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 23.75
   },
   {
     "id": "6405854b-922d-410b-a358-6d6eebccbd92",
@@ -1289,9 +1537,13 @@
     },
     "parody": "Power",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "60",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/34.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/34-thumb.jpg",
@@ -1314,9 +1566,13 @@
           "ja": "猫とテレパシーで会話する。ただし、猫は命令を聞かないのであまり役には立たない。"
         },
         "damage": "10",
-        "costs": ["Heart", "Triangle"]
+        "costs": [
+          "Heart",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 31.67
   },
   {
     "id": "0f656ed2-41d8-42ac-90fe-614ad9fd6134",
@@ -1328,9 +1584,13 @@
     },
     "parody": "Satoru Gojo",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/35.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/35-thumb.jpg",
@@ -1352,9 +1612,12 @@
           "en": "Feeds the opponent infinite information, causing paralysis and madness.",
           "ja": "相手に無限の情報を与える。これにより、麻痺と狂気を引き起こす。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 52.5
   },
   {
     "id": "bbda797d-dca5-4e29-aed3-ef55b68271da",
@@ -1366,9 +1629,13 @@
     },
     "parody": "Mitsuri Kanroji",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/36.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/36-thumb.jpg",
@@ -1391,9 +1658,13 @@
           "ja": "魅力とカリスマ性で相手を魅了する。"
         },
         "damage": "30",
-        "costs": ["Star", "Heart"]
+        "costs": [
+          "Star",
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 27
   },
   {
     "id": "c0721896-b3f0-4aad-932b-733e4db50f63",
@@ -1405,9 +1676,13 @@
     },
     "parody": "Levi Ackerman",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/37.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/37-thumb.jpg",
@@ -1430,9 +1705,13 @@
           "ja": "2本の剣を持ったまま体を回転させる。相手に大ダメージを与える。"
         },
         "damage": "90",
-        "costs": ["Triangle", "BW"]
+        "costs": [
+          "Triangle",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 45
   },
   {
     "id": "8b998afc-8781-4380-a9f2-64f64a4c4fb4",
@@ -1444,9 +1723,13 @@
     },
     "parody": "Maka Albarn",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "65",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/38.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/38-thumb.jpg",
@@ -1469,9 +1752,12 @@
           "ja": "援軍を呼び、相手を圧倒する。残念ながら援軍はあまり有能ではない。"
         },
         "damage": "20",
-        "costs": ["Heart"]
+        "costs": [
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 19.99
   },
   {
     "id": "91fabc2d-42b0-4449-ac8c-6571f061cb92",
@@ -1483,9 +1769,13 @@
     },
     "parody": "Sukuna",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "190",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/39.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/39-thumb.jpg",
@@ -1508,9 +1798,12 @@
           "ja": "相手と自分自身を、誰も見たことのない神社にテレポートさせる。"
         },
         "damage": "100",
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 42.5
   },
   {
     "id": "5cfe2fa3-70c6-4f3d-8693-551f3440ea96",
@@ -1522,9 +1815,13 @@
     },
     "parody": "Chihiro Ogino",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "20",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/40.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/40-thumb.jpg",
@@ -1546,9 +1843,13 @@
           "en": "Restores health to 100% by visiting the best spa in the spirit world.",
           "ja": "霊界一のスパに行くことで、健康状態が100%回復する。"
         },
-        "costs": ["Star", "Flower"]
+        "costs": [
+          "Star",
+          "Flower"
+        ]
       }
-    ]
+    ],
+    "average_price": 33
   },
   {
     "id": "75f8bced-ed78-487e-afb1-e7554c66d72f",
@@ -1560,9 +1861,13 @@
     },
     "parody": "Aki Hayakawa",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "80",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/41.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/41-thumb.jpg",
@@ -1585,9 +1890,12 @@
           "ja": "楽しい指人形を作って相手の気をそらす。"
         },
         "damage": "50",
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 30
   },
   {
     "id": "24905b89-b125-448d-b5ca-3c76a3d65e25",
@@ -1599,9 +1907,13 @@
     },
     "parody": "Lucy",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "50",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/42.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/42-thumb.jpg",
@@ -1624,9 +1936,12 @@
           "ja": "引っ搔きマシーンから賞品を獲得する。"
         },
         "damage": "30",
-        "costs": ["Star"]
+        "costs": [
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 16.33
   },
   {
     "id": "01f6746d-d2f3-4168-b412-b6a80a5716ae",
@@ -1638,9 +1953,13 @@
     },
     "parody": "Shikamaru Nara",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/43.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/43-thumb.jpg",
@@ -1663,9 +1982,13 @@
           "ja": "相手の影をコントロールすることで、2ターンの間相手を意のままに操る。"
         },
         "damage": "60",
-        "costs": ["Eye", "Triangle"]
+        "costs": [
+          "Eye",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "7a02c0ff-391c-4151-8b25-55b32358ce27",
@@ -1677,9 +2000,13 @@
     },
     "parody": "Rei Ayanami",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "—",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/44.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/44-thumb.jpg",
@@ -1701,9 +2028,12 @@
           "en": "Destroys all things and people.",
           "ja": "すべての物と人を破壊する。"
         },
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 30
   },
   {
     "id": "1796f111-0f5d-4c31-8886-fed2088474da",
@@ -1715,9 +2045,13 @@
     },
     "parody": "Inuyasha",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/45.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/45-thumb.jpg",
@@ -1740,9 +2074,12 @@
           "ja": "内なる「良い子」が出現し、命令に従って座る。これは通常、おやつで助長される。"
         },
         "damage": "40",
-        "costs": ["Triangle"]
+        "costs": [
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 24.83
   },
   {
     "id": "bc6fc3eb-bd1d-4e63-8117-fb14c04c81a8",
@@ -1754,9 +2091,13 @@
     },
     "parody": "Kagome Higurashi",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/46.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/46-thumb.jpg",
@@ -1779,9 +2120,13 @@
           "ja": "最も凶暴で血に飢えた動物を1匹送り込み、相手を攻撃する。"
         },
         "damage": "80",
-        "costs": ["Flower", "Triangle"]
+        "costs": [
+          "Flower",
+          "Triangle"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "6f8ad5d4-4db4-41b9-a9d6-92b4d3f59b76",
@@ -1793,9 +2138,13 @@
     },
     "parody": "Kakashi Hatake",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/47.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/47-thumb.jpg",
@@ -1817,9 +2166,12 @@
           "en": "Summons a giant warrior from the spirit world with the ability to nullify any attack.",
           "ja": "あらゆる攻撃を無効化する能力を持つ巨大な戦士を、霊界から召喚する。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 29.99
   },
   {
     "id": "e06a474c-22da-492d-bf91-47ad9679392a",
@@ -1831,9 +2183,13 @@
     },
     "parody": "Makima",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "150",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/48.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/48-thumb.jpg",
@@ -1855,9 +2211,12 @@
           "en": "Kills the opponent just by saying their name. Can only be used once per battle.",
           "ja": "名前を言うだけで相手を殺す。1回の戦闘につき1回のみ使用可能。"
         },
-        "costs": ["BW"]
+        "costs": [
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 29
   },
   {
     "id": "1aeded9e-4ad5-4838-aea9-1b0b6cc1af4d",
@@ -1869,9 +2228,13 @@
     },
     "parody": "Monkey D. Luffy",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "200",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/49.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/49-thumb.jpg",
@@ -1894,9 +2257,13 @@
           "ja": "自分のハートビートで曲を作り、世界を意のままに変えることができる。"
         },
         "damage": "100",
-        "costs": ["Star", "BW"]
+        "costs": [
+          "Star",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 35.5
   },
   {
     "id": "5521318e-5c10-4b2b-860e-e789e9f6a157",
@@ -1908,9 +2275,13 @@
     },
     "parody": "Shinobu Kocho",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "110",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/50.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/50-thumb.jpg",
@@ -1933,9 +2304,12 @@
           "ja": "自分の生徒たちに助けを求める。彼らは戦いは苦手だが、家事には役立つ。"
         },
         "damage": "30",
-        "costs": ["Heart"]
+        "costs": [
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "5af09eb5-eff1-44af-9de5-8bb6e45f961d",
@@ -1947,9 +2321,13 @@
     },
     "parody": "Roronoa Zoro",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/51.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/51-thumb.jpg",
@@ -1972,9 +2350,13 @@
           "ja": "3本の剣を同時に振るうことで、攻撃力が3倍になる。"
         },
         "damage": "70",
-        "costs": ["Triangle", "Heart"]
+        "costs": [
+          "Triangle",
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 20.66
   },
   {
     "id": "7ee89e06-6b0f-43d9-bf7c-bbb5ae315e24",
@@ -1986,9 +2368,13 @@
     },
     "parody": "Asuka Langley Soryu",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/52.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/52-thumb.jpg",
@@ -2011,9 +2397,12 @@
           "ja": "相手が完全に精神崩壊するまで責め立てる。"
         },
         "damage": "50",
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "22b1449f-df78-4942-98dd-d2fee0fb854c",
@@ -2025,9 +2414,13 @@
     },
     "parody": "Shigeo Kageyama",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/53.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/53-thumb.jpg",
@@ -2050,9 +2443,13 @@
           "ja": "超能力使いとして比類なき技術を持つマスターを呼び出す。"
         },
         "damage": "100",
-        "costs": ["Eye", "BW"]
+        "costs": [
+          "Eye",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 30
   },
   {
     "id": "0ca09e23-d1f4-43a6-a637-5c25743f89f9",
@@ -2064,9 +2461,13 @@
     },
     "parody": "Yoruichi Shihōin",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/54.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/54-thumb.jpg",
@@ -2089,9 +2490,13 @@
           "ja": "黒猫に変身する。抱きしめたくなるほどの可愛さなので、相手は思わず恋に落ちてしまう。"
         },
         "damage": "40",
-        "costs": ["Flower", "Star"]
+        "costs": [
+          "Flower",
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "13d95950-71d8-46dc-b0ba-09398defa002",
@@ -2103,9 +2508,13 @@
     },
     "parody": "Shoto Todoroki",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "95",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/55.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/55-thumb.jpg",
@@ -2128,9 +2537,12 @@
           "ja": "使用者は相手に完璧なマニキュアを施すが、法外な金額を請求する。"
         },
         "damage": "50",
-        "costs": ["Star"]
+        "costs": [
+          "Star"
+        ]
       }
-    ]
+    ],
+    "average_price": 18
   },
   {
     "id": "f649100b-ef16-4896-a4b8-1388033429eb",
@@ -2142,9 +2554,13 @@
     },
     "parody": "Anya Forger",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "10",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/56.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/56-thumb.jpg",
@@ -2167,9 +2583,12 @@
           "ja": "相手を凝視し、非常に不快感を与える。"
         },
         "damage": "100",
-        "costs": ["Eye"]
+        "costs": [
+          "Eye"
+        ]
       }
-    ]
+    ],
+    "average_price": 31.67
   },
   {
     "id": "3dd95510-ada0-4836-ad6f-a182ecea2f7f",
@@ -2181,9 +2600,13 @@
     },
     "parody": "Edward Elric",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "90",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/57.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/57-thumb.jpg",
@@ -2206,9 +2629,13 @@
           "ja": "メタルアームを使い、腕相撲でどんな敵でも簡単に倒す。"
         },
         "damage": "60",
-        "costs": ["Heart", "Flower"]
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   },
   {
     "id": "e7661ace-86e8-466d-8226-ff47958e7b04",
@@ -2220,9 +2647,13 @@
     },
     "parody": "Kobeni Higashiyama",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "70",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/58.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/58-thumb.jpg",
@@ -2245,9 +2676,13 @@
           "ja": "どんなDDRトラックでも、簡単かつスタイリッシュにハイスコアを叩き出す。"
         },
         "damage": "70",
-        "costs": ["Star", "BW"]
+        "costs": [
+          "Star",
+          "BW"
+        ]
       }
-    ]
+    ],
+    "average_price": 23.87
   },
   {
     "id": "a9d292bb-934e-41ed-a250-027a7872998b",
@@ -2259,9 +2694,13 @@
     },
     "parody": "Yu Nishinoya",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "40",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/59.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/59-thumb.jpg",
@@ -2284,9 +2723,13 @@
           "ja": "観客席から片思いの相手の声援を聞くことで、大幅にパワーアップする。"
         },
         "damage": "50",
-        "costs": ["Heart", "Flower"]
+        "costs": [
+          "Heart",
+          "Flower"
+        ]
       }
-    ]
+    ],
+    "average_price": 20.16
   },
   {
     "id": "f46756fc-87e4-4336-bbeb-0a926e44c293",
@@ -2298,9 +2741,13 @@
     },
     "parody": "Ryuko Matoi",
     "variant": "Holo",
-    "illustrators": ["Alex Roh"],
+    "illustrators": [
+      "Alex Roh"
+    ],
     "rarity": "Rare",
-    "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
+    "set_ids": [
+      "1a1863ec-60be-44e3-b434-4ef43c41cb60"
+    ],
     "hp": "100",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/60.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/60-thumb.jpg",
@@ -2323,8 +2770,11 @@
           "ja": "親友が危険にさらされているのを見た後、100%のパワーアップを得る。"
         },
         "damage": "100",
-        "costs": ["Heart"]
+        "costs": [
+          "Heart"
+        ]
       }
-    ]
+    ],
+    "average_price": 0
   }
 ]

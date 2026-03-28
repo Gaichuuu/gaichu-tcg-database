@@ -37,8 +37,8 @@ export function useEbayPrices(
   cardId: string,
   seriesShortName: string,
 ): UseQueryResult<EbayPriceData | null, Error> {
-  // Only enable for ash and wm series
-  const enabled = Boolean(cardId) && ["ash", "wm"].includes(seriesShortName);
+  // Only enable for series with eBay price data
+  const enabled = Boolean(cardId) && ["ash", "wm", "tygadu"].includes(seriesShortName);
 
   return useQuery<EbayPriceData | null, Error>({
     queryKey: ["ebayPrices", cardId],

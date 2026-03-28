@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const DATA_DIR = join(__dirname, "../../data");
 
-const SERIES_LIST = ["ash", "disgruntled", "mz", "oz", "wm"] as const;
+const SERIES_LIST = ["ash", "disgruntled", "mz", "oz", "tygadu", "wm"] as const;
 
 function loadJson<T>(filePath: string): T {
   const content = readFileSync(filePath, "utf-8");

@@ -24,17 +24,21 @@ const rapidApiKey = defineSecret("RAPIDAPI_KEY");
 const SYNC_CONFIG = {
   // How old prices must be before refreshing (in days)
   staleDays: 7,
-  // Maximum cards to process per run (to stay within rate limits)
+  // Maximum cards to process per run (to stay within RapidAPI rate limits)
   maxCardsPerRun: 50,
   // Delay between API calls (ms) to avoid rate limiting
   delayBetweenCalls: 1500,
-  // Only sync cards from these series (fan-made cards sold on eBay)
-  enabledSeries: ["wm", "ash"],
+  // Only sync cards from these series
+  enabledSeries: ["wm", "ash", "tygadu"],
 };
 
-/**
- * Check if a card needs a price update
- */
+function isPriceEligible(card: Card): boolean {
+  if (!SYNC_CONFIG.enabledSeries.includes(card.series_short_name)) return false;
+  // tygadu cards 1-30 are not checked
+  if (card.series_short_name === "tygadu" && card.number < 31) return false;
+  return true;
+}
+
 function needsPriceUpdate(
   existingPrice: Awaited<ReturnType<typeof getCardPriceDocument>>,
 ): boolean {
@@ -48,16 +52,10 @@ function needsPriceUpdate(
   return daysSinceUpdate >= SYNC_CONFIG.staleDays;
 }
 
-/**
- * Get cards that should be synced
- */
 async function getCardsToSync(): Promise<Card[]> {
   const allCards = loadAllCards();
 
-  // Filter to enabled series only
-  const eligibleCards = allCards.filter((card) =>
-    SYNC_CONFIG.enabledSeries.includes(card.series_short_name),
-  );
+  const eligibleCards = allCards.filter(isPriceEligible);
 
   // Get existing priced card IDs
   const pricedCardIds = await getAllPricedCardIds();
@@ -83,16 +81,13 @@ async function getCardsToSync(): Promise<Card[]> {
     }
   }
 
-  // Combine: new cards first, then stale cards
+  // New cards first, then stale cards
   const combined = [...cardsWithoutPrices, ...cardsNeedingUpdate];
 
   // Limit to max per run
   return combined.slice(0, SYNC_CONFIG.maxCardsPerRun);
 }
 
-/**
- * Sync prices for a batch of cards
- */
 async function syncPrices(
   cards: Card[],
   apiKey: string,
@@ -154,7 +149,7 @@ async function syncPrices(
       });
     }
 
-    // Rate limiting delay (skip on last iteration)
+    // Rate limiting delay
     if (i < cards.length - 1) {
       await delay(SYNC_CONFIG.delayBetweenCalls);
     }
@@ -166,11 +161,10 @@ async function syncPrices(
 /**
  * Scheduled price sync - runs weekly on Mondays at 8 AM UTC
  * (Monday 12:00 AM PST / 3:00 AM EST)
- * This timing captures weekend eBay sales that typically end Sunday afternoon
  */
 export const scheduledPriceSync = onSchedule(
   {
-    schedule: "0 8 * * 1", // Cron: 8 AM UTC every Monday
+    schedule: "0 8 * * 1", // 8 AM UTC every Monday
     region: "us-central1",
     memory: "512MiB",
     timeoutSeconds: 540, // 9 minutes max
@@ -236,7 +230,7 @@ export const triggerPriceSync = onRequest(
     secrets: [rapidApiKey],
   },
   async (req, res) => {
-    // Simple auth check - in production, use proper authentication
+    // Use proper authentication in production
     const authHeader = req.headers.authorization;
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
       res.status(401).json({ error: "Unauthorized" });
@@ -266,9 +260,7 @@ export const triggerPriceSync = onRequest(
     if (forceRefresh) {
       // Get all eligible cards regardless of existing prices
       const allCards = loadAllCards();
-      const eligibleCards = allCards.filter((card) =>
-        SYNC_CONFIG.enabledSeries.includes(card.series_short_name),
-      );
+      const eligibleCards = allCards.filter(isPriceEligible);
       limitedCards = eligibleCards.slice(0, maxCards);
     } else {
       const cardsToSync = await getCardsToSync();
@@ -299,7 +291,7 @@ export const triggerPriceSync = onRequest(
 );
 
 /**
- * Sync a single card's price (for on-demand updates)
+ * Sync a single card's price
  */
 export const syncSingleCardPrice = onRequest(
   {
@@ -353,7 +345,6 @@ export const syncSingleCardPrice = onRequest(
 
 /**
  * Backfill eBay search URLs for existing price documents
- * One-time migration endpoint
  */
 export const backfillPriceUrls = onRequest(
   {
@@ -374,7 +365,9 @@ export const backfillPriceUrls = onRequest(
 
     const result = await backfillEbayUrls(buildEbaySearchUrl);
 
-    console.log(`Backfill complete: ${result.updated} updated, ${result.skipped} skipped`);
+    console.log(
+      `Backfill complete: ${result.updated} updated, ${result.skipped} skipped`,
+    );
 
     res.json({
       message: "Backfill complete",

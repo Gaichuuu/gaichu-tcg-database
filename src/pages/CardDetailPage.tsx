@@ -13,6 +13,7 @@ import {
 import LocaleToggle from "@/components/LocaleToggle";
 import { useCurrentAndAdjacentCards } from "@/hooks/useCollectionCard";
 import { t, useLocale } from "@/i18n";
+import { hasI18nContent } from "@/types/CollectionCard";
 import type { CollectionParamKeys } from "@/types/routes";
 import { parseSortAndNameRegex } from "@/utils/RoutePathBuildUtils";
 import React, { useState } from "react";
@@ -65,13 +66,6 @@ const CardDetailPage: React.FC = () => {
   ): string => {
     if (!value) return "";
     return t(value, locale) ?? "";
-  };
-
-  const hasLocaleText = (
-    value: Partial<Record<"en" | "ja", string>> | undefined,
-  ): boolean => {
-    const text = resolveLocaleText(value);
-    return typeof text === "string" && text.trim().length > 0;
   };
 
   return (
@@ -146,7 +140,7 @@ const CardDetailPage: React.FC = () => {
                   </CardDetailRow>
                 )}
 
-                {card.favorite_food && (
+                {hasI18nContent(card.favorite_food) && (
                   <CardDetailRow label="Favorite Food">
                     {t(card.favorite_food, locale)}
                   </CardDetailRow>
@@ -253,7 +247,7 @@ const CardDetailPage: React.FC = () => {
                   strength={card.strength}
                 />
 
-                {hasLocaleText(card.description) && (
+                {hasI18nContent(card.description) && (
                   <CardDetailRow label="Flavor Text">
                     {resolveLocaleText(card.description)}
                   </CardDetailRow>
