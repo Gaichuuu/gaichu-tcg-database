@@ -25,7 +25,7 @@ const SYNC_CONFIG = {
   // How old prices must be before refreshing (in days)
   staleDays: 7,
   // Maximum cards to process per run (to stay within RapidAPI rate limits)
-  maxCardsPerRun: 50,
+  maxCardsPerRun: 200,
   // Delay between API calls (ms) to avoid rate limiting
   delayBetweenCalls: 1500,
   // Only sync cards from these series
@@ -251,20 +251,36 @@ export const triggerPriceSync = onRequest(
 
     // Force refresh ignores staleness and syncs all eligible cards
     const forceRefresh = req.query.forceRefresh === "true";
+    // Optional series filter (e.g., ?series=tygadu)
+    const seriesFilter = req.query.series as string | undefined;
+    if (seriesFilter && !SYNC_CONFIG.enabledSeries.includes(seriesFilter)) {
+      res.status(400).json({
+        error: `Invalid series: ${seriesFilter}. Valid: ${SYNC_CONFIG.enabledSeries.join(", ")}`,
+      });
+      return;
+    }
 
     console.log(
-      `Manual price sync triggered (max: ${maxCards} cards, forceRefresh: ${forceRefresh})`,
+      `Manual price sync triggered (max: ${maxCards} cards, forceRefresh: ${forceRefresh}, series: ${seriesFilter ?? "all"})`,
     );
 
     let limitedCards: Card[];
     if (forceRefresh) {
       // Get all eligible cards regardless of existing prices
       const allCards = loadAllCards();
-      const eligibleCards = allCards.filter(isPriceEligible);
+      let eligibleCards = allCards.filter(isPriceEligible);
+      if (seriesFilter) {
+        eligibleCards = eligibleCards.filter(
+          (c) => c.series_short_name === seriesFilter,
+        );
+      }
       limitedCards = eligibleCards.slice(0, maxCards);
     } else {
       const cardsToSync = await getCardsToSync();
-      limitedCards = cardsToSync.slice(0, maxCards);
+      const filtered = seriesFilter
+        ? cardsToSync.filter((c) => c.series_short_name === seriesFilter)
+        : cardsToSync;
+      limitedCards = filtered.slice(0, maxCards);
     }
 
     if (limitedCards.length === 0) {
