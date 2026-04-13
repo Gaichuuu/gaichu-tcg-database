@@ -240,7 +240,7 @@
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
     ],
-    "average_price": 17.58
+    "average_price": 11.44
   },
   {
     "id": "8a37a53b-f9a2-4372-98e9-8b3e258cfbdf",
@@ -1186,8 +1186,8 @@
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
-    "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
-    "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
+    "image": "https://gaichu.b-cdn.net/ash/series1/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/series1/24-thumb.jpg",
     "average_price": 16.99
   },
   {
@@ -1369,7 +1369,7 @@
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
     ],
-    "average_price": 19.99
+    "average_price": 28
   },
   {
     "id": "4cfbcd43-99f5-4a61-b9e0-54e0bb17d04b",
@@ -1425,7 +1425,7 @@
         "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
       }
     ],
-    "average_price": 21.26
+    "average_price": 19.82
   },
   {
     "id": "c21e6b0b-8345-408a-98ea-9a3dc009ce35",
@@ -1488,7 +1488,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 8.25
+    "average_price": 9.99
   },
   {
     "id": "862c1a20-5c48-47fc-b3a1-cfb4d71a5cd3",
@@ -1509,7 +1509,7 @@
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/34.jpg?v=3",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/34-thumb.jpg",
-    "average_price": 13
+    "average_price": 11.53
   },
   {
     "id": "ffbca53a-05c1-4b6d-8a34-daa3f7b46e98",
@@ -1550,7 +1550,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 22.24
+    "average_price": 20.91
   },
   {
     "id": "a1c3efb7-dc40-4b44-9411-1e5d6a5a2f87",
@@ -1607,7 +1607,7 @@
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "hp": "60",
-    "image": "https://gaichu.b-cdn.net/ash/series1/37.jpg",
+    "image": "https://gaichu.b-cdn.net/ash/series1/37.jpg?v=2",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/37-thumb.jpg",
     "description": "When first starting your journey, choosing the right starter makes all the difference. Who will you choose?",
     "attacks": [
@@ -1624,7 +1624,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 13.25
+    "average_price": 8.49
   },
   {
     "id": "bdbba5fd-fb91-497a-97bb-987b79f21fa7",
@@ -1707,7 +1707,7 @@
     "weakness": [],
     "resistance": [],
     "retreat": [],
-    "average_price": 16
+    "average_price": 17.38
   },
   {
     "id": "e4b8d067-3a32-47b0-9ffb-0a6116e9b1d2",
@@ -1755,7 +1755,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 10.9
+    "average_price": 15.29
   },
   {
     "id": "8dbd4e8b-dfa2-4e74-82a3-6ce8af1e1e69",
@@ -1803,7 +1803,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 13.16
+    "average_price": 16.49
   },
   {
     "id": "c49a4b7b-54b8-490a-bd9b-0912eaa67a61",
@@ -1851,7 +1851,7 @@
         "costs": ["Colorless", "Colorless"]
       }
     ],
-    "average_price": 12.25
+    "average_price": 16.99
   },
   {
     "id": "f2368b4c-1f11-4a36-9f2a-7f68b35de3b7",
@@ -1899,7 +1899,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 9.75
+    "average_price": 12.87
   },
   {
     "id": "7f9beef6-8d2d-4e40-b585-b50d314c6001",
@@ -1939,7 +1939,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 15.71
+    "average_price": 15.89
   },
   {
     "id": "e5cb691d-7845-4f19-8f38-60abe476924d",
@@ -1979,7 +1979,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 26.84
+    "average_price": 31.83
   },
   {
     "id": "5f4c8b63-05e2-42a0-9179-60edcdbd76fb",
@@ -2019,7 +2019,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 16.08
+    "average_price": 22.49
   },
   {
     "id": "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3",
@@ -2059,7 +2059,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 20.14
+    "average_price": 24.37
   },
   {
     "id": "09a2848d-06f7-46cb-9e14-490b8e04e172",
@@ -2099,7 +2099,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 19.68
+    "average_price": 25.16
   },
   {
     "id": "78a02344-0c51-48ef-b22c-d5892e98ce3e",
@@ -2139,7 +2139,7 @@
         "costs": ["Colorless"]
       }
     ],
-    "average_price": 16.61
+    "average_price": 17.93
   },
   {
     "id": "b7a33b4a-5a6f-4c6a-8b41-6a10ce78432b",
@@ -2304,5 +2304,46 @@
       }
     ],
     "average_price": 11.09
+  },
+  {
+    "id": "7003cca4-9e7c-4e44-bfc0-a13d80a34e18",
+    "number": 70,
+    "sort_by": 70,
+    "name": "Kabuto?",
+    "parody": "Ditto",
+    "variant": "Holo",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["Soo Zhi Wei"],
+    "rarity": "Rare",
+    "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/ash/series2/70.jpg",
+    "thumb": "https://gaichu.b-cdn.net/ash/series2/70-thumb.jpg",
+    "description": "No moment feels lonelier than staring at my Dex, still missing Alakazam and Machamp.",
+    "attacks": [
+      {
+        "name": "Put Aeroplane",
+        "effect": "Shuffle 1 of your benched Pokémon into your deck.",
+        "costs": ["Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "average_price": 9.99
   }
 ]
