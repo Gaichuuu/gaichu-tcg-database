@@ -51,6 +51,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://gaichu.com/cards/sm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gaichu.com/cards/wm/sets/set1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -174,6 +179,11 @@
     <loc>https://gaichu.com/cards/tygadu/sets/set1/card-back</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gaichu.com/cards/ash/sets/series1/card/0.1_charizard</loc>
@@ -442,6 +452,11 @@
   </url>
   <url>
     <loc>https://gaichu.com/cards/ash/sets/series2/card/66_jolteon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/ash/sets/series2/card/70_kabuto</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1487,6 +1502,151 @@
   </url>
   <url>
     <loc>https://gaichu.com/cards/tygadu/sets/set1/card/60_waifu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/1_charman</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/2_charsiu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/3_bobaso</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/4_itich</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/5_dit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/6_fire-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/7_vaping-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/8_daun-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/9_jotun-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/10_umbrella-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/11_ev</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/12_espo-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/13_gleh-ceon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/14_silv-eon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/15_mao-not-chairman</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/16_melampau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/17_gangah</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/18_miw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/19_peeachoo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/20_</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/21_meemeeku</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/22_snooze</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/23_squeetle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/24_woop</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/25_unodosdres</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/26_ground-sausage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/27_trio-sausage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/28_peeachoo-v</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/29_charsiu-v</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

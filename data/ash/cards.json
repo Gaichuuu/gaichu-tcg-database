@@ -32,21 +32,9 @@
         "costs": ["Fire", "Fire", "Fire", "Fire"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Water"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless"]
-      }
-    ],
+    "weakness": [{ "type": "Water" }],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }],
     "average_price": 44.25
   },
   {
@@ -58,12 +46,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Darkness",
-    "stage": [
-      {
-        "evolution": "Evolves from Umbreon V",
-        "description": ""
-      }
-    ],
+    "stage": [{ "evolution": "Evolves from Umbreon V", "description": "" }],
     "rule": [
       {
         "name": "VMAX",
@@ -130,21 +113,9 @@
         "costs": ["Fire", "Fire", "Fire", "Fire"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Water"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless"]
-      }
-    ],
+    "weakness": [{ "type": "Water" }],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }],
     "average_price": 19.61
   },
   {
@@ -156,11 +127,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -179,17 +146,9 @@
         "costs": ["Lightning", "Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 6.5
   },
   {
@@ -229,18 +188,10 @@
         "costs": ["Water", "Water", "Water"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Lightning"
-      }
-    ],
+    "weakness": [{ "type": "Lightning" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless"]
-      }
-    ],
-    "average_price": 11.44
+    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }],
+    "average_price": 15.11
   },
   {
     "id": "8a37a53b-f9a2-4372-98e9-8b3e258cfbdf",
@@ -279,18 +230,10 @@
         "costs": ["Grass", "Grass", "Grass", "Grass"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fire"
-      }
-    ],
+    "weakness": [{ "type": "Fire" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
-    "average_price": 12.88
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
+    "average_price": 11.37
   },
   {
     "id": "50ee2a9d-73ae-4f32-9271-0850212a24c6",
@@ -301,11 +244,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -324,22 +263,9 @@
         "costs": ["Fire", "Water", "Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Psychic"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting",
-        "value": "-30"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
+    "weakness": [{ "type": "Psychic" }],
+    "resistance": [{ "type": "Fighting", "value": "-30" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
     "average_price": 15.58
   },
   {
@@ -351,11 +277,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -376,16 +298,8 @@
       }
     ],
     "weakness": [],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 20.81
   },
   {
@@ -397,11 +311,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Dragon",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "rule": [
       {
         "name": "TAG TEAM",
@@ -427,18 +337,9 @@
         "costs": ["Psychic", "Plus"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fairy",
-        "value": "x2"
-      }
-    ],
+    "weakness": [{ "type": "Fairy", "value": "x2" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 26.41
   },
   {
@@ -450,11 +351,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "rule": [
       {
         "name": "TAG TEAM",
@@ -481,19 +378,10 @@
         "costs": ["Psychic", "Psychic", "Colorless", "Plus"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Psychic",
-        "value": "x2"
-      }
-    ],
+    "weakness": [{ "type": "Psychic", "value": "x2" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
-    "average_price": 8.49
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
+    "average_price": 10.66
   },
   {
     "id": "e91a1cb0-9eb8-4d28-b0cb-1ff85d1cc0a3",
@@ -504,11 +392,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -522,24 +406,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting",
-        "value": "x2"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Metal",
-        "value": "-20"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 16.1
+    "weakness": [{ "type": "Fighting", "value": "x2" }],
+    "resistance": [{ "type": "Metal", "value": "-20" }],
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 17.5
   },
   {
     "id": "ec7a1e34-60df-4a91-a9a2-6e8d7cf8b193",
@@ -550,11 +420,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -568,18 +434,9 @@
         "costs": ["Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting",
-        "value": "x2"
-      }
-    ],
+    "weakness": [{ "type": "Fighting", "value": "x2" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 18.99
   },
   {
@@ -591,11 +448,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -616,21 +469,9 @@
         "costs": ["Psychic", "Psychic", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Darkness"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
+    "weakness": [{ "type": "Darkness" }],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
     "average_price": 10
   },
   {
@@ -672,21 +513,9 @@
         "costs": ["Fire", "Fire"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Water"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless"]
-      }
-    ],
+    "weakness": [{ "type": "Water" }],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }],
     "average_price": 17.79
   },
   {
@@ -698,11 +527,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Secret Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -720,17 +545,9 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 16.99
   },
   {
@@ -742,11 +559,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Fire",
-    "stage": [
-      {
-        "evolution": "Evolves from Charmeleon"
-      }
-    ],
+    "stage": [{ "evolution": "Evolves from Charmeleon" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -771,17 +584,9 @@
         "costs": ["Fire", "Fire", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Water"
-      }
-    ],
+    "weakness": [{ "type": "Water" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }],
     "average_price": 20.79
   },
   {
@@ -793,11 +598,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -811,18 +612,9 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting",
-        "value": "x2"
-      }
-    ],
+    "weakness": [{ "type": "Fighting", "value": "x2" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 14.89
   },
   {
@@ -834,12 +626,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Fire",
-    "stage": [
-      {
-        "evolution": "Evolves from Charmeleon",
-        "description": ""
-      }
-    ],
+    "stage": [{ "evolution": "Evolves from Charmeleon", "description": "" }],
     "rule": [
       {
         "name": "Pokémon ex rule",
@@ -866,17 +653,9 @@
         "costs": ["Fire", "Fire", "Fire", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Water"
-      }
-    ],
+    "weakness": [{ "type": "Water" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
     "average_price": 23.47
   },
   {
@@ -888,11 +667,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "rule": [
       {
         "name": "Pokemon ex",
@@ -916,16 +691,8 @@
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Darkness"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Darkness" }],
+    "resistance": [{ "type": "Fighting" }],
     "retreat": [],
     "average_price": 25.49
   },
@@ -938,11 +705,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -962,17 +725,10 @@
         "costs": ["Colorless", "Colorless", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting",
-        "value": "x2"
-      }
-    ],
+    "weakness": [{ "type": "Fighting", "value": "x2" }],
     "resistance": [],
     "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
-      }
+      { "costs": ["Colorless", "Colorless", "Colorless", "Colorless"] }
     ],
     "average_price": 14.99
   },
@@ -985,12 +741,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Dragon",
-    "stage": [
-      {
-        "evolution": "Evolves from Rayquaza V",
-        "description": ""
-      }
-    ],
+    "stage": [{ "evolution": "Evolves from Rayquaza V", "description": "" }],
     "rule": [
       {
         "name": "VMAX",
@@ -1029,11 +780,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1054,18 +801,10 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 16.22
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 17.01
   },
   {
     "id": "dddb7278-6c72-4b4c-a8b9-8fc4d542bc3b",
@@ -1076,11 +815,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Psychic",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "rule": [
       {
         "name": "Pokémon ex",
@@ -1106,22 +841,10 @@
         "costs": ["Psychic", "Psychic"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Darkness"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
-    "average_price": 17.5
+    "weakness": [{ "type": "Darkness" }],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
+    "average_price": 18.75
   },
   {
     "id": "ab74cb8f-9a9e-4383-b3d0-61b6cf96a5b2",
@@ -1132,12 +855,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Darkness",
-    "stage": [
-      {
-        "evolution": "Evolves from Gengar V",
-        "description": ""
-      }
-    ],
+    "stage": [{ "evolution": "Evolves from Gengar V", "description": "" }],
     "rule": [
       {
         "name": "VMAX",
@@ -1251,7 +969,7 @@
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
     "image": "https://gaichu.b-cdn.net/ash/series1/00a.jpg",
     "thumb": "https://gaichu.b-cdn.net/ash/series1/00-thumb.jpg",
-    "average_price": 19.81
+    "average_price": 18.61
   },
   {
     "id": "86b39467-7170-4daf-a92a-d60323e046e4",
@@ -1283,11 +1001,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1301,17 +1015,9 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 15.89
   },
   {
@@ -1323,11 +1029,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "rule": [
       {
         "name": "TAG TEAM",
@@ -1353,23 +1055,10 @@
         "costs": ["Colorless", "Plus"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Lightning",
-        "value": "x2"
-      }
-    ],
-    "resistance": [
-      {
-        "type": "Fighting"
-      }
-    ],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless"]
-      }
-    ],
-    "average_price": 28
+    "weakness": [{ "type": "Lightning", "value": "x2" }],
+    "resistance": [{ "type": "Fighting" }],
+    "retreat": [{ "costs": ["Colorless", "Colorless", "Colorless"] }],
+    "average_price": 23.09
   },
   {
     "id": "4cfbcd43-99f5-4a61-b9e0-54e0bb17d04b",
@@ -1414,16 +1103,10 @@
         "costs": ["Fighting", "Lightning", "Lightning", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Water"
-      }
-    ],
+    "weakness": [{ "type": "Water" }],
     "resistance": [],
     "retreat": [
-      {
-        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
-      }
+      { "costs": ["Colorless", "Colorless", "Colorless", "Colorless"] }
     ],
     "average_price": 19.82
   },
@@ -1457,11 +1140,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1477,17 +1156,9 @@
         "costs": ["Water", "Water"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 9.99
   },
   {
@@ -1520,11 +1191,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Water",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1538,19 +1205,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Grass",
-        "value": "x2"
-      }
-    ],
+    "weakness": [{ "type": "Grass", "value": "x2" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 20.91
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 21.23
   },
   {
     "id": "a1c3efb7-dc40-4b44-9411-1e5d6a5a2f87",
@@ -1561,11 +1219,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1582,11 +1236,7 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 4.99
   },
   {
@@ -1598,11 +1248,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1619,12 +1265,8 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 8.49
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 9.75
   },
   {
     "id": "bdbba5fd-fb91-497a-97bb-987b79f21fa7",
@@ -1635,11 +1277,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1656,11 +1294,7 @@
     ],
     "weakness": [],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 0
   },
   {
@@ -1672,12 +1306,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Fire",
-    "stage": [
-      {
-        "evolution": "Evolves from Charizard V",
-        "description": ""
-      }
-    ],
+    "stage": [{ "evolution": "Evolves from Charizard V", "description": "" }],
     "rule": [
       {
         "name": "VMAX",
@@ -1707,7 +1336,7 @@
     "weakness": [],
     "resistance": [],
     "retreat": [],
-    "average_price": 17.38
+    "average_price": 13.04
   },
   {
     "id": "e4b8d067-3a32-47b0-9ffb-0a6116e9b1d2",
@@ -1718,11 +1347,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1744,17 +1369,9 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 15.29
   },
   {
@@ -1766,11 +1383,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1792,17 +1405,9 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 16.49
   },
   {
@@ -1814,11 +1419,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1840,18 +1441,10 @@
         "costs": ["Lightning", "Lightning", "Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless", "Colorless"]
-      }
-    ],
-    "average_price": 16.99
+    "retreat": [{ "costs": ["Colorless", "Colorless"] }],
+    "average_price": 16
   },
   {
     "id": "f2368b4c-1f11-4a36-9f2a-7f68b35de3b7",
@@ -1862,11 +1455,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Lightning",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1888,17 +1477,9 @@
         "costs": ["Lightning", "Lightning", "Lightning"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 12.87
   },
   {
@@ -1910,11 +1491,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1928,18 +1505,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 15.89
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 15.27
   },
   {
     "id": "e5cb691d-7845-4f19-8f38-60abe476924d",
@@ -1950,11 +1519,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -1968,18 +1533,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 31.83
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 32.29
   },
   {
     "id": "5f4c8b63-05e2-42a0-9179-60edcdbd76fb",
@@ -1990,11 +1547,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -2008,18 +1561,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 22.49
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 15
   },
   {
     "id": "e7502969-7dc4-4222-a6d3-a8ac26d0c6b3",
@@ -2030,11 +1575,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -2048,18 +1589,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 24.37
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 22.49
   },
   {
     "id": "09a2848d-06f7-46cb-9e14-490b8e04e172",
@@ -2070,11 +1603,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -2088,18 +1617,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 25.16
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 22.74
   },
   {
     "id": "78a02344-0c51-48ef-b22c-d5892e98ce3e",
@@ -2110,11 +1631,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Secret Rare",
     "set_ids": ["5444924f-490b-465f-8364-66b4e34da7c8"],
@@ -2128,18 +1645,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 17.93
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 16.74
   },
   {
     "id": "b7a33b4a-5a6f-4c6a-8b41-6a10ce78432b",
@@ -2150,11 +1659,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
@@ -2169,18 +1674,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 11.09
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 10.01
   },
   {
     "id": "c1a7e4c5-8f0f-4a96-b2b0-6e3c3c4a1f35",
@@ -2191,11 +1688,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
@@ -2210,18 +1703,10 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
-    "average_price": 11.09
+    "retreat": [{ "costs": ["Colorless"] }],
+    "average_price": 10.53
   },
   {
     "id": "c8c0b9f7-2f19-4b4b-9f33-feb4fae9ff2e",
@@ -2232,11 +1717,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
@@ -2251,17 +1732,9 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 11.09
   },
   {
@@ -2273,11 +1746,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
@@ -2292,17 +1761,9 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 11.09
   },
   {
@@ -2314,11 +1775,7 @@
     "variant": "Holo",
     "type": "Pokemon",
     "color": "Colorless",
-    "stage": [
-      {
-        "basic": "Basic"
-      }
-    ],
+    "stage": [{ "basic": "Basic" }],
     "illustrators": ["Soo Zhi Wei"],
     "rarity": "Rare",
     "set_ids": ["c505fdeb-0d9e-4025-82d4-cf2a05a40a51"],
@@ -2333,17 +1790,9 @@
         "costs": ["Colorless"]
       }
     ],
-    "weakness": [
-      {
-        "type": "Fighting"
-      }
-    ],
+    "weakness": [{ "type": "Fighting" }],
     "resistance": [],
-    "retreat": [
-      {
-        "costs": ["Colorless"]
-      }
-    ],
+    "retreat": [{ "costs": ["Colorless"] }],
     "average_price": 9.99
   }
 ]

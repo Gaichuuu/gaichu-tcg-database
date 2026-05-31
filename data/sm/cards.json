@@ -1,0 +1,1536 @@
+[
+  {
+    "id": "d22e7a61-6d03-452b-9659-c8a8f2c3fece",
+    "number": 1,
+    "sort_by": 1,
+    "name": "Charman",
+    "parody": "Charmander",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fire",
+    "lvl": "10",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/sm/set1/01.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/01-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Somethingmon Power: Tenacity",
+        "effect": "Whenever Charman receives damage, they take 10 damage less than the original amount. If a Fire energy was spent from Charman, it is immune from Asleep and Paralyzed this turn. This power can only be used once per game."
+      },
+      {
+        "name": "Fire Tail",
+        "damage": "20",
+        "costs": ["Fire", "Fire"],
+        "effect": ""
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Water"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Lizard Somethingmon.",
+      "measurement": "Length: 20cm, weight: 14.8kg"
+    },
+    "description": "I did this at 3am I wanna cry and die"
+  },
+  {
+    "id": "494bbf20-3b7f-495c-ae60-69af7dcd30db",
+    "number": 2,
+    "sort_by": 2,
+    "name": "Charsiu",
+    "parody": "Charizard",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fire",
+    "lvl": "96",
+    "stage": [
+      {
+        "evolution": "Evolves from Char-meian",
+        "description": "Put on the Stage 1 card"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "150",
+    "image": "https://gaichu.b-cdn.net/sm/set1/02.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/02-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Somethingmon Power: AAAUUURGHH",
+        "effect": "Any Energy attached to Somethingmon can be converted into Fire energy and attach to Charsiu. You may do this as many times as you wish."
+      },
+      {
+        "name": "I'm coming for you LMAO",
+        "effect": "Discard 5 Energy cards attached to Charsiu to use this attack idk how you gonna do that.",
+        "damage": "150",
+        "costs": ["Fire", "Fire", "Fire", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Water",
+        "value": ""
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Fire Somethingmon.",
+      "measurement": "Length: 120cm, weight: 169.3kg"
+    },
+    "description": "Stop saying he's a dragon EVEN I KNOW THAT."
+  },
+  {
+    "id": "53ac513f-9eb1-49cd-af13-c786e6b347cb",
+    "number": 3,
+    "sort_by": 3,
+    "name": "Bobaso",
+    "parody": "Bulbasaur",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Grass",
+    "lvl": "16",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/sm/set1/03.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/03-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Tentacle",
+        "damage": "10",
+        "costs": ["Grass"],
+        "effect": ""
+      },
+      {
+        "name": "Healing Spores",
+        "effect": "Heal 10 damage from this Somethingmon.",
+        "damage": "20",
+        "costs": ["Grass", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fire"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Seed-mon.",
+      "measurement": "Long: 34cm, heavy: 135g"
+    },
+    "description": "\"This ant got garlic meh.\" - Tina"
+  },
+  {
+    "id": "d393d73c-93a4-456c-983e-6250f10a2c94",
+    "number": 4,
+    "sort_by": 4,
+    "name": "Itik",
+    "parody": "Psyduck",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Water",
+    "lvl": "20",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/sm/set1/04.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/04-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Prediction",
+        "costs": ["Psychic"],
+        "effect": "Look at the top card of your deck then put it back to the deck."
+      },
+      {
+        "name": "Quacker",
+        "costs": ["Water", "Water", "Colorless"],
+        "effect": "Flip 4 coins, this attack does 10 damage times the number of heads. Itik cannot attack on your next turn.",
+        "damage": "10x"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Lightning",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Quack Somethingmon",
+      "measurement": "Length: 26cm, weight: 7.2kg"
+    },
+    "description": "\"Did I collect the laundry?\""
+  },
+  {
+    "id": "5404033c-1c96-4ada-9aa8-bef6ce0b265d",
+    "number": 5,
+    "sort_by": 5,
+    "name": "Dit",
+    "parody": "Ditto",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "lvl": "10",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "30",
+    "image": "https://gaichu.b-cdn.net/sm/set1/05.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/05-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Somethingmon Power: I become YOU",
+        "effect": "Become your opponent's Somethingmon LMAO. This includes Copying that Somethingmon's type, HP, weakness, etc basically everything is ok. Dit cannot Resist and isn't a copy of any Somethingmon when Asleep, Confused, or Paralyzed. Talk about being a poser."
+      },
+      {
+        "name": "Jelly",
+        "effect": ""
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": "x2"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Psychic",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "whatever-mon.",
+      "measurement": "Long: 24cm, heavy: 8.4kg"
+    },
+    "description": "Jelly."
+  },
+  {
+    "id": "98ba617e-cc4f-4f29-8bc0-1850544f6352",
+    "number": 6,
+    "sort_by": 6,
+    "name": "fire-eon",
+    "parody": "Flareon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fire",
+    "lvl": "45",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/sm/set1/06.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/06-thumb.jpg",
+    "attacks": [
+      {
+        "name": "whack 9 you",
+        "costs": ["Colorless", "Colorless"],
+        "effect": "This attack does +30 more damage to water type somethingmons.",
+        "damage": "10+"
+      },
+      {
+        "name": "super burn i think",
+        "costs": ["Colorless", "Colorless", "Fire"],
+        "effect": "Flip 4 coins, this attack does 10 damage times the number of heads. Discard 1 Fire energy for each tails landed.",
+        "damage": "10x"
+      }
+    ],
+    "weakness": [],
+    "resistance": [],
+    "retreat": [],
+    "metadata": {
+      "type": "flame-mon Somethingmon",
+      "measurement": "Long: 120cm, heavy: 23.5kg"
+    },
+    "description": "I'll prolly cook an egg on it. This is also my first Somethingmon card!"
+  },
+  {
+    "id": "eddb8582-b0d3-4f18-9b2c-ac72086af834",
+    "number": 7,
+    "sort_by": 7,
+    "name": "vaping-eon",
+    "parody": "Vaporeon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Water",
+    "lvl": "46",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/sm/set1/07.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/07-thumb.jpg",
+    "attacks": [
+      {
+        "name": "whack 9 you",
+        "costs": ["Colorless", "Colorless"],
+        "effect": "This attack does +30 more damage to fire type somethingmons.",
+        "damage": "10+"
+      },
+      {
+        "name": "clean wounds",
+        "costs": ["Water", "Water"],
+        "effect": "Heal 30HP. Also go take a shower, Malaysia is so damn humid."
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Lightning",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "wet-mon",
+      "measurement": "Long: 133cm, heavy: 31.3kg"
+    },
+    "description": "\"Don't do vapes kids, spend money on packs instead.\" - kai"
+  },
+  {
+    "id": "c1fee00e-7ef0-4f75-9ca4-4c07f4797e6c",
+    "number": 8,
+    "sort_by": 8,
+    "name": "Daun-eon",
+    "parody": "Leafeon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Grass",
+    "lvl": "43",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/sm/set1/08.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/08-thumb.jpg",
+    "attacks": [
+      {
+        "name": "whack 9 you",
+        "costs": ["Colorless", "Colorless"],
+        "effect": "This attack does +30 more damage to darkness type somethingmons.",
+        "damage": "10+"
+      },
+      {
+        "name": "Fresh air wow nature",
+        "costs": ["Grass", "Water", "Colorless", "Colorless"],
+        "effect": "If your active somethingmon were to be Paralyzed or Poisoned, negate that effect. This effect can only be applied once per turn."
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fire",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "vegan-mon",
+      "measurement": "Long: 140cm, heavy: 23.6kg"
+    },
+    "description": "Go plant a tree or something."
+  },
+  {
+    "id": "6400131e-ba7c-4915-86b7-d72a2512591f",
+    "number": 9,
+    "sort_by": 9,
+    "name": "Jotun-eon",
+    "parody": "Jolteon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Lightning",
+    "lvl": "28",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/sm/set1/09.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/09-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Whack 9 you",
+        "effect": "This attack does +20 more damage to Water Type Somethingmons.",
+        "damage": "10+",
+        "costs": ["Lightning"]
+      },
+      {
+        "name": "Thunderstrike",
+        "effect": "This attack does 10 damage to each benched Somethingmon with at least 1 Energy attached to it.",
+        "damage": "20",
+        "costs": ["Lightning", "Lightning", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "vegan-mon.",
+      "measurement": "Long: 140cm, heavy: 23.6kg"
+    },
+    "description": "Touching it is wakes you up better than a cuppa coffee."
+  },
+  {
+    "id": "af212297-de4b-4d3b-b95e-5b7527547e62",
+    "number": 10,
+    "sort_by": 10,
+    "name": "Umbrella-eon",
+    "parody": "Umbreon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Darkness",
+    "lvl": "42",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/sm/set1/10.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/10-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Whack 9 you",
+        "effect": "This attack does +20 more damage to Psychic Type Somethingmons.",
+        "damage": "10+"
+      },
+      {
+        "name": "Scary wtf",
+        "effect": "Upon attacking opponent's defending Somethingmon, it becomes paralyzed.",
+        "damage": "20"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Grass",
+        "value": ""
+      },
+      {
+        "type": "Grass",
+        "value": ""
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fairy",
+        "value": ""
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "vegan-mon.",
+      "measurement": "Long: 140cm, heavy: 23.6kg"
+    },
+    "description": "\"Don't do vagets kids, spend money on packs instead.\" - KB"
+  },
+  {
+    "id": "4068a55f-76a9-43c5-9af0-8109e7a70f2d",
+    "number": 11,
+    "sort_by": 11,
+    "name": "EV (not the car)",
+    "parody": "Eevee",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "lvl": "23",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/sm/set1/11.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/11-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Is this Plot Armor",
+        "costs": ["Colorless"],
+        "effect": "Flip a coin. If heads, Defending Somethingmon cannot attack EV during your opponent's next turn."
+      },
+      {
+        "name": "whack 9 you",
+        "costs": ["Colorless", "Colorless"],
+        "damage": "10+",
+        "effect": "This attack does +30 more damage to water type somethingmons."
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": ""
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Psychic",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Evolution-mon",
+      "measurement": "Long: 60cm, heavy: 12.6kg"
+    },
+    "description": "Seems to have split personality but in a good way that everyone likes."
+  },
+  {
+    "id": "11904ea0-f4a2-4224-802b-5c63278c601d",
+    "number": 12,
+    "sort_by": 12,
+    "name": "Espo-eon",
+    "parody": "Espeon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Psychic",
+    "lvl": "28",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/sm/set1/12.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/12-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Psychic Reading",
+        "effect": "Draw 2 cards. Detach 1 Psychic Energy.",
+        "costs": ["Psychic"]
+      },
+      {
+        "name": "Hypnosis ahh Move",
+        "effect": "The defending Somethingmon is now confused.",
+        "damage": "30",
+        "costs": ["Psychic", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Psychic",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Sun-mon.",
+      "measurement": "Long: 122cm, heavy: 24.6kg"
+    },
+    "description": "Easy the red dot."
+  },
+  {
+    "id": "06375ce7-edc6-4ec1-a93e-9406eaada3b2",
+    "number": 13,
+    "sort_by": 13,
+    "name": "Gleh-ceon",
+    "parody": "Glaceon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Water",
+    "lvl": "38",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/sm/set1/13.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/13-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Should be snowstorm",
+        "costs": ["Water", "Colorless"],
+        "effect": "This attack does 20 damage to all of your opponent's somethingmons."
+      },
+      {
+        "name": "Freeze don't move",
+        "costs": ["Water", "Colorless"],
+        "effect": "",
+        "damage": "60"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Psychic",
+        "value": "x2"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "fresh Snow-mon",
+      "measurement": "Long: 142cm, heavy: 32kg"
+    },
+    "description": "\"Ice, ice, babeh.\" - Vanilla Ice"
+  },
+  {
+    "id": "731804d2-8217-4027-a73d-b1ace8bf7a7b",
+    "number": 14,
+    "sort_by": 14,
+    "name": "Silv-eon",
+    "parody": "Sylveon",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fairy",
+    "lvl": "40",
+    "stage": [
+      {
+        "evolution": "Evolves from EV"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "110",
+    "image": "https://gaichu.b-cdn.net/sm/set1/14.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/14-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Somethingmon Power: Nah Present",
+        "effect": "once during your turn, you may search your deck for an Item card. If you allow your opponent to search for an Item card as well, you may draw 2 additional cards."
+      },
+      {
+        "name": "Many Ribbon tie you",
+        "costs": ["Fairy", "Psychic", "Colorless", "Colorless"],
+        "effect": "",
+        "damage": "90"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Darkness",
+        "value": "×2"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Twiniginnign-mon",
+      "measurement": "Long: 122cm, heavy: 26.3kg"
+    },
+    "description": "\"omfg why so hard to draw this\" - Kai"
+  },
+  {
+    "id": "a8b57d13-bf83-4d0e-bfd8-0a01fb291d93",
+    "number": 15,
+    "sort_by": 15,
+    "name": "Mao (not chairman)",
+    "parody": "Meowth",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "lvl": "20",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/sm/set1/15.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/15-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Greedy",
+        "effect": "Flip a coin. If heads, Mao does additional 10 damage to any of your opponent's Somethingmon.",
+        "damage": "20",
+        "costs": ["Colorless", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Psychic",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Racing Somethingmon.",
+      "measurement": "Length: 8.5cm, weight: 10.4kg"
+    },
+    "description": "Go feed your cat."
+  },
+  {
+    "id": "c24195d3-2e29-40f4-9e77-08f589c09b5a",
+    "number": 16,
+    "sort_by": 16,
+    "name": "Melampau",
+    "parody": "Farfetch'd",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "lvl": "22",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/sm/set1/16.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/16-thumb.jpg",
+    "attacks": [
+      {
+        "name": "NEGI TOMODACHI",
+        "effect": "Flip a coin. If tails, this attack does nothing. You get another negi. Mine does a 5ket lmfao.",
+        "damage": "20",
+        "costs": ["Colorless"]
+      },
+      {
+        "name": "NEGI Shopping",
+        "effect": "Search your deck for a basic energy. Put it to your hand. Can do that right? Jdy.",
+        "costs": ["Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Lightning"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Jitk Somethingmon.",
+      "measurement": "Length: 28cm, weight: 16.4kg"
+    },
+    "description": "2 easter eggs here lmao."
+  },
+  {
+    "id": "07f55775-fe92-452b-8178-bcc62c021c38",
+    "number": 17,
+    "sort_by": 17,
+    "name": "Gangah",
+    "parody": "Gengar",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Psychic",
+    "lvl": "30",
+    "stage": [
+      {
+        "evolution": "Evolves from Hauntu"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/sm/set1/17.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/17-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Somethingmon Power: Abandonment",
+        "effect": "When Gengah is in play, opponent shuffles one Somethingmon from their bench back to the deck."
+      },
+      {
+        "name": "Spooky Season wooooo~",
+        "costs": ["Psychic", "Psychic", "Psychic"],
+        "effect": "Flip a coin. If heads, the defending Somethingmon is stunned for one turn. If tails, Gengah cannot retreat during your next turn.",
+        "damage": "30"
+      }
+    ],
+    "weakness": [],
+    "resistance": [
+      {
+        "type": "Darkness",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Shadow-mon",
+      "measurement": "Long: 143cm, heavy: 51.3kg"
+    },
+    "description": "I think someone said he wanted to collect all Gangah or he gives everything away. Hope he gets this card."
+  },
+  {
+    "id": "983128b0-4ed6-4479-b86a-5cd5294dbbfd",
+    "number": 18,
+    "sort_by": 18,
+    "name": "Miw",
+    "parody": "Mew",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Psychic",
+    "lvl": "22",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/sm/set1/18.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/18-thumb.jpg",
+    "attacks": [
+      {
+        "name": "POWER LA WALAO",
+        "effect": "Does 10 damage times the number of Energy cards attached to the defending Somethingmon.",
+        "damage": "10x",
+        "costs": ["Psychic"]
+      },
+      {
+        "name": "Pew the @#-! outta here",
+        "effect": "Choose an evolved Somethingmon. Return the highest stage Evo card on that Somethingmon back to its player's hand. As a basically, that Somethingmon is immune from all effects.",
+        "costs": ["Psychic", "Psychic"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Psychic"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "wow what this man.",
+      "measurement": "Length: 36cm, weight: 4.4kg"
+    },
+    "description": "Is this card?"
+  },
+  {
+    "id": "a31d8dd8-29c7-4aa2-8f11-a6e76540f51d",
+    "number": 19,
+    "sort_by": 19,
+    "name": "Peeachoo",
+    "parody": "Pikachu",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Lightning",
+    "lvl": "20",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "60",
+    "image": "https://gaichu.b-cdn.net/sm/set1/19.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/19-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Electric Dash",
+        "effect": "",
+        "costs": ["Lightning"],
+        "damage": "10"
+      },
+      {
+        "name": "Shocker",
+        "effect": "Flip a coin. If heads, this Somethingmon can attack an additional time.",
+        "costs": ["Lightning", "Lightning"],
+        "damage": "40"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Laoshu-mon",
+      "measurement": "Long: 24cm, heavy: 8.4kg"
+    },
+    "description": "Who would win: yellow mouse or black mouse in red pants?"
+  },
+  {
+    "id": "2c7c13b4-22a4-4d45-ad96-673345a14a17",
+    "number": 20,
+    "sort_by": 20,
+    "name": "Rowlet",
+    "parody": "Rowlet",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Grass",
+    "lvl": "16",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/sm/set1/20.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/20-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Draufspringen",
+        "costs": ["Colorless"],
+        "effect": "wirf 1 Münze. Bei Kopf fügt diese Attacke 10 Schadenspunkte mehr zu.",
+        "damage": "10+"
+      },
+      {
+        "name": "Éclat Volant",
+        "costs": ["Colorless", "Colorless", "Colorless"],
+        "effect": "cette attaque inflige 60 dégats à l'un des Somethingmon de banc de votre adversaire. (N'appliquez ni la Faiblesse ni la Résistance aux Pokémon de Banc.)"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fire",
+        "value": ""
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Grass-mon",
+      "measurement": "高さ: 34cm, 몸무게: 13kg"
+    },
+    "description": "飛行しながら切れ味鋭い羽根を飛ばし近距離では強烈なキックを叩きこむ。"
+  },
+  {
+    "id": "02471845-f24f-4440-8e93-27121ffc778c",
+    "number": 21,
+    "sort_by": 21,
+    "name": "Meemeeku",
+    "parody": "Mimikyu",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Psychic",
+    "lvl": "40",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "70",
+    "image": "https://gaichu.b-cdn.net/sm/set1/21.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/21-thumb.jpg",
+    "attacks": [
+      {
+        "name": "It's me, Peeka Peeka!",
+        "costs": ["Psychic"],
+        "effect": "Your opponent's Somethingmon is now Confused."
+      },
+      {
+        "name": "ISTG IT'S ME PLS TRUST TF",
+        "costs": ["Psychic", "Psychic", "Psychic"],
+        "effect": "Convince your opponent this is the REAL DEAL. If you are dealt damage this turn, your opponent gets 30 damage if a Trainer card is used, 20 damage if a Somethingmon has a damage counter on it.",
+        "damage": "10x"
+      }
+    ],
+    "weakness": [],
+    "resistance": [
+      {
+        "type": "Psychic",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "IMPOSTER!!!! Somethingmon",
+      "measurement": "Length: 20cm, weight: 6.8kg"
+    },
+    "description": "I'm nearing deadline for this card so bear with me."
+  },
+  {
+    "id": "ceaaf6e6-b063-4bc9-a9dd-da34631b0dbd",
+    "number": 22,
+    "sort_by": 22,
+    "name": "Snooze",
+    "parody": "Snorlax",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Colorless",
+    "lvl": "10",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/sm/set1/00.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/00-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Somethingmon Power: WTF why wake me",
+        "effect": "Bro, still got 3 more hours slp you ah. Snooze cannot be Asleep, Confused, Paralyzed, or Poisoned."
+      },
+      {
+        "name": "POWER SLAM BOOM",
+        "effect": "This guy body slam you. Think won't die meh waise.",
+        "damage": "50",
+        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Psychic",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "zzzzzzzzzzzzzzzzzzzzzzzzz"
+    },
+    "description": "222211122222222222222222"
+  },
+  {
+    "id": "b9912adc-3c2f-4f42-8bda-c2bbd8becada",
+    "number": 23,
+    "sort_by": 23,
+    "name": "Squeetle",
+    "parody": "Squirtle",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Water",
+    "lvl": "16",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "40",
+    "image": "https://gaichu.b-cdn.net/sm/set1/23.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/23-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Go Drink Water",
+        "damage": "10",
+        "costs": ["Water"],
+        "effect": ""
+      },
+      {
+        "name": "Refresh",
+        "damage": "30",
+        "costs": ["Water", "Colorless"],
+        "effect": ""
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Lightning"
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Lightning",
+        "value": ""
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Turtle Somethingmon.",
+      "measurement": "Length: 63cm, weight: 8.3kg"
+    },
+    "description": "Hydrate yourselves pls."
+  },
+  {
+    "id": "9ade60ff-d41a-483b-b0af-344fc1f05450",
+    "number": 24,
+    "sort_by": 24,
+    "name": "Woop",
+    "parody": "Wooper",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Water",
+    "lvl": "22",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/sm/set1/24.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/24-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Woooooop",
+        "costs": ["Water"],
+        "effect": "Take a break, be woop. Lie down, chill out. Life's full when your head's empty."
+      },
+      {
+        "name": "Slap",
+        "costs": ["Water", "Colorless"],
+        "damage": "30",
+        "effect": ""
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Grass",
+        "value": ""
+      }
+    ],
+    "resistance": [
+      {
+        "type": "Lightning",
+        "value": ""
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Feesh Somethingmon",
+      "measurement": "Length: 13cm, weight: 9.1kg"
+    },
+    "description": "No thoughts. Wop wop wop wop wop."
+  },
+  {
+    "id": "054fdc79-0cd1-4676-9214-1560b26e75ba",
+    "number": 25,
+    "sort_by": 25,
+    "name": "UnoDosDres",
+    "parody": "Zapdos",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Lightning",
+    "lvl": "22",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "80",
+    "image": "https://gaichu.b-cdn.net/sm/set1/25.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/25-thumb.jpg",
+    "attacks": [
+      {
+        "name": "No safety lmao",
+        "effect": "Flip a coin. If heads, UnoDosDres does 20 damage to itself.",
+        "damage": "50",
+        "costs": ["Lightning", "Lightning", "Lightning"]
+      },
+      {
+        "name": "Fried Bird",
+        "effect": "Discard all Energy cards attached to UnoDosDres to use this attack.",
+        "damage": "80",
+        "costs": ["Lightning", "Lightning", "Lightning", "Lightning"]
+      }
+    ],
+    "weakness": [],
+    "resistance": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Electric-mon.",
+      "measurement": "Long: 150cm, heavy: 22.6kg"
+    },
+    "description": "LINES LINESSSSS LINES E2 DRAW ME RIGHT - KEN"
+  },
+  {
+    "id": "79d6a6fb-1a6b-46e4-a868-1ff559e05aee",
+    "number": 26,
+    "sort_by": 26,
+    "name": "Ground Sausage?",
+    "parody": "Diglett",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fighting",
+    "lvl": "30",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "50",
+    "image": "https://gaichu.b-cdn.net/sm/set1/26.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/26-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Little Quake",
+        "effect": "",
+        "costs": ["Fighting"],
+        "damage": "10"
+      },
+      {
+        "name": "Burrow",
+        "effect": "This attack does 20 damage to 1 of your opponent's benched Somethingmon.",
+        "costs": ["Colorless"],
+        "damage": "30"
+      }
+    ],
+    "weakness": [],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      },
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Mole Somethingmon",
+      "measurement": "Length: 22cm, weight: 16.4kg"
+    },
+    "description": "Dude that's literally it what else can I possibly draw."
+  },
+  {
+    "id": "c0b05f63-c598-4c49-8c08-4ac3dc3a7c79",
+    "number": 27,
+    "sort_by": 27,
+    "name": "Trio Sausage?",
+    "parody": "Dugtrio",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fighting",
+    "lvl": "60",
+    "stage": [
+      {
+        "evolution": "Evolves from Ground Sausage?"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "90",
+    "image": "https://gaichu.b-cdn.net/sm/set1/27.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/27-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Big Quake",
+        "costs": ["Fighting"],
+        "effect": "",
+        "damage": "40"
+      },
+      {
+        "name": "Rock Barrage",
+        "costs": ["Fighting", "Colorless", "Colorless"],
+        "effect": "This attack's damage is not affected by Resistance",
+        "damage": "40"
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Grass",
+        "value": "x2"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {
+      "type": "Mole Somethingmon",
+      "measurement": "Length: 66cm, weight: 32.2kg"
+    },
+    "description": "This is actually funny."
+  },
+  {
+    "id": "55b69e11-8bb3-4708-acd8-d06812d90ed8",
+    "number": 28,
+    "sort_by": 28,
+    "name": "Peeachoo V",
+    "parody": "Pikachu",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Lightning",
+    "lvl": "",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "200",
+    "image": "https://gaichu.b-cdn.net/sm/set1/28.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/28-thumb.jpg",
+    "attacks": [
+      {
+        "name": "shock",
+        "effect": "",
+        "damage": "20",
+        "costs": ["Colorless"]
+      },
+      {
+        "name": "Thunderstrike",
+        "effect": "",
+        "damage": "50",
+        "costs": ["Lightning", "Colorless", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Fighting",
+        "value": "x2"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless"]
+      }
+    ],
+    "metadata": {},
+    "description": "V rule when your Somethingmon V is ded, your opponent takes 2 of whatever card idk."
+  },
+  {
+    "id": "64ae6c67-e803-4d1d-abf4-9a83b2f661e3",
+    "number": 29,
+    "sort_by": 29,
+    "name": "Charsiu V",
+    "parody": "Charizard",
+    "variant": "Normal",
+    "type": "Pokemon",
+    "color": "Fire",
+    "lvl": "*",
+    "stage": [
+      {
+        "basic": "Basic"
+      }
+    ],
+    "illustrators": ["KaijinArt"],
+    "rarity": "Common",
+    "set_ids": ["dcf02543-3a5d-4151-a1ac-078ef87a9453"],
+    "hp": "230",
+    "image": "https://gaichu.b-cdn.net/sm/set1/29.jpg",
+    "thumb": "https://gaichu.b-cdn.net/sm/set1/29-thumb.jpg",
+    "attacks": [
+      {
+        "name": "Front Hand Smack",
+        "effect": "",
+        "damage": "80",
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      },
+      {
+        "name": "GG One hit sia",
+        "effect": "",
+        "damage": "250",
+        "costs": ["Fire", "Fire", "Colorless", "Colorless"]
+      }
+    ],
+    "weakness": [
+      {
+        "type": "Water",
+        "value": "x2"
+      }
+    ],
+    "resistance": [],
+    "retreat": [
+      {
+        "costs": ["Colorless", "Colorless", "Colorless"]
+      }
+    ],
+    "metadata": {},
+    "description": "V rule: when your Somethingmon v is ded, your opponent takes 2 of whatever card idk."
+  }
+]

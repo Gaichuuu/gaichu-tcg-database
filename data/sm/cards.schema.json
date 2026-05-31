@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "allOf": [
+      { "$ref": "../cards.schema.base.json" },
+      {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "illustrators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["KaijinArt"]
+            }
+          },
+          "rarity": {
+            "type": "string",
+            "enum": ["Common", "Rainbow Holo", "Textured Holo", "Starry Holo"]
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["Pokemon"]
+          },
+          "lvl": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string",
+            "enum": [
+              "Colorless",
+              "Darkness",
+              "Fairy",
+              "Fighting",
+              "Fire",
+              "Grass",
+              "Lightning",
+              "Psychic",
+              "Water"
+            ]
+          },
+          "stage": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "evolution": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "basic": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "hp": {
+            "type": "string"
+          },
+          "attacks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "effect": {
+                  "type": "string"
+                },
+                "damage": {
+                  "type": ["string"]
+                },
+                "costs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "Colorless",
+                      "Darkness",
+                      "Fairy",
+                      "Fighting",
+                      "Fire",
+                      "Grass",
+                      "Lightning",
+                      "Psychic",
+                      "Water"
+                    ]
+                  },
+                  "minItems": 1
+                }
+              },
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "weakness": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Colorless",
+                    "Darkness",
+                    "Fairy",
+                    "Fighting",
+                    "Fire",
+                    "Grass",
+                    "Lightning",
+                    "Psychic",
+                    "Water"
+                  ]
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "resistance": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Colorless",
+                    "Darkness",
+                    "Fairy",
+                    "Fighting",
+                    "Fire",
+                    "Grass",
+                    "Lightning",
+                    "Psychic",
+                    "Water"
+                  ]
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "retreat": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "costs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["Colorless"]
+                  }
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "variant": {
+            "type": "string",
+            "enum": ["Normal", "Holo"]
+          },
+          "rule": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

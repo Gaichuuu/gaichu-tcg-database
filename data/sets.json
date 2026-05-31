@@ -381,5 +381,40 @@
       "illustrator": "Alex Roh"
     },
     "total_cards_count": 60
+  },
+  {
+    "id": "dcf02543-3a5d-4151-a1ac-078ef87a9453",
+    "series_short_name": "sm",
+    "series_id": "5500b2b5-6364-4b35-8cbc-bf9db0043a02",
+    "short_name": "set1",
+    "sort_by": 1,
+    "name": "Sample Edition",
+    "logo": "https://gaichu.b-cdn.net/sm/set1/smSet1.jpg?v=2",
+    "description": "The Somethingmon sample edition include 3 cards per pack with at least 1 guaranteed foil. The 27 base cards can exist as Common, Rainbow, Textured, and Starry.",
+    "keywords": [
+      "Somethingmon Set One",
+      "KaijinArt",
+      "Pokemon parody cards",
+      "Charsiu",
+      "Peeachoo",
+      "Somethingmon Power"
+    ],
+    "pack_art": {
+      "url": "https://gaichu.b-cdn.net/sm/set1/pack01.jpg",
+      "frontDescription": "SOMETHINGMON!\nI think that's the name\nI KNOW NOTHING ABOUT THIS GAME! So I assumed the best I can lmao.\nDEFINITELY TOTALLY NOT INSPIRED BY SOMEONE ELSE!\n全新!\nOh look new chase cards!\n3 TRADING CARDS\n2 common + 1 foil\n29 cards to collect\n2025 Somethingmon • Sample edition\n**For playplay only. Don't stupid go tournament with this.",
+      "illustrator": "KaijinArt",
+      "packs": [
+        {
+          "label": "Front of Pack",
+          "url": "https://gaichu.b-cdn.net/sm/set1/pack01.jpg"
+        }
+      ]
+    },
+    "card_back": {
+      "url": "https://gaichu.b-cdn.net/sm/set1/00.jpg",
+      "text": "SOMETHINGMON\nI think that's the name\n@kaijinart\n© 2025 Somethingmon • 1st Edition\nBarangan buatan Malaysia",
+      "illustrator": "KaijinArt"
+    },
+    "total_cards_count": 29
   }
 ]

@@ -129,6 +129,10 @@ const CardDetailPage: React.FC = () => {
 
                 {card.hp && <CardDetailRow label="HP">{card.hp}</CardDetailRow>}
 
+                {card.lvl && (
+                  <CardDetailRow label="Lv.">{card.lvl}</CardDetailRow>
+                )}
+
                 {card.lp_alt && (
                   <CardDetailRow label="LP">{card.lp_alt}</CardDetailRow>
                 )}

@@ -93,10 +93,16 @@ describe("parseSortAndNameRegex", () => {
     );
   });
 
-  it("throws when name part is empty", () => {
-    expect(() => parseSortAndNameRegex("12_")).toThrowError(
-      /Invalid format: 12_/,
-    );
+  it("parses sortBy with an empty name part", () => {
+    const { sortBy, cardName } = parseSortAndNameRegex("12_");
+    expect(sortBy).toBe(12);
+    expect(cardName).toBe("");
+  });
+
+  it("parses sortBy with an empty name part for cards without a name", () => {
+    const { sortBy, cardName } = parseSortAndNameRegex("20_");
+    expect(sortBy).toBe(20);
+    expect(cardName).toBe("");
   });
 });
 
