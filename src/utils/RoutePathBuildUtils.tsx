@@ -202,23 +202,11 @@ export function parseSortAndNameRegex(
   const strict = opts?.strict ?? true;
   const s = (input ?? "").trim();
 
-  // Name part is optional: a card whose name slugifies to nothing (e.g. a
-  // CJK-only name) produces a slug like "20_". Cards are matched on sortBy, so
-  // we must still parse the sortBy out rather than rejecting the whole slug.
   const m = s.match(/^(\d+(?:\.\d+)?)_(.*)$/);
   if (m) {
-    const sortBy = Number(m[1]);
-    const cardName = m[2];
-    if (!Number.isFinite(sortBy)) {
-      if (strict) throw new Error(`Invalid format: ${input}`);
-      return { cardName: s };
-    }
-    return { sortBy, cardName };
+    return { sortBy: Number(m[1]), cardName: m[2] };
   }
 
-  if (strict) {
-    throw new Error(`Invalid format: ${input}`);
-  } else {
-    return { cardName: s };
-  }
+  if (strict) throw new Error(`Invalid format: ${input}`);
+  return { cardName: s };
 }

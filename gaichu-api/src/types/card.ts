@@ -99,6 +99,7 @@ export interface RawCard {
   retreat?: RetreatEntry[];
   parody?: string;
   hp?: string;
+  lvl?: string;
   lp?: string;
   lp_alt?: string;
   traits?: string[];
