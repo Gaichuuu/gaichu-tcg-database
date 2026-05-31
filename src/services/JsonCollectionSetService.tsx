@@ -88,6 +88,7 @@ const convertToSetAndCard = (
       thumb: card.thumb,
       variant: card.variant,
       hp: card.hp,
+      lvl: card.lvl,
       effect: card.effect,
       note: card.note,
       illustrators: [...card.illustrators],

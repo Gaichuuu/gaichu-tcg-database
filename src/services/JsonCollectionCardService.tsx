@@ -13,6 +13,7 @@ import ashCardList from "../../data/ash/cards.json";
 import ozCardList from "../../data/oz/cards.json";
 import disgruntledCardList from "../../data/disgruntled/cards.json";
 import tygaduCardList from "../../data/tygadu/cards.json";
+import smCardList from "../../data/sm/cards.json";
 import setsList from "../../data/sets.json";
 import { CollectionCard } from "@/types/CollectionCard";
 import { SeriesShortName } from "./CollectionSeriesService";
@@ -28,7 +29,6 @@ interface JsonSet {
 
 const setsById = new Map((setsList as JsonSet[]).map((s) => [s.id, s]));
 
-// FIXME: added hard code "series_short_name" to read json files wich have series_short_name path
 export const SerieCardList: Record<SeriesShortName, unknown[]> = {
   [SeriesShortName.wm]: wmCardList,
   [SeriesShortName.mz]: mzCardList,
@@ -36,6 +36,7 @@ export const SerieCardList: Record<SeriesShortName, unknown[]> = {
   [SeriesShortName.oz]: ozCardList,
   [SeriesShortName.disgruntled]: disgruntledCardList,
   [SeriesShortName.tygadu]: tygaduCardList,
+  [SeriesShortName.sm]: smCardList,
 };
 
 export const getJsonCardList = (
@@ -198,6 +199,7 @@ const CardSchemaRaw = z.object({
 
   parody: z.string().optional(),
   hp: z.string().optional(),
+  lvl: z.string().optional(),
   lp: z.string().optional(),
   lp_alt: z.string().optional(),
   traits: z.array(z.string()).optional(),

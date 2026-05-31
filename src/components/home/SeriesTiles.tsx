@@ -4,7 +4,7 @@ import { useSeries } from "@/hooks/useCollection";
 import { getSetListPath } from "@/utils/RoutePathBuildUtils";
 import Tile from "@/components/TileComponents/Tile";
 
-const FEATURED_SERIES = ["ash", "disgruntled", "mz", "oz", "wm", "tygadu"];
+const FEATURED_SERIES = ["ash", "sm", "mz", "oz", "wm", "tygadu"];
 
 const MAX_FEATURED = 6;
 

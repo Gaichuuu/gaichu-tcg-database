@@ -14,6 +14,7 @@
  */
 
 import admin from "firebase-admin";
+import { execFileSync } from "child_process";
 import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -47,10 +48,15 @@ function initFirebase() {
   }
 
   // Try to use service account key from config directory
-  const serviceAccountPath = join(__dirname, "../config/serviceAccountKey.json");
+  const serviceAccountPath = join(
+    __dirname,
+    "../config/serviceAccountKey.json",
+  );
 
   try {
-    const serviceAccount = JSON.parse(readFileSync(serviceAccountPath, "utf-8"));
+    const serviceAccount = JSON.parse(
+      readFileSync(serviceAccountPath, "utf-8"),
+    );
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
     });
@@ -65,7 +71,7 @@ function initFirebase() {
 }
 
 async function loadPricesFromFirestore(
-  db: admin.firestore.Firestore
+  db: admin.firestore.Firestore,
 ): Promise<Map<string, number>> {
   console.log("Loading prices from Firestore...");
 
@@ -89,7 +95,7 @@ async function loadPricesFromFirestore(
 
 function updateCardsJson(
   series: string,
-  pricesMap: Map<string, number>
+  pricesMap: Map<string, number>,
 ): { updated: number; total: number } {
   const filePath = join(DATA_DIR, series, "cards.json");
 
@@ -124,8 +130,7 @@ function updateCardsJson(
     }
   }
 
-  // Write back to file with nice formatting
-  writeFileSync(filePath, JSON.stringify(cards, null, 2) + "\n", "utf-8");
+  writeFileSync(filePath, JSON.stringify(cards) + "\n", "utf-8");
 
   console.log(`  Updated: ${updated}/${cards.length} cards with prices`);
   return { updated, total: cards.length };
@@ -151,7 +156,12 @@ async function main() {
   console.log(`Cards with prices: ${totalUpdated}`);
   console.log(`Cards without prices: ${totalCards - totalUpdated}`);
 
-  // Exit cleanly
+  // Format files with prettier
+  const filePaths = PRICED_SERIES.map((s) => join(DATA_DIR, s, "cards.json"));
+  execFileSync("npx", ["prettier", "--write", ...filePaths], {
+    stdio: "inherit",
+  });
+
   process.exit(0);
 }
 

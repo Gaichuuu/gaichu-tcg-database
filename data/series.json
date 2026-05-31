@@ -150,5 +150,29 @@
         "url": "https://katuramen.myshopify.com/"
       }
     ]
+  },
+  {
+    "id": "5500b2b5-6364-4b35-8cbc-bf9db0043a02",
+    "short_name": "sm",
+    "name": "Somethingmon",
+    "logo": "https://gaichu.b-cdn.net/sm/smLogo.png?v=0",
+    "sort_by": 7,
+    "description": "Grandpa Kai releases more parody cards, and finally something other than YGO.",
+    "keywords": [
+      "Somethingmon",
+      "KaijinArt",
+      "Pokemon parody",
+      "bootleg cards",
+      "parody trading cards",
+      "custom Pokemon cards",
+      "Somethingmon Power"
+    ],
+    "links": [
+      {
+        "type": "store",
+        "label": "Store",
+        "url": "https://kaijinart.bigcartel.com/"
+      }
+    ]
   }
 ]

@@ -55,6 +55,7 @@ export interface RawCollectionCard {
   favorite_food?: I18nInput;
   parody?: string;
   hp?: string;
+  lvl?: string;
   lp?: string;
   traits?: string[];
   terra?: Terra[];
@@ -97,6 +98,7 @@ export interface CollectionCard {
   favorite_food?: Partial<Record<LocaleKey, string>>;
   parody?: string;
   hp?: string;
+  lvl?: string;
   lp?: string;
   lp_alt?: string;
   traits?: string[];

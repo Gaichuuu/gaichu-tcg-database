@@ -202,20 +202,11 @@ export function parseSortAndNameRegex(
   const strict = opts?.strict ?? true;
   const s = (input ?? "").trim();
 
-  const m = s.match(/^(\d+(?:\.\d+)?)_(.+)$/);
+  const m = s.match(/^(\d+(?:\.\d+)?)_(.*)$/);
   if (m) {
-    const sortBy = Number(m[1]);
-    const cardName = m[2];
-    if (!Number.isFinite(sortBy) || !cardName) {
-      if (strict) throw new Error(`Invalid format: ${input}`);
-      return { cardName: s };
-    }
-    return { sortBy, cardName };
+    return { sortBy: Number(m[1]), cardName: m[2] };
   }
 
-  if (strict) {
-    throw new Error(`Invalid format: ${input}`);
-  } else {
-    return { cardName: s };
-  }
+  if (strict) throw new Error(`Invalid format: ${input}`);
+  return { cardName: s };
 }
