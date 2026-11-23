@@ -6,9 +6,14 @@ import PriceStatsTable from "./PriceStatsTable";
 interface PriceTableProps {
   cardId: string;
   seriesShortName: string;
+  lastKnownPrice?: number | null;
 }
 
-const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
+const PriceTable: React.FC<PriceTableProps> = ({
+  cardId,
+  seriesShortName,
+  lastKnownPrice,
+}) => {
   const { data, isLoading, error } = useEbayPrices(cardId, seriesShortName);
   return (
     <PriceStatsTable
@@ -16,6 +21,7 @@ const PriceTable: React.FC<PriceTableProps> = ({ cardId, seriesShortName }) => {
       isLoading={isLoading}
       error={!!error}
       priced={isPricedSeries(seriesShortName)}
+      lastKnownPrice={lastKnownPrice}
     />
   );
 };

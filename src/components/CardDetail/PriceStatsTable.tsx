@@ -9,6 +9,7 @@ interface PriceStatsTableProps {
   isLoading: boolean;
   error: boolean;
   priced: boolean;
+  lastKnownPrice?: number | null;
 }
 
 function formatPrice(price: number | null): string {
@@ -77,11 +78,42 @@ const Message: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   </div>
 );
 
+const EbayLink: React.FC<{ url?: string }> = ({ url }) =>
+  url ? (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${buttonClasses()} mt-3 w-full pt-px md:mt-auto`}
+    >
+      View on eBay
+    </a>
+  ) : null;
+
+const NoRecentSales: React.FC<{
+  data: EbayPriceData | null;
+  lastKnownPrice?: number | null;
+  message: string;
+}> = ({ data, lastKnownPrice, message }) => {
+  const hasLastKnown = typeof lastKnownPrice === "number" && lastKnownPrice > 0;
+  return (
+    <div className="flex h-full flex-col">
+      <Header note={data ? salesNote(data) : undefined} />
+      {hasLastKnown && (
+        <Line label="LAST KNOWN" value={formatUsd(lastKnownPrice)} total />
+      )}
+      <p className="text-secondaryText py-1.25 text-sm italic">{message}</p>
+      <EbayLink url={data?.ebay_search_url} />
+    </div>
+  );
+};
+
 const PriceStatsTable: React.FC<PriceStatsTableProps> = ({
   data,
   isLoading,
   error,
   priced,
+  lastKnownPrice,
 }) => {
   if (!priced) return <Message>Not available for this series</Message>;
 
@@ -101,8 +133,24 @@ const PriceStatsTable: React.FC<PriceStatsTableProps> = ({
     );
   }
 
-  if (error || !data) return <Message>No price data available</Message>;
-  if (data.sample_size === 0) return <Message>No recent sales found</Message>;
+  if (error || !data) {
+    return (
+      <NoRecentSales
+        data={null}
+        lastKnownPrice={lastKnownPrice}
+        message="No price data available"
+      />
+    );
+  }
+  if (data.sample_size === 0) {
+    return (
+      <NoRecentSales
+        data={data}
+        lastKnownPrice={lastKnownPrice}
+        message="No sales in the last 90 days"
+      />
+    );
+  }
 
   return (
     <div className="flex h-full flex-col">
@@ -113,16 +161,7 @@ const PriceStatsTable: React.FC<PriceStatsTableProps> = ({
       <Line label="HIGH" value={formatPrice(data.max_price)} />
       <Line label="AVERAGE" value={formatPrice(data.average_price)} />
 
-      {data.ebay_search_url && (
-        <a
-          href={data.ebay_search_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${buttonClasses()} mt-3 w-full pt-px md:mt-auto`}
-        >
-          View on eBay
-        </a>
-      )}
+      <EbayLink url={data.ebay_search_url} />
     </div>
   );
 };

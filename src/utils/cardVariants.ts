@@ -5,10 +5,22 @@ export function isHolo(card: CollectionCard): boolean {
   return (card.variant ?? "").toLowerCase().includes("holo");
 }
 
+const normalize = (s: string): string =>
+  s.toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+
+function attackSignature(card: CollectionCard): string {
+  return (card.attacks ?? [])
+    .filter((a) => (a.costs?.length ?? 0) > 0 || !!a.damage)
+    .map((a) => normalize(i18nToEnString(a.name)))
+    .sort()
+    .join(",");
+}
+
 export function variantKey(card: CollectionCard): string {
   const name = i18nToEnString(card.name).trim().toLowerCase();
   const parody = (card.parody ?? "").trim().toLowerCase();
-  return `${name}|${parody}`;
+  const hp = (card.hp ?? "").trim().toLowerCase();
+  return `${name}|${parody}|${hp}|${attackSignature(card)}`;
 }
 
 export function findVariants(

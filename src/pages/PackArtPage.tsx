@@ -150,6 +150,7 @@ const PackArtPage: React.FC = () => {
             <PackPriceLogPanel
               setId={set.id}
               seriesShortName={set.series_short_name}
+              packAveragePrice={set.pack_average_price}
             />
           )}
         </div>

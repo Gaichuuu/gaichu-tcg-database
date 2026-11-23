@@ -24,6 +24,8 @@ const PriceLogPanel: React.FC<PriceLogPanelProps> = ({
   const priced = isPricedSeries(seriesShortName);
   const { data, isLoading, error } = usePriceHistory(cardId, seriesShortName);
   const points = useMemo(() => selectChartPoints(data ?? []), [data]);
+  const lastKnownPrice =
+    averagePrice && averagePrice > 0 ? averagePrice : points.at(-1)?.value;
 
   if (!priced) {
     return (
@@ -46,7 +48,13 @@ const PriceLogPanel: React.FC<PriceLogPanelProps> = ({
       isLoading={isLoading && !data}
       error={!!error}
       fallbackAverage={averagePrice}
-      sales={<PriceTable cardId={cardId} seriesShortName={seriesShortName} />}
+      sales={
+        <PriceTable
+          cardId={cardId}
+          seriesShortName={seriesShortName}
+          lastKnownPrice={lastKnownPrice}
+        />
+      }
     />
   );
 };
