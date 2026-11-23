@@ -11,11 +11,13 @@ import PriceStatsTable from "./PriceStatsTable";
 interface PackPriceLogPanelProps {
   setId: string;
   seriesShortName: string;
+  packAveragePrice?: number;
 }
 
 const PackPriceLogPanel: React.FC<PackPriceLogPanelProps> = ({
   setId,
   seriesShortName,
+  packAveragePrice,
 }) => {
   const [range, setRange] = useState<PriceRange>("MAX");
   const priced = isPricedSeries(seriesShortName);
@@ -30,6 +32,10 @@ const PackPriceLogPanel: React.FC<PackPriceLogPanelProps> = ({
     error: currentError,
   } = usePackPrice(setId, seriesShortName);
   const points = useMemo(() => selectChartPoints(history ?? []), [history]);
+  const lastKnownPrice =
+    packAveragePrice && packAveragePrice > 0
+      ? packAveragePrice
+      : points.at(-1)?.value;
 
   if (!priced) return null;
 
@@ -49,6 +55,7 @@ const PackPriceLogPanel: React.FC<PackPriceLogPanelProps> = ({
           isLoading={currentLoading && !current}
           error={!!currentError}
           priced={priced}
+          lastKnownPrice={lastKnownPrice}
         />
       }
     />
