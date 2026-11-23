@@ -45,13 +45,16 @@ export function buildSearchText(card: CollectionCard, locale: Locale): string {
   return parts.join(" ").toLowerCase();
 }
 
-export function useCardSearch(rawQuery: string): {
+export function useCardSearch(
+  rawQuery: string,
+  enabled = true,
+): {
   results: CollectionCard[];
   isLoading: boolean;
   debouncedQuery: string;
 } {
   const [debouncedQuery, setDebouncedQuery] = useState(rawQuery);
-  const { cards, isLoading } = useAllCards();
+  const { cards, isLoading } = useAllCards({ enabled });
   const { locale } = useLocale();
 
   useEffect(() => {

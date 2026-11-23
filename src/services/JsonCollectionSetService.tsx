@@ -33,6 +33,8 @@ interface JsonSet {
   print_file_url?: string;
   buy_url?: string;
   total_cards_count?: number;
+  default_hidden?: boolean;
+  pack_average_price?: number;
 }
 
 export const getJsonSet = (seriesShortName: string): SetAndCard[] => {
@@ -59,6 +61,8 @@ const convertToSetAndCard = (
     pack_art: set.pack_art,
     card_back: set.card_back,
     total_cards_count: set.total_cards_count,
+    default_hidden: set.default_hidden,
+    pack_average_price: set.pack_average_price,
   },
   cards: cardList
     .filter(

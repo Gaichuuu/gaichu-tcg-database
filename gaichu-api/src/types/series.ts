@@ -8,6 +8,7 @@ export interface Series {
   id: string;
   short_name: string;
   name: string;
+  name_ja?: string;
   logo: string;
   sort_by: number;
   description?: string;

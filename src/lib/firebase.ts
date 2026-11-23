@@ -1,6 +1,5 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore/lite";
-import { getAnalytics, isSupported } from "firebase/analytics";
 import { IS_USE_STAGING_DATA } from "../services/Constants";
 
 const firebaseConfig = IS_USE_STAGING_DATA
@@ -25,4 +24,23 @@ const firebaseConfig = IS_USE_STAGING_DATA
 
 export const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 export const database = getFirestore(app);
-export const analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
+
+const whenIdle = (): Promise<void> =>
+  new Promise((resolve) => {
+    if (typeof window === "undefined") return resolve();
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(() => resolve(), { timeout: 3000 });
+    } else {
+      setTimeout(resolve, 1500);
+    }
+  });
+
+export const analytics = whenIdle()
+  .then(() => import("firebase/analytics"))
+  .then(async ({ getAnalytics, isSupported }) =>
+    (await isSupported()) ? getAnalytics(app) : null,
+  )
+  .catch((err) => {
+    console.error("Firebase Analytics failed to initialise", err);
+    return null;
+  });

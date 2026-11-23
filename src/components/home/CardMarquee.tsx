@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { slugify, buildCardDetailPath } from "@/utils/RoutePathBuildUtils";
 import { useShowcaseCards } from "@/hooks/useShowcaseCards";
 import { useImagesLoaded } from "@/hooks/useImagesLoaded";
+import { PriceTag } from "@/components/ui";
+import { cdnResized, CDN_WIDTH } from "@/utils/cdnImage";
 
 /** Pixels per second when auto-scrolling */
 const AUTO_SPEED = 50;
@@ -104,9 +106,26 @@ const CardMarquee: React.FC = () => {
       s.animFrame = requestAnimationFrame(tick);
     };
 
-    s.animFrame = requestAnimationFrame(tick);
-    return () => {
+    let running = false;
+    const start = () => {
+      if (running) return;
+      running = true;
+      s.lastTime = 0;
+      s.animFrame = requestAnimationFrame(tick);
+    };
+    const stop = () => {
+      running = false;
       cancelAnimationFrame(s.animFrame);
+    };
+    const io = new IntersectionObserver(([entry]) =>
+      entry.isIntersecting ? start() : stop(),
+    );
+    io.observe(el);
+    start();
+
+    return () => {
+      stop();
+      io.disconnect();
       ro.disconnect();
       mql.removeEventListener("change", onMotionChange);
       s.lastTime = 0;
@@ -211,11 +230,11 @@ const CardMarquee: React.FC = () => {
         role="region"
         aria-label="Loading showcase cards"
       >
-        <div className="flex gap-3 py-6">
+        <div className="flex gap-2.5 py-4">
           {Array.from({ length: 12 }).map((_, i) => (
             <div
               key={i}
-              className="bg-secondaryBorder aspect-5/7 h-56 shrink-0 animate-pulse rounded-xl sm:h-72"
+              className="bg-secondaryBorder border-secondaryBorder shadow-card aspect-5/7 h-56 shrink-0 animate-pulse rounded-[12px] border sm:h-72"
             />
           ))}
         </div>
@@ -235,7 +254,7 @@ const CardMarquee: React.FC = () => {
     >
       <div
         ref={containerRef}
-        className="flex w-max cursor-grab touch-pan-y gap-3 py-6 will-change-transform select-none"
+        className="flex w-max cursor-grab touch-pan-y gap-2.5 py-4 will-change-transform select-none"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -250,22 +269,24 @@ const CardMarquee: React.FC = () => {
               card.sortBy,
               slugify(card.name),
             )}
-            className="group relative block shrink-0"
+            className="group relative block shrink-0 transition-transform duration-300 outline-none hover:scale-[1.04] focus-visible:scale-[1.04]"
             title={card.name}
             draggable={false}
             onClick={handleClick}
           >
             <img
-              src={card.image}
+              src={cdnResized(card.image, CDN_WIDTH.card)}
               alt={card.name}
               fetchPriority="low"
-              className="border-secondaryBorder bg-secondaryBg aspect-5/7 h-56 rounded-xl border object-contain transition-transform duration-200 group-hover:scale-110 sm:h-72"
+              className="border-secondaryBorder bg-secondaryBorder shadow-card group-focus-visible:border-hoverBorder h-56 w-auto rounded-[12px] border transition-colors duration-150 sm:h-72"
               draggable={false}
             />
             {card.averagePrice != null && card.averagePrice > 0 && (
-              <span className="absolute top-1 right-1 rounded bg-overlayBg/70 px-1.5 py-0.5 text-xs text-primaryAltText">
-                ${card.averagePrice.toFixed(2)}
-              </span>
+              <PriceTag
+                value={card.averagePrice}
+                size="md"
+                className="absolute top-1.5 right-1.5 z-10"
+              />
             )}
           </Link>
         ))}

@@ -191,7 +191,10 @@
             }
           },
 
-          "image": { "type": "string", "format": "uri" },
+          "image": {
+            "type": "string",
+            "anyOf": [{ "format": "uri" }, { "maxLength": 0 }]
+          },
           "thumb": { "type": "string", "format": "uri" },
 
           "limit": { "type": "integer" },

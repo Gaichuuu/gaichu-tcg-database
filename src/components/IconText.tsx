@@ -97,6 +97,8 @@ export default function IconText({
           <img
             key={`icon-${match.index}`}
             src={iconUrl}
+            loading="lazy"
+            decoding="async"
             alt={formatIconName(iconName)}
             width={20}
             style={{

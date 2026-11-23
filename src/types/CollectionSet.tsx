@@ -31,4 +31,6 @@ export interface CollectionSet {
   buy_url?: string;
   pack_art?: PackArt;
   card_back?: CardBack;
+  default_hidden?: boolean;
+  pack_average_price?: number;
 }

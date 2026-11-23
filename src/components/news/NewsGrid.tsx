@@ -1,9 +1,15 @@
 import { useEffect, useRef } from "react";
-import { PageLoading, PageError } from "@/components/PageStates";
+import { PageError } from "@/components/PageStates";
 import { useInfiniteNews } from "@/hooks/useNews";
-import { NewsCard } from "./NewsCard";
+import { NewsCard, NewsCardSkeleton } from "./NewsCard";
 
-export function NewsGrid({ q }: { q: string }) {
+export function NewsGrid({
+  q,
+  onCount,
+}: {
+  q: string;
+  onCount?: (count: number) => void;
+}) {
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
     useInfiniteNews(q, 12);
   const sentinel = useRef<HTMLDivElement | null>(null);
@@ -20,31 +26,51 @@ export function NewsGrid({ q }: { q: string }) {
     return () => io.disconnect();
   }, [hasNextPage, fetchNextPage]);
 
-  if (status === "pending") return <PageLoading />;
-  if (status === "error") return <PageError message="Failed to load news." />;
-
   const posts = data?.pages.flatMap((p) => p.items) ?? [];
+
+  useEffect(() => {
+    if (status === "success") onCount?.(posts.length);
+  }, [status, posts.length, onCount]);
+
+  if (status === "pending") {
+    return (
+      <div
+        role="status"
+        aria-busy="true"
+        className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <span className="sr-only">Loading news…</span>
+        {Array.from({ length: 6 }).map((_, i) => (
+          <NewsCardSkeleton key={i} />
+        ))}
+      </div>
+    );
+  }
+  if (status === "error") return <PageError message="Failed to load news." />;
 
   if (posts.length === 0) {
     return (
       <div className="text-secondaryText py-12 text-center">
-        {q ? `No news found for "${q}"` : "No news available."}
+        {q ? `No news found for “${q}”.` : "No news available."}
       </div>
     );
   }
 
   return (
     <>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((p) => (
-          <NewsCard key={p.id} post={p} />
+          <NewsCard key={p.id} post={p} headingLevel={2} />
         ))}
       </div>
-      <div ref={sentinel} className="flex h-24 items-center justify-center">
+      <div
+        ref={sentinel}
+        className="font-display flex h-20 items-center justify-center text-[13px]"
+      >
         {isFetchingNextPage ? (
           <span className="text-secondaryText">Loading more…</span>
         ) : hasNextPage ? null : (
-          <span className="text-secondaryText">You’ve reached the end.</span>
+          <span className="text-mutedLabel">You’ve reached the end.</span>
         )}
       </div>
     </>

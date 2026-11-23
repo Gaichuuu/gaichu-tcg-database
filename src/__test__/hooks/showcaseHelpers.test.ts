@@ -1,8 +1,11 @@
 // Mock dependencies before importing functions
 vi.mock("@/hooks/useCollection", () => ({ useSeries: vi.fn() }));
 vi.mock("@/services/CollectionSetService", () => ({ fetchSets: vi.fn() }));
-vi.mock("@/services/JsonCollectionSetService", () => ({ getJsonSet: vi.fn() }));
-vi.mock("@/services/Constants", () => ({ IS_USE_LOCAL_DATA: false }));
+vi.mock("@/services/localData", () => ({ loadJsonSet: vi.fn() }));
+vi.mock("@/services/Constants", () => ({
+  IS_USE_LOCAL_DATA: false,
+  IS_USE_STAGING_DATA: false,
+}));
 
 import { hasValidImage, shuffle, toEnName } from "@/hooks/useShowcaseCards";
 import { makeCard } from "@/__test__/__mock__/collectionCardMock";
@@ -13,13 +16,13 @@ describe("hasValidImage", () => {
     expect(hasValidImage(card)).toBe(true);
   });
 
-  it("returns false for image with asterisk", () => {
-    const card = makeCard({ image: "https://example.com/*card.png" });
-    expect(hasValidImage(card)).toBe(false);
+  it("returns true for a star-rarity '*' filename (a real image)", () => {
+    const card = makeCard({ image: "https://example.com/*.jpg" });
+    expect(hasValidImage(card)).toBe(true);
   });
 
-  it("returns false for image with asterisk in middle", () => {
-    const card = makeCard({ image: "https://example.com/card*.png" });
+  it("returns false for a bare '*' sentinel", () => {
+    const card = makeCard({ image: "*" });
     expect(hasValidImage(card)).toBe(false);
   });
 
@@ -107,7 +110,9 @@ describe("toEnName", () => {
   });
 
   it("handles string input", () => {
-    expect(toEnName("Fire Dragon" as unknown as Record<string, string>)).toBe("Fire Dragon");
+    expect(toEnName("Fire Dragon" as unknown as Record<string, string>)).toBe(
+      "Fire Dragon",
+    );
   });
 
   it("prefers en over ja when both present", () => {

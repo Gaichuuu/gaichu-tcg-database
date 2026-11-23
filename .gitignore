@@ -33,6 +33,11 @@ CLAUDE.md
 scripts/temp/
 .deploy.env
 .ca.env
+mockups/
+.impeccable/
+docs/
+DESIGN.md
+PRODUCT.md
 
 # Build artifacts
 gaichu-api/lib

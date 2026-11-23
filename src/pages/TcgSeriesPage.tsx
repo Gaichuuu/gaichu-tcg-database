@@ -1,22 +1,20 @@
-import SeriesList from "@/components/ListComponent/SeriesListComponent";
+import SeriesList, {
+  SERIES_GRID_CLASSES,
+} from "@/components/ListComponent/SeriesListComponent";
 import { PageError } from "@/components/PageStates";
 import { useSeries } from "@/hooks/useCollection";
-import { getSetListPath } from "@/utils/RoutePathBuildUtils";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 const SeriesGridSkeleton: React.FC = () => (
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-    {Array.from({ length: 5 }).map((_, i) => (
+  <div className={SERIES_GRID_CLASSES} aria-hidden>
+    {Array.from({ length: 7 }).map((_, i) => (
       <div
         key={i}
-        className="bg-tileBg border-primaryBorder flex animate-pulse items-center justify-center rounded-lg border p-4 shadow-lg"
+        className="bevel-tile bevel-tile-static bevel-tile-tall animate-pulse"
       >
-        <div className="flex w-full flex-col items-center">
-          <div className="bg-secondaryBorder h-20 w-full rounded" />
-          <div className="bg-secondaryBorder mt-4 h-5 w-1/2 rounded" />
-          <div className="bg-secondaryBorder mt-2 h-4 w-1/3 rounded" />
-        </div>
+        <div className="bg-secondaryBorder h-18 w-full" />
+        <div className="bg-secondaryBorder h-3.5 w-1/2" />
+        <div className="bg-secondaryBorder -mt-1.5 h-2.5 w-[30%]" />
       </div>
     ))}
   </div>
@@ -24,12 +22,11 @@ const SeriesGridSkeleton: React.FC = () => (
 
 const TcgSeriesPage: React.FC = () => {
   const { data, isLoading, error } = useSeries();
-  const navigate = useNavigate();
 
   if (error) return <PageError message="Failed to load series." />;
 
   return (
-    <div className="container mx-auto p-0">
+    <div className="flex flex-col gap-6 pb-2">
       <title>Card Series - Gaichu</title>
       <meta
         name="description"
@@ -41,16 +38,17 @@ const TcgSeriesPage: React.FC = () => {
         content="Browse all card series including WrennyMoo, OpenZoo, MetaZoo, and more."
       />
 
-      <h3 className="mb-2">Series</h3>
+      <h1 className="font-jp text-accentAmber text-[30px] leading-[1.2] font-normal text-shadow-none">
+        <span aria-hidden lang="ja">
+          シリーズ
+        </span>
+        <span className="sr-only">Card series</span>
+      </h1>
+
       {isLoading && !data ? (
         <SeriesGridSkeleton />
       ) : (
-        <SeriesList
-          series={data ?? []}
-          onClickSeries={(series) => {
-            navigate(getSetListPath(series.short_name));
-          }}
-        />
+        <SeriesList series={data ?? []} />
       )}
     </div>
   );

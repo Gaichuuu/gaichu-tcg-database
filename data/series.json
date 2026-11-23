@@ -102,6 +102,11 @@
         "type": "steam",
         "label": "Tabletop Simulator Mod",
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3653472444"
+      },
+      {
+        "type": "thegamecrafter",
+        "label": "Game Crafter",
+        "url": "https://www.thegamecrafter.com/games/openzoo-legacy"
       }
     ]
   },
@@ -109,6 +114,7 @@
     "id": "930f2f48-d0ce-44f1-95b4-ed0b291f43ad",
     "short_name": "wm",
     "name": "WrennyMoo",
+    "name_ja": "レニムー",
     "logo": "https://gaichu.b-cdn.net/wm/wmLogo.png",
     "sort_by": 5,
     "description": "Discontinued parody series featuring distinctive \"Derpy\" Pokémon illustrations. Now a cult collector's item.",
@@ -127,6 +133,7 @@
     "id": "378bb7da-fad9-4790-906b-143869cd0594",
     "short_name": "tygadu",
     "name": "Tygadu",
+    "name_ja": "テイガーパク",
     "logo": "https://gaichu.b-cdn.net/tygadu/tygaduLogo.png",
     "sort_by": 6,
     "description": "A mysterious new series from WrennyMoo creator Alex Roh, featuring derpy hand-drawn characters from your favorite anime.",

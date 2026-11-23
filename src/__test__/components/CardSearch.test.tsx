@@ -47,7 +47,7 @@ describe("CardSearch", () => {
 
   it("renders desktop search input with placeholder", () => {
     renderWithProviders(<CardSearch />);
-    const input = screen.getByPlaceholderText("Search cards…");
+    const input = screen.getByPlaceholderText("search cards");
     expect(input).toBeInTheDocument();
   });
 
@@ -102,11 +102,15 @@ describe("CardSearch", () => {
     renderWithProviders(<CardSearch />);
 
     const input = screen.getAllByRole("combobox")[0];
-    expect(screen.queryByText("Fire Dragon")).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("option", { name: /Fire Dragon/ }),
+    ).not.toBeInTheDocument();
 
     typeInSearch(input, "fire");
 
-    expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
+    expect(
+      screen.getByRole("option", { name: /Fire Dragon/ }),
+    ).toBeInTheDocument();
   });
 
   it("input updates as user types", () => {
@@ -142,8 +146,12 @@ describe("CardSearch", () => {
     const input = screen.getAllByRole("combobox")[0];
     typeInSearch(input, "dragon");
 
-    expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
-    expect(screen.getByText("Thunder Mouse")).toBeInTheDocument();
+    expect(
+      screen.getByRole("option", { name: /Fire Dragon/ }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("option", { name: /Thunder Mouse/ }),
+    ).toBeInTheDocument();
   });
 
   it("result items display card name", () => {
@@ -168,7 +176,9 @@ describe("CardSearch", () => {
     const input = screen.getAllByRole("combobox")[0];
     typeInSearch(input, "fire");
 
-    expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
+    expect(
+      screen.getByRole("option", { name: /Fire Dragon/ }),
+    ).toBeInTheDocument();
     expect(screen.getByText(/ash · base/i)).toBeInTheDocument();
   });
 
@@ -191,11 +201,11 @@ describe("CardSearch", () => {
     typeInSearch(input, "card");
 
     fireEvent.keyDown(input, { key: "ArrowDown" });
-    const firstItem = screen.getByText("Card One").closest('[role="option"]');
+    const firstItem = screen.getByRole("option", { name: /Card One/ });
     expect(firstItem).toHaveAttribute("aria-selected", "true");
 
     fireEvent.keyDown(input, { key: "ArrowDown" });
-    const secondItem = screen.getByText("Card Two").closest('[role="option"]');
+    const secondItem = screen.getByRole("option", { name: /Card Two/ });
     expect(secondItem).toHaveAttribute("aria-selected", "true");
 
     fireEvent.keyDown(input, { key: "ArrowUp" });
@@ -218,11 +228,15 @@ describe("CardSearch", () => {
     const input = screen.getAllByRole("combobox")[0];
     typeInSearch(input, "fire");
 
-    expect(screen.getByText("Fire Dragon")).toBeInTheDocument();
+    expect(
+      screen.getByRole("option", { name: /Fire Dragon/ }),
+    ).toBeInTheDocument();
 
     fireEvent.keyDown(input, { key: "Escape" });
 
-    expect(screen.queryByText("Fire Dragon")).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("option", { name: /Fire Dragon/ }),
+    ).not.toBeInTheDocument();
   });
 
   it("mobile search pill button is in the DOM", () => {

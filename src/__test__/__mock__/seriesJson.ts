@@ -13,6 +13,7 @@ export const seriesJsonMock: CollectionSeries[] = [
     short_name: "test_3_short_name",
     logo: "mgc-test_3.png",
     name: "test_3",
+    name_ja: "テスト3",
     sort_by: 3,
   },
   {

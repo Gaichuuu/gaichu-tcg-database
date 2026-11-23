@@ -1,4 +1,5 @@
-import { Component, type ReactNode } from "react";
+import { Component, type ErrorInfo, type ReactNode } from "react";
+import { buttonClasses } from "@/components/ui/buttonClasses";
 
 interface Props {
   children: ReactNode;
@@ -20,6 +21,10 @@ class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error };
   }
 
+  componentDidCatch(error: Error, info: ErrorInfo) {
+    console.error("ErrorBoundary caught an error", error, info.componentStack);
+  }
+
   handleReset = () => {
     this.setState({ hasError: false, error: null });
   };
@@ -31,28 +36,40 @@ class ErrorBoundary extends Component<Props, State> {
       }
 
       return (
-        <div className="flex min-h-[50vh] flex-col items-center justify-center p-8">
-          <h2 className="text-errorText mb-4 text-xl font-bold">
+        <section
+          role="alert"
+          className="mx-auto flex min-h-[50vh] max-w-160 flex-col items-center justify-center gap-5 py-12 text-center"
+        >
+          <h2 className="font-display text-primaryText flex flex-wrap items-baseline justify-center gap-x-3.5 text-[30px] leading-[1.2] font-bold [text-shadow:2px_2px_0_rgba(0,0,0,0.55)]">
             Something went wrong
+            <span
+              aria-hidden
+              lang="ja"
+              className="font-jp text-accentAmber text-[22px] font-normal text-shadow-none"
+            >
+              エラー
+            </span>
           </h2>
-          <p className="text-secondaryText mb-6 max-w-md text-center">
+          <p className="text-secondaryText max-w-md text-pretty">
             An unexpected error occurred. Please try refreshing the page.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center gap-2">
             <button
+              type="button"
               onClick={this.handleReset}
-              className="bg-interactiveText rounded px-4 py-2 text-primaryAltText"
+              className={buttonClasses()}
             >
               Try again
             </button>
             <button
+              type="button"
               onClick={() => window.location.reload()}
-              className="border-secondaryBorder rounded border px-4 py-2"
+              className={buttonClasses("ghost")}
             >
               Refresh page
             </button>
           </div>
-        </div>
+        </section>
       );
     }
 

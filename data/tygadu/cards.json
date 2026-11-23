@@ -418,7 +418,7 @@
     "illustrators": ["Alex Roh"],
     "rarity": "Common",
     "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
-    "hp": "—",
+    "hp": "N/A",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/14.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/14-thumb.jpg",
     "favorite_food": { "en": "Sushi and beer", "ja": "寿司とビール" },
@@ -966,7 +966,7 @@
         "costs": ["BW"]
       }
     ],
-    "average_price": 35.86
+    "average_price": 26.43
   },
   {
     "id": "93a034db-611b-468a-b350-14d4dbb24f93",
@@ -997,7 +997,7 @@
         "costs": ["Flower", "Star"]
       }
     ],
-    "average_price": 35
+    "average_price": 26.66
   },
   {
     "id": "441d56c4-ee32-41a5-9622-06e96ed01ae7",
@@ -1028,7 +1028,7 @@
         "costs": ["Eye", "Triangle"]
       }
     ],
-    "average_price": 21.5
+    "average_price": 17.38
   },
   {
     "id": "6405854b-922d-410b-a358-6d6eebccbd92",
@@ -1062,7 +1062,7 @@
         "costs": ["Heart", "Triangle"]
       }
     ],
-    "average_price": 28.75
+    "average_price": 22.49
   },
   {
     "id": "0f656ed2-41d8-42ac-90fe-614ad9fd6134",
@@ -1092,7 +1092,7 @@
         "costs": ["BW"]
       }
     ],
-    "average_price": 38.2
+    "average_price": 21.63
   },
   {
     "id": "bbda797d-dca5-4e29-aed3-ef55b68271da",
@@ -1123,7 +1123,7 @@
         "costs": ["Star", "Heart"]
       }
     ],
-    "average_price": 27
+    "average_price": 18.49
   },
   {
     "id": "c0721896-b3f0-4aad-932b-733e4db50f63",
@@ -1249,7 +1249,7 @@
         "costs": ["Star", "Flower"]
       }
     ],
-    "average_price": 26.96
+    "average_price": 21.66
   },
   {
     "id": "75f8bced-ed78-487e-afb1-e7554c66d72f",
@@ -1280,7 +1280,7 @@
         "costs": ["Eye"]
       }
     ],
-    "average_price": 23.5
+    "average_price": 16.33
   },
   {
     "id": "24905b89-b125-448d-b5ca-3c76a3d65e25",
@@ -1314,7 +1314,7 @@
         "costs": ["Star"]
       }
     ],
-    "average_price": 16.25
+    "average_price": 15
   },
   {
     "id": "01f6746d-d2f3-4168-b412-b6a80a5716ae",
@@ -1357,7 +1357,7 @@
     "illustrators": ["Alex Roh"],
     "rarity": "Rare",
     "set_ids": ["1a1863ec-60be-44e3-b434-4ef43c41cb60"],
-    "hp": "—",
+    "hp": "N/A",
     "image": "https://gaichu.b-cdn.net/tygadu/set1/44.jpg",
     "thumb": "https://gaichu.b-cdn.net/tygadu/set1/44-thumb.jpg",
     "favorite_food": { "en": "Sushi and beer", "ja": "寿司とビール" },
@@ -1375,7 +1375,7 @@
         "costs": ["Eye"]
       }
     ],
-    "average_price": 30
+    "average_price": 20.5
   },
   {
     "id": "1796f111-0f5d-4c31-8886-fed2088474da",
@@ -1406,7 +1406,7 @@
         "costs": ["Triangle"]
       }
     ],
-    "average_price": 24.83
+    "average_price": 18.44
   },
   {
     "id": "bc6fc3eb-bd1d-4e63-8117-fb14c04c81a8",
@@ -1437,7 +1437,7 @@
         "costs": ["Flower", "Triangle"]
       }
     ],
-    "average_price": 0
+    "average_price": 21.33
   },
   {
     "id": "6f8ad5d4-4db4-41b9-a9d6-92b4d3f59b76",
@@ -1497,7 +1497,7 @@
         "costs": ["BW"]
       }
     ],
-    "average_price": 29
+    "average_price": 23.33
   },
   {
     "id": "1aeded9e-4ad5-4838-aea9-1b0b6cc1af4d",
@@ -1528,7 +1528,7 @@
         "costs": ["Star", "BW"]
       }
     ],
-    "average_price": 45.17
+    "average_price": 60.16
   },
   {
     "id": "5521318e-5c10-4b2b-860e-e789e9f6a157",
@@ -1559,7 +1559,7 @@
         "costs": ["Heart"]
       }
     ],
-    "average_price": 0
+    "average_price": 17
   },
   {
     "id": "5af09eb5-eff1-44af-9de5-8bb6e45f961d",
@@ -1590,7 +1590,7 @@
         "costs": ["Triangle", "Heart"]
       }
     ],
-    "average_price": 19.66
+    "average_price": 16.33
   },
   {
     "id": "7ee89e06-6b0f-43d9-bf7c-bbb5ae315e24",
@@ -1624,7 +1624,7 @@
         "costs": ["Eye"]
       }
     ],
-    "average_price": 0
+    "average_price": 16.99
   },
   {
     "id": "22b1449f-df78-4942-98dd-d2fee0fb854c",
@@ -1655,7 +1655,7 @@
         "costs": ["Eye", "BW"]
       }
     ],
-    "average_price": 16.93
+    "average_price": 11.92
   },
   {
     "id": "0ca09e23-d1f4-43a6-a637-5c25743f89f9",
@@ -1686,7 +1686,7 @@
         "costs": ["Flower", "Star"]
       }
     ],
-    "average_price": 0
+    "average_price": 17
   },
   {
     "id": "13d95950-71d8-46dc-b0ba-09398defa002",
@@ -1720,7 +1720,7 @@
         "costs": ["Star"]
       }
     ],
-    "average_price": 18
+    "average_price": 17
   },
   {
     "id": "f649100b-ef16-4896-a4b8-1388033429eb",
@@ -1813,7 +1813,7 @@
         "costs": ["Star", "BW"]
       }
     ],
-    "average_price": 23.13
+    "average_price": 16.25
   },
   {
     "id": "a9d292bb-934e-41ed-a250-027a7872998b",
@@ -1844,7 +1844,7 @@
         "costs": ["Heart", "Flower"]
       }
     ],
-    "average_price": 20.16
+    "average_price": 21.37
   },
   {
     "id": "f46756fc-87e4-4336-bbeb-0a926e44c293",
@@ -1875,6 +1875,6 @@
         "costs": ["Heart"]
       }
     ],
-    "average_price": 18.66
+    "average_price": 19.46
   }
 ]

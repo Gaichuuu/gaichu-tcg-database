@@ -5,6 +5,7 @@ import {
   PageNotFound,
   PageEmpty,
 } from "@/components/PageStates";
+import { renderWithProviders } from "@/__test__/testUtils";
 
 describe("PageStates", () => {
   describe("PageLoading", () => {
@@ -35,12 +36,17 @@ describe("PageStates", () => {
 
   describe("PageNotFound", () => {
     it("renders default message", () => {
-      render(<PageNotFound />);
-      expect(screen.getByText("Not found.")).toBeInTheDocument();
+      renderWithProviders(<PageNotFound />);
+      expect(
+        screen.getByText(/Nothing lives at this address/),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole("link", { name: "Browse cards" }),
+      ).toHaveAttribute("href", "/cards");
     });
 
     it("renders custom message when provided", () => {
-      render(<PageNotFound message="Page does not exist." />);
+      renderWithProviders(<PageNotFound message="Page does not exist." />);
       expect(screen.getByText("Page does not exist.")).toBeInTheDocument();
     });
   });

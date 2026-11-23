@@ -37,7 +37,10 @@
 
     "name": { "$ref": "#/$defs/i18nString" },
 
-    "image": { "type": "string", "format": "uri" },
+    "image": {
+      "type": "string",
+      "anyOf": [{ "format": "uri" }, { "maxLength": 0 }]
+    },
     "rarity": { "type": "string" },
 
     "illustrators": {

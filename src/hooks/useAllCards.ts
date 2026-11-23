@@ -3,10 +3,10 @@ import { useQueries } from "@tanstack/react-query";
 import { useSeries } from "@/hooks/useCollection";
 import { fetchSets } from "@/services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";
-import { getJsonSet } from "@/services/JsonCollectionSetService";
+import { loadJsonSet } from "@/services/localData";
 import type { CollectionCard } from "@/types/CollectionCard";
 
-export function useAllCards(): {
+export function useAllCards({ enabled = true }: { enabled?: boolean } = {}): {
   cards: CollectionCard[];
   isLoading: boolean;
 } {
@@ -22,7 +22,8 @@ export function useAllCards(): {
         ? ["useSetsLocal", name]
         : [`SetsList_${name}`],
       queryFn: async () =>
-        IS_USE_LOCAL_DATA ? getJsonSet(name) : fetchSets(name),
+        IS_USE_LOCAL_DATA ? loadJsonSet(name) : fetchSets(name),
+      enabled,
     })),
     combine: (results) => ({
       data: results.map((r) => r.data),

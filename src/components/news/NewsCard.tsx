@@ -2,8 +2,17 @@ import { useNavigate } from "react-router-dom";
 import type { NewsPost } from "@/types/news";
 import Scale from "@/components/news/Scale";
 import { resolveHeroUrl } from "@/utils/resolveHeroUrl";
+import { formatNewsDate } from "@/utils/formatNewsDate";
+import { cdnResized, CDN_WIDTH } from "@/utils/cdnImage";
 
-export function NewsCard({ post }: { post: NewsPost }) {
+export function NewsCard({
+  post,
+  headingLevel = 3,
+}: {
+  post: NewsPost;
+  headingLevel?: 2 | 3;
+}) {
+  const Heading = headingLevel === 2 ? "h2" : "h3";
   const navigate = useNavigate();
 
   const dateMs =
@@ -11,6 +20,9 @@ export function NewsCard({ post }: { post: NewsPost }) {
 
   const go = () => navigate(`/news/${post.slug}`);
   const heroUrl = resolveHeroUrl(post.hero_url);
+
+  const dateLabel = formatNewsDate(dateMs);
+  const tag = post.tags?.[0];
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -26,49 +38,70 @@ export function NewsCard({ post }: { post: NewsPost }) {
       onClick={go}
       onKeyDown={handleKeyDown}
       aria-label={post.title}
-      className="group border-secondaryBorder bg-mainBg hover:border-hoverBorder focus-visible:ring-primaryBorder flex h-full cursor-pointer flex-col rounded-2xl border p-4 transition focus:outline-none focus-visible:ring-2"
+      className="group tile tile-link relative flex h-full flex-col"
     >
       {heroUrl && (
-        <div className="relative overflow-hidden rounded-xl">
+        <div className="border-tileBorder relative overflow-hidden border-b-2">
           {typeof post.score === "number" && (
             <Scale
               score={post.score}
-              className="bg-mainBg text-primaryText pointer-events-none absolute bottom-2 left-2 z-8 rounded px-2 py-0.5 text-[11px] leading-none font-medium"
+              className="bg-mainBg text-primaryText pointer-events-none absolute bottom-2 left-2 z-8 px-2 py-0.5 text-[11px] leading-none font-medium"
             />
           )}
           <img
-            src={heroUrl}
+            src={cdnResized(heroUrl, CDN_WIDTH.newsTile)}
             alt=""
             loading="lazy"
-            className="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+            className="block aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-[1.04] group-focus-visible:scale-[1.04]"
           />
         </div>
       )}
 
-      <div className="mt-2 mb-4 flex-1">
-        <h4 className="text-primaryText line-clamp-2 font-bold">
+      <div className="flex-1 px-4 pt-3.5">
+        <Heading className="text-primaryText line-clamp-2 text-[15px] leading-[1.3] font-extrabold">
           {post.title}
-        </h4>
+        </Heading>
         {post.excerpt && (
-          <p className="text-secondaryText mt-2 line-clamp-3">{post.excerpt}</p>
+          <p className="text-secondaryText mt-1.5 line-clamp-3 text-[12.5px] leading-relaxed text-pretty">
+            {post.excerpt}
+          </p>
         )}
       </div>
 
-      <div className="text-secondaryText mt-auto flex items-center justify-between text-xs">
-        <span>{new Date(dateMs).toLocaleDateString()}</span>
-        {!!post.tags?.length && (
-          <div className="flex flex-wrap gap-1">
-            {post.tags.slice(0, 3).map((t) => (
-              <span
-                key={t}
-                className="bg-navBg text-primaryText rounded px-2 py-0.5"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-        )}
+      <div className="flex items-end justify-between gap-2.5 px-4 pt-3 pb-3.5">
+        <span className="text-secondaryText font-display -mb-px block text-[11px] leading-none">
+          {dateLabel}
+        </span>
+        {tag && <NewsTag>{tag}</NewsTag>}
       </div>
     </article>
+  );
+}
+
+export function NewsTag({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="text-secondaryText border-mutedLabel inline-flex h-5 shrink-0 items-center border px-1.75 text-[10.5px] leading-none font-bold tracking-[0.025em]">
+      {children}
+    </span>
+  );
+}
+
+export function NewsCardSkeleton() {
+  return (
+    <div
+      className="tile flex animate-pulse flex-col overflow-hidden"
+      aria-hidden
+    >
+      <div className="bg-secondaryBorder border-tileBorder aspect-video w-full border-b-2" />
+      <div className="flex-1 space-y-2 px-4 pt-3.5">
+        <div className="bg-secondaryBorder h-4 w-3/4" />
+        <div className="bg-secondaryBorder h-3 w-full" />
+        <div className="bg-secondaryBorder h-3 w-2/3" />
+      </div>
+      <div className="flex items-end justify-between px-4 pt-3 pb-3.5">
+        <div className="bg-secondaryBorder h-3 w-16" />
+        <div className="bg-secondaryBorder h-5 w-20" />
+      </div>
+    </div>
   );
 }

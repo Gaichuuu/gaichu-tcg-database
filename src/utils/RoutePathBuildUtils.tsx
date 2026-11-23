@@ -23,7 +23,7 @@ export const AboutPagePath = "/about";
 export const SeriesListPath = "/cards";
 export const SetListPath = SeriesListPath + "/:seriesShortName";
 export const CardListPath = SetListPath + "/sets/:setShortName";
-export const CardDetailPath = CardListPath + "/card/:sortByAndCardName"; // TODO - sao: direct access to cardListPath if sortByAndCardName is not provided
+export const CardDetailPath = CardListPath + "/card/:sortByAndCardName";
 export const PackArtPath = CardListPath + "/pack-art";
 export const CardBackPath = CardListPath + "/card-back";
 
@@ -46,7 +46,6 @@ export interface BreadcrumbItem {
 
 export enum SetImagePathType {
   PackArt = "pack-art",
-  CardBack = "card-back",
 }
 export const getTitleSetImagePathType = (
   pathType: SetImagePathType | undefined,
@@ -54,8 +53,6 @@ export const getTitleSetImagePathType = (
   switch (pathType) {
     case SetImagePathType.PackArt:
       return "Pack Art";
-    case SetImagePathType.CardBack:
-      return "Card Back";
     case undefined:
     default:
       return "";
@@ -159,13 +156,6 @@ export function getArtPath(
         setShortName: encodeURIComponent(set.short_name),
       });
       return path;
-    }
-    case SetImagePathType.CardBack: {
-      const cardBackPath = generatePath(CardBackPath, {
-        seriesShortName: encodeURIComponent(set.series_short_name),
-        setShortName: encodeURIComponent(set.short_name),
-      });
-      return cardBackPath;
     }
     case undefined:
     default:

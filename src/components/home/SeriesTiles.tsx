@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useSeries } from "@/hooks/useCollection";
 import { getSetListPath } from "@/utils/RoutePathBuildUtils";
-import Tile from "@/components/TileComponents/Tile";
+import { cdnResized, CDN_WIDTH } from "@/utils/cdnImage";
 
 const FEATURED_SERIES = ["ash", "sm", "mz", "oz", "wm", "tygadu"];
 
@@ -22,13 +22,13 @@ const SeriesTiles: React.FC = () => {
 
   if (isLoading && !allSeries) {
     return (
-      <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
+      <div className="grid grid-cols-3 gap-3.5 sm:grid-cols-6">
         {Array.from({ length: MAX_FEATURED }).map((_, i) => (
           <div
             key={i}
-            className="bg-tileBg border-primaryBorder flex animate-pulse items-center justify-center rounded-lg border p-4 shadow-lg"
+            className="bevel-tile bevel-tile-static grid h-24 animate-pulse place-items-center p-2"
           >
-            <div className="bg-secondaryBorder h-10 w-full rounded" />
+            <div className="bg-secondaryBorder h-10 w-3/4" />
           </div>
         ))}
       </div>
@@ -50,18 +50,26 @@ const SeriesTiles: React.FC = () => {
     .filter((c): c is NonNullable<typeof c> => c != null);
 
   return (
-    <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
+    <div className="grid grid-cols-3 gap-3.5 sm:grid-cols-6">
       {featured.map((collection) => (
-        <Tile
+        <button
           key={collection.series.id}
+          type="button"
           onClick={() => navigate(getSetListPath(collection.series.short_name))}
+          aria-label={collection.series.name}
+          className="bevel-tile grid h-24 place-items-center p-2"
         >
           <img
-            src={collection.series.logo}
-            alt={collection.series.name}
-            className="max-h-10 w-full object-contain transition-transform duration-200 group-hover:scale-105"
+            src={cdnResized(collection.series.logo, CDN_WIDTH.logo)}
+            loading="lazy"
+            decoding="async"
+            alt=""
+            className="max-h-12 w-full object-contain"
           />
-        </Tile>
+          <span className="series-code" aria-hidden>
+            {collection.series.short_name}
+          </span>
+        </button>
       ))}
     </div>
   );

@@ -9,6 +9,7 @@ export interface CollectionSeries {
   sort_by: number;
   short_name: string;
   name: string;
+  name_ja?: string;
   logo: string;
   description?: string;
   keywords?: string[];

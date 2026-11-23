@@ -1,4 +1,5 @@
 import React, { ReactNode, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   useFloating,
   offset,
@@ -10,18 +11,22 @@ import {
 interface HoverTooltipProps {
   content: ReactNode;
   children: ReactNode;
-  widthClass?: string;
+  minWidthRem?: number;
 }
+
+const MAX_WIDTH_REM = 40;
+const VIEWPORT_CAP = "calc(100vw - 16px)";
 
 const HoverTooltip: React.FC<HoverTooltipProps> = ({
   content,
   children,
-  widthClass = "w-80",
+  minWidthRem = 20,
 }) => {
   const [open, setOpen] = useState(false);
 
   const { x, y, refs, strategy } = useFloating({
     placement: "bottom",
+    strategy: "fixed",
     open,
     middleware: [offset(8), flip(), shift({ padding: 8 })],
     whileElementsMounted: autoUpdate,
@@ -36,20 +41,26 @@ const HoverTooltip: React.FC<HoverTooltipProps> = ({
     >
       {children}
 
-      {open && (
-        <div
-          ref={refs.setFloating}
-          style={{
-            position: strategy,
-            top: y ?? 0,
-            left: x ?? 0,
-            zIndex: 9999,
-          }}
-          className={`text-primaryText bg-mainBg rounded-lg p-0 px-3 opacity-97 shadow-lg transition-opacity duration-200 ${widthClass}`}
-        >
-          {content}
-        </div>
-      )}
+      {open &&
+        createPortal(
+          <div
+            ref={refs.setFloating}
+            role="tooltip"
+            style={{
+              position: strategy,
+              top: y ?? 0,
+              left: x ?? 0,
+              zIndex: 9999,
+              width: "max-content",
+              minWidth: `min(${minWidthRem}rem, ${VIEWPORT_CAP})`,
+              maxWidth: `min(${MAX_WIDTH_REM}rem, ${VIEWPORT_CAP})`,
+            }}
+            className="tile text-primaryText pointer-events-none px-3 shadow-[6px_6px_0_rgba(0,0,0,0.6)]"
+          >
+            {content}
+          </div>,
+          document.body,
+        )}
     </div>
   );
 };

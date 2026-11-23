@@ -10,15 +10,16 @@ vi.mock("@/hooks/useCollection", () => ({
 vi.mock("@/services/CollectionSetService", () => ({
   fetchSets: vi.fn(),
 }));
-vi.mock("@/services/JsonCollectionSetService", () => ({
-  getJsonSet: vi.fn(),
+vi.mock("@/services/localData", () => ({
+  loadJsonSet: vi.fn(),
 }));
 vi.mock("@/services/Constants", () => ({
   IS_USE_LOCAL_DATA: true,
+  IS_USE_STAGING_DATA: false,
 }));
 
 const { useSeries } = await import("@/hooks/useCollection");
-const { getJsonSet } = await import("@/services/JsonCollectionSetService");
+const { loadJsonSet } = await import("@/services/localData");
 
 afterEach(() => {
   vi.clearAllMocks();
@@ -50,7 +51,7 @@ describe("useAllCards", () => {
       isLoading: false,
     } as unknown as ReturnType<typeof useSeries>);
 
-    vi.mocked(getJsonSet).mockImplementation(
+    vi.mocked(loadJsonSet).mockImplementation(
       () => new Promise(() => {}), // Never resolves
     );
 
@@ -80,7 +81,7 @@ describe("useAllCards", () => {
       isLoading: false,
     } as unknown as ReturnType<typeof useSeries>);
 
-    vi.mocked(getJsonSet).mockImplementation((seriesName: string) => {
+    vi.mocked(loadJsonSet).mockImplementation((seriesName: string) => {
       if (seriesName === "ash") {
         return Promise.resolve([
           {
@@ -129,7 +130,7 @@ describe("useAllCards", () => {
       isLoading: false,
     } as unknown as ReturnType<typeof useSeries>);
 
-    vi.mocked(getJsonSet).mockResolvedValue([
+    vi.mocked(loadJsonSet).mockResolvedValue([
       {
         set: { short_name: "base" } as unknown as SeriesAndSet["sets"][0],
         cards: [card1],
@@ -154,6 +155,26 @@ describe("useAllCards", () => {
 
     const { result } = renderHookWithProviders(() => useAllCards());
 
+    expect(result.current.cards).toEqual([]);
+    expect(result.current.isLoading).toBe(false);
+  });
+
+  it("doesn't fetch any series when disabled (search not engaged yet)", () => {
+    vi.mocked(useSeries).mockReturnValue({
+      data: [
+        {
+          series: { short_name: "ash" } as unknown as SeriesAndSet["series"],
+          sets: [],
+        },
+      ],
+      isLoading: false,
+    } as unknown as ReturnType<typeof useSeries>);
+
+    const { result } = renderHookWithProviders(() =>
+      useAllCards({ enabled: false }),
+    );
+
+    expect(loadJsonSet).not.toHaveBeenCalled();
     expect(result.current.cards).toEqual([]);
     expect(result.current.isLoading).toBe(false);
   });
