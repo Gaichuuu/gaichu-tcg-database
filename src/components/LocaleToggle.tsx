@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { useLocale, isJaAvailable } from "@/i18n";
 import type { CollectionCard } from "@/types/CollectionCard";
+import { buttonClasses } from "@/components/ui";
 
 interface Props {
   card?: CollectionCard;
@@ -35,47 +36,45 @@ const LocaleToggle: React.FC<Props> = ({ card, jaAvailable }) => {
     e.stopPropagation();
   };
 
+  const options: { value: "en" | "ja"; label: React.ReactNode }[] = [
+    { value: "en", label: "English" },
+    {
+      value: "ja",
+      label: (
+        <span className="font-jp" lang="ja">
+          日本語
+        </span>
+      ),
+    },
+  ];
+
   return (
     <div
       role="group"
       aria-label="Language toggle"
-      className="group/toggle border-secondaryBorder mb-3 inline-flex items-center gap-1 rounded-2xl border p-1 shadow-sm transition-colors"
+      className="inline-flex shrink-0 items-center gap-1.5"
       onPointerDownCapture={stopDown}
       onMouseDownCapture={stopDown}
       onTouchStartCapture={stopDown}
       onClick={stopBubble}
     >
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation();
-          setLocale("en");
-        }}
-        aria-pressed={locale === "en"}
-        className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
-          locale === "en"
-            ? "bg-primaryButton text-mainBg"
-            : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
-        }`}
-      >
-        English
-      </button>
-
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation();
-          setLocale("ja");
-        }}
-        aria-pressed={locale === "ja"}
-        className={`flex-1 rounded-xl px-4 py-2 text-sm transition outline-none ${
-          locale === "ja"
-            ? "bg-primaryButton text-mainBg"
-            : "text-secondaryText hover:text-primaryText hover:bg-navBg hover:border-hoverBorder cursor-pointer border border-transparent"
-        }`}
-      >
-        日本語
-      </button>
+      {options.map((opt) => {
+        const selected = locale === opt.value;
+        return (
+          <button
+            key={opt.value}
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setLocale(opt.value);
+            }}
+            aria-pressed={selected}
+            className={buttonClasses(selected ? "primary" : "ghost")}
+          >
+            {opt.label}
+          </button>
+        );
+      })}
     </div>
   );
 };

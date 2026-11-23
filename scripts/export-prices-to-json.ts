@@ -1,29 +1,17 @@
-/**
- * Export prices from Firestore card_prices collection to cards.json files
- *
- * This script:
- * 1. Reads all card prices from Firestore
- * 2. For each series (wm, ash), loads cards.json
- * 3. Adds average_price field to each card (preserves last known price if rolling window is empty)
- * 4. Writes updated cards.json back to disk
- *
- * Usage: npx tsx scripts/export-prices-to-json.ts
- *
- * Requires: GOOGLE_APPLICATION_CREDENTIALS env var pointing to service account key
- * Or run from a machine with default Firebase credentials
- */
-
 import admin from "firebase-admin";
 import { execFileSync } from "child_process";
 import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { initFirebase } from "./lib/firebaseAdmin";
+import { PRICED_SERIES } from "../gaichu-api/src/config/pricedSeries.js";
+import {
+  priceToPublish,
+  type SourcePrice,
+} from "../gaichu-api/src/services/gridPriceRule.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
-// Series that have price data
-const PRICED_SERIES = ["wm", "ash", "tygadu"];
 
 // Path to data directory
 const DATA_DIR = join(__dirname, "../data");
@@ -38,45 +26,20 @@ interface CardPrice {
   card_id: string;
   prices: {
     average_price: number | null;
+    sample_size?: number | null;
   };
-}
-
-// Initialize Firebase Admin
-function initFirebase() {
-  if (admin.apps.length > 0) {
-    return admin.firestore();
-  }
-
-  // Try to use service account key from config directory
-  const serviceAccountPath = join(
-    __dirname,
-    "../config/serviceAccountKey.json",
-  );
-
-  try {
-    const serviceAccount = JSON.parse(
-      readFileSync(serviceAccountPath, "utf-8"),
-    );
-    admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
-    });
-    console.log("Initialized Firebase with service account key");
-  } catch {
-    // Fall back to default credentials (for Cloud Functions environment)
-    admin.initializeApp();
-    console.log("Initialized Firebase with default credentials");
-  }
-
-  return admin.firestore();
 }
 
 async function loadPricesFromFirestore(
   db: admin.firestore.Firestore,
-): Promise<Map<string, number>> {
+): Promise<Map<string, SourcePrice>> {
   console.log("Loading prices from Firestore...");
 
-  const pricesMap = new Map<string, number>();
-  const snapshot = await db.collection("card_prices").get();
+  const pricesMap = new Map<string, SourcePrice>();
+  const snapshot = await db
+    .collection("card_prices")
+    .select("card_id", "prices.average_price", "prices.sample_size")
+    .get();
 
   for (const doc of snapshot.docs) {
     const data = doc.data() as CardPrice;
@@ -84,8 +47,10 @@ async function loadPricesFromFirestore(
 
     // Only include cards with actual price data
     if (avgPrice !== null && avgPrice !== undefined && avgPrice > 0) {
-      // Round to 2 decimal places
-      pricesMap.set(data.card_id, Math.round(avgPrice * 100) / 100);
+      pricesMap.set(data.card_id, {
+        average: avgPrice,
+        sampleSize: data.prices?.sample_size,
+      });
     }
   }
 
@@ -95,7 +60,7 @@ async function loadPricesFromFirestore(
 
 function updateCardsJson(
   series: string,
-  pricesMap: Map<string, number>,
+  pricesMap: Map<string, SourcePrice>,
 ): { updated: number; total: number } {
   const filePath = join(DATA_DIR, series, "cards.json");
 
@@ -119,9 +84,12 @@ function updateCardsJson(
       continue;
     }
 
-    const price = pricesMap.get(card.id);
+    const source = pricesMap.get(card.id);
+    const current =
+      typeof card.average_price === "number" ? card.average_price : undefined;
+    const price = source ? priceToPublish(source, current) : null;
 
-    if (price !== undefined) {
+    if (price !== null) {
       card.average_price = price;
       updated++;
     } else if (card.average_price === undefined) {

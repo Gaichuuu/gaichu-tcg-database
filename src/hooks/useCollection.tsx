@@ -1,8 +1,7 @@
 import { fetchSeries } from "@/services/CollectionSeriesService";
 import { fetchSets } from "@/services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";
-import { getJsonSeries } from "@/services/JsonCollectionSeriesService";
-import { getJsonSet } from "@/services/JsonCollectionSetService";
+import { loadJsonSeries, loadJsonSet } from "@/services/localData";
 import { SeriesAndSet, SetAndCard } from "@/types/MergedCollection";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 
@@ -10,7 +9,7 @@ export const useSeries = (): UseQueryResult<SeriesAndSet[], Error> => {
   return useQuery<SeriesAndSet[]>({
     queryKey: IS_USE_LOCAL_DATA ? ["useSeriesLocal"] : ["useSeries"],
     queryFn: async () => {
-      return IS_USE_LOCAL_DATA ? getJsonSeries() : fetchSeries();
+      return IS_USE_LOCAL_DATA ? loadJsonSeries() : fetchSeries();
     },
   });
 };
@@ -25,7 +24,7 @@ export const useSets = (
     enabled: !!seriesShortName,
     queryFn: async () => {
       return IS_USE_LOCAL_DATA
-        ? getJsonSet(seriesShortName)
+        ? loadJsonSet(seriesShortName)
         : fetchSets(seriesShortName);
     },
   });
@@ -42,7 +41,7 @@ export const useSet = (
     enabled: !!seriesShortName && !!setShortName,
     queryFn: async () => {
       const sets = IS_USE_LOCAL_DATA
-        ? getJsonSet(seriesShortName)
+        ? await loadJsonSet(seriesShortName)
         : await fetchSets(seriesShortName);
       return sets.find((set) => set.set.short_name === setShortName) || null;
     },
@@ -59,7 +58,7 @@ export const useSeriesByShortName = (
     enabled: !!seriesShortName,
     queryFn: async () => {
       const allSeries = IS_USE_LOCAL_DATA
-        ? getJsonSeries()
+        ? await loadJsonSeries()
         : await fetchSeries();
       return (
         allSeries.find((s) => s.series.short_name === seriesShortName) || null

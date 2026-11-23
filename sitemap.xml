@@ -66,19 +66,9 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/wm/sets/set1/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://gaichu.com/cards/mz/sets/promo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gaichu.com/cards/mz/sets/promo/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gaichu.com/cards/wm/sets/set2</loc>
@@ -87,11 +77,6 @@
   </url>
   <url>
     <loc>https://gaichu.com/cards/wm/sets/set2/pack-art</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://gaichu.com/cards/wm/sets/set2/card-back</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -121,11 +106,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/ash/sets/series1/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://gaichu.com/cards/ash/sets/series2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -136,29 +116,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/ash/sets/series2/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://gaichu.com/cards/oz/sets/legacy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/oz/sets/legacy/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://gaichu.com/cards/oz/sets/promo25</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gaichu.com/cards/oz/sets/promo25/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gaichu.com/cards/disgruntled/sets/set1</loc>
@@ -176,14 +141,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/tygadu/sets/set1/card-back</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://gaichu.com/cards/sm/sets/set1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/cards/sm/sets/set1/pack-art</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://gaichu.com/cards/ash/sets/series1/card/0.1_charizard</loc>
@@ -1521,7 +1486,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/sm/sets/set1/card/4_itich</loc>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/4_itik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1556,7 +1521,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/sm/sets/set1/card/11_ev</loc>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/11_ev-not-the-car</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1601,7 +1566,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://gaichu.com/cards/sm/sets/set1/card/20_</loc>
+    <loc>https://gaichu.com/cards/sm/sets/set1/card/20_rowlet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1647,6 +1612,11 @@
   </url>
   <url>
     <loc>https://gaichu.com/cards/sm/sets/set1/card/29_charsiu-v</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gaichu.com/news/new-look-and-prices-are-back</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

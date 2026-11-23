@@ -1,7 +1,12 @@
 import { onRequest } from "firebase-functions/v2/https";
 import express from "express";
 import { corsMiddleware } from "./config/index.js";
-import { errorHandler, notFoundHandler, rateLimiter, cacheHeaders } from "./middleware/index.js";
+import {
+  errorHandler,
+  notFoundHandler,
+  rateLimiter,
+  cacheHeaders,
+} from "./middleware/index.js";
 import routes from "./routes/index.js";
 
 // Re-export scheduled functions for Firebase deployment
@@ -11,6 +16,27 @@ export {
   syncSingleCardPrice,
   backfillPriceUrls,
 } from "./functions/priceSync.js";
+
+export {
+  scheduledPriceSnapshot,
+  triggerPriceSnapshot,
+} from "./functions/priceSnapshot.js";
+
+export {
+  scheduledPackPriceSync,
+  triggerPackPriceSync,
+  syncSinglePackPrice,
+} from "./functions/packPriceSync.js";
+
+export {
+  scheduledPackPriceSnapshot,
+  triggerPackPriceSnapshot,
+} from "./functions/packPriceSnapshot.js";
+
+export {
+  scheduledGridPricePublish,
+  triggerGridPricePublish,
+} from "./functions/gridPricePublish.js";
 
 const app = express();
 

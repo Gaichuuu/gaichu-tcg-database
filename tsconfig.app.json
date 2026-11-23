@@ -19,11 +19,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "baseUrl": ".",
     "paths": {
-      "data/*": ["data/*"],
-      "@/*": ["src/*"],
-      "config/*": ["config/*"]
+      "data/*": ["./data/*"],
+      "@/*": ["./src/*"],
+      "config/*": ["./config/*"]
     }
   },
   "include": ["src", "config", "data", "config"],

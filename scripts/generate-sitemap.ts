@@ -1,8 +1,3 @@
-/**
- * Generates sitemap.xml from static JSON data files.
- * Run with: npx tsx scripts/generate-sitemap.ts
- */
-
 import fs from "fs";
 import path from "path";
 
@@ -62,17 +57,25 @@ function generateSitemap(): string {
 
   // Static pages
   urls.push({ loc: `${BASE_URL}/`, priority: "1.0", changefreq: "weekly" });
-  urls.push({ loc: `${BASE_URL}/cards`, priority: "0.9", changefreq: "weekly" });
-  urls.push({ loc: `${BASE_URL}/about`, priority: "0.5", changefreq: "monthly" });
+  urls.push({
+    loc: `${BASE_URL}/cards`,
+    priority: "0.9",
+    changefreq: "weekly",
+  });
+  urls.push({
+    loc: `${BASE_URL}/about`,
+    priority: "0.5",
+    changefreq: "monthly",
+  });
   urls.push({ loc: `${BASE_URL}/news`, priority: "0.8", changefreq: "weekly" });
 
   // Load data files
   const dataDir = path.join(process.cwd(), "data");
   const seriesList: Series[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, "series.json"), "utf-8")
+    fs.readFileSync(path.join(dataDir, "series.json"), "utf-8"),
   );
   const setsList: Set[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, "sets.json"), "utf-8")
+    fs.readFileSync(path.join(dataDir, "sets.json"), "utf-8"),
   );
 
   // Build set lookup by ID
@@ -99,17 +102,10 @@ function generateSitemap(): string {
       changefreq: "weekly",
     });
 
-    // Pack art and card back pages
+    // Pack art page
     if (set.pack_art) {
       urls.push({
         loc: `${BASE_URL}${setPath}/pack-art`,
-        priority: "0.5",
-        changefreq: "monthly",
-      });
-    }
-    if (set.card_back) {
-      urls.push({
-        loc: `${BASE_URL}${setPath}/card-back`,
         priority: "0.5",
         changefreq: "monthly",
       });
@@ -145,7 +141,9 @@ function generateSitemap(): string {
   // News pages
   const newsPath = path.join(dataDir, "news", "index.json");
   if (fs.existsSync(newsPath)) {
-    const newsItems: NewsItem[] = JSON.parse(fs.readFileSync(newsPath, "utf-8"));
+    const newsItems: NewsItem[] = JSON.parse(
+      fs.readFileSync(newsPath, "utf-8"),
+    );
     for (const item of newsItems) {
       urls.push({
         loc: `${BASE_URL}/news/${encodeURIComponent(item.slug)}`,
@@ -164,7 +162,7 @@ ${urls
     <loc>${escapeXml(url.loc)}</loc>
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
-  </url>`
+  </url>`,
   )
   .join("\n")}
 </urlset>`;

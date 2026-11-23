@@ -3,6 +3,7 @@ import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
 import { CollectionCard } from "@/types/CollectionCard";
 import { useLocale, t } from "@/i18n";
 import { PagingType } from "./PagingType";
+import { cdnResized, CDN_WIDTH } from "@/utils/cdnImage";
 
 interface ButtonAction {
   pagingType: PagingType;
@@ -38,7 +39,9 @@ const CardDetailPagingButton: React.FC<ButtonAction> = ({
 
       {card?.thumb && (
         <img
-          src={card.thumb}
+          src={cdnResized(card.thumb, CDN_WIDTH.thumb)}
+          loading="lazy"
+          decoding="async"
           alt={label}
           className="border-secondaryBorder mt-1 max-h-8 rounded-full border object-contain"
         />

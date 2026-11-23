@@ -3,9 +3,10 @@ import { useQueries } from "@tanstack/react-query";
 import { useSeries } from "@/hooks/useCollection";
 import { fetchSets } from "@/services/CollectionSetService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";
-import { getJsonSet } from "@/services/JsonCollectionSetService";
+import { loadJsonSet } from "@/services/localData";
 import { ONE_HOUR } from "@/utils/TimeUtils";
 import { i18nToEnString } from "@/utils/RoutePathBuildUtils";
+import { isPlaceholderImage } from "@/utils/cardImage";
 import type { CollectionCard } from "@/types/CollectionCard";
 
 interface ShowcaseCard {
@@ -18,7 +19,7 @@ interface ShowcaseCard {
 }
 
 export function hasValidImage(card: CollectionCard): boolean {
-  return !card.image.includes("*") && !card.image.endsWith("/00.jpg");
+  return !isPlaceholderImage(card.image);
 }
 
 export function shuffle<T>(arr: T[], rng: () => number): T[] {
@@ -72,7 +73,7 @@ export function useShowcaseCards(count = 24): {
         ? ["useSetsLocal", name]
         : [`SetsList_${name}`],
       queryFn: async () =>
-        IS_USE_LOCAL_DATA ? getJsonSet(name) : fetchSets(name),
+        IS_USE_LOCAL_DATA ? loadJsonSet(name) : fetchSets(name),
     })),
   });
 

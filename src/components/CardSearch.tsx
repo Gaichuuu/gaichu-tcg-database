@@ -3,8 +3,12 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { FiSearch, FiX } from "react-icons/fi";
 import { useCardSearch } from "@/hooks/useCardSearch";
 import { getCardDetailPath } from "@/utils/RoutePathBuildUtils";
+import { formatUsd } from "@/utils/money";
+import { highlightMatch } from "@/utils/highlightMatch";
 import { t, useLocale } from "@/i18n";
 import type { CollectionCard } from "@/types/CollectionCard";
+import { cdnResized, CDN_WIDTH } from "@/utils/cdnImage";
+import { navigateWithTransition } from "@/utils/viewTransition";
 
 const SKELETON_COUNT = 3;
 
@@ -20,7 +24,12 @@ const CardSearch: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { locale } = useLocale();
-  const { results, isLoading, debouncedQuery } = useCardSearch(query);
+  const [searchEngaged, setSearchEngaged] = useState(false);
+  const engageSearch = useCallback(() => setSearchEngaged(true), []);
+  const { results, isLoading, debouncedQuery } = useCardSearch(
+    query,
+    searchEngaged || query.length > 0,
+  );
 
   const closeMobile = useCallback(() => {
     setMobileOpen(false);
@@ -79,7 +88,7 @@ const CardSearch: React.FC = () => {
 
   const navigateToCard = useCallback(
     (card: CollectionCard) => {
-      navigate(getCardDetailPath(card));
+      navigateWithTransition(() => navigate(getCardDetailPath(card)));
       setIsOpen(false);
       setQuery("");
       setMobileOpen(false);
@@ -121,80 +130,126 @@ const CardSearch: React.FC = () => {
   const showResults = isOpen && results.length > 0;
 
   const inputClasses =
-    "bg-mainBg border-secondaryBorder focus:border-primaryBorder w-full rounded-lg border py-1.5 pl-8 pr-8 text-base sm:text-sm transition-colors focus:outline-none";
+    "min-w-0 flex-1 h-5 leading-5 bg-transparent text-accentGreen placeholder:text-accentGreen/50 font-display text-base sm:text-sm outline-none";
+
+  const wrapperClasses =
+    "bg-insetBg border-tileBorder shadow-inset relative flex items-center gap-2 border-2 px-3 py-1.25";
 
   const dropdownClasses =
-    "bg-navBg border-secondaryBorder absolute left-0 right-0 top-full z-50 mt-1 rounded-xl border shadow-[0_8px_30px_rgba(0,0,0,0.5)]";
+    "tile absolute left-0 right-0 top-full z-50 mt-1 shadow-[6px_6px_0_rgba(0,0,0,0.6)]";
+
+  const panelHeader = (count?: number) => (
+    <div className="border-bevelShadow2 flex items-baseline justify-between border-b border-dashed px-3 pt-2 pb-1.5">
+      <span className="font-jp text-accentAmber text-xs" lang="ja">
+        検索結果
+        <span className="sr-only">Search results</span>
+      </span>
+      {count != null && (
+        <span className="font-display text-mutedLabel text-[11px]">
+          {count} {count === 1 ? "card" : "cards"}
+        </span>
+      )}
+    </div>
+  );
 
   const renderDropdown = () => (
     <>
       {showLoading && (
         <div className={`${dropdownClasses} overflow-hidden`}>
-          {Array.from({ length: SKELETON_COUNT }).map((_, i) => (
-            <div key={i} className="flex items-center gap-3 px-3 py-2">
-              <div className="bg-secondaryBorder h-14 w-10 shrink-0 animate-pulse rounded" />
-              <div className="flex-1 space-y-1.5">
-                <div className="bg-secondaryBorder h-3.5 w-3/4 animate-pulse rounded" />
-                <div className="bg-secondaryBorder h-3 w-1/2 animate-pulse rounded" />
+          {panelHeader()}
+          <div className="py-1">
+            {Array.from({ length: SKELETON_COUNT }).map((_, i) => (
+              <div key={i} className="flex items-center gap-3 px-3 py-1.75">
+                <div className="bg-secondaryBorder size-12 shrink-0 animate-pulse rounded-[3px]" />
+                <div className="flex-1 space-y-1.5">
+                  <div className="bg-secondaryBorder h-3.5 w-3/4 animate-pulse" />
+                  <div className="bg-secondaryBorder h-3 w-1/2 animate-pulse" />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
 
       {showNoResults && (
-        <div className={`${dropdownClasses} p-4`}>
-          <p className="text-secondaryText text-center text-sm">
-            No results found.
-          </p>
+        <div
+          className={`${dropdownClasses} text-secondaryText px-3 py-4.5 text-center text-[13px]`}
+        >
+          No results for “{debouncedQuery.trim()}”.
         </div>
       )}
 
       {showResults && (
-        <ul
-          id="card-search-results"
-          role="listbox"
-          className={`${dropdownClasses} max-h-112 overflow-y-auto`}
-        >
-          {results.map((card, index) => (
-            <li
-              key={`${card.series_short_name}-${card.set_short_name}-${card.sort_by}`}
-              id={`card-search-result-${index}`}
-              role="option"
-              aria-selected={index === activeIndex}
-              onClick={() => navigateToCard(card)}
-              onMouseEnter={() => setActiveIndex(index)}
-              className={`flex cursor-pointer items-center gap-3 px-3 py-2 transition-colors ${
-                index === activeIndex ? "bg-tileBg" : "hover:bg-tileBg/50"
-              }`}
-            >
-              {card.thumb && (
-                <img
-                  src={card.thumb}
-                  alt=""
-                  className="border-secondaryBorder h-14 w-auto shrink-0 rounded border object-contain"
-                  loading="lazy"
-                />
-              )}
-              <div className="min-w-0 flex-1">
-                <p className="text-primaryText truncate text-sm font-medium">
-                  {t(card.name, locale)}
-                </p>
-                <p className="text-secondaryText mt-0.5 text-[10px] tracking-wider uppercase">
-                  {card.series_short_name} · {card.set_short_name}
-                  {card.average_price != null && card.average_price > 0 && (
-                    <span className="normal-case">
-                      {" · "}
-                      <span className="text-priceText">
-                        ${card.average_price.toFixed(2)}
+        <div key={debouncedQuery} className={`${dropdownClasses} anim-settle`}>
+          {panelHeader(results.length)}
+          <ul
+            id="card-search-results"
+            role="listbox"
+            className="max-h-98 overflow-y-auto py-1"
+          >
+            {results.map((card, index) => {
+              const active = index === activeIndex;
+              const name = t(card.name, locale);
+              const parts = highlightMatch(name, debouncedQuery);
+              return (
+                <li
+                  key={`${card.series_short_name}-${card.set_short_name}-${card.sort_by}`}
+                  id={`card-search-result-${index}`}
+                  role="option"
+                  aria-selected={active}
+                  onClick={() => navigateToCard(card)}
+                  onMouseEnter={() => setActiveIndex(index)}
+                  className={`flex cursor-pointer items-center gap-3 px-3 py-1.75 ${
+                    active ? "bg-tileBg" : ""
+                  }`}
+                >
+                  {card.thumb ? (
+                    <img
+                      src={cdnResized(card.thumb, CDN_WIDTH.thumb)}
+                      alt=""
+                      className="border-secondaryBorder size-12 shrink-0 rounded-[3px] border object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span className="bg-secondaryBorder size-12 shrink-0 rounded-[3px]" />
+                  )}
+                  <div className="flex min-w-0 flex-1 flex-col gap-1">
+                    <p className="text-primaryText truncate text-sm font-medium">
+                      {parts.pre}
+                      {parts.match && (
+                        <mark className="bg-accentAmber text-mainBg px-px font-bold">
+                          {parts.match}
+                        </mark>
+                      )}
+                      {parts.post}
+                    </p>
+                    <p className="text-secondaryText flex items-baseline gap-1.5 text-[10px] tracking-[0.08em] uppercase">
+                      <span>
+                        {card.series_short_name} · {card.set_short_name}
                       </span>
+                      {card.average_price != null && card.average_price > 0 && (
+                        <>
+                          <span className="text-mutedLabel">·</span>
+                          <span className="font-display text-accentGreen text-[11px] tracking-normal normal-case">
+                            {formatUsd(card.average_price)}
+                          </span>
+                        </>
+                      )}
+                    </p>
+                  </div>
+                  {active && (
+                    <span
+                      aria-hidden
+                      className="font-display text-mutedLabel shrink-0 text-xs"
+                    >
+                      ↵
                     </span>
                   )}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       )}
     </>
   );
@@ -206,23 +261,34 @@ const CardSearch: React.FC = () => {
         ref={containerRef}
         className="pointer-events-none absolute inset-0 z-10 hidden place-items-center sm:grid"
       >
-        <div className="pointer-events-auto relative w-86">
-          <div className="relative">
-            <FiSearch
-              className="text-secondaryText pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"
-              size={14}
-            />
+        <div className="pointer-events-auto relative w-120 max-w-[calc(100%-21rem)]">
+          <div className={wrapperClasses}>
+            <span
+              className="bg-accentGreen text-mainBg font-jp px-1.25 text-xs select-none"
+              aria-hidden
+              lang="ja"
+            >
+              検索
+            </span>
+            <span
+              className="text-accentGreen font-display font-bold select-none"
+              aria-hidden
+            >
+              &gt;
+            </span>
             <input
               ref={inputRef}
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              onPointerEnter={engageSearch}
               onFocus={() => {
+                engageSearch();
                 if (debouncedQuery.trim() && results.length > 0)
                   setIsOpen(true);
               }}
               onKeyDown={handleKeyDown}
-              placeholder="Search cards…"
+              placeholder="search cards"
               className={inputClasses}
               aria-label="Search cards"
               aria-expanded={isOpen}
@@ -244,7 +310,7 @@ const CardSearch: React.FC = () => {
                   setIsOpen(false);
                   inputRef.current?.focus();
                 }}
-                className="text-secondaryText hover:text-primaryText absolute top-1/2 right-2 -translate-y-1/2"
+                className="text-accentGreen/70 hover:text-accentGreen shrink-0"
                 aria-label="Clear search"
               >
                 <FiX size={14} />
@@ -258,10 +324,16 @@ const CardSearch: React.FC = () => {
       {/* Mobile: search pill trigger */}
       <button
         type="button"
-        onClick={() => setMobileOpen(true)}
-        className="bg-mainBg border-secondaryBorder text-secondaryText flex w-28 rounded-lg border px-3 py-2 sm:hidden"
+        onClick={() => {
+          engageSearch();
+          setMobileOpen(true);
+        }}
+        className="text-accentGreen bg-insetBg border-tileBorder shadow-inset flex items-center gap-2 border-2 px-3 py-1 sm:hidden"
         aria-label="Open search"
       >
+        <span className="font-display font-bold" aria-hidden>
+          &gt;
+        </span>
         <FiSearch size={16} />
       </button>
 
@@ -269,25 +341,34 @@ const CardSearch: React.FC = () => {
       {mobileOpen && (
         <>
           <div
-            className="fixed inset-0 z-40 bg-overlayBg/50 sm:hidden"
+            className="bg-overlayBg/50 fixed inset-0 z-40 sm:hidden"
             onClick={closeMobile}
           />
           <div
             ref={mobileContainerRef}
-            className="bg-navBg border-secondaryBorder/20 fixed inset-x-0 top-10.5 z-50 border-b px-4 py-2 sm:hidden"
+            className="anim-unroll bg-navBg border-tileBorder fixed inset-x-0 top-13.5 z-50 border-b-2 px-4 py-2 sm:hidden"
           >
-            <div className="relative">
-              <FiSearch
-                className="text-secondaryText pointer-events-none absolute top-1/2 left-2.5 -translate-y-1/2"
-                size={14}
-              />
+            <div className={wrapperClasses}>
+              <span
+                className="bg-accentGreen text-mainBg font-jp px-1.25 text-xs select-none"
+                aria-hidden
+                lang="ja"
+              >
+                検索
+              </span>
+              <span
+                className="text-accentGreen font-display font-bold select-none"
+                aria-hidden
+              >
+                &gt;
+              </span>
               <input
                 ref={mobileInputRef}
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Search cards…"
+                placeholder="search cards"
                 className={inputClasses}
                 aria-label="Search cards"
                 aria-expanded={isOpen}
@@ -309,7 +390,7 @@ const CardSearch: React.FC = () => {
                     setIsOpen(false);
                     mobileInputRef.current?.focus();
                   }}
-                  className="text-secondaryText hover:text-primaryText absolute top-1/2 right-2 -translate-y-1/2"
+                  className="text-accentGreen/70 hover:text-accentGreen shrink-0"
                   aria-label="Clear search"
                 >
                   <FiX size={14} />

@@ -1,21 +1,22 @@
 import type {
   Card,
-  EbayApiResponse,
+  Set,
   EbayPriceData,
   EbaySale,
-  EbaySearchRequest,
   CardPrice,
+  PackPrice,
 } from "../types/index.js";
+import { calculatePriceStats, saleKey } from "./priceStats.js";
+import { expandQuery, excludeFor } from "./soldQuery.js";
+import { searchSold } from "./trawlClient.js";
 
-const RAPIDAPI_HOST = "ebay-average-selling-price.p.rapidapi.com";
-const CATEGORY_ID = "183454"; // CCG Individual Cards
-const MAX_SEARCH_RESULTS = "60";
+const SYNC_WINDOW_DAYS = 90;
 
 /** Map series short names to searchable names on eBay
  * Uses eBay OR syntax: (term1,term2)
  */
 const SERIES_NAME_MAP: Record<string, string> = {
-  wm: '("wrenny moo",wrennymoo)',
+  wm: '"wrenny moo"',
   ash: '"after skool hobby"',
   oz: "openzoo",
   mz: "metazoo",
@@ -32,13 +33,16 @@ const SET_NAME_MAP: Record<string, Record<string, string>> = {
   },
 };
 
-/** Default keywords to exclude from searches */
+/** Default keywords to exclude from searches. */
 const DEFAULT_EXCLUDED_KEYWORDS = [
   "lot",
   "bundle",
   "complete",
   "ecto",
   "repack",
+  "collection",
+  "choose",
+  "pick",
 ];
 
 /** Set-specific excluded keywords */
@@ -179,7 +183,6 @@ export function getExcludedKeywords(card?: Card): string {
 export function buildEbaySearchUrl(searchQuery: string): string {
   const params = new URLSearchParams({
     _nkw: searchQuery,
-    _sacat: CATEGORY_ID,
     LH_Complete: "1", // Completed listings
     LH_Sold: "1", // Sold items only
   });
@@ -194,125 +197,106 @@ const EMPTY_PRICE_DATA: EbayPriceData = {
   sample_size: 0,
 };
 
-/**
- * Fetch price data from eBay API for a single card
- */
-export async function fetchEbayPrice(
-  card: Card,
-  apiKey: string,
-): Promise<{
+export interface SoldFetchOptions {
+  /** Earliest sale date (YYYY-MM-DD) */
+  dateFrom?: string;
+  maxPages?: number;
+}
+
+export interface SoldFetchResult {
   priceData: EbayPriceData;
   recentSales: EbaySale[];
   searchQuery: string;
   excludedKeywords: string;
   status: "success" | "no_results" | "error";
   errorMessage?: string;
-}> {
-  const searchQuery = buildSearchQuery(card);
-  const excludedKeywords = getExcludedKeywords(card);
+}
 
-  const requestBody: EbaySearchRequest = {
-    keywords: searchQuery,
-    max_search_results: MAX_SEARCH_RESULTS,
-    category_id: CATEGORY_ID,
-    remove_outliers: "true",
-    site_id: "0", // US
-    excluded_keywords: excludedKeywords,
-  };
+function windowStart(days: number, now: Date = new Date()): string {
+  const d = new Date(now);
+  d.setUTCDate(d.getUTCDate() - days);
+  return d.toISOString().slice(0, 10);
+}
 
-  console.log("eBay API Request:", JSON.stringify(requestBody));
+export async function fetchSoldSales(
+  searchQuery: string,
+  excludedKeywords: string,
+  category: string | undefined,
+  apiKey: string,
+  options: SoldFetchOptions = {},
+): Promise<SoldFetchResult> {
+  const base = { searchQuery, excludedKeywords };
+  const bySale = new Map<string, EbaySale>();
 
   try {
-    const response = await fetch(
-      `https://${RAPIDAPI_HOST}/findCompletedItems`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-rapidapi-host": RAPIDAPI_HOST,
-          "x-rapidapi-key": apiKey,
+    for (const query of expandQuery(searchQuery)) {
+      const exclude = excludeFor(query, excludedKeywords);
+      console.log(
+        "sold /search:",
+        JSON.stringify({ query, exclude, category: category ?? null }),
+      );
+      const results = await searchSold(
+        {
+          query,
+          exclude: exclude || undefined,
+          category,
+          dateFrom: options.dateFrom ?? windowStart(SYNC_WINDOW_DAYS),
+          maxPages: options.maxPages ?? 1,
         },
-        body: JSON.stringify(requestBody),
-      },
-    );
-
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status} ${response.statusText}`);
+        apiKey,
+      );
+      console.log(`  ${results.length} sales`);
+      for (const r of results) {
+        const sale: EbaySale = {
+          title: r.title,
+          sale_price: r.sale_price,
+          date_sold: r.date_sold,
+          link: r.item_link,
+        };
+        bySale.set(saleKey(sale), sale);
+      }
     }
-
-    const data = (await response.json()) as EbayApiResponse;
-
-    console.log(
-      "eBay API Response:",
-      JSON.stringify({
-        success: data.success,
-        results: data.results,
-        average_price: data.average_price,
-      }),
-    );
-
-    if (!data.success) {
-      return {
-        priceData: { ...EMPTY_PRICE_DATA },
-        recentSales: [],
-        searchQuery,
-        excludedKeywords,
-        status: "error",
-        errorMessage: "API returned success: false",
-      };
-    }
-
-    const sampleSize = data.results ?? data.products?.length ?? 0;
-
-    if (sampleSize === 0) {
-      return {
-        priceData: { ...EMPTY_PRICE_DATA },
-        recentSales: [],
-        searchQuery,
-        excludedKeywords,
-        status: "no_results",
-      };
-    }
-
-    const priceData: EbayPriceData = {
-      average_price: data.average_price ?? null,
-      median_price: data.median_price ?? null,
-      min_price: data.min_price ?? null,
-      max_price: data.max_price ?? null,
-      sample_size: sampleSize,
-    };
-
-    if (data.response_url) {
-      priceData.response_url = data.response_url;
-    }
-
-    // Get all sales from API (for rolling window merge)
-    const recentSales: EbaySale[] = (data.products ?? []).map((p) => ({
-      title: p.title,
-      sale_price: p.sale_price,
-      date_sold: p.date_sold,
-      link: p.link,
-    }));
-
-    return {
-      priceData,
-      recentSales,
-      searchQuery,
-      excludedKeywords,
-      status: "success",
-    };
   } catch (error) {
-    const errorMessage =
-      error instanceof Error ? error.message : "Unknown error";
     return {
+      ...base,
       priceData: { ...EMPTY_PRICE_DATA },
       recentSales: [],
-      searchQuery,
-      excludedKeywords,
       status: "error",
-      errorMessage,
+      errorMessage: error instanceof Error ? error.message : "Unknown error",
     };
   }
+
+  const recentSales = [...bySale.values()].sort(
+    (a, b) => Date.parse(b.date_sold) - Date.parse(a.date_sold),
+  );
+  if (recentSales.length === 0) {
+    return {
+      ...base,
+      priceData: { ...EMPTY_PRICE_DATA },
+      recentSales,
+      status: "no_results",
+    };
+  }
+  return {
+    ...base,
+    priceData: calculatePriceStats(recentSales),
+    recentSales,
+    status: "success",
+  };
+}
+
+export function fetchEbayPrice(
+  card: Card,
+  apiKey: string,
+  options?: SoldFetchOptions,
+): Promise<SoldFetchResult> {
+  return fetchSoldSales(
+    buildSearchQuery(card),
+    getExcludedKeywords(card),
+    undefined,
+    apiKey,
+    options,
+  );
 }
 
 /**
@@ -320,7 +304,7 @@ export async function fetchEbayPrice(
  */
 export function buildCardPriceDocument(
   card: Card,
-  fetchResult: Awaited<ReturnType<typeof fetchEbayPrice>>,
+  fetchResult: SoldFetchResult,
 ): CardPrice {
   const now = new Date().toISOString();
   const cardName = resolveCardName(card);
@@ -332,6 +316,119 @@ export function buildCardPriceDocument(
     series_short_name: card.series_short_name,
     set_short_name: card.set_short_name,
     card_name: cardName,
+    prices: {
+      ...fetchResult.priceData,
+      response_url: fetchResult.priceData.response_url ?? ebaySearchUrl,
+    },
+    all_sales: fetchResult.recentSales,
+    recent_sales: fetchResult.recentSales.slice(0, 10),
+    search_query_used: fetchResult.searchQuery,
+    excluded_keywords_used: fetchResult.excludedKeywords,
+    fetched_at: now,
+    created_at: now,
+    updated_at: now,
+    status: fetchResult.status,
+  };
+
+  if (fetchResult.errorMessage) {
+    doc.error_message = fetchResult.errorMessage;
+  }
+
+  return doc;
+}
+
+/** Sealed-pack pricing */
+const PACK_SEARCH_OVERRIDES: Record<string, string> = {
+  "wm-set2": '"wrenny moo" ("set 2","series 2","2nd series") pack',
+  "ash-series1": '"after skool hobby" "generation one" pack',
+  "ash-series2": '"after skool hobby" "genetic mystery" pack',
+  "tygadu-set1": 'tygadu ("booster pack","sealed booster pack","sealed pack")',
+};
+
+/** Keywords to exclude for sealed single-pack searches */
+const PACK_EXCLUDED_KEYWORDS = [
+  ...DEFAULT_EXCLUDED_KEYWORDS,
+  "box",
+  "case",
+  "display",
+  "packs",
+];
+
+/** Per-set extra excluded keywords */
+const PACK_EXCLUDED_OVERRIDES: Record<string, string[]> = {
+  "tygadu-set1": ["holo"],
+};
+
+function getPackKey(set: Set): string {
+  return `${set.series_short_name}-${set.short_name}`;
+}
+
+export function buildPackSearchQuery(set: Set): string {
+  const override = PACK_SEARCH_OVERRIDES[getPackKey(set)];
+  if (override) return override;
+
+  const parts: string[] = [];
+
+  parts.push(SERIES_NAME_MAP[set.series_short_name] || set.series_short_name);
+
+  const seriesSetMap = SET_NAME_MAP[set.series_short_name];
+  const setName =
+    seriesSetMap?.[set.short_name] ||
+    set.short_name.replace(/^set(\d+)$/i, "set $1");
+  parts.push(setName);
+
+  parts.push("pack");
+
+  return parts.join(" ");
+}
+
+export function getPackExcludedKeywords(set?: Set): string {
+  const keywords = [...PACK_EXCLUDED_KEYWORDS];
+  if (set) {
+    const extra = PACK_EXCLUDED_OVERRIDES[getPackKey(set)];
+    if (extra) keywords.push(...extra);
+  }
+  return keywords.join(" ");
+}
+
+/** Build an eBay sold-listings URL for a pack search */
+export function buildPackEbaySearchUrl(searchQuery: string): string {
+  const params = new URLSearchParams({
+    _nkw: searchQuery,
+    LH_Complete: "1",
+    LH_Sold: "1",
+  });
+  return `https://www.ebay.com/sch/i.html?${params.toString()}`;
+}
+
+/** Fetch sold-price data for a sealed pack */
+export function fetchEbayPackPrice(
+  set: Set,
+  apiKey: string,
+  options?: SoldFetchOptions,
+): Promise<SoldFetchResult> {
+  return fetchSoldSales(
+    buildPackSearchQuery(set),
+    getPackExcludedKeywords(set),
+    undefined,
+    apiKey,
+    options,
+  );
+}
+
+/** Build a PackPrice document from a fetch result */
+export function buildPackPriceDocument(
+  set: Set,
+  fetchResult: SoldFetchResult,
+): PackPrice {
+  const now = new Date().toISOString();
+  const ebaySearchUrl = buildPackEbaySearchUrl(fetchResult.searchQuery);
+
+  const doc: PackPrice = {
+    set_id: set.id,
+    series_short_name: set.series_short_name,
+    set_short_name: set.short_name,
+    pack_name: `${set.name} pack`,
     prices: {
       ...fetchResult.priceData,
       response_url: fetchResult.priceData.response_url ?? ebaySearchUrl,

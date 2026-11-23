@@ -1,29 +1,35 @@
-import IconText from "@/components/IconText";
-import { PageLoading, PageError, PageNotFound } from "@/components/PageStates";
+import { PageError, PageNotFound } from "@/components/PageStates";
+import CardDetailSkeleton from "@/components/CardDetail/CardDetailSkeleton";
 import {
-  CardIcon,
-  CardDetailRow,
   CardImageSection,
-  AttacksSection,
-  AttributesSection,
-  ZooAttackSection,
-  ZooAttributesSection,
-  PrintingsPricesPanel,
+  CardStatsPanel,
+  CardMetaBadges,
+  VariantsTable,
+  PriceLogPanel,
 } from "@/components/CardDetail";
 import LocaleToggle from "@/components/LocaleToggle";
 import { useCurrentAndAdjacentCards } from "@/hooks/useCollectionCard";
-import { t, useLocale } from "@/i18n";
-import { hasI18nContent } from "@/types/CollectionCard";
+import { useSets } from "@/hooks/useCollection";
+import { flattenSeriesCards } from "@/utils/cardFilters";
+import { findVariants } from "@/utils/cardVariants";
+import { CDN_BASE_URL } from "@/services/Constants";
+import { t, useLocale, isJaAvailable } from "@/i18n";
+import type { CollectionCard } from "@/types/CollectionCard";
 import type { CollectionParamKeys } from "@/types/routes";
-import { parseSortAndNameRegex } from "@/utils/RoutePathBuildUtils";
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import {
+  parseSortAndNameRegex,
+  buildCardDetailPath,
+  slugify,
+  i18nToEnString,
+} from "@/utils/RoutePathBuildUtils";
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 
 const CardDetailPage: React.FC = () => {
   const { seriesShortName, setShortName, sortByAndCardName } =
     useParams<CollectionParamKeys>();
   const { locale } = useLocale();
-  const [selectedSetIndex, setSelectedSetIndex] = useState(0);
+  const navigate = useNavigate();
 
   const seriesKey = decodeURIComponent(seriesShortName ?? "");
   const setKey = decodeURIComponent(setShortName ?? "");
@@ -40,13 +46,37 @@ const CardDetailPage: React.FC = () => {
     sortBy,
     cardName,
   );
+  const { data: setsData } = useSets(seriesKey);
 
   if (error) return <PageError message="Failed to load card." />;
-  if (isFetching && !data) return <PageLoading />;
+  if (isFetching && !data) return <CardDetailSkeleton />;
   if (!data?.card) return <PageNotFound message="Card not found." />;
 
   const { card, previousCard, nextCard } = data;
   const resolvedName = t(card.name, locale);
+  const altLocale = locale === "en" ? "ja" : "en";
+  const altName = isJaAvailable(card.name) ? t(card.name, altLocale) : "";
+  const showAltName = altName !== "" && altName !== resolvedName;
+
+  const allCards = flattenSeriesCards(setsData ?? []);
+  const variants = findVariants(allCards, card);
+
+  const cardSet = (setsData ?? []).find(
+    (s) => s.set.short_name === card.set_short_name,
+  )?.set;
+  const backUrl = cardSet?.card_back
+    ? `${CDN_BASE_URL}/${seriesKey}/${card.set_short_name}/00.jpg?v=2`
+    : undefined;
+
+  const goToVariant = (v: CollectionCard) =>
+    navigate(
+      buildCardDetailPath(
+        v.series_short_name,
+        v.set_short_name,
+        v.sort_by,
+        slugify(i18nToEnString(v.name)),
+      ),
+    );
 
   const pageTitle = `${resolvedName} - Gaichu`;
   const descriptionParts: string[] = [];
@@ -61,13 +91,6 @@ const CardDetailPage: React.FC = () => {
       : `View ${resolvedName} card details on Gaichu TCG Database.`;
   const pageImage = card.image || card.thumb;
 
-  const resolveLocaleText = (
-    value: Partial<Record<"en" | "ja", string>> | undefined,
-  ): string => {
-    if (!value) return "";
-    return t(value, locale) ?? "";
-  };
-
   return (
     <div className="container mx-auto pt-2">
       <title>{pageTitle}</title>
@@ -79,216 +102,56 @@ const CardDetailPage: React.FC = () => {
       <meta name="twitter:description" content={pageDescription} />
       {pageImage && <meta name="twitter:image" content={pageImage} />}
 
-      <div className="flex flex-col gap-6 lg:flex-row">
-        <div className="shrink-0">
+      <div className="anim-settle grid gap-y-6 lg:grid-cols-[408px_minmax(0,1fr)] lg:gap-x-9 lg:gap-y-8">
+        <div className="flex flex-col gap-3.5 lg:col-start-2 lg:row-start-1">
+          <div className="flex flex-col items-start gap-3 sm:flex-row sm:justify-between sm:gap-4">
+            <h1
+              key={locale}
+              className="anim-settle text-primaryText flex flex-wrap items-baseline gap-x-3.5 leading-[1.2]"
+            >
+              {resolvedName}
+              {showAltName && (
+                <span
+                  lang={altLocale}
+                  className={`text-accentAmber text-[22px] font-normal text-shadow-none ${
+                    altLocale === "ja" ? "font-jp" : ""
+                  }`}
+                >
+                  {altName}
+                </span>
+              )}
+            </h1>
+            <LocaleToggle card={card} />
+          </div>
+          <CardMetaBadges card={card} />
+        </div>
+
+        <div className="lg:sticky lg:top-17.5 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:self-start">
           <CardImageSection
             card={card}
             resolvedName={resolvedName}
             previousCard={previousCard}
             nextCard={nextCard}
+            backUrl={backUrl}
           />
         </div>
 
-        <div className="flex min-w-0 flex-1 flex-col gap-6 xl:flex-row">
-          <div className="min-w-0 flex-1">
-            <div className="mb-4 flex flex-col items-start gap-2 sm:flex-row sm:justify-between sm:gap-x-4">
-              <h1 className="text-2xl font-semibold">{resolvedName}</h1>
-              <LocaleToggle card={card} />
-            </div>
-
-            <table className="w-full border-collapse">
-              <tbody>
-                {card.type && (
-                  <tr>
-                    <th>Type</th>
-                    <td>
-                      {card.color && (
-                        <CardIcon
-                          series={seriesKey}
-                          name={card.color}
-                          extension="jpg"
-                          className="mr-2 rounded-full"
-                        />
-                      )}
-                      {card.type}
-                    </td>
-                  </tr>
-                )}
-
-                {card.stage?.map((s, i) => {
-                  const text = [s.basic, s.evolution, s.description]
-                    .filter(Boolean)
-                    .join("\n");
-                  if (!text) return null;
-                  return (
-                    <CardDetailRow key={i} label="Stage">
-                      {text}
-                    </CardDetailRow>
-                  );
-                })}
-
-                {card.hp && <CardDetailRow label="HP">{card.hp}</CardDetailRow>}
-
-                {card.lvl && (
-                  <CardDetailRow label="Lv.">{card.lvl}</CardDetailRow>
-                )}
-
-                {card.lp_alt && (
-                  <CardDetailRow label="LP">{card.lp_alt}</CardDetailRow>
-                )}
-
-                {card.measurement && (
-                  <CardDetailRow label="Measurements">
-                    Height {card.measurement.height}, Weight{" "}
-                    {card.measurement.weight}
-                  </CardDetailRow>
-                )}
-
-                {hasI18nContent(card.favorite_food) && (
-                  <CardDetailRow label="Favorite Food">
-                    {t(card.favorite_food, locale)}
-                  </CardDetailRow>
-                )}
-
-                <AttacksSection
-                  attacks={card.attacks ?? []}
-                  series={seriesKey}
-                />
-
-                {card.limit && (
-                  <CardDetailRow label="Limit">{card.limit}</CardDetailRow>
-                )}
-
-                {card.cost && (
-                  <CardDetailRow label="Cost">
-                    {card.cost.map((cost) => (
-                      <span key={cost.aura} className="mr-2">
-                        {cost.total}{" "}
-                        <CardIcon
-                          series={seriesKey}
-                          name={cost.aura}
-                          extension="jpg"
-                        />
-                        {"  "}
-                      </span>
-                    ))}
-                    {card.lp && <span>LP {card.lp}</span>}
-                  </CardDetailRow>
-                )}
-
-                {card.traits && (
-                  <CardDetailRow label="Traits">
-                    {card.traits.map((trait) => (
-                      <span key={trait} className="mr-2">
-                        <CardIcon
-                          series={seriesKey}
-                          name={trait}
-                          extension="png"
-                          className="h-5"
-                        />
-                        {"  "}
-                      </span>
-                    ))}
-                  </CardDetailRow>
-                )}
-
-                {card.terra && (
-                  <CardDetailRow label="Terra">
-                    {card.terra.map((terra, i) => (
-                      <span key={`${terra.icon}-${i}`} className="mr-2">
-                        ({terra.attack && <>{terra.attack} </>}
-                        <CardIcon
-                          series={seriesKey}
-                          name={terra.icon}
-                          extension="png"
-                          className="h-5"
-                        />
-                        {terra.lp}){"  "}
-                      </span>
-                    ))}
-                  </CardDetailRow>
-                )}
-
-                {card.metadata && (
-                  <CardDetailRow label="Metadata">
-                    {card.metadata.discovered && (
-                      <>Discovered {card.metadata.discovered}, </>
-                    )}
-                    {card.metadata.gps && <>GPS {card.metadata.gps}, </>}
-                    {card.metadata.weight && (
-                      <>Weight {card.metadata.weight}, </>
-                    )}
-                    {card.metadata.height && <>Height {card.metadata.height}</>}
-                    {card.metadata.length && <>Length {card.metadata.length}</>}
-                    {card.metadata.type && (
-                      <>
-                        {card.metadata.type} {card.metadata.measurement}
-                      </>
-                    )}
-                  </CardDetailRow>
-                )}
-
-                {card.effect && (
-                  <CardDetailRow label="Effect">
-                    <IconText text={card.effect} series={seriesKey} />
-                  </CardDetailRow>
-                )}
-
-                <ZooAttackSection
-                  attacks={card.zoo_attack ?? []}
-                  series={seriesKey}
-                />
-
-                <AttributesSection
-                  series={seriesKey}
-                  weakness={card.weakness}
-                  resistance={card.resistance}
-                  retreat={card.retreat}
-                />
-
-                <ZooAttributesSection
-                  series={seriesKey}
-                  strength={card.strength}
-                />
-
-                {hasI18nContent(card.description) && (
-                  <CardDetailRow label="Flavor Text">
-                    {resolveLocaleText(card.description)}
-                  </CardDetailRow>
-                )}
-
-                {card.rule?.map((s, i) => {
-                  const text = [s.name, s.description]
-                    .filter(Boolean)
-                    .join("\n");
-                  if (!text) return null;
-                  return (
-                    <CardDetailRow key={i} label="Rule">
-                      {text}
-                    </CardDetailRow>
-                  );
-                })}
-
-                {card.illustrators && (
-                  <CardDetailRow label="Illustrator">
-                    {card.illustrators[0]}
-                  </CardDetailRow>
-                )}
-
-                {card.note && (
-                  <CardDetailRow label="Note">{card.note}</CardDetailRow>
-                )}
-              </tbody>
-            </table>
+        <div className="flex min-w-0 flex-col gap-8 lg:col-start-2 lg:row-start-2">
+          <div key={locale} className="anim-settle">
+            <CardStatsPanel card={card} seriesKey={seriesKey} />
           </div>
 
-          <div className="w-full shrink-0 lg:w-80">
-            <PrintingsPricesPanel
-              card={card}
-              selectedSetIndex={selectedSetIndex}
-              onSelectSet={setSelectedSetIndex}
-            />
-          </div>
+          <VariantsTable
+            variants={variants}
+            currentCardId={card.id}
+            onSelect={goToVariant}
+          />
+
+          <PriceLogPanel
+            cardId={card.id}
+            seriesShortName={seriesKey}
+            averagePrice={card.average_price}
+          />
         </div>
       </div>
     </div>

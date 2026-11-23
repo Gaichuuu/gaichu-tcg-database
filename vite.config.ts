@@ -22,7 +22,6 @@ export default defineConfig({
             "firebase/app",
             "firebase/firestore",
             "firebase/firestore/lite",
-            "firebase/analytics",
           ],
           tanstack: [
             "@tanstack/react-query",

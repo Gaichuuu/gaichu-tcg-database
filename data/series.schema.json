@@ -15,6 +15,9 @@
       "name": {
         "type": "string"
       },
+      "name_ja": {
+        "type": "string"
+      },
       "logo": {
         "type": "string",
         "format": "uri"

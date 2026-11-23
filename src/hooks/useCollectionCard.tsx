@@ -3,10 +3,7 @@ import {
   fetchCardDetail,
 } from "@/services/CollectionCardService";
 import { IS_USE_LOCAL_DATA } from "@/services/Constants";
-import {
-  getAdjacentCards,
-  getJsonCardDetail,
-} from "@/services/JsonCollectionCardService";
+import { loadAdjacentCards, loadJsonCardDetail } from "@/services/localData";
 import { CollectionCard } from "@/types/CollectionCard";
 import {
   keepPreviousData,
@@ -38,7 +35,7 @@ export const useCardDetail = (
     enabled,
     queryFn: async () => {
       return IS_USE_LOCAL_DATA
-        ? getJsonCardDetail(
+        ? loadJsonCardDetail(
             seriesShortName,
             setShortName,
             sortBy ?? 0,
@@ -81,13 +78,13 @@ export const useCurrentAndAdjacentCards = (
     placeholderData: IS_USE_LOCAL_DATA ? undefined : keepPreviousData,
     queryFn: async () => {
       if (IS_USE_LOCAL_DATA) {
-        const card = await getJsonCardDetail(
+        const card = await loadJsonCardDetail(
           seriesShortName,
           setShortName,
           sortBy ?? 0,
           cardName,
         );
-        const adjacentCards = await getAdjacentCards(
+        const adjacentCards = await loadAdjacentCards(
           seriesShortName,
           setShortName,
           sortBy ?? 0,

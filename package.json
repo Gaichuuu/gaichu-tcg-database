@@ -23,6 +23,8 @@
     "news:import:prod": "NODE_ENV=production node firestoreScript/importNews.cjs",
     "news:import:staging": "NODE_ENV=staging node firestoreScript/importNews.cjs",
     "prices:export": "npx tsx scripts/export-prices-to-json.ts",
+    "prices:export:packs": "npx tsx scripts/export-pack-prices-to-json.ts",
+    "prices:backfill-sold": "npx tsx scripts/backfill-sold-history.ts",
     "tts:build": "npm --prefix tts-mod run build",
     "tts:json": "npm --prefix tts-mod run json"
   },

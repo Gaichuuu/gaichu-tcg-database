@@ -6,6 +6,7 @@ import illustratorsRouter from "./illustrators.js";
 import rarityRouter from "./rarity.js";
 import statsRouter from "./stats.js";
 import pricesRouter from "./prices.js";
+import packPricesRouter from "./pack-prices.js";
 
 const router = Router();
 
@@ -16,5 +17,6 @@ router.use("/illustrators", illustratorsRouter);
 router.use("/rarity", rarityRouter);
 router.use("/stats", statsRouter);
 router.use("/prices", pricesRouter);
+router.use("/pack-prices", packPricesRouter);
 
 export default router;

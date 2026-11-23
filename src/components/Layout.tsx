@@ -11,9 +11,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const canonicalUrl = `https://gaichu.com${pathname}`;
 
   return (
-    <div className="bg-mainBg">
+    <div>
       <link rel="canonical" href={canonicalUrl} />
-      <div className="container mx-auto px-4 pt-2 pb-8">
+      <div className="container mx-auto px-4 pt-2 pb-12 sm:px-8">
         <Breadcrumbs />
 
         <main>{children}</main>

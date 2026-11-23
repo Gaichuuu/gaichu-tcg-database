@@ -38,11 +38,18 @@ const Breadcrumbs: React.FC = () => {
   }
 
   return (
-    <nav className="mb-2 overflow-hidden text-sm">
+    <nav
+      aria-label="Breadcrumb"
+      className="my-4 overflow-hidden font-mono text-[13px]"
+    >
       <ol className="list-reset flex items-center gap-2 whitespace-nowrap">
         <li className="shrink-0">
-          <Link to="/">
-            <FaBug size={16} className="mb-1 inline-block" />
+          <Link
+            to="/"
+            aria-label="Home"
+            className="text-secondaryText hover:text-hoverText flex"
+          >
+            <FaBug size={14} aria-hidden />
           </Link>
         </li>
 
@@ -50,15 +57,21 @@ const Breadcrumbs: React.FC = () => {
           const isLast = idx === items.length - 1;
           return (
             <React.Fragment key={item.routeTo ?? `${idx}-${item.label}`}>
-              <span className="shrink-0">/</span>
+              <span aria-hidden className="text-mutedLabel shrink-0">
+                {"\\"}
+              </span>
               <li className={isLast ? "min-w-0 flex-1" : "shrink-0"}>
                 {item.routeTo && !isLast ? (
-                  <Link to={item.routeTo} className="hover:underline">
+                  <Link
+                    to={item.routeTo}
+                    className="text-secondaryText hover:text-hoverText font-normal"
+                  >
                     {item.label}
                   </Link>
                 ) : (
                   <span
-                    className={isLast ? "block truncate" : ""}
+                    aria-current={isLast ? "page" : undefined}
+                    className={`text-primaryText${isLast ? "block truncate" : ""}`}
                     title={item.label}
                   >
                     {item.label}

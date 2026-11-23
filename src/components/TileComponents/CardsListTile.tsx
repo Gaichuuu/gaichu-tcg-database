@@ -1,7 +1,7 @@
 import React from "react";
 import { TileModel } from "./TileModel";
 
-const CardsListTile: React.FC<TileModel> = ({ children, onClick }) => {
+const CardsListTile: React.FC<TileModel> = ({ children, onClick, style }) => {
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
@@ -15,7 +15,8 @@ const CardsListTile: React.FC<TileModel> = ({ children, onClick }) => {
       tabIndex={0}
       onClick={onClick}
       onKeyDown={handleKeyDown}
-      className="flex cursor-pointer items-center justify-center rounded-lg p-0.5 shadow-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primaryBorder"
+      style={style}
+      className="group flex min-w-0 cursor-pointer flex-col outline-none"
     >
       {children}
     </div>

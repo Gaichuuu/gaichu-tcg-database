@@ -16,7 +16,10 @@ interface ZooAttackSectionProps {
   series: string;
 }
 
-export default function ZooAttackSection({ attacks, series }: ZooAttackSectionProps) {
+export default function ZooAttackSection({
+  attacks,
+  series,
+}: ZooAttackSectionProps) {
   if (!attacks.length) return null;
 
   return (
@@ -33,28 +36,38 @@ export default function ZooAttackSection({ attacks, series }: ZooAttackSectionPr
             <tr>
               <th>{atk.name}</th>
               <td>
-                {statuses.length > 0 && (
-                  <span className="mr-2 inline-flex items-center gap-1 align-middle">
-                    {statuses.map((s, sIdx) => (
-                      <CardIcon
-                        key={`status-${s}-${sIdx}`}
-                        series={series}
-                        name={s}
-                        extension="png"
-                      />
-                    ))}
-                  </span>
+                <div className="flex items-center gap-2">
+                  {statuses.map((s, sIdx) => (
+                    <CardIcon
+                      key={`status-${s}-${sIdx}`}
+                      series={series}
+                      name={s}
+                      extension="png"
+                    />
+                  ))}
+                  {atk.multiplier && (
+                    <span className="text-secondaryText">
+                      ({atk.multiplier})
+                    </span>
+                  )}
+                  {atk.damage && (
+                    <span className="font-display text-accentPink text-lg font-bold">
+                      {atk.damage}
+                    </span>
+                  )}
+                  {atk.bonus && (
+                    <CardIcon
+                      series={series}
+                      name={atk.bonus}
+                      extension="png"
+                    />
+                  )}
+                </div>
+                {atk.effect && (
+                  <div className="mt-1">
+                    <IconText text={atk.effect} series={series} />
+                  </div>
                 )}
-                {atk.multiplier && (
-                  <span className="mr-2 align-middle">({atk.multiplier})</span>
-                )}
-                <span className="mr-2 align-middle font-medium">
-                  {atk.damage}
-                </span>
-                {atk.bonus && (
-                  <CardIcon series={series} name={atk.bonus} extension="png" />
-                )}
-                {atk.effect && <IconText text={atk.effect} series={series} />}
               </td>
             </tr>
           </React.Fragment>

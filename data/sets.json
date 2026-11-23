@@ -42,14 +42,12 @@
     },
     "card_back": {
       "url": "https://gaichu.b-cdn.net/wm/set1/00.jpg",
-      "text": {
-        "ja": "パロディー パロディー",
-        "en": "Parody Parody"
-      },
+      "text": { "ja": "パロディー パロディー", "en": "Parody Parody" },
       "illustrator": "Alex Roh",
       "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
     },
-    "total_cards_count": 50
+    "total_cards_count": 50,
+    "pack_average_price": 225.5
   },
   {
     "id": "679fc82a-ac5d-46dc-8cb3-7b8f6227f237",
@@ -121,14 +119,12 @@
     },
     "card_back": {
       "url": "https://gaichu.b-cdn.net/wm/set2/00.jpg",
-      "text": {
-        "ja": "パロディー パロディー",
-        "en": "Parody Parody"
-      },
+      "text": { "ja": "パロディー パロディー", "en": "Parody Parody" },
       "illustrator": "Alex Roh",
       "note": "The back illustration changed from a Poké Ball to a derpy-looking Voltorb."
     },
-    "total_cards_count": 50
+    "total_cards_count": 50,
+    "pack_average_price": 205
   },
   {
     "id": "cfcac0b5-738e-46de-9386-f3b42010c722",
@@ -222,7 +218,8 @@
       "illustrator": "Soo Zhi Wei",
       "note": "The reprinted set has \"2024\" at the bottom."
     },
-    "total_cards_count": 44
+    "total_cards_count": 44,
+    "pack_average_price": 24.49
   },
   {
     "id": "c505fdeb-0d9e-4025-82d4-cf2a05a40a51",
@@ -266,7 +263,8 @@
       "illustrator": "Soo Zhi Wei",
       "note": "Series 2 has \"2025\" at the bottom."
     },
-    "total_cards_count": 80
+    "total_cards_count": 80,
+    "pack_average_price": 21.49
   },
   {
     "id": "0cd30841-399e-4043-ac72-bdf4d268d4b3",
@@ -380,7 +378,8 @@
       "text": { "en": "Tiger Pack", "ja": "テイガーパク" },
       "illustrator": "Alex Roh"
     },
-    "total_cards_count": 60
+    "total_cards_count": 60,
+    "pack_average_price": 16.67
   },
   {
     "id": "dcf02543-3a5d-4151-a1ac-078ef87a9453",
@@ -415,6 +414,7 @@
       "text": "SOMETHINGMON\nI think that's the name\n@kaijinart\n© 2025 Somethingmon • 1st Edition\nBarangan buatan Malaysia",
       "illustrator": "KaijinArt"
     },
-    "total_cards_count": 29
+    "total_cards_count": 29,
+    "pack_average_price": 0
   }
 ]

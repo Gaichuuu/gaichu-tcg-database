@@ -44,7 +44,12 @@ export default function AttributesSection({
               {weakness!.map((w, i) => (
                 <span key={`w-${i}`} className="inline-flex items-center gap-1">
                   {w.type && (
-                    <CardIcon series={series} name={w.type} extension="jpg" />
+                    <CardIcon
+                      series={series}
+                      name={w.type}
+                      extension="jpg"
+                      className="rounded-full"
+                    />
                   )}
                   {w.value && <span className="align-middle">{w.value}</span>}
                 </span>
@@ -60,7 +65,12 @@ export default function AttributesSection({
               {resistance!.map((r, i) => (
                 <span key={`r-${i}`} className="inline-flex items-center gap-1">
                   {r.type && (
-                    <CardIcon series={series} name={r.type} extension="jpg" />
+                    <CardIcon
+                      series={series}
+                      name={r.type}
+                      extension="jpg"
+                      className="rounded-full"
+                    />
                   )}
                   {r.value && <span className="align-middle">{r.value}</span>}
                 </span>
@@ -81,6 +91,7 @@ export default function AttributesSection({
                     series={series}
                     name={cost}
                     extension="jpg"
+                    className="rounded-full"
                   />
                 ))}
             </span>

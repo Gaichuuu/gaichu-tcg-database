@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useQueryParam } from "@/hooks/useQueryParam";
 
-export function NewsSearch() {
+export function NewsSearch({ count }: { count?: number | null }) {
   const [q, setQ] = useQueryParam("q", "");
   const [local, setLocal] = useState(q);
 
@@ -15,15 +15,25 @@ export function NewsSearch() {
   }, [q]);
 
   return (
-    <div className="bg-mainBg/60 supports-backdrop-filter:bg-mainBg/40 sticky top-0 z-10 backdrop-blur-sm">
-      <div className="py-3">
-        <input
-          value={local}
-          onChange={(e) => setLocal(e.target.value)}
-          placeholder="Filter…"
-          className="bg-mainBg border-secondaryBorder focus:ring-primaryBorder w-full rounded-xl border px-4 py-2 focus:ring-2 focus:outline-none"
-        />
-      </div>
+    <div className="bg-insetBg border-tileBorder has-focus-visible:border-hoverBorder flex flex-1 items-center gap-2.5 border-2 px-3 py-1.75 shadow-[inset_2px_2px_0_rgba(0,0,0,0.7)]">
+      <span
+        className="text-accentGreen font-display font-bold select-none"
+        aria-hidden
+      >
+        /
+      </span>
+      <input
+        value={local}
+        onChange={(e) => setLocal(e.target.value)}
+        placeholder="filter posts…"
+        aria-label="Filter posts"
+        className="text-accentGreen placeholder:text-accentGreen/45 font-display h-5.5 min-w-0 flex-1 bg-transparent text-[15px] leading-5.5 outline-none"
+      />
+      {count != null && (
+        <span className="text-secondaryText font-display text-[11px] whitespace-nowrap">
+          {count} post{count === 1 ? "" : "s"}
+        </span>
+      )}
     </div>
   );
 }

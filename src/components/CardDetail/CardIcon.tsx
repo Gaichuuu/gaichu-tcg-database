@@ -27,6 +27,8 @@ export default function CardIcon({
   return (
     <img
       src={src}
+      loading="lazy"
+      decoding="async"
       alt={`${name} Icon`}
       className={`inline-block align-middle ${sizeClass} ${className}`}
     />

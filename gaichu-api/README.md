@@ -153,7 +153,7 @@ curl "https://us-central1-gaichu-fe55f.cloudfunctions.net/api/v1/prices/sync/sta
 Prices are automatically updated every Monday at 8 AM UTC via a scheduled Cloud Function.
 
 1. Checks for cards with stale prices (older than 7 days)
-2. Fetches current eBay sold prices via RapidAPI
+2. Fetches current eBay sold prices via RapidAPI `/search` (`RAPIDAPI_KEY` secret)
 3. Updates `card_prices` collection in Firestore
 4. Logs results to `price_sync_logs` collection
 

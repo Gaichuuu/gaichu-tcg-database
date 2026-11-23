@@ -28,24 +28,34 @@ export default function AttacksSection({
         <tr key={t(attack.name, "en") || aIndex}>
           <th>{t(attack.name, locale)}</th>
           <td>
-            {(attack.costs ?? []).map((cost, cIndex) => (
-              <CardIcon
-                key={`${t(attack.name, "en")}-cost-${cIndex}`}
-                series={series}
-                name={cost}
-                extension="jpg"
-                className={[
-                  "mr-2 rounded",
-                  series === "tygadu" && "border border-hoverBorder",
-                ].filter(Boolean).join(" ")}
-              />
-            ))}
-            <IconText
-              text={t(attack.effect, locale)}
-              series={series}
-              className="mx-1"
-            />
-            {attack.damage ? `(${attack.damage})` : ""}
+            <div className="flex items-baseline justify-between gap-3">
+              <span>
+                {(attack.costs ?? []).map((cost, cIndex) => (
+                  <CardIcon
+                    key={`${t(attack.name, "en")}-cost-${cIndex}`}
+                    series={series}
+                    name={cost}
+                    extension="jpg"
+                    className={[
+                      "mr-2 rounded-full",
+                      series === "tygadu" && "border-hoverBorder border",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                  />
+                ))}
+                <IconText
+                  text={t(attack.effect, locale)}
+                  series={series}
+                  className="mx-1"
+                />
+              </span>
+              {attack.damage && (
+                <span className="font-display text-accentPink shrink-0 text-lg font-bold">
+                  {attack.damage}
+                </span>
+              )}
+            </div>
           </td>
         </tr>
       ))}

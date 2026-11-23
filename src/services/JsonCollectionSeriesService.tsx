@@ -8,6 +8,7 @@ interface JsonSeries {
   short_name: string;
   logo: string;
   name: string;
+  name_ja?: string;
   sort_by: number;
   description?: string;
   website?: string;
@@ -64,6 +65,7 @@ const convertToSeriesAndSet = (series: JsonSeries): SeriesAndSet => ({
     short_name: series.short_name,
     logo: series.logo,
     name: series.name,
+    name_ja: series.name_ja,
     sort_by: series.sort_by,
     description: series.description,
     website: series.website,

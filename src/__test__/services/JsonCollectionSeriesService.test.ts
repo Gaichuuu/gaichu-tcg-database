@@ -38,4 +38,11 @@ describe("test for getJsonSeries", () => {
       ).toBe(true);
     });
   });
+
+  it("passes the optional Japanese series name through, and leaves it unset otherwise", () => {
+    const byShort = (short: string) =>
+      series.find((s) => s.series.short_name === short)?.series;
+    expect(byShort("test_3_short_name")?.name_ja).toBe("テスト3");
+    expect(byShort("test_1_short_name")?.name_ja).toBeUndefined();
+  });
 });

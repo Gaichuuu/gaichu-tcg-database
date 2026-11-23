@@ -3,6 +3,7 @@ import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persi
 import { QueryClient } from "@tanstack/react-query";
 import { persistQueryClient } from "@tanstack/react-query-persist-client";
 import { PERSIST_KEY } from "./persistenceKey";
+import { createIdbStorage } from "./idbStorage";
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -15,19 +16,24 @@ export const queryClient = new QueryClient({
   },
 });
 
-const asyncLocalStorage = {
-  getItem: (key: string) => Promise.resolve(window.localStorage.getItem(key)),
-  setItem: (key: string, value: string) =>
-    Promise.resolve(window.localStorage.setItem(key, value)),
-  removeItem: (key: string) =>
-    Promise.resolve(window.localStorage.removeItem(key)),
-};
-
 export function setupQueryPersistence() {
   if (typeof window === "undefined") return;
+
+  const usesIndexedDb = typeof indexedDB !== "undefined";
+  try {
+    for (const key of Object.keys(window.localStorage)) {
+      if (!key.startsWith("gaichu-query-cache-")) continue;
+      if (!usesIndexedDb && key === PERSIST_KEY) continue;
+      window.localStorage.removeItem(key);
+    }
+  } catch (err) {
+    console.error("Failed to clear legacy query cache from localStorage", err);
+  }
+
   const persister = createAsyncStoragePersister({
-    storage: asyncLocalStorage,
+    storage: createIdbStorage(),
     key: PERSIST_KEY,
+    throttleTime: 3000,
   });
   persistQueryClient({
     queryClient,

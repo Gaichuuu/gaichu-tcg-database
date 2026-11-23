@@ -35,7 +35,7 @@
         "costs": ["Water"]
       }
     ],
-    "average_price": 31.8
+    "average_price": 24.99
   },
   {
     "id": "1f885163-05f9-406b-a30a-e96c4e82e162",
@@ -65,7 +65,7 @@
         "costs": ["Psychic"]
       }
     ],
-    "average_price": 68.77
+    "average_price": 62
   },
   {
     "id": "a2d407f6-cd7a-441a-81f9-67257845a046",
@@ -135,7 +135,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 42.49
+    "average_price": 31.74
   },
   {
     "id": "2bccbdeb-f025-4e18-ac07-6f0678c8033d",
@@ -162,7 +162,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 14.66
+    "average_price": 16.65
   },
   {
     "id": "8d2abfb8-2efa-4b5d-96e2-f159c684e719",
@@ -192,7 +192,7 @@
         "costs": ["Electric"]
       }
     ],
-    "average_price": 10.99
+    "average_price": 12.5
   },
   {
     "id": "97af6fa0-c9b7-41cb-8976-46749171ce6a",
@@ -223,7 +223,7 @@
         "costs": ["Electric"]
       }
     ],
-    "average_price": 30.83
+    "average_price": 23
   },
   {
     "id": "53a99480-da92-4da4-9aa0-dab5ed487d2a",
@@ -262,7 +262,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 30
+    "average_price": 27.5
   },
   {
     "id": "388b55d0-2b61-487f-9bb9-c964c5f41ec0",
@@ -293,7 +293,7 @@
         "costs": ["Grass"]
       }
     ],
-    "average_price": 45.99
+    "average_price": 35.18
   },
   {
     "id": "593a874f-f584-4127-a813-240fbd0953c9",
@@ -332,7 +332,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 42.5
+    "average_price": 56.29
   },
   {
     "id": "f5e8ad48-cd3d-44ab-958d-47f58d816379",
@@ -368,7 +368,7 @@
         "costs": ["Fire"]
       }
     ],
-    "average_price": 45
+    "average_price": 33.52
   },
   {
     "id": "c61b1bdd-c206-4694-8a96-9a7d3eca44b7",
@@ -398,7 +398,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 9.99
+    "average_price": 11.99
   },
   {
     "id": "31ea2242-1638-4040-ab15-6c7587da4397",
@@ -428,7 +428,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 12.5
+    "average_price": 13.98
   },
   {
     "id": "f4d12e2a-b8ee-4f97-bc7e-740226391253",
@@ -467,7 +467,7 @@
         "costs": ["Steel"]
       }
     ],
-    "average_price": 16.99
+    "average_price": 19.74
   },
   {
     "id": "b7ec9d91-93f3-408e-a1f4-9eed076ba3b8",
@@ -505,7 +505,7 @@
         "costs": ["Grass"]
       }
     ],
-    "average_price": 13.47
+    "average_price": 9.42
   },
   {
     "id": "14122c28-857f-4430-ba5a-7c8b5a946d5f",
@@ -572,7 +572,7 @@
         "costs": ["Water"]
       }
     ],
-    "average_price": 18.15
+    "average_price": 20.99
   },
   {
     "id": "24b3024d-b966-41b6-8ac7-a42c295f7bd7",
@@ -634,7 +634,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 15.47
+    "average_price": 16.49
   },
   {
     "id": "c2b7f774-5c77-4e12-9e16-38479c9d3db6",
@@ -673,7 +673,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 17.9
+    "average_price": 17.49
   },
   {
     "id": "f3fa3741-08a1-462e-aa46-31d9dba819e4",
@@ -712,7 +712,7 @@
         "costs": ["Dragon"]
       }
     ],
-    "average_price": 20
+    "average_price": 19.49
   },
   {
     "id": "7aab62ba-27d7-412c-8bf6-fdf701d4f8c6",
@@ -743,7 +743,7 @@
         "costs": ["Fire", "Water", "Electric"]
       }
     ],
-    "average_price": 14.33
+    "average_price": 19.99
   },
   {
     "id": "01560328-9b44-4dfb-9899-fca79d8f4d05",
@@ -830,7 +830,7 @@
         "costs": ["Grass"]
       }
     ],
-    "average_price": 7.37
+    "average_price": 11.66
   },
   {
     "id": "c82550d0-3092-4480-b60b-283a3dbab478",
@@ -868,7 +868,7 @@
         "costs": ["Dark"]
       }
     ],
-    "average_price": 26.73
+    "average_price": 18.99
   },
   {
     "id": "8553c87f-3948-4ef3-a5e0-d20e83aed441",
@@ -899,7 +899,7 @@
         "costs": ["Water"]
       }
     ],
-    "average_price": 17.49
+    "average_price": 16.25
   },
   {
     "id": "22e531b4-d330-40f0-8740-deb7bd9914d1",
@@ -929,7 +929,7 @@
         "costs": ["Psychic"]
       }
     ],
-    "average_price": 17.4
+    "average_price": 18.39
   },
   {
     "id": "8f782c0f-ab25-42bf-86aa-94844cf2f7ca",
@@ -968,7 +968,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 62.63
+    "average_price": 64.33
   },
   {
     "id": "123ab3a2-529d-47b4-9a4d-390178d8399d",
@@ -1029,7 +1029,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 23.33
+    "average_price": 26.66
   },
   {
     "id": "224d490c-ef21-4775-896b-68f43d3a2a61",
@@ -1056,7 +1056,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 30
+    "average_price": 26.5
   },
   {
     "id": "e370c5b5-7ac9-401e-b6f2-8d6b921600ce",
@@ -1086,7 +1086,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 0
+    "average_price": 15.16
   },
   {
     "id": "12d9770e-32e2-4766-ab24-a43f86dccc42",
@@ -1116,7 +1116,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 16.3
+    "average_price": 10.99
   },
   {
     "id": "abd60525-c3a5-4906-a8f6-cf739d9ab6af",
@@ -1147,7 +1147,7 @@
         "costs": ["Fighting"]
       }
     ],
-    "average_price": 11.98
+    "average_price": 16.99
   },
   {
     "id": "cf56535e-e339-487d-a8a7-84334e1993f7",
@@ -1178,7 +1178,7 @@
         "costs": ["Fighting"]
       }
     ],
-    "average_price": 41.24
+    "average_price": 57.48
   },
   {
     "id": "fbf2c52b-a50e-4b7a-bd68-0789189a53f5",
@@ -1208,7 +1208,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 41.66
+    "average_price": 33
   },
   {
     "id": "e38278cb-8375-4e2d-a9dc-bdf9d9cfce61",
@@ -1239,7 +1239,7 @@
         "costs": ["Electric"]
       }
     ],
-    "average_price": 453.01
+    "average_price": 237.7
   },
   {
     "id": "787ad33e-e7ce-4677-b35b-096c74f99169",
@@ -1269,7 +1269,7 @@
         "costs": ["Dark"]
       }
     ],
-    "average_price": 231
+    "average_price": 325
   },
   {
     "id": "200142b9-2df3-418f-b6d9-b6e6034fb8a2",
@@ -1300,7 +1300,7 @@
         "costs": ["Psychic"]
       }
     ],
-    "average_price": 115.5
+    "average_price": 100
   },
   {
     "id": "42b31a22-5ab5-4ca4-b9ef-2a4098771129",
@@ -1331,7 +1331,7 @@
         "costs": ["Water"]
       }
     ],
-    "average_price": 125.5
+    "average_price": 130.24
   },
   {
     "id": "21e02a9f-7ab6-4b0c-8a96-a62ffd0e5a2c",
@@ -1362,7 +1362,7 @@
         "costs": ["Fire"]
       }
     ],
-    "average_price": 198.94
+    "average_price": 240.49
   },
   {
     "id": "7af4c953-732e-4981-8e41-0682ef9ff104",
@@ -1393,7 +1393,7 @@
         "costs": ["Grass"]
       }
     ],
-    "average_price": 106
+    "average_price": 99
   },
   {
     "id": "29e1bce4-0ea0-4026-94e2-066b6b13ef93",
@@ -1423,7 +1423,7 @@
         "costs": ["Dragon"]
       }
     ],
-    "average_price": 103.22
+    "average_price": 100.33
   },
   {
     "id": "046592dc-0b58-4dc5-bb84-5c610500d9e9",
@@ -1453,7 +1453,7 @@
         "costs": ["Psychic"]
       }
     ],
-    "average_price": 54.99
+    "average_price": 50
   },
   {
     "id": "4de08d8e-1581-4acd-a1b8-5440abdfe4fe",
@@ -1483,7 +1483,7 @@
         "costs": ["Dark"]
       }
     ],
-    "average_price": 633.75
+    "average_price": 551.86
   },
   {
     "id": "be2039b1-62a4-4c6a-9d72-26f56d149b31",
@@ -1513,7 +1513,7 @@
         "costs": ["Psychic", "Psychic", "Psychic"]
       }
     ],
-    "average_price": 174.94
+    "average_price": 125.31
   },
   {
     "id": "22cb07d5-7950-4032-a514-3ca6dd7a2c70",
@@ -1543,7 +1543,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 165.2
+    "average_price": 196.67
   },
   {
     "id": "c0f24e53-aeed-43a8-8109-8c067639618c",
@@ -1573,7 +1573,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 55.83
+    "average_price": 41.25
   },
   {
     "id": "4fc0ad14-85da-4e58-a630-ef69449176c2",
@@ -1604,7 +1604,7 @@
         "costs": ["Water"]
       }
     ],
-    "average_price": 126.32
+    "average_price": 125.8
   },
   {
     "id": "1fb2c0ac-28bc-4569-b0e6-7521cc421271",
@@ -1993,7 +1993,7 @@
         "costs": ["Dark"]
       }
     ],
-    "average_price": 68
+    "average_price": 54.99
   },
   {
     "id": "8384f45d-4c02-4abd-97ad-dcb9d75b5197",
@@ -2348,7 +2348,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 7.5
+    "average_price": 6
   },
   {
     "id": "1f972c13-70f4-40cc-8df9-ae00ac524d01",
@@ -2833,7 +2833,7 @@
         "costs": ["Normal"]
       }
     ],
-    "average_price": 199.99
+    "average_price": 450
   },
   {
     "id": "dc57bb94-44e2-4289-8924-79a446d73a7e",
@@ -2864,7 +2864,7 @@
         "costs": ["Fire"]
       }
     ],
-    "average_price": 161.31
+    "average_price": 165.88
   },
   {
     "id": "a7e13ccd-96b8-46eb-ae9f-5536b48263fd",
@@ -2894,7 +2894,7 @@
         "costs": ["Grass"]
       }
     ],
-    "average_price": 120.19
+    "average_price": 114.38
   },
   {
     "id": "b6090d5b-3c41-4434-b19c-aa5718c53c96",
@@ -3048,7 +3048,7 @@
         "costs": ["Electric"]
       }
     ],
-    "average_price": 166.67
+    "average_price": 146.67
   },
   {
     "id": "d53edbd7-066d-49b5-b9fb-5db0a54e887e",
@@ -3172,7 +3172,7 @@
         "costs": ["Water"]
       }
     ],
-    "average_price": 78.33
+    "average_price": 100
   },
   {
     "id": "0b636cc5-ecd5-4346-a9a5-6c1f19c81621",

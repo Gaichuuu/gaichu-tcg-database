@@ -1,5 +1,4 @@
 import React from "react";
-import { FiExternalLink } from "react-icons/fi";
 
 interface Friend {
   name: string;
@@ -25,6 +24,12 @@ const FRIENDS: Friend[] = [
     description:
       "Complete card database and cryptid encyclopedia for vintage MetaZoo.",
   },
+  {
+    name: "MetaZoo NFTs",
+    url: "https://metazoonfts.com/",
+    description:
+      "Check your MetaZoo NFT wallet's profit and loss and see how you rank.",
+  },
 ];
 
 function faviconUrl(siteUrl: string): string {
@@ -34,31 +39,34 @@ function faviconUrl(siteUrl: string): string {
 
 const FriendsSection: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
       {FRIENDS.map((friend) => (
         <a
           key={friend.name}
           href={friend.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group border-secondaryBorder hover:border-hoverBorder flex items-start gap-3 rounded-lg border p-4 transition-colors"
+          className="group tile tile-link flex items-start gap-3 p-4 font-normal"
         >
-          <img
-            src={faviconUrl(friend.url)}
-            alt=""
-            width={24}
-            height={24}
-            className="mt-1 shrink-0"
-          />
-          <div className="flex flex-col">
-            <span className="text-linkAlt group-hover:text-linkAltHover inline-flex items-center gap-1.5 font-bold">
-              {friend.name}
-              <FiExternalLink className="text-linkAlt group-hover:text-linkAltHover h-3.5 w-3.5" />
+          <span className="bg-mainBg border-tileBorder grid size-8 shrink-0 place-items-center overflow-hidden border-2">
+            <img
+              src={faviconUrl(friend.url)}
+              loading="lazy"
+              decoding="async"
+              alt=""
+              width={20}
+              height={20}
+              className="block transition-transform duration-250 group-hover:scale-[1.12] group-focus-visible:scale-[1.12]"
+            />
+          </span>
+          <span className="flex flex-col">
+            <span className="text-linkAlt text-[15px] font-extrabold">
+              {friend.name} ↗
             </span>
-            <span className="text-secondaryText mt-1 text-sm">
+            <span className="text-secondaryText mt-1 text-[12.5px] leading-relaxed text-pretty">
               {friend.description}
             </span>
-          </div>
+          </span>
         </a>
       ))}
     </div>

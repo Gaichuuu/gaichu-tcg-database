@@ -16,20 +16,26 @@ import {
   logSyncRun,
 } from "../services/priceService.js";
 import type { Card } from "../types/index.js";
+import { isTriggerAuthorized } from "./triggerAuth.js";
+import { isLikelySourceOutage, outageMessage } from "../services/syncHealth.js";
+import { PRICED_SERIES } from "../config/pricedSeries.js";
 
-// Define the secret for RapidAPI key
+// RapidAPI key for the eBay Average Selling Price API
 const rapidApiKey = defineSecret("RAPIDAPI_KEY");
+const triggerToken = defineSecret("TRIGGER_TOKEN");
 
 // Configuration
 const SYNC_CONFIG = {
   // How old prices must be before refreshing (in days)
   staleDays: 7,
-  // Maximum cards to process per run (to stay within RapidAPI rate limits)
+  // Maximum cards to process per run
   maxCardsPerRun: 200,
-  // Delay between API calls (ms) to avoid rate limiting
-  delayBetweenCalls: 1500,
+  // Pause between cards (ms)
+  delayBetweenCalls: 250,
+  // Stop starting new cards after this long, so the run always finishes
+  timeBudgetMs: 450_000,
   // Only sync cards from these series
-  enabledSeries: ["wm", "ash", "tygadu"],
+  enabledSeries: PRICED_SERIES,
 };
 
 function isPriceEligible(card: Card): boolean {
@@ -92,19 +98,30 @@ async function syncPrices(
   cards: Card[],
   apiKey: string,
 ): Promise<{
+  processed: number;
   success: number;
   noResults: number;
   errors: number;
   details: Array<{ cardId: string; cardName: string; status: string }>;
 }> {
   const results = {
+    processed: 0,
     success: 0,
     noResults: 0,
     errors: 0,
     details: [] as Array<{ cardId: string; cardName: string; status: string }>,
   };
+  const deadline = Date.now() + SYNC_CONFIG.timeBudgetMs;
 
   for (let i = 0; i < cards.length; i++) {
+    if (Date.now() > deadline) {
+      console.warn(
+        `Time budget reached after ${i} of ${cards.length} cards; ` +
+          `${cards.length - i} left for the next run.`,
+      );
+      break;
+    }
+    results.processed = i + 1;
     const card = cards[i];
     const cardName =
       typeof card.name === "string"
@@ -208,7 +225,7 @@ export const scheduledPriceSync = onSchedule(
     await logSyncRun({
       timestamp: new Date().toISOString(),
       trigger: "scheduled",
-      cardsProcessed: cardsToSync.length,
+      cardsProcessed: results.processed,
       success: results.success,
       noResults: results.noResults,
       errors: results.errors,
@@ -216,6 +233,13 @@ export const scheduledPriceSync = onSchedule(
         .filter((d) => d.status === "success")
         .map((d) => ({ cardId: d.cardId, cardName: d.cardName })),
     });
+
+    // Fail the run loudly
+    if (isLikelySourceOutage(results.processed, results.success)) {
+      const message = outageMessage(results.processed);
+      console.error(message);
+      throw new Error(message);
+    }
   },
 );
 
@@ -227,12 +251,10 @@ export const triggerPriceSync = onRequest(
     region: "us-central1",
     memory: "512MiB",
     timeoutSeconds: 540,
-    secrets: [rapidApiKey],
+    secrets: [rapidApiKey, triggerToken],
   },
   async (req, res) => {
-    // Use proper authentication in production
-    const authHeader = req.headers.authorization;
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    if (!isTriggerAuthorized(req, triggerToken.value())) {
       res.status(401).json({ error: "Unauthorized" });
       return;
     }
@@ -293,9 +315,15 @@ export const triggerPriceSync = onRequest(
 
     const results = await syncPrices(limitedCards, apiKey);
 
-    res.json({
-      message: "Price sync complete",
-      cardsProcessed: limitedCards.length,
+    const outage = isLikelySourceOutage(results.processed, results.success);
+    if (outage) console.error(outageMessage(results.processed));
+
+    res.status(outage ? 502 : 200).json({
+      message: outage
+        ? outageMessage(results.processed)
+        : "Price sync complete",
+      cardsProcessed: results.processed,
+      cardsRequested: limitedCards.length,
       results: {
         success: results.success,
         noResults: results.noResults,
@@ -314,9 +342,14 @@ export const syncSingleCardPrice = onRequest(
     region: "us-central1",
     memory: "256MiB",
     timeoutSeconds: 30,
-    secrets: [rapidApiKey],
+    secrets: [rapidApiKey, triggerToken],
   },
   async (req, res) => {
+    if (!isTriggerAuthorized(req, triggerToken.value())) {
+      res.status(401).json({ error: "Unauthorized" });
+      return;
+    }
+
     const cardId = req.query.cardId as string;
     if (!cardId) {
       res.status(400).json({ error: "cardId query parameter required" });
@@ -368,11 +401,10 @@ export const backfillPriceUrls = onRequest(
     memory: "256MiB",
     timeoutSeconds: 60,
     invoker: "public",
+    secrets: [triggerToken],
   },
   async (req, res) => {
-    // Simple auth check
-    const authHeader = req.headers.authorization;
-    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    if (!isTriggerAuthorized(req, triggerToken.value())) {
       res.status(401).json({ error: "Unauthorized" });
       return;
     }

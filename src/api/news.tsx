@@ -1,5 +1,6 @@
 import type { NewsPost } from "@/types/news";
 import { database } from "@/lib/firebase";
+import { IS_USE_LOCAL_DATA } from "@/services/Constants";
 import {
   collection,
   query,
@@ -28,7 +29,8 @@ export const toTokens = (s: string) =>
     ),
   ).slice(0, 10);
 
-export const stripHtml = (s: string) => String(s || "").replace(/<[^>]+>/g, " ");
+export const stripHtml = (s: string) =>
+  String(s || "").replace(/<[^>]+>/g, " ");
 export const textHaystack = (p: NewsPost) =>
   [
     p.title ?? "",
@@ -46,6 +48,10 @@ function docToNewsPost(d: DocumentSnapshot<DocumentData>): NewsPost {
 }
 
 export async function fetchLatestNews(limit = 3): Promise<NewsPost[]> {
+  if (IS_USE_LOCAL_DATA) {
+    const { loadLocalNews } = await import("@/api/localNews");
+    return (await loadLocalNews()).slice(0, limit);
+  }
   const col = collection(database, "news");
   const snap = await getDocs(
     query(col, orderBy("created_at", "desc"), ql(limit)),
@@ -58,6 +64,10 @@ export async function fetchNewsPage(opts: {
   cursor?: DocumentSnapshot;
   q: string;
 }): Promise<NewsPage> {
+  if (IS_USE_LOCAL_DATA) {
+    const { searchLocalNews } = await import("@/api/localNews");
+    return { items: await searchLocalNews(opts.q) };
+  }
   const col = collection(database, "news");
   const tokens = toTokens(opts.q);
 
@@ -106,6 +116,10 @@ export async function fetchNewsPage(opts: {
 
 export async function fetchNewsBySlug(slug: string): Promise<NewsPost | null> {
   if (!slug) return null;
+  if (IS_USE_LOCAL_DATA) {
+    const { loadLocalNews } = await import("@/api/localNews");
+    return (await loadLocalNews()).find((p) => p.slug === slug) ?? null;
+  }
   const ref = doc(database, "news", slug);
   const snap = await getDoc(ref);
   return snap.exists() ? docToNewsPost(snap) : null;
